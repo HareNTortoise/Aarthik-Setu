@@ -6,6 +6,7 @@ class GoogleAuth{
 
   final FirebaseAuth _auth = FirebaseAuth.instance;
   final Logger _logger = Logger();
+
   Future<Map<String, dynamic>?> signInGoogle() async {
     GoogleSignIn account = GoogleSignIn(
     );
