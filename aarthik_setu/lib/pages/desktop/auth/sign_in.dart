@@ -75,7 +75,9 @@ class SignInDesktop extends StatelessWidget {
                         ),
                         const SizedBox(height: 50),
                         OutlinedButton(
-                          onPressed: () {},
+                          onPressed: () {
+                            context.read<AuthBloc>().add(OTPSignIn(countryCode: "+91 ", phoneNumber: "8630831913"));
+                          },
                           style: OutlinedButton.styleFrom(
                             padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
                             minimumSize: const Size(double.infinity, 80),

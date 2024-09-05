@@ -2,6 +2,7 @@ import 'package:aarthik_setu/bloc/auth/auth_bloc.dart';
 import 'package:aarthik_setu/constants/colors.dart';
 import 'package:aarthik_setu/routes/router.dart';
 import 'package:aarthik_setu/services/auth/google.dart';
+import 'package:aarthik_setu/services/auth/phone.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
@@ -25,11 +26,15 @@ class AarthikSetu extends StatelessWidget {
     return MultiRepositoryProvider(
       providers: [
         RepositoryProvider(create: (context) => GoogleAuth()),
+        RepositoryProvider(create: (context) => PhoneAuth()),
       ],
       child: MultiBlocProvider(
         providers: [
-          BlocProvider(create: (context) => AuthBloc(googleAuthServices: RepositoryProvider.of<GoogleAuth>(context))),
-
+          BlocProvider(
+            create: (context) => AuthBloc(
+                googleAuthServices: RepositoryProvider.of<GoogleAuth>(context),
+                phoneAuthServices: RepositoryProvider.of<PhoneAuth>(context)),
+          ),
         ],
         child: MaterialApp.router(
           title: AppConstants.appName,
