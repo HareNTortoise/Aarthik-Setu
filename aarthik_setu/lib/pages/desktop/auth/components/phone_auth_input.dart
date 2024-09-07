@@ -54,6 +54,7 @@ class _PhoneAuthInputState extends State<PhoneAuthInput> {
   }
 
   void onSendOtp() {
+    _timer?.cancel();
     setState(() {
       _isOtpSent = true;
       _isPhoneFieldEnabled = false;
@@ -120,43 +121,51 @@ class _PhoneAuthInputState extends State<PhoneAuthInput> {
             ),
           ),
           const SizedBox(height: 20),
-          Row(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              if (!_isOtpSent)
+          if (!_isOtpSent)
+            FilledButton.tonal(
+              onPressed: () {
+                if (_formKey.currentState!.validate()) onSendOtp();
+              },
+              style: ButtonStyle(
+                minimumSize: WidgetStateProperty.all(const Size(100, 50)),
+              ),
+              child: const Text('Send OTP'),
+            ),
+          if (_isOtpSent) ...[
+            const SizedBox(height: 20),
+            const Text('Enter OTP', style: TextStyle(fontSize: 22)),
+            const SizedBox(height: 10),
+            Text('Resend OTP in $_start seconds', style: GoogleFonts.poppins(fontSize: 16)),
+            const SizedBox(height: 40),
+            AnimatedContainer(
+              duration: const Duration(milliseconds: 500),
+              child: OTPTextField(
+                length: 5,
+                width: MediaQuery.of(context).size.width,
+                fieldWidth: 50,
+                inputFormatter: [
+                  FilteringTextInputFormatter.allow(RegExp(r'[0-9]')),
+                ],
+                style: const TextStyle(fontSize: 17),
+                textFieldAlignment: MainAxisAlignment.spaceAround,
+                fieldStyle: FieldStyle.box,
+                onCompleted: (otp) {
+                  Logger().i('OTP Received: $otp');
+                },
+              ),
+            ),
+            const SizedBox(height: 40),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
                 FilledButton.tonal(
-                  onPressed: () {
-                    if (_formKey.currentState!.validate()) onSendOtp();
-                  },
+                  onPressed: onSendOtp,
                   style: ButtonStyle(
                     minimumSize: WidgetStateProperty.all(const Size(100, 50)),
                   ),
-                  child: const Text('Send OTP'),
+                  child: const Text('Resend OTP'),
                 ),
-              if (_isOtpSent) ...[
-                const SizedBox(height: 20),
-                const Text('Enter OTP', style: TextStyle(fontSize: 22)),
-                const SizedBox(height: 10),
-                Text('Resend OTP in $_start seconds', style: GoogleFonts.poppins(fontSize: 16)),
-                const SizedBox(height: 40),
-                AnimatedContainer(
-                  duration: const Duration(milliseconds: 500),
-                  child: OTPTextField(
-                    length: 5,
-                    width: MediaQuery.of(context).size.width,
-                    fieldWidth: 50,
-                    inputFormatter: [
-                      FilteringTextInputFormatter.allow(RegExp(r'[0-9]')),
-                    ],
-                    style: const TextStyle(fontSize: 17),
-                    textFieldAlignment: MainAxisAlignment.spaceAround,
-                    fieldStyle: FieldStyle.box,
-                    onCompleted: (otp) {
-                      Logger().i('OTP Received: $otp');
-                    },
-                  ),
-                ),
-                const SizedBox(height: 40),
+                const SizedBox(width: 40),
                 FilledButton.tonal(
                   onPressed: _isVerifyButtonEnabled ? () {} : null,
                   style: ButtonStyle(
@@ -165,8 +174,8 @@ class _PhoneAuthInputState extends State<PhoneAuthInput> {
                   child: const Text('Verify OTP'),
                 ),
               ],
-            ],
-          ),
+            ),
+          ],
 
         ],
       ),
