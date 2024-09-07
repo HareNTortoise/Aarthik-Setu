@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:responsive_framework/responsive_framework.dart';
+import '../../../bloc/auth/auth_bloc.dart';
 import '../../../constants/app_constants.dart';
 
 class SignInMobile extends StatelessWidget {
@@ -44,7 +46,9 @@ class SignInMobile extends StatelessWidget {
                       Text('Sign In', style: GoogleFonts.poppins(fontSize: 40, fontWeight: FontWeight.w400)),
                       const SizedBox(height: 20),
                       OutlinedButton(
-                        onPressed: () {},
+                        onPressed: () {
+                          context.read<AuthBloc>().add(GoogleSignIn());
+                        },
                         style: OutlinedButton.styleFrom(
                           padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
                           minimumSize: const Size(double.infinity, 40),
