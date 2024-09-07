@@ -1,13 +1,20 @@
+import 'package:aarthik_setu/pages/mobile/auth/components/phone_auth_input.dart';
+import 'package:aarthik_setu/pages/mobile/auth/components/sign_in_options.dart';
+import 'package:aarthik_setu/pages/mobile/auth/cubit/phone_form_cubit.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:flutter_svg/svg.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:responsive_framework/responsive_framework.dart';
-import '../../../bloc/auth/auth_bloc.dart';
 import '../../../constants/app_constants.dart';
 
-class SignInMobile extends StatelessWidget {
+class SignInMobile extends StatefulWidget {
   const SignInMobile({super.key});
+
+  @override
+  State<SignInMobile> createState() => _SignInMobileState();
+}
+
+class _SignInMobileState extends State<SignInMobile> {
 
   @override
   Widget build(BuildContext context) {
@@ -15,86 +22,59 @@ class SignInMobile extends StatelessWidget {
       width: AppConstants.mobileScaleWidth,
       child: Scaffold(
         body: SizedBox.expand(
-          child: Column(
-            children: [
-              const SizedBox(height: 200),
-              Text(
-                'Aarthik Setu',
-                style: GoogleFonts.poppins(fontSize: 55),
-              ),
-              const SizedBox(height: 80),
-              Container(
-                width: 350,
-                height: 290,
-                decoration: BoxDecoration(
-                  color: Colors.white,
-                  borderRadius: BorderRadius.circular(20),
-                  boxShadow: [
-                    BoxShadow(
-                      color: Colors.grey.withOpacity(0.5),
-                      spreadRadius: 5,
-                      blurRadius: 7,
-                      offset: const Offset(0, 3),
-                    ),
-                  ],
+          child: SingleChildScrollView(
+            child: Column(
+              children: [
+                const SizedBox(height: 200),
+                Text(
+                  'Aarthik Setu',
+                  style: GoogleFonts.poppins(fontSize: 55),
                 ),
-                child: Padding(
-                  padding: const EdgeInsets.symmetric(horizontal: 30),
-                  child: Column(
-                    children: [
-                      const SizedBox(height: 20),
-                      Text('Sign In', style: GoogleFonts.poppins(fontSize: 40, fontWeight: FontWeight.w400)),
-                      const SizedBox(height: 20),
-                      OutlinedButton(
-                        onPressed: () {
-                          context.read<AuthBloc>().add(GoogleSignIn());
+                const SizedBox(height: 80),
+                BlocBuilder<PhoneFormCubit, PhoneFormState>(
+                  builder: (context, state) {
+                    return Container(
+                      width: 350,
+                      height: (state) {
+                        if ((state as PhoneForm).isPhoneInputOpen && !(state).isOTPSent) {
+                         return 320.0;
+                        }
+                        else if ((state).isOTPSent) {
+                          return 500.0;
+                        }
+                        return 290.0;
+                      }(state),
+                      decoration: BoxDecoration(
+                        color: Colors.white,
+                        borderRadius: BorderRadius.circular(20),
+                        boxShadow: [
+                          BoxShadow(
+                            color: Colors.grey.withOpacity(0.5),
+                            spreadRadius: 5,
+                            blurRadius: 7,
+                            offset: const Offset(0, 3),
+                          ),
+                        ],
+                      ),
+                      child: (state as PhoneForm).isPhoneInputOpen
+                          ? PhoneAuthInputMobile(
+                        goBack: () {
+                          context.read<PhoneFormCubit>().togglePhoneInput();
+                          if ((state).isOTPSent) {
+                            context.read<PhoneFormCubit>().toggleOTPSent();
+                          }
                         },
-                        style: OutlinedButton.styleFrom(
-                          padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
-                          minimumSize: const Size(double.infinity, 40),
-                        ),
-                        child: Row(
-                          mainAxisAlignment: MainAxisAlignment.center,
-                          children: [
-                            SvgPicture.asset(
-                              "lib/assets/google.svg",
-                              width: 30,
-                            ),
-                            const SizedBox(width: 10),
-                            Text(
-                              "Google",
-                              style: GoogleFonts.jost(fontSize: 26, color: Colors.black),
-                            ),
-                          ],
-                        ),
+                      )
+                          : SignInOptionsMobile(
+                        onPhoneSignIn: () {
+                          context.read<PhoneFormCubit>().togglePhoneInput();
+                        },
                       ),
-                      const SizedBox(height: 20),
-                      OutlinedButton(
-                        onPressed: () {},
-                        style: OutlinedButton.styleFrom(
-                          padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
-                          minimumSize: const Size(double.infinity, 40),
-                        ),
-                        child: Row(
-                          mainAxisAlignment: MainAxisAlignment.center,
-                          children: [
-                            SvgPicture.asset(
-                              "lib/assets/phone_sms.svg",
-                              width: 30,
-                            ),
-                            const SizedBox(width: 10),
-                            Text(
-                              "Phone",
-                              style: GoogleFonts.jost(fontSize: 26, color: Colors.black),
-                            ),
-                          ],
-                        ),
-                      ),
-                    ],
-                  ),
+                    );
+                  },
                 ),
-              ),
-            ],
+              ],
+            ),
           ),
         ),
       ),
