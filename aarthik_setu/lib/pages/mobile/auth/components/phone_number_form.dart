@@ -9,16 +9,16 @@ import 'package:otp_text_field/otp_field.dart';
 import 'package:otp_text_field/style.dart';
 import '../cubit/phone_form_cubit.dart';
 
-class PhoneAuthInputMobile extends StatefulWidget {
-  const PhoneAuthInputMobile({super.key, required this.goBack});
+class PhoneNumberFormMobile extends StatefulWidget {
+  const PhoneNumberFormMobile({super.key, required this.goBack});
 
   final VoidCallback goBack;
 
   @override
-  State<PhoneAuthInputMobile> createState() => _PhoneAuthInputMobileState();
+  State<PhoneNumberFormMobile> createState() => _PhoneNumberFormMobileState();
 }
 
-class _PhoneAuthInputMobileState extends State<PhoneAuthInputMobile> {
+class _PhoneNumberFormMobileState extends State<PhoneNumberFormMobile> {
   String _selectedCountryCode = '+91';
   final TextEditingController _phoneController = TextEditingController();
   bool _isVerifyButtonEnabled = true;

@@ -7,15 +7,15 @@ import 'package:logger/logger.dart';
 import 'package:otp_text_field/otp_field.dart';
 import 'package:otp_text_field/style.dart';
 
-class PhoneAuthInputDesktop extends StatefulWidget {
-  const PhoneAuthInputDesktop({super.key, required this.goBack});
+class PhoneNumberFormDesktop extends StatefulWidget {
+  const PhoneNumberFormDesktop({super.key, required this.goBack});
   final VoidCallback goBack;
 
   @override
-  State<PhoneAuthInputDesktop> createState() => _PhoneAuthInputDesktopState();
+  State<PhoneNumberFormDesktop> createState() => _PhoneNumberFormDesktopState();
 }
 
-class _PhoneAuthInputDesktopState extends State<PhoneAuthInputDesktop> {
+class _PhoneNumberFormDesktopState extends State<PhoneNumberFormDesktop> {
   String _selectedCountryCode = '+91';
   final TextEditingController _phoneController = TextEditingController();
   bool _isOtpSent = false;

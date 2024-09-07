@@ -1,4 +1,4 @@
-import 'package:aarthik_setu/pages/mobile/auth/components/phone_auth_input.dart';
+import 'package:aarthik_setu/pages/mobile/auth/components/phone_number_form.dart';
 import 'package:aarthik_setu/pages/mobile/auth/components/sign_in_options.dart';
 import 'package:aarthik_setu/pages/mobile/auth/cubit/phone_form_cubit.dart';
 import 'package:flutter/material.dart';
@@ -57,7 +57,7 @@ class _SignInMobileState extends State<SignInMobile> {
                         ],
                       ),
                       child: (state as PhoneForm).isPhoneInputOpen
-                          ? PhoneAuthInputMobile(
+                          ? PhoneNumberFormMobile(
                         goBack: () {
                           context.read<PhoneFormCubit>().togglePhoneInput();
                           if ((state).isOTPSent) {

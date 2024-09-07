@@ -1,5 +1,5 @@
 import 'package:aarthik_setu/constants/app_constants.dart';
-import 'package:aarthik_setu/pages/desktop/auth/components/phone_auth_input.dart';
+import 'package:aarthik_setu/pages/desktop/auth/components/phone_number_form.dart';
 import 'package:aarthik_setu/pages/desktop/auth/components/sign_in_options.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -50,7 +50,7 @@ class _SignInDesktopState extends State<SignInDesktop> {
                     ],
                   ),
                   child: openPhoneAuth
-                      ? PhoneAuthInputDesktop(
+                      ? PhoneNumberFormDesktop(
                           goBack: () {
                             setState(() {
                               openPhoneAuth = false;
