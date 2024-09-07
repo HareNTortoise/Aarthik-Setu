@@ -50,14 +50,14 @@ class _SignInDesktopState extends State<SignInDesktop> {
                     ],
                   ),
                   child: openPhoneAuth
-                      ? PhoneAuthInput(
-                    goBack: () {
-                      setState(() {
-                        openPhoneAuth = false;
-                      });
-                    },
-                  )
-                      : SignInOptions(
+                      ? PhoneAuthInputDesktop(
+                          goBack: () {
+                            setState(() {
+                              openPhoneAuth = false;
+                            });
+                          },
+                        )
+                      : SignInOptionsDesktop(
                           onPhoneSignIn: () {
                             setState(() {
                               openPhoneAuth = true;

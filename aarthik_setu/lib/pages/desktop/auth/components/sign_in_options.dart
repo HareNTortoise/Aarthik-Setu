@@ -4,8 +4,8 @@ import 'package:flutter_svg/svg.dart';
 import 'package:google_fonts/google_fonts.dart';
 import '../../../../bloc/auth/auth_bloc.dart';
 
-class SignInOptions extends StatelessWidget {
-  const SignInOptions({super.key, required this.onPhoneSignIn});
+class SignInOptionsDesktop extends StatelessWidget {
+  const SignInOptionsDesktop({super.key, required this.onPhoneSignIn});
 
   final VoidCallback? onPhoneSignIn;
 
