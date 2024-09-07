@@ -1,5 +1,6 @@
 import 'package:aarthik_setu/bloc/auth/auth_bloc.dart';
 import 'package:aarthik_setu/constants/colors.dart';
+import 'package:aarthik_setu/pages/mobile/auth/cubit/phone_form_cubit.dart';
 import 'package:aarthik_setu/routes/router.dart';
 import 'package:aarthik_setu/services/auth/google.dart';
 import 'package:aarthik_setu/services/auth/phone.dart';
@@ -35,6 +36,7 @@ class AarthikSetu extends StatelessWidget {
                 googleAuthServices: RepositoryProvider.of<GoogleAuth>(context),
                 phoneAuthServices: RepositoryProvider.of<PhoneAuth>(context)),
           ),
+          BlocProvider(create: (context) => PhoneFormCubit()),
         ],
         child: MaterialApp.router(
           title: AppConstants.appName,
