@@ -1,13 +1,19 @@
-import 'package:aarthik_setu/bloc/auth/auth_bloc.dart';
 import 'package:aarthik_setu/constants/app_constants.dart';
+import 'package:aarthik_setu/pages/desktop/auth/components/phone_auth_input.dart';
+import 'package:aarthik_setu/pages/desktop/auth/components/sign_in_options.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:flutter_svg/flutter_svg.dart';
 import 'package:responsive_framework/responsive_framework.dart';
 
-class SignInDesktop extends StatelessWidget {
+class SignInDesktop extends StatefulWidget {
   const SignInDesktop({super.key});
+
+  @override
+  State<SignInDesktop> createState() => _SignInDesktopState();
+}
+
+class _SignInDesktopState extends State<SignInDesktop> {
+  bool openPhoneAuth = false;
 
   @override
   Widget build(BuildContext context) {
@@ -43,63 +49,21 @@ class SignInDesktop extends StatelessWidget {
                       ),
                     ],
                   ),
-                  child: Padding(
-                    padding: const EdgeInsets.symmetric(horizontal: 70),
-                    child: Column(
-                      children: [
-                        const SizedBox(height: 30),
-                        Text('Sign In', style: GoogleFonts.poppins(fontSize: 70, fontWeight: FontWeight.w400)),
-                        const SizedBox(height: 80),
-                        OutlinedButton(
-                          onPressed: () {
-                            context.read<AuthBloc>().add(GoogleSignIn());
+                  child: openPhoneAuth
+                      ? PhoneAuthInput(
+                    goBack: () {
+                      setState(() {
+                        openPhoneAuth = false;
+                      });
+                    },
+                  )
+                      : SignInOptions(
+                          onPhoneSignIn: () {
+                            setState(() {
+                              openPhoneAuth = true;
+                            });
                           },
-                          style: OutlinedButton.styleFrom(
-                            padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
-                            minimumSize: const Size(double.infinity, 80),
-                          ),
-                          child: Row(
-                            mainAxisAlignment: MainAxisAlignment.center,
-                            children: [
-                              SvgPicture.asset(
-                                "lib/assets/google.svg",
-                                width: 35,
-                              ),
-                              const SizedBox(width: 10),
-                              Text(
-                                "Google",
-                                style: GoogleFonts.jost(fontSize: 30, color: Colors.black),
-                              ),
-                            ],
-                          ),
                         ),
-                        const SizedBox(height: 50),
-                        OutlinedButton(
-                          onPressed: () {
-                            context.read<AuthBloc>().add(OTPSignIn(countryCode: "+91 ", phoneNumber: "8630831913"));
-                          },
-                          style: OutlinedButton.styleFrom(
-                            padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
-                            minimumSize: const Size(double.infinity, 80),
-                          ),
-                          child: Row(
-                            mainAxisAlignment: MainAxisAlignment.center,
-                            children: [
-                              SvgPicture.asset(
-                                "lib/assets/phone_sms.svg",
-                                width: 35,
-                              ),
-                              const SizedBox(width: 10),
-                              Text(
-                                "Phone",
-                                style: GoogleFonts.jost(fontSize: 30, color: Colors.black),
-                              ),
-                            ],
-                          ),
-                        ),
-                      ],
-                    ),
-                  ),
                 ),
               ),
             ),
