@@ -8,6 +8,7 @@ import 'package:logger/logger.dart';
 import 'package:otp_text_field/otp_field.dart';
 import 'package:otp_text_field/style.dart';
 import '../../../../cubit/phone_form_cubit.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
 class PhoneNumberFormDesktop extends StatefulWidget {
   const PhoneNumberFormDesktop({super.key});
@@ -53,6 +54,7 @@ class _PhoneNumberFormDesktopState extends State<PhoneNumberFormDesktop> {
 
   @override
   Widget build(BuildContext context) {
+    final localizations = AppLocalizations.of(context);
     return Padding(
       padding: const EdgeInsets.symmetric(horizontal: 30),
       child: Column(
@@ -70,8 +72,8 @@ class _PhoneNumberFormDesktopState extends State<PhoneNumberFormDesktop> {
               },
             ),
           ),
-          Text('Phone Sign In', style: GoogleFonts.poppins(fontSize: 46, fontWeight: FontWeight.w400)),
-          const SizedBox(height: 30),
+          Text(localizations!.phoneSignInFormTitle, style: GoogleFonts.poppins(fontSize: 46, fontWeight: FontWeight.w400)),
+          const SizedBox(height: 50),
           Form(
             key: _formKey,
             child: Column(
@@ -83,10 +85,10 @@ class _PhoneNumberFormDesktopState extends State<PhoneNumberFormDesktop> {
                       enabled: !(state as PhoneForm).isOTPSent,
                       validator: (value) {
                         if (value == null || value.isEmpty) {
-                          return 'Please enter phone number';
+                          return localizations.enterPhoneNumber;
                         }
                         if (value.length < 10) {
-                          return 'Please enter a valid phone number';
+                          return localizations.enterValidPhoneNumber;
                         }
                         return null;
                       },
@@ -95,7 +97,7 @@ class _PhoneNumberFormDesktopState extends State<PhoneNumberFormDesktop> {
                         LengthLimitingTextInputFormatter(10),
                       ],
                       decoration: InputDecoration(
-                        labelText: 'Phone Number',
+                        labelText: localizations.phoneNumber,
                         labelStyle: GoogleFonts.poppins(fontSize: 20),
                         border: const OutlineInputBorder(borderRadius: BorderRadius.all(Radius.circular(10))),
                         constraints: const BoxConstraints(maxWidth: 400),
@@ -118,7 +120,7 @@ class _PhoneNumberFormDesktopState extends State<PhoneNumberFormDesktop> {
               ],
             ),
           ),
-          const SizedBox(height: 20),
+          const SizedBox(height: 50),
           BlocBuilder<PhoneFormCubit, PhoneFormState>(
             builder: (context, state) {
               return Column(
@@ -135,13 +137,13 @@ class _PhoneNumberFormDesktopState extends State<PhoneNumberFormDesktop> {
                       style: ButtonStyle(
                         minimumSize: WidgetStateProperty.all(const Size(100, 50)),
                       ),
-                      child: const Text('Send OTP'),
+                      child: Text(localizations.sendOtp),
                     ),
                   if (state.isOTPSent) ...[
                     const SizedBox(height: 20),
-                    const Text('Enter OTP', style: TextStyle(fontSize: 22)),
+                    Text(localizations.enterOtp, style: const TextStyle(fontSize: 22)),
                     const SizedBox(height: 10),
-                    Text('Resend OTP in $_start seconds', style: GoogleFonts.poppins(fontSize: 16)),
+                    Text(localizations.otpExpireIn(_start), style: GoogleFonts.poppins(fontSize: 16)),
                     const SizedBox(height: 40),
                     AnimatedContainer(
                       duration: const Duration(milliseconds: 500),
@@ -156,7 +158,7 @@ class _PhoneNumberFormDesktopState extends State<PhoneNumberFormDesktop> {
                         textFieldAlignment: MainAxisAlignment.spaceAround,
                         fieldStyle: FieldStyle.box,
                         onCompleted: (otp) {
-                          Logger().i('OTP Received: $otp');
+                          Logger().i('${localizations.otpReceived}: $otp');
                         },
                       ),
                     ),
@@ -168,13 +170,11 @@ class _PhoneNumberFormDesktopState extends State<PhoneNumberFormDesktop> {
                           onPressed: () {
                             _timer?.cancel();
                             startOtpTimer();
-                            // // context.read<PhoneFormCubit>().sendOtp(_phoneController.text);
-                            //context.read<PhoneFormCubit>().toggleOTPSent();
                           },
                           style: ButtonStyle(
                             minimumSize: WidgetStateProperty.all(const Size(100, 50)),
                           ),
-                          child: const Text('Resend OTP'),
+                          child: Text(localizations.resendOtp),
                         ),
                         const SizedBox(width: 40),
                         FilledButton.tonal(
@@ -182,7 +182,7 @@ class _PhoneNumberFormDesktopState extends State<PhoneNumberFormDesktop> {
                           style: ButtonStyle(
                             minimumSize: WidgetStateProperty.all(const Size(100, 50)),
                           ),
-                          child: const Text('Verify OTP'),
+                          child: Text(localizations.verifyOtp),
                         ),
                       ],
                     ),
