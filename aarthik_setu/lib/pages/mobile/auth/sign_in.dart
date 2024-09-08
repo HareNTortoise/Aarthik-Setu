@@ -7,14 +7,9 @@ import 'package:responsive_framework/responsive_framework.dart';
 import '../../../constants/app_constants.dart';
 import '../../../cubit/phone_form_cubit.dart';
 
-class SignInMobile extends StatefulWidget {
+class SignInMobile extends StatelessWidget {
   const SignInMobile({super.key});
 
-  @override
-  State<SignInMobile> createState() => _SignInMobileState();
-}
-
-class _SignInMobileState extends State<SignInMobile> {
   @override
   Widget build(BuildContext context) {
     return ResponsiveScaledBox(
@@ -34,14 +29,6 @@ class _SignInMobileState extends State<SignInMobile> {
                   builder: (context, state) {
                     return Container(
                       width: 350,
-                      height: (state) {
-                        if ((state as PhoneForm).isPhoneInputOpen && !(state).isOTPSent) {
-                          return 320.0;
-                        } else if ((state).isOTPSent) {
-                          return 500.0;
-                        }
-                        return 290.0;
-                      }(state),
                       decoration: BoxDecoration(
                         color: Colors.white,
                         borderRadius: BorderRadius.circular(20),
@@ -54,9 +41,13 @@ class _SignInMobileState extends State<SignInMobile> {
                           ),
                         ],
                       ),
-                      child: (state as PhoneForm).isPhoneInputOpen
-                          ? const PhoneNumberFormMobile()
-                          : const SignInOptionsMobile(),
+                      child: IntrinsicHeight(
+                        child: Padding(padding: const EdgeInsets.only(top:20, bottom: 40),
+                        child: (state as PhoneForm).isPhoneInputOpen
+                            ? const PhoneNumberFormMobile()
+                            : const SignInOptionsMobile(),
+                        ),
+                      )
                     );
                   },
                 ),
