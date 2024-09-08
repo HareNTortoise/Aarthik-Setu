@@ -14,7 +14,6 @@ class SignInOptionsMobile extends StatelessWidget {
       padding: const EdgeInsets.symmetric(horizontal: 30),
       child: Column(
         children: [
-          const SizedBox(height: 20),
           Text('Sign In', style: GoogleFonts.poppins(fontSize: 40, fontWeight: FontWeight.w400)),
           const SizedBox(height: 20),
           OutlinedButton(

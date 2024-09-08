@@ -1,5 +1,5 @@
 import 'dart:async';
-import 'package:aarthik_setu/pages/desktop/auth/components/country_code_dropdown.dart';
+import 'package:aarthik_setu/global_components/country_code_dropdown.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
@@ -7,7 +7,6 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:logger/logger.dart';
 import 'package:otp_text_field/otp_field.dart';
 import 'package:otp_text_field/style.dart';
-
 import '../../../../cubit/phone_form_cubit.dart';
 
 class PhoneNumberFormMobile extends StatefulWidget {
@@ -73,8 +72,8 @@ class _PhoneNumberFormMobileState extends State<PhoneNumberFormMobile> {
                   },
                 ),
               ),
-              const SizedBox(width: 18),
-              Text('Phone Sign In', style: GoogleFonts.poppins(fontSize: 26, fontWeight: FontWeight.w400)),
+              const SizedBox(width: 10),
+              Text('Phone Sign In', style: GoogleFonts.poppins(fontSize: 30, fontWeight: FontWeight.w400)),
             ],
           ),
           const SizedBox(height: 30),
@@ -171,7 +170,7 @@ class _PhoneNumberFormMobileState extends State<PhoneNumberFormMobile> {
                                   _timer?.cancel();
                                   startOtpTimer();
                                   // // context.read<PhoneFormCubit>().sendOtp(_phoneController.text);
-                                  // context.read<PhoneFormCubit>().toggleOTPSent();
+                                  //context.read<PhoneFormCubit>().toggleOTPSent();
                                 },
                                 style: ButtonStyle(
                                   minimumSize: WidgetStateProperty.all(const Size(100, 50)),

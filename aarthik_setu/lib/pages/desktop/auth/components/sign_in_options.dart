@@ -3,11 +3,10 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:google_fonts/google_fonts.dart';
 import '../../../../bloc/auth/auth_bloc.dart';
+import '../../../../cubit/phone_form_cubit.dart';
 
 class SignInOptionsDesktop extends StatelessWidget {
-  const SignInOptionsDesktop({super.key, required this.onPhoneSignIn});
-
-  final VoidCallback? onPhoneSignIn;
+  const SignInOptionsDesktop({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -43,7 +42,7 @@ class SignInOptionsDesktop extends StatelessWidget {
           ),
           const SizedBox(height: 50),
           OutlinedButton(
-            onPressed: onPhoneSignIn,
+            onPressed: () => context.read<PhoneFormCubit>().togglePhoneInput(),
             style: OutlinedButton.styleFrom(
               padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
               minimumSize: const Size(double.infinity, 80),
