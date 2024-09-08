@@ -25,50 +25,48 @@ class SignInMobile extends StatelessWidget {
           builder: (context, state) {
             return SafeArea(
               child: Scaffold(
-                body: SizedBox.expand(
-                  child: SingleChildScrollView(
-                    child: Column(
-                      children: [
-                        const SizedBox(height: 30),
-                        Container(
-                          padding: const EdgeInsets.symmetric(horizontal: 40),
-                          alignment: Alignment.centerLeft,
-                          child: const LanguageDropdown(),
-                        ),
-                        const SizedBox(height: 120),
-                        Text(
-                          localizations!.appTitle,
-                          style: GoogleFonts.poppins(fontSize: 55),
-                        ),
-                        const SizedBox(height: 80),
-                        BlocBuilder<PhoneFormCubit, PhoneFormState>(
-                          builder: (context, state) {
-                            return Container(
-                                width: 350,
-                                decoration: BoxDecoration(
-                                  color: Colors.white,
-                                  borderRadius: BorderRadius.circular(20),
-                                  boxShadow: [
-                                    BoxShadow(
-                                      color: Colors.grey.withOpacity(0.5),
-                                      spreadRadius: 5,
-                                      blurRadius: 7,
-                                      offset: const Offset(0, 3),
-                                    ),
-                                  ],
-                                ),
-                                child: IntrinsicHeight(
-                                  child: Padding(
-                                    padding: const EdgeInsets.only(top: 20, bottom: 40),
-                                    child: (state as PhoneForm).isPhoneInputOpen
-                                        ? const PhoneNumberFormMobile()
-                                        : const SignInOptionsMobile(),
+                body: SingleChildScrollView(
+                  child: Column(
+                    children: [
+                      const SizedBox(height: 30),
+                      Container(
+                        padding: const EdgeInsets.symmetric(horizontal: 40),
+                        alignment: Alignment.centerLeft,
+                        child: const LanguageDropdown(),
+                      ),
+                      const SizedBox(height: 120),
+                      Text(
+                        AppLocalizations.of(context)!.appTitle,
+                        style: GoogleFonts.poppins(fontSize: 55),
+                      ),
+                      const SizedBox(height: 80),
+                      BlocBuilder<PhoneFormCubit, PhoneFormState>(
+                        builder: (context, state) {
+                          return Container(
+                              width: 350,
+                              decoration: BoxDecoration(
+                                color: Colors.white,
+                                borderRadius: BorderRadius.circular(20),
+                                boxShadow: [
+                                  BoxShadow(
+                                    color: Colors.grey.withOpacity(0.5),
+                                    spreadRadius: 5,
+                                    blurRadius: 7,
+                                    offset: const Offset(0, 3),
                                   ),
-                                ));
-                          },
-                        ),
-                      ],
-                    ),
+                                ],
+                              ),
+                              child: IntrinsicHeight(
+                                child: Padding(
+                                  padding: const EdgeInsets.only(top: 20, bottom: 40),
+                                  child: (state as PhoneForm).isPhoneInputOpen
+                                      ? const PhoneNumberFormMobile()
+                                      : const SignInOptionsMobile(),
+                                ),
+                              ));
+                        },
+                      ),
+                    ],
                   ),
                 ),
               ),
