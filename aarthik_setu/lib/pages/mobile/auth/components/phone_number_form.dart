@@ -7,12 +7,11 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:logger/logger.dart';
 import 'package:otp_text_field/otp_field.dart';
 import 'package:otp_text_field/style.dart';
-import '../cubit/phone_form_cubit.dart';
+
+import '../../../../cubit/phone_form_cubit.dart';
 
 class PhoneNumberFormMobile extends StatefulWidget {
-  const PhoneNumberFormMobile({super.key, required this.goBack});
-
-  final VoidCallback goBack;
+  const PhoneNumberFormMobile({super.key});
 
   @override
   State<PhoneNumberFormMobile> createState() => _PhoneNumberFormMobileState();
@@ -66,7 +65,12 @@ class _PhoneNumberFormMobileState extends State<PhoneNumberFormMobile> {
                 alignment: Alignment.centerLeft,
                 child: IconButton(
                   icon: const Icon(Icons.arrow_back),
-                  onPressed: widget.goBack,
+                  onPressed: () {
+                    context.read<PhoneFormCubit>().togglePhoneInput();
+                    if ((context.read<PhoneFormCubit>().state as PhoneForm).isOTPSent) {
+                      context.read<PhoneFormCubit>().toggleOTPSent();
+                    }
+                  },
                 ),
               ),
               const SizedBox(width: 18),
@@ -117,7 +121,7 @@ class _PhoneNumberFormMobileState extends State<PhoneNumberFormMobile> {
                     );
                   },
                 ),
-                const SizedBox(height: 40),
+                const SizedBox(height: 30),
                 BlocBuilder<PhoneFormCubit, PhoneFormState>(
                   builder: (context, state) {
                     return Column(

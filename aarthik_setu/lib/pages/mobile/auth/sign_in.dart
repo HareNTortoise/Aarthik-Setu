@@ -1,11 +1,11 @@
 import 'package:aarthik_setu/pages/mobile/auth/components/phone_number_form.dart';
 import 'package:aarthik_setu/pages/mobile/auth/components/sign_in_options.dart';
-import 'package:aarthik_setu/pages/mobile/auth/cubit/phone_form_cubit.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:responsive_framework/responsive_framework.dart';
 import '../../../constants/app_constants.dart';
+import '../../../cubit/phone_form_cubit.dart';
 
 class SignInMobile extends StatefulWidget {
   const SignInMobile({super.key});
@@ -15,7 +15,6 @@ class SignInMobile extends StatefulWidget {
 }
 
 class _SignInMobileState extends State<SignInMobile> {
-
   @override
   Widget build(BuildContext context) {
     return ResponsiveScaledBox(
@@ -37,9 +36,8 @@ class _SignInMobileState extends State<SignInMobile> {
                       width: 350,
                       height: (state) {
                         if ((state as PhoneForm).isPhoneInputOpen && !(state).isOTPSent) {
-                         return 320.0;
-                        }
-                        else if ((state).isOTPSent) {
+                          return 320.0;
+                        } else if ((state).isOTPSent) {
                           return 500.0;
                         }
                         return 290.0;
@@ -57,19 +55,8 @@ class _SignInMobileState extends State<SignInMobile> {
                         ],
                       ),
                       child: (state as PhoneForm).isPhoneInputOpen
-                          ? PhoneNumberFormMobile(
-                        goBack: () {
-                          context.read<PhoneFormCubit>().togglePhoneInput();
-                          if ((state).isOTPSent) {
-                            context.read<PhoneFormCubit>().toggleOTPSent();
-                          }
-                        },
-                      )
-                          : SignInOptionsMobile(
-                        onPhoneSignIn: () {
-                          context.read<PhoneFormCubit>().togglePhoneInput();
-                        },
-                      ),
+                          ? const PhoneNumberFormMobile()
+                          : const SignInOptionsMobile(),
                     );
                   },
                 ),

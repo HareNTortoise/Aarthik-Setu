@@ -1,6 +1,5 @@
 import 'package:aarthik_setu/bloc/auth/auth_bloc.dart';
 import 'package:aarthik_setu/constants/colors.dart';
-import 'package:aarthik_setu/pages/mobile/auth/cubit/phone_form_cubit.dart';
 import 'package:aarthik_setu/routes/router.dart';
 import 'package:aarthik_setu/services/auth/google.dart';
 import 'package:aarthik_setu/services/auth/phone.dart';
@@ -9,6 +8,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:responsive_framework/responsive_framework.dart';
 import 'constants/app_constants.dart';
+import 'cubit/phone_form_cubit.dart';
 import 'firebase_options.dart';
 
 Future<void> main() async {
