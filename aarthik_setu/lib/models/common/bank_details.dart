@@ -3,13 +3,13 @@ class BankDetails{
   String bankName;
   bool salaryAccount;
   DateTime accountSince;
-  String bankAccountStatement;
+  List<String> bankAccountStatements;
 
   BankDetails({
     required this.bankName,
     required this.salaryAccount,
     required this.accountSince,
-    required this.bankAccountStatement,
+    required this.bankAccountStatements,
   });
 
   Map<String, dynamic> toJson() {
@@ -17,7 +17,7 @@ class BankDetails{
       'bankName': bankName,
       'salaryAccount': salaryAccount,
       'accountSince': accountSince,
-      'bankAccountStatement': bankAccountStatement,
+      'bankAccountStatement': bankAccountStatements,
     };
   }
 
@@ -26,7 +26,7 @@ class BankDetails{
       bankName: json['bankName'],
       salaryAccount: json['salaryAccount'],
       accountSince: json['accountSince'],
-      bankAccountStatement: json['bankAccountStatement'],
+      bankAccountStatements: json['bankAccountStatements'],
     );
   }
 }

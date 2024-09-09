@@ -1,7 +1,7 @@
-import 'components/bank_details.dart';
+import '../../common/bank_details.dart';
 import 'components/contact_details.dart';
 import 'components/employment_details.dart';
-import 'components/manual_itr.dart';
+import '../../common/manual_itr.dart';
 
 class PersonalProfile {
   String id;
