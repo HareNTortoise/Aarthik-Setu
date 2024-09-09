@@ -1,4 +1,4 @@
-class ManualItr{
+class ManualItrPersonal{
   String firstName;
   String? middleName;
   String lastName;
@@ -18,7 +18,7 @@ class ManualItr{
   String? subDistrict;
   Map<(int,int), double> netAnnualIncome;
 
-  ManualItr({
+  ManualItrPersonal({
     required this.firstName,
     this.middleName,
     required this.lastName,
@@ -62,8 +62,8 @@ class ManualItr{
     };
   }
 
-  factory ManualItr.fromJson(Map<String, dynamic> json) {
-    return ManualItr(
+  factory ManualItrPersonal.fromJson(Map<String, dynamic> json) {
+    return ManualItrPersonal(
       firstName: json['firstName'],
       middleName: json['middleName'],
       lastName: json['lastName'],

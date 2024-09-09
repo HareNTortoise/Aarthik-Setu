@@ -1,7 +1,7 @@
 import '../../common/bank_details.dart';
 import 'components/contact_details.dart';
 import 'components/employment_details.dart';
-import '../../common/manual_itr.dart';
+import 'components/manual_itr_personal.dart';
 
 class PersonalProfile {
   String id;
@@ -9,7 +9,7 @@ class PersonalProfile {
   String name;
   String pan;
   Map<(int, int), String> itr;
-  Map<(int, int), ManualItr> manualItr;
+  Map<(int, int), ManualItrPersonal> manualItr;
   List<BankDetails> bankDetails;
   EmploymentDetails employmentDetails;
   ContactDetails contactDetails;
