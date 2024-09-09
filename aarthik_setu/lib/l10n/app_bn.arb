@@ -1,0 +1,103 @@
+{
+  "appTitle": "আর্থিক সেতু",
+  "@appTitle": {
+    "description": "The title of the application",
+    "type": "text",
+    "placeholders": {}
+  },
+  "signIn": "সাইন ইন করুন",
+  "@signIn": {
+    "description": "Button label for signing in",
+    "type": "text",
+    "placeholders": {}
+  },
+  "googleSignIn": "গুগল",
+  "@googleSignIn": {
+    "description": "Label for Google Sign-In",
+    "type": "text",
+    "placeholders": {}
+  },
+  "phoneSignIn": "ফোন",
+  "@phoneSignIn": {
+    "description": "Label for Phone Sign-In",
+    "type": "text",
+    "placeholders": {}
+  },
+  "language": "ভাষা",
+  "@language": {
+    "description": "Label for language selection",
+    "type": "text",
+    "placeholders": {}
+  },
+  "enterPhoneNumber": "আপনার ফোন নম্বর প্রবেশ করান",
+  "@enterPhoneNumber": {
+    "description": "Label for phone number entry",
+    "type": "text",
+    "placeholders": {}
+  },
+  "sendOtp": "OTP পাঠান",
+  "@sendOtp": {
+    "description": "Button label for sending OTP",
+    "type": "text",
+    "placeholders": {}
+  },
+  "verifyOtp": "OTP যাচাই করুন",
+  "@verifyOtp": {
+    "description": "Button label for verifying OTP",
+    "type": "text",
+    "placeholders": {}
+  },
+  "resendOtp": "OTP পুনরায় পাঠান",
+  "@resendOtp": {
+    "description": "Button label for resending OTP",
+    "type": "text",
+    "placeholders": {}
+  },
+  "otpExpireIn": "OTP মেয়াদ শেষ হতে {time} সেকেন্ড",
+  "@otpExpireIn": {
+    "description": "Message showing time left to resend OTP",
+    "type": "text",
+    "placeholders": {
+      "time": {
+        "type": "int",
+        "example": "120"
+      }
+    }
+  },
+  "enterValidPhoneNumber": "অনুগ্রহ করে একটি বৈধ ফোন নম্বর প্রবেশ করুন",
+  "@enterValidPhoneNumber": {
+    "description": "Error message when phone number is invalid",
+    "type": "text",
+    "placeholders": {}
+  },
+  "otpReceived": "OTP প্রাপ্ত হয়েছে",
+  "@otpReceived": {
+    "description": "Message showing received OTP",
+    "type": "text",
+    "placeholders": {}
+  },
+  "enterOtp": "OTP প্রবেশ করান",
+  "@enterOtp": {
+    "description": "Label for OTP entry",
+    "type": "text",
+    "placeholders": {}
+  },
+  "backButton": "পিছনে",
+  "@backButton": {
+    "description": "Label for the back button",
+    "type": "text",
+    "placeholders": {}
+  },
+  "phoneNumber": "ফোন নম্বর",
+  "@phoneNumber": {
+    "description": "Label for phone number entry",
+    "type": "text",
+    "placeholders": {}
+  },
+  "phoneSignInFormTitle": "ফোন দিয়ে সাইন ইন করুন",
+  "@phoneSignInFormTitle": {
+    "description": "Title for phone sign-in form",
+    "type": "text",
+    "placeholders": {}
+  }
+}

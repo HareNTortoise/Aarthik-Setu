@@ -1,0 +1,103 @@
+{
+  "appTitle": "Aarthik Setu",
+  "@appTitle": {
+    "description": "The title of the application",
+    "type": "text",
+    "placeholders": {}
+  },
+  "signIn": "Sign In",
+  "@signIn": {
+    "description": "Button label for signing in",
+    "type": "text",
+    "placeholders": {}
+  },
+  "googleSignIn": "Google",
+  "@googleSignIn": {
+    "description": "Label for Google Sign-In",
+    "type": "text",
+    "placeholders": {}
+  },
+  "phoneSignIn": "Phone",
+  "@phoneSignIn": {
+    "description": "Label for Phone Sign-In",
+    "type": "text",
+    "placeholders": {}
+  },
+  "language": "Language",
+  "@language": {
+    "description": "Label for language selection",
+    "type": "text",
+    "placeholders": {}
+  },
+  "enterPhoneNumber": "Enter your phone number",
+  "@enterPhoneNumber": {
+    "description": "Label for phone number entry",
+    "type": "text",
+    "placeholders": {}
+  },
+  "sendOtp": "Send OTP",
+  "@sendOtp": {
+    "description": "Button label for sending OTP",
+    "type": "text",
+    "placeholders": {}
+  },
+  "verifyOtp": "Verify OTP",
+  "@verifyOtp": {
+    "description": "Button label for verifying OTP",
+    "type": "text",
+    "placeholders": {}
+  },
+  "resendOtp": "Resend OTP",
+  "@resendOtp": {
+    "description": "Button label for resending OTP",
+    "type": "text",
+    "placeholders": {}
+  },
+  "otpExpireIn": "OTP Expires in {time} seconds",
+  "@otpExpireIn": {
+    "description": "Message showing time left to resend OTP",
+    "type": "text",
+    "placeholders": {
+      "time": {
+        "type": "int",
+        "example": "120"
+      }
+    }
+  },
+  "enterValidPhoneNumber": "Please enter a valid phone number",
+  "@enterValidPhoneNumber": {
+    "description": "Error message when phone number is invalid",
+    "type": "text",
+    "placeholders": {}
+  },
+  "otpReceived": "OTP Received",
+  "@otpReceived": {
+    "description": "Message showing received OTP",
+    "type": "text",
+    "placeholders": {}
+  },
+  "enterOtp": "Enter OTP",
+  "@enterOtp": {
+    "description": "Label for OTP entry",
+    "type": "text",
+    "placeholders": {}
+  },
+  "backButton": "Back",
+  "@backButton": {
+    "description": "Label for the back button",
+    "type": "text",
+    "placeholders": {}
+  },
+  "phoneNumber": "Phone Number",
+  "@phoneNumber": {
+    "description": "Label for phone number entry",
+    "type": "text",
+    "placeholders": {}
+  },
+  "phoneSignInFormTitle": "Sign In with Phone",
+  "@phoneSignInFormTitle": {
+    "description": "Title for phone sign-in form",
+    "type": "text",
+    "placeholders": {}
+  }
+}

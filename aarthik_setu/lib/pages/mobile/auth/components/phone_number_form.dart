@@ -1,5 +1,6 @@
 import 'dart:async';
 import 'package:aarthik_setu/global_components/country_code_dropdown.dart';
+import 'package:auto_size_text/auto_size_text.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
@@ -8,6 +9,7 @@ import 'package:logger/logger.dart';
 import 'package:otp_text_field/otp_field.dart';
 import 'package:otp_text_field/style.dart';
 import '../../../../cubit/phone_form_cubit.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
 class PhoneNumberFormMobile extends StatefulWidget {
   const PhoneNumberFormMobile({super.key});
@@ -53,12 +55,14 @@ class _PhoneNumberFormMobileState extends State<PhoneNumberFormMobile> {
 
   @override
   Widget build(BuildContext context) {
+    final localizations = AppLocalizations.of(context);
     return Padding(
       padding: const EdgeInsets.symmetric(horizontal: 30),
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
           Row(
+            mainAxisSize: MainAxisSize.max,
             children: [
               Container(
                 alignment: Alignment.centerLeft,
@@ -73,7 +77,16 @@ class _PhoneNumberFormMobileState extends State<PhoneNumberFormMobile> {
                 ),
               ),
               const SizedBox(width: 10),
-              Text('Phone Sign In', style: GoogleFonts.poppins(fontSize: 30, fontWeight: FontWeight.w400)),
+              SizedBox(
+                width: 230,
+                height: 50,
+                child: Center(
+                  child: AutoSizeText(
+                    localizations!.phoneSignInFormTitle,
+                    style: GoogleFonts.poppins(fontSize: 21, fontWeight: FontWeight.w400),
+                  ),
+                ),
+              ),
             ],
           ),
           const SizedBox(height: 30),
@@ -88,10 +101,10 @@ class _PhoneNumberFormMobileState extends State<PhoneNumberFormMobile> {
                       enabled: !(state as PhoneForm).isOTPSent,
                       validator: (value) {
                         if (value == null || value.isEmpty) {
-                          return 'Please enter phone number';
+                          return localizations.enterPhoneNumber;
                         }
                         if (value.length < 10) {
-                          return 'Please enter a valid phone number';
+                          return localizations.enterValidPhoneNumber;
                         }
                         return null;
                       },
@@ -100,7 +113,7 @@ class _PhoneNumberFormMobileState extends State<PhoneNumberFormMobile> {
                         LengthLimitingTextInputFormatter(10),
                       ],
                       decoration: InputDecoration(
-                        labelText: 'Phone Number',
+                        labelText: localizations.phoneNumber,
                         labelStyle: GoogleFonts.poppins(fontSize: 20),
                         border: const OutlineInputBorder(borderRadius: BorderRadius.all(Radius.circular(10))),
                         constraints: const BoxConstraints(maxWidth: 400),
@@ -137,12 +150,12 @@ class _PhoneNumberFormMobileState extends State<PhoneNumberFormMobile> {
                             style: ButtonStyle(
                               minimumSize: WidgetStateProperty.all(const Size(100, 50)),
                             ),
-                            child: const Text('Send OTP'),
+                            child: Text(localizations.sendOtp),
                           ),
                         if (state.isOTPSent) ...[
-                          const Text('Enter OTP', style: TextStyle(fontSize: 22)),
+                          Text(localizations.enterOtp, style: const TextStyle(fontSize: 22)),
                           const SizedBox(height: 10),
-                          Text('Resend OTP in $_start seconds', style: GoogleFonts.poppins(fontSize: 16)),
+                          Text(localizations.otpExpireIn(_start), style: GoogleFonts.poppins(fontSize: 16)),
                           const SizedBox(height: 40),
                           AnimatedContainer(
                             duration: const Duration(milliseconds: 500),
@@ -157,33 +170,39 @@ class _PhoneNumberFormMobileState extends State<PhoneNumberFormMobile> {
                               textFieldAlignment: MainAxisAlignment.spaceAround,
                               fieldStyle: FieldStyle.box,
                               onCompleted: (otp) {
-                                Logger().i('OTP Received: $otp');
+                                Logger().i(localizations.otpReceived);
                               },
                             ),
                           ),
                           const SizedBox(height: 40),
                           Row(
-                            mainAxisAlignment: MainAxisAlignment.center,
+                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                            mainAxisSize: MainAxisSize.max,
                             children: [
-                              FilledButton.tonal(
-                                onPressed: () {
-                                  _timer?.cancel();
-                                  startOtpTimer();
-                                  // // context.read<PhoneFormCubit>().sendOtp(_phoneController.text);
-                                  //context.read<PhoneFormCubit>().toggleOTPSent();
-                                },
-                                style: ButtonStyle(
-                                  minimumSize: WidgetStateProperty.all(const Size(100, 50)),
+                              SizedBox(
+                                width: 130,
+                                child: FilledButton.tonal(
+                                  onPressed: () {
+                                    _timer?.cancel();
+                                    startOtpTimer();
+                                    // // context.read<PhoneFormCubit>().sendOtp(_phoneController.text);
+                                    //context.read<PhoneFormCubit>().toggleOTPSent();
+                                  },
+                                  style: ButtonStyle(
+                                    minimumSize: WidgetStateProperty.all(const Size(100, 50)),
+                                  ),
+                                  child: Text(localizations.resendOtp),
                                 ),
-                                child: const Text('Resend OTP'),
                               ),
-                              const SizedBox(width: 40),
-                              FilledButton.tonal(
-                                onPressed: _isVerifyButtonEnabled ? () {} : null,
-                                style: ButtonStyle(
-                                  minimumSize: WidgetStateProperty.all(const Size(100, 50)),
+                              SizedBox(
+                                width: 130,
+                                child: FilledButton.tonal(
+                                  onPressed: _isVerifyButtonEnabled ? () {} : null,
+                                  style: ButtonStyle(
+                                    minimumSize: WidgetStateProperty.all(const Size(100, 50)),
+                                  ),
+                                  child: Text(localizations.verifyOtp),
                                 ),
-                                child: const Text('Verify OTP'),
                               ),
                             ],
                           ),
