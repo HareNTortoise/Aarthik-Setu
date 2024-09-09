@@ -30,8 +30,9 @@ class SignInDesktop extends StatelessWidget {
                     flex: 1,
                     child: Center(
                       child: Text(
-                        localizations!.appTitle,
+                        AppLocalizations.of(context)!.appTitle,
                         style: GoogleFonts.jost(fontSize: 120, fontWeight: FontWeight.w400),
+                        textAlign: TextAlign.center,
                       ),
                     ),
                   ),

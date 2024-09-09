@@ -38,6 +38,7 @@ class SignInMobile extends StatelessWidget {
                       Text(
                         AppLocalizations.of(context)!.appTitle,
                         style: GoogleFonts.poppins(fontSize: 55),
+                        textAlign: TextAlign.center,
                       ),
                       const SizedBox(height: 80),
                       BlocBuilder<PhoneFormCubit, PhoneFormState>(
