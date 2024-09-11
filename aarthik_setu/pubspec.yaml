@@ -55,6 +55,8 @@ dependencies:
   icons_plus: ^5.0.0
   line_icons: ^2.0.3
   auto_size_text: ^3.0.0
+  file_picker: ^8.1.2
+  animated_toggle_switch: ^0.8.3
 
 dev_dependencies:
   flutter_test:
