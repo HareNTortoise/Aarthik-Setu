@@ -1,10 +1,10 @@
 import '../../common/bank_details.dart';
-import '../personal_profile/components/manual_itr_personal.dart';
-import 'components/key_person_details.dart';
+import 'components/manual_itr_business.dart';
+import 'components/key_person_details_msme.dart';
 
 class BusinessProfile{
   Map<(int, int), String> itr;
-  Map<(int, int), ManualItrPersonal> manualItr; /// TODO Business ITR
+  Map<(int, int), ManualItrBusiness> manualItr;
   List<BankDetails> bankDetails;
   KeyPersonDetails keyPersonDetails;
 
