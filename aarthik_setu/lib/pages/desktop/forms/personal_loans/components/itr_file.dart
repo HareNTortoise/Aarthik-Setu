@@ -198,7 +198,7 @@ class ItrFile extends StatelessWidget {
                   ),
                 ),
               ),
-              Spacer(),
+              const Spacer(),
               SizedBox(
                 width: 200,
                 height: 50,
