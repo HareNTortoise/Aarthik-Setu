@@ -4,11 +4,11 @@ import 'package:responsive_framework/responsive_framework.dart';
 import '../../../constants/app_constants.dart';
 
 class LoanFormJourneyTemplate extends StatelessWidget {
-  const LoanFormJourneyTemplate({super.key, required this.formTitle, this.formDescription, required this.forms});
+  const LoanFormJourneyTemplate({super.key, required this.formTitle, this.formDescription, required this.formLinks});
 
   final String formTitle;
   final String? formDescription;
-  final List<Widget> forms;
+  final List<Widget> formLinks;
 
   @override
   Widget build(BuildContext context) {
@@ -16,28 +16,33 @@ class LoanFormJourneyTemplate extends StatelessWidget {
       width: AppConstants.desktopScaleWidth,
       child: Scaffold(
         body: Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 100),
-          child: Column(
-            mainAxisSize: MainAxisSize.min,
-            children: [
-              const SizedBox(height: 60),
-              Text(
-                formTitle,
-                style: GoogleFonts.poppins(
-                  fontSize: 80,
-                ),
+          padding: const EdgeInsets.symmetric(horizontal: 0),
+          child: SingleChildScrollView(
+            child: SizedBox(
+              width: double.infinity,
+              child: Column(
+                mainAxisSize: MainAxisSize.min,
+                children: [
+                  const SizedBox(height: 60),
+                  Text(
+                    formTitle,
+                    style: GoogleFonts.poppins(
+                      fontSize: 80,
+                    ),
+                  ),
+                  const SizedBox(height: 40),
+                  SizedBox(
+                    width: double.infinity,
+                    child: Wrap(
+                      runSpacing: 100,
+                      alignment: WrapAlignment.spaceAround,
+                      children: formLinks
+                    ),
+                  ),
+                  const SizedBox(height: 100),
+                ],
               ),
-              const SizedBox(height: 40),
-              SizedBox(
-                height: 800,
-                child: GridView.count(
-                  crossAxisCount: 3,
-                  crossAxisSpacing: 120,
-                  mainAxisSpacing: 120,
-                  children: forms,
-                ),
-              ),
-            ],
+            ),
           ),
         ),
       ),
