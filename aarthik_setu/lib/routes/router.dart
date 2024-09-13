@@ -6,7 +6,7 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 final GoRouter router = GoRouter(
-  initialLocation: '/itr-personal',
+  initialLocation: '/personal-loans',
   routes: [
     GoRoute(
       path: '/',
@@ -17,45 +17,75 @@ final GoRouter router = GoRouter(
       pageBuilder: (context, state) => MaterialPage(
         child: LoanFormJourneyTemplate(
           formTitle: "Auto Loan",
-          forms: [
-            FilledButton.tonal(
-              onPressed: () {},
-              child: Text("Bsic Details", style: GoogleFonts.poppins(fontSize: 40)),
-              style: ButtonStyle(
-                padding: MaterialStateProperty.all(EdgeInsets.all(20)),
-                backgroundColor: MaterialStateProperty.all(Colors.white),
-                foregroundColor: MaterialStateProperty.all(Colors.black),
-                shape: MaterialStateProperty.all(RoundedRectangleBorder(borderRadius: BorderRadius.circular(20))),
+          formLinks: [
+            SizedBox(
+              width: 500,
+              height: 500,
+              child: FilledButton.tonal(
+                onPressed: () {},
+                style: ButtonStyle(
+                  padding: WidgetStateProperty.all(EdgeInsets.all(20)),
+                  backgroundColor: WidgetStateProperty.all(Colors.white),
+                  foregroundColor: WidgetStateProperty.all(Colors.black),
+                  shape: WidgetStateProperty.all(RoundedRectangleBorder(borderRadius: BorderRadius.circular(20))),
+                ),
+                child: Text("Basic Details", style: GoogleFonts.poppins(fontSize: 40)),
               ),
             ),
-            FilledButton.tonal(
-              onPressed: () {},
-              child: Text("Bsic Details", style: GoogleFonts.poppins(fontSize: 40)),
-              style: ButtonStyle(
-                padding: MaterialStateProperty.all(EdgeInsets.all(20)),
-                backgroundColor: MaterialStateProperty.all(Colors.white),
-                foregroundColor: MaterialStateProperty.all(Colors.black),
-                shape: MaterialStateProperty.all(RoundedRectangleBorder(borderRadius: BorderRadius.circular(20))),
+            SizedBox(
+              width: 500,
+              height: 500,
+              child: FilledButton.tonal(
+                onPressed: () {},
+                style: ButtonStyle(
+                  padding: WidgetStateProperty.all(EdgeInsets.all(20)),
+                  backgroundColor: WidgetStateProperty.all(Colors.white),
+                  foregroundColor: WidgetStateProperty.all(Colors.black),
+                  shape: WidgetStateProperty.all(RoundedRectangleBorder(borderRadius: BorderRadius.circular(20))),
+                ),
+                child: Text("Basic Details", style: GoogleFonts.poppins(fontSize: 40)),
               ),
             ),
-            FilledButton.tonal(
-              onPressed: () {},
-              child: Text("Bsic Details", style: GoogleFonts.poppins(fontSize: 40)),
-              style: ButtonStyle(
-                padding: MaterialStateProperty.all(EdgeInsets.all(20)),
-                backgroundColor: MaterialStateProperty.all(Colors.white),
-                foregroundColor: MaterialStateProperty.all(Colors.black),
-                shape: MaterialStateProperty.all(RoundedRectangleBorder(borderRadius: BorderRadius.circular(20))),
+            SizedBox(
+              width: 500,
+              height: 500,
+              child: FilledButton.tonal(
+                onPressed: () {},
+                style: ButtonStyle(
+                  padding: WidgetStateProperty.all(EdgeInsets.all(20)),
+                  backgroundColor: WidgetStateProperty.all(Colors.white),
+                  foregroundColor: WidgetStateProperty.all(Colors.black),
+                  shape: WidgetStateProperty.all(RoundedRectangleBorder(borderRadius: BorderRadius.circular(20))),
+                ),
+                child: Text("Basic Details", style: GoogleFonts.poppins(fontSize: 40)),
               ),
             ),
-            FilledButton.tonal(
-              onPressed: () {},
-              child: Text("Bsic Details", style: GoogleFonts.poppins(fontSize: 40)),
-              style: ButtonStyle(
-                padding: WidgetStateProperty.all(EdgeInsets.all(20)),
-                backgroundColor: WidgetStateProperty.all(Colors.white),
-                foregroundColor: WidgetStateProperty.all(Colors.black),
-                shape: WidgetStateProperty.all(RoundedRectangleBorder(borderRadius: BorderRadius.circular(20))),
+            SizedBox(
+              width: 500,
+              height: 500,
+              child: FilledButton.tonal(
+                onPressed: () {},
+                style: ButtonStyle(
+                  padding: WidgetStateProperty.all(EdgeInsets.all(20)),
+                  backgroundColor: WidgetStateProperty.all(Colors.white),
+                  foregroundColor: WidgetStateProperty.all(Colors.black),
+                  shape: WidgetStateProperty.all(RoundedRectangleBorder(borderRadius: BorderRadius.circular(20))),
+                ),
+                child: Text("Basic Details", style: GoogleFonts.poppins(fontSize: 40)),
+              ),
+            ),
+            SizedBox(
+              width: 500,
+              height: 500,
+              child: FilledButton.tonal(
+                onPressed: () {},
+                style: ButtonStyle(
+                  padding: WidgetStateProperty.all(EdgeInsets.all(20)),
+                  backgroundColor: WidgetStateProperty.all(Colors.white),
+                  foregroundColor: WidgetStateProperty.all(Colors.black),
+                  shape: WidgetStateProperty.all(RoundedRectangleBorder(borderRadius: BorderRadius.circular(20))),
+                ),
+                child: Text("Basic Details", style: GoogleFonts.poppins(fontSize: 40)),
               ),
             ),
           ],
