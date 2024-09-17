@@ -1,5 +1,4 @@
 import 'package:aarthik_setu/constants/colors.dart';
-import 'package:animated_toggle_switch/animated_toggle_switch.dart';
 import 'package:file_picker/file_picker.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_dropzone/flutter_dropzone.dart';

@@ -12,7 +12,6 @@ class ITRFormBusiness extends StatefulWidget {
 }
 
 class _ITRFormBusinessState extends State<ITRFormBusiness> {
-  bool _isManual = true;
   int currentYear = DateTime.now().year;
 
   @override

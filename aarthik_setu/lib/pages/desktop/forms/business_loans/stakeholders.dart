@@ -16,7 +16,6 @@ class StakeholdersForm extends StatefulWidget {
 }
 
 class _StakeholdersFormState extends State<StakeholdersForm> {
-  bool _isManual = true;
   int currentYear = DateTime.now().year;
 
   @override

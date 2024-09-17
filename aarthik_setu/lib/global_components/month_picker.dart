@@ -70,12 +70,12 @@ class MonthPickerButtonState extends State<MonthPickerButton> {
               );
             },
             style: ButtonStyle(
-              shape: MaterialStateProperty.all(
+              shape: WidgetStateProperty.all(
                 RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(10),
                 ),
               ),
-              backgroundColor: MaterialStateProperty.all(
+              backgroundColor: WidgetStateProperty.all(
                 Colors.blue.withOpacity(0.5),
               ),
             ),

@@ -1,9 +1,7 @@
 import 'package:aarthik_setu/global_components/date_picker.dart';
-import 'package:calendar_date_picker2/calendar_date_picker2.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:hexcolor/hexcolor.dart';
-import '../../../../../constants/colors.dart';
 import '../../../../../global_components/labelled_text_field.dart';
 
 class DeclareBusiness extends StatefulWidget {
@@ -14,8 +12,6 @@ class DeclareBusiness extends StatefulWidget {
 }
 
 class _DeclareBusinessState extends State<DeclareBusiness> {
-  DateTime? _incorporationDate;
-
   int currentYear = DateTime.now().year;
 
   @override
