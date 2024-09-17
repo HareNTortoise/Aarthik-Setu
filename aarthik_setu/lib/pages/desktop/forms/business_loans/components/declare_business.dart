@@ -12,6 +12,7 @@ class DeclareBusiness extends StatefulWidget {
 }
 
 class _DeclareBusinessState extends State<DeclareBusiness> {
+  DateTime? _incorporationDate;
   int currentYear = DateTime.now().year;
 
   @override
