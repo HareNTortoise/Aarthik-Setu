@@ -5,7 +5,6 @@ import 'package:animated_toggle_switch/animated_toggle_switch.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:responsive_framework/responsive_framework.dart';
-
 import 'components/itr_manual.dart';
 
 class ITRFormPersonal extends StatefulWidget {
@@ -102,7 +101,7 @@ class _ITRFormPersonalState extends State<ITRFormPersonal> {
                     ),
                   ),
                   const SizedBox(height: 60),
-                  if (!_isManual) ItrFile() else const ItrManual(),
+                  if (!_isManual) const ItrFilePersonal() else const ItrManual(),
                 ],
               ),
             ),
