@@ -6,8 +6,8 @@ import 'package:line_icons/line_icons.dart';
 import 'package:responsive_framework/responsive_framework.dart';
 import '../../../../../constants/colors.dart';
 
-class ItrFile extends StatelessWidget {
-  const ItrFile({super.key});
+class ItrFilePersonal extends StatelessWidget {
+  const ItrFilePersonal({super.key});
 
   @override
   Widget build(BuildContext context) {
