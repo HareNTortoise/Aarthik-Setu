@@ -8,7 +8,9 @@ class LabelledTextField extends StatelessWidget {
   final double fontSize;
   final double width;
   final double height;
-  final FormFieldValidator<String>? validator; // Added validator parameter
+  final FormFieldValidator<String>? validator;
+  final int maxLines;
+  final bool enabled;
 
   const LabelledTextField({
     super.key,
@@ -18,7 +20,9 @@ class LabelledTextField extends StatelessWidget {
     this.fontSize = 18,
     this.width = 300,
     this.height = 25,
-    this.validator, // Added validator to constructor
+    this.validator,
+    this.maxLines = 1,
+    this.enabled = true,
   });
 
   @override
@@ -34,7 +38,9 @@ class LabelledTextField extends StatelessWidget {
         SizedBox(
           width: width,
           child: TextFormField(
+            enabled: enabled,
             controller: controller,
+            maxLines: maxLines,
             decoration: InputDecoration(
               hintText: hintText,
               contentPadding: EdgeInsets.symmetric(vertical: height, horizontal: 20),
