@@ -11,6 +11,7 @@ import (
 	"aarthik-setu/pkg/auth"
 
 	"github.com/gorilla/mux"
+	"github.com/rs/cors"
 )
 
 func main() {
@@ -38,7 +39,17 @@ func main() {
 	// Set up routes
 	routes.SetupAuthRoutes(router, authHandler)
 
+	// Create a CORS wrapper
+	c := cors.New(cors.Options{
+		AllowedOrigins: []string{"*"}, // Be more specific in production
+		AllowedMethods: []string{"GET", "POST", "OPTIONS"},
+		AllowedHeaders: []string{"Content-Type", "Authorization"},
+	})
+
+	// Use the CORS wrapper
+	handler := c.Handler(router)
+
 	// Start the server
 	log.Println("Server starting on http://localhost:8080")
-	log.Fatal(http.ListenAndServe(":8080", router))
+	log.Fatal(http.ListenAndServe(":8080", handler))
 }
