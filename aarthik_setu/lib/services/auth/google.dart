@@ -57,5 +57,5 @@ class GoogleAuth{
     _logger.i("User signed out successfully.");
   }
 
-  static Stream<User?> getCurrentUser() => FirebaseAuth.instance.authStateChanges();
+  Stream<User?> getCurrentUser() => FirebaseAuth.instance.authStateChanges();
 }
