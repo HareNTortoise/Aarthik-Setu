@@ -1,0 +1,103 @@
+{
+  "appTitle": "आर्थिक सेतु",
+  "@appTitle": {
+    "description": "The title of the application",
+    "type": "text",
+    "placeholders": {}
+  },
+  "signIn": "साइन इन करें",
+  "@signIn": {
+    "description": "Button label for signing in",
+    "type": "text",
+    "placeholders": {}
+  },
+  "googleSignIn": "गूगल",
+  "@googleSignIn": {
+    "description": "Label for Google Sign-In",
+    "type": "text",
+    "placeholders": {}
+  },
+  "phoneSignIn": "फोन",
+  "@phoneSignIn": {
+    "description": "Label for Phone Sign-In",
+    "type": "text",
+    "placeholders": {}
+  },
+  "language": "भाषा",
+  "@language": {
+    "description": "Label for language selection",
+    "type": "text",
+    "placeholders": {}
+  },
+  "enterPhoneNumber": "अपना फोन नंबर दर्ज करें",
+  "@enterPhoneNumber": {
+    "description": "Label for phone number entry",
+    "type": "text",
+    "placeholders": {}
+  },
+  "sendOtp": "OTP भेजें",
+  "@sendOtp": {
+    "description": "Button label for sending OTP",
+    "type": "text",
+    "placeholders": {}
+  },
+  "verifyOtp": "OTP सत्यापित करें",
+  "@verifyOtp": {
+    "description": "Button label for verifying OTP",
+    "type": "text",
+    "placeholders": {}
+  },
+  "resendOtp": "OTP पुनः भेजें",
+  "@resendOtp": {
+    "description": "Button label for resending OTP",
+    "type": "text",
+    "placeholders": {}
+  },
+  "otpExpireIn": "OTP {time} सेकंड में समाप्त हो जाएगा",
+  "@otpExpireIn": {
+    "description": "Message showing time left to resend OTP",
+    "type": "text",
+    "placeholders": {
+      "time": {
+        "type": "int",
+        "example": "120"
+      }
+    }
+  },
+  "enterValidPhoneNumber": "कृपया एक वैध फोन नंबर दर्ज करें",
+  "@enterValidPhoneNumber": {
+    "description": "Error message when phone number is invalid",
+    "type": "text",
+    "placeholders": {}
+  },
+  "otpReceived": "OTP प्राप्त हुआ",
+  "@otpReceived": {
+    "description": "Message showing received OTP",
+    "type": "text",
+    "placeholders": {}
+  },
+  "enterOtp": "OTP दर्ज करें",
+  "@enterOtp": {
+    "description": "Label for OTP entry",
+    "type": "text",
+    "placeholders": {}
+  },
+  "backButton": "वापस",
+  "@backButton": {
+    "description": "Label for the back button",
+    "type": "text",
+    "placeholders": {}
+  },
+  "phoneNumber": "फोन नंबर",
+  "@phoneNumber": {
+    "description": "Label for phone number entry",
+    "type": "text",
+    "placeholders": {}
+  },
+  "phoneSignInFormTitle": "फोन साइन इन",
+  "@phoneSignInTitle": {
+    "description": "Title for phone sign-in screen",
+    "type": "text",
+    "placeholders": {}
+  }
+}

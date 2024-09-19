@@ -6,10 +6,14 @@ import 'package:aarthik_setu/services/auth/phone.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:responsive_framework/responsive_framework.dart';
+import 'bloc/l10n/l10n_bloc.dart';
 import 'constants/app_constants.dart';
 import 'cubit/phone_form_cubit.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'firebase_options.dart';
+import 'l10n/l10n.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -37,6 +41,7 @@ class AarthikSetu extends StatelessWidget {
                 phoneAuthServices: RepositoryProvider.of<PhoneAuth>(context)),
           ),
           BlocProvider(create: (context) => PhoneFormCubit()),
+          BlocProvider(create: (context) => L10nBloc()),
         ],
         child: MaterialApp.router(
           title: AppConstants.appName,
@@ -45,6 +50,13 @@ class AarthikSetu extends StatelessWidget {
             useMaterial3: true,
           ),
           routerConfig: router,
+          localizationsDelegates: const [
+            AppLocalizations.delegate,
+            GlobalMaterialLocalizations.delegate,
+            GlobalWidgetsLocalizations.delegate,
+            GlobalCupertinoLocalizations.delegate,
+          ],
+          supportedLocales: L10nAll.all,
           builder: (context, child) => ResponsiveBreakpoints.builder(
             child: child!,
             breakpoints: [

@@ -4,18 +4,24 @@ import 'package:flutter_svg/svg.dart';
 import 'package:google_fonts/google_fonts.dart';
 import '../../../../bloc/auth/auth_bloc.dart';
 import '../../../../cubit/phone_form_cubit.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
 class SignInOptionsDesktop extends StatelessWidget {
   const SignInOptionsDesktop({super.key});
 
   @override
   Widget build(BuildContext context) {
+    final localizations = AppLocalizations.of(context);
+
     return Padding(
       padding: const EdgeInsets.symmetric(horizontal: 70),
       child: Column(
         children: [
           const SizedBox(height: 30),
-          Text('Sign In', style: GoogleFonts.poppins(fontSize: 70, fontWeight: FontWeight.w400)),
+          Text(
+            localizations!.signIn, // Use localized string
+            style: GoogleFonts.poppins(fontSize: 70, fontWeight: FontWeight.w400),
+          ),
           const SizedBox(height: 80),
           OutlinedButton(
             onPressed: () {
@@ -34,7 +40,7 @@ class SignInOptionsDesktop extends StatelessWidget {
                 ),
                 const SizedBox(width: 10),
                 Text(
-                  "Google",
+                  localizations.googleSignIn, // Use localized string
                   style: GoogleFonts.jost(fontSize: 30, color: Colors.black),
                 ),
               ],
@@ -56,7 +62,7 @@ class SignInOptionsDesktop extends StatelessWidget {
                 ),
                 const SizedBox(width: 10),
                 Text(
-                  "Phone",
+                  localizations.phoneSignIn, // Use localized string
                   style: GoogleFonts.jost(fontSize: 30, color: Colors.black),
                 ),
               ],
