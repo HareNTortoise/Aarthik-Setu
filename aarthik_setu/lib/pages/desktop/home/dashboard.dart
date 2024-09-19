@@ -1,3 +1,4 @@
+import 'package:aarthik_setu/pages/desktop/home/components/pending_applications.dart';
 import 'package:aarthik_setu/pages/desktop/home/components/personal_loan_options.dart';
 import 'package:animated_toggle_switch/animated_toggle_switch.dart';
 import 'package:auto_size_text/auto_size_text.dart';
@@ -17,7 +18,7 @@ class DashboardDesktop extends StatefulWidget {
 }
 
 class _DashboardDesktopState extends State<DashboardDesktop> {
-  int _dashboardIndex = 0;
+  int _dashboardIndex = 2;
 
   @override
   Widget build(BuildContext context) {
@@ -120,7 +121,7 @@ class _DashboardDesktopState extends State<DashboardDesktop> {
                       styleBuilder: (i) => ToggleStyle(indicatorColor: Colors.grey[300]),
                       selectedIconScale: 1,
                       onChanged: (i) async {
-                        await Future.delayed(const Duration(seconds: 1));
+                        await Future.delayed(const Duration(milliseconds: 500));
                         setState(() {
                           _dashboardIndex = i;
                         });
@@ -130,29 +131,54 @@ class _DashboardDesktopState extends State<DashboardDesktop> {
                   ),
                   const SizedBox(width: 50),
                   if (_dashboardIndex != 0)
-                  SizedBox(
-                    height: 100,
-                    width: 250,
-                    child: FilledButton.tonal(
-                      onPressed: () {},
-                      style: ButtonStyle(
+                    SizedBox(
+                      height: 100,
+                      width: 250,
+                      child: FilledButton.tonal(
+                        onPressed: () {},
+                        style: ButtonStyle(
                           padding: WidgetStateProperty.all(const EdgeInsets.symmetric(horizontal: 20, vertical: 10)),
                           backgroundColor: WidgetStateProperty.all(Colors.greenAccent[100]),
                           textStyle: WidgetStateProperty.all(const TextStyle(fontSize: 20, color: Colors.white)),
                           shape: WidgetStateProperty.all(
-                              const RoundedRectangleBorder(borderRadius: BorderRadius.all(Radius.circular(35))))),
-                      child: AutoSizeText('Select Personal Profile', style: GoogleFonts.poppins(fontSize: 20), textAlign:   TextAlign.center,),
+                              const RoundedRectangleBorder(borderRadius: BorderRadius.all(Radius.circular(35)))),
+                        ),
+                        child: AutoSizeText(
+                          'Profile',
+                          style: GoogleFonts.poppins(fontSize: 20),
+                          textAlign: TextAlign.center,
+                        ),
+                      ),
                     ),
-                  ),
+                  const SizedBox(width: 50),
+                  if (_dashboardIndex != 0)
+                    SizedBox(
+                      height: 100,
+                      width: 350,
+                      child: FilledButton.tonal(
+                        onPressed: () {
+                          showDialog(context: context, builder: (context) => PendingApplications());
+                        },
+                        style: ButtonStyle(
+                          padding: WidgetStateProperty.all(const EdgeInsets.symmetric(horizontal: 20, vertical: 10)),
+                          backgroundColor: WidgetStateProperty.all(Colors.blue[100]),
+                          textStyle: WidgetStateProperty.all(const TextStyle(fontSize: 20, color: Colors.white)),
+                          shape: WidgetStateProperty.all(
+                              const RoundedRectangleBorder(borderRadius: BorderRadius.all(Radius.circular(35)))),
+                        ),
+                        child: AutoSizeText(
+                          'Pending Applications : 3',
+                          style: GoogleFonts.poppins(fontSize: 20),
+                          textAlign: TextAlign.center,
+                        ),
+                      ),
+                    ),
                 ],
               ),
-              const SizedBox( height: 100,),
-              if (_dashboardIndex == 2)
-              const PersonalLoanOptions(),
-              if (_dashboardIndex == 1)
-              const BusinessLoanOptions(),
-              if (_dashboardIndex == 0)
-              const GovernmentSchemesFinder(),
+              const SizedBox(height: 100),
+              if (_dashboardIndex == 2) const PersonalLoanOptions(),
+              if (_dashboardIndex == 1) const BusinessLoanOptions(),
+              if (_dashboardIndex == 0) const GovernmentSchemesFinder(),
             ],
           ),
         ),
