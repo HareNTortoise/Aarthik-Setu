@@ -16,12 +16,14 @@ import '../pages/desktop/forms/business_loans/loan_form.dart';
 import '../pages/desktop/forms/business_loans/stakeholders.dart';
 import '../pages/desktop/forms/personal_loans/contact_details.dart';
 import '../pages/desktop/forms/personal_loans/employment_details.dart';
+import '../pages/desktop/loading.dart';
 
 final GoRouter router = GoRouter(
   initialLocation: '/',
   routes: [
+    GoRoute(path: '/', pageBuilder: (context, state) => const MaterialPage(child: LoadingPage())),
     GoRoute(
-      path: '/',
+      path: '/sign-in',
       pageBuilder: (context, state) => const MaterialPage(child: SignInPage()),
     ),
     GoRoute(
