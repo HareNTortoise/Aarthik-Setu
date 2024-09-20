@@ -12,13 +12,13 @@ import (
 	authService "aarthik-setu/internal/services"
 	personalServices "aarthik-setu/internal/services/personal"
 
-	businessHandler "aarthik-setu/internal/api/handlers/business"
+	// businessHandler "aarthik-setu/internal/api/handlers/business"
 	businessroutes "aarthik-setu/internal/api/routes/business"
-	businessService "aarthik-setu/internal/services/business"
+	// businessService "aarthik-setu/internal/services/business"
 
 	"aarthik-setu/pkg/auth"
 
-	"cloud.google.com/go/storage"
+	// "cloud.google.com/go/storage"
 	"github.com/gorilla/mux"
 	"github.com/rs/cors"
 )
@@ -48,24 +48,24 @@ func main() {
 		log.Fatalf("Error getting Firestore client: %v\n", err)
 	}
 	log.Println("Firestore client initialized successfully.")
-	storageClient, err := storage.NewClient(context.Background())
+	// storageClient, err := storage.NewClient(context.Background())
 	if err != nil {
 		log.Fatalf("Error getting Storage client: %v\n", err)
 	}
 	log.Println("Storage client initialized successfully.")
-	bucketName := "aarthik-setu.appspot.com"
+	// bucketName := "aarthik-setu.appspot.com"
 	// Initialize services
 	log.Println("Initializing services...")
 	authService := authService.NewAuthService(client)
 	itrService := personalServices.NewITRService(firestoreClient)
-	businessService := businessService.NewITRService(firestoreClient, storageClient, bucketName)
+	// businessService := businessService.NewITRService(firestoreClient, storageClient, bucketName)
 	log.Println("Services initialized successfully.")
 
 	// Initialize handlers
 	log.Println("Initializing handlers...")
 	authHandler := authhandlers.NewAuthHandler(authService)
 	itrHandler := personalhandlers.NewITRHandler(itrService)
-	businessHandler := businessHandler.NewITRHandler(businessService)
+	// businessHandler := businessHandler.NewITRHandler(businessService)
 	log.Println("Handlers initialized successfully.")
 
 	// Set up router
@@ -76,7 +76,8 @@ func main() {
 	log.Println("Setting up routes...")
 	authroutes.SetupAuthRoutes(router, authHandler)
 	personalroutes.SetupITRRoutes(router, itrHandler)
-	businessroutes.SetupBusinessRoutes(router, businessHandler)
+	// businessroutes.SetupBusinessRoutes(router, businessHandler)
+	businessroutes.SetupGSTDetailRoutes(router)
 	log.Println("Routes set up successfully.")
 
 	// Create a CORS wrapper
