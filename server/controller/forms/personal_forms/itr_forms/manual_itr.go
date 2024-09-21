@@ -256,3 +256,5 @@ func UpdateManualITR(c *gin.Context) {
 	}
 	c.JSON(http.StatusOK, gin.H{"message": "ITR form updated successfully"})
 }
+
+// Other CRUD functions (Get, Update, Delete) remain mostly the same, except for updates where you'll bind form-data inputs again like in Create.

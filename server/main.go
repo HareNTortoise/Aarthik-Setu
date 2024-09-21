@@ -12,6 +12,7 @@ func main() {
 
 	// Register ITR form routes
 	personal_forms.RegisterITRRoutes(router)
+	personal_forms.RegisterITRPDFRoutes(router)
 
 	// Start the HTTP server
 	log.Println("Starting server on :8080")

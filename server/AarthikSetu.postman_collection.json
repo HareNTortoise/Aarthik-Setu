@@ -1,0 +1,342 @@
+{
+	"info": {
+		"_postman_id": "5a22b619-9930-403c-9d13-36b19794be6f",
+		"name": "AarthikSetu",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "26603098"
+	},
+	"item": [
+		{
+			"name": "POST_MANUAL_ITR_DETAILS",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "firstName",
+							"value": "Varun",
+							"type": "text"
+						},
+						{
+							"key": "middleName",
+							"value": "Vilva",
+							"type": "text"
+						},
+						{
+							"key": "lastName",
+							"value": "NA",
+							"type": "text"
+						},
+						{
+							"key": "dob",
+							"value": "1990-05-20",
+							"type": "text"
+						},
+						{
+							"key": "pan",
+							"value": "ABCDE1234F",
+							"type": "text"
+						},
+						{
+							"key": "mobile",
+							"value": "9876543210",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "john.doe@example.com",
+							"type": "text"
+						},
+						{
+							"key": "addressLine1",
+							"value": "123 Main St",
+							"type": "text"
+						},
+						{
+							"key": "addressLine2",
+							"value": "Apt 4B",
+							"type": "text"
+						},
+						{
+							"key": "landmark",
+							"value": "Near City Park",
+							"type": "text"
+						},
+						{
+							"key": "country",
+							"value": "India",
+							"type": "text"
+						},
+						{
+							"key": "pinCode",
+							"value": "110001",
+							"type": "text"
+						},
+						{
+							"key": "state",
+							"value": "state",
+							"type": "text"
+						},
+						{
+							"key": "city",
+							"value": "city",
+							"type": "text"
+						},
+						{
+							"key": "village",
+							"value": "village",
+							"type": "text"
+						},
+						{
+							"key": "district",
+							"value": "district",
+							"type": "text"
+						},
+						{
+							"key": "subDistrict",
+							"value": "subdistrict",
+							"type": "text"
+						},
+						{
+							"key": "income_keys",
+							"value": "2020-2021",
+							"type": "text"
+						},
+						{
+							"key": "income_2020-2021",
+							"value": "500000",
+							"type": "text"
+						},
+						{
+							"key": "income_keys",
+							"value": "2021-2022",
+							"type": "text"
+						},
+						{
+							"key": "income_2021-2022",
+							"value": "550000",
+							"type": "text"
+						},
+						{
+							"key": "userId",
+							"value": "mhtwaakyay",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:8080/personal/itr",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"personal",
+						"itr"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PATCH_MANUAL_ITR_DETAILS",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "firstName",
+							"value": "varun",
+							"type": "text"
+						},
+						{
+							"key": "middleName",
+							"value": "Vilva",
+							"type": "text"
+						},
+						{
+							"key": "lastName",
+							"value": "NA",
+							"type": "text"
+						},
+						{
+							"key": "dob",
+							"value": "1990-05-20",
+							"type": "text"
+						},
+						{
+							"key": "pan",
+							"value": "ABCDE1234F",
+							"type": "text"
+						},
+						{
+							"key": "mobile",
+							"value": "9876543210",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "john.doe@example.com",
+							"type": "text"
+						},
+						{
+							"key": "addressLine1",
+							"value": "123 Main St",
+							"type": "text"
+						},
+						{
+							"key": "addressLine2",
+							"value": "Apt 4B",
+							"type": "text"
+						},
+						{
+							"key": "landmark",
+							"value": "Near City Park",
+							"type": "text"
+						},
+						{
+							"key": "country",
+							"value": "India",
+							"type": "text"
+						},
+						{
+							"key": "pinCode",
+							"value": "110001",
+							"type": "text"
+						},
+						{
+							"key": "state",
+							"value": "state",
+							"type": "text"
+						},
+						{
+							"key": "city",
+							"value": "city",
+							"type": "text"
+						},
+						{
+							"key": "village",
+							"value": "village",
+							"type": "text"
+						},
+						{
+							"key": "district",
+							"value": "district",
+							"type": "text"
+						},
+						{
+							"key": "subDistrict",
+							"value": "subdistrict",
+							"type": "text"
+						},
+						{
+							"key": "income_keys",
+							"value": "2020-2021",
+							"type": "text"
+						},
+						{
+							"key": "income_2020-2021",
+							"value": "500000",
+							"type": "text"
+						},
+						{
+							"key": "income_keys",
+							"value": "2021-2022",
+							"type": "text"
+						},
+						{
+							"key": "income_2021-2022",
+							"value": "550000",
+							"type": "text"
+						},
+						{
+							"key": "userId",
+							"value": "mhtwaakyay",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:8080/personal/itr/mhtwaakyay",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"personal",
+						"itr",
+						"mhtwaakyay"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET_MANUAL_ITR_DETAILS",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "text"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/personal/itr/mhtwaakyay",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"personal",
+						"itr",
+						"mhtwaakyay"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST_UPLOAD_ITR_DOCUMENT",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"src": "/home/varunvilva/Downloads/NMF-KNN-v3.pdf"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:8080/personal/upload-itr-document/mhtwaakyay",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"personal",
+						"upload-itr-document",
+						"mhtwaakyay"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
