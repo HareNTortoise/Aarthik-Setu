@@ -8,5 +8,5 @@ import (
 
 // RegisterITRRoutes registers the routes related to ITR forms
 func RegisterITRRoutes(router *gin.Engine) {
-	router.POST("/personal/itr", itr_forms.ManualITRHandler)
+	router.POST("/personal/itr", itr_forms.CreateManualITR)
 }
