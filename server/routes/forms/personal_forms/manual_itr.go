@@ -7,7 +7,7 @@ import (
 )
 
 // RegisterITRRoutes registers the routes related to ITR forms
-func RegisterITRRoutes(router *gin.Engine) {
+func RegisterPersonalITRRoutes(router *gin.Engine) {
 	router.POST("/personal/itr", itr_forms.CreateManualITR)
 	router.GET("/personal/itr/:userId", itr_forms.GetManualITR)
 	router.PATCH("/personal/itr/:userId", itr_forms.UpdateManualITR)

@@ -4,6 +4,8 @@ go 1.22.4
 
 require cloud.google.com/go/storage v1.43.0
 
+require github.com/joho/godotenv v1.5.1 // indirect
+
 require (
 	cloud.google.com/go v0.115.1 // indirect
 	cloud.google.com/go/auth v0.9.3 // indirect

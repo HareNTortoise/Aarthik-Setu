@@ -3,17 +3,22 @@ package main
 import (
 	"log"
 	personal_forms "server/routes/forms/personal_forms"
-
+	business_forms "server/routes/forms/business_forms"
+	"github.com/joho/godotenv"
 	"github.com/gin-gonic/gin"
 )
 
 func main() {
+	err := godotenv.Load()
+	if err != nil {
+		log.Fatal("Error loading .env file")
+	}
 	router := gin.Default()
 
 	// Register ITR form routes
-	personal_forms.RegisterITRRoutes(router)
-	personal_forms.RegisterITRPDFRoutes(router)
-
+	personal_forms.RegisterPersonalITRRoutes(router)
+	personal_forms.RegisterPersonalITRPDFRoutes(router)
+	business_forms.RegisterBusinessITRPDFRoutes(router)
 	// Start the HTTP server
 	log.Println("Starting server on :8080")
 	if err := router.Run(":8080"); err != nil {
