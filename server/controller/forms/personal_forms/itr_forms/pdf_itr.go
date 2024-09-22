@@ -5,66 +5,105 @@ import (
 	"fmt"
 	"io"
 	"log"
-	"mime/multipart"
 	"net/http"
+	"path/filepath"
 	utils "server/config/firebase"
+	"strings"
+	"time"
 
 	"cloud.google.com/go/storage"
 	"github.com/gin-gonic/gin"
 )
 
-// UploadITRDocuments handles the upload of ITR PDF documents without requiring a userId.
 func UploadITRDocuments(c *gin.Context) {
-	// Get the file from the form-data
-	file, err := c.FormFile("file")
-	if err != nil {
-		c.JSON(http.StatusBadRequest, gin.H{"error": "File is required"})
-		log.Println("Error: File not provided in the form")
-		return
-	}
-	log.Println("File received:", file.Filename)
+	log.Println("Starting UploadITRDocuments handler...")
 
-	// Read the file
-	src, err := file.Open()
+	// Get the files from the form-data
+	form, err := c.MultipartForm()
 	if err != nil {
-		c.JSON(http.StatusInternalServerError, gin.H{"error": "Unable to open file"})
-		log.Printf("Error opening file %s: %v\n", file.Filename, err)
+		c.JSON(http.StatusBadRequest, gin.H{"error": "Failed to parse form data"})
+		log.Println("Error: Failed to parse form data:", err)
 		return
 	}
-	defer src.Close()
+	log.Println("Form data parsed successfully")
+
+	files := form.File["itr_documents"]
+	log.Printf("Number of files received: %d\n", len(files))
+
+	if len(files) == 0 {
+		c.JSON(http.StatusBadRequest, gin.H{"error": "At least one file is required"})
+		log.Println("Error: No files provided")
+		return
+	}
+
+	if len(files) > 3 {
+		c.JSON(http.StatusBadRequest, gin.H{"error": "Maximum 3 files can be uploaded"})
+		log.Printf("Error: %d files provided, but only up to 3 are allowed\n", len(files))
+		return
+	}
 
 	// Initialize the Storage client
+	log.Println("Initializing storage client...")
 	storageClient := utils.InitStorage()
 	if storageClient == nil {
 		c.JSON(http.StatusInternalServerError, gin.H{"error": "Failed to initialize storage client"})
 		log.Println("Error: Failed to initialize Firebase storage client")
 		return
 	}
-	log.Println("Storage client initialized")
+	log.Println("Storage client initialized successfully")
 
-	bucketName := "aarthik-setu.appspot.com" // Corrected bucket name
+	bucketName := "aarthik-setu.appspot.com"
+	var uploadedFiles []string
 
-	// Prepare the file name and destination path in storage
-	// Use the filename from the uploaded file directly
-	objectName := fmt.Sprintf("personal_itr_documents/%s", file.Filename)
-	log.Printf("Uploading file %s to bucket %s\n", objectName, bucketName)
+	for idx, file := range files {
+		log.Printf("Processing file %d: %s\n", idx+1, file.Filename)
 
-	// Upload the file to Cloud Storage
-	if err := uploadPDF(storageClient, bucketName, objectName, src); err != nil {
-		c.JSON(http.StatusInternalServerError, gin.H{"error": fmt.Sprintf("Failed to upload file: %v", err)})
-		log.Printf("Error uploading file %s: %v\n", file.Filename, err)
-		return
+		// Check if the file is a PDF
+		if !strings.HasSuffix(strings.ToLower(file.Filename), ".pdf") {
+			c.JSON(http.StatusBadRequest, gin.H{"error": fmt.Sprintf("File %s is not a PDF", file.Filename)})
+			log.Printf("Error: File %s is not a PDF\n", file.Filename)
+			return
+		}
+		log.Printf("File %s is a valid PDF\n", file.Filename)
+
+		// Open the file
+		src, err := file.Open()
+		if err != nil {
+			c.JSON(http.StatusInternalServerError, gin.H{"error": fmt.Sprintf("Unable to open file %s", file.Filename)})
+			log.Printf("Error opening file %s: %v\n", file.Filename, err)
+			return
+		}
+		defer src.Close()
+		log.Printf("Opened file %s successfully\n", file.Filename)
+
+		// Generate a unique filename
+		uniqueFilename := fmt.Sprintf("%d_%s", time.Now().UnixNano(), filepath.Base(file.Filename))
+		objectName := fmt.Sprintf("personal_itr_documents/%s", uniqueFilename)
+		log.Printf("Generated unique filename: %s\n", uniqueFilename)
+
+		// Upload the file
+		log.Printf("Uploading file %s to bucket %s as %s\n", file.Filename, bucketName, objectName)
+		if err := uploadPDF(storageClient, bucketName, objectName, src); err != nil {
+			c.JSON(http.StatusInternalServerError, gin.H{"error": fmt.Sprintf("Failed to upload file %s: %v", file.Filename, err)})
+			log.Printf("Error uploading file %s: %v\n", file.Filename, err)
+			return
+		}
+		log.Printf("File %s uploaded successfully\n", file.Filename)
+
+		// Construct the file URL
+		fileURL := fmt.Sprintf("https://storage.googleapis.com/%s/%s", bucketName, objectName)
+		uploadedFiles = append(uploadedFiles, fileURL)
+		log.Printf("File %s is accessible at: %s\n", file.Filename, fileURL)
 	}
 
-	// Construct the file URL
-	fileURL := fmt.Sprintf("https://storage.googleapis.com/%s/%s", bucketName, objectName)
-	log.Println("File uploaded successfully, accessible at:", fileURL)
-
-	c.JSON(http.StatusOK, gin.H{"message": "File uploaded successfully", "fileURL": fileURL})
+	log.Printf("Successfully uploaded %d file(s)\n", len(uploadedFiles))
+	c.JSON(http.StatusOK, gin.H{
+		"message": fmt.Sprintf("%d file(s) uploaded successfully", len(uploadedFiles)),
+		"files":   uploadedFiles,
+	})
 }
 
-// uploadPDF uploads a PDF file to Cloud Storage
-func uploadPDF(client *storage.Client, bucketName, objectName string, src multipart.File) error {
+func uploadPDF(client *storage.Client, bucketName, objectName string, src io.Reader) error {
 	ctx := context.Background()
 	bucket := client.Bucket(bucketName)
 	object := bucket.Object(objectName)
@@ -72,15 +111,13 @@ func uploadPDF(client *storage.Client, bucketName, objectName string, src multip
 	writer := object.NewWriter(ctx)
 	defer writer.Close()
 
-	// Debug: logging the object upload start
-	log.Printf("Starting file upload: %s\n", objectName)
+	log.Printf("Starting file upload to Cloud Storage: %s\n", objectName)
 
 	if _, err := io.Copy(writer, src); err != nil {
 		log.Printf("Error copying data to Cloud Storage for object %s: %v\n", objectName, err)
 		return err
 	}
 
-	// Debug: logging successful upload
 	log.Printf("File uploaded successfully: %s\n", objectName)
 	return nil
 }
