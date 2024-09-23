@@ -22,8 +22,8 @@ func main() {
 	personal_forms.RegisterPersonalBasicDetails(router)
 	personal_forms.RegisterPersonalEmploymentDetails(router)
 	personal_forms.RegisterPersonalContactDetails(router)
-	// personal_forms.RegisterPersonalCreditInfo(router)
-	// personal_forms.RegisterPersonalLoanForm(router)
+	personal_forms.RegisterPersonalCreditInfo(router)
+	personal_forms.RegisterPersonalLoanForm(router)
 
 	business_forms.RegisterBusinessITRPDFRoutes(router)
 	// Start the HTTP server

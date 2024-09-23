@@ -1206,6 +1206,205 @@
 							"response": []
 						}
 					]
+				},
+				{
+					"name": "CREDIT_INFO",
+					"item": [
+						{
+							"name": "CREDIT_INFO",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "loanType",
+											"value": "Small",
+											"type": "text"
+										},
+										{
+											"key": "lender",
+											"value": "ICICI",
+											"type": "text"
+										},
+										{
+											"key": "sanctionedAmount",
+											"value": "3000",
+											"type": "text"
+										},
+										{
+											"key": "outstandingAmount",
+											"value": "2000",
+											"type": "text"
+										},
+										{
+											"key": "emiAmount",
+											"value": "2",
+											"type": "text"
+										},
+										{
+											"key": "loanType",
+											"value": "Small",
+											"type": "text"
+										},
+										{
+											"key": "lender",
+											"value": "IDBI",
+											"type": "text"
+										},
+										{
+											"key": "sanctionedAmount",
+											"value": "40000",
+											"type": "text"
+										},
+										{
+											"key": "outstandingAmount",
+											"value": "2000",
+											"type": "text"
+										},
+										{
+											"key": "emiAmount",
+											"value": "1000",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "localhost:8080/personal/credit_info/mhtwaakyay",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"personal",
+										"credit_info",
+										"mhtwaakyay"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "CREDIT_INFO",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "loanType",
+											"value": "small",
+											"type": "text"
+										},
+										{
+											"key": "lender",
+											"value": "ICICI",
+											"type": "text"
+										},
+										{
+											"key": "sanctionedAmount",
+											"value": "3000",
+											"type": "text"
+										},
+										{
+											"key": "outstandingAmount",
+											"value": "2000",
+											"type": "text"
+										},
+										{
+											"key": "emiAmount",
+											"value": "2",
+											"type": "text"
+										},
+										{
+											"key": "loanType",
+											"value": "Small",
+											"type": "text"
+										},
+										{
+											"key": "lender",
+											"value": "IDBI",
+											"type": "text"
+										},
+										{
+											"key": "sanctionedAmount",
+											"value": "40000",
+											"type": "text"
+										},
+										{
+											"key": "outstandingAmount",
+											"value": "2000",
+											"type": "text"
+										},
+										{
+											"key": "emiAmount",
+											"value": "1000",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "localhost:8080/personal/credit_info/mhtwaakyay",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"personal",
+										"credit_info",
+										"mhtwaakyay"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "CREDIT_INFO",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": []
+								},
+								"url": {
+									"raw": "localhost:8080/personal/credit_info/mhtwaakyay",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"personal",
+										"credit_info",
+										"mhtwaakyay"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "CREDIT_INFO",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8080/personal/credit_info/mhtwaakyay",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"personal",
+										"credit_info",
+										"mhtwaakyay"
+									]
+								}
+							},
+							"response": []
+						}
+					]
 				}
 			]
 		},
