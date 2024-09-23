@@ -7,13 +7,368 @@
 	},
 	"item": [
 		{
-			"name": "PERSONAL_ITR_FROMS",
+			"name": "PERSONAL FORMS",
 			"item": [
 				{
-					"name": "Manual",
+					"name": "ITR_FROMS",
 					"item": [
 						{
-							"name": "POST_MANUAL_ITR_DETAILS",
+							"name": "Manual",
+							"item": [
+								{
+									"name": "POST_MANUAL_ITR_DETAILS",
+									"request": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "formdata",
+											"formdata": [
+												{
+													"key": "firstName",
+													"value": "Varun",
+													"type": "text"
+												},
+												{
+													"key": "middleName",
+													"value": "Vilva",
+													"type": "text"
+												},
+												{
+													"key": "lastName",
+													"value": "NA",
+													"type": "text"
+												},
+												{
+													"key": "dob",
+													"value": "1990-05-20",
+													"type": "text"
+												},
+												{
+													"key": "pan",
+													"value": "ABCDE1234F",
+													"type": "text"
+												},
+												{
+													"key": "mobile",
+													"value": "9876543210",
+													"type": "text"
+												},
+												{
+													"key": "email",
+													"value": "john.doe@example.com",
+													"type": "text"
+												},
+												{
+													"key": "addressLine1",
+													"value": "123 Main St",
+													"type": "text"
+												},
+												{
+													"key": "addressLine2",
+													"value": "Apt 4B",
+													"type": "text"
+												},
+												{
+													"key": "landmark",
+													"value": "Near City Park",
+													"type": "text"
+												},
+												{
+													"key": "country",
+													"value": "India",
+													"type": "text"
+												},
+												{
+													"key": "pinCode",
+													"value": "110001",
+													"type": "text"
+												},
+												{
+													"key": "state",
+													"value": "state",
+													"type": "text"
+												},
+												{
+													"key": "city",
+													"value": "city",
+													"type": "text"
+												},
+												{
+													"key": "village",
+													"value": "village",
+													"type": "text"
+												},
+												{
+													"key": "district",
+													"value": "district",
+													"type": "text"
+												},
+												{
+													"key": "subDistrict",
+													"value": "subdistrict",
+													"type": "text"
+												},
+												{
+													"key": "income_keys",
+													"value": "2020-2021",
+													"type": "text"
+												},
+												{
+													"key": "income_2020-2021",
+													"value": "500000",
+													"type": "text"
+												},
+												{
+													"key": "income_keys",
+													"value": "2021-2022",
+													"type": "text"
+												},
+												{
+													"key": "income_2021-2022",
+													"value": "550000",
+													"type": "text"
+												},
+												{
+													"key": "userId",
+													"value": "mhtwaakyay",
+													"type": "text"
+												}
+											]
+										},
+										"url": {
+											"raw": "localhost:8080/personal/itr",
+											"host": [
+												"localhost"
+											],
+											"port": "8080",
+											"path": [
+												"personal",
+												"itr"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "PATCH_MANUAL_ITR_DETAILS",
+									"request": {
+										"method": "PATCH",
+										"header": [],
+										"body": {
+											"mode": "formdata",
+											"formdata": [
+												{
+													"key": "firstName",
+													"value": "varun",
+													"type": "text"
+												},
+												{
+													"key": "middleName",
+													"value": "Vilva",
+													"type": "text"
+												},
+												{
+													"key": "lastName",
+													"value": "NA",
+													"type": "text"
+												},
+												{
+													"key": "dob",
+													"value": "1990-05-20",
+													"type": "text"
+												},
+												{
+													"key": "pan",
+													"value": "ABCDE1234F",
+													"type": "text"
+												},
+												{
+													"key": "mobile",
+													"value": "9876543210",
+													"type": "text"
+												},
+												{
+													"key": "email",
+													"value": "john.doe@example.com",
+													"type": "text"
+												},
+												{
+													"key": "addressLine1",
+													"value": "123 Main St",
+													"type": "text"
+												},
+												{
+													"key": "addressLine2",
+													"value": "Apt 4B",
+													"type": "text"
+												},
+												{
+													"key": "landmark",
+													"value": "Near City Park",
+													"type": "text"
+												},
+												{
+													"key": "country",
+													"value": "India",
+													"type": "text"
+												},
+												{
+													"key": "pinCode",
+													"value": "110001",
+													"type": "text"
+												},
+												{
+													"key": "state",
+													"value": "state",
+													"type": "text"
+												},
+												{
+													"key": "city",
+													"value": "city",
+													"type": "text"
+												},
+												{
+													"key": "village",
+													"value": "village",
+													"type": "text"
+												},
+												{
+													"key": "district",
+													"value": "district",
+													"type": "text"
+												},
+												{
+													"key": "subDistrict",
+													"value": "subdistrict",
+													"type": "text"
+												},
+												{
+													"key": "income_keys",
+													"value": "2020-2021",
+													"type": "text"
+												},
+												{
+													"key": "income_2020-2021",
+													"value": "500000",
+													"type": "text"
+												},
+												{
+													"key": "income_keys",
+													"value": "2021-2022",
+													"type": "text"
+												},
+												{
+													"key": "income_2021-2022",
+													"value": "550000",
+													"type": "text"
+												},
+												{
+													"key": "userId",
+													"value": "mhtwaakyay",
+													"type": "text",
+													"disabled": true
+												}
+											]
+										},
+										"url": {
+											"raw": "localhost:8080/personal/itr/mhtwaakyay",
+											"host": [
+												"localhost"
+											],
+											"port": "8080",
+											"path": [
+												"personal",
+												"itr",
+												"mhtwaakyay"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "GET_MANUAL_ITR_DETAILS",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"method": "GET",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "",
+											"options": {
+												"raw": {
+													"language": "text"
+												}
+											}
+										},
+										"url": {
+											"raw": "localhost:8080/personal/itr/mhtwaakyay",
+											"host": [
+												"localhost"
+											],
+											"port": "8080",
+											"path": [
+												"personal",
+												"itr",
+												"mhtwaakyay"
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						},
+						{
+							"name": "PDF_UPLOAD",
+							"item": [
+								{
+									"name": "POST_UPLOAD_ITR_DOCUMENT",
+									"request": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "formdata",
+											"formdata": [
+												{
+													"key": "itr_documents",
+													"type": "file",
+													"src": [
+														"C:\\Users\\Varun\\Downloads\\CS461_202151195_VarunVivadrinath_lab2.pdf",
+														"C:\\Users\\Varun\\Downloads\\1_merged.pdf"
+													]
+												},
+												{
+													"key": "file_2022",
+													"value": "",
+													"type": "file"
+												}
+											]
+										},
+										"url": {
+											"raw": "localhost:8080/personal/upload-itr-document/mhtwaakyay",
+											"host": [
+												"localhost"
+											],
+											"port": "8080",
+											"path": [
+												"personal",
+												"upload-itr-document",
+												"mhtwaakyay"
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "BANK_DETAILS",
+					"item": [
+						{
+							"name": "BANK_DETAILS",
 							"request": {
 								"method": "POST",
 								"header": [],
@@ -21,261 +376,46 @@
 									"mode": "formdata",
 									"formdata": [
 										{
-											"key": "firstName",
-											"value": "Varun",
+											"key": "bank_name",
+											"value": "HDFC",
 											"type": "text"
 										},
 										{
-											"key": "middleName",
-											"value": "Vilva",
+											"key": "joining_month",
+											"value": "May",
 											"type": "text"
 										},
 										{
-											"key": "lastName",
-											"value": "NA",
+											"key": "joining_year",
+											"value": "2024",
 											"type": "text"
 										},
 										{
-											"key": "dob",
-											"value": "1990-05-20",
+											"key": "bank_name",
+											"value": "ICICI",
 											"type": "text"
 										},
 										{
-											"key": "pan",
-											"value": "ABCDE1234F",
+											"key": "joining_month",
+											"value": "April",
 											"type": "text"
 										},
 										{
-											"key": "mobile",
-											"value": "9876543210",
-											"type": "text"
-										},
-										{
-											"key": "email",
-											"value": "john.doe@example.com",
-											"type": "text"
-										},
-										{
-											"key": "addressLine1",
-											"value": "123 Main St",
-											"type": "text"
-										},
-										{
-											"key": "addressLine2",
-											"value": "Apt 4B",
-											"type": "text"
-										},
-										{
-											"key": "landmark",
-											"value": "Near City Park",
-											"type": "text"
-										},
-										{
-											"key": "country",
-											"value": "India",
-											"type": "text"
-										},
-										{
-											"key": "pinCode",
-											"value": "110001",
-											"type": "text"
-										},
-										{
-											"key": "state",
-											"value": "state",
-											"type": "text"
-										},
-										{
-											"key": "city",
-											"value": "city",
-											"type": "text"
-										},
-										{
-											"key": "village",
-											"value": "village",
-											"type": "text"
-										},
-										{
-											"key": "district",
-											"value": "district",
-											"type": "text"
-										},
-										{
-											"key": "subDistrict",
-											"value": "subdistrict",
-											"type": "text"
-										},
-										{
-											"key": "income_keys",
-											"value": "2020-2021",
-											"type": "text"
-										},
-										{
-											"key": "income_2020-2021",
-											"value": "500000",
-											"type": "text"
-										},
-										{
-											"key": "income_keys",
-											"value": "2021-2022",
-											"type": "text"
-										},
-										{
-											"key": "income_2021-2022",
-											"value": "550000",
-											"type": "text"
-										},
-										{
-											"key": "userId",
-											"value": "mhtwaakyay",
+											"key": "joining_year",
+											"value": "2013",
 											"type": "text"
 										}
 									]
 								},
 								"url": {
-									"raw": "localhost:8080/personal/itr",
+									"raw": "localhost:8080/personal/bank_details/mhtwaakyay",
 									"host": [
 										"localhost"
 									],
 									"port": "8080",
 									"path": [
 										"personal",
-										"itr"
-									]
-								}
-							},
-							"response": []
-						},
-						{
-							"name": "PATCH_MANUAL_ITR_DETAILS",
-							"request": {
-								"method": "PATCH",
-								"header": [],
-								"body": {
-									"mode": "formdata",
-									"formdata": [
-										{
-											"key": "firstName",
-											"value": "varun",
-											"type": "text"
-										},
-										{
-											"key": "middleName",
-											"value": "Vilva",
-											"type": "text"
-										},
-										{
-											"key": "lastName",
-											"value": "NA",
-											"type": "text"
-										},
-										{
-											"key": "dob",
-											"value": "1990-05-20",
-											"type": "text"
-										},
-										{
-											"key": "pan",
-											"value": "ABCDE1234F",
-											"type": "text"
-										},
-										{
-											"key": "mobile",
-											"value": "9876543210",
-											"type": "text"
-										},
-										{
-											"key": "email",
-											"value": "john.doe@example.com",
-											"type": "text"
-										},
-										{
-											"key": "addressLine1",
-											"value": "123 Main St",
-											"type": "text"
-										},
-										{
-											"key": "addressLine2",
-											"value": "Apt 4B",
-											"type": "text"
-										},
-										{
-											"key": "landmark",
-											"value": "Near City Park",
-											"type": "text"
-										},
-										{
-											"key": "country",
-											"value": "India",
-											"type": "text"
-										},
-										{
-											"key": "pinCode",
-											"value": "110001",
-											"type": "text"
-										},
-										{
-											"key": "state",
-											"value": "state",
-											"type": "text"
-										},
-										{
-											"key": "city",
-											"value": "city",
-											"type": "text"
-										},
-										{
-											"key": "village",
-											"value": "village",
-											"type": "text"
-										},
-										{
-											"key": "district",
-											"value": "district",
-											"type": "text"
-										},
-										{
-											"key": "subDistrict",
-											"value": "subdistrict",
-											"type": "text"
-										},
-										{
-											"key": "income_keys",
-											"value": "2020-2021",
-											"type": "text"
-										},
-										{
-											"key": "income_2020-2021",
-											"value": "500000",
-											"type": "text"
-										},
-										{
-											"key": "income_keys",
-											"value": "2021-2022",
-											"type": "text"
-										},
-										{
-											"key": "income_2021-2022",
-											"value": "550000",
-											"type": "text"
-										},
-										{
-											"key": "userId",
-											"value": "mhtwaakyay",
-											"type": "text",
-											"disabled": true
-										}
-									]
-								},
-								"url": {
-									"raw": "localhost:8080/personal/itr/mhtwaakyay",
-									"host": [
-										"localhost"
-									],
-									"port": "8080",
-									"path": [
-										"personal",
-										"itr",
+										"bank_details",
 										"mhtwaakyay"
 									]
 								}
@@ -283,7 +423,77 @@
 							"response": []
 						},
 						{
-							"name": "GET_MANUAL_ITR_DETAILS",
+							"name": "BANK_DETAILS",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "bank_name",
+											"value": "HDFC",
+											"type": "text"
+										},
+										{
+											"key": "joining_month",
+											"value": "May",
+											"type": "text"
+										},
+										{
+											"key": "joining_year",
+											"value": "2024",
+											"type": "text"
+										},
+										{
+											"key": "bank_name",
+											"value": "ICICI",
+											"type": "text"
+										},
+										{
+											"key": "joining_month",
+											"value": "April",
+											"type": "text"
+										},
+										{
+											"key": "joining_year",
+											"value": "2012",
+											"type": "text"
+										},
+										{
+											"key": "bank_name",
+											"value": "Bank of Maharashtra",
+											"type": "text"
+										},
+										{
+											"key": "joining_month",
+											"value": "June",
+											"type": "text"
+										},
+										{
+											"key": "joining_year",
+											"value": "2010",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "localhost:8080/personal/bank_details/mhtwaakyay",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"personal",
+										"bank_details",
+										"mhtwaakyay"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "BANK_DETAILS",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
@@ -291,66 +501,69 @@
 								"method": "GET",
 								"header": [],
 								"body": {
-									"mode": "raw",
-									"raw": "",
-									"options": {
-										"raw": {
-											"language": "text"
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "bank_name",
+											"value": "HDFC",
+											"type": "text"
+										},
+										{
+											"key": "joining_month",
+											"value": "May",
+											"type": "text"
+										},
+										{
+											"key": "joining_year",
+											"value": "2024",
+											"type": "text"
+										},
+										{
+											"key": "bank_name",
+											"value": "ICICI",
+											"type": "text"
+										},
+										{
+											"key": "joining_month",
+											"value": "April",
+											"type": "text"
+										},
+										{
+											"key": "joining_year",
+											"value": "2013",
+											"type": "text"
 										}
-									}
+									]
 								},
 								"url": {
-									"raw": "localhost:8080/personal/itr/mhtwaakyay",
+									"raw": "localhost:8080/personal/bank_details/mhtwaakyay",
 									"host": [
 										"localhost"
 									],
 									"port": "8080",
 									"path": [
 										"personal",
-										"itr",
+										"bank_details",
 										"mhtwaakyay"
 									]
 								}
 							},
 							"response": []
-						}
-					]
-				},
-				{
-					"name": "PDF_UPLOAD",
-					"item": [
+						},
 						{
-							"name": "POST_UPLOAD_ITR_DOCUMENT",
+							"name": "BANK_DETAILS",
 							"request": {
-								"method": "POST",
+								"method": "DELETE",
 								"header": [],
-								"body": {
-									"mode": "formdata",
-									"formdata": [
-										{
-											"key": "itr_documents",
-											"type": "file",
-											"src": [
-												"C:\\Users\\Varun\\Downloads\\CS461_202151195_VarunVivadrinath_lab2.pdf",
-												"C:\\Users\\Varun\\Downloads\\1_merged.pdf"
-											]
-										},
-										{
-											"key": "file_2022",
-											"value": "",
-											"type": "file"
-										}
-									]
-								},
 								"url": {
-									"raw": "localhost:8080/personal/upload-itr-document/mhtwaakyay",
+									"raw": "localhost:8080/personal/bank_details/mhtwaakyay",
 									"host": [
 										"localhost"
 									],
 									"port": "8080",
 									"path": [
 										"personal",
-										"upload-itr-document",
+										"bank_details",
 										"mhtwaakyay"
 									]
 								}
@@ -362,43 +575,48 @@
 			]
 		},
 		{
-			"name": "BUSINESS_ITR_FORMS",
+			"name": "BUSINESS FORMS",
 			"item": [
 				{
-					"name": "PDF_UPLOAD",
+					"name": "ITR_FORMS",
 					"item": [
 						{
-							"name": "POST_UPLOAD_ITR_DOCUMENT",
-							"request": {
-								"method": "POST",
-								"header": [],
-								"body": {
-									"mode": "formdata",
-									"formdata": [
-										{
-											"key": "itr_documents",
-											"type": "file",
-											"src": [
-												"C:\\Users\\Varun\\Downloads\\10000927-Resume-Master-22F1000553-2024-08-10-2.pdf",
-												"C:\\Users\\Varun\\Downloads\\1_merged.pdf"
+							"name": "PDF_UPLOAD",
+							"item": [
+								{
+									"name": "POST_UPLOAD_ITR_DOCUMENT",
+									"request": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "formdata",
+											"formdata": [
+												{
+													"key": "itr_documents",
+													"type": "file",
+													"src": [
+														"C:\\Users\\Varun\\Downloads\\10000927-Resume-Master-22F1000553-2024-08-10-2.pdf",
+														"C:\\Users\\Varun\\Downloads\\1_merged.pdf"
+													]
+												}
+											]
+										},
+										"url": {
+											"raw": "localhost:8080/business/upload-itr-document/mhtwaakyay",
+											"host": [
+												"localhost"
+											],
+											"port": "8080",
+											"path": [
+												"business",
+												"upload-itr-document",
+												"mhtwaakyay"
 											]
 										}
-									]
-								},
-								"url": {
-									"raw": "localhost:8080/business/upload-itr-document/mhtwaakyay",
-									"host": [
-										"localhost"
-									],
-									"port": "8080",
-									"path": [
-										"business",
-										"upload-itr-document",
-										"mhtwaakyay"
-									]
+									},
+									"response": []
 								}
-							},
-							"response": []
+							]
 						}
 					]
 				}

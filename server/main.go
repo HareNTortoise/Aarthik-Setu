@@ -18,6 +18,13 @@ func main() {
 	// Register ITR form routes
 	personal_forms.RegisterPersonalITRRoutes(router)
 	personal_forms.RegisterPersonalITRPDFRoutes(router)
+	personal_forms.RegisterPersonalBankDetails(router)
+	// personal_forms.RegisterPersonalBasicDetails(router)
+	// personal_forms.RegisterPersonalEmploymentDetails(router)
+	// personal_forms.RegisterPersonalContactDetails(router)
+	// personal_forms.RegisterPersonalCreditInfo(router)
+	// personal_forms.RegisterPersonalLoanForm(router)
+
 	business_forms.RegisterBusinessITRPDFRoutes(router)
 	// Start the HTTP server
 	log.Println("Starting server on :8080")
