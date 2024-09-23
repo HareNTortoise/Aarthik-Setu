@@ -571,6 +571,641 @@
 							"response": []
 						}
 					]
+				},
+				{
+					"name": "BASIC DETAILS",
+					"item": [
+						{
+							"name": "BASIC_DETAILS",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "salutation",
+											"value": "Mr.",
+											"type": "text"
+										},
+										{
+											"key": "firstName",
+											"value": "John",
+											"type": "text"
+										},
+										{
+											"key": "middleName",
+											"value": "",
+											"type": "text"
+										},
+										{
+											"key": "lastName",
+											"value": "Doe",
+											"type": "text"
+										},
+										{
+											"key": "dob",
+											"value": "2003-02-01",
+											"type": "text"
+										},
+										{
+											"key": "pan",
+											"value": "ABCD1234E",
+											"type": "text"
+										},
+										{
+											"key": "gender",
+											"value": "Male",
+											"type": "text"
+										},
+										{
+											"key": "category",
+											"value": "General",
+											"type": "text"
+										},
+										{
+											"key": "mobile",
+											"value": "1234567890",
+											"type": "text"
+										},
+										{
+											"key": "telephone",
+											"value": "0987654321",
+											"type": "text"
+										},
+										{
+											"key": "emailPersonal",
+											"value": "john.doe@example.com",
+											"type": "text"
+										},
+										{
+											"key": "fatherName",
+											"value": "Richard Doe",
+											"type": "text"
+										},
+										{
+											"key": "educationQualification",
+											"value": "Bachelors",
+											"type": "text"
+										},
+										{
+											"key": "netWorth",
+											"value": "100000.00",
+											"type": "text"
+										},
+										{
+											"key": "nationality",
+											"value": "American",
+											"type": "text"
+										},
+										{
+											"key": "dependent",
+											"value": "None",
+											"type": "text"
+										},
+										{
+											"key": "maritalStatus",
+											"value": "Single",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "localhost:8080/personal/basic_details/mhtwaakyay",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"personal",
+										"basic_details",
+										"mhtwaakyay"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "BASIC_DETAILS",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "salutation",
+											"value": "Mr.",
+											"type": "text"
+										},
+										{
+											"key": "firstName",
+											"value": "John",
+											"type": "text"
+										},
+										{
+											"key": "middleName",
+											"value": "",
+											"type": "text"
+										},
+										{
+											"key": "lastName",
+											"value": "Doe",
+											"type": "text"
+										},
+										{
+											"key": "dob",
+											"value": "2003-02-01",
+											"type": "text"
+										},
+										{
+											"key": "pan",
+											"value": "ABCD1234E",
+											"type": "text"
+										},
+										{
+											"key": "gender",
+											"value": "Male",
+											"type": "text"
+										},
+										{
+											"key": "category",
+											"value": "General",
+											"type": "text"
+										},
+										{
+											"key": "mobile",
+											"value": "1234567890",
+											"type": "text"
+										},
+										{
+											"key": "telephone",
+											"value": "0987654321",
+											"type": "text"
+										},
+										{
+											"key": "emailPersonal",
+											"value": "john.doe@example.com",
+											"type": "text"
+										},
+										{
+											"key": "fatherName",
+											"value": "Richard Doe",
+											"type": "text"
+										},
+										{
+											"key": "educationQualification",
+											"value": "Bachelors",
+											"type": "text"
+										},
+										{
+											"key": "netWorth",
+											"value": "100000.00",
+											"type": "text"
+										},
+										{
+											"key": "nationality",
+											"value": "American",
+											"type": "text"
+										},
+										{
+											"key": "dependent",
+											"value": "None",
+											"type": "text"
+										},
+										{
+											"key": "maritalStatus",
+											"value": "Single",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "localhost:8080/personal/basic_details/mhtwaakyay",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"personal",
+										"basic_details",
+										"mhtwaakyay"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "BASIC_DETAILS",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8080/personal/basic_details/mhtwaakyay",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"personal",
+										"basic_details",
+										"mhtwaakyay"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "BASIC_DETAILS",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "localhost:8080/personal/basic_details/mhtwaakyay",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"personal",
+										"basic_details",
+										"mhtwaakyay"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "EMPLOYMENT DETAILS",
+					"item": [
+						{
+							"name": "EMPLOYMENT_DETAILS",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "employmentType",
+											"value": "service",
+											"type": "text"
+										},
+										{
+											"key": "employerStatus",
+											"value": "None",
+											"type": "text"
+										},
+										{
+											"key": "designation",
+											"value": "manager",
+											"type": "text"
+										},
+										{
+											"key": "modeOfSalary",
+											"value": "direct",
+											"type": "text"
+										},
+										{
+											"key": "grossMonthlyIncome",
+											"value": "80000",
+											"type": "text"
+										},
+										{
+											"key": "netMonthlyIncome",
+											"value": "80000",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "localhost:8080/personal/employment_details/mhtwaakyay",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"personal",
+										"employment_details",
+										"mhtwaakyay"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "EMPLOYMENT_DETAILS",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "employmentType",
+											"value": "service",
+											"type": "text"
+										},
+										{
+											"key": "employerStatus",
+											"value": "None",
+											"type": "text"
+										},
+										{
+											"key": "designation",
+											"value": "manager",
+											"type": "text"
+										},
+										{
+											"key": "modeOfSalary",
+											"value": "direct",
+											"type": "text"
+										},
+										{
+											"key": "grossMonthlyIncome",
+											"value": "80000",
+											"type": "text"
+										},
+										{
+											"key": "netMonthlyIncome",
+											"value": "80000",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "localhost:8080/personal/employment_details/mhtwaakyay",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"personal",
+										"employment_details",
+										"mhtwaakyay"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "EMPLOYMENT_DETAILS",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "localhost:8080/personal/employment_details/mhtwaakyay",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"personal",
+										"employment_details",
+										"mhtwaakyay"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "EMPLOYMENT_DETAILS",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8080/personal/employment_details/mhtwaakyay",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"personal",
+										"employment_details",
+										"mhtwaakyay"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "CONTACT_DETAILS",
+					"item": [
+						{
+							"name": "CONTACT_DETAILS",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "premisesName",
+											"value": "Greenwood Apartments",
+											"type": "text"
+										},
+										{
+											"key": "streetName",
+											"value": "Baker Street",
+											"type": "text"
+										},
+										{
+											"key": "landmark",
+											"value": "Near Central Park",
+											"type": "text"
+										},
+										{
+											"key": "country",
+											"value": "USA",
+											"type": "text"
+										},
+										{
+											"key": "state",
+											"value": "California",
+											"type": "text"
+										},
+										{
+											"key": "city",
+											"value": "Los Angeles",
+											"type": "text"
+										},
+										{
+											"key": "pinCode",
+											"value": "90001",
+											"type": "text"
+										},
+										{
+											"key": "village",
+											"value": "N/A",
+											"type": "text"
+										},
+										{
+											"key": "district",
+											"value": "Los Angeles County",
+											"type": "text"
+										},
+										{
+											"key": "subDistrict",
+											"value": "West Los Angeles",
+											"type": "text"
+										},
+										{
+											"key": "typeOfResidence",
+											"value": "Apartment",
+											"type": "text"
+										},
+										{
+											"key": "residenceSince",
+											"value": "2020-01-15",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "localhost:8080/personal/contact_details/mhtwaakyay",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"personal",
+										"contact_details",
+										"mhtwaakyay"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "CONTACT_DETAILS",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "premisesName",
+											"value": "Greenwood Apartments CHS",
+											"type": "text"
+										},
+										{
+											"key": "streetName",
+											"value": "Baker Street",
+											"type": "text"
+										},
+										{
+											"key": "landmark",
+											"value": "Near Central Park",
+											"type": "text"
+										},
+										{
+											"key": "country",
+											"value": "USA",
+											"type": "text"
+										},
+										{
+											"key": "state",
+											"value": "California",
+											"type": "text"
+										},
+										{
+											"key": "city",
+											"value": "Los Angeles",
+											"type": "text"
+										},
+										{
+											"key": "pinCode",
+											"value": "90001",
+											"type": "text"
+										},
+										{
+											"key": "village",
+											"value": "N/A",
+											"type": "text"
+										},
+										{
+											"key": "district",
+											"value": "Los Angeles County",
+											"type": "text"
+										},
+										{
+											"key": "subDistrict",
+											"value": "West Los Angeles",
+											"type": "text"
+										},
+										{
+											"key": "typeOfResidence",
+											"value": "Apartment",
+											"type": "text"
+										},
+										{
+											"key": "residenceSince",
+											"value": "2020-01-15",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "localhost:8080/personal/contact_details/mhtwaakyay",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"personal",
+										"contact_details",
+										"mhtwaakyay"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "CONTACT_DETAILS",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "localhost:8080/personal/contact_details/mhtwaakyay",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"personal",
+										"contact_details",
+										"mhtwaakyay"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "CONTACT_DETAILS",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8080/personal/contact_details/mhtwaakyay",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"personal",
+										"contact_details",
+										"mhtwaakyay"
+									]
+								}
+							},
+							"response": []
+						}
+					]
 				}
 			]
 		},
