@@ -28,8 +28,17 @@ func CreateEmploymentDetail(c *gin.Context) {
 	employmentDetail.GrossMonthlyIncome = c.PostForm("grossMonthlyIncome")
 	employmentDetail.NetMonthlyIncome = c.PostForm("netMonthlyIncome")
 
+	employmentDetailMap := map[string]interface{}{
+		"employment_type":      employmentDetail.EmploymentType,
+		"employer_status":      employmentDetail.EmployerStatus,
+		"designation":          employmentDetail.Designation,
+		"mode_of_salary":       employmentDetail.ModeOfSalary,
+		"gross_monthly_income": employmentDetail.GrossMonthlyIncome,
+		"net_monthly_income":   employmentDetail.NetMonthlyIncome,
+	}
+
 	ctx := context.Background()
-	_, err := client.Collection("employment_details").Doc(userID).Set(ctx, employmentDetail)
+	_, err := client.Collection("employment_details").Doc(userID).Set(ctx, employmentDetailMap)
 	if err != nil {
 		c.JSON(http.StatusInternalServerError, gin.H{"error": "Failed to create employment detail", "details": err.Error()})
 		return
@@ -53,14 +62,20 @@ func GetEmploymentDetail(c *gin.Context) {
 		return
 	}
 
-	var employmentDetail model.EmploymentDetail
-	if err := doc.DataTo(&employmentDetail); err != nil {
-		c.JSON(http.StatusInternalServerError, gin.H{"error": "Failed to parse employment detail", "details": err.Error()})
-		return
+	// Use a map to manually assign the values
+	data := doc.Data()
+	employmentDetail := map[string]interface{}{
+		"employment_type":     data["employment_type"],
+		"employer_status":     data["employer_status"],
+		"designation":         data["designation"],
+		"mode_of_salary":      data["mode_of_salary"],
+		"gross_monthly_income": data["gross_monthly_income"],
+		"net_monthly_income":  data["net_monthly_income"],
 	}
 
 	c.JSON(http.StatusOK, employmentDetail)
 }
+
 
 func UpdateEmploymentDetail(c *gin.Context) {
 	userID := c.Param("userId")
