@@ -2,6 +2,7 @@ import '../../common/bank_details.dart';
 import 'components/contact_details.dart';
 import 'components/employment_details.dart';
 import 'components/manual_itr_personal.dart';
+import 'components/credit_info.dart';
 
 class PersonalProfile {
   String id;
@@ -13,6 +14,7 @@ class PersonalProfile {
   List<BankDetails> bankDetails;
   EmploymentDetails employmentDetails;
   ContactDetails contactDetails;
+  List<CreditInfo> creditInfo;
 
   PersonalProfile({
     required this.id,
@@ -24,5 +26,6 @@ class PersonalProfile {
     required this.bankDetails,
     required this.employmentDetails,
     required this.contactDetails,
+    required this.creditInfo,
   });
 }
