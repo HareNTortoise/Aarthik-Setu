@@ -1,11 +1,13 @@
+import 'package:aarthik_setu/global_components/back_button.dart';
 import 'package:aarthik_setu/global_components/labelled_text_field.dart';
 import 'package:animated_toggle_switch/animated_toggle_switch.dart';
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:hexcolor/hexcolor.dart';
 import 'package:responsive_framework/responsive_framework.dart';
 import '../../../../constants/app_constants.dart';
 import '../../../../constants/colors.dart';
+import '../../../../global_components/procees_button.dart';
 
 class LoanFormPersonal extends StatefulWidget {
   const LoanFormPersonal({super.key});
@@ -539,39 +541,9 @@ class _LoanFormPersonalState extends State<LoanFormPersonal> {
                           Row(
                             mainAxisAlignment: MainAxisAlignment.end,
                             children: [
-                              SizedBox(
-                                width: 200,
-                                height: 50,
-                                child: FilledButton(
-                                  onPressed: () {},
-                                  style: ButtonStyle(
-                                    backgroundColor: WidgetStateProperty.all(Colors.white),
-                                    shape: WidgetStateProperty.all(RoundedRectangleBorder(
-                                      borderRadius: BorderRadius.circular(30),
-                                      side: BorderSide(color: HexColor("#568737")),
-                                    )),
-                                  ),
-                                  child: Text(
-                                    "Back",
-                                    style: TextStyle(fontSize: 20, color: HexColor("#568737")),
-                                  ),
-                                ),
-                              ),
+                              BackButtonCustom(onPressed: () => context.pop()),
                               const SizedBox(width: 40),
-                              SizedBox(
-                                width: 200,
-                                height: 50,
-                                child: FilledButton(
-                                  style: ButtonStyle(
-                                    backgroundColor: WidgetStateProperty.all(HexColor("#568737")),
-                                  ),
-                                  onPressed: () {},
-                                  child: const Text(
-                                    "Submit",
-                                    style: TextStyle(fontSize: 20),
-                                  ),
-                                ),
-                              ),
+                              ProceedButtonCustom(onPressed: () {}),
                             ],
                           ),
                         ],

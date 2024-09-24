@@ -1,7 +1,9 @@
+import 'package:aarthik_setu/global_components/back_button.dart';
+import 'package:aarthik_setu/global_components/procees_button.dart';
 import 'package:calendar_date_picker2/calendar_date_picker2.dart';
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:hexcolor/hexcolor.dart';
 import '../../../../../constants/colors.dart';
 import '../../../../../global_components/labelled_text_field.dart';
 
@@ -108,18 +110,17 @@ class _ItrManualState extends State<ItrManual> {
                                 backgroundColor: WidgetStateProperty.all(AppColors.primaryColorTwo.withOpacity(0.5)),
                               ),
                               child: _selectedDate != null
-                                  ?
-                                  Row(
-                                    mainAxisAlignment: MainAxisAlignment.center,
-                                    children: [
-                                      const Icon(Icons.calendar_month, size: 30, color: Colors.black),
-                                      const SizedBox(width: 10),
-                                      Text(
+                                  ? Row(
+                                      mainAxisAlignment: MainAxisAlignment.center,
+                                      children: [
+                                        const Icon(Icons.calendar_month, size: 30, color: Colors.black),
+                                        const SizedBox(width: 10),
+                                        Text(
                                           "${_selectedDate!.day}/${_selectedDate!.month}/${_selectedDate!.year}",
                                           style: GoogleFonts.poppins(fontSize: 20, color: Colors.black),
                                         ),
-                                    ],
-                                  )
+                                      ],
+                                    )
                                   : Row(
                                       mainAxisAlignment: MainAxisAlignment.center,
                                       children: [
@@ -235,9 +236,9 @@ class _ItrManualState extends State<ItrManual> {
                   const SizedBox(height: 20),
                   const Divider(color: Colors.grey, thickness: 0.5),
                   const SizedBox(height: 20),
-                  Align(
+                  const Align(
                     alignment: Alignment.centerLeft,
-                    child: const Text(
+                    child: Text(
                       "Net Annual Income Details",
                       style: TextStyle(fontSize: 24),
                     ),
@@ -272,39 +273,9 @@ class _ItrManualState extends State<ItrManual> {
             Row(
               mainAxisAlignment: MainAxisAlignment.end,
               children: [
-                SizedBox(
-                  width: 200,
-                  height: 50,
-                  child: FilledButton(
-                    onPressed: () {},
-                    style: ButtonStyle(
-                      backgroundColor: WidgetStateProperty.all(Colors.white),
-                      shape: WidgetStateProperty.all(RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(30),
-                        side: BorderSide(color: HexColor("#568737")),
-                      )),
-                    ),
-                    child: Text(
-                      "Back",
-                      style: TextStyle(fontSize: 20, color: HexColor("#568737")),
-                    ),
-                  ),
-                ),
+                BackButtonCustom(onPressed: () => context.pop()),
                 const SizedBox(width: 40),
-                SizedBox(
-                  width: 200,
-                  height: 50,
-                  child: FilledButton(
-                    style: ButtonStyle(
-                      backgroundColor: WidgetStateProperty.all(HexColor("#568737")),
-                    ),
-                    onPressed: () {},
-                    child: const Text(
-                      "Proceed",
-                      style: TextStyle(fontSize: 20),
-                    ),
-                  ),
-                ),
+                ProceedButtonCustom(onPressed: () {}),
               ],
             )
           ],
