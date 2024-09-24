@@ -7,9 +7,9 @@ class MainPartner {
   bool haveALifeInsurancePolicy;
   String maritalStatus;
   String spouseName;
-  String spouseDetails;
+  // String spouseDetails;
   int noOfChildren;
-  String category;
+  // String category;
 
   MainPartner({
     required this.name,
@@ -18,9 +18,9 @@ class MainPartner {
     required this.haveALifeInsurancePolicy,
     required this.maritalStatus,
     required this.spouseName,
-    required this.spouseDetails,
+    // required this.spouseDetails,
     required this.noOfChildren,
-    required this.category,
+    // required this.category,
   });
 
   factory MainPartner.fromJson(Map<String, dynamic> json) {
@@ -31,9 +31,9 @@ class MainPartner {
       haveALifeInsurancePolicy: json['haveALifeInsurancePolicy'],
       maritalStatus: json['maritalStatus'],
       spouseName: json['spouseName'],
-      spouseDetails: json['spouseDetails'],
+      // spouseDetails: json['spouseDetails'],
       noOfChildren: json['noOfChildren'],
-      category: json['category'],
+      // category: json['category'],
     );
   }
 
@@ -45,9 +45,9 @@ class MainPartner {
       'haveALifeInsurancePolicy': haveALifeInsurancePolicy,
       'maritalStatus': maritalStatus,
       'spouseName': spouseName,
-      'spouseDetails': spouseDetails,
+      // 'spouseDetails': spouseDetails,
       'noOfChildren': noOfChildren,
-      'category': category,
+      // 'category': category,
     };
   }
 }

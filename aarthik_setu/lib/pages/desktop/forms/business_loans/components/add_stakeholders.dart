@@ -3,8 +3,6 @@ import 'package:animated_toggle_switch/animated_toggle_switch.dart';
 import 'package:dropdown_button2/dropdown_button2.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:hexcolor/hexcolor.dart';
-
 import '../../../../../constants/colors.dart';
 import '../../../../../global_components/labelled_text_field.dart';
 
@@ -419,24 +417,6 @@ class _AddStakeholdersState extends State<AddStakeholders> {
                   Row(
                     mainAxisAlignment: MainAxisAlignment.end,
                     children: [
-                      SizedBox(
-                        width: 200,
-                        height: 50,
-                        child: FilledButton(
-                          onPressed: () {},
-                          style: ButtonStyle(
-                            backgroundColor: WidgetStateProperty.all(Colors.white),
-                            shape: WidgetStateProperty.all(RoundedRectangleBorder(
-                              borderRadius: BorderRadius.circular(30),
-                              side: BorderSide(color: HexColor("#568737")),
-                            )),
-                          ),
-                          child: Text(
-                            "Back",
-                            style: TextStyle(fontSize: 20, color: HexColor("#568737")),
-                          ),
-                        ),
-                      ),
                       const SizedBox(width: 40),
                       SizedBox(
                         width: 200,
@@ -449,21 +429,6 @@ class _AddStakeholdersState extends State<AddStakeholders> {
                           child: Text(
                             _isEditing ? "Delete" :"Discard",
                             style: const TextStyle(fontSize: 20),
-                          ),
-                        ),
-                      ),
-                      const SizedBox(width: 40),
-                      SizedBox(
-                        width: 200,
-                        height: 50,
-                        child: FilledButton(
-                          style: ButtonStyle(
-                            backgroundColor: WidgetStateProperty.all(HexColor("#568737")),
-                          ),
-                          onPressed: () {},
-                          child: const Text(
-                            "Save",
-                            style: TextStyle(fontSize: 20),
                           ),
                         ),
                       ),

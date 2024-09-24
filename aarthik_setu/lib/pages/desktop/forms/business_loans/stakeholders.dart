@@ -2,10 +2,16 @@ import 'package:aarthik_setu/constants/app_constants.dart';
 import 'package:aarthik_setu/global_components/labelled_text_field.dart';
 import 'package:aarthik_setu/global_components/month_picker.dart';
 import 'package:aarthik_setu/pages/desktop/forms/business_loans/components/add_stakeholders.dart';
+import 'package:aarthik_setu/pages/desktop/forms/business_loans/components/main_partner.dart';
+import 'package:animated_toggle_switch/animated_toggle_switch.dart';
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:responsive_framework/responsive_framework.dart';
 
+import '../../../../constants/colors.dart';
+import '../../../../global_components/back_button.dart';
+import '../../../../global_components/procees_button.dart';
 import '../../../../global_components/year_picker.dart';
 
 class StakeholdersForm extends StatefulWidget {
@@ -150,6 +156,7 @@ class _StakeholdersFormState extends State<StakeholdersForm> {
                   ),
                   const SizedBox(height: 20),
                   const AddStakeholders(),
+                  MainPartnerForm(),
                 ],
               ),
             ),
