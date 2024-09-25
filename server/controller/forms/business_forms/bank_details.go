@@ -78,10 +78,10 @@ func CreateBankDetails(c *gin.Context) {
 	formId, err := utils.GenerateRandomString(16)
 	// Add the bank details to Firestore
 	_, _, err = client.Collection("business_bank_details").Add(ctx, map[string]interface{}{
-		"bank_details": bankDetailsMap,
-		"profileId":       profileId,
+		"bank_details":  bankDetailsMap,
+		"profileId":     profileId,
 		"applicationId": applicationId,
-		"formId": formId,
+		"formId":        formId,
 	})
 
 	// Check for errors in Firestore operation
@@ -102,9 +102,9 @@ func GetBankDetails(c *gin.Context) {
 
 	// Query Firestore to retrieve the bank details for the user
 	query := client.Collection("business_bank_details").
-	Where("profileId", "==", profileId).
-	Where("applicationId","==",applicationId).
-	Documents(ctx)
+		Where("profileId", "==", profileId).
+		Where("applicationId", "==", applicationId).
+		Documents(ctx)
 	docs, err := query.GetAll()
 	if err != nil {
 		c.JSON(http.StatusInternalServerError, gin.H{"error": "Failed to retrieve bank details", "details": err.Error()})
@@ -155,9 +155,9 @@ func UpdateBankDetails(c *gin.Context) {
 
 	// Query Firestore to find the user's document
 	query := client.Collection("business_bank_details").
-	Where("profileId", "==", profileId).
-	Where("applicationId","==",applicationId).
-	Documents(ctx)
+		Where("profileId", "==", profileId).
+		Where("applicationId", "==", applicationId).
+		Documents(ctx)
 	docs, err := query.GetAll()
 	if err != nil {
 		c.JSON(http.StatusInternalServerError, gin.H{"error": "Failed to query bank details", "details": err.Error()})
@@ -191,9 +191,9 @@ func DeleteBankDetails(c *gin.Context) {
 
 	// Query Firestore to find the user's document
 	query := client.Collection("business_bank_details").
-	Where("profileId", "==", profileId).
-	Where("applicationId","==",applicationId).
-	Documents(ctx)
+		Where("profileId", "==", profileId).
+		Where("applicationId", "==", applicationId).
+		Documents(ctx)
 	docs, err := query.GetAll()
 	if err != nil {
 		c.JSON(http.StatusInternalServerError, gin.H{"error": "Failed to query bank details", "details": err.Error()})

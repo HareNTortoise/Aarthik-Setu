@@ -18,7 +18,7 @@ import '../pages/desktop/forms/personal_loans/contact_details.dart';
 import '../pages/desktop/forms/personal_loans/employment_details.dart';
 
 final GoRouter router = GoRouter(
-  initialLocation: '/',
+  initialLocation: '/business-loan-journey/abc/gst-details',
   routes: [
     GoRoute(
       path: '/',
