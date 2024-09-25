@@ -2,10 +2,11 @@ package main
 
 import (
 	"log"
-	personal_forms "server/routes/forms/personal_forms"
 	business_forms "server/routes/forms/business_forms"
-	"github.com/joho/godotenv"
+	personal_forms "server/routes/forms/personal_forms"
+
 	"github.com/gin-gonic/gin"
+	"github.com/joho/godotenv"
 )
 
 func main() {
@@ -26,6 +27,8 @@ func main() {
 	personal_forms.RegisterPersonalLoanForm(router)
 
 	business_forms.RegisterBusinessITRPDFRoutes(router)
+	business_forms.RegisterBusinessBankDetails(router)
+	business_forms.RegisterBusinessLoanForm(router)
 	// Start the HTTP server
 	log.Println("Starting server on :8080")
 	if err := router.Run(":8080"); err != nil {
