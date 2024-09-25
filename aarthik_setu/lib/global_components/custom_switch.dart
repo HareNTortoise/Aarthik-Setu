@@ -6,12 +6,12 @@ import '../constants/colors.dart';
 class CustomSwitch extends StatelessWidget {
   const CustomSwitch({
     super.key,
-    this.current = false,
-    this.first = true,
+    required this.current,
+    this.first = false,
+    this.second = true,
     required this.onChanged,
-    required this.second,
-    this.firstText = "No",
-    this.secondText = "Yes",
+    this.firstText = "Yes",
+    this.secondText = "No",
   });
 
   final bool current;
@@ -29,7 +29,7 @@ class CustomSwitch extends StatelessWidget {
       child: AnimatedToggleSwitch<bool>.dual(
         current: current,
         first: first,
-        second: true,
+        second: second,
         borderWidth: 6,
         textBuilder: (index) => index == true
             ? Text(
