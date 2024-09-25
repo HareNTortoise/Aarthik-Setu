@@ -136,14 +136,16 @@
 											]
 										},
 										"url": {
-											"raw": "localhost:8080/personal/itr",
+											"raw": "localhost:8080/personal/itr/abcdefghi/abcdefghi",
 											"host": [
 												"localhost"
 											],
 											"port": "8080",
 											"path": [
 												"personal",
-												"itr"
+												"itr",
+												"abcdefghi",
+												"abcdefghi"
 											]
 										}
 									},
@@ -159,7 +161,7 @@
 											"formdata": [
 												{
 													"key": "firstName",
-													"value": "varun",
+													"value": "varunnn",
 													"type": "text"
 												},
 												{
@@ -271,7 +273,7 @@
 											]
 										},
 										"url": {
-											"raw": "localhost:8080/personal/itr/mhtwaakyay",
+											"raw": "localhost:8080/personal/itr/abcdefghi/abcdefghi",
 											"host": [
 												"localhost"
 											],
@@ -279,7 +281,8 @@
 											"path": [
 												"personal",
 												"itr",
-												"mhtwaakyay"
+												"abcdefghi",
+												"abcdefghi"
 											]
 										}
 									},
@@ -303,7 +306,7 @@
 											}
 										},
 										"url": {
-											"raw": "localhost:8080/personal/itr/mhtwaakyay",
+											"raw": "localhost:8080/personal/itr/abcdefghi/abcdefghi",
 											"host": [
 												"localhost"
 											],
@@ -311,7 +314,8 @@
 											"path": [
 												"personal",
 												"itr",
-												"mhtwaakyay"
+												"abcdefghi",
+												"abcdefghi"
 											]
 										}
 									},
@@ -408,7 +412,7 @@
 									]
 								},
 								"url": {
-									"raw": "localhost:8080/personal/bank_details/mhtwaakyay",
+									"raw": "localhost:8080/personal/bank_details/abcdefghi/abcdefghi",
 									"host": [
 										"localhost"
 									],
@@ -416,7 +420,8 @@
 									"path": [
 										"personal",
 										"bank_details",
-										"mhtwaakyay"
+										"abcdefghi",
+										"abcdefghi"
 									]
 								}
 							},
@@ -478,7 +483,7 @@
 									]
 								},
 								"url": {
-									"raw": "localhost:8080/personal/bank_details/mhtwaakyay",
+									"raw": "localhost:8080/personal/bank_details/abcdefghi/abcdefghi",
 									"host": [
 										"localhost"
 									],
@@ -486,7 +491,8 @@
 									"path": [
 										"personal",
 										"bank_details",
-										"mhtwaakyay"
+										"abcdefghi",
+										"abcdefghi"
 									]
 								}
 							},
@@ -536,7 +542,7 @@
 									]
 								},
 								"url": {
-									"raw": "localhost:8080/personal/bank_details/mhtwaakyay",
+									"raw": "localhost:8080/personal/bank_details/abcdefghi/abcdefghi",
 									"host": [
 										"localhost"
 									],
@@ -544,7 +550,8 @@
 									"path": [
 										"personal",
 										"bank_details",
-										"mhtwaakyay"
+										"abcdefghi",
+										"abcdefghi"
 									]
 								}
 							},
@@ -556,7 +563,7 @@
 								"method": "DELETE",
 								"header": [],
 								"url": {
-									"raw": "localhost:8080/personal/bank_details/mhtwaakyay",
+									"raw": "localhost:8080/personal/bank_details/abcdefghi/abcdefghi",
 									"host": [
 										"localhost"
 									],
@@ -564,7 +571,8 @@
 									"path": [
 										"personal",
 										"bank_details",
-										"mhtwaakyay"
+										"abcdefghi",
+										"abcdefghi"
 									]
 								}
 							},
@@ -671,7 +679,7 @@
 									]
 								},
 								"url": {
-									"raw": "localhost:8080/personal/basic_details/mhtwaakyay",
+									"raw": "localhost:8080/personal/basic_details/abcdegfhi/abcdefghi",
 									"host": [
 										"localhost"
 									],
@@ -679,7 +687,8 @@
 									"path": [
 										"personal",
 										"basic_details",
-										"mhtwaakyay"
+										"abcdegfhi",
+										"abcdefghi"
 									]
 								}
 							},
@@ -781,7 +790,7 @@
 									]
 								},
 								"url": {
-									"raw": "localhost:8080/personal/basic_details/mhtwaakyay",
+									"raw": "localhost:8080/personal/basic_details/abcdegfhi/abcdefghi",
 									"host": [
 										"localhost"
 									],
@@ -789,7 +798,8 @@
 									"path": [
 										"personal",
 										"basic_details",
-										"mhtwaakyay"
+										"abcdegfhi",
+										"abcdefghi"
 									]
 								}
 							},
@@ -801,7 +811,7 @@
 								"method": "GET",
 								"header": [],
 								"url": {
-									"raw": "localhost:8080/personal/basic_details/mhtwaakyay",
+									"raw": "localhost:8080/personal/basic_details/abcdegfhi/abcdefghi",
 									"host": [
 										"localhost"
 									],
@@ -809,7 +819,8 @@
 									"path": [
 										"personal",
 										"basic_details",
-										"mhtwaakyay"
+										"abcdegfhi",
+										"abcdefghi"
 									]
 								}
 							},
@@ -821,7 +832,7 @@
 								"method": "DELETE",
 								"header": [],
 								"url": {
-									"raw": "localhost:8080/personal/basic_details/mhtwaakyay",
+									"raw": "localhost:8080/personal/basic_details/abcdegfhi/abcdefghi",
 									"host": [
 										"localhost"
 									],
@@ -829,7 +840,8 @@
 									"path": [
 										"personal",
 										"basic_details",
-										"mhtwaakyay"
+										"abcdegfhi",
+										"abcdefghi"
 									]
 								}
 							},
@@ -881,7 +893,7 @@
 									]
 								},
 								"url": {
-									"raw": "localhost:8080/personal/employment_details/mhtwaakyay",
+									"raw": "localhost:8080/personal/employment_details/abcdefghi/abcdefghi",
 									"host": [
 										"localhost"
 									],
@@ -889,7 +901,8 @@
 									"path": [
 										"personal",
 										"employment_details",
-										"mhtwaakyay"
+										"abcdefghi",
+										"abcdefghi"
 									]
 								}
 							},
@@ -936,7 +949,7 @@
 									]
 								},
 								"url": {
-									"raw": "localhost:8080/personal/employment_details/mhtwaakyay",
+									"raw": "localhost:8080/personal/employment_details/abcdefghi/abcdefghi",
 									"host": [
 										"localhost"
 									],
@@ -944,7 +957,8 @@
 									"path": [
 										"personal",
 										"employment_details",
-										"mhtwaakyay"
+										"abcdefghi",
+										"abcdefghi"
 									]
 								}
 							},
@@ -956,7 +970,7 @@
 								"method": "DELETE",
 								"header": [],
 								"url": {
-									"raw": "localhost:8080/personal/employment_details/mhtwaakyay",
+									"raw": "localhost:8080/personal/employment_details/abcdefghi/abcdefghi",
 									"host": [
 										"localhost"
 									],
@@ -964,7 +978,8 @@
 									"path": [
 										"personal",
 										"employment_details",
-										"mhtwaakyay"
+										"abcdefghi",
+										"abcdefghi"
 									]
 								}
 							},
@@ -976,7 +991,7 @@
 								"method": "GET",
 								"header": [],
 								"url": {
-									"raw": "localhost:8080/personal/employment_details/mhtwaakyay",
+									"raw": "localhost:8080/personal/employment_details/abcdefghi/abcdefghi",
 									"host": [
 										"localhost"
 									],
@@ -984,7 +999,8 @@
 									"path": [
 										"personal",
 										"employment_details",
-										"mhtwaakyay"
+										"abcdefghi",
+										"abcdefghi"
 									]
 								}
 							},
@@ -1066,7 +1082,7 @@
 									]
 								},
 								"url": {
-									"raw": "localhost:8080/personal/contact_details/mhtwaakyay",
+									"raw": "localhost:8080/personal/contact_details/abcdefghi/abcdefghi",
 									"host": [
 										"localhost"
 									],
@@ -1074,7 +1090,8 @@
 									"path": [
 										"personal",
 										"contact_details",
-										"mhtwaakyay"
+										"abcdefghi",
+										"abcdefghi"
 									]
 								}
 							},
@@ -1151,7 +1168,7 @@
 									]
 								},
 								"url": {
-									"raw": "localhost:8080/personal/contact_details/mhtwaakyay",
+									"raw": "localhost:8080/personal/contact_details/abcdefghi/abcdefghi",
 									"host": [
 										"localhost"
 									],
@@ -1159,7 +1176,8 @@
 									"path": [
 										"personal",
 										"contact_details",
-										"mhtwaakyay"
+										"abcdefghi",
+										"abcdefghi"
 									]
 								}
 							},
@@ -1171,7 +1189,7 @@
 								"method": "DELETE",
 								"header": [],
 								"url": {
-									"raw": "localhost:8080/personal/contact_details/mhtwaakyay",
+									"raw": "localhost:8080/personal/contact_details/abcdefghi/abcdefghi",
 									"host": [
 										"localhost"
 									],
@@ -1179,7 +1197,8 @@
 									"path": [
 										"personal",
 										"contact_details",
-										"mhtwaakyay"
+										"abcdefghi",
+										"abcdefghi"
 									]
 								}
 							},
@@ -1191,7 +1210,7 @@
 								"method": "GET",
 								"header": [],
 								"url": {
-									"raw": "localhost:8080/personal/contact_details/mhtwaakyay",
+									"raw": "localhost:8080/personal/contact_details/abcdefghi/abcdefghi",
 									"host": [
 										"localhost"
 									],
@@ -1199,7 +1218,8 @@
 									"path": [
 										"personal",
 										"contact_details",
-										"mhtwaakyay"
+										"abcdefghi",
+										"abcdefghi"
 									]
 								}
 							},
@@ -1271,7 +1291,7 @@
 									]
 								},
 								"url": {
-									"raw": "localhost:8080/personal/credit_info/mhtwaakyay",
+									"raw": "localhost:8080/personal/credit_info/abcdefghi/abcdefghi",
 									"host": [
 										"localhost"
 									],
@@ -1279,7 +1299,8 @@
 									"path": [
 										"personal",
 										"credit_info",
-										"mhtwaakyay"
+										"abcdefghi",
+										"abcdefghi"
 									]
 								}
 							},
@@ -1346,7 +1367,7 @@
 									]
 								},
 								"url": {
-									"raw": "localhost:8080/personal/credit_info/mhtwaakyay",
+									"raw": "localhost:8080/personal/credit_info/abcdefghi/abcdefghi",
 									"host": [
 										"localhost"
 									],
@@ -1354,7 +1375,8 @@
 									"path": [
 										"personal",
 										"credit_info",
-										"mhtwaakyay"
+										"abcdefghi",
+										"abcdefghi"
 									]
 								}
 							},
@@ -1370,7 +1392,7 @@
 									"formdata": []
 								},
 								"url": {
-									"raw": "localhost:8080/personal/credit_info/mhtwaakyay",
+									"raw": "localhost:8080/personal/credit_info/abcdefghi/abcdefghi",
 									"host": [
 										"localhost"
 									],
@@ -1378,7 +1400,8 @@
 									"path": [
 										"personal",
 										"credit_info",
-										"mhtwaakyay"
+										"abcdefghi",
+										"abcdefghi"
 									]
 								}
 							},
@@ -1390,7 +1413,7 @@
 								"method": "GET",
 								"header": [],
 								"url": {
-									"raw": "localhost:8080/personal/credit_info/mhtwaakyay",
+									"raw": "localhost:8080/personal/credit_info/abcdefghi/abcdefghi",
 									"host": [
 										"localhost"
 									],
@@ -1398,7 +1421,207 @@
 									"path": [
 										"personal",
 										"credit_info",
-										"mhtwaakyay"
+										"abcdefghi",
+										"abcdefghi"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "LOAN_FORMS",
+					"item": [
+						{
+							"name": "LOAN_FORMS",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "loanPurpose",
+											"value": "hello",
+											"type": "text"
+										},
+										{
+											"key": "loanAmountRequired",
+											"value": "80000",
+											"type": "text"
+										},
+										{
+											"key": "tenure",
+											"value": "3",
+											"type": "text"
+										},
+										{
+											"key": "retirementAge",
+											"value": "2",
+											"type": "text"
+										},
+										{
+											"key": "emiBySalaryAccount",
+											"value": "10000",
+											"type": "text"
+										},
+										{
+											"key": "payOutstandingByTerminalPayments",
+											"value": "10000",
+											"type": "text"
+										},
+										{
+											"key": "paySalaryInSalaryAccount",
+											"value": "10000",
+											"type": "text"
+										},
+										{
+											"key": "issueLetterToYourEmployerToPayOutstandingLoan",
+											"value": "10000",
+											"type": "text"
+										},
+										{
+											"key": "issueLetterToYourEmployerToNotChangeSalaryAccount",
+											"value": "10000",
+											"type": "text"
+										},
+										{
+											"key": "repaymentMethod",
+											"value": "credit",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "localhost:8080/personal/loan_form/abcdefghi/abcdefghi",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"personal",
+										"loan_form",
+										"abcdefghi",
+										"abcdefghi"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "LOAN_FORMS",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "loanPurpose",
+											"value": "helloii",
+											"type": "text"
+										},
+										{
+											"key": "loanAmountRequired",
+											"value": "80000",
+											"type": "text"
+										},
+										{
+											"key": "tenure",
+											"value": "3",
+											"type": "text"
+										},
+										{
+											"key": "retirementAge",
+											"value": "2",
+											"type": "text"
+										},
+										{
+											"key": "emiBySalaryAccount",
+											"value": "10000",
+											"type": "text"
+										},
+										{
+											"key": "payOutstandingByTerminalPayments",
+											"value": "10000",
+											"type": "text"
+										},
+										{
+											"key": "paySalaryInSalaryAccount",
+											"value": "10000",
+											"type": "text"
+										},
+										{
+											"key": "issueLetterToYourEmployerToPayOutstandingLoan",
+											"value": "10000",
+											"type": "text"
+										},
+										{
+											"key": "issueLetterToYourEmployerToNotChangeSalaryAccount",
+											"value": "10000",
+											"type": "text"
+										},
+										{
+											"key": "repaymentMethod",
+											"value": "credit",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "localhost:8080/personal/loan_form/abcdefghi/abcdefghi",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"personal",
+										"loan_form",
+										"abcdefghi",
+										"abcdefghi"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "LOAN_FORMS",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8080/personal/loan_form/abcdefghi/abcdefghi",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"personal",
+										"loan_form",
+										"abcdefghi",
+										"abcdefghi"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "LOAN_FORMS",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "localhost:8080/personal/loan_form/abcdefghi/abcdefghi",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"personal",
+										"loan_form",
+										"abcdefghi",
+										"abcdefghi"
 									]
 								}
 							},
