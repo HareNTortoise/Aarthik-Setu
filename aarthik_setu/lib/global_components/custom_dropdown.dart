@@ -3,21 +3,24 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class CustomDropdown extends StatelessWidget {
-  const CustomDropdown(
-      {super.key,
-      required this.label,
-      required this.labelFontSize,
-      required this.buttonLabel,
-      this.width = 300,
-      this.height = 65,
-      required this.items,
-      required this.onChanged});
+  const CustomDropdown({
+    super.key,
+    required this.label,
+    required this.labelFontSize,
+    required this.buttonLabel,
+    this.current,
+    this.width = 300,
+    this.height = 65,
+    required this.items,
+    required this.onChanged,
+  });
 
   final String label;
   final String buttonLabel;
   final double width;
   final double height;
   final double labelFontSize;
+  final String? current;
   final Function(String?)? onChanged;
   final List<DropdownMenuItem<String>> items;
 
@@ -37,9 +40,7 @@ class CustomDropdown extends StatelessWidget {
           child: DropdownButtonHideUnderline(
             child: DropdownButton2<String>(
               customButton: Material(
-                surfaceTintColor: Colors.red,
                 child: InkWell(
-                  splashColor: Colors.red,
                   child: Ink(
                     padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
                     decoration: BoxDecoration(
@@ -52,7 +53,7 @@ class CustomDropdown extends StatelessWidget {
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
                         Text(
-                          buttonLabel,
+                          current ?? buttonLabel,
                           style: const TextStyle(color: Colors.black, fontSize: 18),
                         ),
                         const SizedBox(width: 10),
