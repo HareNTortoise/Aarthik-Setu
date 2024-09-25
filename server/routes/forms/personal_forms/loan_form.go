@@ -7,8 +7,8 @@ import (
 
 // RegisterITRRoutes registers the routes related to ITR forms
 func RegisterPersonalLoanForm(router *gin.Engine) {
-	router.POST("/personal/loan_form/:userId/:loanId", loan_form.SubmitLoanApplicationDetails)
-	router.GET("/personal/loan_form/:userId/:loanId", loan_form.GetLoanApplicationDetails)    
-	router.PUT("/personal/loan_form/:userId/:loanId", loan_form.UpdateLoanApplicationDetails)  
-	router.DELETE("/personal/loan_form/:userId/:loanId", loan_form.DeleteLoanApplicationDetails)
+	router.POST("/personal/loan_form/:profileId/:applicationId", loan_form.SubmitLoanApplicationDetails)
+	router.GET("/personal/loan_form/:profileId/:applicationId", loan_form.GetLoanApplicationDetails)    
+	router.PUT("/personal/loan_form/:profileId/:applicationId", loan_form.UpdateLoanApplicationDetails)  
+	router.DELETE("/personal/loan_form/:profileId/:applicationId", loan_form.DeleteLoanApplicationDetails)
 }

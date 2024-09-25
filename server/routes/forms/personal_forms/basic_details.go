@@ -7,8 +7,8 @@ import (
 
 // RegisterITRRoutes registers the routes related to ITR forms
 func RegisterPersonalBasicDetails(router *gin.Engine) {
-	router.POST("/personal/basic_details/:userId", user_details.CreateUserDetail)   // Create user details
-	router.GET("/personal/basic_details/:userId", user_details.GetUserDetail)       // Get user details
-	router.PUT("/personal/basic_details/:userId", user_details.UpdateUserDetail)  // Update user details
-	router.DELETE("/personal/basic_details/:userId", user_details.DeleteUserDetail) // Delete user details
+	router.POST("/personal/basic_details/:profileId/:applicationId", user_details.CreateUserDetail)   // Create user details
+	router.GET("/personal/basic_details/:profileId/:applicationId", user_details.GetUserDetail)       // Get user details
+	router.PUT("/personal/basic_details/:profileId/:applicationId", user_details.UpdateUserDetail)  // Update user details
+	router.DELETE("/personal/basic_details/:profileId/:applicationId", user_details.DeleteUserDetail) // Delete user details
 }

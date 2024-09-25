@@ -7,6 +7,7 @@ import (
 	"net/http"
 	"cloud.google.com/go/firestore"
 	// model "server/models/forms/personal_forms"
+	"time"
 	"strings"
 )
 
@@ -17,7 +18,8 @@ func init() {
 }
 
 func CreateLoanDetails(c *gin.Context) {
-	userID := c.Param("userId")
+	profileId := c.Param("profileId")
+	applicationId := c.Param("applicationId") // Assuming you want to use applicationId from the route parameters
 	ctx := context.Background()
 
 	// Extract form-data arrays for multiple loan entries
@@ -47,14 +49,20 @@ func CreateLoanDetails(c *gin.Context) {
 		loans = append(loans, loan)
 	}
 
-	// Retrieve the current user loans
-	docRef := client.Collection("loan_details").Doc(userID)
+	// Generate a random form ID
+	formId, _ := utils.GenerateRandomString(16)
+
+	// Retrieve or create loan details for the user
+	docRef := client.Collection("personal_credit_info").Doc(profileId) // Use profileId as the document ID
 	_, err := docRef.Get(ctx)
 	if err != nil && strings.Contains(err.Error(), "not found") {
-		// If user doesn't exist, create a new record with camelCase keys in map
+		// If the document doesn't exist, create a new one
 		_, err = docRef.Set(ctx, map[string]interface{}{
-			"userId": userID,   // Explicitly setting to camelCase
-			"loans":  loans,
+			"loans":         loans,
+			"profileId":     profileId,
+			"applicationId": applicationId,
+			"formId":        formId, // Use the generated form ID
+			"timestamp":     time.Now(),
 		})
 		if err != nil {
 			c.JSON(http.StatusInternalServerError, gin.H{"error": "Failed to create loan details", "details": err.Error()})
@@ -64,8 +72,8 @@ func CreateLoanDetails(c *gin.Context) {
 		c.JSON(http.StatusInternalServerError, gin.H{"error": "Failed to retrieve loan details", "details": err.Error()})
 		return
 	} else {
-		// If the user already exists, prevent adding new loan details
-		c.JSON(http.StatusConflict, gin.H{"error": "Loan details already exist for this user"})
+		// If the document already exists, prevent adding new loan details
+		c.JSON(http.StatusConflict, gin.H{"error": "Loan details already exist for this profile"})
 		return
 	}
 
@@ -73,25 +81,33 @@ func CreateLoanDetails(c *gin.Context) {
 }
 
 
+
+
 func GetCreditInfo(c *gin.Context) {
-	userID := c.Param("userId")
+	profileId := c.Param("profileId")
+	applicationId := c.Param("applicationId")
 	ctx := context.Background()
 
-	// Retrieve user loan details from Firestore
-	docRef := client.Collection("loan_details").Doc(userID)
-	doc, err := docRef.Get(ctx)
+	// Query Firestore for loan details using profileId and applicationId
+	query := client.Collection("personal_credit_info").
+		Where("profileId", "==", profileId).
+		Where("applicationId", "==", applicationId).
+		Limit(1) // Limit to one document since profileId and applicationId should be unique together
+
+	docs, err := query.Documents(ctx).GetAll()
 	if err != nil {
-		if strings.Contains(err.Error(), "not found") {
-			c.JSON(http.StatusNotFound, gin.H{"error": "No loan details found for this user"})
-			return
-		}
 		c.JSON(http.StatusInternalServerError, gin.H{"error": "Failed to retrieve loan details", "details": err.Error()})
+		return
+	}
+
+	if len(docs) == 0 {
+		c.JSON(http.StatusNotFound, gin.H{"error": "No loan details found for this profileId and applicationId"})
 		return
 	}
 
 	// Convert the document to a map
 	var userCreditInfo map[string]interface{}
-	if err := doc.DataTo(&userCreditInfo); err != nil {
+	if err := docs[0].DataTo(&userCreditInfo); err != nil {
 		c.JSON(http.StatusInternalServerError, gin.H{"error": "Failed to parse loan details", "details": err.Error()})
 		return
 	}
@@ -100,7 +116,8 @@ func GetCreditInfo(c *gin.Context) {
 }
 
 func UpdateCreditInfo(c *gin.Context) {
-	userID := c.Param("userId")
+	profileId := c.Param("profileId")
+	applicationId := c.Param("applicationId")
 	ctx := context.Background()
 
 	// Extract form-data arrays for multiple loan entries
@@ -130,11 +147,35 @@ func UpdateCreditInfo(c *gin.Context) {
 		loans = append(loans, loan)
 	}
 
-	// Update the user's loan details
-	docRef := client.Collection("loan_details").Doc(userID)
-	_, err := docRef.Set(ctx, map[string]interface{}{
-		"userId": userID,
-		"loans":  loans,
+	// Retrieve the user's loan details
+	docRef := client.Collection("personal_credit_info").
+		Where("profileId", "==", profileId).
+		Where("applicationId", "==", applicationId).
+		Limit(1)
+
+	// Get all matching documents
+	docs, err := docRef.Documents(ctx).GetAll()
+	if err != nil || len(docs) == 0 {
+		c.JSON(http.StatusNotFound, gin.H{"error": "Loan details not found"})
+		return
+	}
+
+	// Assuming we found the document, get the first one
+	doc := docs[0]
+
+	// Retrieve existing fields
+	existingData := doc.Data()
+	formId := existingData["formId"].(string)
+	existingProfileId := existingData["profileId"].(string)
+	existingApplicationId := existingData["applicationId"].(string)
+
+	// Update the document while keeping profileId, applicationId, and formId unchanged
+	_, err = client.Collection("personal_credit_info").Doc(doc.Ref.ID).Set(ctx, map[string]interface{}{
+		"loans":             loans,
+		"profileId":         existingProfileId,      // Keep existing profileId
+		"applicationId":     existingApplicationId,  // Keep existing applicationId
+		"formId":            formId,                 // Keep existing formId
+		"timestamp":         time.Now(),             // Update timestamp to now
 	}, firestore.MergeAll) // Merge to keep existing fields if needed
 	if err != nil {
 		c.JSON(http.StatusInternalServerError, gin.H{"error": "Failed to update loan details", "details": err.Error()})
@@ -144,18 +185,33 @@ func UpdateCreditInfo(c *gin.Context) {
 	c.JSON(http.StatusOK, gin.H{"message": "Loan details updated successfully"})
 }
 
+
+
 func DeleteCreditInfo(c *gin.Context) {
-	userID := c.Param("userId")
+	profileId := c.Param("profileId")
+	applicationId := c.Param("applicationId")
 	ctx := context.Background()
 
-	// Delete user loan details from Firestore
-	docRef := client.Collection("loan_details").Doc(userID)
-	_, err := docRef.Delete(ctx)
+	// Query Firestore for loan details using profileId and applicationId
+	query := client.Collection("personal_credit_info").
+		Where("profileId", "==", profileId).
+		Where("applicationId", "==", applicationId).
+		Limit(1) // Limit to one document
+
+	docs, err := query.Documents(ctx).GetAll()
 	if err != nil {
-		if strings.Contains(err.Error(), "not found") {
-			c.JSON(http.StatusNotFound, gin.H{"error": "No loan details found for this user"})
-			return
-		}
+		c.JSON(http.StatusInternalServerError, gin.H{"error": "Failed to retrieve loan details", "details": err.Error()})
+		return
+	}
+
+	if len(docs) == 0 {
+		c.JSON(http.StatusNotFound, gin.H{"error": "No loan details found for this profileId and applicationId"})
+		return
+	}
+
+	// Delete the loan details document
+	_, err = docs[0].Ref.Delete(ctx)
+	if err != nil {
 		c.JSON(http.StatusInternalServerError, gin.H{"error": "Failed to delete loan details", "details": err.Error()})
 		return
 	}

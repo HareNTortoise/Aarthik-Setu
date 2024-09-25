@@ -21,4 +21,8 @@ type UserDetail struct {
 	Nationality          string  `form:"nationality" json:"nationality"`
 	Dependent            string  `form:"dependent" json:"dependent"`
 	MaritalStatus        string  `form:"maritalStatus" json:"marital_status"`
+	ProfileId			string  `form:"profileId" json:"profile_id"`
+	ApplicationId		string  `form:"applicationId" json:"application_id"`
+	Timestamp			time.Time `form:"timestamp" json:"timestamp"`
+	FormId 			 string  `form:"formId" json:"formId"`
 }

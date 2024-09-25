@@ -15,4 +15,8 @@ type ResidenceDetail struct {
 	SubDistrict       string    `form:"subDistrict" json:"sub_district"`
 	TypeOfResidence   string    `form:"typeOfResidence" json:"type_of_residence"`
 	ResidenceSince    time.Time `form:"residenceSince" json:"residence_since"`
+	ProfileId 	   string    `form:"profileId" json:"profile_id"`
+	ApplicationId   string    `form:"applicationId" json:"application_id"`
+	Timestamp       time.Time `form:"timestamp" json:"timestamp"`
+	FormId          string    `form:"formId" json:"form_id"`
 }

@@ -4,10 +4,11 @@ import (
 	"context"
 	"encoding/json"
 	"net/http"
-	"github.com/gin-gonic/gin"
-	model "server/models/forms/personal_forms"
 	utils "server/config/firebase"
+	model "server/models/forms/personal_forms"
+	"time"
 	"cloud.google.com/go/firestore"
+	"github.com/gin-gonic/gin"
 )
 
 var client *firestore.Client
@@ -18,13 +19,17 @@ func init() {
 
 // CreateBankDetails handles the creation of bank details for a user (form-data).
 func CreateBankDetails(c *gin.Context) {
-	userID := c.Param("userId")
+	profileId := c.Param("profileId")
+	applicationId := c.Param("applicationId")
 
 	// Context for Firestore
 	ctx := context.Background()
 
 	// Check if the user's bank details already exist
-	query := client.Collection("personal_bank_details").Where("userId", "==", userID).Documents(ctx)
+	query := client.Collection("personal_bank_details").
+		Where("profileId", "==", profileId).
+		Where("applicationId", "==", applicationId).
+		Documents(ctx)
 	existingDocs, err := query.GetAll()
 	if err != nil {
 		c.JSON(http.StatusInternalServerError, gin.H{"error": "Failed to check existing bank details", "details": err.Error()})
@@ -32,7 +37,7 @@ func CreateBankDetails(c *gin.Context) {
 	}
 	if len(existingDocs) > 0 {
 		// If details are already present, return an error
-		c.JSON(http.StatusConflict, gin.H{"error": "Bank details for this user already exist"})
+		c.JSON(http.StatusConflict, gin.H{"error": "Bank Details already exist"})
 		return
 	}
 
@@ -70,11 +75,14 @@ func CreateBankDetails(c *gin.Context) {
 		c.JSON(http.StatusInternalServerError, gin.H{"error": "Failed to unmarshal JSON to map", "details": err.Error()})
 		return
 	}
-
+	formId, err := utils.GenerateRandomString(16)
 	// Add the bank details to Firestore
 	_, _, err = client.Collection("personal_bank_details").Add(ctx, map[string]interface{}{
 		"bank_details": bankDetailsMap,
-		"userId":       userID,
+		"profileId":       profileId,
+		"applicationId": applicationId,
+		"formId": formId,
+		"timestamp":time.Now(),
 	})
 
 	// Check for errors in Firestore operation
@@ -89,11 +97,15 @@ func CreateBankDetails(c *gin.Context) {
 
 // GetBankDetails retrieves the bank details for a specific user from Firestore.
 func GetBankDetails(c *gin.Context) {
-	userID := c.Param("userId")
+	profileId := c.Param("profileId")
+	applicationId := c.Param("applicationId")
 	ctx := context.Background()
 
 	// Query Firestore to retrieve the bank details for the user
-	query := client.Collection("personal_bank_details").Where("userId", "==", userID).Documents(ctx)
+	query := client.Collection("personal_bank_details").
+	Where("profileId", "==", profileId).
+	Where("applicationId","==",applicationId).
+	Documents(ctx)
 	docs, err := query.GetAll()
 	if err != nil {
 		c.JSON(http.StatusInternalServerError, gin.H{"error": "Failed to retrieve bank details", "details": err.Error()})
@@ -107,14 +119,17 @@ func GetBankDetails(c *gin.Context) {
 
 	// Assuming one document per user, retrieve the first one
 	bankDetails := docs[0].Data()["bank_details"]
+	formId := docs[0].Data()["formId"]
 
 	// Return the bank details in the response
-	c.JSON(http.StatusOK, gin.H{"bank_details": bankDetails})
+	c.JSON(http.StatusOK, gin.H{"bank_details": bankDetails,
+		"formId": formId})
 }
 
 // UpdateBankDetails updates the bank details for a specific user.
 func UpdateBankDetails(c *gin.Context) {
-	userID := c.Param("userId")
+	profileId := c.Param("profileId")
+	applicationId := c.Param("applicationId")
 	ctx := context.Background()
 
 	// Extract new bank details from form-data
@@ -140,7 +155,10 @@ func UpdateBankDetails(c *gin.Context) {
 	}
 
 	// Query Firestore to find the user's document
-	query := client.Collection("personal_bank_details").Where("userId", "==", userID).Documents(ctx)
+	query := client.Collection("personal_bank_details").
+	Where("profileId", "==", profileId).
+	Where("applicationId","==",applicationId).
+	Documents(ctx)
 	docs, err := query.GetAll()
 	if err != nil {
 		c.JSON(http.StatusInternalServerError, gin.H{"error": "Failed to query bank details", "details": err.Error()})
@@ -154,9 +172,10 @@ func UpdateBankDetails(c *gin.Context) {
 
 	// Update the document with new bank details
 	docRef := docs[0].Ref
-	_, err = docRef.Update(ctx, []firestore.Update{
-		{Path: "bank_details", Value: updatedBankDetails},
-	})
+	_, err = docRef.Set(ctx, map[string]interface{}{
+		"bank_details": updatedBankDetails,
+		"timestamp":    time.Now(),
+	}, firestore.MergeAll)
 
 	if err != nil {
 		c.JSON(http.StatusInternalServerError, gin.H{"error": "Failed to update bank details", "details": err.Error()})
@@ -168,11 +187,15 @@ func UpdateBankDetails(c *gin.Context) {
 
 // DeleteBankDetails deletes the bank details for a specific user.
 func DeleteBankDetails(c *gin.Context) {
-	userID := c.Param("userId")
+	profileId := c.Param("profileId")
+	applicationId := c.Param("applicationId")
 	ctx := context.Background()
 
 	// Query Firestore to find the user's document
-	query := client.Collection("personal_bank_details").Where("userId", "==", userID).Documents(ctx)
+	query := client.Collection("personal_bank_details").
+	Where("profileId", "==", profileId).
+	Where("applicationId","==",applicationId).
+	Documents(ctx)
 	docs, err := query.GetAll()
 	if err != nil {
 		c.JSON(http.StatusInternalServerError, gin.H{"error": "Failed to query bank details", "details": err.Error()})
