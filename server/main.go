@@ -2,10 +2,11 @@ package main
 
 import (
 	"log"
-	personal_forms "server/routes/forms/personal_forms"
 	business_forms "server/routes/forms/business_forms"
-	"github.com/joho/godotenv"
+	personal_forms "server/routes/forms/personal_forms"
+
 	"github.com/gin-gonic/gin"
+	"github.com/joho/godotenv"
 )
 
 func main() {
@@ -14,6 +15,13 @@ func main() {
 		log.Fatal("Error loading .env file")
 	}
 	router := gin.Default()
+
+	router.GET("/ping", func(c *gin.Context) {
+		// Respond with "pong"
+		c.JSON(200, gin.H{
+			"message": "pong",
+		})
+	})
 
 	// Register ITR form routes
 	personal_forms.RegisterPersonalITRRoutes(router)
