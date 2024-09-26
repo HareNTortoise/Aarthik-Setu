@@ -31,6 +31,8 @@ func main() {
 	business_forms.RegisterBusinessLoanForm(router)
 	business_forms.RegisterGSTDetails(router)
 	business_forms.RegisterGSTBusinessDetails(router)
+	business_forms.RegisterStakeholdersDetails(router)
+
 	// Start the HTTP server
 	log.Println("Starting server on :8080")
 	if err := router.Run(":8080"); err != nil {
