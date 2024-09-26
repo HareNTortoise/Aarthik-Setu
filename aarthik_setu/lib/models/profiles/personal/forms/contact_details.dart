@@ -1,5 +1,8 @@
-
-class ContactDetails{
+class ContactDetails {
+  String? id;
+  String profileId;
+  DateTime timestamp;
+  String applicationId;
   String premisesName;
   String streetName;
   String landmark;
@@ -26,6 +29,10 @@ class ContactDetails{
     required this.subDistrict,
     required this.typeOfResidence,
     required this.residenceSince,
+    required this.profileId,
+    required this.timestamp,
+    required this.applicationId,
+    this.id,
   });
 
   Map<String, dynamic> toJson() {
@@ -42,6 +49,31 @@ class ContactDetails{
       'subDistrict': subDistrict,
       'typeOfResidence': typeOfResidence,
       'residenceSince': residenceSince,
+      'profileId': profileId,
+      'timestamp': timestamp,
+      'applicationId': applicationId,
+      'id': id,
     };
+  }
+
+  factory ContactDetails.fromJson(Map<String, dynamic> json) {
+    return ContactDetails(
+      premisesName: json['premisesName'],
+      streetName: json['streetName'],
+      landmark: json['landmark'],
+      country: json['country'],
+      state: json['state'],
+      city: json['city'],
+      pinCode: json['pinCode'],
+      village: json['village'],
+      district: json['district'],
+      subDistrict: json['subDistrict'],
+      typeOfResidence: json['typeOfResidence'],
+      residenceSince: json['residenceSince'],
+      profileId: json['profileId'],
+      timestamp: json['timestamp'],
+      applicationId: json['applicationId'],
+      id: json['id'],
+    );
   }
 }
