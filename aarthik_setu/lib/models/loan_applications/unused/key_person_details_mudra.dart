@@ -1,5 +1,5 @@
-import 'package:aarthik_setu/models/profiles/business_profile/components/main_partner.dart';
-import 'package:aarthik_setu/models/profiles/business_profile/components/partner.dart';
+import '../business/forms/components/main_partner.dart';
+import '../business/forms/components/partner.dart';
 
 class KeyPersonDetails {
   String addressLine1;

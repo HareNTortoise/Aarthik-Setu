@@ -1,7 +1,7 @@
 import 'detailsOfMachinery_mudra.dart';
 import 'existingLoanDetail_mudra.dart';
 
-class oneForm {
+class OneFormMudra {
 
   // Business Details
   String industry;
@@ -32,7 +32,7 @@ class oneForm {
   // Existing Loan Details
   List<ExistingLoanDetail> existingLoanDetails;
 
-  oneForm({
+  OneFormMudra({
     required this.industry,
     required this.sector,
     required this.subSector,
@@ -55,8 +55,8 @@ class oneForm {
     required this.existingLoanDetails,
   });
 
-  factory oneForm.fromJson(Map<String, dynamic> json) {
-    return oneForm(
+  factory OneFormMudra.fromJson(Map<String, dynamic> json) {
+    return OneFormMudra(
       industry: json['industry'],
       sector: json['sector'],
       subSector: json['subSector'],
