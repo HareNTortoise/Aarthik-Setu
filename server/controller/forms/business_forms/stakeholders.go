@@ -41,6 +41,15 @@ func CreateStakeholdersDetails(c *gin.Context) {
 		return
 	}
 
+	// Parse the business details JSON data
+	businessJSON := c.PostForm("business_details")
+	var businessDetail model.BusinessDetail
+	err = json.Unmarshal([]byte(businessJSON), &businessDetail)
+	if err != nil {
+		c.JSON(http.StatusBadRequest, gin.H{"error": "Invalid business details", "details": err.Error()})
+		return
+	}
+
 	// Extract stakeholder details from form-data
 	stakeholdersJSON := c.PostForm("stakeholders") // Expecting a JSON array as string
 	var stakeholders []model.Stakeholder
@@ -59,10 +68,11 @@ func CreateStakeholdersDetails(c *gin.Context) {
 
 	// Add the stakeholder details to Firestore
 	_, _, err = client.Collection("business_stakeholders_details").Add(ctx, map[string]interface{}{
-		"stakeholders":  stakeholders,
-		"profileId":     profileId,
-		"applicationId": applicationId,
-		"formId":        formId,
+		"business_details": businessDetail,
+		"stakeholders":     stakeholders,
+		"profileId":        profileId,
+		"applicationId":    applicationId,
+		"formId":           formId,
 	})
 
 	if err != nil {
@@ -97,11 +107,31 @@ func GetStakeholdersDetails(c *gin.Context) {
 	}
 
 	// Assuming one document per business, retrieve the first one
-	stakeholders := docs[0].Data()["stakeholders"].([]interface{})
-	formId := docs[0].Data()["formId"]
+	doc := docs[0].Data()
+
+	// Parse the Firestore document fields
+	businessDetails, ok := doc["business_details"]
+	if !ok {
+		c.JSON(http.StatusInternalServerError, gin.H{"error": "Missing business details in Firestore document"})
+		return
+	}
+	stakeholders, ok := doc["stakeholders"]
+	if !ok {
+		c.JSON(http.StatusInternalServerError, gin.H{"error": "Missing stakeholders in Firestore document"})
+		return
+	}
+	formId, ok := doc["formId"]
+	if !ok {
+		c.JSON(http.StatusInternalServerError, gin.H{"error": "Missing formId in Firestore document"})
+		return
+	}
 
 	// Return the stakeholder details in the response
-	c.JSON(http.StatusOK, gin.H{"stakeholders": stakeholders, "formId": formId})
+	c.JSON(http.StatusOK, gin.H{
+		"business_details": businessDetails,
+		"stakeholders":     stakeholders,
+		"formId":           formId,
+	})
 }
 
 // UpdateStakeholdersDetails updates the stakeholder details for a specific business.

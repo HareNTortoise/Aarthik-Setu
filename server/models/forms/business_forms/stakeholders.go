@@ -50,8 +50,8 @@ type BusinessDetail struct {
 	RegistrationNo string        `json:"registration_no"`
 	StartDate      time.Time     `json:"start_date"`
 	AnnualRevenue  float64       `json:"annual_revenue"`         // Assuming revenue is a float
-	Address        Address       `json:"address"`                // Business Address
-	Stakeholders   []Stakeholder `json:"stakeholders,omitempty"` // Multiple stakeholders associated with the business
+	Address        Address       `json:"address"`                // Business Address comes first
+	Stakeholders   []Stakeholder `json:"stakeholders,omitempty"` // Stakeholders come second
 }
 
 // StakeholderCollection represents a collection of stakeholders.
