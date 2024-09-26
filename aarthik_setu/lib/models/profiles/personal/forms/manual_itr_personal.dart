@@ -1,4 +1,19 @@
-class ManualItrPersonal{
+class FinancialYear {
+  int startYear;
+  int endYear;
+
+  FinancialYear({required this.startYear, required this.endYear}) {
+    if (endYear - startYear != 1) {
+      throw Exception("Financial year difference must be 1");
+    }
+  }
+}
+
+class ManualItrPersonal {
+  String? id;
+  String profileId;
+  DateTime timestamp;
+  String applicationId;
   String firstName;
   String? middleName;
   String lastName;
@@ -16,9 +31,13 @@ class ManualItrPersonal{
   String? village;
   String? district;
   String? subDistrict;
-  Map<(int,int), double> netAnnualIncome;
+  Map<FinancialYear, double> netAnnualIncome;
 
   ManualItrPersonal({
+    required this.profileId,
+    required this.timestamp,
+    required this.applicationId,
+    this.id,
     required this.firstName,
     this.middleName,
     required this.lastName,
@@ -41,6 +60,10 @@ class ManualItrPersonal{
 
   Map<String, dynamic> toJson() {
     return {
+      'profileId': profileId,
+      'timestamp': timestamp,
+      'applicationId': applicationId,
+      'id': id,
       'firstName': firstName,
       'middleName': middleName,
       'lastName': lastName,
@@ -58,12 +81,20 @@ class ManualItrPersonal{
       'village': village,
       'district': district,
       'subDistrict': subDistrict,
-      'netAnnualIncome': netAnnualIncome,
+      'netAnnualIncome': {
+        'startYear': netAnnualIncome.keys.first.startYear,
+        'endYear': netAnnualIncome.keys.first.endYear,
+        'income': netAnnualIncome.values.first,
+      }
     };
   }
 
   factory ManualItrPersonal.fromJson(Map<String, dynamic> json) {
     return ManualItrPersonal(
+      profileId: json['profileId'],
+      timestamp: json['timestamp'],
+      applicationId: json['applicationId'],
+      id: json['id'],
       firstName: json['firstName'],
       middleName: json['middleName'],
       lastName: json['lastName'],
@@ -81,7 +112,12 @@ class ManualItrPersonal{
       village: json['village'],
       district: json['district'],
       subDistrict: json['subDistrict'],
-      netAnnualIncome: json['netAnnualIncome'],
+      netAnnualIncome: {
+        FinancialYear(
+          startYear: json['netAnnualIncome']['startYear'],
+          endYear: json['netAnnualIncome']['endYear'],
+        ): json['netAnnualIncome']['income'],
+      },
     );
   }
 }
