@@ -109,43 +109,63 @@ func CreateDeclareGSTBusinessDetails(c *gin.Context) {
 
 // GetDeclareGSTBusinessDetails handles retrieving business details by profile and application ID.
 func GetDeclareGSTBusinessDetails(c *gin.Context) {
-	profileId := c.Param("profileId")
-	applicationId := c.Param("applicationId")
+    profileId := c.Param("profileId")
+    applicationId := c.Param("applicationId")
 
-	// Debugging: Log the profileId and applicationId being queried
-	log.Printf("Fetching business details for profileId: %s, applicationId: %s", profileId, applicationId)
+    // Debugging: Log the profileId and applicationId being queried
+    log.Printf("Fetching business details for profileId: %s, applicationId: %s", profileId, applicationId)
 
-	// Context for Firestore
-	ctx := context.Background()
+    // Context for Firestore
+    ctx := context.Background()
 
-	// Query Firestore for the business details
-	iter := client.Collection("declare_business_details").Where("profileId", "==", profileId).Where("applicationId", "==", applicationId).Documents(ctx)
-	doc, err := iter.Next()
+    // Query Firestore for the business details
+    iter := client.Collection("declare_business_details").
+        Where("profileId", "==", profileId).
+        Where("applicationId", "==", applicationId).Documents(ctx)
+    
+    doc, err := iter.Next()
 
-	// Debugging: Check if the document query returned an error
-	if err != nil {
-		log.Printf("Error fetching business details for profileId: %s, applicationId: %s, error: %v", profileId, applicationId, err)
-		c.JSON(http.StatusNotFound, gin.H{"error": "Business details not found"})
-		return
-	}
+    if err != nil {
+        log.Printf("Error fetching business details for profileId: %s, applicationId: %s, error: %v", profileId, applicationId, err)
+        c.JSON(http.StatusNotFound, gin.H{"error": "Business details not found"})
+        return
+    }
 
-	// Debugging: Log that a document was found
-	log.Printf("Document found for profileId: %s, applicationId: %s", profileId, applicationId)
+    // Debugging: Log that a document was found
+    log.Printf("Document found for profileId: %s, applicationId: %s", profileId, applicationId)
 
-	// Map the document data to a BusinessDetails struct
-	var businessDetail model.BusinessDetails
-	if err := doc.DataTo(&businessDetail); err != nil {
-		// Debugging: Log the parsing error
-		log.Printf("Error parsing business details for document with profileId: %s, applicationId: %s, error: %v", profileId, applicationId, err)
-		c.JSON(http.StatusInternalServerError, gin.H{"error": "Failed to parse business details", "details": err.Error()})
-		return
-	}
+    // Get the raw document data
+    data := doc.Data()
 
-	// Debugging: Log the successfully fetched business details
-	log.Printf("Fetched business details: %+v", businessDetail)
+    // Access the nested "declare_business_details" field
+    declareBusinessDetails, ok := data["declare_business_details"].(map[string]interface{})
+    if !ok {
+        log.Printf("Error: 'declare_business_details' field not found or not a map in document for profileId: %s, applicationId: %s", profileId, applicationId)
+        c.JSON(http.StatusInternalServerError, gin.H{"error": "'declare_business_details' field is missing or invalid"})
+        return
+    }
 
-	// Return the business details
-	c.JSON(http.StatusOK, businessDetail)
+    // Convert the map into JSON to unmarshal into the BusinessDetails struct
+    declareBusinessDetailsJSON, err := json.Marshal(declareBusinessDetails)
+    if err != nil {
+        log.Printf("Error marshalling 'declare_business_details' to JSON for profileId: %s, applicationId: %s, error: %v", profileId, applicationId, err)
+        c.JSON(http.StatusInternalServerError, gin.H{"error": "Failed to convert business details", "details": err.Error()})
+        return
+    }
+
+    // Unmarshal the JSON into the BusinessDetails struct
+    var businessDetail model.BusinessDetails
+    if err := json.Unmarshal(declareBusinessDetailsJSON, &businessDetail); err != nil {
+        log.Printf("Error unmarshalling 'declare_business_details' to BusinessDetails struct for profileId: %s, applicationId: %s, error: %v", profileId, applicationId, err)
+        c.JSON(http.StatusInternalServerError, gin.H{"error": "Failed to parse business details", "details": err.Error()})
+        return
+    }
+
+    // Debugging: Log the successfully fetched business details
+    log.Printf("Fetched business details: %+v", businessDetail)
+
+    // Return the business details
+    c.JSON(http.StatusOK, businessDetail)
 }
 
 // UpdateBusinessDetails updates the business details for a specific business.
