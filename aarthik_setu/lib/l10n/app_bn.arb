@@ -3,55 +3,64 @@
   "@appTitle": {
     "description": "The title of the application",
     "type": "text",
-    "placeholders": {}
+    "placeholders": {},
+    "tags": ["sign-in"]
   },
   "signIn": "সাইন ইন করুন",
   "@signIn": {
     "description": "Button label for signing in",
     "type": "text",
-    "placeholders": {}
+    "placeholders": {},
+    "tags": ["sign-in"]
   },
   "googleSignIn": "গুগল",
   "@googleSignIn": {
     "description": "Label for Google Sign-In",
     "type": "text",
-    "placeholders": {}
+    "placeholders": {},
+    "tags": ["sign-in"]
   },
   "phoneSignIn": "ফোন",
   "@phoneSignIn": {
     "description": "Label for Phone Sign-In",
     "type": "text",
-    "placeholders": {}
+    "placeholders": {},
+    "tags": ["sign-in"]
   },
   "language": "ভাষা",
   "@language": {
     "description": "Label for language selection",
     "type": "text",
-    "placeholders": {}
+    "placeholders": {},
+    "tags": ["sign-in"]
   },
   "enterPhoneNumber": "আপনার ফোন নম্বর প্রবেশ করান",
   "@enterPhoneNumber": {
     "description": "Label for phone number entry",
     "type": "text",
-    "placeholders": {}
+    "placeholders": {},
+    "tags": ["sign-in"]
   },
   "sendOtp": "OTP পাঠান",
   "@sendOtp": {
     "description": "Button label for sending OTP",
     "type": "text",
-    "placeholders": {}
+    "placeholders": {},
+    "tags": ["sign-in"]
   },
   "verifyOtp": "OTP যাচাই করুন",
   "@verifyOtp": {
     "description": "Button label for verifying OTP",
     "type": "text",
-    "placeholders": {}
+    "placeholders": {},
+    "tags": ["sign-in"]
   },
   "resendOtp": "OTP পুনরায় পাঠান",
   "@resendOtp": {
     "description": "Button label for resending OTP",
     "type": "text",
-    "placeholders": {}
+    "placeholders": {},
+    "tags": ["sign-in"]
   },
   "otpExpireIn": "OTP মেয়াদ শেষ হতে {time} সেকেন্ড",
   "@otpExpireIn": {
@@ -62,42 +71,49 @@
         "type": "int",
         "example": "120"
       }
-    }
+    },
+    "tags": ["sign-in"]
   },
   "enterValidPhoneNumber": "অনুগ্রহ করে একটি বৈধ ফোন নম্বর প্রবেশ করুন",
   "@enterValidPhoneNumber": {
     "description": "Error message when phone number is invalid",
     "type": "text",
-    "placeholders": {}
+    "placeholders": {},
+    "tags": ["sign-in"]
   },
   "otpReceived": "OTP প্রাপ্ত হয়েছে",
   "@otpReceived": {
     "description": "Message showing received OTP",
     "type": "text",
-    "placeholders": {}
+    "placeholders": {},
+    "tags": ["sign-in"]
   },
   "enterOtp": "OTP প্রবেশ করান",
   "@enterOtp": {
     "description": "Label for OTP entry",
     "type": "text",
-    "placeholders": {}
+    "placeholders": {},
+    "tags": ["sign-in"]
   },
   "backButton": "পিছনে",
   "@backButton": {
     "description": "Label for the back button",
     "type": "text",
-    "placeholders": {}
+    "placeholders": {},
+    "tags": ["sign-in"]
   },
   "phoneNumber": "ফোন নম্বর",
   "@phoneNumber": {
     "description": "Label for phone number entry",
     "type": "text",
-    "placeholders": {}
+    "placeholders": {},
+    "tags": ["sign-in"]
   },
   "phoneSignInFormTitle": "ফোন দিয়ে সাইন ইন করুন",
   "@phoneSignInFormTitle": {
     "description": "Title for phone sign-in form",
     "type": "text",
-    "placeholders": {}
+    "placeholders": {},
+    "tags": ["sign-in"]
   }
 }

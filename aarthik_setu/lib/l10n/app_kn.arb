@@ -3,55 +3,64 @@
   "@appTitle": {
     "description": "The title of the application",
     "type": "text",
-    "placeholders": {}
+    "placeholders": {},
+    "tags": ["sign-in"]
   },
   "signIn": "ಸೈನ್ ಇನ್ ಮಾಡಿ",
   "@signIn": {
     "description": "Button label for signing in",
     "type": "text",
-    "placeholders": {}
+    "placeholders": {},
+    "tags": ["sign-in"]
   },
   "googleSignIn": "ಗೂಗಲ್",
   "@googleSignIn": {
     "description": "Label for Google Sign-In",
     "type": "text",
-    "placeholders": {}
+    "placeholders": {},
+    "tags": ["sign-in"]
   },
   "phoneSignIn": "ಫೋನ್",
   "@phoneSignIn": {
     "description": "Label for Phone Sign-In",
     "type": "text",
-    "placeholders": {}
+    "placeholders": {},
+    "tags": ["sign-in"]
   },
   "language": "ಭಾಷೆ",
   "@language": {
     "description": "Label for language selection",
     "type": "text",
-    "placeholders": {}
+    "placeholders": {},
+    "tags": ["sign-in"]
   },
   "enterPhoneNumber": "ನಿಮ್ಮ ಫೋನ್ ಸಂಖ್ಯೆಯನ್ನು ನಮೂದಿಸಿ",
   "@enterPhoneNumber": {
     "description": "Label for phone number entry",
     "type": "text",
-    "placeholders": {}
+    "placeholders": {},
+    "tags": ["sign-in"]
   },
   "sendOtp": "OTP ಕಳುಹಿಸಿ",
   "@sendOtp": {
     "description": "Button label for sending OTP",
     "type": "text",
-    "placeholders": {}
+    "placeholders": {},
+    "tags": ["sign-in"]
   },
   "verifyOtp": "OTP ಪರಿಶೀಲಿಸಿ",
   "@verifyOtp": {
     "description": "Button label for verifying OTP",
     "type": "text",
-    "placeholders": {}
+    "placeholders": {},
+    "tags": ["sign-in"]
   },
   "resendOtp": "OTP ಪುನಃ ಕಳುಹಿಸಿ",
   "@resendOtp": {
     "description": "Button label for resending OTP",
     "type": "text",
-    "placeholders": {}
+    "placeholders": {},
+    "tags": ["sign-in"]
   },
   "otpExpireIn": "OTP ಮಿಯಾದ್ ಮುಗಿಯಲು {time} ಸೆಕೆಂಡುಗಳು",
   "@otpExpireIn": {
@@ -62,42 +71,49 @@
         "type": "int",
         "example": "120"
       }
-    }
+    },
+    "tags": ["sign-in"]
   },
   "enterValidPhoneNumber": "ದಯವಿಟ್ಟು ಮಾನ್ಯವಾದ ಫೋನ್ ಸಂಖ್ಯೆಯನ್ನು ನಮೂದಿಸಿ",
   "@enterValidPhoneNumber": {
     "description": "Error message when phone number is invalid",
     "type": "text",
-    "placeholders": {}
+    "placeholders": {},
+    "tags": ["sign-in"]
   },
   "otpReceived": "OTP ಪಡೆದಿದೆ",
   "@otpReceived": {
     "description": "Message showing received OTP",
     "type": "text",
-    "placeholders": {}
+    "placeholders": {},
+    "tags": ["sign-in"]
   },
   "enterOtp": "OTP ನಮೂದಿಸಿ",
   "@enterOtp": {
     "description": "Label for OTP entry",
     "type": "text",
-    "placeholders": {}
+    "placeholders": {},
+    "tags": ["sign-in"]
   },
   "backButton": "ಹಿನ್ನೆಲೆ",
   "@backButton": {
     "description": "Label for the back button",
     "type": "text",
-    "placeholders": {}
+    "placeholders": {},
+    "tags": ["sign-in"]
   },
   "phoneNumber": "ಫೋನ್ ಸಂಖ್ಯೆ",
   "@phoneNumber": {
     "description": "Label for phone number entry",
     "type": "text",
-    "placeholders": {}
+    "placeholders": {},
+    "tags": ["sign-in"]
   },
   "phoneSignInFormTitle": "ಫೋನ್ ಮೂಲಕ ಸೈನ್ ಇನ್ ಮಾಡಿ",
   "@phoneSignInFormTitle": {
     "description": "Title for phone sign-in form",
     "type": "text",
-    "placeholders": {}
+    "placeholders": {},
+    "tags": ["sign-in"]
   }
 }
