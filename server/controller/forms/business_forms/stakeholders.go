@@ -138,44 +138,66 @@ func GetStakeholdersDetails(c *gin.Context) {
 func UpdateStakeholdersDetails(c *gin.Context) {
 	profileId := c.Param("profileId")
 	applicationId := c.Param("applicationId")
+
+	// Context for Firestore
 	ctx := context.Background()
 
-	// Extract new stakeholder details from form-data
-	stakeholdersJSON := c.PostForm("stakeholders") // Expecting a JSON array as string
-	var updatedStakeholders []model.Stakeholder
-	err := json.Unmarshal([]byte(stakeholdersJSON), &updatedStakeholders)
-	if err != nil {
-		c.JSON(http.StatusBadRequest, gin.H{"error": "Invalid stakeholder details", "details": err.Error()})
-		return
-	}
-
-	// Query Firestore to find the business's document
+	// Query Firestore to check if the business's document exists
 	query := client.Collection("business_stakeholders_details").
 		Where("profileId", "==", profileId).
 		Where("applicationId", "==", applicationId).
 		Documents(ctx)
-	docs, err := query.GetAll()
+	existingDocs, err := query.GetAll()
 	if err != nil {
 		c.JSON(http.StatusInternalServerError, gin.H{"error": "Failed to query stakeholder details", "details": err.Error()})
 		return
 	}
 
-	if len(docs) == 0 {
+	// If no document is found, return a not found error
+	if len(existingDocs) == 0 {
 		c.JSON(http.StatusNotFound, gin.H{"error": "No stakeholder details found for this business"})
 		return
 	}
 
-	// Update the document with new stakeholder details
-	docRef := docs[0].Ref
-	_, err = docRef.Update(ctx, []firestore.Update{
-		{Path: "stakeholders", Value: updatedStakeholders},
-	})
+	// Parse the updated business details JSON data (if needed)
+	businessJSON := c.PostForm("business_details")
+	var businessDetail model.BusinessDetail
+	if businessJSON != "" {
+		err = json.Unmarshal([]byte(businessJSON), &businessDetail)
+		if err != nil {
+			c.JSON(http.StatusBadRequest, gin.H{"error": "Invalid business details", "details": err.Error()})
+			return
+		}
+	}
 
+	// Extract and parse the updated stakeholder details from form-data
+	stakeholdersJSON := c.PostForm("stakeholders") // Expecting a JSON array as a string
+	var updatedStakeholders []model.Stakeholder
+	err = json.Unmarshal([]byte(stakeholdersJSON), &updatedStakeholders)
+	if err != nil {
+		c.JSON(http.StatusBadRequest, gin.H{"error": "Invalid stakeholder details", "details": err.Error()})
+		return
+	}
+
+	// Reference the existing document for updating
+	docRef := existingDocs[0].Ref
+
+	// Prepare the fields to be updated in Firestore
+	updates := []firestore.Update{
+		{Path: "stakeholders", Value: updatedStakeholders},
+	}
+	if businessJSON != "" {
+		updates = append(updates, firestore.Update{Path: "business_details", Value: businessDetail})
+	}
+
+	// Update the document with the new details
+	_, err = docRef.Update(ctx, updates)
 	if err != nil {
 		c.JSON(http.StatusInternalServerError, gin.H{"error": "Failed to update stakeholder details", "details": err.Error()})
 		return
 	}
 
+	// Return success response
 	c.JSON(http.StatusOK, gin.H{"message": "Stakeholder details updated successfully"})
 }
 

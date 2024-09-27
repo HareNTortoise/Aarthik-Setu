@@ -44,14 +44,9 @@ type Address struct {
 
 // BusinessDetails represents the details of a business associated with stakeholders.
 type BusinessDetail struct {
-	BusinessID     int           `json:"business_id" gorm:"primaryKey"`
-	BusinessName   string        `json:"business_name"`
-	BusinessType   string        `json:"business_type"` // E.g., Sole Proprietorship, LLC, Corporation
-	RegistrationNo string        `json:"registration_no"`
-	StartDate      time.Time     `json:"start_date"`
-	AnnualRevenue  float64       `json:"annual_revenue"`         // Assuming revenue is a float
-	Address        Address       `json:"address"`                // Business Address comes first
-	Stakeholders   []Stakeholder `json:"stakeholders,omitempty"` // Stakeholders come second
+	BusinessID   int           `json:"business_id" gorm:"primaryKey"`
+	Address      Address       `json:"address"`                // Business Address comes first
+	Stakeholders []Stakeholder `json:"stakeholders,omitempty"` // Stakeholders come second
 }
 
 // StakeholderCollection represents a collection of stakeholders.
