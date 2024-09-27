@@ -22,7 +22,9 @@ type ManualITR struct {
 	District       *string                    `json:"district,omitempty"`     // Optional
 	SubDistrict    *string                    `json:"subDistrict,omitempty"`  // Optional
 	NetAnnualIncome map[IncomeRange]float64   `json:"netAnnualIncome" binding:"required"`
-	UserId         string                     `json:"userId" binding:"required"` // Changed to `user_id` to match the JSON
+	ProfileId         string                     `json:"profileId" binding:"required"` // Changed to `user_id` to match the JSON
+	ApplicationId     string                     `json:"applicationId" binding:"required"` 
+	FormId 		  string                     `json:"formId" binding:"required"`
 }
 
 // IncomeRange represents the start and end year for income records

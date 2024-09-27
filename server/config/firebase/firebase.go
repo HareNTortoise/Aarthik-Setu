@@ -6,6 +6,8 @@ import (
 	"cloud.google.com/go/firestore"
 	"google.golang.org/api/option"
 	"cloud.google.com/go/storage"
+	"crypto/rand"
+	"encoding/hex"
 )
 
 // Initialize Firebase Firestore
@@ -28,4 +30,12 @@ func InitStorage() *storage.Client {
 		log.Fatalf("Failed to initialize Cloud Storage: %v", err)
 	}
 	return client
+}
+
+func GenerateRandomString(length int) (string, error) {
+	bytes := make([]byte, length)
+	if _, err := rand.Read(bytes); err != nil {
+		return "", err
+	}
+	return hex.EncodeToString(bytes)[:length], nil
 }

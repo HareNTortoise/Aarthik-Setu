@@ -4,7 +4,10 @@ go 1.22.4
 
 require cloud.google.com/go/storage v1.43.0
 
-require github.com/joho/godotenv v1.5.1 // indirect
+require (
+	github.com/gin-contrib/cors v1.7.2 // indirect
+	github.com/joho/godotenv v1.5.1 // indirect
+)
 
 require (
 	cloud.google.com/go v0.115.1 // indirect
