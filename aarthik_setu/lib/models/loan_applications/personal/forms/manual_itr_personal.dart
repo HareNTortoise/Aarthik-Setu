@@ -14,6 +14,7 @@ class ManualItrPersonal {
   String profileId;
   DateTime timestamp;
   String applicationId;
+
   String firstName;
   String? middleName;
   String lastName;
@@ -23,15 +24,17 @@ class ManualItrPersonal {
   String email;
   String addressLine1;
   String? addressLine2;
-  String landmark;
+  String? landmark;
   String country;
   String pinCode;
   String state;
   String city;
   String? village;
-  String? district;
-  String? subDistrict;
-  Map<FinancialYear, double> netAnnualIncome;
+  String district;
+  String subDistrict;
+  MapEntry<FinancialYear, double> netAnnualIncomeOne;
+  MapEntry<FinancialYear, double>? netAnnualIncomeTwo;
+  MapEntry<FinancialYear, double>? netAnnualIncomeThree;
 
   ManualItrPersonal({
     required this.profileId,
@@ -53,9 +56,11 @@ class ManualItrPersonal {
     required this.state,
     required this.city,
     this.village,
-    this.district,
-    this.subDistrict,
-    required this.netAnnualIncome,
+    required this.district,
+    required this.subDistrict,
+    required this.netAnnualIncomeOne,
+    this.netAnnualIncomeTwo,
+    this.netAnnualIncomeThree,
   });
 
   Map<String, dynamic> toJson() {
@@ -81,11 +86,23 @@ class ManualItrPersonal {
       'village': village,
       'district': district,
       'subDistrict': subDistrict,
-      'netAnnualIncome': {
-        'startYear': netAnnualIncome.keys.first.startYear,
-        'endYear': netAnnualIncome.keys.first.endYear,
-        'income': netAnnualIncome.values.first,
-      }
+      'netAnnualIncomeOne': {
+        'startYear': netAnnualIncomeOne.key.startYear,
+        'endYear': netAnnualIncomeOne.key.endYear,
+        'income': netAnnualIncomeOne.value,
+      },
+      if (netAnnualIncomeTwo != null)
+        'netAnnualIncomeTwo': {
+          'startYear': netAnnualIncomeTwo!.key.startYear,
+          'endYear': netAnnualIncomeTwo!.key.endYear,
+          'income': netAnnualIncomeTwo!.value,
+        },
+      if (netAnnualIncomeThree != null)
+        'netAnnualIncomeThree': {
+          'startYear': netAnnualIncomeThree!.key.startYear,
+          'endYear': netAnnualIncomeThree!.key.endYear,
+          'income': netAnnualIncomeThree!.value,
+        },
     };
   }
 
@@ -112,12 +129,31 @@ class ManualItrPersonal {
       village: json['village'],
       district: json['district'],
       subDistrict: json['subDistrict'],
-      netAnnualIncome: {
+      netAnnualIncomeOne: MapEntry(
         FinancialYear(
-          startYear: json['netAnnualIncome']['startYear'],
-          endYear: json['netAnnualIncome']['endYear'],
-        ): json['netAnnualIncome']['income'],
-      },
+          startYear: json['netAnnualIncomeOne']['startYear'],
+          endYear: json['netAnnualIncomeOne']['endYear'],
+        ),
+        json['netAnnualIncomeOne']['income'],
+      ),
+      netAnnualIncomeTwo: json['netAnnualIncomeTwo'] != null
+          ? MapEntry(
+              FinancialYear(
+                startYear: json['netAnnualIncomeTwo']['startYear'],
+                endYear: json['netAnnualIncomeTwo']['endYear'],
+              ),
+              json['netAnnualIncomeTwo']['income'],
+            )
+          : null,
+      netAnnualIncomeThree: json['netAnnualIncomeThree'] != null
+          ? MapEntry(
+              FinancialYear(
+                startYear: json['netAnnualIncomeThree']['startYear'],
+                endYear: json['netAnnualIncomeThree']['endYear'],
+              ),
+              json['netAnnualIncomeThree']['income'],
+            )
+          : null,
     );
   }
 }
