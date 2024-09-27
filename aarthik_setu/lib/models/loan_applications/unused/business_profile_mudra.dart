@@ -1,6 +1,6 @@
 import '../../common/bank_details.dart';
 import '../business/forms/stakeholders_form.dart';
-import '../business/forms/manual_itr_business.dart';
+import 'manual_itr_business.dart';
 
 class BusinessProfile{
   Map<(int, int), String> itr;
