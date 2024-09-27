@@ -112,7 +112,12 @@ Explore the **Aarthik Setu** live demo and witness the future of MSME financial 
 
 Or scan the QR code to access the mobile version:
 
-![QR Code]() <!-- Placeholder for QR Code -->
+
+<p align="center">
+  <img src="https://github.com/HareNTortoise/Aarthik-Setu/raw/main/AarthikSetu.png" alt="QR Code" width="200" height="200">
+</p>
+
+
 
 ---
 
@@ -141,12 +146,6 @@ flutter run
 # For Golang (backend)
 go run main.go
 ```
-
----
-
-## 🤝 Contributing
-
-We welcome all contributors to help improve **Aarthik Setu**! Please check our [Contribution Guidelines](CONTRIBUTING.md) for details on how to get started.
 
 ---
 
