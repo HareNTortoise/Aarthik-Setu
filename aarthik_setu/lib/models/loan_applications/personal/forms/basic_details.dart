@@ -3,6 +3,7 @@ class BasicDetails {
   String profileId;
   DateTime timestamp;
   String applicationId;
+
   String salutation;
   String firstName;
   String? middleName;
@@ -14,7 +15,7 @@ class BasicDetails {
   String mobile;
   String telephone;
   String emailPersonal;
-  String fatherName;
+  String? fatherName;
   String educationQualification;
   double netWorth;
   String nationality;
@@ -36,7 +37,7 @@ class BasicDetails {
     required this.mobile,
     required this.telephone,
     required this.emailPersonal,
-    required this.fatherName,
+    this.fatherName,
     required this.educationQualification,
     required this.netWorth,
     required this.nationality,

@@ -790,3 +790,89 @@ class Countries {
     "Zimbabwe"
   ];
 }
+
+class Genders {
+  static const male = 'Male';
+  static const female = 'Female';
+  static const other = 'Other';
+
+  static List<String> getGenders() {
+    return [male, female, other];
+  }
+}
+
+class Categories {
+  static const String general = 'General';
+  static const String obc = 'OBC';
+  static const String sc = 'SC';
+  static const String st = 'ST';
+  static const String others = 'Others';
+
+  static List<String> getCategories() {
+    return [general, obc, sc, st, others];
+  }
+}
+
+class MaritalStatus {
+  static const String single = 'Single';
+  static const String married = 'Married';
+  static const String divorced = 'Divorced';
+  static const String widowed = 'Widowed';
+
+  static List<String> getMaritalStatuses() {
+    return [single, married, divorced, widowed];
+  }
+}
+
+class EducationQualifications{
+  static const String diploma = 'Diploma';
+  static const String undergraduate = 'Undergraduate';
+  static const String graduate = 'Graduate';
+  static const String postGraduate = 'Post Graduate';
+  static const String doctorate = 'Doctorate';
+  static const String others = 'Others';
+
+  static List<String> getEducationQualifications() {
+    return [diploma, undergraduate, graduate, postGraduate, doctorate, others];
+  }
+}
+
+class Nationalities {
+  static const String resident = 'Resident';
+  static const String nonResident = 'Non-Resident';
+
+  static List<String> getNationalities() {
+    return [resident, nonResident];
+  }
+}
+
+class Salutations {
+  static const String mr = 'Mr.';
+  static const String mrs = 'Mrs.';
+  static const String ms = 'Ms.';
+  static const String dr = 'Dr.';
+  static const String prof = 'Prof.';
+  static const String other = 'Other';
+
+  static List<String> getSalutations() {
+    return [mr, mrs, ms, dr, prof, other];
+  }
+}
+
+class Dependents {
+  static const String zero = '0';
+  static const String one = '1';
+  static const String two = '2';
+  static const String three = '3';
+  static const String four = '4';
+  static const String five = '5';
+  static const String six = '6';
+  static const String seven = '7';
+  static const String eight = '8';
+  static const String nine = '9';
+  static const String ten = '10';
+
+  static List<String> getDependents() {
+    return [zero, one, two, three, four, five, six, seven, eight, nine, ten];
+  }
+}

@@ -1,4 +1,6 @@
+import 'package:aarthik_setu/constants/form_constants.dart';
 import 'package:aarthik_setu/global_components/back_button.dart';
+import 'package:aarthik_setu/global_components/custom_dropdown.dart';
 import 'package:calendar_date_picker2/calendar_date_picker2.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
@@ -17,8 +19,28 @@ class BasicDetailsForm extends StatefulWidget {
 }
 
 class _BasicDetailsFormState extends State<BasicDetailsForm> {
-  DateTime? _selectedDate;
   int currentYear = DateTime.now().year;
+
+  String? _salutation;
+  final TextEditingController _firstNameController = TextEditingController();
+  final TextEditingController _middleNameController = TextEditingController();
+
+  final TextEditingController _lastNameController = TextEditingController();
+  DateTime? _dateOfBirth;
+  final TextEditingController _panController = TextEditingController();
+  String? _gender;
+
+  String? _category;
+  final TextEditingController _mobileController = TextEditingController();
+  final TextEditingController _emailPersonalController = TextEditingController();
+
+  final TextEditingController _fatherNameController = TextEditingController();
+  String? _educationQualification;
+  final TextEditingController _netWorthController = TextEditingController();
+
+  String? _nationality;
+  String? _dependents;
+  String? _maritalStatus;
 
   @override
   Widget build(BuildContext context) {
@@ -65,10 +87,15 @@ class _BasicDetailsFormState extends State<BasicDetailsForm> {
                                 Row(
                                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                   children: [
-                                    LabelledTextField(
+                                    CustomDropdown(
                                       label: "Salutation*",
-                                      hintText: "Enter your salutation",
-                                      controller: TextEditingController(),
+                                      buttonLabel: _salutation ?? "Select Salutation",
+                                      items: Salutations.getSalutations(),
+                                      onChanged: (String? value) {
+                                        setState(() {
+                                          _salutation = value;
+                                        });
+                                      },
                                     ),
                                   ],
                                 ),
@@ -79,17 +106,17 @@ class _BasicDetailsFormState extends State<BasicDetailsForm> {
                                     LabelledTextField(
                                       label: "First Name*",
                                       hintText: "Enter your first name",
-                                      controller: TextEditingController(),
+                                      controller: _firstNameController,
                                     ),
                                     LabelledTextField(
                                       label: "Middle Name",
                                       hintText: "Enter your middle name",
-                                      controller: TextEditingController(),
+                                      controller: _middleNameController,
                                     ),
                                     LabelledTextField(
                                       label: "Last Name*",
                                       hintText: "Enter your last name",
-                                      controller: TextEditingController(),
+                                      controller: _lastNameController,
                                     ),
                                   ],
                                 ),
@@ -119,7 +146,7 @@ class _BasicDetailsFormState extends State<BasicDetailsForm> {
                                               );
                                               if (results != null) {
                                                 setState(() {
-                                                  _selectedDate = results[0];
+                                                  _dateOfBirth = results[0];
                                                 });
                                               }
                                             },
@@ -132,14 +159,14 @@ class _BasicDetailsFormState extends State<BasicDetailsForm> {
                                               backgroundColor:
                                                   WidgetStateProperty.all(AppColors.primaryColorTwo.withOpacity(0.5)),
                                             ),
-                                            child: _selectedDate != null
+                                            child: _dateOfBirth != null
                                                 ? Row(
                                                     mainAxisAlignment: MainAxisAlignment.center,
                                                     children: [
                                                       const Icon(Icons.calendar_month, size: 30, color: Colors.black),
                                                       const SizedBox(width: 10),
                                                       Text(
-                                                        "${_selectedDate!.day}/${_selectedDate!.month}/${_selectedDate!.year}",
+                                                        "${_dateOfBirth!.day}/${_dateOfBirth!.month}/${_dateOfBirth!.year}",
                                                         style: GoogleFonts.poppins(fontSize: 20, color: Colors.black),
                                                       ),
                                                     ],
@@ -159,35 +186,44 @@ class _BasicDetailsFormState extends State<BasicDetailsForm> {
                                       ],
                                     ),
                                     LabelledTextField(
-                                      label: "PAN Number",
+                                      label: "PAN Number*",
                                       hintText: "Enter your PAN number",
-                                      controller: TextEditingController(),
+                                      controller: _panController,
                                     ),
-                                    LabelledTextField(
-                                      label: "Gender",
-                                      hintText: "Enter your Gender",
-                                      controller: TextEditingController(),
-                                    ),
+                                    CustomDropdown(
+                                        label: 'Gender*',
+                                        buttonLabel: _gender ?? 'Select Gender',
+                                        items: Genders.getGenders(),
+                                        onChanged: (String? value) {
+                                          setState(() {
+                                            _gender = value;
+                                          });
+                                        })
                                   ],
                                 ),
                                 const SizedBox(height: 20),
                                 Row(
                                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                   children: [
-                                    LabelledTextField(
-                                      label: "Category",
-                                      hintText: "Enter your category",
-                                      controller: TextEditingController(),
+                                    CustomDropdown(
+                                      label: "Category*",
+                                      buttonLabel: _category ?? "Select Category",
+                                      items: Categories.getCategories(),
+                                      onChanged: (String? value) {
+                                        setState(() {
+                                          _category = value;
+                                        });
+                                      },
                                     ),
                                     LabelledTextField(
                                       label: "Mobile No*",
                                       hintText: "Enter your mobile number",
-                                      controller: TextEditingController(),
+                                      controller: _mobileController,
                                     ),
                                     LabelledTextField(
                                       label: "Email (Personal)*",
                                       hintText: "Enter your email",
-                                      controller: TextEditingController(),
+                                      controller: _emailPersonalController,
                                     ),
                                   ],
                                 ),
@@ -196,19 +232,24 @@ class _BasicDetailsFormState extends State<BasicDetailsForm> {
                                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                   children: [
                                     LabelledTextField(
-                                      label: "Father's Name*",
+                                      label: "Father's Name",
                                       hintText: "Enter your father's name",
-                                      controller: TextEditingController(),
+                                      controller: _fatherNameController,
+                                    ),
+                                    CustomDropdown(
+                                      label: "Education Qualification*",
+                                      buttonLabel: _educationQualification ?? "Select Education Qualification",
+                                      items: EducationQualifications.getEducationQualifications(),
+                                      onChanged: (String? value) {
+                                        setState(() {
+                                          _educationQualification = value;
+                                        });
+                                      },
                                     ),
                                     LabelledTextField(
-                                      label: "Education Qualification",
-                                      hintText: "Enter your education qualification",
-                                      controller: TextEditingController(),
-                                    ),
-                                    LabelledTextField(
-                                      label: "Net Worth",
+                                      label: "Net Worth*",
                                       hintText: "Enter your net worth",
-                                      controller: TextEditingController(),
+                                      controller: _netWorthController,
                                     ),
                                   ],
                                 ),
@@ -216,20 +257,34 @@ class _BasicDetailsFormState extends State<BasicDetailsForm> {
                                 Row(
                                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                   children: [
-                                    LabelledTextField(
-                                      label: "Nationality",
-                                      hintText: "Enter your nationality",
-                                      controller: TextEditingController(),
+                                    CustomDropdown(
+                                        label: 'Nationality*',
+                                        buttonLabel: _nationality ?? 'Select Nationality',
+                                        items: Nationalities.getNationalities(),
+                                        onChanged: (String? value) {
+                                          setState(() {
+                                            _nationality = value;
+                                          });
+                                        }),
+                                    CustomDropdown(
+                                      label: "Dependents*",
+                                      buttonLabel: _dependents ?? "Select Dependents",
+                                      items: Dependents.getDependents(),
+                                      onChanged: (String? value) {
+                                        setState(() {
+                                          _dependents = value;
+                                        });
+                                      },
                                     ),
-                                    LabelledTextField(
-                                      label: "Dependent",
-                                      hintText: "Enter your dependent",
-                                      controller: TextEditingController(),
-                                    ),
-                                    LabelledTextField(
-                                      label: "Marital Status",
-                                      hintText: "Enter your marital status",
-                                      controller: TextEditingController(),
+                                    CustomDropdown(
+                                      label: "Marital Status*",
+                                      buttonLabel: _maritalStatus ?? "Select Marital Status",
+                                      items: MaritalStatus.getMaritalStatuses(),
+                                      onChanged: (String? value) {
+                                        setState(() {
+                                          _maritalStatus = value;
+                                        });
+                                      },
                                     ),
                                   ],
                                 ),
