@@ -20,6 +20,7 @@ func main() {
 	// Create a new router instance
 	router := gin.Default()
 
+
 	// Apply CORS middleware
 	router.Use(cors.New(cors.Config{
 		AllowOrigins:     []string{"http://localhost:3000"}, // Add your frontend's URL here
@@ -29,6 +30,14 @@ func main() {
 	}))
 
 	// Register personal form routes
+	router.GET("/ping", func(c *gin.Context) {
+		// Respond with "pong"
+		c.JSON(200, gin.H{
+			"message": "pong",
+		})
+	})
+
+	// Register ITR form routes
 	personal_forms.RegisterPersonalITRRoutes(router)
 	personal_forms.RegisterPersonalITRPDFRoutes(router)
 	personal_forms.RegisterPersonalBankDetails(router)
