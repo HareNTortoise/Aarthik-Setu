@@ -15,8 +15,8 @@ class FileItrPersonal {
   DateTime timestamp;
   String applicationId;
   final MapEntry<FinancialYear, String> firstItr;
-  final MapEntry<FinancialYear, String> secondItr;
-  final MapEntry<FinancialYear, String> thirdItr;
+  final MapEntry<FinancialYear, String>? secondItr;
+  final MapEntry<FinancialYear, String>? thirdItr;
 
   FileItrPersonal({
     required this.profileId,
@@ -39,16 +39,18 @@ class FileItrPersonal {
         'endYear': firstItr.key.endYear,
         'file': firstItr.value,
       },
-      'secondItr': {
-        'startYear': secondItr.key.startYear,
-        'endYear': secondItr.key.endYear,
-        'file': secondItr.value,
-      },
-      'thirdItr': {
-        'startYear': thirdItr.key.startYear,
-        'endYear': thirdItr.key.endYear,
-        'file': thirdItr.value,
-      },
+      if (secondItr != null)
+        'secondItr': {
+          'startYear': secondItr!.key.startYear,
+          'endYear': secondItr!.key.endYear,
+          'file': secondItr!.value,
+        },
+      if (thirdItr != null)
+        'thirdItr': {
+          'startYear': thirdItr!.key.startYear,
+          'endYear': thirdItr!.key.endYear,
+          'file': thirdItr!.value,
+        },
     };
   }
 
@@ -65,20 +67,24 @@ class FileItrPersonal {
         ),
         json['firstItr']['file'],
       ),
-      secondItr: MapEntry(
-        FinancialYear(
-          startYear: json['secondItr']['startYear'],
-          endYear: json['secondItr']['endYear'],
-        ),
-        json['secondItr']['file'],
-      ),
-      thirdItr: MapEntry(
-        FinancialYear(
-          startYear: json['thirdItr']['startYear'],
-          endYear: json['thirdItr']['endYear'],
-        ),
-        json['thirdItr']['file'],
-      ),
+      secondItr: json['secondItr'] != null
+          ? MapEntry(
+              FinancialYear(
+                startYear: json['secondItr']['startYear'],
+                endYear: json['secondItr']['endYear'],
+              ),
+              json['secondItr']['file'],
+            )
+          : null,
+      thirdItr: json['thirdItr'] != null
+          ? MapEntry(
+              FinancialYear(
+                startYear: json['thirdItr']['startYear'],
+                endYear: json['thirdItr']['endYear'],
+              ),
+              json['thirdItr']['file'],
+            )
+          : null,
     );
   }
 }
