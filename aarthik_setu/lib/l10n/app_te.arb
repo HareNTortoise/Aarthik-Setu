@@ -3,55 +3,64 @@
   "@appTitle": {
     "description": "The title of the application",
     "type": "text",
-    "placeholders": {}
+    "placeholders": {},
+    "tags": ["sign-in"]
   },
   "signIn": "సైన్ ఇన్ చేయండి",
   "@signIn": {
     "description": "Button label for signing in",
     "type": "text",
-    "placeholders": {}
+    "placeholders": {},
+    "tags": ["sign-in"]
   },
   "googleSignIn": "గూగుల్",
   "@googleSignIn": {
     "description": "Label for Google Sign-In",
     "type": "text",
-    "placeholders": {}
+    "placeholders": {},
+    "tags": ["sign-in"]
   },
   "phoneSignIn": "ఫోన్",
   "@phoneSignIn": {
     "description": "Label for Phone Sign-In",
     "type": "text",
-    "placeholders": {}
+    "placeholders": {},
+    "tags": ["sign-in"]
   },
   "language": "భాష",
   "@language": {
     "description": "Label for language selection",
     "type": "text",
-    "placeholders": {}
+    "placeholders": {},
+    "tags": ["sign-in"]
   },
   "enterPhoneNumber": "మీ ఫోన్ నెంబర్ ని నమోదు చేయండి",
   "@enterPhoneNumber": {
     "description": "Label for phone number entry",
     "type": "text",
-    "placeholders": {}
+    "placeholders": {},
+    "tags": ["sign-in"]
   },
   "sendOtp": "OTP పంపించండి",
   "@sendOtp": {
     "description": "Button label for sending OTP",
     "type": "text",
-    "placeholders": {}
+    "placeholders": {},
+    "tags": ["sign-in"]
   },
   "verifyOtp": "OTP ధృవీకరించండి",
   "@verifyOtp": {
     "description": "Button label for verifying OTP",
     "type": "text",
-    "placeholders": {}
+    "placeholders": {},
+    "tags": ["sign-in"]
   },
   "resendOtp": "OTP మళ్ళీ పంపించండి",
   "@resendOtp": {
     "description": "Button label for resending OTP",
     "type": "text",
-    "placeholders": {}
+    "placeholders": {},
+    "tags": ["sign-in"]
   },
   "otpExpireIn": "OTP ముగియడానికి {time} సెకన్లు",
   "@otpExpireIn": {
@@ -62,42 +71,49 @@
         "type": "int",
         "example": "120"
       }
-    }
+    },
+    "tags": ["sign-in"]
   },
   "enterValidPhoneNumber": "దయచేసి సరైన ఫోన్ నెంబర్ ను నమోదు చేయండి",
   "@enterValidPhoneNumber": {
     "description": "Error message when phone number is invalid",
     "type": "text",
-    "placeholders": {}
+    "placeholders": {},
+    "tags": ["sign-in"]
   },
   "otpReceived": "OTP అందింది",
   "@otpReceived": {
     "description": "Message showing received OTP",
     "type": "text",
-    "placeholders": {}
+    "placeholders": {},
+    "tags": ["sign-in"]
   },
   "enterOtp": "OTP నమోదు చేయండి",
   "@enterOtp": {
     "description": "Label for OTP entry",
     "type": "text",
-    "placeholders": {}
+    "placeholders": {},
+    "tags": ["sign-in"]
   },
   "backButton": "తిరిగి",
   "@backButton": {
     "description": "Label for the back button",
     "type": "text",
-    "placeholders": {}
+    "placeholders": {},
+    "tags": ["sign-in"]
   },
   "phoneNumber": "ఫోన్ నెంబర్",
   "@phoneNumber": {
     "description": "Label for phone number entry",
     "type": "text",
-    "placeholders": {}
+    "placeholders": {},
+    "tags": ["sign-in"]
   },
   "phoneSignInFormTitle": "ఫోన్ తో సైన్ ఇన్ చేయండి",
   "@phoneSignInFormTitle": {
     "description": "Title for phone sign-in form",
     "type": "text",
-    "placeholders": {}
+    "placeholders": {},
+    "tags": ["sign-in"]
   }
 }

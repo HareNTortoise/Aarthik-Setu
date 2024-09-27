@@ -3,55 +3,64 @@
   "@appTitle": {
     "description": "The title of the application",
     "type": "text",
-    "placeholders": {}
+    "placeholders": {},
+    "tags": ["sign-in"]
   },
   "signIn": "உள்நுழையவும்",
   "@signIn": {
     "description": "Button label for signing in",
     "type": "text",
-    "placeholders": {}
+    "placeholders": {},
+    "tags": ["sign-in"]
   },
   "googleSignIn": "கூகுள்",
   "@googleSignIn": {
     "description": "Label for Google Sign-In",
     "type": "text",
-    "placeholders": {}
+    "placeholders": {},
+    "tags": ["sign-in"]
   },
   "phoneSignIn": "அழைப்பு",
   "@phoneSignIn": {
     "description": "Label for Phone Sign-In",
     "type": "text",
-    "placeholders": {}
+    "placeholders": {},
+    "tags": ["sign-in"]
   },
   "language": "மொழி",
   "@language": {
     "description": "Label for language selection",
     "type": "text",
-    "placeholders": {}
+    "placeholders": {},
+    "tags": ["sign-in"]
   },
   "enterPhoneNumber": "உங்கள் தொலைபேசி எண்களை உள்ளிடவும்",
   "@enterPhoneNumber": {
     "description": "Label for phone number entry",
     "type": "text",
-    "placeholders": {}
+    "placeholders": {},
+    "tags": ["sign-in"]
   },
   "sendOtp": "OTP ஐ அனுப்பவும்",
   "@sendOtp": {
     "description": "Button label for sending OTP",
     "type": "text",
-    "placeholders": {}
+    "placeholders": {},
+    "tags": ["sign-in"]
   },
   "verifyOtp": "OTP ஐ சரிபார்க்கவும்",
   "@verifyOtp": {
     "description": "Button label for verifying OTP",
     "type": "text",
-    "placeholders": {}
+    "placeholders": {},
+    "tags": ["sign-in"]
   },
   "resendOtp": "OTP ஐ மீண்டும் அனுப்பவும்",
   "@resendOtp": {
     "description": "Button label for resending OTP",
     "type": "text",
-    "placeholders": {}
+    "placeholders": {},
+    "tags": ["sign-in"]
   },
   "otpExpireIn": "OTP காலாவதியாக {time} விநாடிகள்",
   "@otpExpireIn": {
@@ -62,42 +71,49 @@
         "type": "int",
         "example": "120"
       }
-    }
+    },
+    "tags": ["sign-in"]
   },
   "enterValidPhoneNumber": "தயவுசெய்து ஒரு செல்லுபடியாகும் தொலைபேசி எண் உள்ளிடவும்",
   "@enterValidPhoneNumber": {
     "description": "Error message when phone number is invalid",
     "type": "text",
-    "placeholders": {}
+    "placeholders": {},
+    "tags": ["sign-in"]
   },
   "otpReceived": "OTP பெற்றது",
   "@otpReceived": {
     "description": "Message showing received OTP",
     "type": "text",
-    "placeholders": {}
+    "placeholders": {},
+    "tags": ["sign-in"]
   },
   "enterOtp": "OTP ஐ உள்ளிடவும்",
   "@enterOtp": {
     "description": "Label for OTP entry",
     "type": "text",
-    "placeholders": {}
+    "placeholders": {},
+    "tags": ["sign-in"]
   },
   "backButton": "மீண்டும்",
   "@backButton": {
     "description": "Label for the back button",
     "type": "text",
-    "placeholders": {}
+    "placeholders": {},
+    "tags": ["sign-in"]
   },
   "phoneNumber": "தொலைபேசி எண்",
   "@phoneNumber": {
     "description": "Label for phone number entry",
     "type": "text",
-    "placeholders": {}
+    "placeholders": {},
+    "tags": ["sign-in"]
   },
   "phoneSignInFormTitle": "தொலைபேசி மூலம் உள்நுழையவும்",
   "@phoneSignInFormTitle": {
     "description": "Title for phone sign-in form",
     "type": "text",
-    "placeholders": {}
+    "placeholders": {},
+    "tags": ["sign-in"]
   }
 }
