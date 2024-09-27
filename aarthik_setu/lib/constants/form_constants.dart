@@ -923,3 +923,18 @@ class ModesOfSalary {
     return [cash, cheque, directInAccount];
   }
 }
+
+
+class LoanTypes{
+  static const String personal = 'Personal';
+  static const String home = 'Home';
+  static const String creditCard = 'Credit Card';
+  static const String vehicle = 'Vehicle';
+  static const String education = 'Education';
+  static const String business = 'Business';
+  static const String others = 'Others';
+
+  static List<String> getLoanTypes() {
+    return [personal, home, creditCard, vehicle, education, business, others];
+  }
+}
