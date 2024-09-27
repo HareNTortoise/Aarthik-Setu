@@ -824,7 +824,7 @@ class MaritalStatus {
   }
 }
 
-class EducationQualifications{
+class EducationQualifications {
   static const String diploma = 'Diploma';
   static const String undergraduate = 'Undergraduate';
   static const String graduate = 'Graduate';
@@ -874,5 +874,52 @@ class Dependents {
 
   static List<String> getDependents() {
     return [zero, one, two, three, four, five, six, seven, eight, nine, ten];
+  }
+}
+
+class EmploymentType {
+  static const String salaried = 'Salaried';
+  static const String selfEmployed = 'Self Employed';
+  static const String business = 'Business';
+  static const String student = 'Student';
+  static const String retired = 'Retired';
+  static const String unemployed = 'Unemployed';
+  static const String others = 'Others';
+
+  static List<String> getEmploymentTypes() {
+    return [salaried, selfEmployed, business, student, retired, unemployed, others];
+  }
+}
+
+class EmploymentStatus {
+  static const String regular = 'Regular';
+  static const String probationary = 'Probationary';
+  static const String contractual = 'Contractual';
+
+  static List<String> getEmploymentStatuses() {
+    return [regular, probationary, contractual];
+  }
+}
+
+class Designations {
+  static const String seniorManagement = 'Senior Management';
+  static const String middleManagement = 'Middle Management';
+  static const String junior = 'Junior';
+  static const String selfEmployed = 'Self Employed';
+  static const String pensioner = 'Pensioner';
+  static const String others = 'Others';
+
+  static List<String> getDesignations() {
+    return [seniorManagement, middleManagement, junior, selfEmployed, pensioner, others];
+  }
+}
+
+class ModesOfSalary {
+  static const String cash = 'Cash';
+  static const String cheque = 'Cheque';
+  static const String directInAccount = 'Direct in Account';
+
+  static List<String> getModesOfSalary() {
+    return [cash, cheque, directInAccount];
   }
 }

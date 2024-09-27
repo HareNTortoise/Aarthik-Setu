@@ -1,14 +1,15 @@
 class EmploymentDetails {
+  String? id;
+  String profileId;
+  DateTime timestamp;
+  String applicationId;
+
   String employmentType;
   String employerStatus;
   String designation;
   String modeOfSalary;
   String grossMonthlyIncome;
   String netMonthlyIncome;
-  String? id;
-  String profileId;
-  DateTime timestamp;
-  String applicationId;
 
   EmploymentDetails({
     required this.employmentType,

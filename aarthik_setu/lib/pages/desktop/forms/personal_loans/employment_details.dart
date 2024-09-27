@@ -1,4 +1,6 @@
+import 'package:aarthik_setu/constants/form_constants.dart';
 import 'package:aarthik_setu/global_components/back_button.dart';
+import 'package:aarthik_setu/global_components/custom_dropdown.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -7,8 +9,20 @@ import '../../../../constants/app_constants.dart';
 import '../../../../global_components/labelled_text_field.dart';
 import '../../../../global_components/procees_button.dart';
 
-class EmploymentDetailsForm extends StatelessWidget {
+class EmploymentDetailsForm extends StatefulWidget {
   const EmploymentDetailsForm({super.key});
+
+  @override
+  State<EmploymentDetailsForm> createState() => _EmploymentDetailsFormState();
+}
+
+class _EmploymentDetailsFormState extends State<EmploymentDetailsForm> {
+  String? _employmentStatus;
+  String? _designation;
+  String? _employmentType;
+  String? _modeOfSalary;
+  final TextEditingController _grossMonthlyIncomeController = TextEditingController();
+  final TextEditingController _netMonthlyIncomeController = TextEditingController();
 
   @override
   Widget build(BuildContext context) {
@@ -50,22 +64,37 @@ class EmploymentDetailsForm extends StatelessWidget {
                         Row(
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: [
-                            LabelledTextField(
-                              label: "Employment Status",
-                              hintText: "Enter your employment status",
-                              controller: TextEditingController(),
+                            CustomDropdown(
+                              label: "Employment Status*",
+                              buttonLabel: _employmentStatus ?? "Select Employment Status",
+                              items: EmploymentStatus.getEmploymentStatuses(),
+                              onChanged: (String? value) {
+                                setState(() {
+                                  _employmentStatus = value;
+                                });
+                              },
                             ),
                             const SizedBox(height: 20),
-                            LabelledTextField(
-                              label: "Designation",
-                              hintText: "Enter your designation",
-                              controller: TextEditingController(),
+                            CustomDropdown(
+                              label: "Designation*",
+                              buttonLabel: _designation ?? "Select Designation",
+                              items: Designations.getDesignations(),
+                              onChanged: (String? value) {
+                                setState(() {
+                                  _designation = value;
+                                });
+                              },
                             ),
                             const SizedBox(height: 20),
-                            LabelledTextField(
-                              label: "Employment Type",
-                              hintText: "Enter your employment type",
-                              controller: TextEditingController(),
+                            CustomDropdown(
+                              label: "Employment Type*",
+                              buttonLabel: _employmentType ?? "Select Employment Type",
+                              items: EmploymentType.getEmploymentTypes(),
+                              onChanged: (String? value) {
+                                setState(() {
+                                  _employmentType = value;
+                                });
+                              },
                             ),
                           ],
                         ),
@@ -73,22 +102,27 @@ class EmploymentDetailsForm extends StatelessWidget {
                         Row(
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: [
-                            LabelledTextField(
-                              label: "Mode of Salary",
-                              hintText: "Enter your mode of salary",
-                              controller: TextEditingController(),
+                            CustomDropdown(
+                              label: "Mode of Salary*",
+                              buttonLabel: _modeOfSalary ?? "Select Mode of Salary",
+                              items: ModesOfSalary.getModesOfSalary(),
+                              onChanged: (String? value) {
+                                setState(() {
+                                  _modeOfSalary = value;
+                                });
+                              },
                             ),
                             const SizedBox(height: 20),
                             LabelledTextField(
-                              label: "Gross Monthly Income",
+                              label: "Gross Monthly Income*",
                               hintText: "Enter your gross monthly income",
-                              controller: TextEditingController(),
+                              controller: _grossMonthlyIncomeController,
                             ),
                             const SizedBox(height: 20),
                             LabelledTextField(
-                              label: "Net Monthly Income",
+                              label: "Net Monthly Income*",
                               hintText: "Enter your net monthly income",
-                              controller: TextEditingController(),
+                              controller: _netMonthlyIncomeController,
                             ),
                           ],
                         ),
