@@ -1,4 +1,7 @@
-# ⚡Aarthik Setu: Empowering MSMEs Through Smarter Credit Access ⚡
+<div align="center">
+  <h1>⚡ Aarthik Setu ⚡</h1>
+  <h3>Empowering MSMEs Through Smarter Credit Access</h3>
+</div>
 
 ![Aarthik Setu Banner](https://aarthik-setu.web.app/images/banner.png) <!-- Placeholder for banner image -->
 
