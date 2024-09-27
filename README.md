@@ -109,7 +109,7 @@ Explore the **Aarthik Setu** live demo and witness the future of MSME financial 
 
 Or scan the QR code to access the mobile version:
 
-![QR Code](https://aarthik-setu.web.app/images/qr-code.png) <!-- Placeholder for QR Code -->
+![QR Code]() <!-- Placeholder for QR Code -->
 
 ---
 
@@ -149,7 +149,7 @@ We welcome all contributors to help improve **Aarthik Setu**! Please check our [
 
 ## 📝 License
 
-This project is licensed under the **MIT License**. See the [LICENSE](LICENSE) file for more information.
+This project is licensed under the **Apache License License**. See the [LICENSE](https://github.com/HareNTortoise/Aarthik-Setu/blob/main/LICENSE) file for more information.
 
 ---
 
