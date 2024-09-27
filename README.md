@@ -1,5 +1,5 @@
 <div align="center">
-  <h1>⚡ Aarthik Setu ⚡</h1>
+<h1>₹ Aarthik Setu ₹</h1>
   <h3>Empowering MSMEs Through Smarter Credit Access</h3>
 </div>
 
