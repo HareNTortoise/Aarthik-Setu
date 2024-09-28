@@ -15,6 +15,14 @@ class MainPartnerForm extends StatefulWidget {
 }
 
 class _MainPartnerFormState extends State<MainPartnerForm> {
+  String? _mainPartner;
+  bool _owningAHouse = false;
+  bool _assessedForIncomeTax = false;
+  bool _haveLifeInsurance = false;
+  final TextEditingController _maritalStatusController = TextEditingController();
+  final TextEditingController _spouseNameController = TextEditingController();
+  final TextEditingController _noOfChildrenController = TextEditingController();
+
   @override
   Widget build(BuildContext context) {
     return IntrinsicHeight(
@@ -47,11 +55,11 @@ class _MainPartnerFormState extends State<MainPartnerForm> {
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 CustomDropdown(
+                  current: _mainPartner,
                   label: 'Main Partner',
                   buttonLabel: 'Select Main Partner',
                   labelFontSize: 18,
-                  items: [
-                  ],
+                  items: [],
                   onChanged: (_) {},
                 ),
                 Column(
@@ -61,7 +69,14 @@ class _MainPartnerFormState extends State<MainPartnerForm> {
                       style: GoogleFonts.poppins(fontSize: 18),
                     ),
                     const SizedBox(height: 5),
-                    CustomSwitch(onChanged: (_) {}, current: true,),
+                    CustomSwitch(
+                      onChanged: (_) {
+                        setState(() {
+                          _owningAHouse = !_owningAHouse;
+                        });
+                      },
+                      current: _owningAHouse,
+                    ),
                   ],
                 ),
                 Column(
@@ -71,8 +86,14 @@ class _MainPartnerFormState extends State<MainPartnerForm> {
                       style: GoogleFonts.poppins(fontSize: 18),
                     ),
                     const SizedBox(height: 5),
-                    CustomSwitch(onChanged: (_) {}, current: true,),
-
+                    CustomSwitch(
+                      onChanged: (_) {
+                        setState(() {
+                          _assessedForIncomeTax = !_assessedForIncomeTax;
+                        });
+                      },
+                      current: _assessedForIncomeTax,
+                    ),
                   ],
                 ),
               ],
@@ -88,18 +109,25 @@ class _MainPartnerFormState extends State<MainPartnerForm> {
                       style: GoogleFonts.poppins(fontSize: 18),
                     ),
                     const SizedBox(height: 5),
-                    CustomSwitch(onChanged: (_) {}, current: true,),
+                    CustomSwitch(
+                      onChanged: (_) {
+                        setState(() {
+                          _haveLifeInsurance = !_haveLifeInsurance;
+                        });
+                      },
+                      current: _haveLifeInsurance,
+                    ),
                   ],
                 ),
                 LabelledTextField(
                   label: "Marital Status",
                   hintText: "Enter Marital Status",
-                  controller: TextEditingController(),
+                  controller: _maritalStatusController,
                 ),
                 LabelledTextField(
                   label: "Spouse Name",
                   hintText: "Enter Spouse Name",
-                  controller: TextEditingController(),
+                  controller: _spouseNameController,
                 ),
               ],
             ),
@@ -110,7 +138,7 @@ class _MainPartnerFormState extends State<MainPartnerForm> {
                 LabelledTextField(
                   label: "No. of Children",
                   hintText: "Enter No. of Children",
-                  controller: TextEditingController(),
+                  controller: _noOfChildrenController,
                 ),
               ],
             ),

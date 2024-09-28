@@ -3,8 +3,72 @@ import 'package:dropdown_button2/dropdown_button2.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import '../../../../../constants/colors.dart';
+import '../../../../../constants/form_constants.dart';
+import '../../../../../global_components/custom_dropdown.dart';
 import '../../../../../global_components/custom_switch.dart';
 import '../../../../../global_components/labelled_text_field.dart';
+
+class StakeholderFormInputUnit {
+  TextEditingController salutationController;
+  TextEditingController relationshipTypeController;
+  TextEditingController firstNameController;
+  TextEditingController middleNameController;
+  TextEditingController lastNameController;
+  TextEditingController ownershipController;
+  TextEditingController genderController;
+  TextEditingController fatherNameController;
+  DateTime? dob;
+  TextEditingController mobileNumberController;
+  TextEditingController residenceStatusController;
+  TextEditingController panController;
+  TextEditingController educationStatusController;
+  TextEditingController totalExperienceController;
+  TextEditingController netWorthController;
+  TextEditingController addressLineOneController;
+  TextEditingController addressLineTwoController;
+  TextEditingController landmarkController;
+  TextEditingController pincodeController;
+  String? country;
+  String? state;
+  String? city;
+  TextEditingController districtController;
+  TextEditingController subDistrictController;
+  TextEditingController villageController;
+  TextEditingController phoneController;
+  TextEditingController visuallyImpairedController;
+  bool isGuarantor;
+
+  StakeholderFormInputUnit({
+    required this.salutationController,
+    required this.relationshipTypeController,
+    required this.firstNameController,
+    required this.middleNameController,
+    required this.lastNameController,
+    required this.ownershipController,
+    required this.genderController,
+    required this.fatherNameController,
+    required this.dob,
+    required this.mobileNumberController,
+    required this.residenceStatusController,
+    required this.panController,
+    required this.educationStatusController,
+    required this.totalExperienceController,
+    required this.netWorthController,
+    required this.addressLineOneController,
+    required this.addressLineTwoController,
+    required this.landmarkController,
+    required this.pincodeController,
+    required this.country,
+    required this.state,
+    required this.city,
+    required this.districtController,
+    required this.subDistrictController,
+    required this.villageController,
+    required this.phoneController,
+    required this.visuallyImpairedController,
+    required this.isGuarantor,
+  });
+}
 
 class AddStakeholders extends StatefulWidget {
   const AddStakeholders({super.key});
@@ -15,8 +79,10 @@ class AddStakeholders extends StatefulWidget {
 
 class _AddStakeholdersState extends State<AddStakeholders> {
   bool _formVisible = false;
-  bool _isGuarantor = false;
   bool _isEditing = false;
+
+  List<StakeholderFormInputUnit> stakeholders = [];
+  int? currentStakeholderIndex;
 
   @override
   Widget build(BuildContext context) {
@@ -49,12 +115,45 @@ class _AddStakeholdersState extends State<AddStakeholders> {
                     style: ButtonStyle(
                       shape: WidgetStateProperty.all(RoundedRectangleBorder(borderRadius: BorderRadius.circular(20))),
                     ),
-                    onPressed: () {
-                      setState(() {
-                        _formVisible = !_formVisible;
-                        _isEditing = false;
-                      });
-                    },
+                    onPressed: !_formVisible
+                        ? () {
+                            setState(() {
+                              stakeholders.add(StakeholderFormInputUnit(
+                                salutationController: TextEditingController(),
+                                relationshipTypeController: TextEditingController(),
+                                firstNameController: TextEditingController(),
+                                middleNameController: TextEditingController(),
+                                lastNameController: TextEditingController(),
+                                ownershipController: TextEditingController(),
+                                genderController: TextEditingController(),
+                                fatherNameController: TextEditingController(),
+                                dob: null,
+                                mobileNumberController: TextEditingController(),
+                                residenceStatusController: TextEditingController(),
+                                panController: TextEditingController(),
+                                educationStatusController: TextEditingController(),
+                                totalExperienceController: TextEditingController(),
+                                netWorthController: TextEditingController(),
+                                addressLineOneController: TextEditingController(),
+                                addressLineTwoController: TextEditingController(),
+                                landmarkController: TextEditingController(),
+                                pincodeController: TextEditingController(),
+                                country: null,
+                                state: null,
+                                city: null,
+                                districtController: TextEditingController(),
+                                subDistrictController: TextEditingController(),
+                                villageController: TextEditingController(),
+                                phoneController: TextEditingController(),
+                                visuallyImpairedController: TextEditingController(),
+                                isGuarantor: false,
+                              ));
+                              currentStakeholderIndex = stakeholders.length - 1;
+                              _formVisible = true;
+                              _isEditing = false;
+                            });
+                          }
+                        : () {},
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
@@ -75,19 +174,24 @@ class _AddStakeholdersState extends State<AddStakeholders> {
                     height: 100,
                     child: DropdownButton2(
                       items: [
-                        for (int i = 0; i < 10; i++)
-                          DropdownMenuItem(
-                            value: i,
-                            child: Row(
-                              children: [
-                                Text("Stakeholder $i", style: GoogleFonts.poppins(fontSize: 18)),
-                              ],
-                            ),
-                          )
+                        if (!_formVisible)
+                          for (int i = 0; i < stakeholders.length; i++)
+                            DropdownMenuItem(
+                              value: i,
+                              child: Row(
+                                children: [
+                                  Text(stakeholders[i].firstNameController.text,
+                                      style: const TextStyle(color: Colors.black, fontSize: 22)),
+                                  const SizedBox(width: 20),
+                                  if (i == currentStakeholderIndex) const Icon(Icons.check, color: Colors.black)
+                                ],
+                              ),
+                            )
                       ],
-                      onChanged: (value) {
-
+                      onChanged: (int? value) {
                         setState(() {
+                          currentStakeholderIndex = value;
+                          _formVisible = true;
                           _isEditing = true;
                         });
                       },
@@ -135,7 +239,7 @@ class _AddStakeholdersState extends State<AddStakeholders> {
                 ),
               ],
             ),
-            if (_formVisible)
+            if (_formVisible && currentStakeholderIndex != null)
               Column(
                 children: [
                   const SizedBox(height: 20),
@@ -147,12 +251,12 @@ class _AddStakeholdersState extends State<AddStakeholders> {
                       LabelledTextField(
                         label: 'Salutation',
                         hintText: 'Enter salutation',
-                        controller: TextEditingController(),
+                        controller: stakeholders[currentStakeholderIndex!].salutationController,
                       ),
                       LabelledTextField(
                         label: 'Relationship type',
                         hintText: 'Enter relationship',
-                        controller: TextEditingController(),
+                        controller: stakeholders[currentStakeholderIndex!].relationshipTypeController,
                       ),
                     ],
                   ),
@@ -163,17 +267,17 @@ class _AddStakeholdersState extends State<AddStakeholders> {
                       LabelledTextField(
                         label: 'First Name',
                         hintText: 'Enter first name',
-                        controller: TextEditingController(),
+                        controller: stakeholders[currentStakeholderIndex!].firstNameController,
                       ),
                       LabelledTextField(
                         label: 'Middle Name',
                         hintText: 'Enter middle name',
-                        controller: TextEditingController(),
+                        controller: stakeholders[currentStakeholderIndex!].middleNameController,
                       ),
                       LabelledTextField(
                         label: 'Last Name',
                         hintText: 'Enter last name',
-                        controller: TextEditingController(),
+                        controller: stakeholders[currentStakeholderIndex!].lastNameController,
                       ),
                     ],
                   ),
@@ -184,17 +288,17 @@ class _AddStakeholdersState extends State<AddStakeholders> {
                       LabelledTextField(
                         label: 'Ownership %',
                         hintText: 'Enter Ownership %',
-                        controller: TextEditingController(),
+                        controller: stakeholders[currentStakeholderIndex!].ownershipController,
                       ),
                       LabelledTextField(
                         label: 'Gender',
                         hintText: 'Enter gender',
-                        controller: TextEditingController(),
+                        controller: stakeholders[currentStakeholderIndex!].genderController,
                       ),
                       LabelledTextField(
                         label: 'Father Name',
                         hintText: 'Enter father name',
-                        controller: TextEditingController(),
+                        controller: stakeholders[currentStakeholderIndex!].fatherNameController,
                       ),
                     ],
                   ),
@@ -203,18 +307,23 @@ class _AddStakeholdersState extends State<AddStakeholders> {
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       DatePickerButton(
+                        current: stakeholders[currentStakeholderIndex!].dob,
                         label: 'Date of Birth',
-                        onDateSelected: (date) {},
+                        onDateSelected: (date) {
+                          setState(() {
+                            stakeholders[currentStakeholderIndex!].dob = date;
+                          });
+                        },
                       ),
                       LabelledTextField(
                         label: 'Mobile Number',
                         hintText: 'Enter mobile number',
-                        controller: TextEditingController(),
+                        controller: stakeholders[currentStakeholderIndex!].mobileNumberController,
                       ),
                       LabelledTextField(
                         label: 'Residence Status',
                         hintText: 'Enter residence status',
-                        controller: TextEditingController(),
+                        controller: stakeholders[currentStakeholderIndex!].residenceStatusController,
                       ),
                     ],
                   ),
@@ -225,17 +334,17 @@ class _AddStakeholdersState extends State<AddStakeholders> {
                       LabelledTextField(
                         label: 'Enter PAN',
                         hintText: 'Enter PAN',
-                        controller: TextEditingController(),
+                        controller: stakeholders[currentStakeholderIndex!].panController,
                       ),
                       LabelledTextField(
                         label: 'Education Status',
                         hintText: 'Enter education status',
-                        controller: TextEditingController(),
+                        controller: stakeholders[currentStakeholderIndex!].educationStatusController,
                       ),
                       LabelledTextField(
                         label: 'Total Experience (years)',
                         hintText: 'Enter total experience',
-                        controller: TextEditingController(),
+                        controller: stakeholders[currentStakeholderIndex!].totalExperienceController,
                       ),
                     ],
                   ),
@@ -246,7 +355,7 @@ class _AddStakeholdersState extends State<AddStakeholders> {
                       LabelledTextField(
                         label: 'Net Worth (INR)',
                         hintText: 'Enter net worth',
-                        controller: TextEditingController(),
+                        controller: stakeholders[currentStakeholderIndex!].netWorthController,
                       ),
                     ],
                   ),
@@ -257,19 +366,19 @@ class _AddStakeholdersState extends State<AddStakeholders> {
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       LabelledTextField(
-                        label: 'Building No.',
+                        label: 'Address Line One*',
                         hintText: 'Enter Building No.',
-                        controller: TextEditingController(),
+                        controller: stakeholders[currentStakeholderIndex!].addressLineOneController,
                       ),
                       LabelledTextField(
-                        label: 'Street Name',
+                        label: 'Address Line Two',
                         hintText: 'Enter Street',
-                        controller: TextEditingController(),
+                        controller: stakeholders[currentStakeholderIndex!].addressLineTwoController,
                       ),
                       LabelledTextField(
                         label: 'Landmark',
                         hintText: 'Enter Landmark',
-                        controller: TextEditingController(),
+                        controller: stakeholders[currentStakeholderIndex!].landmarkController,
                       ),
                     ],
                   ),
@@ -280,17 +389,27 @@ class _AddStakeholdersState extends State<AddStakeholders> {
                       LabelledTextField(
                         label: 'Pincode',
                         hintText: 'Enter pincode',
-                        controller: TextEditingController(),
+                        controller: stakeholders[currentStakeholderIndex!].pincodeController,
                       ),
-                      LabelledTextField(
+                      CustomDropdown(
                         label: 'Country',
-                        hintText: 'Enter country',
-                        controller: TextEditingController(),
+                        buttonLabel: stakeholders[currentStakeholderIndex!].country ?? 'Select country',
+                        items: Countries.countryList,
+                        onChanged: (value) {
+                          setState(() {
+                            stakeholders[currentStakeholderIndex!].country = value;
+                          });
+                        },
                       ),
-                      LabelledTextField(
+                      CustomDropdown(
                         label: 'State',
-                        hintText: 'Enter state',
-                        controller: TextEditingController(),
+                        buttonLabel: stakeholders[currentStakeholderIndex!].state ?? 'Select state',
+                        items: IndiaStates.getAllStatesAndUTs(),
+                        onChanged: (value) {
+                          setState(() {
+                            stakeholders[currentStakeholderIndex!].state = value;
+                          });
+                        },
                       ),
                     ],
                   ),
@@ -298,20 +417,25 @@ class _AddStakeholdersState extends State<AddStakeholders> {
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
-                      LabelledTextField(
+                      CustomDropdown(
                         label: 'City',
-                        hintText: 'Enter city',
-                        controller: TextEditingController(),
+                        buttonLabel: stakeholders[currentStakeholderIndex!].city ?? 'Select city',
+                        items: IndiaCities.citiesMap[stakeholders[currentStakeholderIndex!].state] ?? [],
+                        onChanged: (value) {
+                          setState(() {
+                            stakeholders[currentStakeholderIndex!].city = value;
+                          });
+                        },
                       ),
                       LabelledTextField(
                         label: 'District',
                         hintText: 'Enter district',
-                        controller: TextEditingController(),
+                        controller: stakeholders[currentStakeholderIndex!].districtController,
                       ),
                       LabelledTextField(
                         label: 'Sub-district',
                         hintText: 'Enter sub-district',
-                        controller: TextEditingController(),
+                        controller: stakeholders[currentStakeholderIndex!].subDistrictController,
                       ),
                     ],
                   ),
@@ -322,12 +446,12 @@ class _AddStakeholdersState extends State<AddStakeholders> {
                       LabelledTextField(
                         label: 'Village',
                         hintText: 'Enter village',
-                        controller: TextEditingController(),
+                        controller: stakeholders[currentStakeholderIndex!].villageController,
                       ),
                       LabelledTextField(
                         label: 'Phone',
                         hintText: 'Enter phone',
-                        controller: TextEditingController(),
+                        controller: stakeholders[currentStakeholderIndex!].phoneController,
                       ),
                     ],
                   ),
@@ -340,7 +464,7 @@ class _AddStakeholdersState extends State<AddStakeholders> {
                       LabelledTextField(
                         label: 'Visually Impaired',
                         hintText: 'Enter level',
-                        controller: TextEditingController(),
+                        controller: stakeholders[currentStakeholderIndex!].visuallyImpairedController,
                       ),
                       Row(
                         crossAxisAlignment: CrossAxisAlignment.center,
@@ -352,12 +476,12 @@ class _AddStakeholdersState extends State<AddStakeholders> {
                           ),
                           const SizedBox(width: 20),
                           CustomSwitch(
-                            current: _isGuarantor,
+                            current: stakeholders[currentStakeholderIndex!].isGuarantor,
                             first: false,
                             second: true,
                             onChanged: (value) {
                               setState(() {
-                                _isGuarantor = value;
+                                stakeholders[currentStakeholderIndex!].isGuarantor = value;
                               });
                             },
                           ),
@@ -377,10 +501,36 @@ class _AddStakeholdersState extends State<AddStakeholders> {
                           style: ButtonStyle(
                             backgroundColor: WidgetStateProperty.all(AppColors.primaryColorOne),
                           ),
-                          onPressed: () {},
+                          onPressed: () {
+                            setState(() {
+                              stakeholders.removeAt(currentStakeholderIndex!);
+                              currentStakeholderIndex = null;
+                              _formVisible = false;
+                            });
+                          },
                           child: Text(
-                            _isEditing ? "Delete" :"Discard",
+                            _isEditing ? "Delete" : "Discard",
                             style: const TextStyle(fontSize: 20),
+                          ),
+                        ),
+                      ),
+                      const SizedBox(width: 40),
+                      SizedBox(
+                        width: 200,
+                        height: 50,
+                        child: FilledButton(
+                          style: ButtonStyle(
+                            backgroundColor: WidgetStateProperty.all(AppColors.primaryColorOne),
+                          ),
+                          onPressed: () {
+                            setState(() {
+                              currentStakeholderIndex = null;
+                              _formVisible = false;
+                            });
+                          },
+                          child: const Text(
+                            "Save",
+                            style: TextStyle(fontSize: 20),
                           ),
                         ),
                       ),
