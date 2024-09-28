@@ -1,10 +1,12 @@
+import 'package:aarthik_setu/global_components/back_button.dart';
+import 'package:aarthik_setu/global_components/procees_button.dart';
 import 'package:aarthik_setu/pages/desktop/forms/business_loans/components/business_details.dart';
 import 'package:aarthik_setu/pages/desktop/forms/business_loans/components/declare_collateral.dart';
 import 'package:aarthik_setu/pages/desktop/forms/business_loans/components/existing_loans.dart';
 import 'package:aarthik_setu/pages/desktop/forms/business_loans/components/loan_details.dart';
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:hexcolor/hexcolor.dart';
 import 'package:line_icons/line_icons.dart';
 import 'package:responsive_framework/responsive_framework.dart';
 import '../../../../constants/app_constants.dart';
@@ -36,7 +38,7 @@ class _LoanFormBusinessState extends State<LoanFormBusiness> {
                     style: GoogleFonts.poppins(fontSize: 80),
                   ),
                   const SizedBox(height: 40),
-                   BusinessDetailsForm(),
+                  BusinessDetailsForm(),
                   const DeclareCollateralForm(),
                   const LoanDetailsForm(),
                   const ExistingLoansForm(),
@@ -128,39 +130,9 @@ class _LoanFormBusinessState extends State<LoanFormBusiness> {
                           Row(
                             mainAxisAlignment: MainAxisAlignment.end,
                             children: [
-                              SizedBox(
-                                width: 200,
-                                height: 50,
-                                child: FilledButton(
-                                  onPressed: () {},
-                                  style: ButtonStyle(
-                                    backgroundColor: WidgetStateProperty.all(Colors.white),
-                                    shape: WidgetStateProperty.all(RoundedRectangleBorder(
-                                      borderRadius: BorderRadius.circular(30),
-                                      side: BorderSide(color: HexColor("#568737")),
-                                    )),
-                                  ),
-                                  child: Text(
-                                    "Back",
-                                    style: TextStyle(fontSize: 20, color: HexColor("#568737")),
-                                  ),
-                                ),
-                              ),
+                              BackButtonCustom(onPressed: () => context.pop()),
                               const SizedBox(width: 40),
-                              SizedBox(
-                                width: 200,
-                                height: 50,
-                                child: FilledButton(
-                                  style: ButtonStyle(
-                                    backgroundColor: WidgetStateProperty.all(HexColor("#568737")),
-                                  ),
-                                  onPressed: () {},
-                                  child: const Text(
-                                    "Submit",
-                                    style: TextStyle(fontSize: 20),
-                                  ),
-                                ),
-                              ),
+                              ProceedButtonCustom(label: 'Submit', onPressed: () {})
                             ],
                           ),
                         ],
