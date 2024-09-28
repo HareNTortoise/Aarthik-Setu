@@ -5,6 +5,7 @@ import (
 	business_forms "server/routes/forms/business_forms"
 	gen_ai "server/routes/forms/gen_ai"
 	personal_forms "server/routes/forms/personal_forms"
+	itr_info "server/routes/info_extraction"
 
 	"github.com/gin-contrib/cors"
 	"github.com/gin-gonic/gin"
@@ -57,7 +58,8 @@ func main() {
 
 	//Registed GenAI routes
 	gen_ai.GenAIFormRoutes(router)
-	
+	itr_info.RegisterITRInfoExtractionRoutes(router)
+
 	// Start the HTTP server
 	log.Println("Starting server on :8080")
 	if err := router.Run(":8080"); err != nil {
