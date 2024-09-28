@@ -36,7 +36,7 @@ class _LoanFormBusinessState extends State<LoanFormBusiness> {
                     style: GoogleFonts.poppins(fontSize: 80),
                   ),
                   const SizedBox(height: 40),
-                  const BusinessDetailsForm(),
+                   BusinessDetailsForm(),
                   const DeclareCollateralForm(),
                   const LoanDetailsForm(),
                   const ExistingLoansForm(),

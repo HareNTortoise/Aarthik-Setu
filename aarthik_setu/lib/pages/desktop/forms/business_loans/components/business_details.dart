@@ -2,7 +2,14 @@ import 'package:flutter/material.dart';
 import '../../../../../global_components/labelled_text_field.dart';
 
 class BusinessDetailsForm extends StatelessWidget {
-  const BusinessDetailsForm({super.key});
+  BusinessDetailsForm({super.key});
+
+  final TextEditingController _industryController = TextEditingController();
+  final TextEditingController _sectorNameController = TextEditingController();
+  final TextEditingController _subSectorNameController = TextEditingController();
+  final TextEditingController _msmeRegistrationController = TextEditingController();
+  final TextEditingController _udyogAadharController = TextEditingController();
+  final TextEditingController _productDescriptionController = TextEditingController();
 
   @override
   Widget build(BuildContext context) {
@@ -40,17 +47,17 @@ class BusinessDetailsForm extends StatelessWidget {
                 LabelledTextField(
                   label: "Industry*",
                   hintText: 'Enter Industry',
-                  controller: TextEditingController(),
+                  controller: _industryController,
                 ),
                 LabelledTextField(
                   label: "Sector Name*",
                   hintText: 'Enter sector name',
-                  controller: TextEditingController(),
+                  controller: _sectorNameController,
                 ),
                 LabelledTextField(
                   label: "Sub Sector Name*",
                   hintText: 'Enter sub sector name',
-                  controller: TextEditingController(),
+                  controller: _subSectorNameController,
                 ),
               ],
             ),
@@ -61,12 +68,12 @@ class BusinessDetailsForm extends StatelessWidget {
                 LabelledTextField(
                   label: "MSME Registration Number*",
                   hintText: 'Enter MSME Registration Number',
-                  controller: TextEditingController(),
+                  controller: _msmeRegistrationController,
                 ),
                 LabelledTextField(
                   label: "Udyog Aadhar Memorandum No.",
                   hintText: 'Enter Udyog Aadhar Memorandum No.',
-                  controller: TextEditingController(),
+                  controller: _udyogAadharController,
                 ),
               ],
             ),
@@ -74,7 +81,7 @@ class BusinessDetailsForm extends StatelessWidget {
             LabelledTextField(
               label: "Product/Service Description*",
               hintText: 'Enter Product/Service Description',
-              controller: TextEditingController(),
+              controller: _productDescriptionController,
               width: double.infinity,
               maxLines: 5,
             ),

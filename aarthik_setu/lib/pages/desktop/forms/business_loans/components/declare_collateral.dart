@@ -1,14 +1,13 @@
-import 'package:animated_toggle_switch/animated_toggle_switch.dart';
+import 'package:aarthik_setu/global_components/custom_switch.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 import '../../../../../constants/colors.dart';
 import '../../../../../global_components/labelled_text_field.dart';
 
-class Collateral {
+class CollateralInputUnit {
   final TextEditingController collateralType;
   final TextEditingController collateralAmount;
 
-  Collateral({required this.collateralType, required this.collateralAmount});
+  CollateralInputUnit({required this.collateralType, required this.collateralAmount});
 }
 
 class DeclareCollateralForm extends StatefulWidget {
@@ -21,7 +20,7 @@ class DeclareCollateralForm extends StatefulWidget {
 class _DeclareCollateralFormState extends State<DeclareCollateralForm> {
   bool _hasCollateralSecurity = false;
 
-  List<Collateral> _collaterals = [];
+  final List<CollateralInputUnit> _collaterals = [];
 
   @override
   Widget build(BuildContext context) {
@@ -53,69 +52,9 @@ class _DeclareCollateralFormState extends State<DeclareCollateralForm> {
                   style: TextStyle(fontSize: 26),
                 ),
                 const Spacer(),
-                SizedBox(
-                  width: 160,
-                  height: 60,
-                  child: AnimatedToggleSwitch<bool>.dual(
-                    current: _hasCollateralSecurity,
-                    first: false,
-                    second: true,
-                    borderWidth: 6,
-                    textBuilder: (index) => index == true
-                        ? Text(
-                            "Yes",
-                            style: GoogleFonts.poppins(
-                              color: Colors.black,
-                              fontSize: 20,
-                            ),
-                          )
-                        : Text(
-                            "No",
-                            style: GoogleFonts.poppins(
-                              color: Colors.black,
-                              fontSize: 20,
-                            ),
-                          ),
-                    indicatorSize: const Size.fromWidth(50),
-                    style: ToggleStyle(
-                      backgroundColor: Colors.grey[200],
-                      borderRadius: BorderRadius.circular(50),
-                      borderColor: Colors.transparent,
-                      boxShadow: [
-                        const BoxShadow(
-                          color: Colors.black26,
-                          spreadRadius: 1,
-                          blurRadius: 2,
-                          offset: Offset(0, 1.5),
-                        ),
-                      ],
-                    ),
-                    styleBuilder: (index) => index == true
-                        ? const ToggleStyle(indicatorColor: Colors.green)
-                        : ToggleStyle(indicatorColor: AppColors.primaryColorOne),
-                    iconBuilder: (index) => index == true
-                        ? const Icon(
-                            Icons.check,
-                            size: 30,
-                            color: Colors.white,
-                          )
-                        : const Icon(
-                            Icons.close,
-                            size: 30,
-                            color: Colors.white,
-                          ),
-                    onChanged: (value) {
-                      setState(() {
-                        _hasCollateralSecurity = value;
-                        if (_hasCollateralSecurity) {
-                          _collaterals = [
-                            Collateral(
-                                collateralType: TextEditingController(), collateralAmount: TextEditingController())
-                          ];
-                        }
-                      });
-                    },
-                  ),
+                CustomSwitch(
+                  current: _hasCollateralSecurity,
+                  onChanged: (value) => setState(() => _hasCollateralSecurity = value),
                 ),
               ],
             ),
@@ -136,13 +75,13 @@ class _DeclareCollateralFormState extends State<DeclareCollateralForm> {
                               width: 500,
                               label: "Collateral Type",
                               hintText: 'Enter Collateral Type',
-                              controller: TextEditingController(),
+                              controller: _collaterals[i].collateralType,
                             ),
                             const Spacer(),
                             LabelledTextField(
                               label: "Collateral Amount (₹)",
                               hintText: 'Enter Collateral Amount',
-                              controller: TextEditingController(),
+                              controller: _collaterals[i].collateralAmount,
                             ),
                             const SizedBox(width: 20),
                             SizedBox(
@@ -177,7 +116,7 @@ class _DeclareCollateralFormState extends State<DeclareCollateralForm> {
                         onPressed: () {
                           setState(() {
                             _collaterals.add(
-                              Collateral(
+                              CollateralInputUnit(
                                 collateralType: TextEditingController(),
                                 collateralAmount: TextEditingController(),
                               ),
