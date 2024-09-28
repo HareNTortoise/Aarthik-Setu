@@ -1,3 +1,4 @@
+import 'package:auto_size_text/auto_size_text.dart';
 import 'package:dropdown_button2/dropdown_button2.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -56,11 +57,12 @@ class CustomDropdown extends StatelessWidget {
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
                         SizedBox(
-                          width: width - 100,
-                          child: Text(
+                          child: AutoSizeText(
                             current ?? buttonLabel,
                             overflow: TextOverflow.ellipsis,
-                            style: GoogleFonts.poppins(color: Colors.black, fontSize: 18),
+                            style: GoogleFonts.poppins(color: Colors.black),
+                            maxLines: 1,
+                            minFontSize: 15,
                           ),
                         ),
                         const SizedBox(width: 10),

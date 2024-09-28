@@ -1,15 +1,11 @@
-import 'package:animated_toggle_switch/animated_toggle_switch.dart';
+import 'package:aarthik_setu/global_components/custom_dropdown.dart';
+import 'package:aarthik_setu/global_components/custom_switch.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import 'package:google_fonts/google_fonts.dart';
-
-import '../../../../../constants/colors.dart';
 import '../../../../../global_components/back_button.dart';
 import '../../../../../global_components/labelled_text_field.dart';
 import '../../../../../global_components/procees_button.dart';
-
-
-
 
 class MainPartnerForm extends StatefulWidget {
   const MainPartnerForm({super.key});
@@ -21,7 +17,7 @@ class MainPartnerForm extends StatefulWidget {
 class _MainPartnerFormState extends State<MainPartnerForm> {
   @override
   Widget build(BuildContext context) {
-    return  IntrinsicHeight(
+    return IntrinsicHeight(
       child: Container(
         padding: const EdgeInsets.symmetric(horizontal: 40, vertical: 20),
         margin: const EdgeInsets.only(bottom: 100),
@@ -50,10 +46,13 @@ class _MainPartnerFormState extends State<MainPartnerForm> {
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
-                LabelledTextField(
+                CustomDropdown(
                   label: 'Main Partner',
-                  hintText: 'Enter Main Partner',
-                  controller: TextEditingController(),
+                  buttonLabel: 'Select Main Partner',
+                  labelFontSize: 18,
+                  items: [
+                  ],
+                  onChanged: (_) {},
                 ),
                 Column(
                   children: [
@@ -62,62 +61,7 @@ class _MainPartnerFormState extends State<MainPartnerForm> {
                       style: GoogleFonts.poppins(fontSize: 18),
                     ),
                     const SizedBox(height: 5),
-                    SizedBox(
-                      width: 160,
-                      height: 60,
-                      child: AnimatedToggleSwitch<bool>.dual(
-                        current: true,
-                        first: false,
-                        second: true,
-                        borderWidth: 6,
-                        textBuilder: (index) => index == true
-                            ? Text(
-                          "Yes",
-                          style: GoogleFonts.poppins(
-                            color: Colors.black,
-                            fontSize: 20,
-                          ),
-                        )
-                            : Text(
-                          "No",
-                          style: GoogleFonts.poppins(
-                            color: Colors.black,
-                            fontSize: 20,
-                          ),
-                        ),
-                        indicatorSize: const Size.fromWidth(50),
-                        style: ToggleStyle(
-                          backgroundColor: Colors.grey[200],
-                          borderRadius: BorderRadius.circular(50),
-                          borderColor: Colors.transparent,
-                          boxShadow: [
-                            const BoxShadow(
-                              color: Colors.black26,
-                              spreadRadius: 1,
-                              blurRadius: 2,
-                              offset: Offset(0, 1.5),
-                            ),
-                          ],
-                        ),
-                        styleBuilder: (index) => index == true
-                            ? const ToggleStyle(indicatorColor: Colors.green)
-                            : ToggleStyle(indicatorColor: AppColors.primaryColorOne),
-                        iconBuilder: (index) => index == true
-                            ? const Icon(
-                          Icons.check,
-                          size: 30,
-                          color: Colors.white,
-                        )
-                            : const Icon(
-                          Icons.close,
-                          size: 30,
-                          color: Colors.white,
-                        ),
-                        onChanged: (value) {
-                          setState(() {});
-                        },
-                      ),
-                    ),
+                    CustomSwitch(onChanged: (_) {}, current: true,),
                   ],
                 ),
                 Column(
@@ -127,62 +71,8 @@ class _MainPartnerFormState extends State<MainPartnerForm> {
                       style: GoogleFonts.poppins(fontSize: 18),
                     ),
                     const SizedBox(height: 5),
-                    SizedBox(
-                      width: 160,
-                      height: 60,
-                      child: AnimatedToggleSwitch<bool>.dual(
-                        current: true,
-                        first: false,
-                        second: true,
-                        borderWidth: 6,
-                        textBuilder: (index) => index == true
-                            ? Text(
-                          "Yes",
-                          style: GoogleFonts.poppins(
-                            color: Colors.black,
-                            fontSize: 20,
-                          ),
-                        )
-                            : Text(
-                          "No",
-                          style: GoogleFonts.poppins(
-                            color: Colors.black,
-                            fontSize: 20,
-                          ),
-                        ),
-                        indicatorSize: const Size.fromWidth(50),
-                        style: ToggleStyle(
-                          backgroundColor: Colors.grey[200],
-                          borderRadius: BorderRadius.circular(50),
-                          borderColor: Colors.transparent,
-                          boxShadow: [
-                            const BoxShadow(
-                              color: Colors.black26,
-                              spreadRadius: 1,
-                              blurRadius: 2,
-                              offset: Offset(0, 1.5),
-                            ),
-                          ],
-                        ),
-                        styleBuilder: (index) => index == true
-                            ? const ToggleStyle(indicatorColor: Colors.green)
-                            : ToggleStyle(indicatorColor: AppColors.primaryColorOne),
-                        iconBuilder: (index) => index == true
-                            ? const Icon(
-                          Icons.check,
-                          size: 30,
-                          color: Colors.white,
-                        )
-                            : const Icon(
-                          Icons.close,
-                          size: 30,
-                          color: Colors.white,
-                        ),
-                        onChanged: (value) {
-                          setState(() {});
-                        },
-                      ),
-                    ),
+                    CustomSwitch(onChanged: (_) {}, current: true,),
+
                   ],
                 ),
               ],
@@ -198,62 +88,7 @@ class _MainPartnerFormState extends State<MainPartnerForm> {
                       style: GoogleFonts.poppins(fontSize: 18),
                     ),
                     const SizedBox(height: 5),
-                    SizedBox(
-                      width: 160,
-                      height: 60,
-                      child: AnimatedToggleSwitch<bool>.dual(
-                        current: true,
-                        first: false,
-                        second: true,
-                        borderWidth: 6,
-                        textBuilder: (index) => index == true
-                            ? Text(
-                          "Yes",
-                          style: GoogleFonts.poppins(
-                            color: Colors.black,
-                            fontSize: 20,
-                          ),
-                        )
-                            : Text(
-                          "No",
-                          style: GoogleFonts.poppins(
-                            color: Colors.black,
-                            fontSize: 20,
-                          ),
-                        ),
-                        indicatorSize: const Size.fromWidth(50),
-                        style: ToggleStyle(
-                          backgroundColor: Colors.grey[200],
-                          borderRadius: BorderRadius.circular(50),
-                          borderColor: Colors.transparent,
-                          boxShadow: [
-                            const BoxShadow(
-                              color: Colors.black26,
-                              spreadRadius: 1,
-                              blurRadius: 2,
-                              offset: Offset(0, 1.5),
-                            ),
-                          ],
-                        ),
-                        styleBuilder: (index) => index == true
-                            ? const ToggleStyle(indicatorColor: Colors.green)
-                            : ToggleStyle(indicatorColor: AppColors.primaryColorOne),
-                        iconBuilder: (index) => index == true
-                            ? const Icon(
-                          Icons.check,
-                          size: 30,
-                          color: Colors.white,
-                        )
-                            : const Icon(
-                          Icons.close,
-                          size: 30,
-                          color: Colors.white,
-                        ),
-                        onChanged: (value) {
-                          setState(() {});
-                        },
-                      ),
-                    ),
+                    CustomSwitch(onChanged: (_) {}, current: true,),
                   ],
                 ),
                 LabelledTextField(
@@ -277,16 +112,13 @@ class _MainPartnerFormState extends State<MainPartnerForm> {
                   hintText: "Enter No. of Children",
                   controller: TextEditingController(),
                 ),
-
               ],
             ),
             const SizedBox(height: 40),
             Row(
               mainAxisAlignment: MainAxisAlignment.end,
               children: [
-                BackButtonCustom(
-                    onPressed: () => context.pop()
-                ),
+                BackButtonCustom(onPressed: () => context.pop()),
                 const SizedBox(width: 40),
                 ProceedButtonCustom(onPressed: () {})
               ],

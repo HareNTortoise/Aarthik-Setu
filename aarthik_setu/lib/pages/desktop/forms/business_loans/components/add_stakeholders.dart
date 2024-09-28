@@ -1,9 +1,9 @@
 import 'package:aarthik_setu/global_components/date_picker.dart';
-import 'package:animated_toggle_switch/animated_toggle_switch.dart';
 import 'package:dropdown_button2/dropdown_button2.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import '../../../../../constants/colors.dart';
+import '../../../../../global_components/custom_switch.dart';
 import '../../../../../global_components/labelled_text_field.dart';
 
 class AddStakeholders extends StatefulWidget {
@@ -351,63 +351,15 @@ class _AddStakeholdersState extends State<AddStakeholders> {
                             style: GoogleFonts.poppins(fontSize: 18),
                           ),
                           const SizedBox(width: 20),
-                          SizedBox(
-                            width: 160,
-                            height: 60,
-                            child: AnimatedToggleSwitch<bool>.dual(
-                              current: _isGuarantor,
-                              first: false,
-                              second: true,
-                              borderWidth: 6,
-                              textBuilder: (index) => index == true
-                                  ? Text(
-                                      "Yes",
-                                      style: GoogleFonts.poppins(
-                                        color: Colors.black,
-                                        fontSize: 20,
-                                      ),
-                                    )
-                                  : Text(
-                                      "No",
-                                      style: GoogleFonts.poppins(
-                                        color: Colors.black,
-                                        fontSize: 20,
-                                      ),
-                                    ),
-                              indicatorSize: const Size.fromWidth(50),
-                              style: ToggleStyle(
-                                backgroundColor: Colors.grey[200],
-                                borderRadius: BorderRadius.circular(50),
-                                borderColor: Colors.transparent,
-                                boxShadow: [
-                                  const BoxShadow(
-                                    color: Colors.black26,
-                                    spreadRadius: 1,
-                                    blurRadius: 2,
-                                    offset: Offset(0, 1.5),
-                                  ),
-                                ],
-                              ),
-                              styleBuilder: (index) => index == true
-                                  ? const ToggleStyle(indicatorColor: Colors.green)
-                                  : ToggleStyle(indicatorColor: AppColors.primaryColorOne),
-                              iconBuilder: (index) => index == true
-                                  ? const Icon(
-                                      Icons.check,
-                                      size: 30,
-                                      color: Colors.white,
-                                    )
-                                  : const Icon(
-                                      Icons.close,
-                                      size: 30,
-                                      color: Colors.white,
-                                    ),
-                              onChanged: (value) {
-                                setState(() {
-                                  _isGuarantor = value;
-                                });
-                              },
-                            ),
+                          CustomSwitch(
+                            current: _isGuarantor,
+                            first: false,
+                            second: true,
+                            onChanged: (value) {
+                              setState(() {
+                                _isGuarantor = value;
+                              });
+                            },
                           ),
                         ],
                       ),
