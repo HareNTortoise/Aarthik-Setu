@@ -1,48 +1,118 @@
 package gen_ai
 
 import (
-	"encoding/json"
-	"net/http"
-
 	"github.com/gin-gonic/gin"
+	"github.com/google/generative-ai-go/genai"
+	"context"
+	"fmt"
+	"net/http"
+	"os"
+	"google.golang.org/api/option"
+	"strings"
+	"encoding/json"
+	"regexp"
 )
+func getMimeType(fileName string) string {
+    re := regexp.MustCompile(`\.(wav|mp3|aiff|aac|ogg|flac)$`)
+    match := re.FindStringSubmatch(fileName)
+    if len(match) == 0 {
+        return "" // Return empty if no match found
+    }
 
+    switch strings.ToLower(match[1]) {
+    case "wav":
+        return "audio/wav"
+    case "mp3":
+        return "audio/mp3"
+    case "aiff":
+        return "audio/aiff"
+    case "aac":
+        return "audio/aac"
+    case "ogg":
+        return "audio/ogg"
+    case "flac":
+        return "audio/flac"
+    default:
+        return "" // Fallback
+    }
+}
 func AudioFormFiller(c *gin.Context) {
-	// Get the audio file
-	audioFile, err := c.FormFile("audioFile")
-	if err != nil {
-		c.JSON(http.StatusBadRequest, gin.H{"error": "Audio file is required"})
-		return
-	}
+    audioFile, err := c.FormFile("audioFile")
+    if err != nil {
+        // Handle error if the file is not found or there's an issue
+        c.JSON(http.StatusBadRequest, gin.H{"error": "Could not retrieve audio file"})
+        return
+    }
 
-	// Get the form structure JSON
-	formStructure := c.PostForm("formFields")
-	if formStructure == "" {
-		c.JSON(http.StatusBadRequest, gin.H{"error": "Form structure JSON is required"})
-		return
-	}
+    // Save the uploaded file temporarily
+    tempFilePath := "uploads/" + audioFile.Filename
+    if err := c.SaveUploadedFile(audioFile, tempFilePath); err != nil {
+        c.JSON(http.StatusInternalServerError, gin.H{"error": "Could not save audio file"})
+        return
+    }
+    defer os.Remove(tempFilePath) // Clean up the temporary file after processing
 
-	// Parse the form structure JSON
-	var formFields map[string]interface{}
-	if err := json.Unmarshal([]byte(formStructure), &formFields); err != nil {
-		c.JSON(http.StatusBadRequest, gin.H{"error": "Invalid form structure JSON"})
-		return
-	}
+    // Read the saved audio file into memory
+    bytes, err := os.ReadFile(tempFilePath)
+    if err != nil {
+        c.JSON(http.StatusInternalServerError, gin.H{"error": "Could not read audio file"})
+        return
+    }
 
-	// Read the audio file content (if necessary for processing)
-	audioFileContent, err := audioFile.Open()
-	if err != nil {
-		c.JSON(http.StatusInternalServerError, gin.H{"error": "Failed to read audio file"})
-		return
-	}
-	defer audioFileContent.Close()
+    ctx := context.Background()
+    client, err := genai.NewClient(ctx, option.WithAPIKey(os.Getenv("GEMINI_API_KEY")))
+    if err != nil {
+        c.JSON(http.StatusInternalServerError, gin.H{"error": "Could not create API client"})
+        return
+    }
 
-	// Process the audio file and fill the form
-	filledForm, err := FillFormFromAudio(audioFileContent, formFields)
-	if err != nil {
-		c.JSON(http.StatusInternalServerError, gin.H{"error": "Failed to process audio and fill form"})
-		return
-	}
+    model := client.GenerativeModel("gemini-1.5-flash")
 
-	c.JSON(http.StatusOK, filledForm)
+   
+    fields := c.PostForm("formFields") 
+    var requiredFields []string
+    if err := json.Unmarshal([]byte(fields), &requiredFields); err != nil {
+        c.JSON(http.StatusBadRequest, gin.H{"error": "Invalid form fields"})
+        return
+    }
+
+    promptTemplate := fmt.Sprintf("Extract the following information from the audio file:\n%s\n\nPlease analyze the audio and provide the details in json format", 
+        strings.Join(requiredFields, ", "))
+
+	mimeType := getMimeType(audioFile.Filename)
+    extractionPrompt := []genai.Part{
+        genai.Blob{MIMEType: mimeType, Data: bytes}, 
+        genai.Text(promptTemplate),
+    }
+
+    // Call the model with the audio data and extraction prompt
+    extractionResp, err := model.GenerateContent(ctx, extractionPrompt...)
+    if err != nil {
+        c.JSON(http.StatusInternalServerError, gin.H{"error": "Error extracting data"})
+        return
+    }
+	for _, ct := range extractionResp.Candidates {
+        if ct.Content != nil {
+            // Concatenate all parts into a single string
+            var output genai.Text
+            for _, part := range ct.Content.Parts {
+                output += part.(genai.Text)
+            }
+            outputString := fmt.Sprintf("%v", output)
+            // Remove any formatting and parse the JSON
+            outputString = strings.TrimPrefix(outputString, "```json\n") 
+            outputString = strings.TrimSuffix(outputString, "\n```")     
+
+            var extractedData map[string]interface{}
+            if err := json.Unmarshal([]byte(outputString), &extractedData); err != nil {
+                c.JSON(http.StatusInternalServerError, gin.H{"error": "Error parsing extracted JSON"})
+                return
+            }
+
+            // Return the extracted JSON directly
+            c.JSON(http.StatusOK, extractedData)
+            return
+        }
+    }
+    c.JSON(http.StatusOK, gin.H{"extractedData": "Done"})
 }

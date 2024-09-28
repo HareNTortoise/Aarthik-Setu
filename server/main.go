@@ -55,7 +55,9 @@ func main() {
 	business_forms.RegisterGSTBusinessDetails(router)
 	business_forms.RegisterStakeholdersDetails(router)
 
+	//Registed GenAI routes
 	gen_ai.GenAIFormRoutes(router)
+	
 	// Start the HTTP server
 	log.Println("Starting server on :8080")
 	if err := router.Run(":8080"); err != nil {
