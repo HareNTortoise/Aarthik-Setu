@@ -3,23 +3,24 @@ class ContactDetails {
   String profileId;
   DateTime timestamp;
   String applicationId;
-  String premisesName;
-  String streetName;
-  String landmark;
+
+  String addressLine1;
+  String? addressLine2;
+  String? landmark;
   String country;
   String state;
   String city;
   String pinCode;
-  String village;
+  String? village;
   String district;
   String subDistrict;
   String typeOfResidence;
   DateTime residenceSince;
 
   ContactDetails({
-    required this.premisesName,
-    required this.streetName,
-    required this.landmark,
+    required this.addressLine1,
+    this.addressLine2,
+    this.landmark,
     required this.country,
     required this.state,
     required this.city,
@@ -37,8 +38,8 @@ class ContactDetails {
 
   Map<String, dynamic> toJson() {
     return {
-      'premisesName': premisesName,
-      'streetName': streetName,
+      'addressLine1': addressLine1,
+      'addressLine2': addressLine2,
       'landmark': landmark,
       'country': country,
       'state': state,
@@ -58,8 +59,8 @@ class ContactDetails {
 
   factory ContactDetails.fromJson(Map<String, dynamic> json) {
     return ContactDetails(
-      premisesName: json['premisesName'],
-      streetName: json['streetName'],
+      addressLine1: json['addressLine1'],
+      addressLine2: json['addressLine2'],
       landmark: json['landmark'],
       country: json['country'],
       state: json['state'],

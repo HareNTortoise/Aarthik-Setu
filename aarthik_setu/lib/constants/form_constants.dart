@@ -938,3 +938,27 @@ class LoanTypes{
     return [personal, home, creditCard, vehicle, education, business, others];
   }
 }
+
+class TypesOfResidence {
+  static const String own = 'Own';
+  static const String rented = 'Rented';
+  static const String companyProvided = 'Company Provided';
+  static const String parentOwned = 'Parent Owned';
+  static const String spouseOwned = 'Spouse Owned';
+  static const String other = 'Other';
+
+  static List<String> getTypesOfResidence() {
+    return [own, rented, companyProvided, parentOwned, spouseOwned, other];
+  }
+}
+
+class RepaymentMethods {
+  static const String emi = 'EMI';
+  static const String bullet = 'Bullet';
+  static const String overdraft = 'Overdraft';
+  static const String others = 'Others';
+
+  static List<String> getRepaymentModes() {
+    return [emi, bullet, overdraft, others];
+  }
+}

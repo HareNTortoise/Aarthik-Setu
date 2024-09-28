@@ -1,4 +1,6 @@
+import 'package:aarthik_setu/constants/form_constants.dart';
 import 'package:aarthik_setu/global_components/back_button.dart';
+import 'package:aarthik_setu/global_components/custom_dropdown.dart';
 import 'package:aarthik_setu/global_components/month_picker.dart';
 import 'package:aarthik_setu/global_components/procees_button.dart';
 import 'package:flutter/material.dart';
@@ -19,6 +21,21 @@ class ContactDetailsForm extends StatefulWidget {
 class _ContactDetailsFormState extends State<ContactDetailsForm> {
   int? _selectedMonth;
   int? _selectedYear;
+
+  TextEditingController _addressLineOneController = TextEditingController();
+  TextEditingController _addressLineTwoController = TextEditingController();
+  TextEditingController _landmarkController = TextEditingController();
+
+  String? _country;
+  String? _state;
+  String? _city;
+
+  TextEditingController _pinCodeController = TextEditingController();
+  TextEditingController _villageController = TextEditingController();
+  TextEditingController _districtController = TextEditingController();
+
+  TextEditingController _subDistrictController = TextEditingController();
+  String? _typeOfResidence;
 
   @override
   Widget build(BuildContext context) {
@@ -63,19 +80,55 @@ class _ContactDetailsFormState extends State<ContactDetailsForm> {
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
                             children: [
                               LabelledTextField(
-                                label: "Premises/Building No.",
+                                label: "Address Line 1*",
                                 hintText: "Enter your building number",
-                                controller: TextEditingController(),
+                                controller: _addressLineOneController,
                               ),
                               LabelledTextField(
-                                label: "Street Name",
+                                label: "Address Line 2",
                                 hintText: "Enter your street name",
-                                controller: TextEditingController(),
+                                controller: _addressLineTwoController,
                               ),
                               LabelledTextField(
                                 label: "Landmark",
                                 hintText: "Enter your landmark",
-                                controller: TextEditingController(),
+                                controller: _landmarkController,
+                              ),
+                            ],
+                          ),
+                          const SizedBox(height: 20),
+                          Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                            children: [
+                              CustomDropdown(
+                                label: "Country*",
+                                buttonLabel: _country ?? "Select your country",
+                                items: Countries.countryList,
+                                onChanged: (String? value) {
+                                  setState(() {
+                                    _country = value;
+                                  });
+                                },
+                              ),
+                              CustomDropdown(
+                                label: "State*",
+                                buttonLabel: _state ?? "Select your state",
+                                items: IndiaStates.getAllStatesAndUTs(),
+                                onChanged: (String? value) {
+                                  setState(() {
+                                    _state = value;
+                                  });
+                                },
+                              ),
+                              CustomDropdown(
+                                label: "City*",
+                                buttonLabel: _city ?? "Select your city",
+                                items: IndiaCities.citiesMap[_state] ?? [],
+                                onChanged: (String? value) {
+                                  setState(() {
+                                    _city = value;
+                                  });
+                                },
                               ),
                             ],
                           ),
@@ -84,40 +137,19 @@ class _ContactDetailsFormState extends State<ContactDetailsForm> {
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
                             children: [
                               LabelledTextField(
-                                label: "Country",
-                                hintText: "Enter your country",
-                                controller: TextEditingController(),
-                              ),
-                              LabelledTextField(
-                                label: "State",
-                                hintText: "Enter your state",
-                                controller: TextEditingController(),
-                              ),
-                              LabelledTextField(
-                                label: "City",
-                                hintText: "Enter your city",
-                                controller: TextEditingController(),
-                              ),
-                            ],
-                          ),
-                          const SizedBox(height: 20),
-                          Row(
-                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                            children: [
-                              LabelledTextField(
-                                label: "Pincode",
-                                hintText: "Enter your pincode",
-                                controller: TextEditingController(),
+                                label: "Pin code*",
+                                hintText: "Enter your pin code",
+                                controller: _pinCodeController,
                               ),
                               LabelledTextField(
                                 label: "Village/Town",
                                 hintText: "Enter your village/town",
-                                controller: TextEditingController(),
+                                controller: _villageController,
                               ),
                               LabelledTextField(
-                                label: "District",
+                                label: "District*",
                                 hintText: "Enter your district",
-                                controller: TextEditingController(),
+                                controller: _districtController,
                               ),
                             ],
                           ),
@@ -126,9 +158,9 @@ class _ContactDetailsFormState extends State<ContactDetailsForm> {
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
                             children: [
                               LabelledTextField(
-                                label: "Sub-District",
+                                label: "Sub-District*",
                                 hintText: "Enter your sub-district",
-                                controller: TextEditingController(),
+                                controller: _subDistrictController,
                               ),
                               MonthPickerButton(
                                 label: 'Residence Since (Month)',
