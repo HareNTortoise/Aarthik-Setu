@@ -3,11 +3,13 @@ import 'package:syncfusion_flutter_datepicker/datepicker.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class YearPickerButton extends StatefulWidget {
+  final DateTime? current;
   final String label;
   final Function(DateTime) onYearSelected;
 
   const YearPickerButton({
     super.key,
+    this.current,
     required this.label,
     required this.onYearSelected,
   });
@@ -17,8 +19,6 @@ class YearPickerButton extends StatefulWidget {
 }
 
 class YearPickerButtonState extends State<YearPickerButton> {
-  DateTime? _selectedYear;
-
   @override
   Widget build(BuildContext context) {
     return Column(
@@ -50,9 +50,6 @@ class YearPickerButtonState extends State<YearPickerButton> {
                       ),
                       child: SfDateRangePicker(
                         onSelectionChanged: (DateRangePickerSelectionChangedArgs args) {
-                          setState(() {
-                            _selectedYear = args.value;
-                          });
                           widget.onYearSelected(args.value);
                         },
                         selectionTextStyle: const TextStyle(
@@ -80,14 +77,14 @@ class YearPickerButtonState extends State<YearPickerButton> {
                 Colors.blue.withOpacity(0.5),
               ),
             ),
-            child: _selectedYear != null
+            child: widget.current != null
                 ? Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       const Icon(Icons.calendar_month, size: 30, color: Colors.black),
                       const SizedBox(width: 10),
                       Text(
-                        "${_selectedYear!.year}",
+                        "${widget.current!.year}",
                         style: GoogleFonts.poppins(fontSize: 20, color: Colors.black),
                       ),
                     ],
