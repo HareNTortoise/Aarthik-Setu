@@ -22,20 +22,19 @@ class _ContactDetailsFormState extends State<ContactDetailsForm> {
   int? _selectedMonth;
   int? _selectedYear;
 
-  TextEditingController _addressLineOneController = TextEditingController();
-  TextEditingController _addressLineTwoController = TextEditingController();
-  TextEditingController _landmarkController = TextEditingController();
+  final TextEditingController _addressLineOneController = TextEditingController();
+  final TextEditingController _addressLineTwoController = TextEditingController();
+  final TextEditingController _landmarkController = TextEditingController();
 
   String? _country;
   String? _state;
   String? _city;
 
-  TextEditingController _pinCodeController = TextEditingController();
-  TextEditingController _villageController = TextEditingController();
-  TextEditingController _districtController = TextEditingController();
+  final TextEditingController _pinCodeController = TextEditingController();
+  final TextEditingController _villageController = TextEditingController();
+  final TextEditingController _districtController = TextEditingController();
 
-  TextEditingController _subDistrictController = TextEditingController();
-  String? _typeOfResidence;
+  final TextEditingController _subDistrictController = TextEditingController();
 
   @override
   Widget build(BuildContext context) {
