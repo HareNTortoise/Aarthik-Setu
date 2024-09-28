@@ -1,6 +1,6 @@
 class BusinessDetails {
-  String buildingNo;
-  String street;
+  String addressLineOne;
+  String? addressLineTwo;
   String landmark;
   String pinCode;
   String country;
@@ -13,8 +13,8 @@ class BusinessDetails {
   int year;
 
   BusinessDetails({
-    required this.buildingNo,
-    required this.street,
+    required this.addressLineOne,
+    this.addressLineTwo,
     required this.landmark,
     required this.pinCode,
     required this.country,
@@ -29,8 +29,8 @@ class BusinessDetails {
 
   factory BusinessDetails.fromJson(Map<String, dynamic> json) {
     return BusinessDetails(
-      buildingNo: json['buildingNo'],
-      street: json['street'],
+      addressLineOne: json['addressLineOne'],
+      addressLineTwo: json['addressLineTwo'],
       landmark: json['landmark'],
       pinCode: json['pinCode'],
       country: json['country'],
@@ -46,8 +46,8 @@ class BusinessDetails {
 
   Map<String, dynamic> toJson() {
     return {
-      'buildingNo': buildingNo,
-      'street': street,
+      'addressLineOne': addressLineOne,
+      'addressLineTwo': addressLineTwo,
       'landmark': landmark,
       'pinCode': pinCode,
       'country': country,

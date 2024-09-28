@@ -31,7 +31,7 @@ class ExistingLoansForm extends StatefulWidget {
 
 class _ExistingLoansFormState extends State<ExistingLoansForm> {
 
-  List<ExistingLoans> _existingLoans = [];
+  final List<ExistingLoans> _existingLoans = [];
 
 
   @override
