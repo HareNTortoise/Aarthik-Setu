@@ -679,22 +679,34 @@
 					"request": {
 						"method": "POST",
 						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "file",
+									"type": "file",
+									"src": "C:\\Users\\Varun\\Downloads\\BANK STATEMENT SHREE SHYAM DEVELOPERS.pdf"
+								}
+							]
+						},
 						"url": {
-							"raw": "localhost:8080/gen_ai/get-bank-statement-details",
+							"raw": "localhost:8080/gen_ai/get-bank-statement-details/abcdefghi/abcdefghi",
 							"host": [
 								"localhost"
 							],
 							"port": "8080",
 							"path": [
 								"gen_ai",
-								"get-bank-statement-details"
+								"get-bank-statement-details",
+								"abcdefghi",
+								"abcdefghi"
 							]
 						}
 					},
 					"response": []
 				},
 				{
-					"name": "ITR_DETAIL_EXTRACTION Copy",
+					"name": "ITR_DETAIL_EXTRACTION",
 					"request": {
 						"method": "POST",
 						"header": [],
@@ -704,7 +716,7 @@
 								{
 									"key": "file",
 									"type": "file",
-									"src": "/home/varunvilva/Downloads/itr ba fab.pdf"
+									"src": "C:\\Users\\Varun\\Downloads\\itr ba fab.pdf"
 								},
 								{
 									"key": "formFields",
@@ -715,14 +727,37 @@
 							]
 						},
 						"url": {
-							"raw": "localhost:8080/gen_ai/get-itr-detils",
+							"raw": "localhost:8080/gen_ai/get-itr-detils/abcdefghi/abcdefghi",
 							"host": [
 								"localhost"
 							],
 							"port": "8080",
 							"path": [
 								"gen_ai",
-								"get-itr-detils"
+								"get-itr-detils",
+								"abcdefghi",
+								"abcdefghi"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "SUGGEST_LENDER",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/gen_ai/suggest-lenders/abcdefghi/abcdefghi",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"gen_ai",
+								"suggest-lenders",
+								"abcdefghi",
+								"abcdefghi"
 							]
 						}
 					},
