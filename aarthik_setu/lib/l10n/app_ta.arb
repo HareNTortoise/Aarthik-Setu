@@ -259,8 +259,39 @@
     "type": "text",
     "placeholders": {},
     "tags": ["business_loan"]
+  },
+
+
+
+
+
+
+
+
+  "pendingApplicationsTitle": "காத்திருக்கும் விண்ணப்பங்கள்",
+  "@pendingApplicationsTitle": {
+    "description": "Title for the pending applications dialog",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["dashboard_pending_applications"]
+  },
+  "noPendingApplications": "உங்களிடம் காத்திருக்கும் விண்ணப்பங்கள் இல்லை.",
+  "@noPendingApplications": {
+    "description": "Message when there are no pending applications",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["dashboard_pending_applications"]
+  },
+  "closeButton": "மூடு",
+  "@closeButton": {
+    "description": "Label for the close button",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["dashboard_pending_applications"]
   }
 }
+
+
 
 
 

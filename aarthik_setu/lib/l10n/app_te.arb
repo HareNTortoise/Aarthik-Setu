@@ -262,6 +262,33 @@
     "type": "text",
     "placeholders": {},
     "tags": ["business_loan"]
+  },
+
+
+
+
+
+
+  "pendingApplicationsTitle": "వచ్చిన పత్రాలు",
+  "@pendingApplicationsTitle": {
+    "description": "Title for the pending applications dialog",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["dashboard_pending_applications"]
+  },
+  "noPendingApplications": "మీ వద్ద రాబోయే పత్రాలు లేవు.",
+  "@noPendingApplications": {
+    "description": "Message when there are no pending applications",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["dashboard_pending_applications"]
+  },
+  "closeButton": "మూసివేయి",
+  "@closeButton": {
+    "description": "Label for the close button",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["dashboard_pending_applications"]
   }
 }
 

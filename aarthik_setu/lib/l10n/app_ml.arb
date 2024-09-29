@@ -273,5 +273,32 @@
     "type": "text",
     "placeholders": {},
     "tags": ["business_loan"]
+  },
+
+
+
+
+
+
+  "pendingApplicationsTitle": "പ്രതീക്ഷിക്കുന്ന അപേക്ഷകൾ",
+  "@pendingApplicationsTitle": {
+    "description": "Title for the pending applications dialog",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["dashboard_pending_applications"]
+  },
+  "noPendingApplications": "നിങ്ങളുടെ അടുത്തേക്ക് ഏത് അപേക്ഷകളും ഇല്ല.",
+  "@noPendingApplications": {
+    "description": "Message when there are no pending applications",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["dashboard_pending_applications"]
+  },
+  "closeButton": "ചെറുതായി",
+  "@closeButton": {
+    "description": "Label for the close button",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["dashboard_pending_applications"]
   }
 }

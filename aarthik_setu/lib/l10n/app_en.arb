@@ -262,8 +262,37 @@
     "type": "text",
     "placeholders": {},
     "tags": ["business_loan"]
+  },
+
+
+
+
+
+
+
+  "pendingApplicationsTitle": "Pending Applications",
+  "@pendingApplicationsTitle": {
+    "description": "Title for the pending applications dialog",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["dashboard_pending_applications"]
+  },
+  "noPendingApplications": "You have no pending applications.",
+  "@noPendingApplications": {
+    "description": "Message when there are no pending applications",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["dashboard_pending_applications"]
+  },
+  "closeButton": "Close",
+  "@closeButton": {
+    "description": "Label for the close button",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["dashboard_pending_applications"]
   }
 }
+
 
 
 

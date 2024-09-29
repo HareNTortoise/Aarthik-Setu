@@ -266,8 +266,39 @@
     "type": "text",
     "placeholders": {},
     "tags": ["business_loan"]
+  },
+
+
+
+
+
+
+
+
+
+  "pendingApplicationsTitle": "অপেক্ষমাণ আবেদনসমূহ",
+  "@pendingApplicationsTitle": {
+    "description": "Title for the pending applications dialog",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["dashboard_pending_applications"]
+  },
+  "noPendingApplications": "আপনার কোনও অপেক্ষমাণ আবেদন নেই।",
+  "@noPendingApplications": {
+    "description": "Message when there are no pending applications",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["dashboard_pending_applications"]
+  },
+  "closeButton": "বন্ধ করুন",
+  "@closeButton": {
+    "description": "Label for the close button",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["dashboard_pending_applications"]
   }
 }
+
 
 
 

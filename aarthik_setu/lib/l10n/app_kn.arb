@@ -265,8 +265,37 @@
     "type": "text",
     "placeholders": {},
     "tags": ["business_loan"]
+  },
+
+
+
+
+
+
+
+  "pendingApplicationsTitle": "ಬಾಕಿ ಅರ್ಜಿಗಳು",
+  "@pendingApplicationsTitle": {
+    "description": "Title for the pending applications dialog",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["dashboard_pending_applications"]
+  },
+  "noPendingApplications": "ನಿಮ್ಮ ಬಳಿ ಯಾವುದೇ ಬಾಕಿ ಅರ್ಜಿಗಳು ಇಲ್ಲ.",
+  "@noPendingApplications": {
+    "description": "Message when there are no pending applications",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["dashboard_pending_applications"]
+  },
+  "closeButton": "ಮುಚ್ಚಿ",
+  "@closeButton": {
+    "description": "Label for the close button",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["dashboard_pending_applications"]
   }
 }
+
 
 
 
