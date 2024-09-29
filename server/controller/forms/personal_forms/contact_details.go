@@ -88,6 +88,12 @@ func CreateResidenceDetail(c *gin.Context) {
 		return
 	}
 
+	err= utils.UpdateFirestoreDocument(ctx, "applications",  residenceDetail.ApplicationId, "contact_details_form_id", residenceDetail.FormId)
+	if err != nil {
+		c.JSON(http.StatusInternalServerError, gin.H{"error": "Failed to update application with formId", "details": err.Error()})
+		return
+	}
+
 	c.JSON(http.StatusCreated, gin.H{"message": "Residence detail created successfully"})
 }
 
@@ -134,7 +140,7 @@ func GetResidenceDetail(c *gin.Context) {
 		Timestamp:         data["timestamp"].(time.Time), // Ensure this is correctly parsed
 		FormId:            data["formId"].(string), // Include formId if available
 	}
-
+	
 	c.JSON(http.StatusOK, residenceDetail)
 }
 

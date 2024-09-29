@@ -84,6 +84,11 @@ func CreateBankDetails(c *gin.Context) {
 		"formId":        formId,
 	})
 
+	err= utils.UpdateFirestoreDocument(ctx, "applications", applicationId, "bank_details_form_id",formId)
+	if err != nil {
+		c.JSON(http.StatusInternalServerError, gin.H{"error": "Failed to update application with formId", "details": err.Error()})
+		return
+	}
 	// Check for errors in Firestore operation
 	if err != nil {
 		c.JSON(http.StatusInternalServerError, gin.H{"error": "Failed to add bank details to Firestore", "details": err.Error()})

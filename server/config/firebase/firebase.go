@@ -8,6 +8,8 @@ import (
 	"cloud.google.com/go/storage"
 	"crypto/rand"
 	"encoding/hex"
+	"fmt"
+
 )
 
 // Initialize Firebase Firestore
@@ -38,4 +40,26 @@ func GenerateRandomString(length int) (string, error) {
 		return "", err
 	}
 	return hex.EncodeToString(bytes)[:length], nil
+}
+
+func UpdateFirestoreDocument(ctx context.Context, collection string, documentId string, fieldPath string, value interface{}) error {
+	// Get a reference to the document in the specified collection
+	client := InitFirestore()
+	docRef := client.Collection(collection).Doc(documentId)
+
+	// Ensure the document exists
+	_, err := docRef.Get(ctx)
+	if err != nil {
+		return fmt.Errorf("document not found: %v", err)
+	}
+
+	// Update the specified field with the new value
+	_, err = docRef.Update(ctx, []firestore.Update{
+		{Path: fieldPath, Value: value},
+	})
+	if err != nil {
+		return fmt.Errorf("failed to update document: %v", err)
+	}
+
+	return nil
 }
