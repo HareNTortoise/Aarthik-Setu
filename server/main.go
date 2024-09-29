@@ -3,7 +3,9 @@ package main
 import (
 	"log"
 	business_forms "server/routes/forms/business_forms"
+	gen_ai "server/routes/forms/gen_ai"
 	personal_forms "server/routes/forms/personal_forms"
+	info_extraction "server/routes/info_extraction"
 
 	"github.com/gin-contrib/cors"
 	"github.com/gin-gonic/gin"
@@ -19,7 +21,6 @@ func main() {
 
 	// Create a new router instance
 	router := gin.Default()
-
 
 	// Apply CORS middleware
 	router.Use(cors.New(cors.Config{
@@ -54,6 +55,11 @@ func main() {
 	business_forms.RegisterGSTDetails(router)
 	business_forms.RegisterGSTBusinessDetails(router)
 	business_forms.RegisterStakeholdersDetails(router)
+
+	//Registed GenAI routes
+	gen_ai.GenAIFormRoutes(router)
+	info_extraction.RegisterITRInfoExtractionRoutes(router)
+	info_extraction.RegisterBankStatementInfoExtractionRoutes(router)
 
 	// Start the HTTP server
 	log.Println("Starting server on :8080")
