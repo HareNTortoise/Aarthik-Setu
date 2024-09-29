@@ -1,10 +1,9 @@
 {
 	"info": {
-		"_postman_id": "3b9ece94-798b-41bb-a829-25ee3c0af06e",
+		"_postman_id": "df9688b9-b10a-408c-b39e-3fe1972a7ca0",
 		"name": "AarthikSetu",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
-		"_exporter_id": "22368846",
-		"_collection_link": "https://shubhams-team-1428.postman.co/workspace/Aarthik-Setu~11961d72-f688-46ee-8581-9263c046918e/collection/22368846-3b9ece94-798b-41bb-a829-25ee3c0af06e?action=share&source=collection_link&creator=22368846"
+		"_exporter_id": "26603098"
 	},
 	"item": [
 		{
@@ -1406,6 +1405,205 @@
 							"response": []
 						}
 					]
+				},
+				{
+					"name": "LOAN_FORMS",
+					"item": [
+						{
+							"name": "LOAN_FORMS",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "loanPurpose",
+											"value": "hello",
+											"type": "text"
+										},
+										{
+											"key": "loanAmountRequired",
+											"value": "80000",
+											"type": "text"
+										},
+										{
+											"key": "tenure",
+											"value": "3",
+											"type": "text"
+										},
+										{
+											"key": "retirementAge",
+											"value": "2",
+											"type": "text"
+										},
+										{
+											"key": "emiBySalaryAccount",
+											"value": "10000",
+											"type": "text"
+										},
+										{
+											"key": "payOutstandingByTerminalPayments",
+											"value": "10000",
+											"type": "text"
+										},
+										{
+											"key": "paySalaryInSalaryAccount",
+											"value": "10000",
+											"type": "text"
+										},
+										{
+											"key": "issueLetterToYourEmployerToPayOutstandingLoan",
+											"value": "10000",
+											"type": "text"
+										},
+										{
+											"key": "issueLetterToYourEmployerToNotChangeSalaryAccount",
+											"value": "10000",
+											"type": "text"
+										},
+										{
+											"key": "repaymentMethod",
+											"value": "credit",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "localhost:8080/personal/loan_form/abcdefghi/abcdefghi",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"personal",
+										"loan_form",
+										"abcdefghi",
+										"abcdefghi"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "LOAN_FORMS",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "loanPurpose",
+											"value": "helloii",
+											"type": "text"
+										},
+										{
+											"key": "loanAmountRequired",
+											"value": "80000",
+											"type": "text"
+										},
+										{
+											"key": "tenure",
+											"value": "3",
+											"type": "text"
+										},
+										{
+											"key": "retirementAge",
+											"value": "2",
+											"type": "text"
+										},
+										{
+											"key": "emiBySalaryAccount",
+											"value": "10000",
+											"type": "text"
+										},
+										{
+											"key": "payOutstandingByTerminalPayments",
+											"value": "10000",
+											"type": "text"
+										},
+										{
+											"key": "paySalaryInSalaryAccount",
+											"value": "10000",
+											"type": "text"
+										},
+										{
+											"key": "issueLetterToYourEmployerToPayOutstandingLoan",
+											"value": "10000",
+											"type": "text"
+										},
+										{
+											"key": "issueLetterToYourEmployerToNotChangeSalaryAccount",
+											"value": "10000",
+											"type": "text"
+										},
+										{
+											"key": "repaymentMethod",
+											"value": "credit",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "localhost:8080/personal/loan_form/abcdefghi/abcdefghi",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"personal",
+										"loan_form",
+										"abcdefghi",
+										"abcdefghi"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "LOAN_FORMS",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8080/personal/loan_form/abcdefghi/abcdefghi",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"personal",
+										"loan_form",
+										"abcdefghi",
+										"abcdefghi"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "LOAN_FORMS",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "localhost:8080/personal/loan_form/abcdefghi/abcdefghi",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"personal",
+										"loan_form",
+										"abcdefghi",
+										"abcdefghi"
+									]
+								}
+							},
+							"response": []
+						}
+					]
 				}
 			]
 		},
@@ -1701,7 +1899,10 @@
 							"name": "POST_GST_DETAILS",
 							"request": {
 								"method": "POST",
-								"header": []
+								"header": [],
+								"url": {
+									"raw": ""
+								}
 							},
 							"response": []
 						},
@@ -1785,7 +1986,10 @@
 							"name": "DEL_GST_DETAILS",
 							"request": {
 								"method": "DELETE",
-								"header": []
+								"header": [],
+								"url": {
+									"raw": ""
+								}
 							},
 							"response": []
 						}
@@ -1798,7 +2002,10 @@
 							"name": "GET_BUSINESS_DETAILS",
 							"request": {
 								"method": "GET",
-								"header": []
+								"header": [],
+								"url": {
+									"raw": ""
+								}
 							},
 							"response": []
 						},
@@ -1806,7 +2013,10 @@
 							"name": "POST_BUSINESS_DETAILS",
 							"request": {
 								"method": "POST",
-								"header": []
+								"header": [],
+								"url": {
+									"raw": ""
+								}
 							},
 							"response": []
 						},
@@ -1936,7 +2146,10 @@
 							"name": "GET_STAKEHOLDERS_DETAILS",
 							"request": {
 								"method": "GET",
-								"header": []
+								"header": [],
+								"url": {
+									"raw": ""
+								}
 							},
 							"response": []
 						},
@@ -1944,7 +2157,10 @@
 							"name": "POST_STAKEHOLDERS_DETAILS",
 							"request": {
 								"method": "POST",
-								"header": []
+								"header": [],
+								"url": {
+									"raw": ""
+								}
 							},
 							"response": []
 						},
@@ -2015,24 +2231,27 @@
 			]
 		},
 		{
-			"name": "Gen-AI",
+			"name": "GEN-AI",
 			"item": [
 				{
-					"name": "formfilling",
+					"name": "AUDIO_FORM_FILL",
 					"request": {
+						"auth": {
+							"type": "inherit"
+						},
 						"method": "POST",
 						"header": [],
 						"body": {
 							"mode": "formdata",
 							"formdata": [
 								{
-									"key": "audioFile ",
+									"key": "audioFile",
 									"type": "file",
-									"src": "postman-cloud:///1ef7db9c-5d97-47c0-a09f-642ce4f96f6c"
+									"src": "/home/varunvilva/Downloads/test.mp3"
 								},
 								{
 									"key": "formFields",
-									"value": "{\n  \"name\": \"Shubham\",\n  \"age\": 20,\n  \"email\": \"john@example.com\"\n}\n",
+									"value": "[\"name\", \"age\", \"email\"]",
 									"type": "text"
 								}
 							]
@@ -2054,10 +2273,10 @@
 			]
 		},
 		{
-			"name": "info_extraction",
+			"name": "INFO_EXTRACTION",
 			"item": [
 				{
-					"name": "Bank statement",
+					"name": "BANK_STATEMENT",
 					"request": {
 						"method": "POST",
 						"header": [],
@@ -2070,6 +2289,41 @@
 							"path": [
 								"gen_ai",
 								"get-bank-statement-details"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ITR_DETAIL_EXTRACTION Copy",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "file",
+									"type": "file",
+									"src": "/home/varunvilva/Downloads/itr ba fab.pdf"
+								},
+								{
+									"key": "formFields",
+									"value": "[\"name\", \"age\", \"email\"]",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:8080/gen_ai/get-itr-detils",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"gen_ai",
+								"get-itr-detils"
 							]
 						}
 					},
