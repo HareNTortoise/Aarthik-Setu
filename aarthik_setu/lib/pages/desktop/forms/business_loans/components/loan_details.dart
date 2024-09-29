@@ -1,7 +1,6 @@
-import 'package:animated_toggle_switch/animated_toggle_switch.dart';
+import 'package:aarthik_setu/global_components/custom_switch.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import '../../../../../constants/colors.dart';
 import '../../../../../global_components/labelled_text_field.dart';
 
 class LoanDetailsForm extends StatefulWidget {
@@ -12,8 +11,18 @@ class LoanDetailsForm extends StatefulWidget {
 }
 
 class _LoanDetailsFormState extends State<LoanDetailsForm> {
-  bool _isISOCertified = false;
   int currentYear = DateTime.now().year;
+
+  final TextEditingController _loanAmountController = TextEditingController();
+  final TextEditingController _promoterContributionController = TextEditingController();
+  final TextEditingController _purposeOfLoanController = TextEditingController();
+
+  final TextEditingController _projectedSalesController = TextEditingController();
+  bool _isISOCertified = false;
+  final TextEditingController _factoryPremiseController = TextEditingController();
+
+  final TextEditingController _projectedKnowHowController = TextEditingController();
+  final TextEditingController _competitionController = TextEditingController();
 
   @override
   Widget build(BuildContext context) {
@@ -51,17 +60,17 @@ class _LoanDetailsFormState extends State<LoanDetailsForm> {
                 LabelledTextField(
                   label: "Loan Amount Required*",
                   hintText: 'Enter Loan Amount',
-                  controller: TextEditingController(),
+                  controller: _loanAmountController,
                 ),
                 LabelledTextField(
                   label: "Promoter Contribution*",
                   hintText: 'Enter promoter contribution',
-                  controller: TextEditingController(),
+                  controller: _promoterContributionController,
                 ),
                 LabelledTextField(
                   label: "Purpose of Loan*",
                   hintText: 'Enter purpose of loan',
-                  controller: TextEditingController(),
+                  controller: _purposeOfLoanController,
                 ),
               ],
             ),
@@ -74,66 +83,12 @@ class _LoanDetailsFormState extends State<LoanDetailsForm> {
                 LabelledTextField(
                   label: "Projected Sales FY $currentYear-${currentYear % 100 + 1}*",
                   hintText: 'Enter projected sales',
-                  controller: TextEditingController(),
+                  controller: _projectedSalesController,
                 ),
                 Text('Is your business ISO certified?', style: GoogleFonts.poppins(fontSize: 20)),
-                SizedBox(
-                  width: 160,
-                  height: 60,
-                  child: AnimatedToggleSwitch<bool>.dual(
-                    current: _isISOCertified,
-                    first: false,
-                    second: true,
-                    borderWidth: 6,
-                    textBuilder: (index) => index == true
-                        ? Text(
-                            "Yes",
-                            style: GoogleFonts.poppins(
-                              color: Colors.black,
-                              fontSize: 20,
-                            ),
-                          )
-                        : Text(
-                            "No",
-                            style: GoogleFonts.poppins(
-                              color: Colors.black,
-                              fontSize: 20,
-                            ),
-                          ),
-                    indicatorSize: const Size.fromWidth(50),
-                    style: ToggleStyle(
-                      backgroundColor: Colors.grey[200],
-                      borderRadius: BorderRadius.circular(50),
-                      borderColor: Colors.transparent,
-                      boxShadow: [
-                        const BoxShadow(
-                          color: Colors.black26,
-                          spreadRadius: 1,
-                          blurRadius: 2,
-                          offset: Offset(0, 1.5),
-                        ),
-                      ],
-                    ),
-                    styleBuilder: (index) => index == true
-                        ? const ToggleStyle(indicatorColor: Colors.green)
-                        : ToggleStyle(indicatorColor: AppColors.primaryColorOne),
-                    iconBuilder: (index) => index == true
-                        ? const Icon(
-                            Icons.check,
-                            size: 30,
-                            color: Colors.white,
-                          )
-                        : const Icon(
-                            Icons.close,
-                            size: 30,
-                            color: Colors.white,
-                          ),
-                    onChanged: (value) {
-                      setState(() {
-                        _isISOCertified = value;
-                      });
-                    },
-                  ),
+                CustomSwitch(
+                  current: _isISOCertified,
+                  onChanged: (value) => setState(() => _isISOCertified = value),
                 ),
               ],
             ),
@@ -144,17 +99,17 @@ class _LoanDetailsFormState extends State<LoanDetailsForm> {
                 LabelledTextField(
                   label: "Factory Premise*",
                   hintText: 'Enter factory premise',
-                  controller: TextEditingController(),
+                  controller: _factoryPremiseController,
                 ),
                 LabelledTextField(
                   label: "Projected Know How*",
                   hintText: 'Enter projected know how',
-                  controller: TextEditingController(),
+                  controller: _projectedKnowHowController,
                 ),
                 LabelledTextField(
                   label: "Competition*",
                   hintText: 'Enter competition',
-                  controller: TextEditingController(),
+                  controller: _competitionController,
                 ),
               ],
             ),

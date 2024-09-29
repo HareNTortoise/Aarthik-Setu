@@ -3,11 +3,13 @@ import 'package:syncfusion_flutter_datepicker/datepicker.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class MonthPickerButton extends StatefulWidget {
+  final DateTime? current;
   final String label;
   final Function(DateTime) onMonthSelected;
 
   const MonthPickerButton({
     super.key,
+    this.current,
     required this.label,
     required this.onMonthSelected,
   });
@@ -17,8 +19,6 @@ class MonthPickerButton extends StatefulWidget {
 }
 
 class MonthPickerButtonState extends State<MonthPickerButton> {
-  DateTime? _selectedMonth;
-
   @override
   Widget build(BuildContext context) {
     return Column(
@@ -50,9 +50,6 @@ class MonthPickerButtonState extends State<MonthPickerButton> {
                       ),
                       child: SfDateRangePicker(
                         onSelectionChanged: (DateRangePickerSelectionChangedArgs args) {
-                          setState(() {
-                            _selectedMonth = args.value;
-                          });
                           widget.onMonthSelected(args.value);
                         },
                         selectionTextStyle: const TextStyle(
@@ -79,14 +76,14 @@ class MonthPickerButtonState extends State<MonthPickerButton> {
                 Colors.blue.withOpacity(0.5),
               ),
             ),
-            child: _selectedMonth != null
+            child: widget.current != null
                 ? Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       const Icon(Icons.calendar_month, size: 30, color: Colors.black),
                       const SizedBox(width: 10),
                       Text(
-                        "${_selectedMonth!.month}",
+                        "${widget.current!.month}",
                         style: GoogleFonts.poppins(fontSize: 20, color: Colors.black),
                       ),
                     ],

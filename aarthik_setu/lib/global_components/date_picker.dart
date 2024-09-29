@@ -4,11 +4,13 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:calendar_date_picker2/calendar_date_picker2.dart';
 
 class DatePickerButton extends StatefulWidget {
+  final DateTime? current;
   final String label;
   final Function(DateTime) onDateSelected;
 
   const DatePickerButton({
     super.key,
+    this.current,
     required this.label,
     required this.onDateSelected,
   });
@@ -18,8 +20,6 @@ class DatePickerButton extends StatefulWidget {
 }
 
 class DatePickerButtonState extends State<DatePickerButton> {
-  DateTime? _selectedDate;
-
   @override
   Widget build(BuildContext context) {
     return Column(
@@ -43,9 +43,6 @@ class DatePickerButtonState extends State<DatePickerButton> {
                 borderRadius: BorderRadius.circular(15),
               );
               if (results != null && results[0] != null) {
-                setState(() {
-                  _selectedDate = results[0];
-                });
                 widget.onDateSelected(results[0]!); // Notify parent of the selected date
               }
             },
@@ -57,14 +54,14 @@ class DatePickerButtonState extends State<DatePickerButton> {
                 Colors.blue.withOpacity(0.5),
               ),
             ),
-            child: _selectedDate != null
+            child: widget.current != null
                 ? Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       const Icon(Icons.calendar_month, size: 30, color: Colors.black),
                       const SizedBox(width: 10),
                       Text(
-                        "${_selectedDate!.day}/${_selectedDate!.month}/${_selectedDate!.year}",
+                        "${widget.current!.day}/${widget.current!.month}/${widget.current!.year}",
                         style: GoogleFonts.poppins(fontSize: 20, color: Colors.black),
                       ),
                     ],
