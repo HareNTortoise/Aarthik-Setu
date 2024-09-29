@@ -10,6 +10,7 @@ class PersonalLoanApplication {
   String? employmentDetailsFormId;
   String? creditInfoFormId;
   String? bankDetailsFormId;
+  String? finalLoanFormId;
 
   PersonalLoanApplication({
     required this.profileId,
@@ -22,6 +23,7 @@ class PersonalLoanApplication {
     this.employmentDetailsFormId,
     this.creditInfoFormId,
     this.bankDetailsFormId,
+    this.finalLoanFormId,
   });
 
   Map<String, dynamic> toJson() {
@@ -35,6 +37,7 @@ class PersonalLoanApplication {
       'employmentDetailsFormId': employmentDetailsFormId,
       'creditInfoFormId': creditInfoFormId,
       'bankDetailsFormId': bankDetailsFormId,
+      'finalLoanFormId': finalLoanFormId,
     };
   }
 
@@ -50,6 +53,7 @@ class PersonalLoanApplication {
       employmentDetailsFormId: json['employmentDetailsFormId'],
       creditInfoFormId: json['creditInfoFormId'],
       bankDetailsFormId: json['bankDetailsFormId'],
+      finalLoanFormId: json['finalLoanFormId'],
     );
   }
 }
