@@ -115,5 +115,159 @@
     "type": "text",
     "placeholders": {},
     "tags": ["sign-in"]
+  },
+
+
+
+
+
+
+
+
+  "dashboard": "Dashboard",
+  "@dashboard": {
+    "description": "Title for the dashboard page",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["dashboard"]
+  },
+  "personalLoans": "Personal Loans",
+  "@personalLoans": {
+    "description": "Label for personal loan options",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["dashboard", "personal_loan"]
+  },
+  "businessLoans": "Business Loans",
+  "@businessLoans": {
+    "description": "Label for business loan options",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["dashboard"]
+  },
+  "governmentSchemes": "Government Schemes",
+  "@governmentSchemes": {
+    "description": "Label for government schemes",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["dashboard"]
+  },
+  "logOut": "Log Out",
+  "@logOut": {
+    "description": "Button label for logging out",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["dashboard"]
+  },
+  "profile": "Profile",
+  "@profile": {
+    "description": "Label for profile selection",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["dashboard"]
+  },
+  "pendingApplications": "Pending Applications",
+  "@pendingApplications": {
+    "description": "Label for pending applications with count",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["dashboard"]
+  },
+
+
+
+
+
+
+  "personalLoanDescription": "Get a personal loan with low interest rates and flexible repayment options.",
+  "@personalLoanDescription": {
+    "description": "Description for personal loan option",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["personal_loan"]
+  },
+  "homeLoans": "Home Loans",
+  "@homeLoans": {
+    "description": "Title for home loan option",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["personal_loan"]
+  },
+  "homeLoanDescription": "Get a home loan with low interest rates and flexible repayment options.",
+  "@homeLoanDescription": {
+    "description": "Description for home loan option",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["personal_loan"]
+  },
+  "autoLoans": "Auto Loans",
+  "@autoLoans": {
+    "description": "Title for auto loan option",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["personal_loan"]
+  },
+  "autoLoanDescription": "Get an auto loan with low interest rates and flexible repayment options.",
+  "@autoLoanDescription": {
+    "description": "Description for auto loan option",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["personal_loan"]
+  },
+
+
+
+
+
+
+
+  "msmeLoans": "MSME Loans",
+  "@msmeLoans": {
+    "description": "Title for MSME loan option",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["business_loan"]
+  },
+  "msmeLoanDescription": "Get MSME loans up to ₹5 Crores with low interest rates and flexible repayment options.",
+  "@msmeLoanDescription": {
+    "description": "Description for MSME loan option",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["business_loan"]
+  },
+  "termLoans": "Term Loans",
+  "@termLoans": {
+    "description": "Title for term loan option",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["business_loan"]
+  },
+  "termLoanDescription": "Get term loans up to ₹50 Lakhs with competitive rates and flexible repayment terms.",
+  "@termLoanDescription": {
+    "description": "Description for term loan option",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["business_loan"]
+  },
+  "mudraLoans": "Mudra Loans",
+  "@mudraLoans": {
+    "description": "Title for Mudra loan option",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["business_loan"]
+  },
+  "mudraLoanDescription": "Get Mudra loans up to ₹10 Lakhs for micro-enterprises with flexible repayment.",
+  "@mudraLoanDescription": {
+    "description": "Description for Mudra loan option",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["business_loan"]
   }
 }
+
+
+
+
+
+
+

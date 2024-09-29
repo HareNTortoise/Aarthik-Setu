@@ -115,5 +115,158 @@
     "type": "text",
     "placeholders": {},
     "tags": ["sign-in"]
+  },
+
+
+
+
+
+
+  "dashboard": "ಡ್ಯಾಶ್‌ಬೋರ್ಡ್",
+  "@dashboard": {
+    "description": "Title for the dashboard page",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["dashboard"]
+  },
+  "personalLoans": "ವೈಯಕ್ತಿಕ ಸಾಲಗಳು",
+  "@personalLoans": {
+    "description": "Label for personal loan options",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["dashboard", "personal_loan"]
+  },
+  "businessLoans": "ವ್ಯಾಪಾರ ಸಾಲಗಳು",
+  "@businessLoans": {
+    "description": "Label for business loan options",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["dashboard"]
+  },
+  "governmentSchemes": "ಸರಕಾರಿ ಯೋಜನೆಗಳು",
+  "@governmentSchemes": {
+    "description": "Label for government schemes",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["dashboard"]
+  },
+  "logOut": "ಲಾಗ್ ಔಟ್",
+  "@logOut": {
+    "description": "Button label for logging out",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["dashboard"]
+  },
+  "profile": "ಪ್ರೊಫೈಲ್",
+  "@profile": {
+    "description": "Label for profile selection",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["dashboard"]
+  },
+  "pendingApplications": "ಬಾಕಿ ಇರುವ ಅರ್ಜಿ",
+  "@pendingApplications": {
+    "description": "Label for pending applications with count",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["dashboard"]
+  },
+
+
+
+
+
+
+
+
+
+  "personalLoanDescription": "ಕಡಿಮೆ ಬಡ್ಡಿದರ ಮತ್ತು ನಸುಗುವ ಬಾಕಿ ಪಾವತಿ ಆಯ್ಕೆಗಳೊಂದಿಗೆ ವೈಯಕ್ತಿಕ ಸಾಲ ಪಡೆಯಿರಿ.",
+  "@personalLoanDescription": {
+    "description": "Description for personal loan option",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["personal_loan"]
+  },
+  "homeLoans": "ಮನೆ ಸಾಲಗಳು",
+  "@homeLoans": {
+    "description": "Title for home loan option",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["personal_loan"]
+  },
+  "homeLoanDescription": "ಕಡಿಮೆ ಬಡ್ಡಿದರ ಮತ್ತು ನಸುಗುವ ಬಾಕಿ ಪಾವತಿ ಆಯ್ಕೆಗಳೊಂದಿಗೆ ಮನೆ ಸಾಲ ಪಡೆಯಿರಿ.",
+  "@homeLoanDescription": {
+    "description": "Description for home loan option",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["personal_loan"]
+  },
+  "autoLoans": "ವಾಹನ ಸಾಲಗಳು",
+  "@autoLoans": {
+    "description": "Title for auto loan option",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["personal_loan"]
+  },
+  "autoLoanDescription": "ಕಡಿಮೆ ಬಡ್ಡಿದರ ಮತ್ತು ನಸುಗುವ ಬಾಕಿ ಪಾವತಿ ಆಯ್ಕೆಗಳೊಂದಿಗೆ ವಾಹನ ಸಾಲ ಪಡೆಯಿರಿ.",
+  "@autoLoanDescription": {
+    "description": "Description for auto loan option",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["personal_loan"]
+  },
+
+
+
+
+
+
+
+
+
+  "msmeLoans": "ಎಮ್‌ಎಸ್‌ಎಮ್‌ಇ ಸಾಲುಗಳು",
+  "@msmeLoans": {
+    "description": "Title for MSME loan option",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["business_loan"]
+  },
+  "msmeLoanDescription": "ಕಡಿಮೆ ಬಡ್ಡಿ ದರ ಮತ್ತು ಪರ್ಯಾಯ ಪರಿಷ್ಕಾರ ಆಯ್ಕೆಗಳನ್ನು ಹೊಂದಿರುವ ₹5 ಕೋಟಿ ವರೆಗೆ MSME ಸಾಲುಗಳನ್ನು ಪಡೆಯಿರಿ.",
+  "@msmeLoanDescription": {
+    "description": "Description for MSME loan option",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["business_loan"]
+  },
+  "termLoans": "ಅವಧಿ ಸಾಲುಗಳು",
+  "@termLoans": {
+    "description": "Title for term loan option",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["business_loan"]
+  },
+  "termLoanDescription": "ಪ್ರತಿಸ್ಪರ್ಧಾತ್ಮಕ ದರ ಮತ್ತು ಪರಿಷ್ಕಾರದ ಶ್ರೇಣಿಗಳನ್ನು ಹೊಂದಿರುವ ₹50 ಲಕ್ಷ ವರೆಗೆ ಅವಧಿ ಸಾಲುಗಳನ್ನು ಪಡೆಯಿರಿ.",
+  "@termLoanDescription": {
+    "description": "Description for term loan option",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["business_loan"]
+  },
+  "mudraLoans": "ಮುದ್ರಾ ಸಾಲುಗಳು",
+  "@mudraLoans": {
+    "description": "Title for Mudra loan option",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["business_loan"]
+  },
+  "mudraLoanDescription": "ನಮ್ಮ ಲಕೋಟಿ ಮುಡುಪಿಗೆ ₹10 ಲಕ್ಷ ವರೆಗೆ ಕ್ಷುದುದ್ದೊರಿಗೆ ಮತ್ತು ಸುಲಭವಾದ ತಿರುವಿನೊಂದಿಗೆ ಸಾಲುಗಳನ್ನು ಪಡೆಯಿರಿ.",
+  "@mudraLoanDescription": {
+    "description": "Description for Mudra loan option",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["business_loan"]
   }
 }
+
+
+

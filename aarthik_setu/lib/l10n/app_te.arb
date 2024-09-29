@@ -115,5 +115,154 @@
     "type": "text",
     "placeholders": {},
     "tags": ["sign-in"]
+  },
+
+
+
+
+
+  "dashboard": "డాష్‌బోర్డ్",
+  "@dashboard": {
+    "description": "Title for the dashboard page",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["dashboard"]
+  },
+  "personalLoans": "వ్యక్తిగత రుణాలు",
+  "@personalLoans": {
+    "description": "Label for personal loan options",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["dashboard", "personal_loan"]
+  },
+  "businessLoans": "వ్యాపార రుణాలు",
+  "@businessLoans": {
+    "description": "Label for business loan options",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["dashboard"]
+  },
+  "governmentSchemes": "ప్రభుత్వ పథకాలు",
+  "@governmentSchemes": {
+    "description": "Label for government schemes",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["dashboard"]
+  },
+  "logOut": "లాగ్ అవుట్",
+  "@logOut": {
+    "description": "Button label for logging out",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["dashboard"]
+  },
+  "profile": "ప్రొఫైల్",
+  "@profile": {
+    "description": "Label for profile selection",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["dashboard"]
+  },
+  "pendingApplications": "పెండింగ్ అప్లికేషన్లు",
+  "@pendingApplications": {
+    "description": "Label for pending applications with count",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["dashboard"]
+  },
+
+
+
+
+
+
+
+
+  "personalLoanDescription": "తక్కువ వడ్డీ రేట్లు మరియు అనువైన తిరిగి చెల్లింపు ఎంపికలతో వ్యక్తిగత రుణం పొందండి.",
+  "@personalLoanDescription": {
+    "description": "Description for personal loan option",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["personal_loan"]
+  },
+  "homeLoans": "హోమ్ రుణాలు",
+  "@homeLoans": {
+    "description": "Title for home loan option",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["personal_loan"]
+  },
+  "homeLoanDescription": "తక్కువ వడ్డీ రేట్లు మరియు అనువైన తిరిగి చెల్లింపు ఎంపికలతో హోమ్ రుణం పొందండి.",
+  "@homeLoanDescription": {
+    "description": "Description for home loan option",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["personal_loan"]
+  },
+  "autoLoans": "ఆటో రుణాలు",
+  "@autoLoans": {
+    "description": "Title for auto loan option",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["personal_loan"]
+  },
+  "autoLoanDescription": "తక్కువ వడ్డీ రేట్లు మరియు అనువైన తిరిగి చెల్లింపు ఎంపికలతో ఆటో రుణం పొందండి.",
+  "@autoLoanDescription": {
+    "description": "Description for auto loan option",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["personal_loan"]
+  },
+
+
+
+
+
+
+
+
+  "msmeLoans": "ఎంఎస్ఎంఈ రుణాలు",
+  "@msmeLoans": {
+    "description": "Title for MSME loan option",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["business_loan"]
+  },
+  "msmeLoanDescription": "తక్కువ వడ్డీ రేట్లు మరియు నునుగట్టు తిరిగి చెల్లించడానికి ఎంపికలతో ₹5 కోట్ల MSME రుణాలను పొందండి.",
+  "@msmeLoanDescription": {
+    "description": "Description for MSME loan option",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["business_loan"]
+  },
+  "termLoans": "కాలం రుణాలు",
+  "@termLoans": {
+    "description": "Title for term loan option",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["business_loan"]
+  },
+  "termLoanDescription": "ప్రతిస్పర్ధాత్మక ధరలు మరియు నునుగట్టు తిరిగి చెల్లింపు నిబంధనలతో ₹50 లక్షల వరకు కాలం రుణాలను పొందండి.",
+  "@termLoanDescription": {
+    "description": "Description for term loan option",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["business_loan"]
+  },
+  "mudraLoans": "ముద్రా రుణాలు",
+  "@mudraLoans": {
+    "description": "Title for Mudra loan option",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["business_loan"]
+  },
+  "mudraLoanDescription": "నునుగట్టు తిరిగి చెల్లింపు నిబంధనలతో మైక్రో ఎంటర్‌ప్రైజ్‌లకు ₹10 లక్షల వరకు ముద్రా రుణాలను పొందండి.",
+  "@mudraLoanDescription": {
+    "description": "Description for Mudra loan option",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["business_loan"]
   }
 }
+
+

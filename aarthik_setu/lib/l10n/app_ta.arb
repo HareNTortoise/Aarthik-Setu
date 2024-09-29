@@ -115,5 +115,152 @@
     "type": "text",
     "placeholders": {},
     "tags": ["sign-in"]
+  },
+
+
+  "dashboard": "டாஷ்போர்டு",
+  "@dashboard": {
+    "description": "Title for the dashboard page",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["dashboard"]
+  },
+  "personalLoans": "தனிப்பட்ட கடன்கள்",
+  "@personalLoans": {
+    "description": "Label for personal loan options",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["dashboard", "personal_loan"]
+  },
+  "businessLoans": "வணிகக் கடன்கள்",
+  "@businessLoans": {
+    "description": "Label for business loan options",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["dashboard"]
+  },
+  "governmentSchemes": "அரசுத் திட்டங்கள்",
+  "@governmentSchemes": {
+    "description": "Label for government schemes",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["dashboard"]
+  },
+  "logOut": "லாக் அவுட்",
+  "@logOut": {
+    "description": "Button label for logging out",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["dashboard"]
+  },
+  "profile": "சுயவிவரம்",
+  "@profile": {
+    "description": "Label for profile selection",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["dashboard"]
+  },
+  "pendingApplications": "நிலுவையில் உள்ள விண்ணப்பங்கள்",
+  "@pendingApplications": {
+    "description": "Label for pending applications with count",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["dashboard"]
+  },
+
+
+
+
+
+
+
+
+  "personalLoanDescription": "குறைந்த வட்டி விகிதங்கள் மற்றும் நெகிழ்வான திருப்பி செலுத்தும் விருப்பங்களுடன் தனிப்பட்ட கடனைப் பெறுங்கள்.",
+  "@personalLoanDescription": {
+    "description": "Description for personal loan option",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["personal_loan"]
+  },
+  "homeLoans": "வீட்டுக் கடன்கள்",
+  "@homeLoans": {
+    "description": "Title for home loan option",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["personal_loan"]
+  },
+  "homeLoanDescription": "குறைந்த வட்டி விகிதங்கள் மற்றும் நெகிழ்வான திருப்பி செலுத்தும் விருப்பங்களுடன் வீட்டுக் கடனைப் பெறுங்கள்.",
+  "@homeLoanDescription": {
+    "description": "Description for home loan option",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["personal_loan"]
+  },
+  "autoLoans": "ஆட்டோ கடன்கள்",
+  "@autoLoans": {
+    "description": "Title for auto loan option",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["personal_loan"]
+  },
+  "autoLoanDescription": "குறைந்த வட்டி விகிதங்கள் மற்றும் நெகிழ்வான திருப்பி செலுத்தும் விருப்பங்களுடன் ஆட்டோ கடனைப் பெறுங்கள்.",
+  "@autoLoanDescription": {
+    "description": "Description for auto loan option",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["personal_loan"]
+  },
+
+
+
+
+
+
+
+
+  "msmeLoans": "எம்சிஏம்இ கடன்கள்",
+  "@msmeLoans": {
+    "description": "Title for MSME loan option",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["business_loan"]
+  },
+  "msmeLoanDescription": "குறைந்த வட்டி விகிதம் மற்றும் மிகவும் நெகிழ்வான திரும்பவும் தரவுகள் உட்பட ₹5 கோடி வரை MSME கடன்களைப் பெறுங்கள்.",
+  "@msmeLoanDescription": {
+    "description": "Description for MSME loan option",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["business_loan"]
+  },
+  "termLoans": "காலக்கெட்டு கடன்கள்",
+  "@termLoans": {
+    "description": "Title for term loan option",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["business_loan"]
+  },
+  "termLoanDescription": "போட்டியில் 50 லட்சம் ரூபாய் வரை வாங்கி கிடைக்கும் மாறுபட்டது மற்றும் மிக நெகிழ்வான சேவைகளை அடையுங்கள்.",
+  "@termLoanDescription": {
+    "description": "Description for term loan option",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["business_loan"]
+  },
+  "mudraLoans": "முத்ரா கடன்கள்",
+  "@mudraLoans": {
+    "description": "Title for Mudra loan option",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["business_loan"]
+  },
+  "mudraLoanDescription": "குறுகிய வரம்புகளை உள்ளடக்கிய பணிக்கு ₹10 லட்சம் வரை முக்கொல்லியோழ்கள் மாதிரி வாங்கலாம்.",
+  "@mudraLoanDescription": {
+    "description": "Description for Mudra loan option",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["business_loan"]
   }
 }
+
+
+
