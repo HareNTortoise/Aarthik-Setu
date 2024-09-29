@@ -18,7 +18,6 @@ class SignInDesktop extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final localizations = AppLocalizations.of(context);
     return ResponsiveScaledBox(
       width: AppConstants.desktopScaleWidth,
       child: BlocListener<AuthBloc, AuthState>(
@@ -27,23 +26,25 @@ class SignInDesktop extends StatelessWidget {
             context.go('/dashboard');
           }
         },
-        child: Localizations.override(
-          context: context,
-          locale: (context
-              .watch<L10nBloc>()
-              .state as L10n).locale,
-          child: BlocBuilder<L10nBloc, L10nState>(
-            builder: (context, state) {
-              return Scaffold(
+        child: BlocBuilder<L10nBloc, L10nState>(
+          builder: (context, state) {
+            return Localizations.override(
+              context: context,
+              locale: (state as L10n).locale,
+              child: Scaffold(
                 body: Row(
                   children: [
                     Expanded(
                       flex: 1,
                       child: Center(
-                        child: Text(
-                          AppLocalizations.of(context)!.appTitle,
-                          style: GoogleFonts.jost(fontSize: 120, fontWeight: FontWeight.w400),
-                          textAlign: TextAlign.center,
+                        child: Builder(
+                          builder: (context) {
+                            return Text(
+                              AppLocalizations.of(context)!.appTitle,
+                              style: GoogleFonts.jost(fontSize: 120, fontWeight: FontWeight.w400),
+                              textAlign: TextAlign.center,
+                            );
+                          }
                         ),
                       ),
                     ),
@@ -89,9 +90,9 @@ class SignInDesktop extends StatelessWidget {
                     ),
                   ],
                 ),
-              );
-            },
-          ),
+              ),
+            );
+          },
         ),
       ),
     );
