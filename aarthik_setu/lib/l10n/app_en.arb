@@ -289,9 +289,31 @@
     "description": "Label for the close button",
     "type": "text",
     "placeholders": {},
-    "tags": ["dashboard_pending_applications"]
+    "tags": ["dashboard_pending_applications", "dashboard_select_profile"]
+  },
+
+
+
+
+
+
+
+  "selectProfileTitle": "Select Profile",
+  "@selectProfileTitle": {
+    "description": "Title for the select profile dialog",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["dashboard_select_profile"]
+  },
+  "noProfiles": "You have no profiles.",
+  "@noProfiles": {
+    "description": "Message when there are no profiles",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["dashboard_select_profile"]
   }
 }
+
 
 
 

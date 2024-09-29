@@ -287,7 +287,28 @@
     "description": "Label for the close button",
     "type": "text",
     "placeholders": {},
-    "tags": ["dashboard_pending_applications"]
+    "tags": ["dashboard_pending_applications", "dashboard_select_profile"]
+  },
+
+
+
+
+
+
+
+  "selectProfileTitle": "செயல்பாட்டை தேர்ந்தெடுக்கவும்",
+  "@selectProfileTitle": {
+    "description": "Title for the select profile dialog",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["dashboard_select_profile"]
+  },
+  "noProfiles": "உங்களிடம் செயல்பாடுகள் இல்லை.",
+  "@noProfiles": {
+    "description": "Message when there are no profiles",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["dashboard_select_profile"]
   }
 }
 

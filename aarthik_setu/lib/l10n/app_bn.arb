@@ -295,7 +295,27 @@
     "description": "Label for the close button",
     "type": "text",
     "placeholders": {},
-    "tags": ["dashboard_pending_applications"]
+    "tags": ["dashboard_pending_applications", "dashboard_select_profile"]
+  },
+
+
+
+
+
+
+  "selectProfileTitle": "প্রোফাইল নির্বাচন করুন",
+  "@selectProfileTitle": {
+    "description": "Title for the select profile dialog",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["dashboard_select_profile"]
+  },
+  "noProfiles": "আপনার কোনো প্রোফাইল নেই।",
+  "@noProfiles": {
+    "description": "Message when there are no profiles",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["dashboard_select_profile"]
   }
 }
 

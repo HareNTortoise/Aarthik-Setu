@@ -288,7 +288,27 @@
     "description": "Label for the close button",
     "type": "text",
     "placeholders": {},
-    "tags": ["dashboard_pending_applications"]
+    "tags": ["dashboard_pending_applications", "dashboard_select_profile"]
+  },
+
+
+
+
+
+
+  "selectProfileTitle": "ప్రొఫైల్ ఎంచుకోండి",
+  "@selectProfileTitle": {
+    "description": "Title for the select profile dialog",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["dashboard_select_profile"]
+  },
+  "noProfiles": "మీ వద్ద ప్రొఫైల్స్ లేవు.",
+  "@noProfiles": {
+    "description": "Message when there are no profiles",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["dashboard_select_profile"]
   }
 }
 

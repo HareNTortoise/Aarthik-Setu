@@ -292,7 +292,27 @@
     "description": "Label for the close button",
     "type": "text",
     "placeholders": {},
-    "tags": ["dashboard_pending_applications"]
+    "tags": ["dashboard_pending_applications", "dashboard_select_profile"]
+  },
+
+
+
+
+
+
+  "selectProfileTitle": "ಪ್ರೊಫೈಲ್ ಆಯ್ಕೆ ಮಾಡಿ",
+  "@selectProfileTitle": {
+    "description": "Title for the select profile dialog",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["dashboard_select_profile"]
+  },
+  "noProfiles": "ನಿಮ್ಮ ಬಳಿ ಯಾವುದೇ ಪ್ರೊಫೈಲ್ ಇಲ್ಲ.",
+  "@noProfiles": {
+    "description": "Message when there are no profiles",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["dashboard_select_profile"]
   }
 }
 
