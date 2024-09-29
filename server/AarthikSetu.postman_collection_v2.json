@@ -1,9 +1,10 @@
 {
 	"info": {
-		"_postman_id": "5a22b619-9930-403c-9d13-36b19794be6f",
+		"_postman_id": "3b9ece94-798b-41bb-a829-25ee3c0af06e",
 		"name": "AarthikSetu",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
-		"_exporter_id": "26603098"
+		"_exporter_id": "22368846",
+		"_collection_link": "https://shubhams-team-1428.postman.co/workspace/Aarthik-Setu~11961d72-f688-46ee-8581-9263c046918e/collection/22368846-3b9ece94-798b-41bb-a829-25ee3c0af06e?action=share&source=collection_link&creator=22368846"
 	},
 	"item": [
 		{
@@ -136,16 +137,14 @@
 											]
 										},
 										"url": {
-											"raw": "localhost:8080/personal/itr/abcdefghi/abcdefghi",
+											"raw": "localhost:8080/personal/itr",
 											"host": [
 												"localhost"
 											],
 											"port": "8080",
 											"path": [
 												"personal",
-												"itr",
-												"abcdefghi",
-												"abcdefghi"
+												"itr"
 											]
 										}
 									},
@@ -161,7 +160,7 @@
 											"formdata": [
 												{
 													"key": "firstName",
-													"value": "varunnn",
+													"value": "varun",
 													"type": "text"
 												},
 												{
@@ -273,7 +272,7 @@
 											]
 										},
 										"url": {
-											"raw": "localhost:8080/personal/itr/abcdefghi/abcdefghi",
+											"raw": "localhost:8080/personal/itr/mhtwaakyay",
 											"host": [
 												"localhost"
 											],
@@ -281,8 +280,7 @@
 											"path": [
 												"personal",
 												"itr",
-												"abcdefghi",
-												"abcdefghi"
+												"mhtwaakyay"
 											]
 										}
 									},
@@ -306,7 +304,7 @@
 											}
 										},
 										"url": {
-											"raw": "localhost:8080/personal/itr/abcdefghi/abcdefghi",
+											"raw": "localhost:8080/personal/itr/mhtwaakyay",
 											"host": [
 												"localhost"
 											],
@@ -314,8 +312,7 @@
 											"path": [
 												"personal",
 												"itr",
-												"abcdefghi",
-												"abcdefghi"
+												"mhtwaakyay"
 											]
 										}
 									},
@@ -412,7 +409,7 @@
 									]
 								},
 								"url": {
-									"raw": "localhost:8080/personal/bank_details/abcdefghi/abcdefghi",
+									"raw": "localhost:8080/personal/bank_details/mhtwaakyay",
 									"host": [
 										"localhost"
 									],
@@ -420,8 +417,7 @@
 									"path": [
 										"personal",
 										"bank_details",
-										"abcdefghi",
-										"abcdefghi"
+										"mhtwaakyay"
 									]
 								}
 							},
@@ -483,7 +479,7 @@
 									]
 								},
 								"url": {
-									"raw": "localhost:8080/personal/bank_details/abcdefghi/abcdefghi",
+									"raw": "localhost:8080/personal/bank_details/mhtwaakyay",
 									"host": [
 										"localhost"
 									],
@@ -491,8 +487,7 @@
 									"path": [
 										"personal",
 										"bank_details",
-										"abcdefghi",
-										"abcdefghi"
+										"mhtwaakyay"
 									]
 								}
 							},
@@ -542,7 +537,7 @@
 									]
 								},
 								"url": {
-									"raw": "localhost:8080/personal/bank_details/abcdefghi/abcdefghi",
+									"raw": "localhost:8080/personal/bank_details/mhtwaakyay",
 									"host": [
 										"localhost"
 									],
@@ -550,8 +545,7 @@
 									"path": [
 										"personal",
 										"bank_details",
-										"abcdefghi",
-										"abcdefghi"
+										"mhtwaakyay"
 									]
 								}
 							},
@@ -563,7 +557,7 @@
 								"method": "DELETE",
 								"header": [],
 								"url": {
-									"raw": "localhost:8080/personal/bank_details/abcdefghi/abcdefghi",
+									"raw": "localhost:8080/personal/bank_details/mhtwaakyay",
 									"host": [
 										"localhost"
 									],
@@ -571,8 +565,7 @@
 									"path": [
 										"personal",
 										"bank_details",
-										"abcdefghi",
-										"abcdefghi"
+										"mhtwaakyay"
 									]
 								}
 							},
@@ -679,7 +672,7 @@
 									]
 								},
 								"url": {
-									"raw": "localhost:8080/personal/basic_details/abcdegfhi/abcdefghi",
+									"raw": "localhost:8080/personal/basic_details/mhtwaakyay",
 									"host": [
 										"localhost"
 									],
@@ -687,8 +680,7 @@
 									"path": [
 										"personal",
 										"basic_details",
-										"abcdegfhi",
-										"abcdefghi"
+										"mhtwaakyay"
 									]
 								}
 							},
@@ -790,7 +782,7 @@
 									]
 								},
 								"url": {
-									"raw": "localhost:8080/personal/basic_details/abcdegfhi/abcdefghi",
+									"raw": "localhost:8080/personal/basic_details/mhtwaakyay",
 									"host": [
 										"localhost"
 									],
@@ -798,8 +790,7 @@
 									"path": [
 										"personal",
 										"basic_details",
-										"abcdegfhi",
-										"abcdefghi"
+										"mhtwaakyay"
 									]
 								}
 							},
@@ -811,7 +802,7 @@
 								"method": "GET",
 								"header": [],
 								"url": {
-									"raw": "localhost:8080/personal/basic_details/abcdegfhi/abcdefghi",
+									"raw": "localhost:8080/personal/basic_details/mhtwaakyay",
 									"host": [
 										"localhost"
 									],
@@ -819,8 +810,7 @@
 									"path": [
 										"personal",
 										"basic_details",
-										"abcdegfhi",
-										"abcdefghi"
+										"mhtwaakyay"
 									]
 								}
 							},
@@ -832,7 +822,7 @@
 								"method": "DELETE",
 								"header": [],
 								"url": {
-									"raw": "localhost:8080/personal/basic_details/abcdegfhi/abcdefghi",
+									"raw": "localhost:8080/personal/basic_details/mhtwaakyay",
 									"host": [
 										"localhost"
 									],
@@ -840,8 +830,7 @@
 									"path": [
 										"personal",
 										"basic_details",
-										"abcdegfhi",
-										"abcdefghi"
+										"mhtwaakyay"
 									]
 								}
 							},
@@ -893,7 +882,7 @@
 									]
 								},
 								"url": {
-									"raw": "localhost:8080/personal/employment_details/abcdefghi/abcdefghi",
+									"raw": "localhost:8080/personal/employment_details/mhtwaakyay",
 									"host": [
 										"localhost"
 									],
@@ -901,8 +890,7 @@
 									"path": [
 										"personal",
 										"employment_details",
-										"abcdefghi",
-										"abcdefghi"
+										"mhtwaakyay"
 									]
 								}
 							},
@@ -949,7 +937,7 @@
 									]
 								},
 								"url": {
-									"raw": "localhost:8080/personal/employment_details/abcdefghi/abcdefghi",
+									"raw": "localhost:8080/personal/employment_details/mhtwaakyay",
 									"host": [
 										"localhost"
 									],
@@ -957,8 +945,7 @@
 									"path": [
 										"personal",
 										"employment_details",
-										"abcdefghi",
-										"abcdefghi"
+										"mhtwaakyay"
 									]
 								}
 							},
@@ -970,7 +957,7 @@
 								"method": "DELETE",
 								"header": [],
 								"url": {
-									"raw": "localhost:8080/personal/employment_details/abcdefghi/abcdefghi",
+									"raw": "localhost:8080/personal/employment_details/mhtwaakyay",
 									"host": [
 										"localhost"
 									],
@@ -978,8 +965,7 @@
 									"path": [
 										"personal",
 										"employment_details",
-										"abcdefghi",
-										"abcdefghi"
+										"mhtwaakyay"
 									]
 								}
 							},
@@ -991,7 +977,7 @@
 								"method": "GET",
 								"header": [],
 								"url": {
-									"raw": "localhost:8080/personal/employment_details/abcdefghi/abcdefghi",
+									"raw": "localhost:8080/personal/employment_details/mhtwaakyay",
 									"host": [
 										"localhost"
 									],
@@ -999,8 +985,7 @@
 									"path": [
 										"personal",
 										"employment_details",
-										"abcdefghi",
-										"abcdefghi"
+										"mhtwaakyay"
 									]
 								}
 							},
@@ -1082,7 +1067,7 @@
 									]
 								},
 								"url": {
-									"raw": "localhost:8080/personal/contact_details/abcdefghi/abcdefghi",
+									"raw": "localhost:8080/personal/contact_details/mhtwaakyay",
 									"host": [
 										"localhost"
 									],
@@ -1090,8 +1075,7 @@
 									"path": [
 										"personal",
 										"contact_details",
-										"abcdefghi",
-										"abcdefghi"
+										"mhtwaakyay"
 									]
 								}
 							},
@@ -1168,7 +1152,7 @@
 									]
 								},
 								"url": {
-									"raw": "localhost:8080/personal/contact_details/abcdefghi/abcdefghi",
+									"raw": "localhost:8080/personal/contact_details/mhtwaakyay",
 									"host": [
 										"localhost"
 									],
@@ -1176,8 +1160,7 @@
 									"path": [
 										"personal",
 										"contact_details",
-										"abcdefghi",
-										"abcdefghi"
+										"mhtwaakyay"
 									]
 								}
 							},
@@ -1189,7 +1172,7 @@
 								"method": "DELETE",
 								"header": [],
 								"url": {
-									"raw": "localhost:8080/personal/contact_details/abcdefghi/abcdefghi",
+									"raw": "localhost:8080/personal/contact_details/mhtwaakyay",
 									"host": [
 										"localhost"
 									],
@@ -1197,8 +1180,7 @@
 									"path": [
 										"personal",
 										"contact_details",
-										"abcdefghi",
-										"abcdefghi"
+										"mhtwaakyay"
 									]
 								}
 							},
@@ -1210,7 +1192,7 @@
 								"method": "GET",
 								"header": [],
 								"url": {
-									"raw": "localhost:8080/personal/contact_details/abcdefghi/abcdefghi",
+									"raw": "localhost:8080/personal/contact_details/mhtwaakyay",
 									"host": [
 										"localhost"
 									],
@@ -1218,8 +1200,7 @@
 									"path": [
 										"personal",
 										"contact_details",
-										"abcdefghi",
-										"abcdefghi"
+										"mhtwaakyay"
 									]
 								}
 							},
@@ -1291,7 +1272,7 @@
 									]
 								},
 								"url": {
-									"raw": "localhost:8080/personal/credit_info/abcdefghi/abcdefghi",
+									"raw": "localhost:8080/personal/credit_info/mhtwaakyay",
 									"host": [
 										"localhost"
 									],
@@ -1299,8 +1280,7 @@
 									"path": [
 										"personal",
 										"credit_info",
-										"abcdefghi",
-										"abcdefghi"
+										"mhtwaakyay"
 									]
 								}
 							},
@@ -1367,7 +1347,7 @@
 									]
 								},
 								"url": {
-									"raw": "localhost:8080/personal/credit_info/abcdefghi/abcdefghi",
+									"raw": "localhost:8080/personal/credit_info/mhtwaakyay",
 									"host": [
 										"localhost"
 									],
@@ -1375,8 +1355,7 @@
 									"path": [
 										"personal",
 										"credit_info",
-										"abcdefghi",
-										"abcdefghi"
+										"mhtwaakyay"
 									]
 								}
 							},
@@ -1392,7 +1371,7 @@
 									"formdata": []
 								},
 								"url": {
-									"raw": "localhost:8080/personal/credit_info/abcdefghi/abcdefghi",
+									"raw": "localhost:8080/personal/credit_info/mhtwaakyay",
 									"host": [
 										"localhost"
 									],
@@ -1400,8 +1379,7 @@
 									"path": [
 										"personal",
 										"credit_info",
-										"abcdefghi",
-										"abcdefghi"
+										"mhtwaakyay"
 									]
 								}
 							},
@@ -1413,7 +1391,7 @@
 								"method": "GET",
 								"header": [],
 								"url": {
-									"raw": "localhost:8080/personal/credit_info/abcdefghi/abcdefghi",
+									"raw": "localhost:8080/personal/credit_info/mhtwaakyay",
 									"host": [
 										"localhost"
 									],
@@ -1421,207 +1399,7 @@
 									"path": [
 										"personal",
 										"credit_info",
-										"abcdefghi",
-										"abcdefghi"
-									]
-								}
-							},
-							"response": []
-						}
-					]
-				},
-				{
-					"name": "LOAN_FORMS",
-					"item": [
-						{
-							"name": "LOAN_FORMS",
-							"request": {
-								"method": "POST",
-								"header": [],
-								"body": {
-									"mode": "formdata",
-									"formdata": [
-										{
-											"key": "loanPurpose",
-											"value": "hello",
-											"type": "text"
-										},
-										{
-											"key": "loanAmountRequired",
-											"value": "80000",
-											"type": "text"
-										},
-										{
-											"key": "tenure",
-											"value": "3",
-											"type": "text"
-										},
-										{
-											"key": "retirementAge",
-											"value": "2",
-											"type": "text"
-										},
-										{
-											"key": "emiBySalaryAccount",
-											"value": "10000",
-											"type": "text"
-										},
-										{
-											"key": "payOutstandingByTerminalPayments",
-											"value": "10000",
-											"type": "text"
-										},
-										{
-											"key": "paySalaryInSalaryAccount",
-											"value": "10000",
-											"type": "text"
-										},
-										{
-											"key": "issueLetterToYourEmployerToPayOutstandingLoan",
-											"value": "10000",
-											"type": "text"
-										},
-										{
-											"key": "issueLetterToYourEmployerToNotChangeSalaryAccount",
-											"value": "10000",
-											"type": "text"
-										},
-										{
-											"key": "repaymentMethod",
-											"value": "credit",
-											"type": "text"
-										}
-									]
-								},
-								"url": {
-									"raw": "localhost:8080/personal/loan_form/abcdefghi/abcdefghi",
-									"host": [
-										"localhost"
-									],
-									"port": "8080",
-									"path": [
-										"personal",
-										"loan_form",
-										"abcdefghi",
-										"abcdefghi"
-									]
-								}
-							},
-							"response": []
-						},
-						{
-							"name": "LOAN_FORMS",
-							"request": {
-								"method": "PUT",
-								"header": [],
-								"body": {
-									"mode": "formdata",
-									"formdata": [
-										{
-											"key": "loanPurpose",
-											"value": "helloii",
-											"type": "text"
-										},
-										{
-											"key": "loanAmountRequired",
-											"value": "80000",
-											"type": "text"
-										},
-										{
-											"key": "tenure",
-											"value": "3",
-											"type": "text"
-										},
-										{
-											"key": "retirementAge",
-											"value": "2",
-											"type": "text"
-										},
-										{
-											"key": "emiBySalaryAccount",
-											"value": "10000",
-											"type": "text"
-										},
-										{
-											"key": "payOutstandingByTerminalPayments",
-											"value": "10000",
-											"type": "text"
-										},
-										{
-											"key": "paySalaryInSalaryAccount",
-											"value": "10000",
-											"type": "text"
-										},
-										{
-											"key": "issueLetterToYourEmployerToPayOutstandingLoan",
-											"value": "10000",
-											"type": "text"
-										},
-										{
-											"key": "issueLetterToYourEmployerToNotChangeSalaryAccount",
-											"value": "10000",
-											"type": "text"
-										},
-										{
-											"key": "repaymentMethod",
-											"value": "credit",
-											"type": "text"
-										}
-									]
-								},
-								"url": {
-									"raw": "localhost:8080/personal/loan_form/abcdefghi/abcdefghi",
-									"host": [
-										"localhost"
-									],
-									"port": "8080",
-									"path": [
-										"personal",
-										"loan_form",
-										"abcdefghi",
-										"abcdefghi"
-									]
-								}
-							},
-							"response": []
-						},
-						{
-							"name": "LOAN_FORMS",
-							"request": {
-								"method": "GET",
-								"header": [],
-								"url": {
-									"raw": "localhost:8080/personal/loan_form/abcdefghi/abcdefghi",
-									"host": [
-										"localhost"
-									],
-									"port": "8080",
-									"path": [
-										"personal",
-										"loan_form",
-										"abcdefghi",
-										"abcdefghi"
-									]
-								}
-							},
-							"response": []
-						},
-						{
-							"name": "LOAN_FORMS",
-							"request": {
-								"method": "DELETE",
-								"header": [],
-								"url": {
-									"raw": "localhost:8080/personal/loan_form/abcdefghi/abcdefghi",
-									"host": [
-										"localhost"
-									],
-									"port": "8080",
-									"path": [
-										"personal",
-										"loan_form",
-										"abcdefghi",
-										"abcdefghi"
+										"mhtwaakyay"
 									]
 								}
 							},
@@ -1676,6 +1454,626 @@
 							]
 						}
 					]
+				},
+				{
+					"name": "BANK_DETAILS",
+					"item": [
+						{
+							"name": "BANK_DETAILS",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "bank_name",
+											"value": "HDFC",
+											"type": "text"
+										},
+										{
+											"key": "joining_month",
+											"value": "May",
+											"type": "text"
+										},
+										{
+											"key": "joining_year",
+											"value": "2024",
+											"type": "text"
+										},
+										{
+											"key": "bank_name",
+											"value": "ICICI",
+											"type": "text"
+										},
+										{
+											"key": "joining_month",
+											"value": "April",
+											"type": "text"
+										},
+										{
+											"key": "joining_year",
+											"value": "2013",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "localhost:8080/personal/bank_details/mhtwaakyay",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"personal",
+										"bank_details",
+										"mhtwaakyay"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "BANK_DETAILS",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "bank_name",
+											"value": "HDFC",
+											"type": "text"
+										},
+										{
+											"key": "joining_month",
+											"value": "May",
+											"type": "text"
+										},
+										{
+											"key": "joining_year",
+											"value": "2024",
+											"type": "text"
+										},
+										{
+											"key": "bank_name",
+											"value": "ICICI",
+											"type": "text"
+										},
+										{
+											"key": "joining_month",
+											"value": "April",
+											"type": "text"
+										},
+										{
+											"key": "joining_year",
+											"value": "2012",
+											"type": "text"
+										},
+										{
+											"key": "bank_name",
+											"value": "Bank of Maharashtra",
+											"type": "text"
+										},
+										{
+											"key": "joining_month",
+											"value": "June",
+											"type": "text"
+										},
+										{
+											"key": "joining_year",
+											"value": "2010",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "localhost:8080/personal/bank_details/mhtwaakyay",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"personal",
+										"bank_details",
+										"mhtwaakyay"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "BANK_DETAILS",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "bank_name",
+											"value": "HDFC",
+											"type": "text"
+										},
+										{
+											"key": "joining_month",
+											"value": "May",
+											"type": "text"
+										},
+										{
+											"key": "joining_year",
+											"value": "2024",
+											"type": "text"
+										},
+										{
+											"key": "bank_name",
+											"value": "ICICI",
+											"type": "text"
+										},
+										{
+											"key": "joining_month",
+											"value": "April",
+											"type": "text"
+										},
+										{
+											"key": "joining_year",
+											"value": "2013",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "localhost:8080/personal/bank_details/mhtwaakyay",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"personal",
+										"bank_details",
+										"mhtwaakyay"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "BANK_DETAILS",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "localhost:8080/personal/bank_details/mhtwaakyay",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"personal",
+										"bank_details",
+										"mhtwaakyay"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "GST_DETAILS",
+					"item": [
+						{
+							"name": "GET_GST_DETAILS",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8080/business/gst_details/:profileId/:applicationId",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"business",
+										"gst_details",
+										":profileId",
+										":applicationId"
+									],
+									"variable": [
+										{
+											"key": "profileId",
+											"value": "abc"
+										},
+										{
+											"key": "applicationId",
+											"value": "123"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "POST_GST_DETAILS",
+							"request": {
+								"method": "POST",
+								"header": []
+							},
+							"response": []
+						},
+						{
+							"name": "PUT_GST_DETAILS",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "business_id",
+											"value": "789",
+											"type": "text"
+										},
+										{
+											"key": "gst_number",
+											"value": "123456789",
+											"type": "text"
+										},
+										{
+											"key": "user_name",
+											"value": "JohnDoe",
+											"type": "text"
+										},
+										{
+											"key": "gst_number",
+											"value": "987654321",
+											"type": "text"
+										},
+										{
+											"key": "user_name",
+											"value": "JaneSmith",
+											"type": "text"
+										},
+										{
+											"key": "gst_number",
+											"value": "456789123",
+											"type": "text"
+										},
+										{
+											"key": "user_name",
+											"value": "MikeJohnson",
+											"type": "text"
+										},
+										{
+											"key": "filing_status",
+											"value": "Filed",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "localhost:8080/business/gst_details/:profileId/:applicationId",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"business",
+										"gst_details",
+										":profileId",
+										":applicationId"
+									],
+									"variable": [
+										{
+											"key": "profileId",
+											"value": "abc"
+										},
+										{
+											"key": "applicationId",
+											"value": "123"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "DEL_GST_DETAILS",
+							"request": {
+								"method": "DELETE",
+								"header": []
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "DECLARE_BUSINESS",
+					"item": [
+						{
+							"name": "GET_BUSINESS_DETAILS",
+							"request": {
+								"method": "GET",
+								"header": []
+							},
+							"response": []
+						},
+						{
+							"name": "POST_BUSINESS_DETAILS",
+							"request": {
+								"method": "POST",
+								"header": []
+							},
+							"response": []
+						},
+						{
+							"name": "PUT_BUSINESS_DETAILS",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "business_id",
+											"value": "BIZ12345",
+											"type": "text"
+										},
+										{
+											"key": "constitution",
+											"value": "Sole Proprietorship",
+											"type": "text"
+										},
+										{
+											"key": "state",
+											"value": "California",
+											"type": "text"
+										},
+										{
+											"key": "city",
+											"value": "Los Angeles",
+											"type": "text"
+										},
+										{
+											"key": "number_of_customers",
+											"value": "250",
+											"type": "text"
+										},
+										{
+											"key": "pan",
+											"value": "ABCDE1234F",
+											"type": "text"
+										},
+										{
+											"key": "highest_sale",
+											"value": "50000.75",
+											"type": "text"
+										},
+										{
+											"key": "sales[January]",
+											"value": "15000.00",
+											"type": "text"
+										},
+										{
+											"key": "sales[March]",
+											"value": "20000.50",
+											"type": "text"
+										},
+										{
+											"key": "sales[May]",
+											"value": "30000.00",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "localhost:8080/business/declare_gst_details/:profileId/:applicationId",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"business",
+										"declare_gst_details",
+										":profileId",
+										":applicationId"
+									],
+									"variable": [
+										{
+											"key": "profileId",
+											"value": "abc"
+										},
+										{
+											"key": "applicationId",
+											"value": "123"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "DEL_BUSINESS_DETAILS",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "localhost:8080/business/declare_gst_details/:profileId/:applicationId",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"business",
+										"declare_gst_details",
+										":profileId",
+										":applicationId"
+									],
+									"variable": [
+										{
+											"key": "profileId",
+											"value": "abc"
+										},
+										{
+											"key": "applicationId",
+											"value": "123"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "STAKEHOLDERS_DETAILS",
+					"item": [
+						{
+							"name": "GET_STAKEHOLDERS_DETAILS",
+							"request": {
+								"method": "GET",
+								"header": []
+							},
+							"response": []
+						},
+						{
+							"name": "POST_STAKEHOLDERS_DETAILS",
+							"request": {
+								"method": "POST",
+								"header": []
+							},
+							"response": []
+						},
+						{
+							"name": "PUT_STAKEHOLDERS_DETAILS",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"url": {
+									"raw": "localhost:8080/business/stakeholders_details/:profileId/:applicationId",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"business",
+										"stakeholders_details",
+										":profileId",
+										":applicationId"
+									],
+									"variable": [
+										{
+											"key": "profileId",
+											"value": ""
+										},
+										{
+											"key": "applicationId",
+											"value": ""
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "DEL_STAKEHOLDERS_DETAILS",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "localhost:8080/business/declare_gst_details/:profileId/:applicationId",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"business",
+										"declare_gst_details",
+										":profileId",
+										":applicationId"
+									],
+									"variable": [
+										{
+											"key": "profileId",
+											"value": ""
+										},
+										{
+											"key": "applicationId",
+											"value": ""
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Gen-AI",
+			"item": [
+				{
+					"name": "formfilling",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "audioFile ",
+									"type": "file",
+									"src": "postman-cloud:///1ef7db9c-5d97-47c0-a09f-642ce4f96f6c"
+								},
+								{
+									"key": "formFields",
+									"value": "{\n  \"name\": \"Shubham\",\n  \"age\": 20,\n  \"email\": \"john@example.com\"\n}\n",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:8080/gen_ai/audio-fill",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"gen_ai",
+								"audio-fill"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "info_extraction",
+			"item": [
+				{
+					"name": "Bank statement",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/gen_ai/get-bank-statement-details",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"gen_ai",
+								"get-bank-statement-details"
+							]
+						}
+					},
+					"response": []
 				}
 			]
 		}
