@@ -1,0 +1,277 @@
+{
+  "appTitle": "ആർത്ഥിക സെതു",
+  "@appTitle": {
+    "description": "The title of the application",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["sign-in"]
+  },
+  "signIn": "സൈൻ ഇൻ",
+  "@signIn": {
+    "description": "Button label for signing in",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["sign-in"]
+  },
+  "googleSignIn": "ഗൂഗിൾ",
+  "@googleSignIn": {
+    "description": "Label for Google Sign-In",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["sign-in"]
+  },
+  "phoneSignIn": "ഫോൺ",
+  "@phoneSignIn": {
+    "description": "Label for Phone Sign-In",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["sign-in"]
+  },
+  "language": "ഭാഷ",
+  "@language": {
+    "description": "Label for language selection",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["sign-in"]
+  },
+  "enterPhoneNumber": "നിങ്ങളുടെ ഫോൺ നമ്പർ ടൈപ്പ് ചെയ്യുക",
+  "@enterPhoneNumber": {
+    "description": "Label for phone number entry",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["sign-in"]
+  },
+  "sendOtp": "OTP അയക്കുക",
+  "@sendOtp": {
+    "description": "Button label for sending OTP",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["sign-in"]
+  },
+  "verifyOtp": "OTP സ്ഥിരീകരിക്കുക",
+  "@verifyOtp": {
+    "description": "Button label for verifying OTP",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["sign-in"]
+  },
+  "resendOtp": "OTP വീണ്ടും അയക്കുക",
+  "@resendOtp": {
+    "description": "Button label for resending OTP",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["sign-in"]
+  },
+  "otpExpireIn": "OTPExpires in {time} സെക്കൻഡുകൾ",
+  "@otpExpireIn": {
+    "description": "Message showing time left to resend OTP",
+    "type": "text",
+    "placeholders": {
+      "time": {
+        "type": "int",
+        "example": "120"
+      }
+    },
+    "tags": ["sign-in"]
+  },
+  "enterValidPhoneNumber": "ദയവായി ഒരു ശരിയായ ഫോൺ നമ്പർ നൽകുക",
+  "@enterValidPhoneNumber": {
+    "description": "Error message when phone number is invalid",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["sign-in"]
+  },
+  "otpReceived": "OTP ലഭിച്ചു",
+  "@otpReceived": {
+    "description": "Message showing received OTP",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["sign-in"]
+  },
+  "enterOtp": "OTP ടൈപ്പ് ചെയ്യുക",
+  "@enterOtp": {
+    "description": "Label for OTP entry",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["sign-in"]
+  },
+  "backButton": "തിരികെ",
+  "@backButton": {
+    "description": "Label for the back button",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["sign-in"]
+  },
+  "phoneNumber": "ഫോൺ നമ്പർ",
+  "@phoneNumber": {
+    "description": "Label for phone number entry",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["sign-in"]
+  },
+  "phoneSignInFormTitle": "ഫോണിലൂടെ സൈൻ ഇൻ ചെയ്യുക",
+  "@phoneSignInFormTitle": {
+    "description": "Title for phone sign-in form",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["sign-in"]
+  },
+
+
+
+
+
+
+
+
+  "dashboard": "ഡാഷ്ബോർഡ്",
+  "@dashboard": {
+    "description": "Title for the dashboard page",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["dashboard"]
+  },
+  "personalLoans": "സ്വകാര്യ വായ്പകൾ",
+  "@personalLoans": {
+    "description": "Label for personal loan options",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["dashboard", "personal_loan"]
+  },
+  "businessLoans": "ബിസിനസ് വായ്പകൾ",
+  "@businessLoans": {
+    "description": "Label for business loan options",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["dashboard"]
+  },
+  "governmentSchemes": "സർക്കാരിന്റെ പദ്ധതി",
+  "@governmentSchemes": {
+    "description": "Label for government schemes",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["dashboard"]
+  },
+  "logOut": "ലോഗ് ഔട്ട്",
+  "@logOut": {
+    "description": "Button label for logging out",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["dashboard"]
+  },
+  "profile": "പ്രൊഫൈൽ",
+  "@profile": {
+    "description": "Label for profile selection",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["dashboard"]
+  },
+  "pendingApplications": "തുടർച്ചയിൽ ഉള്ള അപേക്ഷകൾ",
+  "@pendingApplications": {
+    "description": "Label for pending applications with count",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["dashboard"]
+  },
+
+
+
+
+
+
+
+
+
+
+  "personalLoanDescription": "അനുകൂല പലിശ നിരക്കുകളും വൈകല്യങ്ങളും കൊണ്ട് വ്യക്തിഗത വായ്പ നേടുക.",
+  "@personalLoanDescription": {
+    "description": "Description for personal loan option",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["personal_loan"]
+  },
+  "homeLoans": "വീടുവായ്പകൾ",
+  "@homeLoans": {
+    "description": "Title for home loan option",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["personal_loan"]
+  },
+  "homeLoanDescription": "അനുകൂല പലിശ നിരക്കുകളും വൈകല്യങ്ങളും കൊണ്ട് വീട് വായ്പ നേടുക.",
+  "@homeLoanDescription": {
+    "description": "Description for home loan option",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["personal_loan"]
+  },
+  "autoLoans": "ഓട്ടോ വായ്പകൾ",
+  "@autoLoans": {
+    "description": "Title for auto loan option",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["personal_loan"]
+  },
+  "autoLoanDescription": "അനുകൂല പലിശ നിരക്കുകളും വൈകല്യങ്ങളും കൊണ്ട് ഓട്ടോ വായ്പ നേടുക.",
+  "@autoLoanDescription": {
+    "description": "Description for auto loan option",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["personal_loan"]
+  },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  "msmeLoans": "എംഎസ്‌എംഇ വായ്പകൾ",
+  "@msmeLoans": {
+    "description": "Title for MSME loan option",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["business_loan"]
+  },
+  "msmeLoanDescription": "₹5 കോടി വരെ കുറഞ്ഞ പലിശ നിരക്കിലും വൈകല്യങ്ങളും അടങ്ങിയ MSME വായ്പകൾ നേടുക.",
+  "@msmeLoanDescription": {
+    "description": "Description for MSME loan option",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["business_loan"]
+  },
+  "termLoans": "ടേം വായ്പകൾ",
+  "@termLoans": {
+    "description": "Title for term loan option",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["business_loan"]
+  },
+  "termLoanDescription": "₹50 ലക്ഷം വരെ കുറഞ്ഞ നിരക്കിലും വൈകല്യങ്ങൾ അടങ്ങിയ ടേം വായ്പകൾ നേടുക.",
+  "@termLoanDescription": {
+    "description": "Description for term loan option",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["business_loan"]
+  },
+  "mudraLoans": "മുദ്ര വായ്പകൾ",
+  "@mudraLoans": {
+    "description": "Title for Mudra loan option",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["business_loan"]
+  },
+  "mudraLoanDescription": "₹10 ലക്ഷം വരെ കുറഞ്ഞ പലിശ നിരക്കിലും വൈകല്യങ്ങൾ അടങ്ങിയ മൈക്രോ എന്റർപ്രൈസുകൾക്കായുള്ള മുദ്ര വായ്പകൾ നേടുക.",
+  "@mudraLoanDescription": {
+    "description": "Description for Mudra loan option",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["business_loan"]
+  }
+}
