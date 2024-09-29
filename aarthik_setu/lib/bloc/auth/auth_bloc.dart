@@ -1,5 +1,4 @@
 import 'dart:async';
-
 import 'package:aarthik_setu/services/auth/google.dart';
 import 'package:aarthik_setu/services/auth/phone.dart';
 import 'package:firebase_auth/firebase_auth.dart';
@@ -8,7 +7,6 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:logger/logger.dart';
 
 part 'auth_event.dart';
-
 part 'auth_state.dart';
 
 class AuthBloc extends Bloc<AuthEvent, AuthState> {
@@ -20,12 +18,17 @@ class AuthBloc extends Bloc<AuthEvent, AuthState> {
     on<GoogleSignIn>((event, emit) async {
       emit(Loading());
       try {
-        Map<String, dynamic>? response  = await googleAuthServices.signInGoogle();
+        Map<String, dynamic>? response = await googleAuthServices.signInGoogle();
         if (response == null) {
           emit(AuthPending());
           return;
         }
-        emit(AuthSuccess('User is logged in. ${response['name']}'));
+        emit(AuthSuccess(
+            id: response['id'],
+            displayName: response['displayName'],
+            email: response['email'],
+            photoUrl: response['photoUrl'],
+            message: 'User is logged in. ${response['displayName']}'));
       } catch (e) {
         Logger().e(e);
         emit(AuthPending());
@@ -45,9 +48,13 @@ class AuthBloc extends Bloc<AuthEvent, AuthState> {
 
         final user = await userCompleter.future.timeout(const Duration(seconds: 2), onTimeout: () => null);
 
-
         if (user != null) {
-          emit(AuthSuccess('User is logged in. ${user.displayName}'));
+          emit(AuthSuccess(
+              id: user.uid,
+              displayName: user.displayName ?? '',
+              email: user.email ?? '',
+              photoUrl: user.photoURL,
+              message: 'User is logged in. ${user.displayName}'));
         } else {
           emit(AuthPending());
         }
@@ -59,8 +66,7 @@ class AuthBloc extends Bloc<AuthEvent, AuthState> {
       try {
         final response = phoneAuthServices.signInOTP(event.countryCode, event.phoneNumber);
         _logger.i(response);
-        emit(AuthSuccess(
-            'OTP sent to ${event.countryCode} ${event.phoneNumber}. ${FirebaseAuth.instance.currentUser!.phoneNumber}'));
+        emit(AuthSuccess(id: '', displayName: '', email: '', message: 'OTP sent to ${event.phoneNumber}'));
       } catch (e) {
         emit(AuthFailure(e.toString()));
       }
@@ -71,7 +77,7 @@ class AuthBloc extends Bloc<AuthEvent, AuthState> {
       try {
         final response = phoneAuthServices.verifyOTP(event.otp);
         _logger.i(response);
-        emit(AuthSuccess('User is logged in. ${FirebaseAuth.instance.currentUser!.phoneNumber}'));
+        emit(AuthSuccess(id: '', displayName: '', email: '', message: 'OTP verified'));
       } catch (e) {
         emit(AuthFailure(e.toString()));
       }
