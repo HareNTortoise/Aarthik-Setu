@@ -1,7 +1,11 @@
+import 'package:aarthik_setu/constants/form_constants.dart';
+import 'package:aarthik_setu/global_components/back_button.dart';
+import 'package:aarthik_setu/global_components/custom_dropdown.dart';
+import 'package:aarthik_setu/global_components/procees_button.dart';
 import 'package:calendar_date_picker2/calendar_date_picker2.dart';
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:hexcolor/hexcolor.dart';
 import '../../../../../constants/colors.dart';
 import '../../../../../global_components/labelled_text_field.dart';
 
@@ -13,15 +17,40 @@ class ItrManual extends StatefulWidget {
 }
 
 class _ItrManualState extends State<ItrManual> {
-  DateTime? _selectedDate;
   int currentYear = DateTime.now().year;
+
+  final TextEditingController _firstNameController = TextEditingController();
+  final TextEditingController _middleNameController = TextEditingController();
+  final TextEditingController _lastNameController = TextEditingController();
+
+  DateTime? _dateOfBirth;
+  final TextEditingController _panNumberController = TextEditingController();
+  final TextEditingController _mobileNumberController = TextEditingController();
+
+  final TextEditingController _emailController = TextEditingController();
+  final TextEditingController _premisesController = TextEditingController();
+  final TextEditingController _streetController = TextEditingController();
+
+  final TextEditingController _landmarkController = TextEditingController();
+  String? country;
+  String? state;
+
+  String? city;
+  final TextEditingController _pinCodeController = TextEditingController();
+  final TextEditingController _villageController = TextEditingController();
+  final TextEditingController _districtController = TextEditingController();
+
+  final TextEditingController _subDistrictController = TextEditingController();
+  final TextEditingController _netAnnualIncomeControllerOne = TextEditingController();
+  final TextEditingController _netAnnualIncomeControllerTwo = TextEditingController();
+  final TextEditingController _netAnnualIncomeControllerThree = TextEditingController();
+
 
   @override
   Widget build(BuildContext context) {
     return IntrinsicHeight(
       child: Container(
         padding: const EdgeInsets.symmetric(horizontal: 40, vertical: 20),
-        margin: const EdgeInsets.only(bottom: 100),
         width: 1200,
         decoration: BoxDecoration(
           color: Colors.white,
@@ -55,17 +84,17 @@ class _ItrManualState extends State<ItrManual> {
                       LabelledTextField(
                         label: "First Name*",
                         hintText: "Enter your first name",
-                        controller: TextEditingController(),
+                        controller: _firstNameController,
                       ),
                       LabelledTextField(
                         label: "Middle Name",
                         hintText: "Enter your middle name",
-                        controller: TextEditingController(),
+                        controller: _middleNameController,
                       ),
                       LabelledTextField(
                         label: "Last Name*",
                         hintText: "Enter your last name",
-                        controller: TextEditingController(),
+                        controller: _lastNameController,
                       ),
                     ],
                   ),
@@ -95,31 +124,30 @@ class _ItrManualState extends State<ItrManual> {
                                 );
                                 if (results != null) {
                                   setState(() {
-                                    _selectedDate = results[0];
+                                    _dateOfBirth = results[0];
                                   });
                                 }
                               },
                               style: ButtonStyle(
                                 shape: WidgetStateProperty.all(
                                   RoundedRectangleBorder(
-                                    borderRadius: BorderRadius.circular(10),
+                                    borderRadius: BorderRadius.circular(15),
                                   ),
                                 ),
                                 backgroundColor: WidgetStateProperty.all(AppColors.primaryColorTwo.withOpacity(0.5)),
                               ),
-                              child: _selectedDate != null
-                                  ?
-                                  Row(
-                                    mainAxisAlignment: MainAxisAlignment.center,
-                                    children: [
-                                      const Icon(Icons.calendar_month, size: 30, color: Colors.black),
-                                      const SizedBox(width: 10),
-                                      Text(
-                                          "${_selectedDate!.day}/${_selectedDate!.month}/${_selectedDate!.year}",
+                              child: _dateOfBirth != null
+                                  ? Row(
+                                      mainAxisAlignment: MainAxisAlignment.center,
+                                      children: [
+                                        const Icon(Icons.calendar_month, size: 30, color: Colors.black),
+                                        const SizedBox(width: 10),
+                                        Text(
+                                          "${_dateOfBirth!.day}/${_dateOfBirth!.month}/${_dateOfBirth!.year}",
                                           style: GoogleFonts.poppins(fontSize: 20, color: Colors.black),
                                         ),
-                                    ],
-                                  )
+                                      ],
+                                    )
                                   : Row(
                                       mainAxisAlignment: MainAxisAlignment.center,
                                       children: [
@@ -134,14 +162,14 @@ class _ItrManualState extends State<ItrManual> {
                         ],
                       ),
                       LabelledTextField(
-                        label: "PAN Number",
+                        label: "PAN Number*",
                         hintText: "Enter your PAN number",
-                        controller: TextEditingController(),
+                        controller: _panNumberController,
                       ),
                       LabelledTextField(
-                        label: "Mobile Number",
+                        label: "Mobile Number*",
                         hintText: "Enter your mobile number",
-                        controller: TextEditingController(),
+                        controller: _mobileNumberController,
                       ),
                     ],
                   ),
@@ -152,7 +180,7 @@ class _ItrManualState extends State<ItrManual> {
                       LabelledTextField(
                         label: "Email (Personal)*",
                         hintText: "Enter your email",
-                        controller: TextEditingController(),
+                        controller: _emailController,
                       ),
                     ],
                   ),
@@ -163,19 +191,56 @@ class _ItrManualState extends State<ItrManual> {
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       LabelledTextField(
-                        label: "Premises/Building No.*",
+                        label: "Address Line 1*",
                         hintText: "Enter your address",
-                        controller: TextEditingController(),
+                        controller: _premisesController,
                       ),
                       LabelledTextField(
-                        label: "Street/Area*",
+                        label: "Address Line 2",
                         hintText: "Enter your address",
-                        controller: TextEditingController(),
+                        controller: _streetController,
                       ),
                       LabelledTextField(
-                        label: "Landmark*",
-                        hintText: "Enter your address",
-                        controller: TextEditingController(),
+                        label: "Landmark",
+                        hintText: "Enter landmark",
+                        controller: _landmarkController,
+                      ),
+                    ],
+                  ),
+                  const SizedBox(height: 20),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      CustomDropdown(
+                        label: 'Country*',
+                        buttonLabel: country ?? 'Select Country',
+                        items: Countries.countryList,
+                        onChanged: (String? selectedCountry) {
+                          setState(() {
+                            country = selectedCountry;
+                          });
+                        },
+                      ),
+                      CustomDropdown(
+                        label: 'State*',
+                        buttonLabel: state ?? 'Select State',
+                        items: IndiaStates.getAllStatesAndUTs(),
+                        onChanged: (String? selectedState) {
+                          setState(() {
+                            state = selectedState;
+                            city = null;
+                          });
+                        },
+                      ),
+                      CustomDropdown(
+                        label: 'City*',
+                        buttonLabel: city ?? 'Select City',
+                        items: IndiaCities.citiesMap[state] ?? [],
+                        onChanged: (String? selectedCity) {
+                          setState(() {
+                            city = selectedCity;
+                          });
+                        },
                       ),
                     ],
                   ),
@@ -184,40 +249,19 @@ class _ItrManualState extends State<ItrManual> {
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       LabelledTextField(
-                        label: "Country*",
-                        hintText: "Enter your country",
-                        controller: TextEditingController(),
-                      ),
-                      LabelledTextField(
-                        label: "State*",
-                        hintText: "Enter your state",
-                        controller: TextEditingController(),
-                      ),
-                      LabelledTextField(
-                        label: "City*",
-                        hintText: "Enter your city",
-                        controller: TextEditingController(),
-                      ),
-                    ],
-                  ),
-                  const SizedBox(height: 20),
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: [
-                      LabelledTextField(
-                        label: "Pincode*",
-                        hintText: "Enter your pincode",
-                        controller: TextEditingController(),
+                        label: "Pin code*",
+                        hintText: "Enter your pin code",
+                        controller: _pinCodeController,
                       ),
                       LabelledTextField(
                         label: "Village",
                         hintText: "Enter your village",
-                        controller: TextEditingController(),
+                        controller: _villageController,
                       ),
                       LabelledTextField(
-                        label: "District",
+                        label: "District*",
                         hintText: "Enter your district",
-                        controller: TextEditingController(),
+                        controller: _districtController,
                       ),
                     ],
                   ),
@@ -226,18 +270,18 @@ class _ItrManualState extends State<ItrManual> {
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       LabelledTextField(
-                        label: "Enter sub-district",
+                        label: "Enter sub-district*",
                         hintText: "Enter your sub-district",
-                        controller: TextEditingController(),
+                        controller: _subDistrictController,
                       ),
                     ],
                   ),
                   const SizedBox(height: 20),
                   const Divider(color: Colors.grey, thickness: 0.5),
                   const SizedBox(height: 20),
-                  Align(
+                  const Align(
                     alignment: Alignment.centerLeft,
-                    child: const Text(
+                    child: Text(
                       "Net Annual Income Details",
                       style: TextStyle(fontSize: 24),
                     ),
@@ -249,17 +293,17 @@ class _ItrManualState extends State<ItrManual> {
                       LabelledTextField(
                         label: "FY ${currentYear - 1}-$currentYear*",
                         hintText: "Enter your net annual income",
-                        controller: TextEditingController(),
+                        controller: _netAnnualIncomeControllerOne,
                       ),
                       LabelledTextField(
                         label: "FY ${currentYear - 2}-${currentYear - 1}",
                         hintText: "Enter your net annual income",
-                        controller: TextEditingController(),
+                        controller: _netAnnualIncomeControllerTwo,
                       ),
                       LabelledTextField(
                         label: "FY ${currentYear - 3}-${currentYear - 2}",
                         hintText: "Enter your net annual income",
-                        controller: TextEditingController(),
+                        controller: _netAnnualIncomeControllerThree,
                       ),
                     ],
                   ),
@@ -272,39 +316,9 @@ class _ItrManualState extends State<ItrManual> {
             Row(
               mainAxisAlignment: MainAxisAlignment.end,
               children: [
-                SizedBox(
-                  width: 200,
-                  height: 50,
-                  child: FilledButton(
-                    onPressed: () {},
-                    style: ButtonStyle(
-                      backgroundColor: WidgetStateProperty.all(Colors.white),
-                      shape: WidgetStateProperty.all(RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(30),
-                        side: BorderSide(color: HexColor("#568737")),
-                      )),
-                    ),
-                    child: Text(
-                      "Back",
-                      style: TextStyle(fontSize: 20, color: HexColor("#568737")),
-                    ),
-                  ),
-                ),
+                BackButtonCustom(onPressed: () => context.pop()),
                 const SizedBox(width: 40),
-                SizedBox(
-                  width: 200,
-                  height: 50,
-                  child: FilledButton(
-                    style: ButtonStyle(
-                      backgroundColor: WidgetStateProperty.all(HexColor("#568737")),
-                    ),
-                    onPressed: () {},
-                    child: const Text(
-                      "Proceed",
-                      style: TextStyle(fontSize: 20),
-                    ),
-                  ),
-                ),
+                ProceedButtonCustom(onPressed: () {}),
               ],
             )
           ],

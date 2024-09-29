@@ -1,19 +1,23 @@
+import 'package:aarthik_setu/constants/form_constants.dart';
+import 'package:aarthik_setu/global_components/back_button.dart';
+import 'package:aarthik_setu/global_components/custom_dropdown.dart';
+import 'package:aarthik_setu/global_components/procees_button.dart';
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:hexcolor/hexcolor.dart';
 import 'package:responsive_framework/responsive_framework.dart';
 import '../../../../constants/app_constants.dart';
 import '../../../../constants/colors.dart';
 import '../../../../global_components/labelled_text_field.dart';
 
-class CreditInfo {
-  final TextEditingController loanType;
+class CreditInfoInputUnit {
+  String? loanType;
   final TextEditingController lender;
   final TextEditingController sanctionedAmount;
   final TextEditingController outstandingAmount;
   final TextEditingController emiAmount;
 
-  CreditInfo({
+  CreditInfoInputUnit({
     required this.loanType,
     required this.lender,
     required this.sanctionedAmount,
@@ -30,7 +34,7 @@ class CreditInfoForm extends StatefulWidget {
 }
 
 class _CreditInfoFormState extends State<CreditInfoForm> {
-  List<CreditInfo> _creditInfo = [];
+  final List<CreditInfoInputUnit> _creditInfo = [];
 
   @override
   Widget build(BuildContext context) {
@@ -100,11 +104,15 @@ class _CreditInfoFormState extends State<CreditInfoForm> {
                                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                     crossAxisAlignment: CrossAxisAlignment.end,
                                     children: [
-                                      LabelledTextField(
-                                        width: 250,
+                                      CustomDropdown(
                                         label: "Loan Type*",
-                                        hintText: 'Enter loan type',
-                                        controller: _creditInfo[i].loanType,
+                                        buttonLabel: _creditInfo[i].loanType ?? "Select Loan Type",
+                                        items: LoanTypes.getLoanTypes(),
+                                        onChanged: (String? value) {
+                                          setState(() {
+                                            _creditInfo[i].loanType = value;
+                                          });
+                                        },
                                       ),
                                       LabelledTextField(
                                         width: 250,
@@ -141,7 +149,7 @@ class _CreditInfoFormState extends State<CreditInfoForm> {
                                             },
                                             style: ButtonStyle(
                                               backgroundColor:
-                                              WidgetStateProperty.all(AppColors.primaryColorOne.withOpacity(0.35)),
+                                                  WidgetStateProperty.all(AppColors.primaryColorOne.withOpacity(0.35)),
                                               shape: WidgetStateProperty.all(
                                                   RoundedRectangleBorder(borderRadius: BorderRadius.circular(20))),
                                             ),
@@ -162,8 +170,8 @@ class _CreditInfoFormState extends State<CreditInfoForm> {
                                 onPressed: () {
                                   setState(() {
                                     _creditInfo.add(
-                                      CreditInfo(
-                                        loanType: TextEditingController(),
+                                      CreditInfoInputUnit(
+                                        loanType: null,
                                         lender: TextEditingController(),
                                         sanctionedAmount: TextEditingController(),
                                         outstandingAmount: TextEditingController(),
@@ -196,39 +204,9 @@ class _CreditInfoFormState extends State<CreditInfoForm> {
                           Row(
                             mainAxisAlignment: MainAxisAlignment.end,
                             children: [
-                              SizedBox(
-                                width: 200,
-                                height: 50,
-                                child: FilledButton(
-                                  onPressed: () {},
-                                  style: ButtonStyle(
-                                    backgroundColor: WidgetStateProperty.all(Colors.white),
-                                    shape: WidgetStateProperty.all(RoundedRectangleBorder(
-                                      borderRadius: BorderRadius.circular(30),
-                                      side: BorderSide(color: HexColor("#568737")),
-                                    )),
-                                  ),
-                                  child: Text(
-                                    "Back",
-                                    style: TextStyle(fontSize: 20, color: HexColor("#568737")),
-                                  ),
-                                ),
-                              ),
+                              BackButtonCustom(onPressed: () => context.pop()),
                               const SizedBox(width: 40),
-                              SizedBox(
-                                width: 200,
-                                height: 50,
-                                child: FilledButton(
-                                  style: ButtonStyle(
-                                    backgroundColor: WidgetStateProperty.all(HexColor("#568737")),
-                                  ),
-                                  onPressed: () {},
-                                  child: const Text(
-                                    "Submit",
-                                    style: TextStyle(fontSize: 20),
-                                  ),
-                                ),
-                              ),
+                              ProceedButtonCustom(onPressed: () {}),
                             ],
                           ),
                         ],

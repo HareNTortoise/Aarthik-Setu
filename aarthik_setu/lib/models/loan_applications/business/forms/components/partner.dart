@@ -17,7 +17,7 @@ class Partner {
 
   String addressLine1;
   String? addressLine2;
-  String landmark;
+  String? landmark;
   String pinCode;
   String village;
   String district;

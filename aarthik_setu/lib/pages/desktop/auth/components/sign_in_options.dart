@@ -43,6 +43,23 @@ class SignInOptionsDesktop extends StatelessWidget {
                   localizations.googleSignIn, // Use localized string
                   style: GoogleFonts.jost(fontSize: 30, color: Colors.black),
                 ),
+                const SizedBox(width: 15),
+                BlocBuilder<AuthBloc, AuthState>(
+                  builder: (context, state) {
+                    if (state is Loading) {
+                      return const SizedBox(
+                        width: 30,
+                        height: 30,
+                        child: CircularProgressIndicator(
+                          strokeWidth: 3,
+                          valueColor: AlwaysStoppedAnimation<Color>(
+                              Colors.black),
+                        ),
+                      );
+                    }
+                    return const SizedBox();
+                  },
+                ),
               ],
             ),
           ),

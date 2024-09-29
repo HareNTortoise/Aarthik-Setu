@@ -61,6 +61,7 @@ dependencies:
   calendar_date_picker2: ^1.1.7
   flutter_dropzone: ^4.0.3
   syncfusion_flutter_datepicker: ^26.2.14
+  timeline_tile: ^2.0.0
 
 dev_dependencies:
   flutter_test:

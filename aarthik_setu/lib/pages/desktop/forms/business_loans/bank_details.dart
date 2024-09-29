@@ -1,14 +1,34 @@
 import 'package:aarthik_setu/constants/colors.dart';
+import 'package:aarthik_setu/global_components/back_button.dart';
+import 'package:aarthik_setu/global_components/month_picker.dart';
+import 'package:aarthik_setu/global_components/procees_button.dart';
+import 'package:aarthik_setu/global_components/year_picker.dart';
 import 'package:file_picker/file_picker.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_dropzone/flutter_dropzone.dart';
+import 'package:go_router/go_router.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:hexcolor/hexcolor.dart';
-import 'package:logger/logger.dart';
 import 'package:responsive_framework/responsive_framework.dart';
-import 'package:syncfusion_flutter_datepicker/datepicker.dart';
 import '../../../../constants/app_constants.dart';
 import '../../../../global_components/labelled_text_field.dart';
+
+class BankDetailsInputUnit {
+  final TextEditingController bankName;
+  DateTime? accountSinceMonth;
+  DateTime? accountSinceYear;
+  FilePickerResult? bankStatementOne;
+  FilePickerResult? bankStatementTwo;
+  FilePickerResult? bankStatementThree;
+
+  BankDetailsInputUnit({
+    required this.bankName,
+    this.accountSinceMonth,
+    this.accountSinceYear,
+    this.bankStatementOne,
+    this.bankStatementTwo,
+    this.bankStatementThree,
+  });
+}
 
 class BankDetailsBusinessForm extends StatefulWidget {
   const BankDetailsBusinessForm({super.key});
@@ -18,12 +38,9 @@ class BankDetailsBusinessForm extends StatefulWidget {
 }
 
 class _BankDetailsBusinessFormState extends State<BankDetailsBusinessForm> {
-  List<String> banks = [];
-  bool _formOpened = false;
-  DateTime? _selectedYear;
-  DateTime? _selectedMonth;
   DropzoneViewController? dropZoneController;
-  FilePickerResult? result;
+  final List<BankDetailsInputUnit> banks = [];
+  int? currentBankIndex;
 
   @override
   Widget build(BuildContext context) {
@@ -76,26 +93,49 @@ class _BankDetailsBusinessFormState extends State<BankDetailsBusinessForm> {
                           const SizedBox(height: 20),
                           Row(
                             children: [
-                              for (var i in banks)
-                                Container(
-                                  margin: const EdgeInsets.only(right: 20),
-                                  padding: const EdgeInsets.all(10),
-                                  decoration: BoxDecoration(
-                                    color: Colors.grey[200],
-                                    borderRadius: BorderRadius.circular(20),
-                                  ),
-                                  child: Text(
-                                    i,
-                                    style: const TextStyle(fontSize: 18),
+                              for (int i = 0; i < banks.length; i++) ...[
+                                SizedBox(
+                                  width: 250,
+                                  height: 100,
+                                  child: FilledButton.tonal(
+                                    onPressed: () {
+                                      setState(() {
+                                        currentBankIndex = i;
+                                      });
+                                    },
+                                    style: ButtonStyle(
+                                      padding: WidgetStateProperty.all(const EdgeInsets.all(20)),
+                                      shape: WidgetStateProperty.all(
+                                          RoundedRectangleBorder(borderRadius: BorderRadius.circular(20))),
+                                      backgroundColor:
+                                          WidgetStateProperty.all(AppColors.primaryColorOne.withOpacity(0.6)),
+                                    ),
+                                    child: Row(
+                                      mainAxisAlignment: MainAxisAlignment.center,
+                                      children: [
+                                        const Icon(Icons.monetization_on_outlined, color: Colors.black, size: 30),
+                                        const SizedBox(width: 10),
+                                        Text("Bank ${i + 1}", style: GoogleFonts.poppins(fontSize: 22)),
+                                      ],
+                                    ),
                                   ),
                                 ),
+                                const SizedBox(width: 20),
+                              ],
                               SizedBox(
                                 width: 250,
                                 height: 100,
                                 child: FilledButton.tonal(
                                   onPressed: () {
                                     setState(() {
-                                      _formOpened = true;
+                                      banks.add(BankDetailsInputUnit(
+                                        bankName: TextEditingController(),
+                                        accountSinceMonth: null,
+                                        accountSinceYear: null,
+                                        bankStatementOne: null,
+                                        bankStatementTwo: null,
+                                        bankStatementThree: null,
+                                      ));
                                     });
                                   },
                                   style: ButtonStyle(
@@ -120,275 +160,91 @@ class _BankDetailsBusinessFormState extends State<BankDetailsBusinessForm> {
                           const SizedBox(height: 20),
                           const Divider(color: Colors.grey, thickness: 0.5),
                           const SizedBox(height: 20),
-                          Row(
-                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                            children: [
-                              LabelledTextField(
-                                label: "Bank Name*",
-                                hintText: "Enter bank name",
-                                controller: TextEditingController(),
-                              ),
-                              Column(
-                                crossAxisAlignment: CrossAxisAlignment.start,
-                                children: [
-                                  Text(
-                                    'Account Since (Month)*',
-                                    style: GoogleFonts.poppins(fontSize: 18),
-                                  ),
-                                  const SizedBox(height: 5),
-                                  SizedBox(
-                                    width: 250,
-                                    height: 60,
-                                    child: FilledButton(
-                                      onPressed: () async {
-                                        showDialog(
-                                            context: context,
-                                            builder: (context) {
-                                              return Dialog(
-                                                child: Container(
-                                                  width: 600,
-                                                  height: 600,
-                                                  decoration: BoxDecoration(
-                                                    color: Colors.white,
-                                                    borderRadius: BorderRadius.circular(20),
-                                                  ),
-                                                  child: SfDateRangePicker(
-                                                    onSelectionChanged: (DateRangePickerSelectionChangedArgs args) {
-                                                      setState(() {
-                                                        _selectedMonth = args.value;
-                                                      });
-                                                    },
-                                                    selectionTextStyle:
-                                                        const TextStyle(color: Colors.black, fontSize: 20),
-                                                    allowViewNavigation: false,
-                                                    view: DateRangePickerView.year,
-                                                    showNavigationArrow: false,
-                                                    navigationMode: DateRangePickerNavigationMode.none,
-                                                  ),
-                                                ),
-                                              );
-                                            });
-                                      },
-                                      style: ButtonStyle(
-                                        shape: WidgetStateProperty.all(
-                                          RoundedRectangleBorder(
-                                            borderRadius: BorderRadius.circular(10),
-                                          ),
-                                        ),
-                                        backgroundColor:
-                                            WidgetStateProperty.all(AppColors.primaryColorTwo.withOpacity(0.5)),
-                                      ),
-                                      child: _selectedMonth != null
-                                          ? Row(
-                                              mainAxisAlignment: MainAxisAlignment.center,
-                                              children: [
-                                                const Icon(Icons.calendar_month, size: 30, color: Colors.black),
-                                                const SizedBox(width: 10),
-                                                Text(
-                                                  "${_selectedMonth!.month}",
-                                                  style: GoogleFonts.poppins(fontSize: 20, color: Colors.black),
-                                                ),
-                                              ],
-                                            )
-                                          : Row(
-                                              mainAxisAlignment: MainAxisAlignment.center,
-                                              children: [
-                                                const Icon(Icons.calendar_month, size: 30, color: Colors.black),
-                                                const SizedBox(width: 10),
-                                                Text("Month",
-                                                    style: GoogleFonts.poppins(fontSize: 20, color: Colors.black)),
-                                              ],
-                                            ),
-                                    ),
-                                  ),
-                                ],
-                              ),
-                              Column(
-                                crossAxisAlignment: CrossAxisAlignment.start,
-                                children: [
-                                  Text(
-                                    'Account Since (Year)*',
-                                    style: GoogleFonts.poppins(fontSize: 18),
-                                  ),
-                                  const SizedBox(height: 5),
-                                  SizedBox(
-                                    width: 250,
-                                    height: 60,
-                                    child: FilledButton(
-                                      onPressed: () async {
-                                        showDialog(
-                                            context: context,
-                                            builder: (context) {
-                                              return Dialog(
-                                                child: Container(
-                                                  width: 600,
-                                                  height: 600,
-                                                  decoration: BoxDecoration(
-                                                    color: Colors.white,
-                                                    borderRadius: BorderRadius.circular(20),
-                                                  ),
-                                                  child: SfDateRangePicker(
-                                                    onSelectionChanged: (DateRangePickerSelectionChangedArgs args) {
-                                                      setState(() {
-                                                        _selectedYear = args.value;
-                                                      });
-                                                    },
-                                                    selectionTextStyle:
-                                                        const TextStyle(color: Colors.black, fontSize: 20),
-                                                    allowViewNavigation: false,
-                                                    view: DateRangePickerView.decade,
-                                                    showNavigationArrow: false,
-                                                    navigationMode: DateRangePickerNavigationMode.none,
-                                                  ),
-                                                ),
-                                              );
-                                            });
-                                      },
-                                      style: ButtonStyle(
-                                        shape: WidgetStateProperty.all(
-                                          RoundedRectangleBorder(
-                                            borderRadius: BorderRadius.circular(10),
-                                          ),
-                                        ),
-                                        backgroundColor:
-                                            WidgetStateProperty.all(AppColors.primaryColorTwo.withOpacity(0.5)),
-                                      ),
-                                      child: _selectedYear != null
-                                          ? Row(
-                                              mainAxisAlignment: MainAxisAlignment.center,
-                                              children: [
-                                                const Icon(Icons.calendar_month, size: 30, color: Colors.black),
-                                                const SizedBox(width: 10),
-                                                Text(
-                                                  "${_selectedYear!.year}",
-                                                  style: GoogleFonts.poppins(fontSize: 20, color: Colors.black),
-                                                ),
-                                              ],
-                                            )
-                                          : Row(
-                                              mainAxisAlignment: MainAxisAlignment.center,
-                                              children: [
-                                                const Icon(Icons.calendar_month, size: 30, color: Colors.black),
-                                                const SizedBox(width: 10),
-                                                Text("Year",
-                                                    style: GoogleFonts.poppins(fontSize: 20, color: Colors.black)),
-                                              ],
-                                            ),
-                                    ),
-                                  ),
-                                ],
-                              ),
-                            ],
-                          ),
-                          const SizedBox(height: 40),
-                          Container(
-                            width: double.infinity,
-                            height: 150,
-                            decoration: BoxDecoration(
-                              borderRadius: BorderRadius.circular(20),
+                          if (currentBankIndex != null) ...[
+                            Row(
+                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                              children: [
+                                LabelledTextField(
+                                  label: "Bank Name*",
+                                  hintText: "Enter bank name",
+                                  controller: banks[currentBankIndex!].bankName,
+                                ),
+                                MonthPickerButton(
+                                  current: banks[currentBankIndex!].accountSinceMonth,
+                                  label: "Account Since (Month)*",
+                                  onMonthSelected: (DateTime month) {
+                                    setState(() {
+                                      banks[currentBankIndex!].accountSinceMonth = month;
+                                    });
+                                  },
+                                ),
+                                YearPickerButton(
+                                  current: banks[currentBankIndex!].accountSinceYear,
+                                  label: "Account Since (Year)*",
+                                  onYearSelected: (DateTime year) {
+                                    setState(() {
+                                      banks[currentBankIndex!].accountSinceYear = year;
+                                    });
+                                  },
+                                ),
+                              ],
                             ),
-                            child: result == null
-                                ? Stack(
-                                    children: [
-                                      Container(
-                                        decoration: BoxDecoration(
-                                          color: Colors.blue.shade100,
-                                          borderRadius: BorderRadius.circular(20),
-                                        ),
-                                        child: DropzoneView(
-                                          operation: DragOperation.copy,
-                                          cursor: CursorType.grab,
-                                          onCreated: (DropzoneViewController ctrl) => dropZoneController = ctrl,
-                                          onDrop: (dynamic ev) async {
-                                            final data = await dropZoneController?.getFileData(ev);
-                                            final size = await dropZoneController?.getFileSize(ev);
-                                            final name = 'bank_statement_${DateTime.now().millisecondsSinceEpoch}.pdf';
-                                            setState(() {
-                                              result = FilePickerResult([
-                                                PlatformFile(
-                                                  name: name,
-                                                  bytes: data,
-                                                  size: size ?? 0,
-                                                )
-                                              ]);
-                                              Logger().i(result?.files[0].name);
-                                            });
-                                            Logger().i(result?.files[0].name);
-                                          },
-                                        ),
+                            const SizedBox(height: 40),
+                            Container(
+                                width: double.infinity,
+                                height: 150,
+                                decoration: BoxDecoration(
+                                  borderRadius: BorderRadius.circular(20),
+                                ),
+                                child: Stack(
+                                  children: [
+                                    Container(
+                                      decoration: BoxDecoration(
+                                        color: Colors.blue.shade100,
+                                        borderRadius: BorderRadius.circular(20),
                                       ),
-                                      Center(
-                                        child: Text(
-                                          "Drag file here",
-                                          style: GoogleFonts.poppins(fontSize: 24),
-                                        ),
-                                      )
-                                    ],
-                                  )
-                                : Container(
-                                    decoration: BoxDecoration(
-                                      color: Colors.blue.shade100,
-                                      borderRadius: BorderRadius.circular(20),
-                                    ),
-                                    child: Center(
-                                      child: Row(
-                                        mainAxisAlignment: MainAxisAlignment.center,
-                                        children: [
-                                          Text(
-                                            result?.files[0].name ?? "",
-                                            style: GoogleFonts.poppins(fontSize: 24),
-                                          ),
-                                          const SizedBox(width: 20),
-                                          IconButton(
-                                            onPressed: () {
-                                              setState(() {
-                                                result = null;
-                                              });
-                                            },
-                                            icon: const Icon(Icons.close),
-                                          ),
-                                        ],
+                                      child: DropzoneView(
+                                        operation: DragOperation.copy,
+                                        cursor: CursorType.grab,
+                                        onCreated: (DropzoneViewController ctrl) => dropZoneController = ctrl,
+                                        onDrop: (dynamic ev) async {
+                                          final data = await dropZoneController?.getFileData(ev);
+                                          final size = await dropZoneController?.getFileSize(ev);
+                                          final name = 'bank_statement_${DateTime.now().millisecondsSinceEpoch}.pdf';
+                                          setState(() {
+                                            if (banks[currentBankIndex!].bankStatementOne == null) {
+                                              banks[currentBankIndex!].bankStatementOne = FilePickerResult(
+                                                [PlatformFile(name: name, size: size ?? 0, bytes: data)],
+                                              );
+                                            } else if (banks[currentBankIndex!].bankStatementTwo == null) {
+                                              banks[currentBankIndex!].bankStatementTwo = FilePickerResult(
+                                                [PlatformFile(name: name, size: size ?? 0, bytes: data)],
+                                              );
+                                            } else if (banks[currentBankIndex!].bankStatementThree == null) {
+                                              banks[currentBankIndex!].bankStatementThree = FilePickerResult(
+                                                [PlatformFile(name: name, size: size ?? 0, bytes: data)],
+                                              );
+                                            }
+                                          });
+                                        },
                                       ),
                                     ),
-                                  ),
-                          ),
+                                    Center(
+                                      child: Text(
+                                        "Drag file here",
+                                        style: GoogleFonts.poppins(fontSize: 24),
+                                      ),
+                                    )
+                                  ],
+                                )),
+                          ],
                           const SizedBox(height: 40),
                           Row(
                             mainAxisAlignment: MainAxisAlignment.end,
                             children: [
-                              SizedBox(
-                                width: 200,
-                                height: 50,
-                                child: FilledButton(
-                                  onPressed: () {},
-                                  style: ButtonStyle(
-                                    backgroundColor: WidgetStateProperty.all(Colors.white),
-                                    shape: WidgetStateProperty.all(RoundedRectangleBorder(
-                                      borderRadius: BorderRadius.circular(30),
-                                      side: BorderSide(color: HexColor("#568737")),
-                                    )),
-                                  ),
-                                  child: Text(
-                                    "Back",
-                                    style: TextStyle(fontSize: 20, color: HexColor("#568737")),
-                                  ),
-                                ),
-                              ),
+                              BackButtonCustom(onPressed: () => context.pop()),
                               const SizedBox(width: 40),
-                              SizedBox(
-                                width: 200,
-                                height: 50,
-                                child: FilledButton(
-                                  style: ButtonStyle(
-                                    backgroundColor: WidgetStateProperty.all(HexColor("#568737")),
-                                  ),
-                                  onPressed: () {},
-                                  child: const Text(
-                                    "Proceed",
-                                    style: TextStyle(fontSize: 20),
-                                  ),
-                                ),
-                              ),
+                              ProceedButtonCustom(onPressed: () {}),
                             ],
                           )
                         ],

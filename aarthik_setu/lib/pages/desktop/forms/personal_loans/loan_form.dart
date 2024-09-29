@@ -1,11 +1,14 @@
+import 'package:aarthik_setu/global_components/back_button.dart';
+import 'package:aarthik_setu/global_components/custom_dropdown.dart';
+import 'package:aarthik_setu/global_components/custom_switch.dart';
 import 'package:aarthik_setu/global_components/labelled_text_field.dart';
-import 'package:animated_toggle_switch/animated_toggle_switch.dart';
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:hexcolor/hexcolor.dart';
 import 'package:responsive_framework/responsive_framework.dart';
 import '../../../../constants/app_constants.dart';
-import '../../../../constants/colors.dart';
+import '../../../../constants/form_constants.dart';
+import '../../../../global_components/procees_button.dart';
 
 class LoanFormPersonal extends StatefulWidget {
   const LoanFormPersonal({super.key});
@@ -21,6 +24,14 @@ class _LoanFormPersonalState extends State<LoanFormPersonal> {
 
   bool _issueLetterToYourEmployerToPayOutstandingLoan = false;
   bool _issueLetterToYourEmployerToNotChangeSalaryAccount = false;
+
+  String? _loanPurpose;
+
+  final TextEditingController _loanAmountController = TextEditingController();
+  final TextEditingController _tenureController = TextEditingController();
+  final TextEditingController _retirementAgeController = TextEditingController();
+
+  String? _repaymentMethod;
 
   @override
   Widget build(BuildContext context) {
@@ -71,23 +82,30 @@ class _LoanFormPersonalState extends State<LoanFormPersonal> {
                           Row(
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
                             children: [
-                              LabelledTextField(
+                              SizedBox(
                                 width: 250,
-                                label: "Loan Purpose*",
-                                hintText: 'Enter loan purpose',
-                                controller: TextEditingController(),
+                                child: CustomDropdown(
+                                  label: "Loan Purpose*",
+                                  buttonLabel: _loanPurpose ?? "Select Loan Purpose",
+                                  items: LoanTypes.getLoanTypes(),
+                                  onChanged: (value) {
+                                    setState(() {
+                                      _loanPurpose = value;
+                                    });
+                                  },
+                                ),
                               ),
                               LabelledTextField(
                                 width: 250,
                                 label: "Loan Amount Required*",
                                 hintText: 'Enter loan amount',
-                                controller: TextEditingController(),
+                                controller: _loanAmountController,
                               ),
                               LabelledTextField(
                                 width: 250,
                                 label: "Tenure (Years)*",
                                 hintText: 'Enter tenure',
-                                controller: TextEditingController(),
+                                controller: _tenureController,
                               ),
                             ],
                           ),
@@ -99,7 +117,7 @@ class _LoanFormPersonalState extends State<LoanFormPersonal> {
                                 width: 250,
                                 label: "Retirement Age (Years)*",
                                 hintText: 'Enter retirement age',
-                                controller: TextEditingController(),
+                                controller: _retirementAgeController,
                               ),
                             ],
                           ),
@@ -146,64 +164,14 @@ class _LoanFormPersonalState extends State<LoanFormPersonal> {
                                 ),
                               ),
                               const SizedBox(width: 20),
-                              SizedBox(
-                                width: 160,
-                                height: 60,
-                                child: AnimatedToggleSwitch<bool>.dual(
-                                  current: _emiBySalaryAccount,
-                                  first: false,
-                                  second: true,
-                                  borderWidth: 6,
-                                  textBuilder: (index) => index == true
-                                      ? Text(
-                                          "Yes",
-                                          style: GoogleFonts.poppins(
-                                            color: Colors.black,
-                                            fontSize: 20,
-                                          ),
-                                        )
-                                      : Text(
-                                          "No",
-                                          style: GoogleFonts.poppins(
-                                            color: Colors.black,
-                                            fontSize: 20,
-                                          ),
-                                        ),
-                                  indicatorSize: const Size.fromWidth(50),
-                                  style: ToggleStyle(
-                                    backgroundColor: Colors.grey[200],
-                                    borderRadius: BorderRadius.circular(50),
-                                    borderColor: Colors.transparent,
-                                    boxShadow: [
-                                      const BoxShadow(
-                                        color: Colors.black26,
-                                        spreadRadius: 1,
-                                        blurRadius: 2,
-                                        offset: Offset(0, 1.5),
-                                      ),
-                                    ],
-                                  ),
-                                  styleBuilder: (index) => index == true
-                                      ? const ToggleStyle(indicatorColor: Colors.green)
-                                      : ToggleStyle(indicatorColor: AppColors.primaryColorOne),
-                                  iconBuilder: (index) => index == true
-                                      ? const Icon(
-                                          Icons.check,
-                                          size: 30,
-                                          color: Colors.white,
-                                        )
-                                      : const Icon(
-                                          Icons.close,
-                                          size: 30,
-                                          color: Colors.white,
-                                        ),
-                                  onChanged: (value) {
-                                    setState(() {
-                                      _emiBySalaryAccount = value;
-                                    });
-                                  },
-                                ),
-                              ),
+                              CustomSwitch(
+                                current: _emiBySalaryAccount,
+                                onChanged: (value) {
+                                  setState(() {
+                                    _emiBySalaryAccount = value;
+                                  });
+                                },
+                              )
                             ],
                           ),
                           const SizedBox(height: 20),
@@ -217,64 +185,14 @@ class _LoanFormPersonalState extends State<LoanFormPersonal> {
                                 ),
                               ),
                               const SizedBox(width: 20),
-                              SizedBox(
-                                width: 160,
-                                height: 60,
-                                child: AnimatedToggleSwitch<bool>.dual(
-                                  current: _payOutstandingByTerminalPayments,
-                                  first: false,
-                                  second: true,
-                                  borderWidth: 6,
-                                  textBuilder: (index) => index == true
-                                      ? Text(
-                                          "Yes",
-                                          style: GoogleFonts.poppins(
-                                            color: Colors.black,
-                                            fontSize: 20,
-                                          ),
-                                        )
-                                      : Text(
-                                          "No",
-                                          style: GoogleFonts.poppins(
-                                            color: Colors.black,
-                                            fontSize: 20,
-                                          ),
-                                        ),
-                                  indicatorSize: const Size.fromWidth(50),
-                                  style: ToggleStyle(
-                                    backgroundColor: Colors.grey[200],
-                                    borderRadius: BorderRadius.circular(50),
-                                    borderColor: Colors.transparent,
-                                    boxShadow: [
-                                      const BoxShadow(
-                                        color: Colors.black26,
-                                        spreadRadius: 1,
-                                        blurRadius: 2,
-                                        offset: Offset(0, 1.5),
-                                      ),
-                                    ],
-                                  ),
-                                  styleBuilder: (index) => index == true
-                                      ? const ToggleStyle(indicatorColor: Colors.green)
-                                      : ToggleStyle(indicatorColor: AppColors.primaryColorOne),
-                                  iconBuilder: (index) => index == true
-                                      ? const Icon(
-                                          Icons.check,
-                                          size: 30,
-                                          color: Colors.white,
-                                        )
-                                      : const Icon(
-                                          Icons.close,
-                                          size: 30,
-                                          color: Colors.white,
-                                        ),
-                                  onChanged: (value) {
-                                    setState(() {
-                                      _payOutstandingByTerminalPayments = value;
-                                    });
-                                  },
-                                ),
-                              ),
+                              CustomSwitch(
+                                current: _payOutstandingByTerminalPayments,
+                                onChanged: (value) {
+                                  setState(() {
+                                    _payOutstandingByTerminalPayments = value;
+                                  });
+                                },
+                              )
                             ],
                           ),
                           const SizedBox(height: 20),
@@ -288,66 +206,17 @@ class _LoanFormPersonalState extends State<LoanFormPersonal> {
                                 ),
                               ),
                               const SizedBox(width: 20),
-                              SizedBox(
-                                width: 160,
-                                height: 60,
-                                child: AnimatedToggleSwitch<bool>.dual(
-                                  current: _paySalaryInSalaryAccount,
-                                  first: false,
-                                  second: true,
-                                  borderWidth: 6,
-                                  textBuilder: (index) => index == true
-                                      ? Text(
-                                          "Yes",
-                                          style: GoogleFonts.poppins(
-                                            color: Colors.black,
-                                            fontSize: 20,
-                                          ),
-                                        )
-                                      : Text(
-                                          "No",
-                                          style: GoogleFonts.poppins(
-                                            color: Colors.black,
-                                            fontSize: 20,
-                                          ),
-                                        ),
-                                  indicatorSize: const Size.fromWidth(50),
-                                  style: ToggleStyle(
-                                    backgroundColor: Colors.grey[200],
-                                    borderRadius: BorderRadius.circular(50),
-                                    borderColor: Colors.transparent,
-                                    boxShadow: [
-                                      const BoxShadow(
-                                        color: Colors.black26,
-                                        spreadRadius: 1,
-                                        blurRadius: 2,
-                                        offset: Offset(0, 1.5),
-                                      ),
-                                    ],
-                                  ),
-                                  styleBuilder: (index) => index == true
-                                      ? const ToggleStyle(indicatorColor: Colors.green)
-                                      : ToggleStyle(indicatorColor: AppColors.primaryColorOne),
-                                  iconBuilder: (index) => index == true
-                                      ? const Icon(
-                                          Icons.check,
-                                          size: 30,
-                                          color: Colors.white,
-                                        )
-                                      : const Icon(
-                                          Icons.close,
-                                          size: 30,
-                                          color: Colors.white,
-                                        ),
-                                  onChanged: (value) {
-                                    setState(() {
-                                      _paySalaryInSalaryAccount = value;
-                                    });
-                                  },
-                                ),
-                              ),
+                              CustomSwitch(
+                                current: _paySalaryInSalaryAccount,
+                                onChanged: (value) {
+                                  setState(() {
+                                    _paySalaryInSalaryAccount = value;
+                                  });
+                                },
+                              )
                             ],
                           ),
+                          const SizedBox(height: 40),
                         ],
                       ),
                     ),
@@ -390,64 +259,14 @@ class _LoanFormPersonalState extends State<LoanFormPersonal> {
                                 ),
                               ),
                               const SizedBox(width: 20),
-                              SizedBox(
-                                width: 160,
-                                height: 60,
-                                child: AnimatedToggleSwitch<bool>.dual(
-                                  current: _issueLetterToYourEmployerToPayOutstandingLoan,
-                                  first: false,
-                                  second: true,
-                                  borderWidth: 6,
-                                  textBuilder: (index) => index == true
-                                      ? Text(
-                                          "Yes",
-                                          style: GoogleFonts.poppins(
-                                            color: Colors.black,
-                                            fontSize: 20,
-                                          ),
-                                        )
-                                      : Text(
-                                          "No",
-                                          style: GoogleFonts.poppins(
-                                            color: Colors.black,
-                                            fontSize: 20,
-                                          ),
-                                        ),
-                                  indicatorSize: const Size.fromWidth(50),
-                                  style: ToggleStyle(
-                                    backgroundColor: Colors.grey[200],
-                                    borderRadius: BorderRadius.circular(50),
-                                    borderColor: Colors.transparent,
-                                    boxShadow: [
-                                      const BoxShadow(
-                                        color: Colors.black26,
-                                        spreadRadius: 1,
-                                        blurRadius: 2,
-                                        offset: Offset(0, 1.5),
-                                      ),
-                                    ],
-                                  ),
-                                  styleBuilder: (index) => index == true
-                                      ? const ToggleStyle(indicatorColor: Colors.green)
-                                      : ToggleStyle(indicatorColor: AppColors.primaryColorOne),
-                                  iconBuilder: (index) => index == true
-                                      ? const Icon(
-                                          Icons.check,
-                                          size: 30,
-                                          color: Colors.white,
-                                        )
-                                      : const Icon(
-                                          Icons.close,
-                                          size: 30,
-                                          color: Colors.white,
-                                        ),
-                                  onChanged: (value) {
-                                    setState(() {
-                                      _issueLetterToYourEmployerToPayOutstandingLoan = value;
-                                    });
-                                  },
-                                ),
-                              ),
+                              CustomSwitch(
+                                current: _issueLetterToYourEmployerToPayOutstandingLoan,
+                                onChanged: (value) {
+                                  setState(() {
+                                    _issueLetterToYourEmployerToPayOutstandingLoan = value;
+                                  });
+                                },
+                              )
                             ],
                           ),
                           const SizedBox(height: 20),
@@ -461,64 +280,14 @@ class _LoanFormPersonalState extends State<LoanFormPersonal> {
                                   style: TextStyle(fontSize: 18),
                                 ),
                               ),
-                              SizedBox(width: 20),
-                              SizedBox(
-                                width: 160,
-                                height: 60,
-                                child: AnimatedToggleSwitch<bool>.dual(
-                                  current: _issueLetterToYourEmployerToNotChangeSalaryAccount,
-                                  first: false,
-                                  second: true,
-                                  borderWidth: 6,
-                                  textBuilder: (index) => index == true
-                                      ? Text(
-                                          "Yes",
-                                          style: GoogleFonts.poppins(
-                                            color: Colors.black,
-                                            fontSize: 20,
-                                          ),
-                                        )
-                                      : Text(
-                                          "No",
-                                          style: GoogleFonts.poppins(
-                                            color: Colors.black,
-                                            fontSize: 20,
-                                          ),
-                                        ),
-                                  indicatorSize: const Size.fromWidth(50),
-                                  style: ToggleStyle(
-                                    backgroundColor: Colors.grey[200],
-                                    borderRadius: BorderRadius.circular(50),
-                                    borderColor: Colors.transparent,
-                                    boxShadow: [
-                                      const BoxShadow(
-                                        color: Colors.black26,
-                                        spreadRadius: 1,
-                                        blurRadius: 2,
-                                        offset: Offset(0, 1.5),
-                                      ),
-                                    ],
-                                  ),
-                                  styleBuilder: (index) => index == true
-                                      ? const ToggleStyle(indicatorColor: Colors.green)
-                                      : ToggleStyle(indicatorColor: AppColors.primaryColorOne),
-                                  iconBuilder: (index) => index == true
-                                      ? const Icon(
-                                          Icons.check,
-                                          size: 30,
-                                          color: Colors.white,
-                                        )
-                                      : const Icon(
-                                          Icons.close,
-                                          size: 30,
-                                          color: Colors.white,
-                                        ),
-                                  onChanged: (value) {
-                                    setState(() {
-                                      _issueLetterToYourEmployerToNotChangeSalaryAccount = value;
-                                    });
-                                  },
-                                ),
+                              const SizedBox(width: 20),
+                              CustomSwitch(
+                                current: _issueLetterToYourEmployerToNotChangeSalaryAccount,
+                                onChanged: (value) {
+                                  setState(() {
+                                    _issueLetterToYourEmployerToNotChangeSalaryAccount = value;
+                                  });
+                                },
                               ),
                             ],
                           ),
@@ -526,10 +295,15 @@ class _LoanFormPersonalState extends State<LoanFormPersonal> {
                           Row(
                             mainAxisAlignment: MainAxisAlignment.center,
                             children: [
-                              LabelledTextField(
-                                label: "Choose Repayment Method*",
-                                hintText: 'Enter repayment method',
-                                controller: TextEditingController(),
+                              CustomDropdown(
+                                label: "Repayment Method*",
+                                buttonLabel: _repaymentMethod ?? "Select Repayment Method",
+                                items: RepaymentMethods.getRepaymentModes(),
+                                onChanged: (value) {
+                                  setState(() {
+                                    _repaymentMethod = value;
+                                  });
+                                },
                               ),
                             ],
                           ),
@@ -539,39 +313,9 @@ class _LoanFormPersonalState extends State<LoanFormPersonal> {
                           Row(
                             mainAxisAlignment: MainAxisAlignment.end,
                             children: [
-                              SizedBox(
-                                width: 200,
-                                height: 50,
-                                child: FilledButton(
-                                  onPressed: () {},
-                                  style: ButtonStyle(
-                                    backgroundColor: WidgetStateProperty.all(Colors.white),
-                                    shape: WidgetStateProperty.all(RoundedRectangleBorder(
-                                      borderRadius: BorderRadius.circular(30),
-                                      side: BorderSide(color: HexColor("#568737")),
-                                    )),
-                                  ),
-                                  child: Text(
-                                    "Back",
-                                    style: TextStyle(fontSize: 20, color: HexColor("#568737")),
-                                  ),
-                                ),
-                              ),
+                              BackButtonCustom(onPressed: () => context.pop()),
                               const SizedBox(width: 40),
-                              SizedBox(
-                                width: 200,
-                                height: 50,
-                                child: FilledButton(
-                                  style: ButtonStyle(
-                                    backgroundColor: WidgetStateProperty.all(HexColor("#568737")),
-                                  ),
-                                  onPressed: () {},
-                                  child: const Text(
-                                    "Submit",
-                                    style: TextStyle(fontSize: 20),
-                                  ),
-                                ),
-                              ),
+                              ProceedButtonCustom(onPressed: () {}),
                             ],
                           ),
                         ],

@@ -1,7 +1,11 @@
+import 'package:aarthik_setu/constants/form_constants.dart';
+import 'package:aarthik_setu/global_components/back_button.dart';
 import 'package:aarthik_setu/global_components/date_picker.dart';
+import 'package:aarthik_setu/global_components/procees_button.dart';
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:hexcolor/hexcolor.dart';
+import '../../../../../global_components/custom_dropdown.dart';
 import '../../../../../global_components/labelled_text_field.dart';
 
 class DeclareBusiness extends StatefulWidget {
@@ -12,8 +16,31 @@ class DeclareBusiness extends StatefulWidget {
 }
 
 class _DeclareBusinessState extends State<DeclareBusiness> {
-  DateTime? _incorporationDate;
   int currentYear = DateTime.now().year;
+
+  final TextEditingController _businessNameController = TextEditingController();
+  DateTime? _incorporationDate;
+  final TextEditingController _constitutionController = TextEditingController();
+
+  String? _state;
+  String? _city;
+  final TextEditingController _customersController = TextEditingController();
+
+  final TextEditingController _panController = TextEditingController();
+  final TextEditingController _highestSaleController = TextEditingController();
+
+  final TextEditingController _januarySalesController = TextEditingController();
+  final TextEditingController _februarySalesController = TextEditingController();
+  final TextEditingController _marchSalesController = TextEditingController();
+  final TextEditingController _aprilSalesController = TextEditingController();
+  final TextEditingController _maySalesController = TextEditingController();
+  final TextEditingController _juneSalesController = TextEditingController();
+  final TextEditingController _julySalesController = TextEditingController();
+  final TextEditingController _augustSalesController = TextEditingController();
+  final TextEditingController _septemberSalesController = TextEditingController();
+  final TextEditingController _octoberSalesController = TextEditingController();
+  final TextEditingController _novemberSalesController = TextEditingController();
+  final TextEditingController _decemberSalesController = TextEditingController();
 
   @override
   Widget build(BuildContext context) {
@@ -37,7 +64,7 @@ class _DeclareBusinessState extends State<DeclareBusiness> {
                   LabelledTextField(
                     label: "Business Name*",
                     hintText: "Enter business name",
-                    controller: TextEditingController(),
+                    controller: _businessNameController,
                   ),
                   DatePickerButton(
                     label: 'Date of Incorporation',
@@ -50,7 +77,7 @@ class _DeclareBusinessState extends State<DeclareBusiness> {
                   LabelledTextField(
                     label: "Constitution*",
                     hintText: "Enter your constitution",
-                    controller: TextEditingController(),
+                    controller: _constitutionController,
                   ),
                 ],
               ),
@@ -58,20 +85,30 @@ class _DeclareBusinessState extends State<DeclareBusiness> {
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  LabelledTextField(
-                    label: "State",
-                    hintText: "Enter your state",
-                    controller: TextEditingController(),
+                  CustomDropdown(
+                    label: "State*",
+                    buttonLabel: _state ?? "Select State",
+                    items: IndiaStates.getAllStatesAndUTs(),
+                    onChanged: (value) {
+                      setState(() {
+                        _state = value;
+                      });
+                    },
                   ),
-                  LabelledTextField(
-                    label: "City",
-                    hintText: "Enter your city",
-                    controller: TextEditingController(),
+                  CustomDropdown(
+                    label: "City*",
+                    buttonLabel: _city ?? "Select City",
+                    items: IndiaCities.citiesMap[_state] ?? [],
+                    onChanged: (value) {
+                      setState(() {
+                        _city = value;
+                      });
+                    },
                   ),
                   LabelledTextField(
                     label: "No. of Customers*",
                     hintText: "Enter your number of customers",
-                    controller: TextEditingController(),
+                    controller: _customersController,
                   ),
                 ],
               ),
@@ -82,12 +119,12 @@ class _DeclareBusinessState extends State<DeclareBusiness> {
                   LabelledTextField(
                     label: "PAN*",
                     hintText: "Enter your PAN",
-                    controller: TextEditingController(),
+                    controller: _panController,
                   ),
                   LabelledTextField(
                     label: "Highest sale recorded*",
                     hintText: "Enter your highest sale recorded",
-                    controller: TextEditingController(),
+                    controller: _highestSaleController,
                   ),
                 ],
               ),
@@ -107,11 +144,11 @@ class _DeclareBusinessState extends State<DeclareBusiness> {
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
-                     Text('January', style: GoogleFonts.poppins(fontSize: 20)),
+                      Text('January', style: GoogleFonts.poppins(fontSize: 20)),
                       LabelledTextField(
                         label: "Sales (Jan)",
                         hintText: "Enter sales",
-                        controller: TextEditingController(),
+                        controller: _januarySalesController,
                       ),
                     ],
                   ),
@@ -123,7 +160,7 @@ class _DeclareBusinessState extends State<DeclareBusiness> {
                       LabelledTextField(
                         label: "Sales (Feb)",
                         hintText: "Enter sales",
-                        controller: TextEditingController(),
+                        controller: _februarySalesController,
                       ),
                     ],
                   ),
@@ -135,7 +172,7 @@ class _DeclareBusinessState extends State<DeclareBusiness> {
                       LabelledTextField(
                         label: "Sales (Mar)",
                         hintText: "Enter sales",
-                        controller: TextEditingController(),
+                        controller: _marchSalesController,
                       ),
                     ],
                   ),
@@ -147,7 +184,7 @@ class _DeclareBusinessState extends State<DeclareBusiness> {
                       LabelledTextField(
                         label: "Sales (Apr)",
                         hintText: "Enter sales",
-                        controller: TextEditingController(),
+                        controller: _aprilSalesController,
                       ),
                     ],
                   ),
@@ -159,7 +196,7 @@ class _DeclareBusinessState extends State<DeclareBusiness> {
                       LabelledTextField(
                         label: "Sales (May)",
                         hintText: "Enter sales",
-                        controller: TextEditingController(),
+                        controller: _maySalesController,
                       ),
                     ],
                   ),
@@ -171,7 +208,7 @@ class _DeclareBusinessState extends State<DeclareBusiness> {
                       LabelledTextField(
                         label: "Sales (Jun)",
                         hintText: "Enter sales",
-                        controller: TextEditingController(),
+                        controller: _juneSalesController,
                       ),
                     ],
                   ),
@@ -183,7 +220,7 @@ class _DeclareBusinessState extends State<DeclareBusiness> {
                       LabelledTextField(
                         label: "Sales (Jul)",
                         hintText: "Enter sales",
-                        controller: TextEditingController(),
+                        controller: _julySalesController,
                       ),
                     ],
                   ),
@@ -195,7 +232,7 @@ class _DeclareBusinessState extends State<DeclareBusiness> {
                       LabelledTextField(
                         label: "Sales (Aug)",
                         hintText: "Enter sales",
-                        controller: TextEditingController(),
+                        controller: _augustSalesController,
                       ),
                     ],
                   ),
@@ -207,7 +244,7 @@ class _DeclareBusinessState extends State<DeclareBusiness> {
                       LabelledTextField(
                         label: "Sales (Sep)",
                         hintText: "Enter sales",
-                        controller: TextEditingController(),
+                        controller: _septemberSalesController,
                       ),
                     ],
                   ),
@@ -219,7 +256,7 @@ class _DeclareBusinessState extends State<DeclareBusiness> {
                       LabelledTextField(
                         label: "Sales (Oct)",
                         hintText: "Enter sales",
-                        controller: TextEditingController(),
+                        controller: _octoberSalesController,
                       ),
                     ],
                   ),
@@ -231,7 +268,7 @@ class _DeclareBusinessState extends State<DeclareBusiness> {
                       LabelledTextField(
                         label: "Sales (Nov)",
                         hintText: "Enter sales",
-                        controller: TextEditingController(),
+                        controller: _novemberSalesController,
                       ),
                     ],
                   ),
@@ -243,7 +280,7 @@ class _DeclareBusinessState extends State<DeclareBusiness> {
                       LabelledTextField(
                         label: "Sales (Dec)",
                         hintText: "Enter sales",
-                        controller: TextEditingController(),
+                        controller: _decemberSalesController,
                       ),
                     ],
                   ),
@@ -258,39 +295,9 @@ class _DeclareBusinessState extends State<DeclareBusiness> {
         Row(
           mainAxisAlignment: MainAxisAlignment.end,
           children: [
-            SizedBox(
-              width: 200,
-              height: 50,
-              child: FilledButton(
-                onPressed: () {},
-                style: ButtonStyle(
-                  backgroundColor: WidgetStateProperty.all(Colors.white),
-                  shape: WidgetStateProperty.all(RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(30),
-                    side: BorderSide(color: HexColor("#568737")),
-                  )),
-                ),
-                child: Text(
-                  "Back",
-                  style: TextStyle(fontSize: 20, color: HexColor("#568737")),
-                ),
-              ),
-            ),
+            BackButtonCustom(onPressed: () => context.pop()),
             const SizedBox(width: 40),
-            SizedBox(
-              width: 200,
-              height: 50,
-              child: FilledButton(
-                style: ButtonStyle(
-                  backgroundColor: WidgetStateProperty.all(HexColor("#568737")),
-                ),
-                onPressed: () {},
-                child: const Text(
-                  "Proceed",
-                  style: TextStyle(fontSize: 20),
-                ),
-              ),
-            ),
+            ProceedButtonCustom(onPressed: () {}),
           ],
         )
       ],

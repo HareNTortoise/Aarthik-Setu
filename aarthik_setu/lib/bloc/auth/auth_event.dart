@@ -12,6 +12,10 @@ class OTPSignIn extends AuthEvent {
   OTPSignIn({required this.countryCode, required this.phoneNumber});
 }
 
+class AuthCheck extends AuthEvent {}
+
+class SignOut extends AuthEvent {}
+
 class OTPVerify extends AuthEvent {
   final String otp;
 

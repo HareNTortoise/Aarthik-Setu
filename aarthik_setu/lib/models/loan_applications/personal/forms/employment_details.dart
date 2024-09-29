@@ -1,4 +1,9 @@
-class EmploymentDetails{
+class EmploymentDetails {
+  String? id;
+  String profileId;
+  DateTime timestamp;
+  String applicationId;
+
   String employmentType;
   String employerStatus;
   String designation;
@@ -13,6 +18,10 @@ class EmploymentDetails{
     required this.modeOfSalary,
     required this.grossMonthlyIncome,
     required this.netMonthlyIncome,
+    required this.profileId,
+    required this.timestamp,
+    required this.applicationId,
+    this.id,
   });
 
   Map<String, dynamic> toJson() {
@@ -23,6 +32,10 @@ class EmploymentDetails{
       'modeOfSalary': modeOfSalary,
       'grossMonthlyIncome': grossMonthlyIncome,
       'netMonthlyIncome': netMonthlyIncome,
+      'profileId': profileId,
+      'timestamp': timestamp,
+      'applicationId': applicationId,
+      'id': id,
     };
   }
 
@@ -34,6 +47,10 @@ class EmploymentDetails{
       modeOfSalary: json['modeOfSalary'],
       grossMonthlyIncome: json['grossMonthlyIncome'],
       netMonthlyIncome: json['netMonthlyIncome'],
+      profileId: json['profileId'],
+      timestamp: json['timestamp'],
+      applicationId: json['applicationId'],
+      id: json['id'],
     );
   }
 }

@@ -1,12 +1,11 @@
 import 'package:aarthik_setu/pages/breakpoints/sign_in.dart';
 import 'package:aarthik_setu/pages/desktop/forms/business_loans/gst_form.dart';
-import 'package:aarthik_setu/pages/desktop/forms/loan_form_journey_template.dart';
+import 'package:aarthik_setu/pages/desktop/forms/template/loan_form_journey_template.dart';
 import 'package:aarthik_setu/pages/desktop/forms/personal_loans/bank_details.dart';
 import 'package:aarthik_setu/pages/desktop/forms/personal_loans/basic_details.dart';
 import 'package:aarthik_setu/pages/desktop/forms/personal_loans/credit_info.dart';
 import 'package:aarthik_setu/pages/desktop/forms/personal_loans/itr_form.dart';
 import 'package:aarthik_setu/pages/desktop/forms/personal_loans/loan_form.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:aarthik_setu/pages/desktop/home/dashboard.dart';
 import 'package:go_router/go_router.dart';
 import 'package:flutter/material.dart';
@@ -16,12 +15,14 @@ import '../pages/desktop/forms/business_loans/loan_form.dart';
 import '../pages/desktop/forms/business_loans/stakeholders.dart';
 import '../pages/desktop/forms/personal_loans/contact_details.dart';
 import '../pages/desktop/forms/personal_loans/employment_details.dart';
+import '../pages/desktop/loading.dart';
 
 final GoRouter router = GoRouter(
   initialLocation: '/business-loan-journey/abc/gst-details',
   routes: [
+    GoRoute(path: '/', pageBuilder: (context, state) => const MaterialPage(child: LoadingPage())),
     GoRoute(
-      path: '/',
+      path: '/sign-in',
       pageBuilder: (context, state) => const MaterialPage(child: SignInPage()),
     ),
     GoRoute(
@@ -32,24 +33,12 @@ final GoRouter router = GoRouter(
       path: '/personal-loan-journey/:loanType',
       pageBuilder: (context, state) => MaterialPage(
         child: LoanFormJourneyTemplate(
-          formTitle: "Auto Loan",
-          formLinks: [
-            SizedBox(
-              width: 500,
-              height: 500,
-              child: FilledButton.tonal(
-                onPressed: () {},
-                style: ButtonStyle(
-                  padding: WidgetStateProperty.all(const EdgeInsets.all(20)),
-                  backgroundColor: WidgetStateProperty.all(Colors.white),
-                  shape: WidgetStateProperty.all(RoundedRectangleBorder(borderRadius: BorderRadius.circular(20))),
-                  shadowColor: WidgetStateProperty.all(Colors.grey.withOpacity(0.4)),
-                  elevation: WidgetStateProperty.all(10),
-                ),
-                child: Text("Basic Details", style: GoogleFonts.poppins(fontSize: 40)),
-              ),
-            ),
-          ],
+          formTitle: state.pathParameters['loanType'] == 'personal'
+              ? "Personal Loan"
+              : state.pathParameters['loanType'] == 'home'
+                  ? "Home Loan"
+                  : "Auto Loan",
+          loanType: state.pathParameters['loanType'],
         ),
       ),
       routes: [
@@ -85,10 +74,14 @@ final GoRouter router = GoRouter(
     ),
     GoRoute(
       path: '/business-loan-journey/:loanType',
-      pageBuilder: (context, state) => const MaterialPage(
+      pageBuilder: (context, state) => MaterialPage(
         child: LoanFormJourneyTemplate(
-          formTitle: "Business Loan",
-          formLinks: [],
+          formTitle: state.pathParameters['loanType'] == 'msme'
+              ? "MSME Loan"
+              : state.pathParameters['loanType'] == 'term'
+                  ? "Term Loan"
+                  : "Mudra Loan",
+          loanType: state.pathParameters['loanType'],
         ),
       ),
       routes: [

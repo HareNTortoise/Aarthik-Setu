@@ -1,12 +1,12 @@
 import '../../common/bank_details.dart';
-import 'components/manual_itr_business.dart';
-import 'components/key_person_details_mudra.dart';
+import '../business/forms/stakeholders_form.dart';
+import 'manual_itr_business.dart';
 
 class BusinessProfile{
   Map<(int, int), String> itr;
   Map<(int, int), ManualItrBusiness> manualItr;
   List<BankDetails> bankDetails;
-  KeyPersonDetails keyPersonDetails;
+  StakeholdersForm keyPersonDetails;
 
   BusinessProfile({
     required this.itr,
