@@ -14,7 +14,7 @@ import (
 	// "regexp"
 )
 
-func GetITRDetails(c *gin.Context) {
+func GetBankStatementDetails(c *gin.Context) {
 	file, err := c.FormFile("file")
 	if err != nil {
 		c.JSON(http.StatusBadRequest, gin.H{"error": "Failed to retrieve file"})
@@ -43,16 +43,34 @@ func GetITRDetails(c *gin.Context) {
 
 	model := client.GenerativeModel("gemini-1.5-flash")
 
-	promptTemplate := fmt.Sprintf(`Extract below metrics from the Income Tax Return in Json format (json):
-						- Revenue (Turnover)
-						- Profit before tax
-						- Profit after tax
-						- Total Current liabilities
-						- Total Cash and cash equivalents
-						- Total Long term borrowings
-						- Total Trade receivables
-						- Total Inventories
-						- Tax Paid/Deferred Tax`)
+	promptTemplate := fmt.Sprintf(`Analyze the given bank statement and rate it based on the following factors: 
+1. Average Balance 
+2. Deposit Frequency 
+3. Deposit Amount 
+4. Withdrawal Amount 
+5. Withdrawal Frequency 
+6. Closing Balance 
+
+For each factor, provide:
+- A rating from 1 to 5 (1 being the lowest and 5 being the highest)
+- A justification for the rating
+
+Return the result in JSON format where each justification is tied to the respective factor, like so:
+{
+  "Average Balance": {
+    "Rating": <rating>,
+    "Justification": "<justification>"
+  },
+  "Deposit Frequency": {
+    "Rating": <rating>,
+    "Justification": "<justification>"
+  },
+  "Deposit Amount": {
+    "Rating": <rating>,
+    "Justification": "<justification>"
+  },
+  ...
+}`)
 
 	extractionPrompt := []genai.Part{
 		genai.Blob{MIMEType: "application/pdf", Data: bytes},

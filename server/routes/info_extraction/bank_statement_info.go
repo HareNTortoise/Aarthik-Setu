@@ -7,6 +7,6 @@ import (
 )
 
 // RegisterITRRoutes registers the routes related to ITR forms
-func RegisterITRInfoExtractionRoutes(router *gin.Engine) {
-	router.POST("/gen_ai/get-itr-detils", itr_info.GetITRDetails)
+func RegisterBankStatementInfoExtractionRoutes(router *gin.Engine) {
+	router.POST("/gen_ai/get-bank-statement-details", itr_info.GetBankStatementDetails)
 }
