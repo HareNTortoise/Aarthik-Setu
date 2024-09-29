@@ -60,6 +60,7 @@ func main() {
 	gen_ai.GenAIFormRoutes(router)
 	info_extraction.RegisterITRInfoExtractionRoutes(router)
 	info_extraction.RegisterBankStatementInfoExtractionRoutes(router)
+	info_extraction.RegisterSuggestLenders(router)
 
 	// Register profile routes
 	profile_applications.RegisterProfileRoutes(router)
