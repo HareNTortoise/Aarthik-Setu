@@ -568,7 +568,7 @@
     "description": "Label for the financial year",
     "type": "text",
     "placeholders": {},
-    "tags": ["itr_form_upload_personal_loan"]
+    "tags": ["itr_form_upload_personal_loan", "itr_form_manual_personal_loan"]
   },
   "uploadButton": "Upload File",
   "@uploadButton": {
@@ -830,6 +830,7 @@
     "tags": ["itr_form_manual_personal_loan"]
   },
   "annualIncomeFY": "FY {year1}-{year2}*",
+
   "@annualIncomeHint": {
     "description": "Hint text for entering net annual income.",
     "type": "text",
