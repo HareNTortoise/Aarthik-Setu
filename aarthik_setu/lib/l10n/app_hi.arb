@@ -1116,8 +1116,108 @@
     "type": "text",
     "tags": ["basic_details_personal_loan"]
   },
-  "selectMaritalStatus": "वैवाहिक स्थिति चुनें"
+  "selectMaritalStatus": "वैवाहिक स्थिति चुनें",
+
+
+
+
+
+
+
+
+
+  "@employmentDetails": {
+    "description": "Label for the employment details page",
+    "type": "text",
+    "tags": ["employment_details_personal_loan"]
+  },
+  "employmentDetails": "रोज़गार विवरण",
+
+  "@employmentStatus": {
+    "description": "Label for employment status dropdown",
+    "type": "text",
+    "tags": ["employment_details_personal_loan"]
+  },
+  "employmentStatus": "रोज़गार की स्थिति*",
+
+  "@selectEmploymentStatus": {
+    "description": "Placeholder for selecting employment status",
+    "type": "text",
+    "tags": ["employment_details_personal_loan"]
+  },
+  "selectEmploymentStatus": "रोज़गार की स्थिति चुनें",
+
+  "@designation": {
+    "description": "Label for designation dropdown",
+    "type": "text",
+    "tags": ["employment_details_personal_loan"]
+  },
+  "designation": "पदनाम*",
+
+  "@selectDesignation": {
+    "description": "Placeholder for selecting designation",
+    "type": "text",
+    "tags": ["employment_details_personal_loan"]
+  },
+  "selectDesignation": "पदनाम चुनें",
+
+  "@employmentType": {
+    "description": "Label for employment type dropdown",
+    "type": "text",
+    "tags": ["employment_details_personal_loan"]
+  },
+  "employmentType": "रोज़गार का प्रकार*",
+
+  "@selectEmploymentType": {
+    "description": "Placeholder for selecting employment type",
+    "type": "text",
+    "tags": ["employment_details_personal_loan"]
+  },
+  "selectEmploymentType": "रोज़गार का प्रकार चुनें",
+
+  "@modeOfSalary": {
+    "description": "Label for mode of salary dropdown",
+    "type": "text",
+    "tags": ["employment_details_personal_loan"]
+  },
+  "modeOfSalary": "वेतन का मोड*",
+
+  "@selectModeOfSalary": {
+    "description": "Placeholder for selecting mode of salary",
+    "type": "text",
+    "tags": ["employment_details_personal_loan"]
+  },
+  "selectModeOfSalary": "वेतन का मोड चुनें",
+
+  "@grossMonthlyIncome": {
+    "description": "Label for gross monthly income input field",
+    "type": "text",
+    "tags": ["employment_details_personal_loan"]
+  },
+  "grossMonthlyIncome": "सकल मासिक आय*",
+
+  "@enterGrossMonthlyIncome": {
+    "description": "Placeholder for entering gross monthly income",
+    "type": "text",
+    "tags": ["employment_details_personal_loan"]
+  },
+  "enterGrossMonthlyIncome": "अपनी सकल मासिक आय दर्ज करें",
+
+  "@netMonthlyIncome": {
+    "description": "Label for net monthly income input field",
+    "type": "text",
+    "tags": ["employment_details_personal_loan"]
+  },
+  "netMonthlyIncome": "शुद्ध मासिक आय*",
+
+  "@enterNetMonthlyIncome": {
+    "description": "Placeholder for entering net monthly income",
+    "type": "text",
+    "tags": ["employment_details_personal_loan"]
+  },
+  "enterNetMonthlyIncome": "अपनी शुद्ध मासिक आय दर्ज करें"
 }
+
 
 
 

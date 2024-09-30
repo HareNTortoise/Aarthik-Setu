@@ -1137,7 +1137,110 @@
     "type": "text",
     "tags": ["basic_details_personal_loan"]
   },
-  "selectMaritalStatus": "ಮದುವೆ ಸ್ಥಿತಿಯನ್ನು ಆಯ್ಕೆ ಮಾಡಿ"
+  "selectMaritalStatus": "ಮದುವೆ ಸ್ಥಿತಿಯನ್ನು ಆಯ್ಕೆ ಮಾಡಿ",
+
+
+
+
+
+
+
+
+
+
+
+
+
+  "@employmentDetails": {
+    "description": "Label for the employment details page",
+    "type": "text",
+    "tags": ["employment_details_personal_loan"]
+  },
+  "employmentDetails": "ಉದ್ಯೋಗ ವಿವರಗಳು",
+
+  "@employmentStatus": {
+    "description": "Label for employment status dropdown",
+    "type": "text",
+    "tags": ["employment_details_personal_loan"]
+  },
+  "employmentStatus": "ಉದ್ಯೋಗ ಸ್ಥಿತಿ*",
+
+  "@selectEmploymentStatus": {
+    "description": "Placeholder for selecting employment status",
+    "type": "text",
+    "tags": ["employment_details_personal_loan"]
+  },
+  "selectEmploymentStatus": "ಉದ್ಯೋಗ ಸ್ಥಿತಿ ಆಯ್ಕೆ ಮಾಡಿರಿ",
+
+  "@designation": {
+    "description": "Label for designation dropdown",
+    "type": "text",
+    "tags": ["employment_details_personal_loan"]
+  },
+  "designation": "ನಾಮಾಂಕಿತ*",
+
+  "@selectDesignation": {
+    "description": "Placeholder for selecting designation",
+    "type": "text",
+    "tags": ["employment_details_personal_loan"]
+  },
+  "selectDesignation": "ನಾಮಾಂಕಿತ ಆಯ್ಕೆ ಮಾಡಿರಿ",
+
+  "@employmentType": {
+    "description": "Label for employment type dropdown",
+    "type": "text",
+    "tags": ["employment_details_personal_loan"]
+  },
+  "employmentType": "ಉದ್ಯೋಗ ಪ್ರಕಾರ*",
+
+  "@selectEmploymentType": {
+    "description": "Placeholder for selecting employment type",
+    "type": "text",
+    "tags": ["employment_details_personal_loan"]
+  },
+  "selectEmploymentType": "ಉದ್ಯೋಗ ಪ್ರಕಾರ ಆಯ್ಕೆ ಮಾಡಿರಿ",
+
+  "@modeOfSalary": {
+    "description": "Label for mode of salary dropdown",
+    "type": "text",
+    "tags": ["employment_details_personal_loan"]
+  },
+  "modeOfSalary": "Salary Modal*",
+
+  "@selectModeOfSalary": {
+    "description": "Placeholder for selecting mode of salary",
+    "type": "text",
+    "tags": ["employment_details_personal_loan"]
+  },
+  "selectModeOfSalary": "Salary Modal ಆಯ್ಕೆ ಮಾಡಿರಿ",
+
+  "@grossMonthlyIncome": {
+    "description": "Label for gross monthly income input field",
+    "type": "text",
+    "tags": ["employment_details_personal_loan"]
+  },
+  "grossMonthlyIncome": "ಒಟ್ಟೆ ಮಾಸಿಕ ಆದಾಯ*",
+
+  "@enterGrossMonthlyIncome": {
+    "description": "Placeholder for entering gross monthly income",
+    "type": "text",
+    "tags": ["employment_details_personal_loan"]
+  },
+  "enterGrossMonthlyIncome": "ನಿಮ್ಮ ಒಟ್ಟೆ ಮಾಸಿಕ ಆದಾಯವನ್ನು ನಮೂದಿಸಿ",
+
+  "@netMonthlyIncome": {
+    "description": "Label for net monthly income input field",
+    "type": "text",
+    "tags": ["employment_details_personal_loan"]
+  },
+  "netMonthlyIncome": "ನಿವ್ವಳ ಮಾಸಿಕ ಆದಾಯ*",
+
+  "@enterNetMonthlyIncome": {
+    "description": "Placeholder for entering net monthly income",
+    "type": "text",
+    "tags": ["employment_details_personal_loan"]
+  },
+  "enterNetMonthlyIncome": "ನಿಮ್ಮ ನಿವ್ವಳ ಮಾಸಿಕ ಆದಾಯವನ್ನು ನಮೂದಿಸಿ"
 }
 
 

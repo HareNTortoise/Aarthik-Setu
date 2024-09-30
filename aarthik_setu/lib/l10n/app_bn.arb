@@ -1123,8 +1123,112 @@
     "type": "text",
     "tags": ["basic_details_personal_loan"]
   },
-  "selectMaritalStatus": "বৈবাহিক অবস্থা নির্বাচন করুন"
+  "selectMaritalStatus": "বৈবাহিক অবস্থা নির্বাচন করুন",
+
+
+
+
+
+
+
+
+
+
+
+
+  "@employmentDetails": {
+    "description": "Label for the employment details page",
+    "type": "text",
+    "tags": ["employment_details_personal_loan"]
+  },
+  "employmentDetails": "কর্মসংস্থান বিস্তারিত",
+
+  "@employmentStatus": {
+    "description": "Label for employment status dropdown",
+    "type": "text",
+    "tags": ["employment_details_personal_loan"]
+  },
+  "employmentStatus": "কর্মসংস্থানের অবস্থা*",
+
+  "@selectEmploymentStatus": {
+    "description": "Placeholder for selecting employment status",
+    "type": "text",
+    "tags": ["employment_details_personal_loan"]
+  },
+  "selectEmploymentStatus": "কর্মসংস্থানের অবস্থা নির্বাচন করুন",
+
+  "@designation": {
+    "description": "Label for designation dropdown",
+    "type": "text",
+    "tags": ["employment_details_personal_loan"]
+  },
+  "designation": "পদবী*",
+
+  "@selectDesignation": {
+    "description": "Placeholder for selecting designation",
+    "type": "text",
+    "tags": ["employment_details_personal_loan"]
+  },
+  "selectDesignation": "পদবী নির্বাচন করুন",
+
+  "@employmentType": {
+    "description": "Label for employment type dropdown",
+    "type": "text",
+    "tags": ["employment_details_personal_loan"]
+  },
+  "employmentType": "কর্মসংস্থানের ধরন*",
+
+  "@selectEmploymentType": {
+    "description": "Placeholder for selecting employment type",
+    "type": "text",
+    "tags": ["employment_details_personal_loan"]
+  },
+  "selectEmploymentType": "কর্মসংস্থানের ধরন নির্বাচন করুন",
+
+  "@modeOfSalary": {
+    "description": "Label for mode of salary dropdown",
+    "type": "text",
+    "tags": ["employment_details_personal_loan"]
+  },
+  "modeOfSalary": "বেতন পদ্ধতি*",
+
+  "@selectModeOfSalary": {
+    "description": "Placeholder for selecting mode of salary",
+    "type": "text",
+    "tags": ["employment_details_personal_loan"]
+  },
+  "selectModeOfSalary": "বেতন পদ্ধতি নির্বাচন করুন",
+
+  "@grossMonthlyIncome": {
+    "description": "Label for gross monthly income input field",
+    "type": "text",
+    "tags": ["employment_details_personal_loan"]
+  },
+  "grossMonthlyIncome": "মোট মাসিক আয়*",
+
+  "@enterGrossMonthlyIncome": {
+    "description": "Placeholder for entering gross monthly income",
+    "type": "text",
+    "tags": ["employment_details_personal_loan"]
+  },
+  "enterGrossMonthlyIncome": "আপনার মোট মাসিক আয় লিখুন",
+
+  "@netMonthlyIncome": {
+    "description": "Label for net monthly income input field",
+    "type": "text",
+    "tags": ["employment_details_personal_loan"]
+  },
+  "netMonthlyIncome": "নিট মাসিক আয়*",
+
+  "@enterNetMonthlyIncome": {
+    "description": "Placeholder for entering net monthly income",
+    "type": "text",
+    "tags": ["employment_details_personal_loan"]
+  },
+  "enterNetMonthlyIncome": "আপনার নিট মাসিক আয় লিখুন"
+
 }
+
 
 
 
