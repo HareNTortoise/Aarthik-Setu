@@ -769,7 +769,7 @@
 			"name": "PROFILE_&_APPLICATION",
 			"item": [
 				{
-					"name": "CREATE_PROFILE",
+					"name": "BUSINESS_CREATE_PROFILE",
 					"request": {
 						"method": "POST",
 						"header": [],
@@ -789,12 +789,13 @@
 							]
 						},
 						"url": {
-							"raw": "localhost:8080/profile/abcdefghi",
+							"raw": "localhost:8080/business/profile/abcdefghi",
 							"host": [
 								"localhost"
 							],
 							"port": "8080",
 							"path": [
+								"business",
 								"profile",
 								"abcdefghi"
 							]
@@ -803,7 +804,42 @@
 					"response": []
 				},
 				{
-					"name": "PATCH_PROFILE",
+					"name": "PERSONAL_CREATE_PROFILE",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "p2",
+									"type": "text"
+								},
+								{
+									"key": "pan",
+									"value": "ABACGSGVBDG121",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:8080/personal/profile/abcdefghi",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"personal",
+								"profile",
+								"abcdefghi"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "BUSINESS_PATCH_PROFILE",
 					"request": {
 						"method": "PATCH",
 						"header": [],
@@ -823,12 +859,13 @@
 							]
 						},
 						"url": {
-							"raw": "localhost:8080/profile/abcdefghi/912a7a7c79896481",
+							"raw": "localhost:8080/business/profile/abcdefghi/912a7a7c79896481",
 							"host": [
 								"localhost"
 							],
 							"port": "8080",
 							"path": [
+								"business",
 								"profile",
 								"abcdefghi",
 								"912a7a7c79896481"
@@ -838,17 +875,54 @@
 					"response": []
 				},
 				{
-					"name": "GET_PROFILES",
+					"name": "PERSONAL_PATCH_PROFILE",
 					"request": {
-						"method": "GET",
+						"method": "PATCH",
 						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "Varun Vilvadrinath",
+									"type": "text"
+								},
+								{
+									"key": "pan",
+									"value": "ABACGSGVBDG12",
+									"type": "text"
+								}
+							]
+						},
 						"url": {
-							"raw": "localhost:8080/profile/abcdefghi",
+							"raw": "localhost:8080/personal/profile/abcdefghi/912a7a7c79896481",
 							"host": [
 								"localhost"
 							],
 							"port": "8080",
 							"path": [
+								"personal",
+								"profile",
+								"abcdefghi",
+								"912a7a7c79896481"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "BUSINESS_GET_PROFILES",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/business/profile/abcdefghi",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"business",
 								"profile",
 								"abcdefghi"
 							]
@@ -857,17 +931,58 @@
 					"response": []
 				},
 				{
-					"name": "DEL_PROFILE",
+					"name": "PERSONAL_GET_PROFILES",
 					"request": {
-						"method": "DELETE",
+						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "localhost:8080/profile/abcdefghi/85c4d33b50f37aba",
+							"raw": "localhost:8080/personalprofile/abcdefghi",
 							"host": [
 								"localhost"
 							],
 							"port": "8080",
 							"path": [
+								"personalprofile",
+								"abcdefghi"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "BUSINESS_DEL_PROFILE",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/business/profile/abcdefghi/85c4d33b50f37aba",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"business",
+								"profile",
+								"abcdefghi",
+								"85c4d33b50f37aba"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PERSONAL_DEL_PROFILE",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/personal/profile/abcdefghi/85c4d33b50f37aba",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"personal",
 								"profile",
 								"abcdefghi",
 								"85c4d33b50f37aba"
