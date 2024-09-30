@@ -610,84 +610,84 @@
   "@firstName": {
     "description": "Label for the first name input field.",
     "type": "text",
-    "tags": ["itr_form_manual_personal_loan"]
+    "tags": ["itr_form_manual_personal_loan", "basic_details_personal_loan"]
   },
   "firstName": "पहला नाम*",
 
   "@firstNameHint": {
     "description": "Hint text for the first name input field.",
     "type": "text",
-    "tags": ["itr_form_manual_personal_loan"]
+    "tags": ["itr_form_manual_personal_loan", "basic_details_personal_loan"]
   },
   "firstNameHint": "अपना पहला नाम दर्ज करें",
 
   "@middleName": {
     "description": "Label for the middle name input field.",
     "type": "text",
-    "tags": ["itr_form_manual_personal_loan"]
+    "tags": ["itr_form_manual_personal_loan", "basic_details_personal_loan"]
   },
   "middleName": "मध्यम नाम",
 
   "@middleNameHint": {
     "description": "Hint text for the middle name input field.",
     "type": "text",
-    "tags": ["itr_form_manual_personal_loan"]
+    "tags": ["itr_form_manual_personal_loan", "basic_details_personal_loan"]
   },
   "middleNameHint": "अपना मध्य नाम दर्ज करें",
 
   "@lastName": {
     "description": "Label for the last name input field.",
     "type": "text",
-    "tags": ["itr_form_manual_personal_loan"]
+    "tags": ["itr_form_manual_personal_loan", "basic_details_personal_loan"]
   },
   "lastName": "अंतिम नाम*",
 
   "@lastNameHint": {
     "description": "Hint text for the last name input field.",
     "type": "text",
-    "tags": ["itr_form_manual_personal_loan"]
+    "tags": ["itr_form_manual_personal_loan", "basic_details_personal_loan"]
   },
   "lastNameHint": "अपना अंतिम नाम दर्ज करें",
 
   "@dateOfBirth": {
     "description": "Label for the date of birth input.",
     "type": "text",
-    "tags": ["itr_form_manual_personal_loan"]
+    "tags": ["itr_form_manual_personal_loan", "basic_details_personal_loan"]
   },
   "dateOfBirth": "जन्म तिथि*",
 
   "@dateOfBirthHint": {
     "description": "Placeholder text for the date of birth button.",
     "type": "text",
-    "tags": ["itr_form_manual_personal_loan"]
+    "tags": ["itr_form_manual_personal_loan", "basic_details_personal_loan"]
   },
   "dateOfBirthHint": "जन्म तिथि",
 
   "@panNumber": {
     "description": "Label for the PAN number input field.",
     "type": "text",
-    "tags": ["itr_form_manual_personal_loan"]
+    "tags": ["itr_form_manual_personal_loan", "basic_details_personal_loan"]
   },
   "panNumber": "पैन नंबर*",
 
   "@panNumberHint": {
     "description": "Hint text for the PAN number input field.",
     "type": "text",
-    "tags": ["itr_form_manual_personal_loan"]
+    "tags": ["itr_form_manual_personal_loan", "basic_details_personal_loan"]
   },
   "panNumberHint": "अपना पैन नंबर दर्ज करें",
 
   "@mobileNumber": {
     "description": "Label for the mobile number input field.",
     "type": "text",
-    "tags": ["itr_form_manual_personal_loan"]
+    "tags": ["itr_form_manual_personal_loan", "basic_details_personal_loan"]
   },
   "mobileNumber": "मोबाइल नंबर*",
 
   "@mobileNumberHint": {
     "description": "Hint text for the mobile number input field.",
     "type": "text",
-    "tags": ["itr_form_manual_personal_loan"]
+    "tags": ["itr_form_manual_personal_loan", "basic_details_personal_loan"]
   },
   "mobileNumberHint": "अपना मोबाइल नंबर दर्ज करें",
 
@@ -963,9 +963,160 @@
     "description": "Text for dragging and dropping a file.",
     "type": "text",
     "tags": ["bank_details_personal_loan"]
-  }
+  },
 
 
+
+
+
+
+
+  "@basicDetails": {
+    "description": "Title for the basic details section",
+    "type": "text",
+    "tags": ["basic_details_personal_loan"]
+  },
+  "basicDetails": "बुनियादी विवरण",
+
+  "@salutation": {
+    "description": "Label for salutation dropdown",
+    "type": "text",
+    "tags": ["basic_details_personal_loan"]
+  },
+  "salutation": "अभिवादन*",
+
+  "@selectSalutation": {
+    "description": "Placeholder for selecting salutation",
+    "type": "text",
+    "tags": ["basic_details_personal_loan"]
+  },
+  "selectSalutation": "अभिवादन चुनें",
+
+  "@gender": {
+    "description": "Label for gender dropdown",
+    "type": "text",
+    "tags": ["basic_details_personal_loan"]
+  },
+  "gender": "लिंग*",
+
+  "@selectGender": {
+    "description": "Placeholder for selecting gender",
+    "type": "text",
+    "tags": ["basic_details_personal_loan"]
+  },
+  "selectGender": "लिंग चुनें",
+
+  "@category": {
+    "description": "Label for category dropdown",
+    "type": "text",
+    "tags": ["basic_details_personal_loan"]
+  },
+  "category": "श्रेणी*",
+
+  "@selectCategory": {
+    "description": "Placeholder for selecting category",
+    "type": "text",
+    "tags": ["basic_details_personal_loan"]
+  },
+  "selectCategory": "श्रेणी चुनें",
+
+  "@emailPersonal": {
+    "description": "Label for personal email input field",
+    "type": "text",
+    "tags": ["basic_details_personal_loan"]
+  },
+  "emailPersonal": "ईमेल (व्यक्तिगत)*",
+
+  "@enterEmailPersonal": {
+    "description": "Placeholder for entering personal email",
+    "type": "text",
+    "tags": ["basic_details_personal_loan"]
+  },
+  "enterEmailPersonal": "अपना ईमेल दर्ज करें",
+
+  "@fatherName": {
+    "description": "Label for father's name input field",
+    "type": "text",
+    "tags": ["basic_details_personal_loan"]
+  },
+  "fatherName": "पिता का नाम",
+
+  "@enterFatherName": {
+    "description": "Placeholder for entering father's name",
+    "type": "text",
+    "tags": ["basic_details_personal_loan"]
+  },
+  "enterFatherName": "अपने पिता का नाम दर्ज करें",
+
+  "@educationQualification": {
+    "description": "Label for education qualification dropdown",
+    "type": "text",
+    "tags": ["basic_details_personal_loan"]
+  },
+  "educationQualification": "शैक्षिक योग्यता*",
+
+  "@selectEducationQualification": {
+    "description": "Placeholder for selecting education qualification",
+    "type": "text",
+    "tags": ["basic_details_personal_loan"]
+  },
+  "selectEducationQualification": "शैक्षिक योग्यता चुनें",
+
+  "@netWorth": {
+    "description": "Label for net worth input field",
+    "type": "text",
+    "tags": ["basic_details_personal_loan"]
+  },
+  "netWorth": "कुल संपत्ति*",
+
+  "@enterNetWorth": {
+    "description": "Placeholder for entering net worth",
+    "type": "text",
+    "tags": ["basic_details_personal_loan"]
+  },
+  "enterNetWorth": "अपनी कुल संपत्ति दर्ज करें",
+
+  "@nationality": {
+    "description": "Label for nationality dropdown",
+    "type": "text",
+    "tags": ["basic_details_personal_loan"]
+  },
+  "nationality": "राष्ट्रीयता*",
+
+  "@selectNationality": {
+    "description": "Placeholder for selecting nationality",
+    "type": "text",
+    "tags": ["basic_details_personal_loan"]
+  },
+  "selectNationality": "राष्ट्रीयता चुनें",
+
+  "@dependents": {
+    "description": "Label for dependents dropdown",
+    "type": "text",
+    "tags": ["basic_details_personal_loan"]
+  },
+  "dependents": "निर्भरता*",
+
+  "@selectDependents": {
+    "description": "Placeholder for selecting dependents",
+    "type": "text",
+    "tags": ["basic_details_personal_loan"]
+  },
+  "selectDependents": "निर्भरता चुनें",
+
+  "@maritalStatus": {
+    "description": "Label for marital status dropdown",
+    "type": "text",
+    "tags": ["basic_details_personal_loan"]
+  },
+  "maritalStatus": "वैवाहिक स्थिति*",
+
+  "@selectMaritalStatus": {
+    "description": "Placeholder for selecting marital status",
+    "type": "text",
+    "tags": ["basic_details_personal_loan"]
+  },
+  "selectMaritalStatus": "वैवाहिक स्थिति चुनें"
 }
 
 

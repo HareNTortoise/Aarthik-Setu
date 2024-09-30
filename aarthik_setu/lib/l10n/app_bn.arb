@@ -625,84 +625,84 @@
   "@firstName": {
     "description": "Label for the first name input field.",
     "type": "text",
-    "tags": ["itr_form_manual_personal_loan"]
+    "tags": ["itr_form_manual_personal_loan", "basic_details_personal_loan"]
   },
   "firstName": "প্রথম নাম*",
 
   "@firstNameHint": {
     "description": "Hint text for the first name input field.",
     "type": "text",
-    "tags": ["itr_form_manual_personal_loan"]
+    "tags": ["itr_form_manual_personal_loan", "basic_details_personal_loan"]
   },
   "firstNameHint": "আপনার প্রথম নাম লিখুন",
 
   "@middleName": {
     "description": "Label for the middle name input field.",
     "type": "text",
-    "tags": ["itr_form_manual_personal_loan"]
+    "tags": ["itr_form_manual_personal_loan", "basic_details_personal_loan"]
   },
   "middleName": "মাঝের নাম",
 
   "@middleNameHint": {
     "description": "Hint text for the middle name input field.",
     "type": "text",
-    "tags": ["itr_form_manual_personal_loan"]
+    "tags": ["itr_form_manual_personal_loan", "basic_details_personal_loan"]
   },
   "middleNameHint": "আপনার মাঝের নাম লিখুন",
 
   "@lastName": {
     "description": "Label for the last name input field.",
     "type": "text",
-    "tags": ["itr_form_manual_personal_loan"]
+    "tags": ["itr_form_manual_personal_loan", "basic_details_personal_loan"]
   },
   "lastName": "শেষ নাম*",
 
   "@lastNameHint": {
     "description": "Hint text for the last name input field.",
     "type": "text",
-    "tags": ["itr_form_manual_personal_loan"]
+    "tags": ["itr_form_manual_personal_loan", "basic_details_personal_loan"]
   },
   "lastNameHint": "আপনার শেষ নাম লিখুন",
 
   "@dateOfBirth": {
     "description": "Label for the date of birth input.",
     "type": "text",
-    "tags": ["itr_form_manual_personal_loan"]
+    "tags": ["itr_form_manual_personal_loan", "basic_details_personal_loan"]
   },
   "dateOfBirth": "জন্ম তারিখ*",
 
   "@dateOfBirthHint": {
     "description": "Placeholder text for the date of birth button.",
     "type": "text",
-    "tags": ["itr_form_manual_personal_loan"]
+    "tags": ["itr_form_manual_personal_loan", "basic_details_personal_loan"]
   },
   "dateOfBirthHint": "জন্ম তারিখ",
 
   "@panNumber": {
     "description": "Label for the PAN number input field.",
     "type": "text",
-    "tags": ["itr_form_manual_personal_loan"]
+    "tags": ["itr_form_manual_personal_loan", "basic_details_personal_loan"]
   },
   "panNumber": "প্যান নম্বর*",
 
   "@panNumberHint": {
     "description": "Hint text for the PAN number input field.",
     "type": "text",
-    "tags": ["itr_form_manual_personal_loan"]
+    "tags": ["itr_form_manual_personal_loan", "basic_details_personal_loan"]
   },
   "panNumberHint": "আপনার প্যান নম্বর লিখুন",
 
   "@mobileNumber": {
     "description": "Label for the mobile number input field.",
     "type": "text",
-    "tags": ["itr_form_manual_personal_loan"]
+    "tags": ["itr_form_manual_personal_loan", "basic_details_personal_loan"]
   },
   "mobileNumber": "মোবাইল নম্বর*",
 
   "@mobileNumberHint": {
     "description": "Hint text for the mobile number input field.",
     "type": "text",
-    "tags": ["itr_form_manual_personal_loan"]
+    "tags": ["itr_form_manual_personal_loan", "basic_details_personal_loan"]
   },
   "mobileNumberHint": "আপনার মোবাইল নম্বর লিখুন",
 
@@ -986,9 +986,146 @@
     "description": "Text for dragging and dropping a file.",
     "type": "text",
     "tags": ["bank_details_personal_loan"]
-  }
+  },
 
+
+
+
+
+
+
+
+
+
+
+
+  "@gender": {
+    "description": "Label for gender dropdown",
+    "type": "text",
+    "tags": ["basic_details_personal_loan"]
+  },
+  "gender": "লিঙ্গ*",
+
+  "@selectGender": {
+    "description": "Placeholder for selecting gender",
+    "type": "text",
+    "tags": ["basic_details_personal_loan"]
+  },
+  "selectGender": "লিঙ্গ নির্বাচন করুন",
+
+  "@category": {
+    "description": "Label for category dropdown",
+    "type": "text",
+    "tags": ["basic_details_personal_loan"]
+  },
+  "category": "শ্রেণী*",
+
+  "@selectCategory": {
+    "description": "Placeholder for selecting category",
+    "type": "text",
+    "tags": ["basic_details_personal_loan"]
+  },
+  "selectCategory": "শ্রেণী নির্বাচন করুন",
+
+  "@emailPersonal": {
+    "description": "Label for personal email input field",
+    "type": "text",
+    "tags": ["basic_details_personal_loan"]
+  },
+  "emailPersonal": "ইমেইল (ব্যক্তিগত)*",
+
+  "@enterEmailPersonal": {
+    "description": "Placeholder for entering personal email",
+    "type": "text",
+    "tags": ["basic_details_personal_loan"]
+  },
+  "enterEmailPersonal": "ব্যক্তিগত ইমেইল লিখুন",
+
+  "@fatherName": {
+    "description": "Label for father's name input field",
+    "type": "text",
+    "tags": ["basic_details_personal_loan"]
+  },
+  "fatherName": "বাবার নাম",
+
+  "@enterFatherName": {
+    "description": "Placeholder for entering father's name",
+    "type": "text",
+    "tags": ["basic_details_personal_loan"]
+  },
+  "enterFatherName": "বাবার নাম লিখুন",
+
+  "@educationQualification": {
+    "description": "Label for education qualification dropdown",
+    "type": "text",
+    "tags": ["basic_details_personal_loan"]
+  },
+  "educationQualification": "শিক্ষাগত যোগ্যতা*",
+
+  "@selectEducationQualification": {
+    "description": "Placeholder for selecting education qualification",
+    "type": "text",
+    "tags": ["basic_details_personal_loan"]
+  },
+  "selectEducationQualification": "শিক্ষাগত যোগ্যতা নির্বাচন করুন",
+
+  "@netWorth": {
+    "description": "Label for net worth input field",
+    "type": "text",
+    "tags": ["basic_details_personal_loan"]
+  },
+  "netWorth": "নেট ওার্থ*",
+
+  "@enterNetWorth": {
+    "description": "Placeholder for entering net worth",
+    "type": "text",
+    "tags": ["basic_details_personal_loan"]
+  },
+  "enterNetWorth": "নেট ওার্থ লিখুন",
+
+  "@nationality": {
+    "description": "Label for nationality dropdown",
+    "type": "text",
+    "tags": ["basic_details_personal_loan"]
+  },
+  "nationality": "জাতীয়তা*",
+
+  "@selectNationality": {
+    "description": "Placeholder for selecting nationality",
+    "type": "text",
+    "tags": ["basic_details_personal_loan"]
+  },
+  "selectNationality": "জাতীয়তা নির্বাচন করুন",
+
+  "@dependents": {
+    "description": "Label for dependents dropdown",
+    "type": "text",
+    "tags": ["basic_details_personal_loan"]
+  },
+  "dependents": "নির্ভরশীল*",
+
+  "@selectDependents": {
+    "description": "Placeholder for selecting dependents",
+    "type": "text",
+    "tags": ["basic_details_personal_loan"]
+  },
+  "selectDependents": "নির্ভরশীল নির্বাচন করুন",
+
+  "@maritalStatus": {
+    "description": "Label for marital status dropdown",
+    "type": "text",
+    "tags": ["basic_details_personal_loan"]
+  },
+  "maritalStatus": "বৈবাহিক অবস্থা*",
+
+  "@selectMaritalStatus": {
+    "description": "Placeholder for selecting marital status",
+    "type": "text",
+    "tags": ["basic_details_personal_loan"]
+  },
+  "selectMaritalStatus": "বৈবাহিক অবস্থা নির্বাচন করুন"
 }
+
 
 
 

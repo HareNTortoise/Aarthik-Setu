@@ -629,84 +629,84 @@
   "@firstName": {
     "description": "Label for the first name input field.",
     "type": "text",
-    "tags": ["itr_form_manual_personal_loan"]
+    "tags": ["itr_form_manual_personal_loan", "basic_details_personal_loan"]
   },
   "firstName": "முதல் பெயர்*",
 
   "@firstNameHint": {
     "description": "Hint text for the first name input field.",
     "type": "text",
-    "tags": ["itr_form_manual_personal_loan"]
+    "tags": ["itr_form_manual_personal_loan", "basic_details_personal_loan"]
   },
   "firstNameHint": "உங்கள் முதல் பெயரை உள்ளிடவும்",
 
   "@middleName": {
     "description": "Label for the middle name input field.",
     "type": "text",
-    "tags": ["itr_form_manual_personal_loan"]
+    "tags": ["itr_form_manual_personal_loan", "basic_details_personal_loan"]
   },
   "middleName": "மதிய பெயர்",
 
   "@middleNameHint": {
     "description": "Hint text for the middle name input field.",
     "type": "text",
-    "tags": ["itr_form_manual_personal_loan"]
+    "tags": ["itr_form_manual_personal_loan", "basic_details_personal_loan"]
   },
   "middleNameHint": "உங்கள் மதிய பெயரை உள்ளிடவும்",
 
   "@lastName": {
     "description": "Label for the last name input field.",
     "type": "text",
-    "tags": ["itr_form_manual_personal_loan"]
+    "tags": ["itr_form_manual_personal_loan", "basic_details_personal_loan"]
   },
   "lastName": "கடைசி பெயர்*",
 
   "@lastNameHint": {
     "description": "Hint text for the last name input field.",
     "type": "text",
-    "tags": ["itr_form_manual_personal_loan"]
+    "tags": ["itr_form_manual_personal_loan", "basic_details_personal_loan"]
   },
   "lastNameHint": "உங்கள் கடைசி பெயரை உள்ளிடவும்",
 
   "@dateOfBirth": {
     "description": "Label for the date of birth input.",
     "type": "text",
-    "tags": ["itr_form_manual_personal_loan"]
+    "tags": ["itr_form_manual_personal_loan", "basic_details_personal_loan"]
   },
   "dateOfBirth": "பிறந்த தேதி*",
 
   "@dateOfBirthHint": {
     "description": "Placeholder text for the date of birth button.",
     "type": "text",
-    "tags": ["itr_form_manual_personal_loan"]
+    "tags": ["itr_form_manual_personal_loan", "basic_details_personal_loan"]
   },
   "dateOfBirthHint": "பிறந்த தேதி",
 
   "@panNumber": {
     "description": "Label for the PAN number input field.",
     "type": "text",
-    "tags": ["itr_form_manual_personal_loan"]
+    "tags": ["itr_form_manual_personal_loan", "basic_details_personal_loan"]
   },
   "panNumber": "PAN எண்*",
 
   "@panNumberHint": {
     "description": "Hint text for the PAN number input field.",
     "type": "text",
-    "tags": ["itr_form_manual_personal_loan"]
+    "tags": ["itr_form_manual_personal_loan", "basic_details_personal_loan"]
   },
   "panNumberHint": "உங்கள் PAN எண்ணை உள்ளிடவும்",
 
   "@mobileNumber": {
     "description": "Label for the mobile number input field.",
     "type": "text",
-    "tags": ["itr_form_manual_personal_loan"]
+    "tags": ["itr_form_manual_personal_loan", "basic_details_personal_loan"]
   },
   "mobileNumber": "கைபேசி எண்*",
 
   "@mobileNumberHint": {
     "description": "Hint text for the mobile number input field.",
     "type": "text",
-    "tags": ["itr_form_manual_personal_loan"]
+    "tags": ["itr_form_manual_personal_loan", "basic_details_personal_loan"]
   },
   "mobileNumberHint": "உங்கள் கைபேசி எண்ணை உள்ளிடவும்",
 
@@ -976,9 +976,146 @@
     "description": "Text for dragging and dropping a file.",
     "type": "text",
     "tags": ["bank_details_personal_loan"]
-  }
+  },
 
+
+
+
+
+
+
+
+
+
+
+
+  "@gender": {
+    "description": "Label for gender dropdown",
+    "type": "text",
+    "tags": ["basic_details_personal_loan"]
+  },
+  "gender": "செல்வாக்கு*",
+
+  "@selectGender": {
+    "description": "Placeholder for selecting gender",
+    "type": "text",
+    "tags": ["basic_details_personal_loan"]
+  },
+  "selectGender": "செல்வாக்கை தேர்ந்தெடுக்கவும்",
+
+  "@category": {
+    "description": "Label for category dropdown",
+    "type": "text",
+    "tags": ["basic_details_personal_loan"]
+  },
+  "category": "வகை*",
+
+  "@selectCategory": {
+    "description": "Placeholder for selecting category",
+    "type": "text",
+    "tags": ["basic_details_personal_loan"]
+  },
+  "selectCategory": "வகையை தேர்ந்தெடுக்கவும்",
+
+  "@emailPersonal": {
+    "description": "Label for personal email input field",
+    "type": "text",
+    "tags": ["basic_details_personal_loan"]
+  },
+  "emailPersonal": "மின்னஞ்சல் (தனிப்பட்ட)*",
+
+  "@enterEmailPersonal": {
+    "description": "Placeholder for entering personal email",
+    "type": "text",
+    "tags": ["basic_details_personal_loan"]
+  },
+  "enterEmailPersonal": "தனிப்பட்ட மின்னஞ்சலை உள்ளிடவும்",
+
+  "@fatherName": {
+    "description": "Label for father's name input field",
+    "type": "text",
+    "tags": ["basic_details_personal_loan"]
+  },
+  "fatherName": "அப்பாவின் பெயர்",
+
+  "@enterFatherName": {
+    "description": "Placeholder for entering father's name",
+    "type": "text",
+    "tags": ["basic_details_personal_loan"]
+  },
+  "enterFatherName": "அப்பாவின் பெயரை உள்ளிடவும்",
+
+  "@educationQualification": {
+    "description": "Label for education qualification dropdown",
+    "type": "text",
+    "tags": ["basic_details_personal_loan"]
+  },
+  "educationQualification": "கல்வி தகுதி*",
+
+  "@selectEducationQualification": {
+    "description": "Placeholder for selecting education qualification",
+    "type": "text",
+    "tags": ["basic_details_personal_loan"]
+  },
+  "selectEducationQualification": "கல்வி தகுதியை தேர்ந்தெடுக்கவும்",
+
+  "@netWorth": {
+    "description": "Label for net worth input field",
+    "type": "text",
+    "tags": ["basic_details_personal_loan"]
+  },
+  "netWorth": "நிகர செல்வம்*",
+
+  "@enterNetWorth": {
+    "description": "Placeholder for entering net worth",
+    "type": "text",
+    "tags": ["basic_details_personal_loan"]
+  },
+  "enterNetWorth": "நிகர செல்வத்தை உள்ளிடவும்",
+
+  "@nationality": {
+    "description": "Label for nationality dropdown",
+    "type": "text",
+    "tags": ["basic_details_personal_loan"]
+  },
+  "nationality": "உள்நாடு*",
+
+  "@selectNationality": {
+    "description": "Placeholder for selecting nationality",
+    "type": "text",
+    "tags": ["basic_details_personal_loan"]
+  },
+  "selectNationality": "உள்நாட்டை தேர்ந்தெடுக்கவும்",
+
+  "@dependents": {
+    "description": "Label for dependents dropdown",
+    "type": "text",
+    "tags": ["basic_details_personal_loan"]
+  },
+  "dependents": "சார்ந்தோர்*",
+
+  "@selectDependents": {
+    "description": "Placeholder for selecting dependents",
+    "type": "text",
+    "tags": ["basic_details_personal_loan"]
+  },
+  "selectDependents": "சார்ந்தோரை தேர்ந்தெடுக்கவும்",
+
+  "@maritalStatus": {
+    "description": "Label for marital status dropdown",
+    "type": "text",
+    "tags": ["basic_details_personal_loan"]
+  },
+  "maritalStatus": "திருமணம் நிலை*",
+
+  "@selectMaritalStatus": {
+    "description": "Placeholder for selecting marital status",
+    "type": "text",
+    "tags": ["basic_details_personal_loan"]
+  },
+  "selectMaritalStatus": "திருமணம் நிலையை தேர்ந்தெடுக்கவும்"
 }
+
 
 
 

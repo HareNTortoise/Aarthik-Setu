@@ -616,78 +616,79 @@
   "@firstName": {
     "description": "Label for the first name input field.",
     "type": "text",
-    "tags": ["itr_form_manual_personal_loan"]
+    "tags": ["itr_form_manual_personal_loan", "basic_details_personal_loan"]
   },
   "firstName": "First Name*",
+
   "@firstNameHint": {
     "description": "Hint text for the first name input field.",
     "type": "text",
-    "tags": ["itr_form_manual_personal_loan"]
+    "tags": ["itr_form_manual_personal_loan", "basic_details_personal_loan"]
   },
   "firstNameHint": "Enter your first name",
 
   "@middleName": {
     "description": "Label for the middle name input field.",
     "type": "text",
-    "tags": ["itr_form_manual_personal_loan"]
+    "tags": ["itr_form_manual_personal_loan", "basic_details_personal_loan"]
   },
   "middleName": "Middle Name",
   "@middleNameHint": {
     "description": "Hint text for the middle name input field.",
     "type": "text",
-    "tags": ["itr_form_manual_personal_loan"]
+    "tags": ["itr_form_manual_personal_loan", "basic_details_personal_loan"]
   },
   "middleNameHint": "Enter your middle name",
 
   "@lastName": {
     "description": "Label for the last name input field.",
     "type": "text",
-    "tags": ["itr_form_manual_personal_loan"]
+    "tags": ["itr_form_manual_personal_loan", "basic_details_personal_loan"]
   },
   "lastName": "Last Name*",
   "@lastNameHint": {
     "description": "Hint text for the last name input field.",
     "type": "text",
-    "tags": ["itr_form_manual_personal_loan"]
+    "tags": ["itr_form_manual_personal_loan", "basic_details_personal_loan"]
   },
   "lastNameHint": "Enter your last name",
 
   "@dateOfBirth": {
     "description": "Label for the date of birth input.",
     "type": "text",
-    "tags": ["itr_form_manual_personal_loan"]
+    "tags": ["itr_form_manual_personal_loan", "basic_details_personal_loan"]
   },
   "dateOfBirth": "Date of Birth*",
   "@dateOfBirthHint": {
     "description": "Placeholder text for the date of birth button.",
     "type": "text",
-    "tags": ["itr_form_manual_personal_loan"]
+    "tags": ["itr_form_manual_personal_loan", "basic_details_personal_loan"]
   },
   "dateOfBirthHint": "Date of Birth",
 
   "@panNumber": {
     "description": "Label for the PAN number input field.",
     "type": "text",
-    "tags": ["itr_form_manual_personal_loan"]
+    "tags": ["itr_form_manual_personal_loan", "basic_details_personal_loan"]
   },
   "panNumber": "PAN Number*",
   "@panNumberHint": {
     "description": "Hint text for the PAN number input field.",
     "type": "text",
-    "tags": ["itr_form_manual_personal_loan"]
+    "tags": ["itr_form_manual_personal_loan", "basic_details_personal_loan"]
   },
   "panNumberHint": "Enter your PAN number",
 
   "@mobileNumber": {
     "description": "Label for the mobile number input field.",
     "type": "text",
-    "tags": ["itr_form_manual_personal_loan"]
+    "tags": ["itr_form_manual_personal_loan", "basic_details_personal_loan"]
   },
   "mobileNumber": "Mobile Number*",
   "@mobileNumberHint": {
     "description": "Hint text for the mobile number input field.",
     "type": "text",
-    "tags": ["itr_form_manual_personal_loan"]
+    "tags": ["itr_form_manual_personal_loan", "basic_details_personal_loan"]
   },
   "mobileNumberHint": "Enter your mobile number",
 
@@ -949,10 +950,171 @@
         "description": "Text for dragging and dropping a file.",
         "type": "text",
         "tags": ["bank_details_personal_loan"]
-  }
+  },
 
 
+
+
+
+
+
+
+
+  "@basicDetails": {
+    "description": "Title for the basic details section",
+    "type": "text",
+    "tags": ["basic_details_personal_loan"]
+  },
+  "basicDetails": "Basic Details",
+
+  "@salutation": {
+    "description": "Label for salutation dropdown",
+    "type": "text",
+    "tags": ["basic_details_personal_loan"]
+  },
+  "salutation": "Salutation*",
+
+  "@selectSalutation": {
+    "description": "Placeholder for selecting salutation",
+    "type": "text",
+    "tags": ["basic_details_personal_loan"]
+  },
+  "selectSalutation": "Select Salutation",
+
+  "@selectDateOfBirth": {
+    "description": "Placeholder for selecting date of birth",
+    "type": "text",
+    "tags": ["basic_details_personal_loan"]
+  },
+  "selectDateOfBirth": "Select Date of Birth",
+
+  "@gender": {
+    "description": "Label for gender dropdown",
+    "type": "text",
+    "tags": ["basic_details_personal_loan"]
+  },
+  "gender": "Gender*",
+
+  "@selectGender": {
+    "description": "Placeholder for selecting gender",
+    "type": "text",
+    "tags": ["basic_details_personal_loan"]
+  },
+  "selectGender": "Select Gender",
+
+  "@category": {
+    "description": "Label for category dropdown",
+    "type": "text",
+    "tags": ["basic_details_personal_loan"]
+  },
+  "category": "Category*",
+
+  "@selectCategory": {
+    "description": "Placeholder for selecting category",
+    "type": "text",
+    "tags": ["basic_details_personal_loan"]
+  },
+  "selectCategory": "Select Category",
+
+  "@emailPersonal": {
+    "description": "Label for personal email input field",
+    "type": "text",
+    "tags": ["basic_details_personal_loan"]
+  },
+  "emailPersonal": "Email (Personal)*",
+
+  "@enterEmailPersonal": {
+    "description": "Placeholder for entering personal email",
+    "type": "text",
+    "tags": ["basic_details_personal_loan"]
+  },
+  "enterEmailPersonal": "Enter your email",
+
+  "@fatherName": {
+    "description": "Label for father's name input field",
+    "type": "text",
+    "tags": ["basic_details_personal_loan"]
+  },
+  "fatherName": "Father's Name",
+
+  "@enterFatherName": {
+    "description": "Placeholder for entering father's name",
+    "type": "text",
+    "tags": ["basic_details_personal_loan"]
+  },
+  "enterFatherName": "Enter your father's name",
+
+  "@educationQualification": {
+    "description": "Label for education qualification dropdown",
+    "type": "text",
+    "tags": ["basic_details_personal_loan"]
+  },
+  "educationQualification": "Education Qualification*",
+
+  "@selectEducationQualification": {
+    "description": "Placeholder for selecting education qualification",
+    "type": "text",
+    "tags": ["basic_details_personal_loan"]
+  },
+  "selectEducationQualification": "Select Education Qualification",
+
+  "@netWorth": {
+    "description": "Label for net worth input field",
+    "type": "text",
+    "tags": ["basic_details_personal_loan"]
+  },
+  "netWorth": "Net Worth*",
+
+  "@enterNetWorth": {
+    "description": "Placeholder for entering net worth",
+    "type": "text",
+    "tags": ["basic_details_personal_loan"]
+  },
+  "enterNetWorth": "Enter your net worth",
+
+  "@nationality": {
+    "description": "Label for nationality dropdown",
+    "type": "text",
+    "tags": ["basic_details_personal_loan"]
+  },
+  "nationality": "Nationality*",
+
+  "@selectNationality": {
+    "description": "Placeholder for selecting nationality",
+    "type": "text",
+    "tags": ["basic_details_personal_loan"]
+  },
+  "selectNationality": "Select Nationality",
+
+  "@dependents": {
+    "description": "Label for dependents dropdown",
+    "type": "text",
+    "tags": ["basic_details_personal_loan"]
+  },
+  "dependents": "Dependents*",
+
+  "@selectDependents": {
+    "description": "Placeholder for selecting dependents",
+    "type": "text",
+    "tags": ["basic_details_personal_loan"]
+  },
+  "selectDependents": "Select Dependents",
+
+  "@maritalStatus": {
+    "description": "Label for marital status dropdown",
+    "type": "text",
+    "tags": ["basic_details_personal_loan"]
+  },
+  "maritalStatus": "Marital Status*",
+
+  "@selectMaritalStatus": {
+    "description": "Placeholder for selecting marital status",
+    "type": "text",
+    "tags": ["basic_details_personal_loan"]
+  },
+  "selectMaritalStatus": "Select Marital Status"
 }
+
 
 
 

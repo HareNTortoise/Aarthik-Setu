@@ -626,84 +626,84 @@
   "@firstName": {
     "description": "Label for the first name input field.",
     "type": "text",
-    "tags": ["itr_form_manual_personal_loan"]
+    "tags": ["itr_form_manual_personal_loan", "basic_details_personal_loan"]
   },
   "firstName": "മുന്നത്തെ പേര്*",
 
   "@firstNameHint": {
     "description": "Hint text for the first name input field.",
     "type": "text",
-    "tags": ["itr_form_manual_personal_loan"]
+    "tags": ["itr_form_manual_personal_loan", "basic_details_personal_loan"]
   },
   "firstNameHint": "നിങ്ങളുടെ മുന്‍പത്തെ പേര് രേഖപ്പെടുത്തുക",
 
   "@middleName": {
     "description": "Label for the middle name input field.",
     "type": "text",
-    "tags": ["itr_form_manual_personal_loan"]
+    "tags": ["itr_form_manual_personal_loan", "basic_details_personal_loan"]
   },
   "middleName": "നടവിലേക്ക് പേര്",
 
   "@middleNameHint": {
     "description": "Hint text for the middle name input field.",
     "type": "text",
-    "tags": ["itr_form_manual_personal_loan"]
+    "tags": ["itr_form_manual_personal_loan", "basic_details_personal_loan"]
   },
   "middleNameHint": "നിങ്ങളുടെ നടവിലേക്ക് പേര് രേഖപ്പെടുത്തുക",
 
   "@lastName": {
     "description": "Label for the last name input field.",
     "type": "text",
-    "tags": ["itr_form_manual_personal_loan"]
+    "tags": ["itr_form_manual_personal_loan", "basic_details_personal_loan"]
   },
   "lastName": "അവസാന പേര്*",
 
   "@lastNameHint": {
     "description": "Hint text for the last name input field.",
     "type": "text",
-    "tags": ["itr_form_manual_personal_loan"]
+    "tags": ["itr_form_manual_personal_loan", "basic_details_personal_loan"]
   },
   "lastNameHint": "നിങ്ങളുടെ അവസാന പേര് രേഖപ്പെടുത്തുക",
 
   "@dateOfBirth": {
     "description": "Label for the date of birth input.",
     "type": "text",
-    "tags": ["itr_form_manual_personal_loan"]
+    "tags": ["itr_form_manual_personal_loan", "basic_details_personal_loan"]
   },
   "dateOfBirth": "ജനന തീയതി*",
 
   "@dateOfBirthHint": {
     "description": "Placeholder text for the date of birth button.",
     "type": "text",
-    "tags": ["itr_form_manual_personal_loan"]
+    "tags": ["itr_form_manual_personal_loan", "basic_details_personal_loan"]
   },
   "dateOfBirthHint": "ജനന തീയതി",
 
   "@panNumber": {
     "description": "Label for the PAN number input field.",
     "type": "text",
-    "tags": ["itr_form_manual_personal_loan"]
+    "tags": ["itr_form_manual_personal_loan", "basic_details_personal_loan"]
   },
   "panNumber": "PAN നമ്പർ*",
 
   "@panNumberHint": {
     "description": "Hint text for the PAN number input field.",
     "type": "text",
-    "tags": ["itr_form_manual_personal_loan"]
+    "tags": ["itr_form_manual_personal_loan", "basic_details_personal_loan"]
   },
   "panNumberHint": "നിങ്ങളുടെ PAN നമ്പർ രേഖപ്പെടുത്തുക",
 
   "@mobileNumber": {
     "description": "Label for the mobile number input field.",
     "type": "text",
-    "tags": ["itr_form_manual_personal_loan"]
+    "tags": ["itr_form_manual_personal_loan", "basic_details_personal_loan"]
   },
   "mobileNumber": "മൊബൈൽ നമ്പർ*",
 
   "@mobileNumberHint": {
     "description": "Hint text for the mobile number input field.",
     "type": "text",
-    "tags": ["itr_form_manual_personal_loan"]
+    "tags": ["itr_form_manual_personal_loan", "basic_details_personal_loan"]
   },
   "mobileNumberHint": "നിങ്ങളുടെ മൊബൈൽ നമ്പർ രേഖപ്പെടുത്തുക",
 
@@ -986,9 +986,164 @@
     "description": "Text for dragging and dropping a file.",
     "type": "text",
     "tags": ["bank_details_personal_loan"]
-  }
+  },
 
+
+
+
+
+
+
+
+
+  "@basicDetails": {
+    "description": "Title for the basic details section",
+    "type": "text",
+    "tags": ["basic_details_personal_loan"]
+  },
+  "basicDetails": "അടിസ്ഥാന വിവരങ്ങൾ",
+
+  "@salutation": {
+    "description": "Label for salutation dropdown",
+    "type": "text",
+    "tags": ["basic_details_personal_loan"]
+  },
+  "salutation": "സന്തോഷം*",
+
+  "@selectSalutation": {
+    "description": "Placeholder for selecting salutation",
+    "type": "text",
+    "tags": ["basic_details_personal_loan"]
+  },
+  "selectSalutation": "സന്തോഷം തിരഞ്ഞെടുക്കുക",
+
+  "@gender": {
+    "description": "Label for gender dropdown",
+    "type": "text",
+    "tags": ["basic_details_personal_loan"]
+  },
+  "gender": "ലിംഗം*",
+
+  "@selectGender": {
+    "description": "Placeholder for selecting gender",
+    "type": "text",
+    "tags": ["basic_details_personal_loan"]
+  },
+  "selectGender": "ലിംഗം തിരഞ്ഞെടുക്കുക",
+
+  "@category": {
+    "description": "Label for category dropdown",
+    "type": "text",
+    "tags": ["basic_details_personal_loan"]
+  },
+  "category": "വിഭാഗം*",
+
+  "@selectCategory": {
+    "description": "Placeholder for selecting category",
+    "type": "text",
+    "tags": ["basic_details_personal_loan"]
+  },
+  "selectCategory": "വിഭാഗം തിരഞ്ഞെടുക്കുക",
+
+  "@emailPersonal": {
+    "description": "Label for personal email input field",
+    "type": "text",
+    "tags": ["basic_details_personal_loan"]
+  },
+  "emailPersonal": "ഇമെയിൽ (വ്യക്തിഗത)*",
+
+  "@enterEmailPersonal": {
+    "description": "Placeholder for entering personal email",
+    "type": "text",
+    "tags": ["basic_details_personal_loan"]
+  },
+  "enterEmailPersonal": "വ്യക്തിഗത ഇമെയിൽ നൽകുക",
+
+  "@fatherName": {
+    "description": "Label for father's name input field",
+    "type": "text",
+    "tags": ["basic_details_personal_loan"]
+  },
+  "fatherName": "പിതാവിന്റെ പേര്",
+
+  "@enterFatherName": {
+    "description": "Placeholder for entering father's name",
+    "type": "text",
+    "tags": ["basic_details_personal_loan"]
+  },
+  "enterFatherName": "പിതാവിന്റെ പേര് നൽകുക",
+
+  "@educationQualification": {
+    "description": "Label for education qualification dropdown",
+    "type": "text",
+    "tags": ["basic_details_personal_loan"]
+  },
+  "educationQualification": "വിദ്യാഭ്യാസ യോഗ്യത*",
+
+  "@selectEducationQualification": {
+    "description": "Placeholder for selecting education qualification",
+    "type": "text",
+    "tags": ["basic_details_personal_loan"]
+  },
+  "selectEducationQualification": "വിദ്യാഭ്യാസ യോഗ്യത തിരഞ്ഞെടുക്കുക",
+
+  "@netWorth": {
+    "description": "Label for net worth input field",
+    "type": "text",
+    "tags": ["basic_details_personal_loan"]
+  },
+  "netWorth": "വിലമതിപ്പ്*",
+
+  "@enterNetWorth": {
+    "description": "Placeholder for entering net worth",
+    "type": "text",
+    "tags": ["basic_details_personal_loan"]
+  },
+  "enterNetWorth": "വിലമതിപ്പ് നൽകുക",
+
+  "@nationality": {
+    "description": "Label for nationality dropdown",
+    "type": "text",
+    "tags": ["basic_details_personal_loan"]
+  },
+  "nationality": "രാഷ്ട്രപതിത്വം*",
+
+  "@selectNationality": {
+    "description": "Placeholder for selecting nationality",
+    "type": "text",
+    "tags": ["basic_details_personal_loan"]
+  },
+  "selectNationality": "രാഷ്ട്രപതിത്വം തിരഞ്ഞെടുക്കുക",
+
+  "@dependents": {
+    "description": "Label for dependents dropdown",
+    "type": "text",
+    "tags": ["basic_details_personal_loan"]
+  },
+  "dependents": "അനുസരണങ്ങൾ*",
+
+  "@selectDependents": {
+    "description": "Placeholder for selecting dependents",
+    "type": "text",
+    "tags": ["basic_details_personal_loan"]
+  },
+  "selectDependents": "അനുസരണങ്ങൾ തിരഞ്ഞെടുക്കുക",
+
+  "@maritalStatus": {
+    "description": "Label for marital status dropdown",
+    "type": "text",
+    "tags": ["basic_details_personal_loan"]
+  },
+  "maritalStatus": "വിവാഹിതാവിനെ*",
+
+  "@selectMaritalStatus": {
+    "description": "Placeholder for selecting marital status",
+    "type": "text",
+    "tags": ["basic_details_personal_loan"]
+  },
+  "selectMaritalStatus": "വിവാഹിതാവിനെ തിരഞ്ഞെടുക്കുക"
 }
+
 
 
 
