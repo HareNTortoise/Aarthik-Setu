@@ -309,7 +309,199 @@
     "type": "text",
     "placeholders": {},
     "tags": ["dashboard_select_profile"]
+  },
+
+
+
+
+
+
+
+
+
+  "choosePersonalProfile": "మీ వ్యక్తిగత ప్రొఫైల్ను ఎంచుకోండి",
+  "@choosePersonalProfile": {
+    "description": "Title for choosing personal profile",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["personal_loan_journey"]
+  },
+  "selectedProfile": "ఎంచుకున్న ప్రొఫైల్: ఆదర్శ్ వర్మ",
+    "@selectedProfile": {
+        "description": "Message showing selected profile",
+        "type": "text",
+        "placeholders": {},
+        "tags": ["personal_loan_journey"]
+    },
+  "selectProfileMessage": "లభ్యమైన ప్రొఫైల్ల జాబితా నుండి మీ వ్యక్తిగత ప్రొఫైల్ను ఎంచుకోండి. మీ వద్ద ప్రొఫైల్ లేకుంటే, మీరు కొత్తది సృష్టించవచ్చు.",
+    "@selectProfileMessage": {
+        "description": "Message for selecting personal profile",
+        "type": "text",
+        "placeholders": {},
+        "tags": ["personal_loan_journey"]
+    },
+  "itrImportance": "ఒక రుణానికి దరఖాస్తు చేసేటప్పుడు మీ ITRను అందించడం ముఖ్యమైనది, ఎందుకంటే ఇది నిధులను అందించే వారి ఆర్థిక స్థిరత్వం, చెల్లింపు సామర్థ్యం మరియు మొత్తం నమ్మకాన్ని నిర్ధారిస్తుంది, ఇది మీకు రుణం మంజూరు చేయబడే అవకాశం మెరుగుపరుస్తుంది. మీకు ITR లేకుంటే, మీ ఆదాయాన్ని చేతితో ప్రకటించాలనే ఎంపిక కూడా ఉంది.",
+  "@itrImportance": {
+    "description": "Importance of providing ITR in a loan application",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["personal_loan_journey"]
+  },
+  "itrButtonTitle": "ఆదాయపు పన్ను తిరిగి",
+    "@itrButtonTitle": {
+        "description": "Button label for providing ITR",
+        "type": "text",
+        "placeholders": {},
+        "tags": ["personal_loan_journey"]
+    },
+  "itrButtonDescription": "గత 6 నెలల బ్యాంక్ స్టేట్మెంట్లు అందించండి.",
+  "@itrButtonDescription": {
+    "description": "Description for providing ITR",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["personal_loan_journey"]
+  },
+  "bankDetailsImportance": "బ్యాంక్ వివరాలు మరియు స్టేట్మెంట్లు నిధులందించేవారికి మీ ఆర్థిక అలవాట్లు, చెల్లింపు సామర్థ్యం మరియు మొత్తం క్రెడిట్ రిస్క్\u200Cను అంచనా వేయడానికి పారదర్శకమైన మరియు నమ్మదగిన మార్గాన్ని అందిస్తాయి, ఇవి రుణం మంజూరు చేయడంలో ముఖ్యమైన అంశాలు.",
+  "@bankDetailsImportance": {
+    "description": "Importance of providing bank details in a loan application",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["personal_loan_journey"]
+  },
+  "bankDetailsButtonTitle": "బ్యాంక్ వివరాలు",
+  "@bankDetailsButtonTitle": {
+    "description": "Button label for providing bank details",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["personal_loan_journey"]
+  },
+  "bankDetailsButtonDescription": "గత 6 నెలల బ్యాంక్ స్టేట్మెంట్లు అందించండి.",
+  "@bankDetailsButtonDescription": {
+    "description": "Description for providing bank details",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["personal_loan_journey"]
+  },
+  "personalDetailsImportance": "వాయిస్ నిధులందించువారికి మీరు మీ సమాచారం అందించిన ప్రొఫైల్\u200Cలు, మీ చెల్లింపు సామర్థ్యాన్ని అంచనా వేయడానికి, మీ ఆదాయ స్థిరత్వాన్ని అంచనా వేయడానికి, మీ విశ్వసనీయతను నిర్ధారించడానికి సహాయపడతాయి. మానవ శక్తి, స్థితి, తులనాత్మక భవిష్యత్తు వంటి సమాచారాన్ని కృత్రిమంగా పొందాలి.",
+  "@personalDetailsImportance": {
+    "description": "Importance of providing personal details in a loan application",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["personal_loan_journey"]
+  },
+  "basicDetailsButtonTitle": "మూల వివరాలు",
+    "@basicDetailsButtonTitle": {
+        "description": "Button label for providing basic details",
+        "type": "text",
+        "placeholders": {},
+        "tags": ["personal_loan_journey"]
+    },
+  "basicDetailsButtonDescription": "మీ పేరు, వయస్సు, చిరునామా వంటి వ్యక్తిగత సమాచారాన్ని అందించండి.",
+  "@basicDetailsButtonDescription": {
+    "description": "Description for providing basic details",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["personal_loan_journey"]
+  },
+  "employmentDetailsImportance": "వాయిస్ నిధులందించువారికి, చెల్లింపు సామర్థ్యాన్ని అంచనా వేయడానికి, ఉద్యోగ స్థిరత్వాన్ని అంచనా వేయడానికి, మొత్తం ఆర్థిక ఆరోగ్యాన్ని అంచనా వేయడానికి ఉద్యోగ వివరాలు చాలా ముఖ్యమైనవి. కంపెనీ పేరు, పదవి, జీతం వంటి సమాచారాన్ని కూడా అందిస్తాయి.",
+  "@employmentDetailsImportance": {
+    "description": "Importance of providing employment details in a loan application",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["personal_loan_journey"]
+  },
+  "employmentDetailsButtonTitle": "ఉద్యోగ వివరాలు",
+  "@employmentDetailsButtonTitle": {
+    "description": "Button label for providing employment details",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["personal_loan_journey"]
+  },
+  "employmentDetailsButtonDescription": "మీ కంపెనీ పేరు, పదవి, జీతం వంటి ఉద్యోగ వివరాలను అందించండి.",
+  "@employmentDetailsButtonDescription": {
+    "description": "Description for providing employment details",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["personal_loan_journey"]
+  },
+  "creditInformationImportance": "క్రెడిట్ సమాచారం కీలకమైనది, ఎందుకంటే ఇది మీ క్రెడిట్\u200Cను అంచనా వేయడానికి, చెల్లింపు సామర్థ్యాన్ని అంచనా వేయడానికి మరియు మొత్తం ఆర్థిక ఆరోగ్యాన్ని అంచనా వేయడానికి అవసరం. క్రెడిట్ స్కోర్, క్రెడిట్ చరిత్ర, క్రెడిట్ కరెంటు వంటి సమాచారాన్ని కలిగి ఉంది.",
+  "@creditInformationImportance": {
+    "description": "Importance of providing credit information in a loan application",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["personal_loan_journey"]
+  },
+  "creditInformationButtonTitle": "క్రెడిట్ సమాచారం",
+  "@creditInformationButtonTitle": {
+    "description": "Button label for providing credit information",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["personal_loan_journey"]
+  },
+  "creditInformationButtonDescription": "మీ క్రెడిట్ సమాచారాన్ని అందించండి, క్రెడిట్ స్కోర్, క్రెడిట్ చరిత్ర, ప్రస్తుత రుణాలను.",
+  "@creditInformationButtonDescription": {
+    "description": "Description for providing credit information",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["personal_loan_journey"]
+  },
+  "contactInformationImportance": "సంప్రదింపు సమాచారం, మీ ఐడెంటిటీని అర్థం చేసుకోవడం, మీతో కమ్యూనికేట్ చేయడం, మీ చెల్లింపు సామర్థ్యాన్ని అంచనా వేయడం వంటి విభాగాలకు అవసరం.",
+  "@contactInformationImportance": {
+    "description": "Importance of providing contact information in a loan application",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["personal_loan_journey"]
+  },
+  "contactInformationButtonTitle": "సంప్రదింపు సమాచారం",
+  "@contactInformationButtonTitle": {
+    "description": "Button label for providing contact information",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["personal_loan_journey"]
+  },
+  "contactInformationButtonDescription": "మీ ఫోన్ నంబర్, ఇమెయిల్, చిరునామా వంటి సంప్రదింపు సమాచారం అందించండి.",
+  "@contactInformationButtonDescription": {
+    "description": "Description for providing contact information",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["personal_loan_journey"]
+  },
+  "loanFormImportance": "రుణానికి దరఖాస్తు ప్రక్రియలో రుణ ఫారం చివరి దశ. ఇది మీరు అందించే క్రమంలో అన్ని అవసరమైన సమాచారాన్ని పొందుతుంది.",
+  "@loanFormImportance": {
+    "description": "Importance of filling out the loan form",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["personal_loan_journey"]
+  },
+  "loanFormButtonTitle": "రుణ ఫారం",
+  "@loanFormButtonTitle": {
+    "description": "Button label for filling out the loan form",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["personal_loan_journey"]
+  },
+  "loanFormButtonDescription": "అవసరమైన సమాచారం కలిగి రుణ ఫారాన్ని పూరించండి.",
+  "@loanFormButtonDescription": {
+    "description": "Description for filling out the loan form",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["personal_loan_journey"]
+  },
+  "reviewFormButton": "మీ ఫారం ను సమీక్షించండి",
+  "@reviewFormButton": {
+    "description": "Button label for reviewing the loan form",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["personal_loan_journey"]
+  },
+  "reviewFormButtonDescription": "మీ రుణ దరఖాస్తును సమీక్షించడం మరియు సమర్పించడం రుణ దరఖాస్తు ప్రక్రియలో తుది దశ. మీరు అందించిన అన్ని సమాచారం సరిచూసి, దాని కచ్చితత్వాన్ని నిర్ధారించండి, మరియు రుణదాతకు మీ దరఖాస్తును ఆమోదం కోసం సమర్పించండి.",
+  "@reviewFormButtonDescription": {
+    "description": "Description for reviewing the loan form",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["personal_loan_journey"]
   }
 }
+
 
 

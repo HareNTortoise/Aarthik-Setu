@@ -320,5 +320,195 @@
     "type": "text",
     "placeholders": {},
     "tags": ["dashboard_select_profile"]
+  },
+
+
+
+
+
+
+
+  "choosePersonalProfile": "സ്വന്തം പ്രൊഫൈൽ തിരഞ്ഞെടുക്കുക",
+  "@choosePersonalProfile": {
+    "description": "Title for choosing personal profile",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["personal_loan_journey"]
+  },
+  "selectedProfile": "തിരഞ്ഞെടുത്ത പ്രൊഫൈൽ: ആദർശ് വർമ",
+  "@selectedProfile": {
+    "description": "Message showing selected profile",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["personal_loan_journey"]
+  },
+  "selectProfileMessage": "ലഭ്യമായ പ്രൊഫൈലുകളുടെ പട്ടികയിൽ നിന്ന് നിങ്ങളുടെ വ്യക്തിഗത പ്രൊഫൈൽ തിരഞ്ഞെടുക്കുക. നിങ്ങൾക്ക് ഒരു പ്രൊഫൈൽ ഇല്ലെങ്കിൽ, പുതിയ പ്രൊഫൈൽ സൃഷ്ടിക്കാനാകും.",
+  "@selectProfileMessage": {
+    "description": "Message for selecting personal profile",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["personal_loan_journey"]
+  },
+  "itrImportance": "നിങ്ങളുടെ ITR നൽകുന്നത് വായ്പക്കായി അപേക്ഷിക്കുമ്പോൾ അത്യാവശ്യമാണെന്ന് ഇത് വായ്പ ദാതാക്കൾക്ക് നിങ്ങളുടെ സാമ്പത്തിക സ്ഥിരത, തിരിച്ചടവിന്റെ ശേഷി, ഒരുമിച്ചു വിശ്വാസ്യത ഉറപ്പ് നൽകുന്നതാണ്, അത് വായ്പ അംഗീകരിക്കാനുള്ള സാധ്യത വർദ്ധിപ്പിക്കുന്നു. ITR ഇല്ലെങ്കിൽ, നിങ്ങൾക്ക് നിങ്ങളുടെ വരുമാനം കൈമാറ്റം ചെയ്യാനുള്ള ഒരു ഓപ്ഷനും ഉണ്ടായിരിക്കും.",
+  "@itrImportance": {
+    "description": "Importance of providing ITR in a loan application",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["personal_loan_journey"]
+  },
+  "itrButtonTitle": "ഇൻകം ടാക്സ് റിട്ടേൺ",
+  "@itrButtonTitle": {
+    "description": "Button label for providing ITR",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["personal_loan_journey"]
+  },
+  "itrButtonDescription": "കഴിഞ്ഞ 3 വർഷങ്ങളുടെ ഇൻകം ടാക്സ് റിട്ടേൺ ഫോം നൽകുക അല്ലെങ്കിൽ നിങ്ങളുടെ വരുമാനം പ്രഖ്യാപിക്കുക.",
+  "@itrButtonDescription": {
+    "description": "Description for providing ITR",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["personal_loan_journey"]
+  },
+  "bankDetailsImportance": "ബാങ്ക് വിവരങ്ങളും സ്റ്റേറ്റ്മെന്റും വായ്പ ദാതാക്കൾക്ക് നിങ്ങളുടെ സാമ്പത്തിക ശീലങ്ങൾ, തിരിച്ചടവിന്റെ ശേഷി, വായ്പാ റിസ്‌ക് എന്നിവയുടെ ഒരു വ്യക്തമായതും വിശ്വാസ്യമായതുമായ ദൃഷ്ടികോണം നൽകുന്നു, അത് വായ്പ അംഗീകരിക്കാനുളള നിർണായക ഘടകങ്ങളാണ്.",
+  "@bankDetailsImportance": {
+    "description": "Importance of providing bank details in a loan application",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["personal_loan_journey"]
+  },
+  "bankDetailsButtonTitle": "ബാങ്ക് വിവരങ്ങൾ",
+  "@bankDetailsButtonTitle": {
+    "description": "Button label for providing bank details",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["personal_loan_journey"]
+  },
+  "bankDetailsButtonDescription": "നിങ്ങളുടെ ബാങ്ക് വിശദാംശങ്ങൾ പ്രഖ്യാപിക്കുക, കഴിഞ്ഞ 6 മാസങ്ങളിലുളള ബാങ്ക് സ്റ്റേറ്റ്മെന്റ് നൽകുക.",
+  "@bankDetailsButtonDescription": {
+    "description": "Description for providing bank details",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["personal_loan_journey"]
+  },
+  "personalDetailsImportance": "വായ്പ അപേക്ഷയിൽ വ്യക്തിഗത വിവരങ്ങൾ നിർണായകമാണ്, കാരണം അത് നിങ്ങളുടെ തിരിച്ചറിവ് സ്ഥിരീകരിക്കാൻ, നിങ്ങളുടെ യോഗ്യത നിശ്ചയിക്കാൻ, നിങ്ങളുടെ വായ്പാ യോഗ്യത നിർണയിക്കാൻ സഹായിക്കുന്നു. പ്രായം, വിലാസം, തൊഴിൽ സ്ഥിതിവിവരക്കണക്കുകൾ തുടങ്ങിയ വിവരങ്ങൾ നിങ്ങളുടെ സ്ഥിരതയും തിരിച്ചടവിന്റെ ശേഷിയും സംബന്ധിച്ച വിവരങ്ങൾ നൽകുന്നു. ശരിയായ വ്യക്തിഗത വിവരങ്ങൾ നിയമപരമായും ക്രമാത്മകമായും പാലനം ഉറപ്പാക്കുന്നു.",
+  "@personalDetailsImportance": {
+    "description": "Importance of providing personal details in a loan application",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["personal_loan_journey"]
+  },
+  "basicDetailsButtonTitle": "അടിസ്ഥാന വിവരങ്ങൾ",
+  "@basicDetailsButtonTitle": {
+    "description": "Button label for providing basic details",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["personal_loan_journey"]
+  },
+  "basicDetailsButtonDescription": "നിങ്ങളുടെ വ്യക്തിഗത വിവരങ്ങൾ, പേരു, പ്രായം, വിലാസം എന്നിവ നൽകുക.",
+  "@basicDetailsButtonDescription": {
+    "description": "Description for providing basic details",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["personal_loan_journey"]
+  },
+  "employmentDetailsImportance": "വായ്പ അപേക്ഷയിൽ തൊഴിൽ വിശദാംശങ്ങൾ നിർണായകമാണ്, കാരണം അത് വായ്പ ദാതാക്കൾക്ക് നിങ്ങളുടെ തിരിച്ചടവിന്റെ ശേഷി, ജോലിയിലെ സ്ഥിരത, സാമ്പത്തിക സ്ഥിതിവിവരക്കണക്കുകൾ എന്നിവ വിലയിരുത്താനുളള സഹായകരമാണ്. കമ്പനിയുടെ പേര്, തസ്തിക, ശമ്പളം തുടങ്ങിയ വിവരങ്ങൾ നിങ്ങളുടെ വരുമാനത്തിന്റെ സ്ഥിരതയേയും തിരിച്ചടവിന്റെ ശേഷിയേയും സംബന്ധിച്ച വിവരങ്ങൾ നൽകുന്നു.",
+  "@employmentDetailsImportance": {
+    "description": "Importance of providing employment details in a loan application",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["personal_loan_journey"]
+  },
+  "employmentDetailsButtonTitle": "തൊഴിൽ വിശദാംശങ്ങൾ",
+  "@employmentDetailsButtonTitle": {
+    "description": "Button label for providing employment details",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["personal_loan_journey"]
+  },
+  "employmentDetailsButtonDescription": "നിങ്ങളുടെ തൊഴിൽ വിശദാംശങ്ങൾ, കമ്പനിയുടെ പേര്, തസ്തിക, ശമ്പളം എന്നിവ നൽകുക.",
+  "@employmentDetailsButtonDescription": {
+    "description": "Description for providing employment details",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["personal_loan_journey"]
+  },
+  "creditInformationImportance": "ക്രെഡിറ്റ് വിവരങ്ങൾ വായ്പ അപേക്ഷയിൽ നിർണായകമാണ്, കാരണം ഇത് വായ്പ ദാതാക്കൾക്ക് നിങ്ങളുടെ വായ്പാ യോഗ്യത, തിരിച്ചടവിന്റെ ശേഷി, സാമ്പത്തിക സ്ഥിതിവിവരക്കണക്കുകൾ എന്നിവ വിലയിരുത്താനുളള സഹായകരമാണ്. ക്രെഡിറ്റ് സ്കോർ, ക്രെഡിറ്റ് ചരിത്രം, നിലവിലെ വായ്പകൾ തുടങ്ങിയ വിവരങ്ങൾ നിങ്ങളുടെ ക്രെഡിറ്റ് റിസ്‌ക്, തിരിച്ചടവിന്റെ ശേഷി എന്നിവയെക്കുറിച്ചുളള വിവരങ്ങൾ നൽകുന്നു. ശരിയായ ക്രെഡിറ്റ് വിവരങ്ങൾ നിയമപരമായും ക്രമാത്മകമായും പാലനം ഉറപ്പാക്കുന്നു.",
+  "@creditInformationImportance": {
+    "description": "Importance of providing credit information in a loan application",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["personal_loan_journey"]
+  },
+  "creditInformationButtonTitle": "ക്രെഡിറ്റ് വിവരങ്ങൾ",
+  "@creditInformationButtonTitle": {
+    "description": "Button label for providing credit information",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["personal_loan_journey"]
+  },
+  "creditInformationButtonDescription": "നിങ്ങളുടെ ക്രെഡിറ്റ് വിവരങ്ങൾ, ക്രെഡിറ്റ് സ്കോർ, ക്രെഡിറ്റ് ചരിത്രം, നിലവിലെ വായ്പകൾ എന്നിവ നൽകുക.",
+  "@creditInformationButtonDescription": {
+    "description": "Description for providing credit information",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["personal_loan_journey"]
+  },
+  "contactInformationImportance": "കാന്താക വിവരങ്ങൾ വായ്പ അപേക്ഷയിൽ നിർണായകമാണ്, കാരണം ഇത് വായ്പ ദാതാക്കൾക്ക് നിങ്ങളുടെ തിരിച്ചറിവ് സ്ഥിരീകരിക്കാൻ, നിങ്ങളുമായി ബന്ധപ്പെടാനും നിങ്ങളുടെ തിരിച്ചടവിന്റെ ശേഷി വിലയിരുത്താനും സഹായകരമാണ്. ഫോണിന്റെ നമ്പർ, ഇമെയിൽ, വിലാസം എന്നിവയുടെ വിവരങ്ങൾ നിങ്ങളുടെ ലഭ്യത, ആശയവിനിമയ ശേഷി എന്നിവയെക്കുറിച്ചുളള വിവരങ്ങൾ നൽകുന്നു.",
+  "@contactInformationImportance": {
+    "description": "Importance of providing contact information in a loan application",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["personal_loan_journey"]
+  },
+  "contactInformationButtonTitle": "സമ്പർക്ക വിവരങ്ങൾ",
+  "@contactInformationButtonTitle": {
+    "description": "Button label for providing contact information",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["personal_loan_journey"]
+  },
+  "contactInformationButtonDescription": "നിങ്ങളുടെ കോൺടാക്ട് വിവരങ്ങൾ, ഫോൺ നമ്പർ, ഇമെയിൽ, വിലാസം എന്നിവ നൽകുക.",
+  "@contactInformationButtonDescription": {
+    "description": "Description for providing contact information",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["personal_loan_journey"]
+  },
+  "loanFormImportance": "വായ്പ അപേക്ഷയിൽ വായ്പ ഫോമാണ് അവസാന ഘട്ടം. ഇത് നിങ്ങൾ വായ്പ നൽകുന്നവർക്കായി അംഗീകൃതമായി എല്ലാ ആവശ്യമായ വിവരങ്ങൾ, രേഖകൾ, വിവരങ്ങൾ നൽകുന്ന സ്ഥലമാണ്. വായ്പ അംഗീകരിച്ചെടുക്കാനുള്ള സാധ്യതകൾ മെച്ചപ്പെടുത്താൻ ഫോമിൽ കൃത്യമായി, പൂർണ്ണമായി രജിസ്റ്റർ ചെയ്യാൻ ശ്രദ്ധിക്കുക.",
+  "@loanFormImportance": {
+    "description": "Importance of filling out the loan form",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["personal_loan_journey"]
+  },
+  "loanFormButtonTitle": "വായ്പ ഫോം",
+    "@loanFormButtonTitle": {
+        "description": "Button label for filling out the loan form",
+        "type": "text",
+        "placeholders": {},
+        "tags": ["personal_loan_journey"]
+    },
+  "loanFormButtonDescription": "എല്ലാ ആവശ്യമായ വിവരങ്ങൾ ഉൾപ്പെടുന്ന വായ്പ ഫോം പൂരിപ്പിക്കുക.",
+    "@loanFormButtonDescription": {
+        "description": "Description for filling out the loan form",
+        "type": "text",
+        "placeholders": {},
+        "tags": ["personal_loan_journey"]
+    },
+  "reviewFormButton": "Review Form",
+  "@reviewFormButton": {
+    "description": "നിങ്ങളുടെ ഫോം അവലോകനം ചെയ്യുക",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["personal_loan_journey"]
+  },
+  "reviewFormButtonDescription": "ലോണ അപേക്ഷയുടെ അവസാന ഘട്ടം അപേക്ഷ അവലോകനം ചെയ്ത് സമർപ്പിക്കുകയാണ്. നിങ്ങൾ നൽകിയ എല്ലാ വിവരങ്ങളും ശരിയായി ഉറപ്പാക്കുക, കൂടാതെ നിങ്ങളുടെ അപേക്ഷ വായ്പദായകനോട് അംഗീകാരത്തിനായി സമർപ്പിക്കുക.",
+  "@reviewFormButtonDescription": {
+    "description": "Description for reviewing the loan form",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["personal_loan_journey"]
   }
 }
+

@@ -311,7 +311,195 @@
     "type": "text",
     "placeholders": {},
     "tags": ["dashboard_select_profile"]
-  }
+  },
+
+
+
+
+
+
+  "choosePersonalProfile": "Choose your Personal Profile",
+  "@choosePersonalProfile": {
+    "description": "Title for choosing personal profile",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["personal_loan_journey"]
+  },
+  "selectedProfile": "Selected Profile: Aadarsh Verma",
+  "@selectedProfile": {
+    "description": "Message showing selected profile",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["personal_loan_journey"]
+  },
+  "selectProfileMessage": "Select your personal profile from the list of available profiles. If you do not have a profile, you can create a new one.",
+  "@selectProfileMessage": {
+    "description": "Message for selecting personal profile",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["personal_loan_journey"]
+  },
+  "itrImportance": "Providing your ITR when applying for a loan is crucial because it assures lenders of your financial stability, repayment capacity, and overall trustworthiness, which ultimately improves your chances of getting the loan approved. You also have the option to manually declare your income if you do not have an ITR.",
+  "@itrImportance": {
+    "description": "Importance of providing ITR in a loan application",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["personal_loan_journey"]
+  },
+  "itrButtonTitle": "Income Tax Return",
+  "@itrButtonTitle": {
+    "description": "Button label for providing ITR",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["personal_loan_journey"]
+  },
+  "itrButtonDescription": "Provide your income tax return form for up to the last 3 years or declare your income.",
+  "@itrButtonDescription": {
+    "description": "Description for providing ITR",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["personal_loan_journey"]
+  },
+  "bankDetailsImportance": "Bank details and statements offer lenders a transparent and reliable way to assess your financial habits, repayment capacity, and overall credit risk, which are key factors in approving a loan.",
+  "@bankDetailsImportance": {
+    "description": "Importance of providing bank details in a loan application",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["personal_loan_journey"]
+  },
+  "bankDetailsButtonTitle": "Bank Details",
+  "@bankDetailsButtonTitle": {
+    "description": "Button label for providing bank details",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["personal_loan_journey"]
+  },
+  "bankDetailsButtonDescription": "Declare your bank details and provide bank statements for the last 6 months.",
+  "@bankDetailsButtonDescription": {
+    "description": "Description for providing bank details",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["personal_loan_journey"]
+  },
+  "personalDetailsImportance": "Personal details are essential in a loan application as they help verify your identity, assess your eligibility, and determine your creditworthiness. Information like age, address, and employment status provide insight into your stability and repayment capability. Accurate personal details also ensure compliance with legal and regulatory requirements.",
+  "@personalDetailsImportance": {
+    "description": "Importance of providing personal details in a loan application",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["personal_loan_journey"]
+  },
+  "basicDetailsButtonTitle": "Basic Details",
+  "@basicDetailsButtonTitle": {
+    "description": "Button label for providing basic details",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["personal_loan_journey"]
+  },
+  "basicDetailsButtonDescription": "Provide your personal information like name, age, and address.",
+  "@basicDetailsButtonDescription": {
+    "description": "Description for providing basic details",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["personal_loan_journey"]
+  },
+  "employmentDetailsImportance": "Employment details are crucial in a loan application as they help lenders assess your repayment capacity, job stability, and overall financial health. Information like company name, designation, and salary provide insight into your income stability and repayment capability.",
+  "@employmentDetailsImportance": {
+    "description": "Importance of providing employment details in a loan application",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["personal_loan_journey"]
+  },
+  "employmentDetailsButtonTitle": "Employment Details",
+  "@employmentDetailsButtonTitle": {
+    "description": "Button label for providing employment details",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["personal_loan_journey"]
+  },
+  "employmentDetailsButtonDescription": "Provide your employment details like company name, designation, and salary.",
+  "@employmentDetailsButtonDescription": {
+    "description": "Description for providing employment details",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["personal_loan_journey"]
+  },
+  "creditInformationImportance": "Credit information is essential in a loan application as it helps lenders assess your creditworthiness, repayment capacity, and overall financial health. Information like credit score, credit history, and existing loans provide insight into your credit risk and repayment capability. Accurate credit information also ensures compliance with legal and regulatory requirements.",
+  "@creditInformationImportance": {
+    "description": "Importance of providing credit information in a loan application",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["personal_loan_journey"]
+  },
+  "creditInformationButtonTitle": "Credit Information",
+  "@creditInformationButtonTitle": {
+    "description": "Button label for providing credit information",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["personal_loan_journey"]
+  },
+  "creditInformationButtonDescription": "Provide your credit information like credit score, credit history, and existing loans.",
+  "@creditInformationButtonDescription": {
+    "description": "Description for providing credit information",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["personal_loan_journey"]
+  },
+  "contactInformationImportance": "Contact information is essential in a loan application as it helps lenders verify your identity, communicate with you, and assess your repayment capability. Information like phone number, email, and address provide insight into your accessibility and communication.",
+  "@contactInformationImportance": {
+    "description": "Importance of providing contact information in a loan application",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["personal_loan_journey"]
+  },
+  "contactInformationButtonTitle": "Contact Information",
+  "@contactInformationButtonTitle": {
+    "description": "Button label for providing contact information",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["personal_loan_journey"]
+  },
+  "contactInformationButtonDescription": "Provide your contact information like phone number, email, and address.",
+  "@contactInformationButtonDescription": {
+    "description": "Description for providing contact information",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["personal_loan_journey"]
+  },
+  "loanFormImportance": "The loan form is the final step in the loan application process. It is where you provide all the required information, documents, and details to the lender for approval. Make sure to fill out the form accurately and completely to improve your chances of getting the loan approved.",
+  "@loanFormImportance": {
+    "description": "Importance of filling out the loan form",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["personal_loan_journey"]
+  },
+  "loanFormButtonTitle": "Loan Form",
+  "@loanFormButtonTitle": {
+    "description": "Button label for filling out the loan form",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["personal_loan_journey"]
+  },
+  "loanFormButtonDescription": "Fill out the loan form with all the required information.",
+  "@loanFormButtonDescription": {
+    "description": "Description for filling out the loan form",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["personal_loan_journey"]
+  },
+  "reviewFormButton": "Review Form",
+    "@reviewFormButton": {
+        "description": "Button label for reviewing the loan form",
+        "type": "text",
+        "placeholders": {},
+        "tags": ["personal_loan_journey"]
+  },
+  "reviewFormButtonDescription": "Reviewing and submitting your loan application is the final step in the loan application process. Make sure to review all the information you have provided, ensure its accuracy, and submit your application to the lender for approval.",
+    "@reviewFormButtonDescription": {
+        "description": "Description for reviewing the loan form",
+        "type": "text",
+        "placeholders": {},
+        "tags": ["personal_loan_journey"]
+    }
 }
 
 

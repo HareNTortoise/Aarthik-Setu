@@ -313,8 +313,204 @@
     "type": "text",
     "placeholders": {},
     "tags": ["dashboard_select_profile"]
+  },
+
+
+
+
+
+
+  "choosePersonalProfile": "ವ್ಯಕ್ತಿಗತ ಪ್ರೊಫೈಲ್ ಆಯ್ಕೆ ಮಾಡಿರಿ",
+  "@choosePersonalProfile": {
+    "description": "Title for choosing personal profile",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["personal_loan_journey"]
+  },
+  "selectedProfile": "ಆಯ್ಕೆಯಾದ ಪ್ರೊಫೈಲ್: ಆದರ್ಶ ಬರ್ಮಾ",
+  "@selectedProfile": {
+    "description": "Message showing selected profile",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["personal_loan_journey"]
+  },
+  "selectProfileMessage": "ಲಭ್ಯವಿರುವ ಪ್ರೊಫೈಲ್ ಪಟ್ಟಿಯಿಂದ ನಿಮ್ಮ ವ್ಯಕ್ತಿಗತ ಪ್ರೊಫೈಲ್ ಆಯ್ಕೆ ಮಾಡಿ. ನೀವು ಹೊಸ ಪ್ರೊಫೈಲ್ ರಚಿಸಲು ಸಾಧ್ಯವಾದರೆ, ನೀವು ಅದನ್ನು ಮಾಡಬಹುದು.",
+  "@selectProfileMessage": {
+    "description": "Message for selecting personal profile",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["personal_loan_journey"]
+  },
+  "itrImportance": "ನಿಮ್ಮ ITR ನೀಡುವುದು ಸಾಲಕ್ಕೆ ಅರ್ಜಿ ಸಲ್ಲಿಸುವಾಗ ಅತ್ಯಂತ ಅಗತ್ಯವಾಗಿದೆ, ಏಕೆಂದರೆ ಇದು ಸಾಲದಾತರಿಗೆ ನಿಮ್ಮ ಆರ್ಥಿಕ ಸ್ಥಿರತೆ, ಸಾಲವನ್ನು ಪುನರ್‌ಕೀಳಗೊಳ್ಳುವ ಸಾಮರ್ಥ್ಯ ಮತ್ತು ಒಟ್ಟಾರೆ ವಿಶ್ವಾಸಾರ್ಹತೆಯನ್ನು ಖಚಿತಪಡಿಸಲು ಸಹಾಯ ಮಾಡುತ್ತದೆ, ಇದು ಸಾಲದ ಒಪ್ಪಿಗೆ ಸಾಧ್ಯತೆಗಳನ್ನು ಹೆಚ್ಚಿಸುತ್ತದೆ. ITR ಇಲ್ಲದಿದ್ದರೆ, ನಿಮ್ಮ ಆದಾಯವನ್ನು ದೃಢೀಕರಿಸಲು ಬೇರೆ ಯಾವುದೇ ಮಾರ್ಗವಿಲ್ಲ.",
+  "@itrImportance": {
+    "description": "Importance of providing ITR in a loan application",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["personal_loan_journey"]
+  },
+  "itrButtonTitle": "ಆದಾಯ ತೆರಿಗೆ ಹಿಂತೆಗೆದುಕೊಳ್ಳಿ",
+  "@itrButtonTitle": {
+    "description": "Button label for providing ITR",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["personal_loan_journey"]
+  },
+  "itrButtonDescription": "ಕಳೆದ 3 ವರ್ಷಗಳ ಆದಾಯ ತೆರಿಗೆ ಹಿಂತೆಗೆದುಕೊಳ್ಳುವ ಫಾರ್ಮ್ ಅನ್ನು ಒದಗಿಸಿ ಅಥವಾ ನಿಮ್ಮ ಆದಾಯವನ್ನು ಘೋಷಿಸಿ.",
+  "@itrButtonDescription": {
+    "description": "Description for providing ITR",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["personal_loan_journey"]
+  },
+  "bankDetailsImportance": "ಬ್ಯಾಂಕ್ ಮಾಹಿತಿ ಮತ್ತು ನಿರೀಕ್ಷಿತವಾದವುಗಳು ಸಾಲದಾತರಿಗೆ ನಿಮ್ಮ ಆರ್ಥಿಕ ಅಭ್ಯಾಸಗಳು, ಸಾಲವನ್ನು ಪುನರ್‌ಕೀಳಗೊಳ್ಳುವ ಸಾಮರ್ಥ್ಯ ಮತ್ತು ಸಾಲದ ಅಪಾಯಗಳ ಬಗ್ಗೆ ಶುದ್ಧ ಮತ್ತು ವಿಶ್ವಾಸಾರ್ಹ ಚಿತ್ರಣವನ್ನು ನೀಡಲು ಸಹಾಯ ಮಾಡುತ್ತವೆ, ಇದು ಸಾಲದ ಒಪ್ಪಿಗೆಗೆ ಪ್ರಮುಖ ಅಂಶವಾಗಿದೆ.",
+  "@bankDetailsImportance": {
+    "description": "Importance of providing bank details in a loan application",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["personal_loan_journey"]
+  },
+  "bankDetailsButtonTitle": "ಬ್ಯಾಂಕ್ ವಿವರಗಳು",
+  "@bankDetailsButtonTitle": {
+    "description": "Button label for providing bank details",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["personal_loan_journey"]
+  },
+  "bankDetailsButtonDescription": "ನಿಮ್ಮ ಬ್ಯಾಂಕ್ ವಿವರಗಳನ್ನು ಪ್ರಸ್ತಾಪಿಸಿ, ಕಳೆದ 6 ತಿಂಗಳ ಬ್ಯಾಂಕ್ ನಿರೀಕ್ಷಿತ ಮಾಹಿತಿಯನ್ನು ಒದಗಿಸಿ.",
+  "@bankDetailsButtonDescription": {
+    "description": "Description for providing bank details",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["personal_loan_journey"]
+  },
+  "personalDetailsImportance": "ಸಾಲ ಅರ್ಜಿಯ ಸಮರ್ಪಣೆಗಾಗು ವ್ಯಕ್ತಿಗತ ಮಾಹಿತಿಯು ಬಹಳ ಮುಖ್ಯವಾಗಿದೆ, ಏಕೆಂದರೆ ಇದು ನಿಮ್ಮ ಗುರುತನ್ನು ಖಚಿತಪಡಿಸಲು, ಅರ್ಹತೆಯನ್ನು ನಿರ್ಧರಿಸಲು ಮತ್ತು ಸಾಲಕ್ಕೆ ಅರ್ಹತೆವನ್ನು ಅಂದಾಜಿಸಲು ಸಹಾಯ ಮಾಡುತ್ತದೆ. ವಯಸ್ಸು, ವಿಳಾಸ, ಉದ್ಯೋಗದ ಮಾಹಿತಿ ಮತ್ತು ಇತರವು ನಿಮ್ಮ ಸ್ಥಿರತೆ ಮತ್ತು ಸಾಲವನ್ನು ಪುನರ್‌ಕೀಳಗೊಳ್ಳುವ ಸಾಮರ್ಥ್ಯದ ಮಾಹಿತಿ ನೀಡುತ್ತದೆ. ಸರಿಯಾದ ವ್ಯಕ್ತಿಗತ ಮಾಹಿತಿ ಕಾನೂನುಬದ್ಧ ಮತ್ತು ಪ್ರಕ್ರಿಯಾತ್ಮಕವಾಗಿ ಅನುಪಾಲನೆಯ ಹಕ್ಕುಗಳನ್ನು ಖಚಿತಪಡಿಸುತ್ತದೆ.",
+  "@personalDetailsImportance": {
+    "description": "Importance of providing personal details in a loan application",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["personal_loan_journey"]
+  },
+  "basicDetailsButtonTitle": "ಮೂಲ ಮಾಹಿತಿ",
+  "@basicDetailsButtonTitle": {
+    "description": "Button label for providing basic details",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["personal_loan_journey"]
+  },
+  "basicDetailsButtonDescription": "ನಿಮ್ಮ ವ್ಯಕ್ತಿಗತ ಮಾಹಿತಿ, ಹೆಸರು, ವಯಸ್ಸು, ವಿಳಾಸ ಇತ್ಯಾದಿ ಒದಗಿಸಿ.",
+  "@basicDetailsButtonDescription": {
+    "description": "Description for providing basic details",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["personal_loan_journey"]
+  },
+  "employmentDetailsImportance": "ಉದ್ಯೋಗದ ವಿವರಗಳನ್ನು ಸಾಲ ಅರ್ಜಿಯಲ್ಲಿ ಒದಗಿಸುವುದು ಮುಖ್ಯವಾಗಿದೆ, ಏಕೆಂದರೆ ಇದು ಸಾಲದಾತರಿಗೆ ನಿಮ್ಮ ಸಾಲವನ್ನು ಪುನರ್‌ಕೀಳಗೊಳ್ಳುವ ಸಾಮರ್ಥ್ಯ, ಉದ್ಯೋಗದಲ್ಲಿ ಸ್ಥಿರತೆ, ಆರ್ಥಿಕ ಮಾಹಿತಿ ಅಂದಾಜಿಸಲು ಸಹಾಯ ಮಾಡುತ್ತದೆ. ಕಂಪನಿಯ ಹೆಸರು, ಹುದ್ದೆ, ವೇತನ ಇತ್ಯಾದಿ ನಿಮ್ಮ ಆದಾಯದ ಸ್ಥಿರತೆಯ ಬಗ್ಗೆ ಮಾಹಿತಿ ನೀಡುತ್ತದೆ.",
+  "@employmentDetailsImportance": {
+    "description": "Importance of providing employment details in a loan application",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["personal_loan_journey"]
+  },
+  "employmentDetailsButtonTitle": "ಉದ್ಯೋಗದ ವಿವರಗಳು",
+  "@employmentDetailsButtonTitle": {
+    "description": "Button label for providing employment details",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["personal_loan_journey"]
+  },
+  "employmentDetailsButtonDescription": "ನಿಮ್ಮ ಉದ್ಯೋಗದ ವಿವರಗಳನ್ನು, ಕಂಪನಿಯ ಹೆಸರು, ಹುದ್ದೆ, ವೇತನ ಇತ್ಯಾದಿ ಒದಗಿಸಿ.",
+  "@employmentDetailsButtonDescription": {
+    "description": "Description for providing employment details",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["personal_loan_journey"]
+  },
+  "creditInformationImportance": "ಕ್ರೆಡಿಟ್ ಮಾಹಿತಿಯನ್ನು ಸಾಲ ಅರ್ಜಿಯಲ್ಲಿ ಒದಗಿಸುವುದು ಮುಖ್ಯವಾಗಿದೆ, ಏಕೆಂದರೆ ಇದು ಸಾಲದಾತರಿಗೆ ನಿಮ್ಮ ಸಾಲಕ್ಕೆ ಅರ್ಹತೆ, ಸಾಲವನ್ನು ಪುನರ್‌ಕೀಳಗೊಳ್ಳುವ ಸಾಮರ್ಥ್ಯ, ಆರ್ಥಿಕ ಮಾಹಿತಿ ಅಂದಾಜಿಸಲು ಸಹಾಯ ಮಾಡುತ್ತದೆ. ಕ್ರೆಡಿಟ್ ಸ್ಕೋರ್, ಕ್ರೆಡಿಟ್ ಇತಿಹಾಸ, ಪ್ರಸ್ತುತ ಸಾಲ ಇತ್ಯಾದಿ ನಿಮ್ಮ ಕ್ರೆಡಿಟ್ ಅಪಾಯ ಮತ್ತು ಸಾಲವನ್ನು ಪುನರ್‌ಕೀಳಗೊಳ್ಳುವ ಸಾಮರ್ಥ್ಯದ ಬಗ್ಗೆ ಮಾಹಿತಿ ನೀಡುತ್ತದೆ. ಸರಿಯಾದ ಕ್ರೆಡಿಟ್ ಮಾಹಿತಿ ಕಾನೂನುಬದ್ಧ ಮತ್ತು ಪ್ರಕ್ರಿಯಾತ್ಮಕವಾಗಿ ಅನುಪಾಲನೆಯ ಹಕ್ಕುಗಳನ್ನು ಖಚಿತಪಡಿಸುತ್ತದೆ.",
+  "@creditInformationImportance": {
+    "description": "Importance of providing credit information in a loan application",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["personal_loan_journey"]
+  },
+  "creditInformationButtonTitle": "ಕ್ರೆಡಿಟ್ ಮಾಹಿತಿ",
+  "@creditInformationButtonTitle": {
+    "description": "Button label for providing credit information",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["personal_loan_journey"]
+  },
+  "creditInformationButtonDescription": "ನಿಮ್ಮ ಕ್ರೆಡಿಟ್ ಮಾಹಿತಿ, ಕ್ರೆಡಿಟ್ ಸ್ಕೋರ್, ಕ್ರೆಡಿಟ್ ಇತಿಹಾಸ, ಪ್ರಸ್ತುತ ಸಾಲ ಇತ್ಯಾದಿ ಒದಗಿಸಿ.",
+  "@creditInformationButtonDescription": {
+    "description": "Description for providing credit information",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["personal_loan_journey"]
+  },
+  "contactInformationImportance": "ಸಂಪರ್ಕ ಮಾಹಿತಿ ಸಾಲ ಅರ್ಜಿಯಲ್ಲಿ ಮುಖ್ಯವಾಗಿದೆ, ಏಕೆಂದರೆ ಇದು ಸಾಲದಾತರಿಗೆ ನಿಮ್ಮ ಗುರುತನ್ನು ಖಚಿತಪಡಿಸಲು, ನಿಮ್ಮನ್ನು ಸಂಪರ್ಕಿಸಲು ಮತ್ತು ನಿಮ್ಮ ಸಾಲವನ್ನು ಪುನರ್‌ಕೀಳಗೊಳ್ಳುವ ಸಾಮರ್ಥ್ಯವನ್ನು ಅಂದಾಜಿಸಲು ಸಹಾಯ ಮಾಡುತ್ತದೆ. ಫೋನ್ ಸಂಖ್ಯೆಗಳು, ಇಮೇಲ್, ವಿಳಾಸ ಇತ್ಯಾದಿ ನಿಮ್ಮ ಲಭ್ಯತೆ, ಸಂಪರ್ಕ ಸಾಮರ್ಥ್ಯದ ಬಗ್ಗೆ ಮಾಹಿತಿ ನೀಡುತ್ತವೆ.",
+  "@contactInformationImportance": {
+    "description": "Importance of providing contact information in a loan application",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["personal_loan_journey"]
+  },
+  "contactInformationButtonTitle": "ಸಂಪರ್ಕ ಮಾಹಿತಿ",
+  "@contactInformationButtonTitle": {
+    "description": "Button label for providing contact information",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["personal_loan_journey"]
+  },
+  "contactInformationButtonDescription": "ನಿಮ್ಮ ಸಂಪರ್ಕ ಮಾಹಿತಿ, ಫೋನ್ ಸಂಖ್ಯೆ, ಇಮೇಲ್, ವಿಳಾಸ ಇತ್ಯಾದಿ ಒದಗಿಸಿ.",
+  "@contactInformationButtonDescription": {
+    "description": "Description for providing contact information",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["personal_loan_journey"]
+  },
+  "loanFormTitle": "ಸಾಲದ ಅರ್ಜಿ",
+  "@loanFormTitle": {
+    "description": "Title for loan form",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["personal_loan_journey"]
+  },
+  "loanFormDescription": "ಅರ್ಜಿ ಸಲ್ಲಿಸಲು, ನಿಮ್ಮ ವೈಯಕ್ತಿಕ ಮಾಹಿತಿಯನ್ನು ಭರ್ತಿಮಾಡಿ ಮತ್ತು ಅಗತ್ಯವಿದ್ದರೆ ಬೆಂಬಲ ಡಾಕ್ಯುಮೆಂಟ್‌ಗಳನ್ನು ಲೋಡ್ ಮಾಡಿ.",
+  "@loanFormDescription": {
+    "description": "Description for loan form submission",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["personal_loan_journey"]
+  },
+  "loanFormButtonTitle": "ಅರ್ಜಿಯ ಮುಚ್ಚುವಿಕೆ",
+  "@loanFormButtonTitle": {
+    "description": "Button label for submitting loan form",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["personal_loan_journey"]
+  },
+  "loanFormButtonDescription": "ಋಣಕ್ಕಾಗಿ ಅರ್ಜಿ ಸಲ್ಲಿಸಲು, ನಿಮ್ಮ ವೆಚ್ಚ, ಉದ್ದೇಶ ಮತ್ತು ಹಣಕಾಸು ಅಗತ್ಯಗಳನ್ನು ಒದಗಿಸಿ.",
+  "@loanFormButtonDescription": {
+    "description": "Description for loan form submission",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["personal_loan_journey"]
+  },
+  "reviewFormButton": "ನಿಮ್ಮ ಫಾರ್ಮ್ ಪರಿಶೀಲಿಸಿ",
+  "@reviewFormButton": {
+    "description": "Button label for reviewing the loan form",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["personal_loan_journey"]
+  },
+  "reviewFormButtonDescription": "ನಿಮ್ಮ ಸಾಲದ ಅರ್ಜಿಯನ್ನು ಪರಿಶೀಲಿಸುವುದು ಮತ್ತು ಸಲ್ಲಿಸುವುದು ಸಾಲದ ಅರ್ಜಿ ಪ್ರಕ್ರಿಯೆಯ ಅಂತಿಮ ಹಂತವಾಗಿದೆ. ನೀವು ನೀಡಿರುವ ಎಲ್ಲಾ ಮಾಹಿತಿಯನ್ನು ಪರಿಶೀಲಿಸಿ, ಅದರ ಖಚಿತತೆಯನ್ನು ದೃಢೀಕರಿಸಿ, ಮತ್ತು ಸಾಲದಾತರಿಗೆ ಅನುಮೋದನೆಗಾಗಿ ನಿಮ್ಮ ಅರ್ಜಿಯನ್ನು ಸಲ್ಲಿಸಿ.",
+  "@reviewFormButtonDescription": {
+    "description": "Description for reviewing the loan form",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["personal_loan_journey"]
   }
 }
+
 
 
 

@@ -316,8 +316,198 @@
     "type": "text",
     "placeholders": {},
     "tags": ["dashboard_select_profile"]
+  },
+
+
+
+
+
+
+
+  "choosePersonalProfile": "ব্যক্তিগত প্রোফাইল বেছে নিন",
+  "@choosePersonalProfile": {
+    "description": "Title for choosing personal profile",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["personal_loan_journey"]
+  },
+  "selectedProfile": "নির্বাচিত প্রোফাইল: আদর্শ বর্মা",
+  "@selectedProfile": {
+    "description": "Message showing selected profile",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["personal_loan_journey"]
+  },
+  "selectProfileMessage": "প্রাপ্য প্রোফাইলের তালিকা থেকে আপনার ব্যক্তিগত প্রোফাইল নির্বাচন করুন। যদি আপনার কোনো প্রোফাইল না থাকে, তবে নতুন প্রোফাইল তৈরি করতে পারেন।",
+  "@selectProfileMessage": {
+    "description": "Message for selecting personal profile",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["personal_loan_journey"]
+  },
+  "itrImportance": "আপনার ITR দেওয়া ঋণের জন্য আবেদন করার সময় অত্যন্ত প্রয়োজনীয়, কারণ এটি ঋণদাতাদের আপনার আর্থিক স্থিতিশীলতা, ঋণ পরিশোধের সক্ষমতা এবং সর্বমোট বিশ্বাসযোগ্যতা নিশ্চিত করতে সাহায্য করে, যা ঋণ অনুমোদনের সম্ভাবনা বাড়ায়। ITR না থাকলে, আপনার আয় যাচাই করার জন্য বিকল্প কোন উপায় থাকবে না।",
+  "@itrImportance": {
+    "description": "Importance of providing ITR in a loan application",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["personal_loan_journey"]
+  },
+  "itrButtonTitle": "আয় কর রিটার্ন",
+  "@itrButtonTitle": {
+    "description": "Button label for providing ITR",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["personal_loan_journey"]
+  },
+  "itrButtonDescription": "গত ৩ বছরের আয় কর রিটার্নের ফর্ম প্রদান করুন অথবা আপনার আয় ঘোষণা করুন।",
+  "@itrButtonDescription": {
+    "description": "Description for providing ITR",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["personal_loan_journey"]
+  },
+  "bankDetailsImportance": "ব্যাংক তথ্য এবং বিবৃতি ঋণদাতাদের আপনার আর্থিক অভ্যাস, ঋণ পরিশোধের সক্ষমতা এবং ঋণের ঝুঁকি সম্পর্কে পরিষ্কার এবং বিশ্বাসযোগ্য ধারণা দিতে সাহায্য করে, যা ঋণ অনুমোদনে একটি গুরুত্বপূর্ণ উপাদান।",
+  "@bankDetailsImportance": {
+    "description": "Importance of providing bank details in a loan application",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["personal_loan_journey"]
+  },
+  "bankDetailsButtonTitle": "ব্যাংক বিস্তারিত",
+  "@bankDetailsButtonTitle": {
+    "description": "Button label for providing bank details",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["personal_loan_journey"]
+  },
+  "bankDetailsButtonDescription": "আপনার ব্যাংক বিস্তারিত প্রকাশ করুন, গত ৬ মাসের ব্যাংক বিবৃতি প্রদান করুন।",
+  "@bankDetailsButtonDescription": {
+    "description": "Description for providing bank details",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["personal_loan_journey"]
+  },
+  "personalDetailsImportance": "ঋণ আবেদন করতে ব্যক্তিগত তথ্য খুব গুরুত্বপূর্ণ, কারণ এটি আপনার পরিচয় নিশ্চিত করতে, আপনার যোগ্যতা নির্ধারণ করতে এবং আপনার ঋণযোগ্যতা মূল্যায়ন করতে সহায়তা করে। বয়স, ঠিকানা, চাকরির তথ্য ইত্যাদি আপনার স্থিতিশীলতা এবং ঋণ পরিশোধের সক্ষমতার তথ্য প্রদান করে। সঠিক ব্যক্তিগত তথ্য আইনগত এবং পদ্ধতিগতভাবে প্রতিপালন নিশ্চিত করে।",
+  "@personalDetailsImportance": {
+    "description": "Importance of providing personal details in a loan application",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["personal_loan_journey"]
+  },
+  "basicDetailsButtonTitle": "মূল তথ্য",
+  "@basicDetailsButtonTitle": {
+    "description": "Button label for providing basic details",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["personal_loan_journey"]
+  },
+  "basicDetailsButtonDescription": "আপনার ব্যক্তিগত তথ্য, নাম, বয়স, ঠিকানা ইত্যাদি প্রদান করুন।",
+  "@basicDetailsButtonDescription": {
+    "description": "Description for providing basic details",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["personal_loan_journey"]
+  },
+  "employmentDetailsImportance": "ঋণ আবেদন করতে চাকরির বিস্তারিত তথ্য গুরুত্বপূর্ণ, কারণ এটি ঋণদাতাদের আপনার ঋণ পরিশোধের সক্ষমতা, চাকরিতে স্থিতিশীলতা, আর্থিক তথ্য মূল্যায়নে সহায়তা করে। কোম্পানির নাম, পদ, বেতন ইত্যাদি আপনার আয়ের স্থিতিশীলতার তথ্য প্রদান করে।",
+  "@employmentDetailsImportance": {
+    "description": "Importance of providing employment details in a loan application",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["personal_loan_journey"]
+  },
+  "employmentDetailsButtonTitle": "চাকরির বিস্তারিত",
+  "@employmentDetailsButtonTitle": {
+    "description": "Button label for providing employment details",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["personal_loan_journey"]
+  },
+  "employmentDetailsButtonDescription": "আপনার চাকরির বিস্তারিত, কোম্পানির নাম, পদ, বেতন ইত্যাদি প্রদান করুন।",
+  "@employmentDetailsButtonDescription": {
+    "description": "Description for providing employment details",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["personal_loan_journey"]
+  },
+  "creditInformationImportance": "ক্রেডিট তথ্য ঋণ আবেদন করতে গুরুত্বপূর্ণ, কারণ এটি ঋণদাতাদের আপনার ঋণযোগ্যতা, ঋণ পরিশোধের সক্ষমতা, আর্থিক তথ্য মূল্যায়নে সহায়তা করে। ক্রেডিট স্কোর, ক্রেডিট ইতিহাস, বর্তমান ঋণ ইত্যাদি আপনার ক্রেডিট ঝুঁকি এবং ঋণ পরিশোধের সক্ষমতার তথ্য প্রদান করে। সঠিক ক্রেডিট তথ্য আইনগত এবং পদ্ধতিগতভাবে প্রতিপালন নিশ্চিত করে।",
+  "@creditInformationImportance": {
+    "description": "Importance of providing credit information in a loan application",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["personal_loan_journey"]
+  },
+  "creditInformationButtonTitle": "ক্রেডিট তথ্য",
+  "@creditInformationButtonTitle": {
+    "description": "Button label for providing credit information",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["personal_loan_journey"]
+  },
+  "creditInformationButtonDescription": "আপনার ক্রেডিট তথ্য, ক্রেডিট স্কোর, ক্রেডিট ইতিহাস, বর্তমান ঋণ ইত্যাদি প্রদান করুন।",
+  "@creditInformationButtonDescription": {
+    "description": "Description for providing credit information",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["personal_loan_journey"]
+  },
+  "contactInformationImportance": "যোগাযোগের তথ্য ঋণ আবেদন করতে গুরুত্বপূর্ণ, কারণ এটি ঋণদাতাদের আপনার পরিচয় নিশ্চিত করতে, আপনার সাথে যোগাযোগ করতে এবং আপনার ঋণ পরিশোধের সক্ষমতা মূল্যায়নে সহায়তা করে। ফোন নম্বর, ইমেইল, ঠিকানা ইত্যাদির তথ্য আপনার প্রাপ্যতা, যোগাযোগের সক্ষমতার তথ্য প্রদান করে।",
+  "@contactInformationImportance": {
+    "description": "Importance of providing contact information in a loan application",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["personal_loan_journey"]
+  },
+  "contactInformationButtonTitle": "যোগাযোগের তথ্য",
+  "@contactInformationButtonTitle": {
+    "description": "Button label for providing contact information",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["personal_loan_journey"]
+  },
+  "contactInformationButtonDescription": "আপনার যোগাযোগের তথ্য, ফোন নম্বর, ইমেইল, ঠিকানা ইত্যাদি প্রদান করুন।",
+  "@contactInformationButtonDescription": {
+    "description": "Description for providing contact information",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["personal_loan_journey"]
+  },
+  "loanFormImportance": "ঋণের প্রয়োজনীয়তা এবং উদ্দেশ্য ঋণদাতাদের আপনার আর্থিক চাহিদা, লক্ষ্য, প্রত্যাশার একটি পরিষ্কার ধারণা দেয়, যা ঋণের জন্য আবেদন করার সময় দায়িত্ব, নির্ভুলতা, এবং সেরা মতামত নিশ্চিত করে।",
+  "@loanFormImportance": {
+    "description": "Importance of filling out the loan form accurately",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["personal_loan_journey"]
+  },
+  "loanFormButtonTitle": "ঋণের ফর্ম",
+  "@loanFormButtonTitle": {
+    "description": "Button label for loan form submission",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["personal_loan_journey"]
+  },
+  "loanFormButtonDescription": "ঋণের আবেদনকারী চাহিদা, লক্ষ্য, আর্থিক প্রয়োজনীয়তা জমা করুন।",
+  "@loanFormButtonDescription": {
+    "description": "Description for loan form submission",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["personal_loan_journey"]
+  },
+  "reviewFormButton": "আপনার ফর্ম পর্যালোচনা করুন",
+  "@reviewFormButton": {
+    "description": "Button label for reviewing the loan form",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["personal_loan_journey"]
+  },
+  "reviewFormButtonDescription": "আপনার ঋণ আবেদনটি পর্যালোচনা করা এবং জমা দেওয়া ঋণ আবেদন প্রক্রিয়ার শেষ ধাপ। আপনি যে সমস্ত তথ্য প্রদান করেছেন তা পর্যালোচনা করুন, এর যথার্থতা নিশ্চিত করুন এবং আপনার আবেদনটি অনুমোদনের জন্য ঋণদাতার কাছে জমা দিন।",
+  "@reviewFormButtonDescription": {
+    "description": "Description for reviewing the loan form",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["personal_loan_journey"]
   }
 }
+
 
 
 

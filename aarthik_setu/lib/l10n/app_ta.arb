@@ -309,8 +309,206 @@
     "type": "text",
     "placeholders": {},
     "tags": ["dashboard_select_profile"]
+  },
+
+
+
+
+
+
+
+
+  "choosePersonalProfile": "தனிப்பட்ட சுயவிவரத்தை தேர்ந்தெடுக்கவும்",
+  "@choosePersonalProfile": {
+    "description": "Title for choosing personal profile",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["personal_loan_journey"]
+  },
+  "selectedProfile": "தேர்ந்தெடுக்கப்பட்ட சுயவிவரம்: மாதவன் குமரன்",
+  "@selectedProfile": {
+    "description": "Message showing selected profile",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["personal_loan_journey"]
+  },
+  "selectProfileMessage": "கிடைக்கும் சுயவிவரங்கள் பட்டியலிலிருந்து உங்கள் தனிப்பட்ட சுயவிவரத்தை தேர்ந்தெடுக்கவும். நீங்கள் புதிய சுயவிவரத்தை உருவாக்க விரும்பினால், அதை செய்யவும்.",
+  "@selectProfileMessage": {
+    "description": "Message for selecting personal profile",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["personal_loan_journey"]
+  },
+  "itrImportance": "உங்கள் ITR ஐ வழங்குவது கடனுக்கு விண்ணப்பிக்கும் போது மிக முக்கியமானது, ஏனெனில் இது கடன் வழங்குநர்களுக்கு உங்கள் நிதி நிலைத்தன்மை, கடனைக் கடைபிடிக்கும் திறன் மற்றும் மொத்தம் நம்பகத்தன்மையை உறுதி செய்ய உதவுகிறது, இது கடன் ஒப்புதலுக்கான வாய்ப்புகளை அதிகரிக்கிறது. ITR இல்லாதால், உங்கள் வருமானத்தை உறுதிப்படுத்த மற்ற எந்த வழியுமில்லை.",
+  "@itrImportance": {
+    "description": "Importance of providing ITR in a loan application",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["personal_loan_journey"]
+  },
+  "itrButtonTitle": "வருமான வரி அளிக்கவும்",
+  "@itrButtonTitle": {
+    "description": "Button label for providing ITR",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["personal_loan_journey"]
+  },
+  "itrButtonDescription": "கடந்த 3 வருடங்களுக்கான வருமான வரி அளிக்கவும் அல்லது உங்கள் வருமானத்தை அறிவிக்கவும்.",
+  "@itrButtonDescription": {
+    "description": "Description for providing ITR",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["personal_loan_journey"]
+  },
+  "bankDetailsImportance": "வங்கித் தகவல்கள் மற்றும் எதிர்பார்ப்பு, கடன் வழங்குநர்களுக்கு உங்கள் நிதி பழக்கவழக்கங்கள், கடனை மீண்டும் கட்டுப்படுத்தும் திறன் மற்றும் கடனின் ஆபத்துகளை வெளிப்படுத்த ஏற்ற துண்டு மற்றும் நம்பகமான படங்களை வழங்குவதில் உதவுகிறது, இது கடன் ஒப்புதலுக்கான முக்கியமான அம்சமாகும்.",
+  "@bankDetailsImportance": {
+    "description": "Importance of providing bank details in a loan application",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["personal_loan_journey"]
+  },
+  "bankDetailsButtonTitle": "வங்கி விவரங்கள்",
+  "@bankDetailsButtonTitle": {
+    "description": "Button label for providing bank details",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["personal_loan_journey"]
+  },
+  "bankDetailsButtonDescription": "உங்கள் வங்கியின் விவரங்களை வழங்கவும், கடந்த 6 மாதங்களுக்கு வங்கி வட்டார தகவல்களை அளிக்கவும்.",
+  "@bankDetailsButtonDescription": {
+    "description": "Description for providing bank details",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["personal_loan_journey"]
+  },
+  "personalDetailsImportance": "கடன் விண்ணப்பத்தில் தனிப்பட்ட தகவல்களை வழங்குவது மிகவும் முக்கியம், ஏனெனில் இது உங்கள் அடையாளத்தை உறுதி செய்ய, உரியத்தை தீர்மானிக்க மற்றும் கடனுக்கான உரிமையை கணிக்க உதவுகிறது. வயது, முகவரி, வேலைத் தகவல் மற்றும் மற்றவை உங்கள் நிலைத்தன்மை மற்றும் கடனைக் கடைபிடிக்கும் திறனுக்கான தகவல்களை வழங்குகிறது. சரியான தனிப்பட்ட தகவல்களுக்கு சட்டப்பூர்வமான மற்றும் செயல்முறை கற்றலுக்கான உரிமைகளை உறுதி செய்யும்.",
+  "@personalDetailsImportance": {
+    "description": "Importance of providing personal details in a loan application",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["personal_loan_journey"]
+  },
+  "basicDetailsButtonTitle": "அடிப்படை விவரங்கள்",
+  "@basicDetailsButtonTitle": {
+    "description": "Button label for providing basic details",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["personal_loan_journey"]
+  },
+  "basicDetailsButtonDescription": "உங்கள் தனிப்பட்ட தகவல்களை வழங்கவும், பெயர், வயது, முகவரி போன்றவை.",
+  "@basicDetailsButtonDescription": {
+    "description": "Description for providing basic details",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["personal_loan_journey"]
+  },
+  "employmentDetailsImportance": "வேலை விவரங்களை கடன் விண்ணப்பத்தில் வழங்குவது முக்கியமாகும், ஏனெனில் இது கடன் வழங்குநர்களுக்கு உங்கள் கடனை மீண்டும் கட்டுப்படுத்தும் திறன், வேலை நிலைத்தன்மை மற்றும் நிதி தகவல்களை மதிப்பீடு செய்ய உதவுகிறது. நிறுவனத்தின் பெயர், பதவி, சம்பளம் போன்றவை உங்கள் வருமானத்தின் நிலைத்தன்மையைப் பற்றிய தகவல்களை வழங்குகிறது.",
+  "@employmentDetailsImportance": {
+    "description": "Importance of providing employment details in a loan application",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["personal_loan_journey"]
+  },
+  "employmentDetailsButtonTitle": "வேலை விவரங்கள்",
+  "@employmentDetailsButtonTitle": {
+    "description": "Button label for providing employment details",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["personal_loan_journey"]
+  },
+  "employmentDetailsButtonDescription": "உங்கள் வேலை விவரங்களை வழங்கவும், நிறுவனத்தின் பெயர், பதவி, சம்பளம் போன்றவை.",
+  "@employmentDetailsButtonDescription": {
+    "description": "Description for providing employment details",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["personal_loan_journey"]
+  },
+  "creditInformationImportance": "கடன் விண்ணப்பத்தில் கடன் தகவல்களை வழங்குவது முக்கியமாகும், ஏனெனில் இது கடன் வழங்குநர்களுக்கு உங்கள் கடனைப் பெறுவதற்கான உரிமையை, கடனைக் கடைபிடிக்கும் திறனை மற்றும் நிதி தகவல்களை மதிப்பீடு செய்ய உதவுகிறது. கடன் மதிப்பீடு, கடன் வரலாறு, தற்போதைய கடன் போன்றவை உங்கள் கடன் ஆபத்துக்கள் மற்றும் கடனை மீண்டும் கட்டுப்படுத்தும் திறனைப் பற்றிய தகவல்களை வழங்குகிறது. சரியான கடன் தகவல்களுக்கான சட்டப்பூர்வ மற்றும் செயல்முறை விதிகளை உறுதி செய்யும்.",
+  "@creditInformationImportance": {
+    "description": "Importance of providing credit information in a loan application",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["personal_loan_journey"]
+  },
+  "creditInformationButtonTitle": "கடன் தகவல்",
+  "@creditInformationButtonTitle": {
+    "description": "Button label for providing credit information",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["personal_loan_journey"]
+  },
+  "creditInformationButtonDescription": "உங்கள் கடன் தகவல்களை, கடன் மதிப்பீடு, கடன் வரலாறு மற்றும் தற்போதைய கடன்களை வழங்கவும்.",
+  "@creditInformationButtonDescription": {
+    "description": "Description for providing credit information",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["personal_loan_journey"]
+  },
+  "contactInformationImportance": "கடன் விண்ணப்பத்தில் தொடர்பு தகவல்களை வழங்குவது மிகவும் முக்கியம், ஏனெனில் இது கடன் வழங்குநர்களுக்கு உங்கள் அடையாளத்தை உறுதி செய்ய, தொடர்பு கொள்ள மற்றும் உங்கள் கணக்குகளை நிர்வகிக்க உதவுகிறது. உங்கள் எண், ಮೇல், முகவரி ஆகியவற்றை வழங்கவும்.",
+  "@contactInformationImportance": {
+    "description": "Importance of providing contact information in a loan application",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["personal_loan_journey"]
+  },
+  "contactInformationButtonTitle": "தொடர்பு தகவல்",
+  "@contactInformationButtonTitle": {
+    "description": "Button label for providing contact information",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["personal_loan_journey"]
+  },
+  "contactInformationButtonDescription": "உங்கள் தொடர்பு தகவல்களை, எண், மின் அஞ்சல், முகவரி போன்றவற்றை வழங்கவும்.",
+  "@contactInformationButtonDescription": {
+    "description": "Description for providing contact information",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["personal_loan_journey"]
+  },
+  "loanFormTitle": "கடன் விண்ணப்பம்",
+  "@loanFormTitle": {
+    "description": "Title for loan form",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["personal_loan_journey"]
+  },
+  "loanFormDescription": "விண்ணப்பிக்க, உங்கள் தனிப்பட்ட தகவல்களை நிரப்பவும் மற்றும் தேவையான ஆதரவு ஆவணங்களை பதிவேற்றவும்.",
+  "@loanFormDescription": {
+    "description": "Description for loan form submission",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["personal_loan_journey"]
+  },
+  "loanFormButtonTitle": "விண்ணப்பத்தை சமர்ப்பிக்கவும்",
+  "@loanFormButtonTitle": {
+    "description": "Button label for submitting loan form",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["personal_loan_journey"]
+  },
+  "loanFormButtonDescription": "கடன் பெற, உங்கள் செலவுகள், நோக்கம் மற்றும் நிதி தேவைகளை வழங்கவும்.",
+  "@loanFormButtonDescription": {
+    "description": "Description for loan form submission",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["personal_loan_journey"]
+  },
+  "reviewFormButton": "உங்கள் படிவத்தை மதிப்பீடு செய்யவும்",
+  "@reviewFormButton": {
+    "description": "Button label for reviewing the loan form",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["personal_loan_journey"]
+  },
+  "reviewFormButtonDescription": "உங்கள் கடன் விண்ணப்பத்தை மதிப்பீடு செய்து சமர்ப்பிப்பது கடன் விண்ணப்ப செயல்முறையின் இறுதி கட்டமாகும். நீங்கள் அளித்த அனைத்து தகவல்களையும் மதிப்பீடு செய்து, அதன் துல்லியத்தினை உறுதிப்படுத்தி, கடன் வழங்குநரிடம் உங்கள் விண்ணப்பத்தை சமர்ப்பிக்கவும்.",
+  "@reviewFormButtonDescription": {
+    "description": "Description for reviewing the loan form",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["personal_loan_journey"]
   }
 }
+
 
 
 

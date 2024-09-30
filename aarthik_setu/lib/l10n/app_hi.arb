@@ -310,8 +310,198 @@
     "type": "text",
     "placeholders": {},
     "tags": ["dashboard_select_profile"]
+  },
+
+
+
+
+
+
+
+  "choosePersonalProfile": "अपनी व्यक्तिगत प्रोफ़ाइल चुनें",
+  "@choosePersonalProfile": {
+    "description": "Title for choosing personal profile",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["personal_loan_journey"]
+  },
+  "selectedProfile": "चयनित प्रोफ़ाइल: आदर्श वर्मा",
+  "@selectedProfile": {
+    "description": "Message showing selected profile",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["personal_loan_journey"]
+  },
+  "selectProfileMessage": "उपलब्ध प्रोफाइलों की सूची से अपनी व्यक्तिगत प्रोफाइल चुनें। यदि आपके पास प्रोफ़ाइल नहीं है, तो आप एक नई प्रोफ़ाइल बना सकते हैं।",
+  "@selectProfileMessage": {
+    "description": "Message for selecting personal profile",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["personal_loan_journey"]
+  },
+  "itrImportance": "ऋण के लिए आवेदन करते समय अपना ITR प्रदान करना महत्वपूर्ण है क्योंकि यह उधारदाताओं को आपकी वित्तीय स्थिरता, पुनर्भुगतान क्षमता और कुल मिलाकर विश्वसनीयता का आश्वासन देता है, जिससे आपके ऋण स्वीकृत होने की संभावना बढ़ जाती है। यदि आपके पास ITR नहीं है तो आप अपनी आय को मैन्युअली घोषित करने का विकल्प भी चुन सकते हैं।",
+  "@itrImportance": {
+    "description": "Importance of providing ITR in a loan application",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["personal_loan_journey"]
+  },
+  "itrButtonTitle": "आयकर रिटर्न",
+  "@itrButtonTitle": {
+    "description": "Button label for providing ITR",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["personal_loan_journey"]
+  },
+  "itrButtonDescription": "पिछले 3 वर्षों तक के लिए अपना आयकर रिटर्न फ़ॉर्म प्रदान करें या अपनी आय घोषित करें।",
+  "@itrButtonDescription": {
+    "description": "Description for providing ITR",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["personal_loan_journey"]
+  },
+  "bankDetailsImportance": "बैंक विवरण और स्टेटमेंट उधारदाताओं को आपकी वित्तीय आदतों, पुनर्भुगतान क्षमता और कुल मिलाकर क्रेडिट जोखिम का आकलन करने का एक पारदर्शी और विश्वसनीय तरीका प्रदान करते हैं, जो ऋण स्वीकृत करने में महत्वपूर्ण कारक होते हैं।",
+  "@bankDetailsImportance": {
+    "description": "Importance of providing bank details in a loan application",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["personal_loan_journey"]
+  },
+  "bankDetailsButtonTitle": "बैंक विवरण",
+  "@bankDetailsButtonTitle": {
+    "description": "Button label for providing bank details",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["personal_loan_journey"]
+  },
+  "bankDetailsButtonDescription": "अपने बैंक विवरण की घोषणा करें और पिछले 6 महीनों के लिए बैंक स्टेटमेंट प्रदान करें।",
+  "@bankDetailsButtonDescription": {
+    "description": "Description for providing bank details",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["personal_loan_journey"]
+  },
+  "personalDetailsImportance": "ऋण आवेदन में व्यक्तिगत विवरण महत्वपूर्ण होते हैं क्योंकि वे आपकी पहचान सत्यापित करने, आपकी पात्रता का आकलन करने और आपकी क्रेडिट योग्यता का निर्धारण करने में मदद करते हैं। उम्र, पता और रोजगार स्थिति जैसी जानकारी आपकी स्थिरता और पुनर्भुगतान क्षमता के बारे में जानकारी प्रदान करती है। सही व्यक्तिगत विवरण भी कानूनी और नियामक आवश्यकताओं का पालन सुनिश्चित करते हैं।",
+  "@personalDetailsImportance": {
+    "description": "Importance of providing personal details in a loan application",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["personal_loan_journey"]
+  },
+  "basicDetailsButtonTitle": "मूल विवरण",
+  "@basicDetailsButtonTitle": {
+    "description": "Button label for providing basic details",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["personal_loan_journey"]
+  },
+  "basicDetailsButtonDescription": "अपनी व्यक्तिगत जानकारी जैसे नाम, उम्र और पता प्रदान करें।",
+  "@basicDetailsButtonDescription": {
+    "description": "Description for providing basic details",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["personal_loan_journey"]
+  },
+  "employmentDetailsImportance": "रोजगार विवरण ऋण आवेदन में महत्वपूर्ण होते हैं क्योंकि वे उधारदाताओं को आपकी पुनर्भुगतान क्षमता, नौकरी स्थिरता और कुल मिलाकर वित्तीय स्थिति का आकलन करने में मदद करते हैं। कंपनी का नाम, पदनाम और वेतन जैसी जानकारी आपकी आय की स्थिरता और पुनर्भुगतान क्षमता के बारे में जानकारी प्रदान करती है।",
+  "@employmentDetailsImportance": {
+    "description": "Importance of providing employment details in a loan application",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["personal_loan_journey"]
+  },
+  "employmentDetailsButtonTitle": "रोजगार विवरण",
+  "@employmentDetailsButtonTitle": {
+    "description": "Button label for providing employment details",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["personal_loan_journey"]
+  },
+  "employmentDetailsButtonDescription": "अपना रोजगार विवरण जैसे कंपनी का नाम, पदनाम और वेतन प्रदान करें।",
+  "@employmentDetailsButtonDescription": {
+    "description": "Description for providing employment details",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["personal_loan_journey"]
+  },
+  "creditInformationImportance": "क्रेडिट जानकारी ऋण आवेदन में महत्वपूर्ण होती है क्योंकि यह उधारदाताओं को आपकी क्रेडिट योग्यता, पुनर्भुगतान क्षमता और कुल मिलाकर वित्तीय स्थिति का आकलन करने में मदद करती है। क्रेडिट स्कोर, क्रेडिट इतिहास और मौजूदा ऋण जैसी जानकारी आपकी क्रेडिट जोखिम और पुनर्भुगतान क्षमता के बारे में जानकारी प्रदान करती है। सही क्रेडिट जानकारी कानूनी और नियामक आवश्यकताओं का पालन सुनिश्चित करती है।",
+  "@creditInformationImportance": {
+    "description": "Importance of providing credit information in a loan application",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["personal_loan_journey"]
+  },
+  "creditInformationButtonTitle": "क्रेडिट जानकारी",
+  "@creditInformationButtonTitle": {
+    "description": "Button label for providing credit information",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["personal_loan_journey"]
+  },
+  "creditInformationButtonDescription": "अपनी क्रेडिट जानकारी जैसे क्रेडिट स्कोर, क्रेडिट इतिहास और मौजूदा ऋण प्रदान करें।",
+  "@creditInformationButtonDescription": {
+    "description": "Description for providing credit information",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["personal_loan_journey"]
+  },
+  "contactInformationImportance": "संपर्क जानकारी ऋण आवेदन में महत्वपूर्ण होती है क्योंकि यह उधारदाताओं को आपकी पहचान सत्यापित करने, आपसे संवाद करने और आपकी पुनर्भुगतान क्षमता का आकलन करने में मदद करती है। फोन नंबर, ईमेल और पता जैसी जानकारी आपकी उपलब्धता और संचार क्षमता के बारे में जानकारी प्रदान करती है।",
+  "@contactInformationImportance": {
+    "description": "Importance of providing contact information in a loan application",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["personal_loan_journey"]
+  },
+  "contactInformationButtonTitle": "संपर्क जानकारी",
+  "@contactInformationButtonTitle": {
+    "description": "Button label for providing contact information",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["personal_loan_journey"]
+  },
+  "contactInformationButtonDescription": "अपनी संपर्क जानकारी जैसे फोन नंबर, ईमेल और पता प्रदान करें।",
+  "@contactInformationButtonDescription": {
+    "description": "Description for providing contact information",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["personal_loan_journey"]
+  },
+  "loanFormImportance": "ऋण आवेदन प्रक्रिया का अंतिम चरण ऋण फॉर्म है। इसमें आप उधारदाता को स्वीकृति के लिए सभी आवश्यक जानकारी, दस्तावेज़ और विवरण प्रदान करते हैं। ऋण स्वीकृत होने की संभावना बढ़ाने के लिए फॉर्म को सटीक और पूरी तरह से भरें।",
+  "@loanFormImportance": {
+    "description": "Importance of filling out the loan form",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["personal_loan_journey"]
+  },
+  "loanFormButtonTitle": "ऋण फॉर्म",
+  "@loanFormButtonTitle": {
+    "description": "Button label for filling out the loan form",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["personal_loan_journey"]
+  },
+  "loanFormButtonDescription": "सभी आवश्यक जानकारी और दस्तावेज़ जमा करें।",
+  "@loanFormButtonDescription": {
+    "description": "Description for loan form submission",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["personal_loan_journey"]
+  },
+  "reviewFormButton": "अपना फॉर्म समीक्षा करें",
+  "@reviewFormButton": {
+    "description": "Button label for reviewing the loan form",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["personal_loan_journey"]
+  },
+  "reviewFormButtonDescription": "आपके ऋण आवेदन की समीक्षा और इसे जमा करना ऋण आवेदन प्रक्रिया का अंतिम चरण है। कृपया सभी जानकारी को ध्यान से पढ़ें, इसकी सटीकता सुनिश्चित करें, और अनुमोदन के लिए अपने आवेदन को ऋणदाता को भेजें।",
+  "@reviewFormButtonDescription": {
+    "description": "Description for reviewing the loan form",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["personal_loan_journey"]
   }
 }
+
 
 
 
