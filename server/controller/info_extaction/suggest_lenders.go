@@ -29,7 +29,7 @@ func SuggestLenders(c *gin.Context){
 	profileId := c.Param("profileId")
 	
 	ctx := context.Background()
-	profile_type := "None"
+	// profile_type := "None"
 	bankDetailsDoc, err := db_client.Collection("BankDetailsExtracted").Where("profileId", "==", profileId).Where("applicationId", "==", applicationId).Documents(ctx).GetAll()
 	if err != nil {
 		c.JSON(http.StatusInternalServerError, gin.H{"error": "Error retrieving bank details"})
@@ -50,10 +50,10 @@ func SuggestLenders(c *gin.Context){
 			c.JSON(http.StatusInternalServerError, gin.H{"error": "Error retrieving loan application"})
 			return
 		}else{
-			profile_type = "business"
+			// profile_type = "business"
 		}
 	}else{
-		profile_type = "personal"
+		// profile_type = "personal"
 	}
 	loanAppDoc[0].DataTo(&loanApplication)
 
