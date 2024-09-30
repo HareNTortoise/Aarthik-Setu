@@ -16,7 +16,7 @@ func init() {
 
 //Create new Profile
 
-func CreateProfile(c *gin.Context) {
+func CreatePersonalProfile(c *gin.Context) {
 	userId:= c.Param("userId")
 	name := c.PostForm("name")
 	pan := c.PostForm("pan")
@@ -24,7 +24,7 @@ func CreateProfile(c *gin.Context) {
 
 	profileId,_ := utils.GenerateRandomString(16)
 	// Check if the user's bank details already exist
-	query := client.Collection("profiles").
+	query := client.Collection("personal_profiles").
 		Where("pan", "==", pan).
 		Where("userId", "==", userId).
 		Documents(ctx)
@@ -39,7 +39,7 @@ func CreateProfile(c *gin.Context) {
 		return
 	}
 	created_at:= time.Now()
-	_, err = client.Collection("profiles").Doc(profileId).Set(ctx, map[string]interface{}{
+	_, err = client.Collection("personal_profiles").Doc(profileId).Set(ctx, map[string]interface{}{
 		"userId": userId,
 		"profileId": profileId,
 		"name": name,
@@ -54,12 +54,12 @@ func CreateProfile(c *gin.Context) {
 	c.JSON(http.StatusCreated, gin.H{"message": "Profile created successfully"})
 }
 
-func GetProfiles(c *gin.Context) {
+func GetPersonalProfiles(c *gin.Context) {
 	userId := c.Param("userId")
 	ctx := context.Background()
 
 	// Query profiles by userId
-	query := client.Collection("profiles").Where("userId", "==", userId).Documents(ctx)
+	query := client.Collection("personal_profiles").Where("userId", "==", userId).Documents(ctx)
 	profiles, err := query.GetAll()
 	if err != nil {
 		c.JSON(http.StatusInternalServerError, gin.H{"error": "Failed to retrieve profiles", "details": err.Error()})
@@ -81,7 +81,7 @@ func GetProfiles(c *gin.Context) {
 }
 
 
-func UpdateProfile(c *gin.Context) {
+func UpdatePersonalProfile(c *gin.Context) {
 	userId := c.Param("userId")
 	profileId := c.Param("profileId")
 	name := c.PostForm("name")
@@ -89,7 +89,7 @@ func UpdateProfile(c *gin.Context) {
 	ctx := context.Background()
 
 	// Check if the profile exists
-	docRef := client.Collection("profiles").Doc(profileId)
+	docRef := client.Collection("personal_profiles").Doc(profileId)
 	doc, err := docRef.Get(ctx)
 	if err != nil {
 		c.JSON(http.StatusNotFound, gin.H{"error": "Profile not found", "details": err.Error()})
@@ -117,13 +117,13 @@ func UpdateProfile(c *gin.Context) {
 	c.JSON(http.StatusOK, gin.H{"message": "Profile updated successfully"})
 }
 
-func DeleteProfile(c *gin.Context) {
+func DeletePersonalProfile(c *gin.Context) {
 	userId := c.Param("userId")
 	profileId := c.Param("profileId")
 	ctx := context.Background()
 
 	// Get the document reference
-	docRef := client.Collection("profiles").Doc(profileId)
+	docRef := client.Collection("personal_profiles").Doc(profileId)
 	doc, err := docRef.Get(ctx)
 	if err != nil {
 		c.JSON(http.StatusNotFound, gin.H{"error": "Profile not found", "details": err.Error()})

@@ -63,7 +63,8 @@ func main() {
 	info_extraction.RegisterSuggestLenders(router)
 
 	// Register profile routes
-	profile_applications.RegisterProfileRoutes(router)
+	profile_applications.RegisterPersonalProfileRoutes(router)
+	profile_applications.RegisterBusinessProfileRoutes(router)
 	profile_applications.RegisterApplicationsRoutes(router)
 
 	// Start the HTTP server
