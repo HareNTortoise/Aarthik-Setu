@@ -19,7 +19,7 @@ class PersonalLoanJourney extends StatelessWidget {
   Widget build(BuildContext context) {
     return Localizations.override(
       context: context,
-      locale: (BlocProvider.of<L10nBloc>(context).state as L10n).locale,
+      locale: (context.watch<L10nBloc>().state as L10n).locale,
       child: BlocBuilder<L10nBloc, L10nState>(
         builder: (context, state) {
       return Container(
@@ -27,7 +27,7 @@ class PersonalLoanJourney extends StatelessWidget {
         child: SingleChildScrollView(
           child: Column(
             children: [
-              const LanguageDropdown(),   //TODO: Language dropdown Not working
+              const LanguageDropdown(),
               Container(
                 padding: const EdgeInsets.symmetric(
                     horizontal: 100),
