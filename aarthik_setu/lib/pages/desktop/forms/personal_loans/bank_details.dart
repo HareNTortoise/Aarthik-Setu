@@ -53,7 +53,6 @@ class _BankDetailsPersonalFormState extends State<BankDetailsPersonalForm> {
                   children: [
                     const SizedBox(height: 30),
                     const LanguageDropdown(),
-                    const SizedBox(height: 60),
                     Text(
                       AppLocalizations.of(context)!.bankDetails,
                       style: GoogleFonts.poppins(fontSize: 80),
