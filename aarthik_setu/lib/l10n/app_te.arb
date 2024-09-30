@@ -550,6 +550,53 @@
     "type": "text",
     "placeholders": {},
     "tags": ["itr_form_personal_loan"]
+  },
+
+
+
+
+
+  "uploadITRTitle": "ఐటిఆర్ను అప్‌లోడ్ చేయండి (పిడిఎఫ్ ఫార్మాట్)",
+  "@uploadITRTitle": {
+    "description": "Title for the upload ITR section",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["itr_form_upload_personal_loan"]
+  },
+  "fyLabel": "ఆర్థిక సంవత్సరం",
+  "@fyLabel": {
+    "description": "Label for the financial year",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["itr_form_upload_personal_loan"]
+  },
+  "uploadButton": "ఫైల్ అప్‌లోడ్ చేయండి",
+  "@uploadButton": {
+    "description": "Label for the upload button",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["itr_form_upload_personal_loan"]
+  },
+  "instructionsTitle": "పిడిఎఫ్ ఫార్మాట్‌లో ఐటిఆర్‌ను డౌన్‌లోడ్ చేయడం ఎలా",
+  "@instructionsTitle": {
+    "description": "Title for the instructions dialog",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["itr_form_upload_personal_loan"]
+  },
+  "instructionsContent": "1. పై కుడివైపున ఉన్న 'లాగిన్' బటన్‌పై క్లిక్ చేసి, మీ లాగిన్ వివరాలతో లాగిన్ అవ్వండి.\n2. పై నావిగేషన్ బార్ నుండి 'ఇ-ఫైల్' క్లిక్ చేయండి.\n3. 'ఇ-ఫైల్' డ్రాప్‌డౌన్ మెనూ నుండి 'ఇన్‌కమ్ ట్యాక్స్ రిటర్న్స్' క్లిక్ చేయండి.\n4. 'ఇన్‌కమ్ ట్యాక్స్ రిటర్న్స్' డ్రాప్‌డౌన్ మెనూ నుండి 'ఫైల్డ్ రిటర్న్స్ చూడండి' క్లిక్ చేయండి.\n5. మీరు ఐటిఆర్ 1/2 ఫైల్ చేసినట్లయితే, 'డౌన్‌లోడ్ ఫార్మ్'పై క్లిక్ చేయండి, ఆ 'ఆ.వ.' కోసం ఐటిఆర్ పిడిఎఫ్ ఫైల్ డౌన్‌లోడ్ అవుతుంది.\n6. డౌన్‌లోడ్ చేసిన ఫైళ్లను ప్లాట్‌ఫారమ్‌లో అప్‌లోడ్ చేయండి.",
+  "@instructionsContent": {
+    "description": "Content for instructions on how to download ITR",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["itr_form_upload_personal_loan"]
+  },
+  "instructionsButton": "సూచనలు",
+  "@instructionsButton": {
+    "description": "Text for instructions button",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["itr_form_upload_personal_loan"]
   }
 }
 

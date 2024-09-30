@@ -559,6 +559,54 @@
     "type": "text",
     "placeholders": {},
     "tags": ["itr_form_personal_loan"]
+  },
+
+
+
+
+
+
+  "uploadITRTitle": "ഐടിആർ അപ്‌ലോഡ് ചെയ്യുക (PDF ഫോർമാറ്റ്)",
+  "@uploadITRTitle": {
+    "description": "Title for the upload ITR section",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["itr_form_upload_personal_loan"]
+  },
+  "fyLabel": "തിയ്യതി വർഷം",
+  "@fyLabel": {
+    "description": "Label for the financial year",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["itr_form_upload_personal_loan"]
+  },
+  "uploadButton": "ഫയൽ അപ്‌ലോഡ് ചെയ്യുക",
+  "@uploadButton": {
+    "description": "Label for the upload button",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["itr_form_upload_personal_loan"]
+  },
+  "instructionsTitle": "ഐടിആർ PDF ഫോർമാറ്റിൽ ഡൗൺലോഡ് ചെയ്യുന്നത് എങ്ങനെ",
+  "@instructionsTitle": {
+    "description": "Title for the instructions dialog",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["itr_form_upload_personal_loan"]
+  },
+  "instructionsContent": "1. മുകളിൽ വലതുവശത്തുള്ള 'ലോഗിൻ' ബട്ടൺ ക്ലിക്ക് ചെയ്യുക, നിങ്ങളുടെ ലോഗിൻ വിവരങ്ങൾ ഉപയോഗിച്ച് ലോഗിൻ ചെയ്യുക.\n\n2. മുകളിൽ കാണുന്ന നാവിഗേഷൻ ബാറിൽ നിന്ന് 'ഇ-ഫയൽ' ക്ലിക്ക് ചെയ്യുക.\n\n3. 'ഇ-ഫയൽ' ഡ്രോപ്പ്ഡൗൺ മെനുവിൽ നിന്ന് 'ഇൻകം ടാക്സ് റിട്ടേൺ' തിരഞ്ഞെടുക്കുക.\n\n4. 'ഇൻകം ടാക്സ് റിട്ടേൺ' ഡ്രോപ്പ്ഡൗൺ മെനുവിൽ നിന്ന് 'ഫയൽ ചെയ്ത റിട്ടേൺ കാണുക' തിരഞ്ഞെടുക്കുക.\n\n5. നിങ്ങൾ ഐടിആർ തരാം 1/2 ഫയൽ ചെയ്തിട്ടുണ്ടെങ്കിൽ, 'ഡൗൺലോഡ് ഫോർം' ക്ലിക്ക് ചെയ്യുക, ഇത് 'ആ.വ.'ക്കുള്ള PDF ഫയൽ ഡൗൺലോഡ് ചെയ്യും.\n\n6. ഡൗൺലോഡ് ചെയ്ത ഫയലുകൾ പ്ലാറ്റ്‌ഫോമിലേക്ക് അപ്‌ലോഡ് ചെയ്യുക.",
+  "@instructionsContent": {
+    "description": "Content for instructions on how to download ITR",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["itr_form_upload_personal_loan"]
+  },
+  "instructionsButton": "നിർദ്ദേശങ്ങൾ",
+  "@instructionsButton": {
+    "description": "Text for instructions button",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["itr_form_upload_personal_loan"]
   }
 }
 

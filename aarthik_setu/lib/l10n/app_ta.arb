@@ -559,6 +559,56 @@
     "type": "text",
     "placeholders": {},
     "tags": ["itr_form_personal_loan"]
+  },
+
+
+
+
+
+
+
+
+  "uploadITRTitle": "ஐ.டி.ஆர் பதிவேற்றம் செய்யவும் (PDF வடிவம்)",
+  "@uploadITRTitle": {
+    "description": "Title for the upload ITR section",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["itr_form_upload_personal_loan"]
+  },
+  "fyLabel": "நிதி ஆண்டு",
+  "@fyLabel": {
+    "description": "Label for the financial year",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["itr_form_upload_personal_loan"]
+  },
+  "uploadButton": "கோப்பை பதிவேற்றம் செய்யவும்",
+  "@uploadButton": {
+    "description": "Label for the upload button",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["itr_form_upload_personal_loan"]
+  },
+  "instructionsTitle": "PDF வடிவத்தில் ஐ.டி.ஆர் பதிவிறக்கம் செய்யும் முறை",
+  "@instructionsTitle": {
+    "description": "Title for the instructions dialog",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["itr_form_upload_personal_loan"]
+  },
+  "instructionsContent": "1. மேலேயுள்ள வலது மூலையில் 'உள்நுழை' பொத்தானைக் கிளிக் செய்து, உங்கள் உள்நுழைவு விவரங்களைக் கொண்டு உள்நுழையவும்.\n2. மேலேயுள்ள வழிச் சுட்டி பட்டியில் 'e-File' என்பதைத் தேர்வு செய்யவும்.\n3. 'e-File' இல் இருந்து 'வருமான வரி ரிட்டர்ன்' என்பதைத் தேர்வு செய்யவும்.\n4. 'வருமான வரி ரிட்டர்ன்' இல் இருந்து 'கோப்பு செய்யப்பட்ட வரவு-செலவினங்கள்' என்பதைத் தேர்வு செய்யவும்.\n5. நீங்கள் ITR வகை 1/2 க்கு பதிவிறக்கம் செய்ய விரும்பினால், 'படிவத்தைப் பதிவிறக்கம் செய்யவும்' என்பதைக் கிளிக் செய்யவும்.\n6. பதிவிறக்கம் செய்யப்பட்ட கோப்புகளை மேடையில் பதிவேற்றவும்.",
+  "@instructionsContent": {
+    "description": "Content for instructions on how to download ITR",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["itr_form_upload_personal_loan"]
+  },
+  "instructionsButton": "வழிமுறைகள்",
+  "@instructionsButton": {
+    "description": "Text for instructions button",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["itr_form_upload_personal_loan"]
   }
 }
 

@@ -548,6 +548,51 @@
     "type": "text",
     "placeholders": {},
     "tags": ["itr_form_personal_loan"]
+  },
+
+
+
+
+
+  "uploadITRTitle": "आईटीआर अपलोड करें (पीडीएफ प्रारूप)",
+  "@uploadITRTitle": {
+    "description": "Title for the upload ITR section",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["itr_form_upload_personal_loan"]
+  },
+  "fyLabel": "वित्तीय वर्ष",
+  "@fyLabel": {
+    "description": "Label for the financial year",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["itr_form_upload_personal_loan"]
+  },
+  "uploadButton": "फ़ाइल अपलोड करें",
+  "@uploadButton": {
+    "description": "Label for the upload button",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["itr_form_upload_personal_loan"]
+  },
+  "instructionsTitle": "आईटीआर पीडीएफ प्रारूप में कैसे डाउनलोड करें",
+  "@instructionsTitle": {
+    "description": "Title for the instructions dialog",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["itr_form_upload_personal_loan"]
+  },
+  "instructionsContent": "1. शीर्ष दाईं ओर 'लॉगिन' बटन पर क्लिक करें, और अपनी लॉगिन जानकारी के साथ लॉगिन करें।\n\n2. शीर्ष नेविगेशन बार से 'ई-फाइल' पर क्लिक करें।\n\n3. ई-फाइल ड्रॉपडाउन मेनू से 'आयकर रिटर्न' पर क्लिक करें।\n\n4. आयकर रिटर्न ड्रॉपडाउन मेनू से 'दाखिल किए गए रिटर्न देखें' पर क्लिक करें।\n\n5. यदि आपने आईटीआर प्रकार - 1/2 दाखिल किया है, तो 'डाउनलोड फॉर्म' पर क्लिक करें, उस 'आ.व.' के लिए आईटीआर पीडीएफ फ़ाइल डाउनलोड हो जाएगी।\n\n6. डाउनलोड की गई फाइलें प्लेटफार्म पर अपलोड करें।",
+  "@instructionsContent": {
+    "description": "Content for instructions on how to download ITR",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["itr_form_upload_personal_loan"]
+  },
+  "instructionsButton": "निर्देश",
+  "@instructionsButton": {
+    "description": "Text for instructions button",
+    "type": "text"
   }
 }
 

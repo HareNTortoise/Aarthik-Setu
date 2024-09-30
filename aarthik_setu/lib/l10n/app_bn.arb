@@ -554,9 +554,58 @@
     "type": "text",
     "placeholders": {},
     "tags": ["itr_form_personal_loan"]
+  },
+
+
+
+
+
+
+
+
+  "uploadITRTitle": "আইটিআর আপলোড করুন (পিডিএফ ফরম্যাট)",
+  "@uploadITRTitle": {
+    "description": "Title for the upload ITR section",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["itr_form_upload_personal_loan"]
+  },
+  "fyLabel": "আর্থিক বছর",
+  "@fyLabel": {
+    "description": "Label for the financial year",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["itr_form_upload_personal_loan"]
+  },
+  "uploadButton": "ফাইল আপলোড করুন",
+  "@uploadButton": {
+    "description": "Label for the upload button",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["itr_form_upload_personal_loan"]
+  },
+  "instructionsTitle": "পিডিএফ ফরম্যাটে আইটিআর ডাউনলোড করার পদ্ধতি",
+  "@instructionsTitle": {
+    "description": "Title for the instructions dialog",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["itr_form_upload_personal_loan"]
+  },
+  "instructionsContent": "1. উপরের ডানদিকে 'লগইন' বোতামে ক্লিক করুন এবং আপনার লগইন তথ্য দিয়ে লগইন করুন।\n\n2. উপরের নেভিগেশন বার থেকে 'ই-ফাইল' এ ক্লিক করুন।\n\n3. ই-ফাইল ড্রপডাউন মেনু থেকে 'আয়কর রিটার্ন' এ ক্লিক করুন।\n\n4. আয়কর রিটার্ন ড্রপডাউন মেনু থেকে 'ফাইল করা রিটার্ন দেখুন' এ ক্লিক করুন।\n\n5. আপনি যদি ITR টাইপ - 1/2 দাখিল করেন, তাহলে 'ডাউনলোড ফর্ম'-এ ক্লিক করুন, নির্দিষ্ট 'আয়বর্ষ' এর জন্য আইটিআর পিডিএফ ফাইল ডাউনলোড হবে।\n\n6. ডাউনলোড করা ফাইলগুলি প্ল্যাটফর্মে আপলোড করুন।",
+  "@instructionsContent": {
+    "description": "Content for instructions on how to download ITR",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["itr_form_upload_personal_loan"]
+  },
+  "instructionsButton": "নির্দেশ",
+  "@instructionsButton": {
+    "description": "Text for instructions button",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["itr_form_upload_personal_loan"]
   }
 }
-
 
 
 

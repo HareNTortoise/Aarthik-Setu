@@ -548,8 +548,58 @@
     "type": "text",
     "placeholders": {},
     "tags": ["itr_form_personal_loan"]
+  },
+
+
+
+
+
+
+
+  "uploadITRTitle": "Upload ITR (PDF format)",
+  "@uploadITRTitle": {
+    "description": "Title for the upload ITR section",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["itr_form_upload_personal_loan"]
+  },
+  "fyLabel": "Financial Year",
+  "@fyLabel": {
+    "description": "Label for the financial year",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["itr_form_upload_personal_loan"]
+  },
+  "uploadButton": "Upload File",
+  "@uploadButton": {
+    "description": "Label for the upload button",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["itr_form_upload_personal_loan"]
+  },
+  "instructionsTitle": "How to download ITR in PDF format",
+  "@instructionsTitle": {
+    "description": "Title for the instructions dialog",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["itr_form_upload_personal_loan"]
+  },
+  "instructionsContent": "1. Visit click on the 'Login' button on the top right corner, and login with your login details.\n2. Click on 'e-File' from the top Navigation Bar.\n3. Click on 'Income Tax Returns' from the e-File drop-down menu.\n4. Click on 'View Filed Returns' from the Income Tax Return drop-down menu.\n5. If you have filed ITR type - 1/2, click on 'Download Form', the ITR PDF file for that 'A.Y.' will get downloaded.\n6. Upload the downloaded files on the Platform.",
+  "@instructionsContent": {
+    "description": "Content for instructions on how to download ITR",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["itr_form_upload_personal_loan"]
+  },
+  "instructionsButton": "Instructions",
+  "@instructionsButton": {
+    "description": "Text for instructions button",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["itr_form_upload_personal_loan"]
   }
 }
+
 
 
 

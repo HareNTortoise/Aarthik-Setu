@@ -558,6 +558,55 @@
     "type": "text",
     "placeholders": {},
     "tags": ["itr_form_personal_loan"]
+  },
+
+
+
+
+
+
+
+  "uploadITRTitle": "ಐಟಿಆರ್ ಅಪ್ಲೋಡ್ ಮಾಡಿ (ಪಿಡಿಎಫ್ ಫಾರ್ಮಾಟ್)",
+  "@uploadITRTitle": {
+    "description": "Title for the upload ITR section",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["itr_form_upload_personal_loan"]
+  },
+  "fyLabel": "ಆರ್ಥಿಕ ವರ್ಷ",
+  "@fyLabel": {
+    "description": "Label for the financial year",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["itr_form_upload_personal_loan"]
+  },
+  "uploadButton": "ಫೈಲ್ ಅಪ್ಲೋಡ್ ಮಾಡಿ",
+  "@uploadButton": {
+    "description": "Label for the upload button",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["itr_form_upload_personal_loan"]
+  },
+  "instructionsTitle": "ಐಟಿಆರ್ ಅನ್ನು ಪಿಡಿಎಫ್ ಫಾರ್ಮಾಟ್‌ನಲ್ಲಿ ಡೌನ್‌ಲೋಡ್ ಮಾಡುವುದು ಹೇಗೆ",
+  "@instructionsTitle": {
+    "description": "Title for the instructions dialog",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["itr_form_upload_personal_loan"]
+  },
+  "instructionsContent": "1. ಮೇಲಿನ ಬಲಭಾಗದಲ್ಲಿರುವ 'ಲಾಗಿನ್' ಬಟನ್ ಕ್ಲಿಕ್ ಮಾಡಿ ಮತ್ತು ನಿಮ್ಮ ಲಾಗಿನ್ ವಿವರಗಳನ್ನು ಬಳಸಿ ಲಾಗಿನ್ ಮಾಡಿ.\n2. ಮೇಲಿನ ನ್ಯಾವಿಗೇಶನ್ ಬಾರ್ನಿಂದ 'ಇ-ಫೈಲ್' ಕ್ಲಿಕ್ ಮಾಡಿ.\n3. 'ಇ-ಫೈಲ್' ಡ್ರಾಪ್‌ಡೌನ್ ಮೆನುನಿಂದ 'ಆದಾಯ ತೆರಿಗೆ ರಿಟರ್ನ್' ಕ್ಲಿಕ್ ಮಾಡಿ.\n4. 'ಆದಾಯ ತೆರಿಗೆ ರಿಟರ್ನ್' ಡ್ರಾಪ್‌ಡೌನ್ ಮೆನುನಿಂದ 'ಫೈಲ್ ಮಾಡಿದ ರಿಟರ್ನ್ಸ್ ನೋಡಿ' ಕ್ಲಿಕ್ ಮಾಡಿ.\n5. ನೀವು ಐಟಿಆರ್ ಪ್ರಕಾರ - 1/2 ಫೈಲ್ ಮಾಡಿದ್ದರೆ, 'ಫಾರ್ಮ್ ಡೌನ್‌ಲೋಡ್ ಮಾಡಿ' ಕ್ಲಿಕ್ ಮಾಡಿ, ಆ 'ಆ.ವ.'ಗಾಗಿ ಐಟಿಆರ್ ಪಿಡಿಎಫ್ ಫೈಲ್ ಡೌನ್‌ಲೋಡ್ ಮಾಡಲಾಗುತ್ತದೆ.\n6. ಡೌನ್‌ಲೋಡ್ ಮಾಡಲಾದ ಫೈಲ್‌ಗಳನ್ನು ಪ್ಲಾಟ್‌ಫಾರ್ಮ್‌ನಲ್ಲಿ ಅಪ್ಲೋಡ್ ಮಾಡಿ.",
+  "@instructionsContent": {
+    "description": "Content for instructions on how to download ITR",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["itr_form_upload_personal_loan"]
+  },
+  "instructionsButton": "ಸೂಚನೆಗಳು",
+  "@instructionsButton": {
+    "description": "Text for instructions button",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["itr_form_upload_personal_loan"]
   }
 }
 
