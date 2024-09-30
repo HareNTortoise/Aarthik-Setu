@@ -1,5 +1,4 @@
 import 'package:aarthik_setu/bloc/l10n/l10n_bloc.dart';
-import 'package:aarthik_setu/bloc/l10n/l10n_bloc.dart';
 import 'package:aarthik_setu/constants/colors.dart';
 import 'package:aarthik_setu/global_components/procees_button.dart';
 import 'package:animated_toggle_switch/animated_toggle_switch.dart';
