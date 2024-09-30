@@ -100,7 +100,7 @@
     "description": "Label for the back button",
     "type": "text",
     "placeholders": {},
-    "tags": ["sign-in"]
+    "tags": ["sign-in", "itr_form_manual_personal_loan"]
   },
   "phoneNumber": "தொலைபேசி எண்",
   "@phoneNumber": {
@@ -609,8 +609,269 @@
     "type": "text",
     "placeholders": {},
     "tags": ["itr_form_upload_personal_loan"]
-  }
+  },
+
+
+
+
+
+
+
+
+
+  "@declareFinancialDetails": {
+    "description": "Title of the form to declare financial details.",
+    "type": "text",
+    "tags": ["itr_form_manual_personal_loan"]
+  },
+  "declareFinancialDetails": "உங்கள் நிதி விவரங்களை அறிவிக்கவும்",
+
+  "@firstName": {
+    "description": "Label for the first name input field.",
+    "type": "text",
+    "tags": ["itr_form_manual_personal_loan"]
+  },
+  "firstName": "முதல் பெயர்*",
+
+  "@firstNameHint": {
+    "description": "Hint text for the first name input field.",
+    "type": "text",
+    "tags": ["itr_form_manual_personal_loan"]
+  },
+  "firstNameHint": "உங்கள் முதல் பெயரை உள்ளிடவும்",
+
+  "@middleName": {
+    "description": "Label for the middle name input field.",
+    "type": "text",
+    "tags": ["itr_form_manual_personal_loan"]
+  },
+  "middleName": "மதிய பெயர்",
+
+  "@middleNameHint": {
+    "description": "Hint text for the middle name input field.",
+    "type": "text",
+    "tags": ["itr_form_manual_personal_loan"]
+  },
+  "middleNameHint": "உங்கள் மதிய பெயரை உள்ளிடவும்",
+
+  "@lastName": {
+    "description": "Label for the last name input field.",
+    "type": "text",
+    "tags": ["itr_form_manual_personal_loan"]
+  },
+  "lastName": "கடைசி பெயர்*",
+
+  "@lastNameHint": {
+    "description": "Hint text for the last name input field.",
+    "type": "text",
+    "tags": ["itr_form_manual_personal_loan"]
+  },
+  "lastNameHint": "உங்கள் கடைசி பெயரை உள்ளிடவும்",
+
+  "@dateOfBirth": {
+    "description": "Label for the date of birth input.",
+    "type": "text",
+    "tags": ["itr_form_manual_personal_loan"]
+  },
+  "dateOfBirth": "பிறந்த தேதி*",
+
+  "@dateOfBirthHint": {
+    "description": "Placeholder text for the date of birth button.",
+    "type": "text",
+    "tags": ["itr_form_manual_personal_loan"]
+  },
+  "dateOfBirthHint": "பிறந்த தேதி",
+
+  "@panNumber": {
+    "description": "Label for the PAN number input field.",
+    "type": "text",
+    "tags": ["itr_form_manual_personal_loan"]
+  },
+  "panNumber": "PAN எண்*",
+
+  "@panNumberHint": {
+    "description": "Hint text for the PAN number input field.",
+    "type": "text",
+    "tags": ["itr_form_manual_personal_loan"]
+  },
+  "panNumberHint": "உங்கள் PAN எண்ணை உள்ளிடவும்",
+
+  "@mobileNumber": {
+    "description": "Label for the mobile number input field.",
+    "type": "text",
+    "tags": ["itr_form_manual_personal_loan"]
+  },
+  "mobileNumber": "கைபேசி எண்*",
+
+  "@mobileNumberHint": {
+    "description": "Hint text for the mobile number input field.",
+    "type": "text",
+    "tags": ["itr_form_manual_personal_loan"]
+  },
+  "mobileNumberHint": "உங்கள் கைபேசி எண்ணை உள்ளிடவும்",
+
+  "@email": {
+    "description": "Label for the personal email input field.",
+    "type": "text",
+    "tags": ["itr_form_manual_personal_loan"]
+  },
+  "email": "இமெயில் (தனிப்பட்ட)*",
+
+  "@emailHint": {
+    "description": "Hint text for the personal email input field.",
+    "type": "text",
+    "tags": ["itr_form_manual_personal_loan"]
+  },
+  "emailHint": "உங்கள் இமெயிலை உள்ளிடவும்",
+
+  "@addressLine1": {
+    "description": "Label for the address line 1 input field.",
+    "type": "text",
+    "tags": ["itr_form_manual_personal_loan"]
+  },
+  "addressLine1": "முகவரி வரி 1*",
+
+  "@addressLine1Hint": {
+    "description": "Hint text for the address line 1 input field.",
+    "type": "text",
+    "tags": ["itr_form_manual_personal_loan"]
+  },
+  "addressLine1Hint": "உங்கள் முகவரியை உள்ளிடவும்",
+
+  "@addressLine2": {
+    "description": "Label for the address line 2 input field.",
+    "type": "text",
+    "tags": ["itr_form_manual_personal_loan"]
+  },
+  "addressLine2": "முகவரி வரி 2",
+
+  "@addressLine2Hint": {
+    "description": "Hint text for the address line 2 input field.",
+    "type": "text",
+    "tags": ["itr_form_manual_personal_loan"]
+  },
+  "addressLine2Hint": "உங்கள் முகவரியை உள்ளிடவும்",
+
+  "@landmark": {
+    "description": "Label for the landmark input field.",
+    "type": "text",
+    "tags": ["itr_form_manual_personal_loan"]
+  },
+  "landmark": "நிகழ்ச்சி இடம்",
+
+  "@landmarkHint": {
+    "description": "Hint text for the landmark input field.",
+    "type": "text",
+    "tags": ["itr_form_manual_personal_loan"]
+  },
+  "landmarkHint": "நிகழ்ச்சி இடத்தை உள்ளிடவும்",
+
+  "@country": {
+    "description": "Label for the country dropdown.",
+    "type": "text",
+    "tags": ["itr_form_manual_personal_loan"]
+  },
+  "country": "நாடு*",
+
+  "@state": {
+    "description": "Label for the state dropdown.",
+    "type": "text",
+    "tags": ["itr_form_manual_personal_loan"]
+  },
+  "state": "அமைச்சகம்*",
+
+  "@city": {
+    "description": "Label for the city dropdown.",
+    "type": "text",
+    "tags": ["itr_form_manual_personal_loan"]
+  },
+  "city": "நகரம்*",
+
+  "@pinCode": {
+    "description": "Label for the pin code input field.",
+    "type": "text",
+    "tags": ["itr_form_manual_personal_loan"]
+  },
+  "pinCode": "பின் குறியீடு*",
+
+  "@pinCodeHint": {
+    "description": "Hint text for the pin code input field.",
+    "type": "text",
+    "tags": ["itr_form_manual_personal_loan"]
+  },
+  "pinCodeHint": "உங்கள் பின் குறியீட்டை உள்ளிடவும்",
+
+  "@village": {
+    "description": "Label for the village input field.",
+    "type": "text",
+    "tags": ["itr_form_manual_personal_loan"]
+  },
+  "village": "கிராமம்",
+
+  "@villageHint": {
+    "description": "Hint text for the village input field.",
+    "type": "text",
+    "tags": ["itr_form_manual_personal_loan"]
+  },
+  "villageHint": "உங்கள் கிராமத்தை உள்ளிடவும்",
+
+  "@district": {
+    "description": "Label for the district input field.",
+    "type": "text",
+    "tags": ["itr_form_manual_personal_loan"]
+  },
+  "district": "மாவட்டம்*",
+
+  "@districtHint": {
+    "description": "Hint text for the district input field.",
+    "type": "text",
+    "tags": ["itr_form_manual_personal_loan"]
+  },
+  "districtHint": "உங்கள் மாவட்டத்தை உள்ளிடவும்",
+
+  "@subDistrict": {
+    "description": "Label for the sub-district input field.",
+    "type": "text",
+    "tags": ["itr_form_manual_personal_loan"]
+  },
+  "subDistrict": "உப மாவட்டம்*",
+
+  "@subDistrictHint": {
+    "description": "Hint text for the sub-district input field.",
+    "type": "text",
+    "tags": ["itr_form_manual_personal_loan"]
+  },
+  "subDistrictHint": "உங்கள் உப மாவட்டத்தை உள்ளிடவும்",
+
+  "@annualIncome": {
+    "description": "Label for annual income input field.",
+    "type": "text",
+    "tags": ["itr_form_manual_personal_loan"]
+  },
+  "annualIncome": "வருஷாந்திர வருமானம்*",
+
+  "@annualIncomeHint": {
+    "description": "Hint text for the annual income input field.",
+    "type": "text",
+    "tags": ["itr_form_manual_personal_loan"]
+  },
+  "annualIncomeHint": "உங்கள் வருஷாந்திர வருமானத்தை உள்ளிடவும்",
+
+  "@submitButton": {
+    "description": "Label for the submit button.",
+    "type": "text",
+    "tags": ["itr_form_manual_personal_loan"]
+  },
+  "submitButton": "சமர்ப்பிக்க",
+
+  "@proceedButton": {
+    "description": "Label for the proceed button.",
+    "type": "text",
+    "tags": ["itr_form_manual_personal_loan"]
+  },
+  "proceedButton": "முன்னேறு"
 }
+
 
 
 

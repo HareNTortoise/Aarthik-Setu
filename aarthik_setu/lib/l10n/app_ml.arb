@@ -100,7 +100,7 @@
     "description": "Label for the back button",
     "type": "text",
     "placeholders": {},
-    "tags": ["sign-in"]
+    "tags": ["sign-in", "itr_form_manual_personal_loan"]
   },
   "phoneNumber": "ഫോൺ നമ്പർ",
   "@phoneNumber": {
@@ -607,7 +607,281 @@
     "type": "text",
     "placeholders": {},
     "tags": ["itr_form_upload_personal_loan"]
-  }
+  },
+
+
+
+
+
+
+
+
+  "@declareFinancialDetails": {
+    "description": "Title of the form to declare financial details.",
+    "type": "text",
+    "tags": ["itr_form_manual_personal_loan"]
+  },
+  "declareFinancialDetails": "നിങ്ങളുടെ ധനകാര്യ വിവരങ്ങൾ പ്രഖ്യാപിക്കുക",
+
+  "@firstName": {
+    "description": "Label for the first name input field.",
+    "type": "text",
+    "tags": ["itr_form_manual_personal_loan"]
+  },
+  "firstName": "മുന്നത്തെ പേര്*",
+
+  "@firstNameHint": {
+    "description": "Hint text for the first name input field.",
+    "type": "text",
+    "tags": ["itr_form_manual_personal_loan"]
+  },
+  "firstNameHint": "നിങ്ങളുടെ മുന്‍പത്തെ പേര് രേഖപ്പെടുത്തുക",
+
+  "@middleName": {
+    "description": "Label for the middle name input field.",
+    "type": "text",
+    "tags": ["itr_form_manual_personal_loan"]
+  },
+  "middleName": "നടവിലേക്ക് പേര്",
+
+  "@middleNameHint": {
+    "description": "Hint text for the middle name input field.",
+    "type": "text",
+    "tags": ["itr_form_manual_personal_loan"]
+  },
+  "middleNameHint": "നിങ്ങളുടെ നടവിലേക്ക് പേര് രേഖപ്പെടുത്തുക",
+
+  "@lastName": {
+    "description": "Label for the last name input field.",
+    "type": "text",
+    "tags": ["itr_form_manual_personal_loan"]
+  },
+  "lastName": "അവസാന പേര്*",
+
+  "@lastNameHint": {
+    "description": "Hint text for the last name input field.",
+    "type": "text",
+    "tags": ["itr_form_manual_personal_loan"]
+  },
+  "lastNameHint": "നിങ്ങളുടെ അവസാന പേര് രേഖപ്പെടുത്തുക",
+
+  "@dateOfBirth": {
+    "description": "Label for the date of birth input.",
+    "type": "text",
+    "tags": ["itr_form_manual_personal_loan"]
+  },
+  "dateOfBirth": "ജനന തീയതി*",
+
+  "@dateOfBirthHint": {
+    "description": "Placeholder text for the date of birth button.",
+    "type": "text",
+    "tags": ["itr_form_manual_personal_loan"]
+  },
+  "dateOfBirthHint": "ജനന തീയതി",
+
+  "@panNumber": {
+    "description": "Label for the PAN number input field.",
+    "type": "text",
+    "tags": ["itr_form_manual_personal_loan"]
+  },
+  "panNumber": "PAN നമ്പർ*",
+
+  "@panNumberHint": {
+    "description": "Hint text for the PAN number input field.",
+    "type": "text",
+    "tags": ["itr_form_manual_personal_loan"]
+  },
+  "panNumberHint": "നിങ്ങളുടെ PAN നമ്പർ രേഖപ്പെടുത്തുക",
+
+  "@mobileNumber": {
+    "description": "Label for the mobile number input field.",
+    "type": "text",
+    "tags": ["itr_form_manual_personal_loan"]
+  },
+  "mobileNumber": "മൊബൈൽ നമ്പർ*",
+
+  "@mobileNumberHint": {
+    "description": "Hint text for the mobile number input field.",
+    "type": "text",
+    "tags": ["itr_form_manual_personal_loan"]
+  },
+  "mobileNumberHint": "നിങ്ങളുടെ മൊബൈൽ നമ്പർ രേഖപ്പെടുത്തുക",
+
+  "@email": {
+    "description": "Label for the personal email input field.",
+    "type": "text",
+    "tags": ["itr_form_manual_personal_loan"]
+  },
+  "email": "ഇമെയിൽ (വ്യക്തിഗത)*",
+
+  "@emailHint": {
+    "description": "Hint text for the personal email input field.",
+    "type": "text",
+    "tags": ["itr_form_manual_personal_loan"]
+  },
+  "emailHint": "നിങ്ങളുടെ ഇമെയിൽ രേഖപ്പെടുത്തുക",
+
+  "@addressLine1": {
+    "description": "Label for the address line 1 input field.",
+    "type": "text",
+    "tags": ["itr_form_manual_personal_loan"]
+  },
+  "addressLine1": "വിലാസ രേഖ 1*",
+
+  "@addressLine1Hint": {
+    "description": "Hint text for the address line 1 input field.",
+    "type": "text",
+    "tags": ["itr_form_manual_personal_loan"]
+  },
+  "addressLine1Hint": "നിങ്ങളുടെ വിലാസം രേഖപ്പെടുത്തുക",
+
+  "@addressLine2": {
+    "description": "Label for the address line 2 input field.",
+    "type": "text",
+    "tags": ["itr_form_manual_personal_loan"]
+  },
+  "addressLine2": "വിലാസ രേഖ 2",
+
+  "@addressLine2Hint": {
+    "description": "Hint text for the address line 2 input field.",
+    "type": "text",
+    "tags": ["itr_form_manual_personal_loan"]
+  },
+  "addressLine2Hint": "നിങ്ങളുടെ വിലാസം രേഖപ്പെടുത്തുക",
+
+  "@landmark": {
+    "description": "Label for the landmark input field.",
+    "type": "text",
+    "tags": ["itr_form_manual_personal_loan"]
+  },
+  "landmark": "ലാൻഡ് മാർക്ക്",
+
+  "@landmarkHint": {
+    "description": "Hint text for the landmark input field.",
+    "type": "text",
+    "tags": ["itr_form_manual_personal_loan"]
+  },
+  "landmarkHint": "ലാൻഡ് മാർക്ക് രേഖപ്പെടുത്തുക",
+
+  "@country": {
+    "description": "Label for the country dropdown.",
+    "type": "text",
+    "tags": ["itr_form_manual_personal_loan"]
+  },
+  "country": "രാജ്യം*",
+
+  "@state": {
+    "description": "Label for the state dropdown.",
+    "type": "text",
+    "tags": ["itr_form_manual_personal_loan"]
+  },
+  "state": "രാജ്യം*",
+
+  "@city": {
+    "description": "Label for the city dropdown.",
+    "type": "text",
+    "tags": ["itr_form_manual_personal_loan"]
+  },
+  "city": "നഗരം*",
+
+  "@pinCode": {
+    "description": "Label for the pin code input field.",
+    "type": "text",
+    "tags": ["itr_form_manual_personal_loan"]
+  },
+  "pinCode": "പിൻ കോഡ്*",
+
+  "@pinCodeHint": {
+    "description": "Hint text for the pin code input field.",
+    "type": "text",
+    "tags": ["itr_form_manual_personal_loan"]
+  },
+  "pinCodeHint": "നിങ്ങളുടെ പിന് കോഡ് രേഖപ്പെടുത്തുക",
+
+  "@village": {
+    "description": "Label for the village input field.",
+    "type": "text",
+    "tags": ["itr_form_manual_personal_loan"]
+  },
+  "village": "ഗ്രാമം",
+
+  "@villageHint": {
+    "description": "Hint text for the village input field.",
+    "type": "text",
+    "tags": ["itr_form_manual_personal_loan"]
+  },
+  "villageHint": "നിങ്ങളുടെ ഗ്രാമം രേഖപ്പെടുത്തുക",
+
+  "@district": {
+    "description": "Label for the district input field.",
+    "type": "text",
+    "tags": ["itr_form_manual_personal_loan"]
+  },
+  "district": "ജില്ല*",
+
+  "@districtHint": {
+    "description": "Hint text for the district input field.",
+    "type": "text",
+    "tags": ["itr_form_manual_personal_loan"]
+  },
+  "districtHint": "നിങ്ങളുടെ ജില്ല രേഖപ്പെടുത്തുക",
+
+  "@subDistrict": {
+    "description": "Label for the sub-district input field.",
+    "type": "text",
+    "tags": ["itr_form_manual_personal_loan"]
+  },
+  "subDistrict": "ഉപജില്ല*",
+
+  "@subDistrictHint": {
+    "description": "Hint text for the sub-district input field.",
+    "type": "text",
+    "tags": ["itr_form_manual_personal_loan"]
+  },
+  "subDistrictHint": "നിങ്ങളുടെ ഉപജില്ല രേഖപ്പെടുത്തുക",
+
+  "@netAnnualIncome": {
+    "description": "Label for the net annual income input field.",
+    "type": "text",
+    "tags": ["itr_form_manual_personal_loan"]
+  },
+  "netAnnualIncome": "ശുദ്ധ വാർഷിക വരുമാനം*",
+
+  "@netAnnualIncomeHint": {
+    "description": "Hint text for the net annual income input field.",
+    "type": "text",
+    "tags": ["itr_form_manual_personal_loan"]
+  },
+  "netAnnualIncomeHint": "നിങ്ങളുടെ ശുദ്ധ വാർഷിക വരുമാനം രേഖപ്പെടുത്തുക",
+
+  "@annualIncome": {
+    "description": "Label for annual income input field.",
+    "type": "text",
+    "tags": ["itr_form_manual_personal_loan"]
+  },
+  "annualIncome": "വാർഷിക വരുമാനം*",
+
+  "@annualIncomeHint": {
+    "description": "Hint text for the annual income input field.",
+    "type": "text",
+    "tags": ["itr_form_manual_personal_loan"]
+  },
+  "annualIncomeHint": "നിങ്ങളുടെ വാർഷിക വരുമാനം രേഖപ്പെടുത്തുക",
+
+  "@submitButton": {
+    "description": "Label for the submit button.",
+    "type": "text",
+    "tags": ["itr_form_manual_personal_loan"]
+  },
+  "submitButton": "സമർപ്പിക്കുക",
+
+  "@proceedButton": {
+    "description": "Label for the proceed button.",
+    "type": "text",
+    "tags": ["itr_form_manual_personal_loan"]
+  },
+  "proceedButton": "മുന്നോട്ട് പോകുക"
 }
+
 
 
