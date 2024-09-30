@@ -9,8 +9,8 @@ import 'package:line_icons/line_icons.dart';
 import 'package:timeline_tile/timeline_tile.dart';
 import '../../../../constants/colors.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
+import '../../../../global_components/language_dropdown.dart';
 
-import 'package:aarthik_setu/global_components/language_dropdown.dart';
 
 class PersonalLoanJourney extends StatelessWidget {
   const PersonalLoanJourney({super.key});
@@ -27,11 +27,11 @@ class PersonalLoanJourney extends StatelessWidget {
         child: SingleChildScrollView(
           child: Column(
             children: [
+              const LanguageDropdown(),   //TODO: Language dropdown Not working
               Container(
                 padding: const EdgeInsets.symmetric(
                     horizontal: 100),
                 alignment: Alignment.topRight,
-                child: const LanguageDropdown(),  //TODO: Language dropdown Not working
               ),
               SizedBox(
                 height: 400,
