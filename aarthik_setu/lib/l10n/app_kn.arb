@@ -100,7 +100,7 @@
     "description": "Label for the back button",
     "type": "text",
     "placeholders": {},
-    "tags": ["sign-in", "itr_form_manual_personal_loan"]
+    "tags": ["sign-in", "itr_form_manual_personal_loan", "bank_details_personal_loan"]
   },
   "phoneNumber": "ಫೋನ್ ಸಂಖ್ಯೆ",
   "@phoneNumber": {
@@ -292,7 +292,7 @@
     "description": "Label for the close button",
     "type": "text",
     "placeholders": {},
-    "tags": ["dashboard_pending_applications", "dashboard_select_profile"]
+    "tags": ["dashboard_pending_applications", "dashboard_select_profile", "bank_details_personal_loan"]
   },
 
 
@@ -878,9 +878,113 @@
   "@proceedButton": {
     "description": "Label for the proceed button.",
     "type": "text",
-    "tags": ["itr_form_manual_personal_loan"]
+    "tags": ["itr_form_manual_personal_loan", "bank_details_personal_loan"]
   },
-  "proceedButton": "ಮುಂದುವರಿಯಿರಿ"
+  "proceedButton": "ಮುಂದುವರಿಯಿರಿ",
+
+
+
+
+
+
+  "@bankDetails": {
+    "description": "Title for the bank details section.",
+    "type": "text",
+    "tags": ["bank_details_personal_loan"]
+  },
+  "bankDetails": "ಬ್ಯಾಂಕ್ ವಿವರಗಳು",
+
+  "@addUpTo3Accounts": {
+    "description": "Message indicating how many bank accounts can be added.",
+    "type": "text",
+    "tags": ["bank_details_personal_loan"]
+  },
+  "addUpTo3Accounts": "ನೀವು 3 ಬ್ಯಾಂಕ್ ಖಾತೆಗಳನ್ನು ಸೇರಿಸಬಹುದು",
+
+  "@uploadBankStatement": {
+    "description": "Label for uploading bank statement.",
+    "type": "text",
+    "tags": ["bank_details_personal_loan"]
+  },
+  "uploadBankStatement": "ಬ್ಯಾಂಕ್ ಸ್ಟೇಟ್ಮೆಂಟ್ ಅಪ್ಲೋಡ್ ಮಾಡಿ (PDF)",
+
+  "@addAccount": {
+    "description": "Label for adding a new bank account button.",
+    "type": "text",
+    "tags": ["bank_details_personal_loan"]
+  },
+  "addAccount": "ಖಾತೆ ಸೇರಿಸಿ",
+
+  "@bankName": {
+    "description": "Label for bank name field.",
+    "type": "text",
+    "tags": ["bank_details_personal_loan"]
+  },
+  "bankName": "ಬ್ಯಾಂಕ್ ಹೆಸರು*",
+
+  "@enterBankName": {
+    "description": "Placeholder text for bank name input field.",
+    "type": "text",
+    "tags": ["bank_details_personal_loan"]
+  },
+  "enterBankName": "ಬ್ಯಾಂಕ್ ಹೆಸರನ್ನು ನಮೂದಿಸಿ",
+
+  "@accountSinceMonth": {
+    "description": "Label for account since month field.",
+    "type": "text",
+    "tags": ["bank_details_personal_loan"]
+  },
+  "accountSinceMonth": "ಖಾತೆ (ತಿಂಗಳು)*",
+
+  "@month": {
+    "description": "Placeholder text for selecting the month.",
+    "type": "text",
+    "tags": ["bank_details_personal_loan"]
+  },
+  "month": "ತಿಂಗಳು",
+
+  "@accountSinceYear": {
+    "description": "Label for account since year field.",
+    "type": "text",
+    "tags": ["bank_details_personal_loan"]
+  },
+  "accountSinceYear": "ಖಾತೆ (ವರ್ಷ)*",
+
+  "@yearButton": {
+    "description": "Placeholder text for selecting the year.",
+    "type": "text",
+    "tags": ["bank_details_personal_loan"]
+  },
+  "yearButton": "ವರ್ಷ",
+
+  "@isSalaryAccount": {
+    "description": "Question asking if the account is a salary account.",
+    "type": "text",
+    "tags": ["bank_details_personal_loan"]
+  },
+  "isSalaryAccount": "ಇದು ವೇತನ ಖಾತೆವೆ?",
+
+  "@yesButton": {
+    "description": "Option for 'Yes' in response to a question.",
+    "type": "text",
+    "tags": ["bank_details_personal_loan"]
+  },
+  "yesButton": "ಹೌದು",
+
+  "@noButton": {
+    "description": "Option for 'No' in response to a question.",
+    "type": "text",
+    "tags": ["bank_details_personal_loan"]
+  },
+  "noButton": "ಇಲ್ಲ",
+
+  "drag_file_here": "ಫೈಲ್ ಅನ್ನು ಇಲ್ಲಿ ಎಳೆಯಿರಿ",
+  "@drag_file_here": {
+    "description": "Text for dragging and dropping a file.",
+    "type": "text",
+    "tags": ["bank_details_personal_loan"]
+  }
+
 }
 
 
