@@ -508,8 +508,60 @@
     "type": "text",
     "placeholders": {},
     "tags": ["personal_loan_journey"]
+  },
+
+
+
+
+
+
+
+
+  "itrDetailsTitle": "ಐಟಿಆರ್ ವಿವರಗಳು",
+  "@itrDetailsTitle": {
+    "description": "Title for the ITR Details section",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["itr_form_personal_loan"]
+  },
+  "manualDeclarationText": "ನಿಮ್ಮ ವಾರ್ಷಿಕ ಆದಾಯವು 2.5 ಲಕ್ಷಕ್ಕಿಂತ ಕಡಿಮೆಯಿದ್ದರೆ, ನಿಮ್ಮ ಆರ್ಥಿಕ ವಿವರಗಳನ್ನು ಘೋಷಿಸಿ",
+  "@manualDeclarationText": {
+    "description": "Text for manual declaration option",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["itr_form_personal_loan"]
+  },
+  "itrMandatoryText_1": "ಆರ್ಥಿಕ ವರ್ಷದ ಐಟಿಆರ್ ವಿವರಗಳು",
+  "@itrMandatoryText_1": {
+    "description": "Text for the ITR Details section",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["itr_form_personal_loan"]
+  },
+  "itrMandatoryText_2": "ಅಗತ್ಯವಿದೆ",
+  "@itrMandatoryText_2": {
+    "description": "Text for the ITR Details section",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["itr_form_personal_loan"]
+  },
+  "uploadITRText": "ಐಟಿಆರ್ ಅಪ್ಲೋಡ್ ಮಾಡಿ",
+  "@uploadITRText": {
+    "description": "Text for the toggle button for uploading ITR",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["itr_form_personal_loan"]
+  },
+  "manualDeclarationButton": "ಮ್ಯಾನುಯಲ್ ಘೋಷಣೆ",
+  "@manualDeclarationButton": {
+    "description": "Text for the toggle button for manual declaration",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["itr_form_personal_loan"]
   }
 }
+
+
 
 
 

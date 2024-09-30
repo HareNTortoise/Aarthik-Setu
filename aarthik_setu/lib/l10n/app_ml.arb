@@ -509,6 +509,57 @@
     "type": "text",
     "placeholders": {},
     "tags": ["personal_loan_journey"]
+  },
+
+
+
+
+
+
+
+
+  "itrDetailsTitle": "ഐടിആർ വിശദാംശങ്ങൾ",
+  "@itrDetailsTitle": {
+    "description": "Title for the ITR Details section",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["itr_form_personal_loan"]
+  },
+  "manualDeclarationText": "നിങ്ങളുടെ വാർഷിക വരുമാനം 2.5 ലക്ഷം രൂപയിലും കുറവാണെങ്കിൽ, നിങ്ങളുടെ സാമ്പത്തിക വിശദാംശങ്ങൾ പ്രഖ്യാപിക്കുക",
+  "@manualDeclarationText": {
+    "description": "Text for manual declaration option",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["itr_form_personal_loan"]
+  },
+  "itrMandatoryText_1": "ഫിനാൻഷ്യൽ വർഷത്തെ ഐടിആർ വിശദാംശങ്ങൾ",
+  "@itrMandatoryText_1": {
+    "description": "Text for the ITR Details section",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["itr_form_personal_loan"]
+  },
+  "itrMandatoryText_2": "ആവശ്യമുണ്ട്",
+  "@itrMandatoryText_2": {
+    "description": "Text for the ITR Details section",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["itr_form_personal_loan"]
+  },
+  "uploadITRText": "ഐടിആർ അപ്‌ലോഡ് ചെയ്യുക",
+  "@uploadITRText": {
+    "description": "Text for the toggle button for uploading ITR",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["itr_form_personal_loan"]
+  },
+  "manualDeclarationButton": "മാനുവൽ ഡിക്ലറേഷൻ",
+  "@manualDeclarationButton": {
+    "description": "Text for the toggle button for manual declaration",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["itr_form_personal_loan"]
   }
 }
+
 

@@ -499,8 +499,59 @@
     "type": "text",
     "placeholders": {},
     "tags": ["personal_loan_journey"]
+  },
+
+
+
+
+
+
+
+  "itrDetailsTitle": "आईटीआर विवरण",
+  "@itrDetailsTitle": {
+    "description": "Title for the ITR Details section",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["itr_form_personal_loan"]
+  },
+  "manualDeclarationText": "यदि आपकी वार्षिक आय 2.5 लाख से कम है, तो अपने वित्तीय विवरण की घोषणा करें",
+  "@manualDeclarationText": {
+    "description": "Text for manual declaration option",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["itr_form_personal_loan"]
+  },
+  "itrMandatoryText_1": "वित्तीय वर्ष का ITR विवरण",
+  "@itrMandatoryText_1": {
+    "description": "Text for the ITR Details section",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["itr_form_personal_loan"]
+  },
+  "itrMandatoryText_2": "आवश्यक है",
+  "@itrMandatoryText_2": {
+    "description": "Text for the ITR Details section",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["itr_form_personal_loan"]
+  },
+  "uploadITRText": "आईटीआर अपलोड करें",
+  "@uploadITRText": {
+    "description": "Text for the toggle button for uploading ITR",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["itr_form_personal_loan"]
+  },
+  "manualDeclarationButton": "मैनुअल घोषणा",
+  "@manualDeclarationButton": {
+    "description": "Text for the toggle button for manual declaration",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["itr_form_personal_loan"]
   }
 }
+
+
 
 
 

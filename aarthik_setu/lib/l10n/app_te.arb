@@ -500,8 +500,59 @@
     "type": "text",
     "placeholders": {},
     "tags": ["personal_loan_journey"]
+  },
+
+
+
+
+
+
+
+
+  "itrDetailsTitle": "ఐటిఆర్ వివరాలు",
+  "@itrDetailsTitle": {
+    "description": "Title for the ITR Details section",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["itr_form_personal_loan"]
+  },
+  "manualDeclarationText": "మీ వార్షిక ఆదాయం 2.5 లక్షలకు తక్కువ అయితే, మీ ఆర్థిక వివరాలను ప్రకటించండి",
+  "@manualDeclarationText": {
+    "description": "Text for manual declaration option",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["itr_form_personal_loan"]
+  },
+  "itrMandatoryText_1": "ఆర్థిక సంవత్సరానికి చెందిన ఐటిఆర్ వివరాలు",
+  "@itrMandatoryText_1": {
+    "description": "Text for the ITR Details section",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["itr_form_personal_loan"]
+  },
+  "itrMandatoryText_2": "అనివార్యం",
+  "@itrMandatoryText_2": {
+    "description": "Text for the ITR Details section",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["itr_form_personal_loan"]
+  },
+  "uploadITRText": "ఐటిఆర్ అప్లోడ్ చేయండి",
+  "@uploadITRText": {
+    "description": "Text for the toggle button for uploading ITR",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["itr_form_personal_loan"]
+  },
+  "manualDeclarationButton": "మాన్యువల్ డిక్లరేషన్",
+  "@manualDeclarationButton": {
+    "description": "Text for the toggle button for manual declaration",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["itr_form_personal_loan"]
   }
 }
+
 
 
 
