@@ -1329,5 +1329,180 @@
     "type": "text",
     "tags": ["credit_info_personal_loan"]
   },
-  "addExistingLoanButton": "বিদ্যমান ঋণ যোগ করুন"
+  "addExistingLoanButton": "বিদ্যমান ঋণ যোগ করুন",
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  "@contactDetailsTitle": {
+    "description": "Title of the Contact Details page",
+    "type": "text",
+    "tags": ["contact_detail_personal_loan"]
+  },
+  "contactDetailsTitle": "যোগাযোগের বিবরণ",
+
+  "@addressLine1Label": {
+    "description": "Label for Address Line 1 input field",
+    "type": "text",
+    "tags": ["contact_detail_personal_loan"]
+  },
+  "addressLine1Label": "ঠিকানা লাইন 1*",
+
+  "@addressLine1Placeholder": {
+    "description": "Placeholder for Address Line 1 input field",
+    "type": "text",
+    "tags": ["contact_detail_personal_loan"]
+  },
+  "addressLine1Placeholder": "আপনার বিল্ডিং নম্বর প্রবেশ করুন",
+
+  "@addressLine2Label": {
+    "description": "Label for Address Line 2 input field",
+    "type": "text",
+    "tags": ["contact_detail_personal_loan"]
+  },
+  "addressLine2Label": "ঠিকানা লাইন 2",
+
+  "@addressLine2Placeholder": {
+    "description": "Placeholder for Address Line 2 input field",
+    "type": "text",
+    "tags": ["contact_detail_personal_loan"]
+  },
+  "addressLine2Placeholder": "আপনার রাস্তার নাম প্রবেশ করুন",
+
+  "@landmarkLabel": {
+    "description": "Label for Landmark input field",
+    "type": "text",
+    "tags": ["contact_detail_personal_loan"]
+  },
+  "landmarkLabel": "বিশিষ্ট স্থান",
+
+  "@landmarkPlaceholder": {
+    "description": "Placeholder for Landmark input field",
+    "type": "text",
+    "tags": ["contact_detail_personal_loan"]
+  },
+  "landmarkPlaceholder": "আপনার বিশিষ্ট স্থান প্রবেশ করুন",
+
+  "@countryLabel": {
+    "description": "Label for Country dropdown",
+    "type": "text",
+    "tags": ["contact_detail_personal_loan"]
+  },
+  "countryLabel": "দেশ*",
+
+  "@countryPlaceholder": {
+    "description": "Placeholder for Country dropdown",
+    "type": "text",
+    "tags": ["contact_detail_personal_loan"]
+  },
+  "countryPlaceholder": "আপনার দেশ নির্বাচন করুন",
+
+  "@stateLabel": {
+    "description": "Label for State dropdown",
+    "type": "text",
+    "tags": ["contact_detail_personal_loan"]
+  },
+  "stateLabel": "রাজ্য*",
+
+  "@statePlaceholder": {
+    "description": "Placeholder for State dropdown",
+    "type": "text",
+    "tags": ["contact_detail_personal_loan"]
+  },
+  "statePlaceholder": "আপনার রাজ্য নির্বাচন করুন",
+
+  "@cityLabel": {
+    "description": "Label for City dropdown",
+    "type": "text",
+    "tags": ["contact_detail_personal_loan"]
+  },
+  "cityLabel": "শহর*",
+
+  "@cityPlaceholder": {
+    "description": "Placeholder for City dropdown",
+    "type": "text",
+    "tags": ["contact_detail_personal_loan"]
+  },
+  "cityPlaceholder": "আপনার শহর নির্বাচন করুন",
+
+  "@pinCodeLabel": {
+    "description": "Label for Pin Code input field",
+    "type": "text",
+    "tags": ["contact_detail_personal_loan"]
+  },
+  "pinCodeLabel": "পিন কোড*",
+
+  "@pinCodePlaceholder": {
+    "description": "Placeholder for Pin Code input field",
+    "type": "text",
+    "tags": ["contact_detail_personal_loan"]
+  },
+  "pinCodePlaceholder": "আপনার পিন কোড প্রবেশ করুন",
+
+  "@villageLabel": {
+    "description": "Label for Village/Town input field",
+    "type": "text",
+    "tags": ["contact_detail_personal_loan"]
+  },
+  "villageLabel": "গ্রাম/শহর",
+
+  "@villagePlaceholder": {
+    "description": "Placeholder for Village/Town input field",
+    "type": "text",
+    "tags": ["contact_detail_personal_loan"]
+  },
+  "villagePlaceholder": "আপনার গ্রাম/শহর প্রবেশ করুন",
+
+  "@districtLabel": {
+    "description": "Label for District input field",
+    "type": "text",
+    "tags": ["contact_detail_personal_loan"]
+  },
+  "districtLabel": "জেলা*",
+
+  "@districtPlaceholder": {
+    "description": "Placeholder for District input field",
+    "type": "text",
+    "tags": ["contact_detail_personal_loan"]
+  },
+  "districtPlaceholder": "আপনার জেলা প্রবেশ করুন",
+
+  "@subDistrictLabel": {
+    "description": "Label for Sub-District input field",
+    "type": "text",
+    "tags": ["contact_detail_personal_loan"]
+  },
+  "subDistrictLabel": "উপজেলা*",
+
+  "@subDistrictPlaceholder": {
+    "description": "Placeholder for Sub-District input field",
+    "type": "text",
+    "tags": ["contact_detail_personal_loan"]
+  },
+  "subDistrictPlaceholder": "আপনার উপজেলা প্রবেশ করুন",
+
+  "@residenceSinceMonthLabel": {
+    "description": "Label for Residence Since (Month) picker",
+    "type": "text",
+    "tags": ["contact_detail_personal_loan"]
+  },
+  "residenceSinceMonthLabel": "কত মাস ধরে বসবাস করছেন",
+
+  "@residenceSinceYearLabel": {
+    "description": "Label for Residence Since (Year) picker",
+    "type": "text",
+    "tags": ["contact_detail_personal_loan"]
+  },
+  "residenceSinceYearLabel": "কত বছর ধরে বসবাস করছেন"
 }
+
