@@ -2688,22 +2688,89 @@
     "description": "Button label for discarding stakeholder changes",
     "tags": ["add_stakeholder_business_loan"],
     "type": "text"
+  },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  "main_partner": "ಮೇಲ್ಮಟ್ಟದ ಪಾಲುದಾರ",
+  "@main_partner": {
+    "description": "Title for the Main Partner page",
+    "tags": ["main_partner_business_loan"],
+    "type": "text"
+  },
+  "select_main_partner": "ಮೇಲ್ಮಟ್ಟದ ಪಾಲುದಾರವನ್ನು ಆಯ್ಕೆ ಮಾಡಿ",
+  "@select_main_partner": {
+    "description": "Button label for selecting the main partner",
+    "tags": ["main_partner_business_loan"],
+    "type": "text"
+  },
+  "owning_a_house": "ನೀವು ಮನೆಯನ್ನು ಹೊಂದಿದ್ದೀರಾ?",
+  "@owning_a_house": {
+    "description": "Label for the owning a house question",
+    "tags": ["main_partner_business_loan"],
+    "type": "text"
+  },
+  "assessed_for_income_tax": "ಆದಾಯ ತೆರಿಗೆಗಾಗಿ ಮೌಲ್ಯಮಾಪನ ಮಾಡಲಾಗಿದೆಯೆ?",
+  "@assessed_for_income_tax": {
+    "description": "Label for the income tax assessment question",
+    "tags": ["main_partner_business_loan"],
+    "type": "text"
+  },
+  "have_life_insurance": "ನಿಮ್ಮ ಬಳಿ ಜೀವನ ವಿಮೆ ಇದೆಯೇ?",
+  "@have_life_insurance": {
+    "description": "Label for the life insurance question",
+    "tags": ["main_partner_business_loan"],
+    "type": "text"
+  },
+  "marital_status": "ಪತ್ನಿ/ಪತ್ನಿಯ ಸ್ಥಿತಿ",
+  "@marital_status": {
+    "description": "Label for the marital status field",
+    "tags": ["main_partner_business_loan"],
+    "type": "text"
+  },
+  "marital_status_hint": "ಪತ್ನಿ/ಪತ್ನಿಯ ಸ್ಥಿತಿಯನ್ನು ನಮೂದಿಸಿ",
+  "@marital_status_hint": {
+    "description": "Hint text for the marital status field",
+    "tags": ["main_partner_business_loan"],
+    "type": "text"
+  },
+  "spouse_name": "ಪತ್ನಿಯ ಹೆಸರು",
+  "@spouse_name": {
+    "description": "Label for the spouse name field",
+    "tags": ["main_partner_business_loan"],
+    "type": "text"
+  },
+  "spouse_name_hint": "ಪತ್ನಿಯ ಹೆಸರು ನಮೂದಿಸಿ",
+  "@spouse_name_hint": {
+    "description": "Hint text for the spouse name field",
+    "tags": ["main_partner_business_loan"],
+    "type": "text"
+  },
+  "no_of_children": "ಮಕ್ಕಳ ಸಂಖ್ಯೆ",
+  "@no_of_children": {
+    "description": "Label for the number of children field",
+    "tags": ["main_partner_business_loan"],
+    "type": "text"
+  },
+  "no_of_children_hint": "ಮಕ್ಕಳ ಸಂಖ್ಯೆಯನ್ನು ನಮೂದಿಸಿ",
+  "@no_of_children_hint": {
+    "description": "Hint text for the number of children field",
+    "tags": ["main_partner_business_loan"],
+    "type": "text"
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
