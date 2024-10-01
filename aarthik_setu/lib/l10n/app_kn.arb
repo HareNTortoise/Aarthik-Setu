@@ -1594,28 +1594,28 @@
   "@stateLabel": {
     "description": "Label for State dropdown",
     "type": "text",
-    "tags": ["contact_detail_personal_loan"]
+    "tags": ["contact_detail_personal_loan", "declare_business_gst_details_business_loan"]
   },
   "stateLabel": "ರಾಜ್ಯ*",
 
   "@statePlaceholder": {
     "description": "Placeholder for State dropdown",
     "type": "text",
-    "tags": ["contact_detail_personal_loan"]
+    "tags": ["contact_detail_personal_loan", "declare_business_gst_details_business_loan"]
   },
   "statePlaceholder": "ನಿಮ್ಮ ರಾಜ್ಯವನ್ನು ಆಯ್ಕೆಮಾಡಿ",
 
   "@cityLabel": {
     "description": "Label for City dropdown",
     "type": "text",
-    "tags": ["contact_detail_personal_loan"]
+    "tags": ["contact_detail_personal_loan", "declare_business_gst_details_business_loan"]
   },
   "cityLabel": "ನಗರ*",
 
   "@cityPlaceholder": {
     "description": "Placeholder for City dropdown",
     "type": "text",
-    "tags": ["contact_detail_personal_loan"]
+    "tags": ["contact_detail_personal_loan", "declare_business_gst_details_business_loan"]
   },
   "cityPlaceholder": "ನಿಮ್ಮ ನಗರವನ್ನು ಆಯ್ಕೆಮಾಡಿ",
 
@@ -2057,13 +2057,6 @@
   },
   "cityLabelGST": "ನಗರ*",
 
-  "@cityHint": {
-    "description": "Hint text for the city input field",
-    "type": "text",
-    "tags": ["gst_details_business_loan"]
-  },
-  "cityHint": "ನಗರವನ್ನು ದಾಖಲಿಸಿ",
-
   "@totalPurchaseLabel": {
     "description": "Label for the total purchase input field",
     "type": "text",
@@ -2111,8 +2104,295 @@
     "type": "text",
     "tags": ["gst_details_business_loan"]
   },
-  "deleteButtonLabel": "ಅಳಿಸಿ"
+  "deleteButtonLabel": "ಅಳಿಸಿ",
+
+
+
+
+
+
+
+
+
+
+
+
+
+  "@declareBusinessLabel": {
+    "description": "Title for declaring business details",
+    "type": "text",
+    "tags": ["declare_business_gst_details_business_loan"]
+  },
+  "declareBusinessLabel": "ನಿಮ್ಮ ವ್ಯವಹಾರದ ವಿವರಗಳನ್ನು ಘೋಷಿಸಿ",
+
+  "@businessNameLabel": {
+    "description": "Label for the business name input field",
+    "type": "text",
+    "tags": ["declare_business_gst_details_business_loan"]
+  },
+  "businessNameLabel": "ವ್ಯವಹಾರದ ಹೆಸರು*",
+
+  "@businessNameHint": {
+    "description": "Hint text for the business name input field",
+    "type": "text",
+    "tags": ["declare_business_gst_details_business_loan"]
+  },
+  "businessNameHint": "ವ್ಯವಹಾರದ ಹೆಸರು ನೀಡಿ",
+
+  "@dateOfIncorporationLabel": {
+    "description": "Label for the date of incorporation button",
+    "type": "text",
+    "tags": ["declare_business_gst_details_business_loan"]
+  },
+  "dateOfIncorporationLabel": "ಸ್ಥಾಪನೆ ದಿನಾಂಕ",
+
+  "@constitutionLabel": {
+    "description": "Label for the constitution input field",
+    "type": "text",
+    "tags": ["declare_business_gst_details_business_loan"]
+  },
+  "constitutionLabel": "ಘಟನೆ*",
+
+  "@constitutionHint": {
+    "description": "Hint text for the constitution input field",
+    "type": "text",
+    "tags": ["declare_business_gst_details_business_loan"]
+  },
+  "constitutionHint": "ನಿಮ್ಮ ಘಟನೆಯು ನೀಡಿ",
+
+  "@customersLabel": {
+    "description": "Label for the number of customers input field",
+    "type": "text",
+    "tags": ["declare_business_gst_details_business_loan"]
+  },
+  "customersLabel": "ಗ್ರಾಹಕರ ಸಂಖ್ಯೆಯನ್ನು*",
+
+  "@customersHint": {
+    "description": "Hint text for the number of customers input field",
+    "type": "text",
+    "tags": ["declare_business_gst_details_business_loan"]
+  },
+  "customersHint": "ನಿಮ್ಮ ಗ್ರಾಹಕರ ಸಂಖ್ಯೆಯನ್ನು ನೀಡಿ",
+
+  "@panLabel": {
+    "description": "Label for the PAN input field",
+    "type": "text",
+    "tags": ["declare_business_gst_details_business_loan"]
+  },
+  "panLabel": "PAN*",
+
+  "@panHint": {
+    "description": "Hint text for the PAN input field",
+    "type": "text",
+    "tags": ["declare_business_gst_details_business_loan"]
+  },
+  "panHint": "ನಿಮ್ಮ PAN ಅನ್ನು ನೀಡಿ",
+
+  "@highestSaleLabel": {
+    "description": "Label for the highest sale input field",
+    "type": "text",
+    "tags": ["declare_business_gst_details_business_loan"]
+  },
+  "highestSaleLabel": "ಅತ್ಯುತ್ತಮ ಮಾರಾಟ*",
+
+  "@highestSaleHint": {
+    "description": "Hint text for the highest sale input field",
+    "type": "text",
+    "tags": ["declare_business_gst_details_business_loan"]
+  },
+  "highestSaleHint": "ನಿಮ್ಮ ಅತ್ಯುತ್ತಮ ಮಾರಾಟವನ್ನು ನೀಡಿ",
+
+  "@lastYearsSalesLabel": {
+    "description": "Header for last year's sales section",
+    "type": "text",
+    "tags": ["declare_business_gst_details_business_loan"]
+  },
+  "lastYearsSalesLabel": "ಕಳೆದ ವರ್ಷದ ಮಾರಾಟ",
+
+  "@januaryLabel": {
+    "description": "Label for January month",
+    "type": "text",
+    "tags": ["declare_business_gst_details_business_loan"]
+  },
+  "januaryLabel": "ಜನವರಿ",
+
+  "@februaryLabel": {
+    "description": "Label for February month",
+    "type": "text",
+    "tags": ["declare_business_gst_details_business_loan"]
+  },
+  "februaryLabel": "ಫೆಬ್ರವರಿ",
+
+  "@marchLabel": {
+    "description": "Label for March month",
+    "type": "text",
+    "tags": ["declare_business_gst_details_business_loan"]
+  },
+  "marchLabel": "ಮಾರ್ಚ್",
+
+  "@aprilLabel": {
+    "description": "Label for April month",
+    "type": "text",
+    "tags": ["declare_business_gst_details_business_loan"]
+  },
+  "aprilLabel": "ಏಪ್ರಿಲ್",
+
+  "@mayLabel": {
+    "description": "Label for May month",
+    "type": "text",
+    "tags": ["declare_business_gst_details_business_loan"]
+  },
+  "mayLabel": "ಮೇ",
+
+  "@juneLabel": {
+    "description": "Label for June month",
+    "type": "text",
+    "tags": ["declare_business_gst_details_business_loan"]
+  },
+  "juneLabel": "ಜೂನ್",
+
+  "@julyLabel": {
+    "description": "Label for July month",
+    "type": "text",
+    "tags": ["declare_business_gst_details_business_loan"]
+  },
+  "julyLabel": "ಜುಲೈ",
+
+  "@augustLabel": {
+    "description": "Label for August month",
+    "type": "text",
+    "tags": ["declare_business_gst_details_business_loan"]
+  },
+  "augustLabel": "ಆಗಸ್ಟ್",
+
+  "@septemberLabel": {
+    "description": "Label for September month",
+    "type": "text",
+    "tags": ["declare_business_gst_details_business_loan"]
+  },
+  "septemberLabel": "ಸೆಪ್ಟೆಂಬರ್",
+
+  "@octoberLabel": {
+    "description": "Label for October month",
+    "type": "text",
+    "tags": ["declare_business_gst_details_business_loan"]
+  },
+  "octoberLabel": "ಅಕ್ಟೋಬರ್",
+
+  "@novemberLabel": {
+    "description": "Label for November month",
+    "type": "text",
+    "tags": ["declare_business_gst_details_business_loan"]
+  },
+  "novemberLabel": "ನವೆಂಬರ್",
+
+  "@decemberLabel": {
+    "description": "Label for December month",
+    "type": "text",
+    "tags": ["declare_business_gst_details_business_loan"]
+  },
+  "decemberLabel": "ಡಿಸೆಂಬರ್",
+
+  "@januarySalesLabel": {
+    "description": "Label for January sales input field",
+    "type": "text",
+    "tags": ["declare_business_gst_details_business_loan"]
+  },
+  "januarySalesLabel": "ಮಾರಾಟ (ಜನವರಿ)",
+
+  "@februarySalesLabel": {
+    "description": "Label for February sales input field",
+    "type": "text",
+    "tags": ["declare_business_gst_details_business_loan"]
+  },
+  "februarySalesLabel": "ಮಾರಾಟ (ಫೆಬ್ರವರಿ)",
+
+  "@marchSalesLabel": {
+    "description": "Label for March sales input field",
+    "type": "text",
+    "tags": ["declare_business_gst_details_business_loan"]
+  },
+  "marchSalesLabel": "ಮಾರಾಟ (ಮಾರ್ಚ್)",
+
+  "@aprilSalesLabel": {
+    "description": "Label for April sales input field",
+    "type": "text",
+    "tags": ["declare_business_gst_details_business_loan"]
+  },
+  "aprilSalesLabel": "ಮಾರಾಟ (ಏಪ್ರಿಲ್)",
+
+  "@maySalesLabel": {
+    "description": "Label for May sales input field",
+    "type": "text",
+    "tags": ["declare_business_gst_details_business_loan"]
+  },
+  "maySalesLabel": "ಮಾರಾಟ (ಮೇ)",
+
+  "@juneSalesLabel": {
+    "description": "Label for June sales input field",
+    "type": "text",
+    "tags": ["declare_business_gst_details_business_loan"]
+  },
+  "juneSalesLabel": "ಮಾರಾಟ (ಜೂನ್)",
+
+  "@julySalesLabel": {
+    "description": "Label for July sales input field",
+    "type": "text",
+    "tags": ["declare_business_gst_details_business_loan"]
+  },
+  "julySalesLabel": "ಮಾರಾಟ (ಜುಲೈ)",
+
+  "@augustSalesLabel": {
+    "description": "Label for August sales input field",
+    "type": "text",
+    "tags": ["declare_business_gst_details_business_loan"]
+  },
+  "augustSalesLabel": "ಮಾರಾಟ (ಆಗಸ್ಟ್)",
+
+  "@septemberSalesLabel": {
+    "description": "Label for September sales input field",
+    "type": "text",
+    "tags": ["declare_business_gst_details_business_loan"]
+  },
+  "septemberSalesLabel": "ಮಾರಾಟ (ಸೆಪ್ಟೆಂಬರ್)",
+
+  "@octoberSalesLabel": {
+    "description": "Label for October sales input field",
+    "type": "text",
+    "tags": ["declare_business_gst_details_business_loan"]
+  },
+  "octoberSalesLabel": "ಮಾರಾಟ (ಅಕ್ಟೋಬರ್)",
+
+  "@novemberSalesLabel": {
+    "description": "Label for November sales input field",
+    "type": "text",
+    "tags": ["declare_business_gst_details_business_loan"]
+  },
+  "novemberSalesLabel": "ಮಾರಾಟ (ನವೆಂಬರ್)",
+
+  "@decemberSalesLabel": {
+    "description": "Label for December sales input field",
+    "type": "text",
+    "tags": ["declare_business_gst_details_business_loan"]
+  },
+  "decemberSalesLabel": "ಮಾರಾಟ (ಡಿಸೆಂಬರ್)",
+
+  "@nextButtonLabel": {
+    "description": "Label for the next button",
+    "type": "text",
+    "tags": ["declare_business_gst_details_business_loan"]
+  },
+  "nextButtonLabel": "ಮುಂದೆ",
+
+  "@gobackButtonLabel": {
+    "description": "Label for the go back button",
+    "type": "text",
+    "tags": ["declare_business_gst_details_business_loan"]
+  },
+  "gobackButtonLabel": "ಹಿಂತೆಗೆದುಕೊಳ್ಳಿ"
 }
+
+
 
 
 

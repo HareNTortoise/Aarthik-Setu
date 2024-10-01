@@ -1410,28 +1410,28 @@
   "@stateLabel": {
     "description": "Label for State dropdown",
     "type": "text",
-    "tags": ["contact_detail_personal_loan"]
+    "tags": ["contact_detail_personal_loan", "declare_business_gst_details_business_loan"]
   },
   "stateLabel": "রাজ্য*",
 
   "@statePlaceholder": {
     "description": "Placeholder for State dropdown",
     "type": "text",
-    "tags": ["contact_detail_personal_loan"]
+    "tags": ["contact_detail_personal_loan", "declare_business_gst_details_business_loan"]
   },
   "statePlaceholder": "আপনার রাজ্য নির্বাচন করুন",
 
   "@cityLabel": {
     "description": "Label for City dropdown",
     "type": "text",
-    "tags": ["contact_detail_personal_loan"]
+    "tags": ["contact_detail_personal_loan", "declare_business_gst_details_business_loan"]
   },
   "cityLabel": "শহর*",
 
   "@cityPlaceholder": {
     "description": "Placeholder for City dropdown",
     "type": "text",
-    "tags": ["contact_detail_personal_loan"]
+    "tags": ["contact_detail_personal_loan", "declare_business_gst_details_business_loan"]
   },
   "cityPlaceholder": "আপনার শহর নির্বাচন করুন",
 
@@ -1888,13 +1888,6 @@
   },
   "cityLabelGST": "শহর*",
 
-  "@cityHint": {
-    "description": "Hint text for the city input field",
-    "type": "text",
-    "tags": ["gst_details_business_loan"]
-  },
-  "cityHint": "শহর লিখুন",
-
   "@totalPurchaseLabel": {
     "description": "Label for the total purchase input field",
     "type": "text",
@@ -1942,8 +1935,214 @@
     "type": "text",
     "tags": ["gst_details_business_loan"]
   },
-  "deleteButtonLabel": "মুছুন"
+  "deleteButtonLabel": "মুছুন",
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  "@declareBusinessLabel": {
+    "description": "Title for declaring business details",
+    "type": "text",
+    "tags": ["declare_business_gst_details_business_loan"]
+  },
+  "declareBusinessLabel": "আপনার ব্যবসার বিস্তারিত জানান",
+
+  "@businessNameLabel": {
+    "description": "Label for the business name input field",
+    "type": "text",
+    "tags": ["declare_business_gst_details_business_loan"]
+  },
+  "businessNameLabel": "ব্যবসার নাম*",
+
+  "@businessNameHint": {
+    "description": "Hint text for the business name input field",
+    "type": "text",
+    "tags": ["declare_business_gst_details_business_loan"]
+  },
+  "businessNameHint": "আপনার ব্যবসার নাম লিখুন",
+
+  "@dateOfIncorporationLabel": {
+    "description": "Label for the date of incorporation button",
+    "type": "text",
+    "tags": ["declare_business_gst_details_business_loan"]
+  },
+  "dateOfIncorporationLabel": "সংবিধান তারিখ",
+
+  "@constitutionLabel": {
+    "description": "Label for the constitution input field",
+    "type": "text",
+    "tags": ["declare_business_gst_details_business_loan"]
+  },
+  "constitutionLabel": "আইন*",
+
+  "@constitutionHint": {
+    "description": "Hint text for the constitution input field",
+    "type": "text",
+    "tags": ["declare_business_gst_details_business_loan"]
+  },
+  "constitutionHint": "আপনার আইন লিখুন",
+
+  "@customersLabel": {
+    "description": "Label for the number of customers input field",
+    "type": "text",
+    "tags": ["declare_business_gst_details_business_loan"]
+  },
+  "customersLabel": "গ্রাহকের সংখ্যা*",
+
+  "@customersHint": {
+    "description": "Hint text for the number of customers input field",
+    "type": "text",
+    "tags": ["declare_business_gst_details_business_loan"]
+  },
+  "customersHint": "আপনার গ্রাহকের সংখ্যা লিখুন",
+
+  "@panLabel": {
+    "description": "Label for the PAN input field",
+    "type": "text",
+    "tags": ["declare_business_gst_details_business_loan"]
+  },
+  "panLabel": "PAN*",
+
+  "@panHint": {
+    "description": "Hint text for the PAN input field",
+    "type": "text",
+    "tags": ["declare_business_gst_details_business_loan"]
+  },
+  "panHint": "আপনার PAN লিখুন",
+
+  "@highestSaleLabel": {
+    "description": "Label for the highest sale input field",
+    "type": "text",
+    "tags": ["declare_business_gst_details_business_loan"]
+  },
+  "highestSaleLabel": "সর্বোচ্চ বিক্রয়*",
+
+  "@highestSaleHint": {
+    "description": "Hint text for the highest sale input field",
+    "type": "text",
+    "tags": ["declare_business_gst_details_business_loan"]
+  },
+  "highestSaleHint": "আপনার সর্বোচ্চ বিক্রয় লিখুন",
+
+  "@lastYearsSalesLabel": {
+    "description": "Header for last year's sales section",
+    "type": "text",
+    "tags": ["declare_business_gst_details_business_loan"]
+  },
+  "lastYearsSalesLabel": "গত বছরের বিক্রয়",
+
+  "@januaryLabel": {
+    "description": "Label for January month",
+    "type": "text",
+    "tags": ["declare_business_gst_details_business_loan"]
+  },
+  "januaryLabel": "জানুয়ারী",
+
+  "@februaryLabel": {
+    "description": "Label for February month",
+    "type": "text",
+    "tags": ["declare_business_gst_details_business_loan"]
+  },
+  "februaryLabel": "ফেব্রুয়ারী",
+
+  "@marchLabel": {
+    "description": "Label for March month",
+    "type": "text",
+    "tags": ["declare_business_gst_details_business_loan"]
+  },
+  "marchLabel": "মার্চ",
+
+  "@aprilLabel": {
+    "description": "Label for April month",
+    "type": "text",
+    "tags": ["declare_business_gst_details_business_loan"]
+  },
+  "aprilLabel": "এপ্রিল",
+
+  "@mayLabel": {
+    "description": "Label for May month",
+    "type": "text",
+    "tags": ["declare_business_gst_details_business_loan"]
+  },
+  "mayLabel": "মে",
+
+  "@juneLabel": {
+    "description": "Label for June month",
+    "type": "text",
+    "tags": ["declare_business_gst_details_business_loan"]
+  },
+  "juneLabel": "জুন",
+
+  "@julyLabel": {
+    "description": "Label for July month",
+    "type": "text",
+    "tags": ["declare_business_gst_details_business_loan"]
+  },
+  "julyLabel": "জুলাই",
+
+  "@augustLabel": {
+    "description": "Label for August month",
+    "type": "text",
+    "tags": ["declare_business_gst_details_business_loan"]
+  },
+  "augustLabel": "অগস্ট",
+
+  "@septemberLabel": {
+    "description": "Label for September month",
+    "type": "text",
+    "tags": ["declare_business_gst_details_business_loan"]
+  },
+  "septemberLabel": "সেপ্টেম্বর",
+
+  "@octoberLabel": {
+    "description": "Label for October month",
+    "type": "text",
+    "tags": ["declare_business_gst_details_business_loan"]
+  },
+  "octoberLabel": "অক্টোবর",
+
+  "@novemberLabel": {
+    "description": "Label for November month",
+    "type": "text",
+    "tags": ["declare_business_gst_details_business_loan"]
+  },
+  "novemberLabel": "নভেম্বর",
+
+  "@decemberLabel": {
+    "description": "Label for December month",
+    "type": "text",
+    "tags": ["declare_business_gst_details_business_loan"]
+  },
+  "decemberLabel": "ডিসেম্বর",
+
+  "@nextButtonLabel": {
+    "description": "Label for the next button",
+    "type": "text",
+    "tags": ["declare_business_gst_details_business_loan"]
+  },
+  "nextButtonLabel": "পরবর্তী",
+
+  "@gobackButtonLabel": {
+    "description": "Label for the go back button",
+    "type": "text",
+    "tags": ["declare_business_gst_details_business_loan"]
+  },
+  "gobackButtonLabel": "পিছনে যান"
 }
+
 
 
 

@@ -135,7 +135,7 @@ class _EnterGSTCredentialsState extends State<EnterGSTCredentials> {
                     ),
                     LabelledTextField(
                       label: AppLocalizations.of(context)!.cityLabelGST,
-                      hintText: AppLocalizations.of(context)!.cityHint,
+                      hintText: AppLocalizations.of(context)!.cityPlaceholder,
                       controller: businesses[currentBusinessIndex!].cityController,
                     ),
                   ],

@@ -1420,28 +1420,28 @@
   "@stateLabel": {
     "description": "Label for State dropdown",
     "type": "text",
-    "tags": ["contact_detail_personal_loan"]
+    "tags": ["contact_detail_personal_loan", "declare_business_gst_details_business_loan"]
   },
   "stateLabel": "സംസ്ഥാനം*",
 
   "@statePlaceholder": {
     "description": "Placeholder for State dropdown",
     "type": "text",
-    "tags": ["contact_detail_personal_loan"]
+    "tags": ["contact_detail_personal_loan", "declare_business_gst_details_business_loan"]
   },
   "statePlaceholder": "നിങ്ങളുടെ സംസ്ഥാനം തിരഞ്ഞെടുക്കുക",
 
   "@cityLabel": {
     "description": "Label for City dropdown",
     "type": "text",
-    "tags": ["contact_detail_personal_loan"]
+    "tags": ["contact_detail_personal_loan", "declare_business_gst_details_business_loan"]
   },
   "cityLabel": "നഗരം*",
 
   "@cityPlaceholder": {
     "description": "Placeholder for City dropdown",
     "type": "text",
-    "tags": ["contact_detail_personal_loan"]
+    "tags": ["contact_detail_personal_loan", "declare_business_gst_details_business_loan"]
   },
   "cityPlaceholder": "നിങ്ങളുടെ നഗരം തിരഞ്ഞെടുക്കുക",
 
@@ -1899,13 +1899,6 @@
   },
   "cityLabelGST": "നഗരം*",
 
-  "@cityHint": {
-    "description": "Hint text for the city input field",
-    "type": "text",
-    "tags": ["gst_details_business_loan"]
-  },
-  "cityHint": "നഗരം നൽകുക",
-
   "@totalPurchaseLabel": {
     "description": "Label for the total purchase input field",
     "type": "text",
@@ -1953,14 +1946,291 @@
     "type": "text",
     "tags": ["gst_details_business_loan"]
   },
-  "deleteButtonLabel": "കുറച്ചു"
+  "deleteButtonLabel": "കുറച്ചു",
+
+
+
+
+
+
+
+
+
+
+
+
+
+  "@declareBusinessLabel": {
+    "description": "Title for declaring business details",
+    "type": "text",
+    "tags": ["declare_business_gst_details_business_loan"]
+  },
+  "declareBusinessLabel": "നിങ്ങളുടെ ബിസിനസിന്റെ വിശദാംശങ്ങൾ പ്രസ്താവിക്കുക",
+
+  "@businessNameLabel": {
+    "description": "Label for the business name input field",
+    "type": "text",
+    "tags": ["declare_business_gst_details_business_loan"]
+  },
+  "businessNameLabel": "ബിസിനസ്സ് നാമം*",
+
+  "@businessNameHint": {
+    "description": "Hint text for the business name input field",
+    "type": "text",
+    "tags": ["declare_business_gst_details_business_loan"]
+  },
+  "businessNameHint": "ബിസിനസ്സ് നാമം നൽകുക",
+
+  "@dateOfIncorporationLabel": {
+    "description": "Label for the date of incorporation button",
+    "type": "text",
+    "tags": ["declare_business_gst_details_business_loan"]
+  },
+  "dateOfIncorporationLabel": "സ്ഥാപന തീയതി",
+
+  "@constitutionLabel": {
+    "description": "Label for the constitution input field",
+    "type": "text",
+    "tags": ["declare_business_gst_details_business_loan"]
+  },
+  "constitutionLabel": "ഘടന*",
+
+  "@constitutionHint": {
+    "description": "Hint text for the constitution input field",
+    "type": "text",
+    "tags": ["declare_business_gst_details_business_loan"]
+  },
+  "constitutionHint": "നിങ്ങളുടെ ഘടന നൽകുക",
+
+  "@customersLabel": {
+    "description": "Label for the number of customers input field",
+    "type": "text",
+    "tags": ["declare_business_gst_details_business_loan"]
+  },
+  "customersLabel": "ഉപഭോക്താക്കളിന്റെ എണ്ണം*",
+
+  "@customersHint": {
+    "description": "Hint text for the number of customers input field",
+    "type": "text",
+    "tags": ["declare_business_gst_details_business_loan"]
+  },
+  "customersHint": "നിങ്ങളുടെ ഉപഭോക്താക്കളുടെ എണ്ണം നൽകുക",
+
+  "@panLabel": {
+    "description": "Label for the PAN input field",
+    "type": "text",
+    "tags": ["declare_business_gst_details_business_loan"]
+  },
+  "panLabel": "PAN*",
+
+  "@panHint": {
+    "description": "Hint text for the PAN input field",
+    "type": "text",
+    "tags": ["declare_business_gst_details_business_loan"]
+  },
+  "panHint": "നിങ്ങളുടെ PAN നൽകുക",
+
+  "@highestSaleLabel": {
+    "description": "Label for the highest sale input field",
+    "type": "text",
+    "tags": ["declare_business_gst_details_business_loan"]
+  },
+  "highestSaleLabel": "ആദ്യമൂന്നിൽ പരമാവധി വിറ്റുപോകുന്നു*",
+
+  "@highestSaleHint": {
+    "description": "Hint text for the highest sale input field",
+    "type": "text",
+    "tags": ["declare_business_gst_details_business_loan"]
+  },
+  "highestSaleHint": "നിങ്ങളുടെ പരമാവധി വിറ്റുപോകുന്നത് നൽകുക",
+
+  "@lastYearsSalesLabel": {
+    "description": "Header for last year's sales section",
+    "type": "text",
+    "tags": ["declare_business_gst_details_business_loan"]
+  },
+  "lastYearsSalesLabel": "കഴിഞ്ഞ വർഷം വിറ്റപണം",
+
+  "@januaryLabel": {
+    "description": "Label for January month",
+    "type": "text",
+    "tags": ["declare_business_gst_details_business_loan"]
+  },
+  "januaryLabel": "ജനുവരി",
+
+  "@februaryLabel": {
+    "description": "Label for February month",
+    "type": "text",
+    "tags": ["declare_business_gst_details_business_loan"]
+  },
+  "februaryLabel": "ഫെബ്രുവരി",
+
+  "@marchLabel": {
+    "description": "Label for March month",
+    "type": "text",
+    "tags": ["declare_business_gst_details_business_loan"]
+  },
+  "marchLabel": "മാർച്ച്",
+
+  "@aprilLabel": {
+    "description": "Label for April month",
+    "type": "text",
+    "tags": ["declare_business_gst_details_business_loan"]
+  },
+  "aprilLabel": "ഏപ്രിൽ",
+
+  "@mayLabel": {
+    "description": "Label for May month",
+    "type": "text",
+    "tags": ["declare_business_gst_details_business_loan"]
+  },
+  "mayLabel": "മെയ്",
+
+  "@juneLabel": {
+    "description": "Label for June month",
+    "type": "text",
+    "tags": ["declare_business_gst_details_business_loan"]
+  },
+  "juneLabel": "ജൂൺ",
+
+  "@julyLabel": {
+    "description": "Label for July month",
+    "type": "text",
+    "tags": ["declare_business_gst_details_business_loan"]
+  },
+  "julyLabel": "ജൂലൈ",
+
+  "@augustLabel": {
+    "description": "Label for August month",
+    "type": "text",
+    "tags": ["declare_business_gst_details_business_loan"]
+  },
+  "augustLabel": "ഓഗസ്റ്റ്",
+
+  "@septemberLabel": {
+    "description": "Label for September month",
+    "type": "text",
+    "tags": ["declare_business_gst_details_business_loan"]
+  },
+  "septemberLabel": "സെപ്റ്റംബർ",
+
+  "@octoberLabel": {
+    "description": "Label for October month",
+    "type": "text",
+    "tags": ["declare_business_gst_details_business_loan"]
+  },
+  "octoberLabel": "ഒക്ടോബർ",
+
+  "@novemberLabel": {
+    "description": "Label for November month",
+    "type": "text",
+    "tags": ["declare_business_gst_details_business_loan"]
+  },
+  "novemberLabel": "നവംബർ",
+
+  "@decemberLabel": {
+    "description": "Label for December month",
+    "type": "text",
+    "tags": ["declare_business_gst_details_business_loan"]
+  },
+  "decemberLabel": "ഡിസംബർ",
+
+  "@januarySalesLabel": {
+    "description": "Label for January sales input field",
+    "type": "text",
+    "tags": ["declare_business_gst_details_business_loan"]
+  },
+  "januarySalesLabel": "വിൽപ്പന (ജനുവരി)",
+
+  "@februarySalesLabel": {
+    "description": "Label for February sales input field",
+    "type": "text",
+    "tags": ["declare_business_gst_details_business_loan"]
+  },
+  "februarySalesLabel": "വിൽപ്പന (ഫെബ്രുവരി)",
+
+  "@marchSalesLabel": {
+    "description": "Label for March sales input field",
+    "type": "text",
+    "tags": ["declare_business_gst_details_business_loan"]
+  },
+  "marchSalesLabel": "വിൽപ്പന (മാർച്ച്)",
+
+  "@aprilSalesLabel": {
+    "description": "Label for April sales input field",
+    "type": "text",
+    "tags": ["declare_business_gst_details_business_loan"]
+  },
+  "aprilSalesLabel": "വിൽപ്പന (ഏപ്രിൽ)",
+
+  "@maySalesLabel": {
+    "description": "Label for May sales input field",
+    "type": "text",
+    "tags": ["declare_business_gst_details_business_loan"]
+  },
+  "maySalesLabel": "വിൽപ്പന (മെയ്)",
+
+  "@juneSalesLabel": {
+    "description": "Label for June sales input field",
+    "type": "text",
+    "tags": ["declare_business_gst_details_business_loan"]
+  },
+  "juneSalesLabel": "വിൽപ്പന (ജൂൺ)",
+
+  "@julySalesLabel": {
+    "description": "Label for July sales input field",
+    "type": "text",
+    "tags": ["declare_business_gst_details_business_loan"]
+  },
+  "julySalesLabel": "വിൽപ്പന (ജൂലൈ)",
+
+  "@augustSalesLabel": {
+    "description": "Label for August sales input field",
+    "type": "text",
+    "tags": ["declare_business_gst_details_business_loan"]
+  },
+  "augustSalesLabel": "വിൽപ്പന (ഓഗസ്റ്റ്)",
+
+  "@septemberSalesLabel": {
+    "description": "Label for September sales input field",
+    "type": "text",
+    "tags": ["declare_business_gst_details_business_loan"]
+  },
+  "septemberSalesLabel": "വിൽപ്പന (സെപ്റ്റംബർ)",
+
+  "@octoberSalesLabel": {
+    "description": "Label for October sales input field",
+    "type": "text",
+    "tags": ["declare_business_gst_details_business_loan"]
+  },
+  "octoberSalesLabel": "വിൽപ്പന (ഒക്ടോബർ)",
+
+  "@novemberSalesLabel": {
+    "description": "Label for November sales input field",
+    "type": "text",
+    "tags": ["declare_business_gst_details_business_loan"]
+  },
+  "novemberSalesLabel": "വിൽപ്പന (നവംബർ)",
+
+  "@decemberSalesLabel": {
+    "description": "Label for December sales input field",
+    "type": "text",
+    "tags": ["declare_business_gst_details_business_loan"]
+  },
+  "decemberSalesLabel": "വിൽപ്പന (ഡിസംബർ)",
+
+  "@nextButtonLabel": {
+    "description": "Label for the next button",
+    "type": "text",
+    "tags": ["declare_business_gst_details_business_loan"]
+  },
+  "nextButtonLabel": "അടുത്തതായി",
+
+  "@gobackButtonLabel": {
+    "description": "Label for the go back button",
+    "type": "text",
+    "tags": ["declare_business_gst_details_business_loan"]
+  },
+  "gobackButtonLabel": "തിരിച്ചു പോവ്"
 }
-
-
-
-
-
-
-
-
 
