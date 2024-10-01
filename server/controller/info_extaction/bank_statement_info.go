@@ -7,14 +7,23 @@ import (
 	"net/http"
 	"os"
 	"strings"
-
+	// "cloud.google.com/go/firestore"
 	"github.com/gin-gonic/gin"
 	"github.com/google/generative-ai-go/genai"
 	"google.golang.org/api/option"
+	utils "server/config/firebase"
+	"time"
 	// "regexp"
 )
 
+// var db_client *firestore.Client
+func init(){
+	db_client = utils.InitFirestore()
+}
+
 func GetBankStatementDetails(c *gin.Context) {
+	applicationId := c.Param("applicationId")
+	profileId := c.Param("profileId")
 	file, err := c.FormFile("file")
 	if err != nil {
 		c.JSON(http.StatusBadRequest, gin.H{"error": "Failed to retrieve file"})
@@ -99,7 +108,17 @@ Return the result in JSON format where each justification is tied to the respect
 				c.JSON(http.StatusInternalServerError, gin.H{"error": "Error parsing extracted JSON"})
 				return
 			}
-
+			_, _, err = db_client.Collection("BankDetailsExtracted").Add(ctx, map[string]interface{}{
+				"data":       extractedData,
+				"timestamp":  time.Now(),
+				"filename":   file.Filename,
+				"profileId": profileId,
+				"applicationId": applicationId,
+			})
+			if err != nil {
+				c.JSON(http.StatusInternalServerError, gin.H{"error": "Failed to save extracted data in Firestore"})
+				return
+			}
 			// Return the extracted JSON directly
 			c.JSON(http.StatusOK, extractedData)
 			return

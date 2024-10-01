@@ -76,6 +76,11 @@ func CreateLoanDetails(c *gin.Context) {
 		c.JSON(http.StatusConflict, gin.H{"error": "Loan details already exist for this profile"})
 		return
 	}
+	err= utils.UpdateFirestoreDocument(ctx, "applications", applicationId, "credit_info_form_id", formId)
+	if err != nil {
+		c.JSON(http.StatusInternalServerError, gin.H{"error": "Failed to update application with formId", "details": err.Error()})
+		return
+	}
 
 	c.JSON(http.StatusCreated, gin.H{"message": "Loan details created successfully"})
 }

@@ -7,15 +7,22 @@ import (
 	"net/http"
 	"os"
 	"strings"
-
+	"time"
 	"github.com/gin-gonic/gin"
 	"github.com/google/generative-ai-go/genai"
 	"google.golang.org/api/option"
-	// "regexp"
+	utils "server/config/firebase"
+	"cloud.google.com/go/firestore"
 )
+var db_client *firestore.Client
+func init(){
+	db_client = utils.InitFirestore()
+}
 
 func GetITRDetails(c *gin.Context) {
 	file, err := c.FormFile("file")
+	profileId := c.Param("profileId")
+	applicationId := c.Param("applicationId")
 	if err != nil {
 		c.JSON(http.StatusBadRequest, gin.H{"error": "Failed to retrieve file"})
 		return
@@ -66,23 +73,34 @@ func GetITRDetails(c *gin.Context) {
 	}
 	for _, ct := range extractionResp.Candidates {
 		if ct.Content != nil {
-			// Concatenate all parts into a single string
 			var output genai.Text
 			for _, part := range ct.Content.Parts {
 				output += part.(genai.Text)
 			}
 			outputString := fmt.Sprintf("%v", output)
-			// Remove any formatting and parse the JSON
 			outputString = strings.TrimPrefix(outputString, "```json\n")
 			outputString = strings.TrimSuffix(outputString, "\n```")
-			fmt.Println(outputString)
+
 			var extractedData map[string]interface{}
 			if err := json.Unmarshal([]byte(outputString), &extractedData); err != nil {
 				c.JSON(http.StatusInternalServerError, gin.H{"error": "Error parsing extracted JSON"})
 				return
 			}
 
-			// Return the extracted JSON directly
+			// Store extracted data in Firestore
+			_, _, err = db_client.Collection("ITRDetailsExtracted").Add(ctx, map[string]interface{}{
+				"data":       extractedData,
+				"timestamp":  time.Now(),
+				"filename":   file.Filename,
+				"profileId": profileId,
+				"applicationId": applicationId,
+			})
+			if err != nil {
+				c.JSON(http.StatusInternalServerError, gin.H{"error": "Failed to save extracted data in Firestore"})
+				return
+			}
+
+			// Return the extracted data in the response
 			c.JSON(http.StatusOK, extractedData)
 			return
 		}

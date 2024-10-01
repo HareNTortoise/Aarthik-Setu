@@ -79,6 +79,11 @@ func CreateStakeholdersDetails(c *gin.Context) {
 		c.JSON(http.StatusInternalServerError, gin.H{"error": "Failed to add stakeholder details to Firestore", "details": err.Error()})
 		return
 	}
+	err= utils.UpdateFirestoreDocument(ctx, "applications", applicationId, "stakeholder_info_form_id", formId)
+	if err != nil {
+		c.JSON(http.StatusInternalServerError, gin.H{"error": "Failed to update application with formId", "details": err.Error()})
+		return
+	}
 
 	// Return success response
 	c.JSON(http.StatusCreated, gin.H{"message": "Stakeholder details created successfully"})

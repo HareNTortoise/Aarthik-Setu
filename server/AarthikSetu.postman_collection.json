@@ -1,13 +1,1058 @@
 {
 	"info": {
-		"_postman_id": "5a22b619-9930-403c-9d13-36b19794be6f",
+		"_postman_id": "df9688b9-b10a-408c-b39e-3fe1972a7ca0",
 		"name": "AarthikSetu",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
 		"_exporter_id": "26603098"
 	},
 	"item": [
 		{
-			"name": "PERSONAL FORMS",
+			"name": "BUSINESS_FORMS",
+			"item": [
+				{
+					"name": "ITR_FORMS",
+					"item": [
+						{
+							"name": "PDF_UPLOAD",
+							"item": [
+								{
+									"name": "POST_UPLOAD_ITR_DOCUMENT",
+									"request": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "formdata",
+											"formdata": [
+												{
+													"key": "itr_documents",
+													"type": "file",
+													"src": [
+														"C:\\Users\\Varun\\Downloads\\10000927-Resume-Master-22F1000553-2024-08-10-2.pdf",
+														"C:\\Users\\Varun\\Downloads\\1_merged.pdf"
+													]
+												}
+											]
+										},
+										"url": {
+											"raw": "localhost:8080/business/upload-itr-document/mhtwaakyay",
+											"host": [
+												"localhost"
+											],
+											"port": "8080",
+											"path": [
+												"business",
+												"upload-itr-document",
+												"mhtwaakyay"
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "BANK_DETAILS",
+					"item": [
+						{
+							"name": "BANK_DETAILS",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "bank_name",
+											"value": "HDFC",
+											"type": "text"
+										},
+										{
+											"key": "joining_month",
+											"value": "May",
+											"type": "text"
+										},
+										{
+											"key": "joining_year",
+											"value": "2024",
+											"type": "text"
+										},
+										{
+											"key": "bank_name",
+											"value": "ICICI",
+											"type": "text"
+										},
+										{
+											"key": "joining_month",
+											"value": "April",
+											"type": "text"
+										},
+										{
+											"key": "joining_year",
+											"value": "2013",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "localhost:8080/personal/bank_details/mhtwaakyay",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"personal",
+										"bank_details",
+										"mhtwaakyay"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "BANK_DETAILS",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "bank_name",
+											"value": "HDFC",
+											"type": "text"
+										},
+										{
+											"key": "joining_month",
+											"value": "May",
+											"type": "text"
+										},
+										{
+											"key": "joining_year",
+											"value": "2024",
+											"type": "text"
+										},
+										{
+											"key": "bank_name",
+											"value": "ICICI",
+											"type": "text"
+										},
+										{
+											"key": "joining_month",
+											"value": "April",
+											"type": "text"
+										},
+										{
+											"key": "joining_year",
+											"value": "2012",
+											"type": "text"
+										},
+										{
+											"key": "bank_name",
+											"value": "Bank of Maharashtra",
+											"type": "text"
+										},
+										{
+											"key": "joining_month",
+											"value": "June",
+											"type": "text"
+										},
+										{
+											"key": "joining_year",
+											"value": "2010",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "localhost:8080/personal/bank_details/mhtwaakyay",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"personal",
+										"bank_details",
+										"mhtwaakyay"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "BANK_DETAILS",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "bank_name",
+											"value": "HDFC",
+											"type": "text"
+										},
+										{
+											"key": "joining_month",
+											"value": "May",
+											"type": "text"
+										},
+										{
+											"key": "joining_year",
+											"value": "2024",
+											"type": "text"
+										},
+										{
+											"key": "bank_name",
+											"value": "ICICI",
+											"type": "text"
+										},
+										{
+											"key": "joining_month",
+											"value": "April",
+											"type": "text"
+										},
+										{
+											"key": "joining_year",
+											"value": "2013",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "localhost:8080/personal/bank_details/mhtwaakyay",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"personal",
+										"bank_details",
+										"mhtwaakyay"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "BANK_DETAILS",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "localhost:8080/personal/bank_details/mhtwaakyay",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"personal",
+										"bank_details",
+										"mhtwaakyay"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "GST_DETAILS",
+					"item": [
+						{
+							"name": "GET_GST_DETAILS",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8080/business/gst_details/:profileId/:applicationId",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"business",
+										"gst_details",
+										":profileId",
+										":applicationId"
+									],
+									"variable": [
+										{
+											"key": "profileId",
+											"value": "abc"
+										},
+										{
+											"key": "applicationId",
+											"value": "123"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "POST_GST_DETAILS",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": ""
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "PUT_GST_DETAILS",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "business_id",
+											"value": "789",
+											"type": "text"
+										},
+										{
+											"key": "gst_number",
+											"value": "123456789",
+											"type": "text"
+										},
+										{
+											"key": "user_name",
+											"value": "JohnDoe",
+											"type": "text"
+										},
+										{
+											"key": "gst_number",
+											"value": "987654321",
+											"type": "text"
+										},
+										{
+											"key": "user_name",
+											"value": "JaneSmith",
+											"type": "text"
+										},
+										{
+											"key": "gst_number",
+											"value": "456789123",
+											"type": "text"
+										},
+										{
+											"key": "user_name",
+											"value": "MikeJohnson",
+											"type": "text"
+										},
+										{
+											"key": "filing_status",
+											"value": "Filed",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "localhost:8080/business/gst_details/:profileId/:applicationId",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"business",
+										"gst_details",
+										":profileId",
+										":applicationId"
+									],
+									"variable": [
+										{
+											"key": "profileId",
+											"value": "abc"
+										},
+										{
+											"key": "applicationId",
+											"value": "123"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "DEL_GST_DETAILS",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": ""
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "DECLARE_BUSINESS",
+					"item": [
+						{
+							"name": "GET_BUSINESS_DETAILS",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": ""
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "POST_BUSINESS_DETAILS",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": ""
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "PUT_BUSINESS_DETAILS",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "business_id",
+											"value": "BIZ12345",
+											"type": "text"
+										},
+										{
+											"key": "constitution",
+											"value": "Sole Proprietorship",
+											"type": "text"
+										},
+										{
+											"key": "state",
+											"value": "California",
+											"type": "text"
+										},
+										{
+											"key": "city",
+											"value": "Los Angeles",
+											"type": "text"
+										},
+										{
+											"key": "number_of_customers",
+											"value": "250",
+											"type": "text"
+										},
+										{
+											"key": "pan",
+											"value": "ABCDE1234F",
+											"type": "text"
+										},
+										{
+											"key": "highest_sale",
+											"value": "50000.75",
+											"type": "text"
+										},
+										{
+											"key": "sales[January]",
+											"value": "15000.00",
+											"type": "text"
+										},
+										{
+											"key": "sales[March]",
+											"value": "20000.50",
+											"type": "text"
+										},
+										{
+											"key": "sales[May]",
+											"value": "30000.00",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "localhost:8080/business/declare_gst_details/:profileId/:applicationId",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"business",
+										"declare_gst_details",
+										":profileId",
+										":applicationId"
+									],
+									"variable": [
+										{
+											"key": "profileId",
+											"value": "abc"
+										},
+										{
+											"key": "applicationId",
+											"value": "123"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "DEL_BUSINESS_DETAILS",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "localhost:8080/business/declare_gst_details/:profileId/:applicationId",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"business",
+										"declare_gst_details",
+										":profileId",
+										":applicationId"
+									],
+									"variable": [
+										{
+											"key": "profileId",
+											"value": "abc"
+										},
+										{
+											"key": "applicationId",
+											"value": "123"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "STAKEHOLDERS_DETAILS",
+					"item": [
+						{
+							"name": "GET_STAKEHOLDERS_DETAILS",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": ""
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "POST_STAKEHOLDERS_DETAILS",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": ""
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "PUT_STAKEHOLDERS_DETAILS",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"url": {
+									"raw": "localhost:8080/business/stakeholders_details/:profileId/:applicationId",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"business",
+										"stakeholders_details",
+										":profileId",
+										":applicationId"
+									],
+									"variable": [
+										{
+											"key": "profileId",
+											"value": ""
+										},
+										{
+											"key": "applicationId",
+											"value": ""
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "DEL_STAKEHOLDERS_DETAILS",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "localhost:8080/business/declare_gst_details/:profileId/:applicationId",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"business",
+										"declare_gst_details",
+										":profileId",
+										":applicationId"
+									],
+									"variable": [
+										{
+											"key": "profileId",
+											"value": ""
+										},
+										{
+											"key": "applicationId",
+											"value": ""
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "GEN-AI",
+			"item": [
+				{
+					"name": "AUDIO_FORM_FILL",
+					"request": {
+						"auth": {
+							"type": "inherit"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "audioFile",
+									"type": "file",
+									"src": "/home/varunvilva/Downloads/test.mp3"
+								},
+								{
+									"key": "formFields",
+									"value": "[\"name\", \"age\", \"email\"]",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:8080/gen_ai/audio-fill",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"gen_ai",
+								"audio-fill"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "INFO_EXTRACTION",
+			"item": [
+				{
+					"name": "BANK_STATEMENT",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "file",
+									"type": "file",
+									"src": "C:\\Users\\Varun\\Downloads\\BANK STATEMENT SHREE SHYAM DEVELOPERS.pdf"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:8080/gen_ai/get-bank-statement-details/abcdefghi/abcdefghi",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"gen_ai",
+								"get-bank-statement-details",
+								"abcdefghi",
+								"abcdefghi"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ITR_DETAIL_EXTRACTION",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "file",
+									"type": "file",
+									"src": "C:\\Users\\Varun\\Downloads\\itr ba fab.pdf"
+								},
+								{
+									"key": "formFields",
+									"value": "[\"name\", \"age\", \"email\"]",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:8080/gen_ai/get-itr-detils/abcdefghi/abcdefghi",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"gen_ai",
+								"get-itr-detils",
+								"abcdefghi",
+								"abcdefghi"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "SUGGEST_LENDER",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/gen_ai/suggest-lenders/abcdefghi/abcdefghi",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"gen_ai",
+								"suggest-lenders",
+								"abcdefghi",
+								"abcdefghi"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "PROFILE_&_APPLICATION",
+			"item": [
+				{
+					"name": "BUSINESS_CREATE_PROFILE",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "p2",
+									"type": "text"
+								},
+								{
+									"key": "pan",
+									"value": "ABACGSGVBDG121",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:8080/business/profile/abcdefghi",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"business",
+								"profile",
+								"abcdefghi"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PERSONAL_CREATE_PROFILE",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "p2",
+									"type": "text"
+								},
+								{
+									"key": "pan",
+									"value": "ABACGSGVBDG121",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:8080/personal/profile/abcdefghi",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"personal",
+								"profile",
+								"abcdefghi"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "BUSINESS_PATCH_PROFILE",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "Varun Vilvadrinath",
+									"type": "text"
+								},
+								{
+									"key": "pan",
+									"value": "ABACGSGVBDG12",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:8080/business/profile/abcdefghi/912a7a7c79896481",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"business",
+								"profile",
+								"abcdefghi",
+								"912a7a7c79896481"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PERSONAL_PATCH_PROFILE",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "Varun Vilvadrinath",
+									"type": "text"
+								},
+								{
+									"key": "pan",
+									"value": "ABACGSGVBDG12",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:8080/personal/profile/abcdefghi/912a7a7c79896481",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"personal",
+								"profile",
+								"abcdefghi",
+								"912a7a7c79896481"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "BUSINESS_GET_PROFILES",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/business/profile/abcdefghi",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"business",
+								"profile",
+								"abcdefghi"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PERSONAL_GET_PROFILES",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/personalprofile/abcdefghi",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"personalprofile",
+								"abcdefghi"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "BUSINESS_DEL_PROFILE",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/business/profile/abcdefghi/85c4d33b50f37aba",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"business",
+								"profile",
+								"abcdefghi",
+								"85c4d33b50f37aba"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PERSONAL_DEL_PROFILE",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/personal/profile/abcdefghi/85c4d33b50f37aba",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"personal",
+								"profile",
+								"abcdefghi",
+								"85c4d33b50f37aba"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CREATE_APPLICATIONS",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/application/d0e9357153c567b6",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"application",
+								"d0e9357153c567b6"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET_APPLICATIONS",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/application/d0e9357153c567b6",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"application",
+								"d0e9357153c567b6"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DEL_APPLICATIONS",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/application/d0e9357153c567b6/5c9522c6084bc87c",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"application",
+								"d0e9357153c567b6",
+								"5c9522c6084bc87c"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "PERSONAL_FORMS",
 			"item": [
 				{
 					"name": "ITR_FROMS",
@@ -136,7 +1181,7 @@
 											]
 										},
 										"url": {
-											"raw": "localhost:8080/personal/itr/abcdefghi/abcdefghi",
+											"raw": "localhost:8080/personal/itr/d0e9357153c567b6/cda1180c6e4d793d",
 											"host": [
 												"localhost"
 											],
@@ -144,8 +1189,8 @@
 											"path": [
 												"personal",
 												"itr",
-												"abcdefghi",
-												"abcdefghi"
+												"d0e9357153c567b6",
+												"cda1180c6e4d793d"
 											]
 										}
 									},
@@ -350,7 +1395,7 @@
 											]
 										},
 										"url": {
-											"raw": "localhost:8080/personal/upload-itr-document/mhtwaakyay",
+											"raw": "localhost:8080/personal/upload-itr-document/abcdefghi/abcdefghi",
 											"host": [
 												"localhost"
 											],
@@ -358,7 +1403,8 @@
 											"path": [
 												"personal",
 												"upload-itr-document",
-												"mhtwaakyay"
+												"abcdefghi",
+												"abcdefghi"
 											]
 										}
 									},
@@ -1626,54 +2672,6 @@
 								}
 							},
 							"response": []
-						}
-					]
-				}
-			]
-		},
-		{
-			"name": "BUSINESS FORMS",
-			"item": [
-				{
-					"name": "ITR_FORMS",
-					"item": [
-						{
-							"name": "PDF_UPLOAD",
-							"item": [
-								{
-									"name": "POST_UPLOAD_ITR_DOCUMENT",
-									"request": {
-										"method": "POST",
-										"header": [],
-										"body": {
-											"mode": "formdata",
-											"formdata": [
-												{
-													"key": "itr_documents",
-													"type": "file",
-													"src": [
-														"C:\\Users\\Varun\\Downloads\\10000927-Resume-Master-22F1000553-2024-08-10-2.pdf",
-														"C:\\Users\\Varun\\Downloads\\1_merged.pdf"
-													]
-												}
-											]
-										},
-										"url": {
-											"raw": "localhost:8080/business/upload-itr-document/mhtwaakyay",
-											"host": [
-												"localhost"
-											],
-											"port": "8080",
-											"path": [
-												"business",
-												"upload-itr-document",
-												"mhtwaakyay"
-											]
-										}
-									},
-									"response": []
-								}
-							]
 						}
 					]
 				}

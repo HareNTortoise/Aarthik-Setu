@@ -78,6 +78,11 @@ func CreateEmploymentDetail(c *gin.Context) {
 		c.JSON(http.StatusInternalServerError, gin.H{"error": "Failed to create employment detail", "details": err.Error()})
 		return
 	}
+	err= utils.UpdateFirestoreDocument(ctx, "applications",employmentDetail.ApplicationId, "employment_details_form_id",employmentDetail.FormId)
+	if err != nil {
+		c.JSON(http.StatusInternalServerError, gin.H{"error": "Failed to update application with formId", "details": err.Error()})
+		return
+	}
 
 	c.JSON(http.StatusCreated, gin.H{"message": "Employment detail created successfully"})
 }

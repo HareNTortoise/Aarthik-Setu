@@ -164,6 +164,12 @@ func CreateManualITR(c *gin.Context) {
 		return
 	}
 
+	err= utils.UpdateFirestoreDocument(ctx, "applications", form.ApplicationId, "manual_itr_form_id", form.FormId)
+	if err != nil {
+		c.JSON(http.StatusInternalServerError, gin.H{"error": "Failed to update application with formId", "details": err.Error()})
+		return
+	}
+
 	c.JSON(http.StatusCreated, gin.H{"message": "ITR form created successfully"})
 }
 

@@ -81,6 +81,11 @@ func SubmitLoanApplicationDetails(c *gin.Context) {
         return
     }
 
+    err= utils.UpdateFirestoreDocument(ctx, "applications", applicationId, "loan_details_form_id", formId)
+	if err != nil {
+		c.JSON(http.StatusInternalServerError, gin.H{"error": "Failed to update application with formId", "details": err.Error()})
+		return
+	}
     c.JSON(http.StatusCreated, gin.H{"message": "Loan application submitted successfully"})
 }
 

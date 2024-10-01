@@ -8,5 +8,5 @@ import (
 
 // RegisterITRRoutes registers the routes related to ITR forms
 func RegisterITRInfoExtractionRoutes(router *gin.Engine) {
-	router.POST("/gen_ai/get-itr-detils", itr_info.GetITRDetails)
+	router.POST("/gen_ai/get-itr-detils/:profileId/:applicationId", itr_info.GetITRDetails)
 }
