@@ -564,7 +564,7 @@
     "type": "text",
     "placeholders": {},
     "tags": [
-      "personal_loan_journey"
+      "personal_loan_journey", "business_loan_journey"
     ]
   },
   "loanFormButtonTitle": "ಅರ್ಜಿಯ ಮುಚ್ಚುವಿಕೆ",
@@ -1950,13 +1950,6 @@
     "tags": ["business_loan_journey"]
   },
   "stakeholdersButtonDescription": "ಪ್ರಮುಖ ಭಾಗಸಹಾಯಕರ ಹಾಗೂ ವ್ಯಾಪಾರದಲ್ಲಿ ಅವರ ಪಾಲೆಗಳ ಕುರಿತು ವಿವರಗಳನ್ನು ಒದಗಿಸಿ.",
-
-  "@loanFormDescription": {
-    "description": "Description of the final loan form step",
-    "type": "text",
-    "tags": ["business_loan_journey"]
-  },
-  "loanFormDescription": "ವೇತನದ ಅಳತೆಗಳಿಗೆ ಸಂಬಂಧಿಸಿದಂತೆ ಸಾಲದ ಅರ್ಜಿಯ ಅಂತಿಮ ಹಂತವಾಗಿದೆ. ಎಲ್ಲಾ ವಿವರಗಳು ನಿಖರವಾದವು ಎಂದು ಖಚಿತಪಡಿಸಿಕೊಳ್ಳಿ.",
 
   "@loanButtonTitle": {
     "description": "Button title for submitting the loan form",
