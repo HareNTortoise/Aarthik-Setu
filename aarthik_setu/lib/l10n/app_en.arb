@@ -734,87 +734,87 @@
   "@landmark": {
     "description": "Label for the landmark input field.",
     "type": "text",
-    "tags": ["itr_form_manual_personal_loan", "stakeholder_business_loan"]
+    "tags": ["itr_form_manual_personal_loan", "stakeholder_business_loan", "add_stakeholder_business_loan"]
   },
   "landmark": "Landmark",
   "@landmarkHint": {
     "description": "Hint text for the landmark input field.",
     "type": "text",
-    "tags": ["itr_form_manual_personal_loan", "stakeholder_business_loan"]
+    "tags": ["itr_form_manual_personal_loan", "stakeholder_business_loan", "add_stakeholder_business_loan"]
   },
   "landmarkHint": "Enter landmark",
 
   "@country": {
     "description": "Label for the country dropdown.",
     "type": "text",
-    "tags": ["itr_form_manual_personal_loan", "stakeholder_business_loan"]
+    "tags": ["itr_form_manual_personal_loan", "stakeholder_business_loan", "add_stakeholder_business_loan"]
   },
   "country": "Country*",
 
   "@state": {
     "description": "Label for the state dropdown.",
     "type": "text",
-    "tags": ["itr_form_manual_personal_loan", "stakeholder_business_loan"]
+    "tags": ["itr_form_manual_personal_loan", "stakeholder_business_loan", "add_stakeholder_business_loan"]
   },
   "state": "State*",
 
   "@city": {
     "description": "Label for the city dropdown.",
     "type": "text",
-    "tags": ["itr_form_manual_personal_loan", "stakeholder_business_loan"]
+    "tags": ["itr_form_manual_personal_loan", "stakeholder_business_loan", "add_stakeholder_business_loan"]
   },
   "city": "City*",
 
   "@pinCode": {
     "description": "Label for the pin code input field.",
     "type": "text",
-    "tags": ["itr_form_manual_personal_loan"]
+    "tags": ["itr_form_manual_personal_loan", "add_stakeholder_business_loan"]
   },
   "pinCode": "Pin code*",
   "@pinCodeHint": {
     "description": "Hint text for the pin code input field.",
     "type": "text",
-    "tags": ["itr_form_manual_personal_loan"]
+    "tags": ["itr_form_manual_personal_loan", "add_stakeholder_business_loan"]
   },
   "pinCodeHint": "Enter your pin code",
 
   "@village": {
     "description": "Label for the village input field.",
     "type": "text",
-    "tags": ["itr_form_manual_personal_loan", "stakeholder_business_loan"]
+    "tags": ["itr_form_manual_personal_loan", "stakeholder_business_loan", "add_stakeholder_business_loan"]
   },
   "village": "Village",
 
   "@villageHint": {
     "description": "Hint text for the village input field.",
     "type": "text",
-    "tags": ["itr_form_manual_personal_loan", "stakeholder_business_loan"]
+    "tags": ["itr_form_manual_personal_loan", "stakeholder_business_loan", "add_stakeholder_business_loan"]
   },
   "villageHint": "Enter your village",
 
   "@district": {
     "description": "Label for the district input field.",
     "type": "text",
-    "tags": ["itr_form_manual_personal_loan", "stakeholder_business_loan"]
+    "tags": ["itr_form_manual_personal_loan", "stakeholder_business_loan", "add_stakeholder_business_loan"]
   },
   "district": "District*",
   "@districtHint": {
     "description": "Hint text for the district input field.",
     "type": "text",
-    "tags": ["itr_form_manual_personal_loan", "stakeholder_business_loan"]
+    "tags": ["itr_form_manual_personal_loan", "stakeholder_business_loan", "add_stakeholder_business_loan"]
   },
   "districtHint": "Enter your district",
 
   "@subDistrict": {
     "description": "Label for the sub-district input field.",
     "type": "text",
-    "tags": ["itr_form_manual_personal_loan"]
+    "tags": ["itr_form_manual_personal_loan", "add_stakeholder_business_loan"]
   },
   "subDistrict": "Enter sub-district*",
   "@subDistrictHint": {
     "description": "Hint text for the sub-district input field.",
     "type": "text",
-    "tags": ["itr_form_manual_personal_loan"]
+    "tags": ["itr_form_manual_personal_loan", "add_stakeholder_business_loan"]
   },
   "subDistrictHint": "Enter your sub-district",
 
@@ -972,7 +972,7 @@
   "@salutation": {
     "description": "Label for salutation dropdown",
     "type": "text",
-    "tags": ["basic_details_personal_loan"]
+    "tags": ["basic_details_personal_loan", "add_stakeholder_business_loan"]
   },
   "salutation": "Salutation*",
 
@@ -993,7 +993,7 @@
   "@gender": {
     "description": "Label for gender dropdown",
     "type": "text",
-    "tags": ["basic_details_personal_loan"]
+    "tags": ["basic_details_personal_loan", "add_stakeholder_business_loan"]
   },
   "gender": "Gender*",
 
@@ -2288,8 +2288,223 @@
     "description": "Label for the second address line input field",
     "tags": ["stakeholder_business_loan"],
     "type": "text"
+  },
+
+
+
+
+
+
+
+
+
+
+
+
+
+  "add_stakeholder": "Add Stakeholder",
+  "@add_stakeholder": {
+    "description": "Button label for adding a new stakeholder",
+    "tags": ["add_stakeholder_business_loan"],
+    "type": "text"
+  },
+  "select_stakeholder": "Select Stakeholder",
+  "@select_stakeholder": {
+    "description": "Dropdown label for selecting a stakeholder",
+    "tags": ["add_stakeholder_business_loan"],
+    "type": "text"
+  },
+  "relationship_type": "Relationship type",
+  "@relationship_type": {
+    "description": "Label for the relationship type field",
+    "tags": ["add_stakeholder_business_loan"],
+    "type": "text"
+  },
+
+  "relationship_type_hint": "Enter relationship type",
+  "@relationship_type_hint": {
+      "description": "Hint text for the relationship type field",
+      "tags": ["add_stakeholder_business_loan"],
+      "type": "text"
+    },
+
+  "first_name": "First Name",
+  "@first_name": {
+    "description": "Label for the first name field",
+    "tags": ["add_stakeholder_business_loan"],
+    "type": "text"
+  },
+  "middle_name": "Middle Name",
+  "@middle_name": {
+    "description": "Label for the middle name field",
+    "tags": ["add_stakeholder_business_loan"],
+    "type": "text"
+  },
+  "last_name": "Last Name",
+  "@last_name": {
+    "description": "Label for the last name field",
+    "tags": ["add_stakeholder_business_loan"],
+    "type": "text"
+  },
+  "ownership_percentage": "Ownership %",
+  "@ownership_percentage": {
+    "description": "Label for the ownership percentage field",
+    "tags": ["add_stakeholder_business_loan"],
+    "type": "text"
+  },
+
+  "ownership_percentage_hint": "Enter ownership %",
+  "@ownership_percentage_hint": {
+      "description": "Hint text for the ownership percentage field",
+      "tags": ["add_stakeholder_business_loan"],
+      "type": "text"
+    },
+
+  "father_name": "Father Name",
+  "@father_name": {
+    "description": "Label for the father name field",
+    "tags": ["add_stakeholder_business_loan"],
+    "type": "text"
+  },
+  "dob": "Date of Birth",
+  "@dob": {
+    "description": "Label for the date of birth field",
+    "tags": ["add_stakeholder_business_loan"],
+    "type": "text"
+  },
+  "mobile_number": "Mobile Number",
+  "@mobile_number": {
+    "description": "Label for the mobile number field",
+    "tags": ["add_stakeholder_business_loan"],
+    "type": "text"
+  },
+  "residence_status": "Residence Status",
+  "@residence_status": {
+    "description": "Label for the residence status field",
+    "tags": ["add_stakeholder_business_loan"],
+    "type": "text"
+  },
+
+  "residence_status_hint": "Enter residence status",
+  "@residence_status_hint": {
+      "description": "Hint text for the residence status field",
+      "tags": ["add_stakeholder_business_loan"],
+      "type": "text"
+  },
+
+  "pan": "Enter PAN",
+  "@pan": {
+    "description": "Label for the PAN field",
+    "tags": ["add_stakeholder_business_loan"],
+    "type": "text"
+  },
+  "education_status": "Education Status",
+  "@education_status": {
+    "description": "Label for the education status field",
+    "tags": ["add_stakeholder_business_loan"],
+    "type": "text"
+  },
+
+  "education_status_hint": "Enter education status",
+  "@education_status_hint": {
+      "description": "Hint text for the education status field",
+      "tags": ["add_stakeholder_business_loan"],
+      "type": "text"
+  },
+
+  "total_experience": "Total Experience (years)",
+  "@total_experience": {
+    "description": "Label for the total experience field",
+    "tags": ["add_stakeholder_business_loan"],
+    "type": "text"
+  },
+
+  "total_experience_hint": "Enter total experience",
+  "@total_experience_hint": {
+      "description": "Hint text for the total experience field",
+      "tags": ["add_stakeholder_business_loan"],
+      "type": "text"
+  },
+
+  "net_worth": "Net Worth (INR)",
+  "@net_worth": {
+    "description": "Label for the net worth field",
+    "tags": ["add_stakeholder_business_loan"],
+    "type": "text"
+  },
+
+  "net_worth_hint": "Enter net worth",
+  "@net_worth_hint": {
+      "description": "Hint text for the net worth field",
+      "tags": ["add_stakeholder_business_loan"],
+      "type": "text"
+  },
+
+  "address_line_one": "Address Line One*",
+  "@address_line_one": {
+    "description": "Label for the first line of address",
+    "tags": ["add_stakeholder_business_loan"],
+    "type": "text"
+  },
+  "address_line_two": "Address Line Two",
+  "@address_line_two": {
+    "description": "Label for the second line of address",
+    "tags": ["add_stakeholder_business_loan"],
+    "type": "text"
+  },
+  "phone": "Phone",
+  "@phone": {
+    "description": "Label for the phone field",
+    "tags": ["add_stakeholder_business_loan"],
+    "type": "text"
+  },
+
+  "@phone_hint": {
+    "description": "Hint text for phone input",
+    "type": "text"
+  },
+  "phone_hint": "Enter phone",
+
+  "visually_impaired": "Visually Impaired",
+  "@visually_impaired": {
+    "description": "Label for the visually impaired field",
+    "tags": ["add_stakeholder_business_loan"],
+    "type": "text"
+  },
+
+  "visually_impaired_hint": "Enter level",
+  "@visually_impaired_hint": {
+    "description": "Hint text for the visually impaired field",
+    "tags": ["add_stakeholder_business_loan"],
+    "type": "text"
+  },
+
+  "is_guarantor": "Is it Guarantor?",
+  "@is_guarantor": {
+    "description": "Label for the guarantor status",
+    "tags": ["add_stakeholder_business_loan"],
+    "type": "text"
+  },
+  "save": "Save",
+  "@save": {
+    "description": "Button label for saving stakeholder details",
+    "tags": ["add_stakeholder_business_loan"],
+    "type": "text"
+  },
+  "delete": "Delete",
+  "@delete": {
+    "description": "Button label for deleting stakeholder",
+    "tags": ["add_stakeholder_business_loan"],
+    "type": "text"
+  },
+  "discard": "Discard",
+  "@discard": {
+    "description": "Button label for discarding stakeholder changes",
+    "tags": ["add_stakeholder_business_loan"],
+    "type": "text"
   }
 }
+
 
 
 

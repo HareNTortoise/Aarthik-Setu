@@ -2235,8 +2235,202 @@
     "description": "Label for the second address line input field",
     "tags": ["stakeholder_business_loan"],
     "type": "text"
+  },
+
+
+
+
+
+
+
+
+
+
+
+
+
+  "add_stakeholder": "শেয়ারহোল্ডার যোগ করুন",
+  "@add_stakeholder": {
+    "description": "নতুন শেয়ারহোল্ডার যোগ করার জন্য বোতাম লেবেল",
+    "tags": ["add_stakeholder_business_loan"],
+    "type": "text"
+  },
+  "select_stakeholder": "শেয়ারহোল্ডার নির্বাচন করুন",
+  "@select_stakeholder": {
+    "description": "শেয়ারহোল্ডার নির্বাচন করতে ড্রপডাউন লেবেল",
+    "tags": ["add_stakeholder_business_loan"],
+    "type": "text"
+  },
+  "relationship_type": "সম্পর্কের প্রকার",
+  "@relationship_type": {
+    "description": "সম্পর্কের প্রকার ক্ষেত্রের জন্য লেবেল",
+    "tags": ["add_stakeholder_business_loan"],
+    "type": "text"
+  },
+  "relationship_type_hint": "সম্পর্কের প্রকার লিখুন",
+  "@relationship_type_hint": {
+    "description": "সম্পর্কের প্রকার ক্ষেত্রের জন্য হিন্ট টেক্সট",
+    "tags": ["add_stakeholder_business_loan"],
+    "type": "text"
+  },
+  "first_name": "প্রথম নাম",
+  "@first_name": {
+    "description": "প্রথম নামের জন্য লেবেল",
+    "tags": ["add_stakeholder_business_loan"],
+    "type": "text"
+  },
+  "middle_name": "মধ্য নাম",
+  "@middle_name": {
+    "description": "মধ্য নামের জন্য লেবেল",
+    "tags": ["add_stakeholder_business_loan"],
+    "type": "text"
+  },
+  "last_name": "শেষ নাম",
+  "@last_name": {
+    "description": "শেষ নামের জন্য লেবেল",
+    "tags": ["add_stakeholder_business_loan"],
+    "type": "text"
+  },
+  "ownership_percentage": "মালিকানা শতাংশ %",
+  "@ownership_percentage": {
+    "description": "মালিকানা শতাংশ ক্ষেত্রের জন্য লেবেল",
+    "tags": ["add_stakeholder_business_loan"],
+    "type": "text"
+  },
+  "ownership_percentage_hint": "মালিকানা শতাংশ লিখুন",
+  "@ownership_percentage_hint": {
+    "description": "মালিকানা শতাংশ ক্ষেত্রের জন্য হিন্ট টেক্সট",
+    "tags": ["add_stakeholder_business_loan"],
+    "type": "text"
+  },
+  "father_name": "বাবার নাম",
+  "@father_name": {
+    "description": "বাবার নামের জন্য লেবেল",
+    "tags": ["add_stakeholder_business_loan"],
+    "type": "text"
+  },
+  "dob": "জন্ম তারিখ",
+  "@dob": {
+    "description": "জন্ম তারিখ ক্ষেত্রের জন্য লেবেল",
+    "tags": ["add_stakeholder_business_loan"],
+    "type": "text"
+  },
+  "mobile_number": "মোবাইল নম্বর",
+  "@mobile_number": {
+    "description": "মোবাইল নম্বর ক্ষেত্রের জন্য লেবেল",
+    "tags": ["add_stakeholder_business_loan"],
+    "type": "text"
+  },
+  "residence_status": "বাসস্থানের অবস্থা",
+  "@residence_status": {
+    "description": "বাসস্থানের অবস্থা ক্ষেত্রের জন্য লেবেল",
+    "tags": ["add_stakeholder_business_loan"],
+    "type": "text"
+  },
+  "residence_status_hint": "বাসস্থানের অবস্থা লিখুন",
+  "@residence_status_hint": {
+    "description": "বাসস্থানের অবস্থা ক্ষেত্রের জন্য হিন্ট টেক্সট",
+    "tags": ["add_stakeholder_business_loan"],
+    "type": "text"
+  },
+  "pan": "PAN লিখুন",
+  "@pan": {
+    "description": "PAN ক্ষেত্রের জন্য লেবেল",
+    "tags": ["add_stakeholder_business_loan"],
+    "type": "text"
+  },
+  "education_status": "শিক্ষার অবস্থা",
+  "@education_status": {
+    "description": "শিক্ষার অবস্থা ক্ষেত্রের জন্য লেবেল",
+    "tags": ["add_stakeholder_business_loan"],
+    "type": "text"
+  },
+  "education_status_hint": "শিক্ষার অবস্থা লিখুন",
+  "@education_status_hint": {
+    "description": "শিক্ষার অবস্থা ক্ষেত্রের জন্য হিন্ট টেক্সট",
+    "tags": ["add_stakeholder_business_loan"],
+    "type": "text"
+  },
+  "total_experience": "মোট অভিজ্ঞতা (বছর)",
+  "@total_experience": {
+    "description": "মোট অভিজ্ঞতা ক্ষেত্রের জন্য লেবেল",
+    "tags": ["add_stakeholder_business_loan"],
+    "type": "text"
+  },
+  "total_experience_hint": "মোট অভিজ্ঞতা লিখুন",
+  "@total_experience_hint": {
+    "description": "মোট অভিজ্ঞতা ক্ষেত্রের জন্য হিন্ট টেক্সট",
+    "tags": ["add_stakeholder_business_loan"],
+    "type": "text"
+  },
+  "net_worth": "নেট মূল্য (INR)",
+  "@net_worth": {
+    "description": "নেট মূল্য ক্ষেত্রের জন্য লেবেল",
+    "tags": ["add_stakeholder_business_loan"],
+    "type": "text"
+  },
+  "net_worth_hint": "নেট মূল্য লিখুন",
+  "@net_worth_hint": {
+    "description": "নেট মূল্য ক্ষেত্রের জন্য হিন্ট টেক্সট",
+    "tags": ["add_stakeholder_business_loan"],
+    "type": "text"
+  },
+  "address_line_one": "ঠিকানা লাইন এক",
+  "@address_line_one": {
+    "description": "ঠিকানা লাইন একের জন্য লেবেল",
+    "tags": ["add_stakeholder_business_loan"],
+    "type": "text"
+  },
+  "address_line_two": "ঠিকানা লাইন দুই",
+  "@address_line_two": {
+    "description": "ঠিকানা লাইন দুইয়ের জন্য লেবেল",
+    "tags": ["add_stakeholder_business_loan"],
+    "type": "text"
+  },
+  "phone": "ফোন",
+  "@phone": {
+    "description": "ফোন ক্ষেত্রের জন্য লেবেল",
+    "tags": ["add_stakeholder_business_loan"],
+    "type": "text"
+  },
+  "visually_impaired": "দৃষ্টিহীন",
+  "@visually_impaired": {
+    "description": "দৃষ্টিহীন ক্ষেত্রের জন্য লেবেল",
+    "tags": ["add_stakeholder_business_loan"],
+    "type": "text"
+  },
+  "visually_impaired_hint": "বিস্তারিত লিখুন",
+  "@visually_impaired_hint": {
+    "description": "দৃষ্টিহীন ক্ষেত্রের জন্য হিন্ট টেক্সট",
+    "tags": ["add_stakeholder_business_loan"],
+    "type": "text"
+  },
+  "is_guarantor": "তিনি গ্যারান্টার?",
+  "@is_guarantor": {
+    "description": "গ্যারান্টার অবস্থার জন্য লেবেল",
+    "tags": ["add_stakeholder_business_loan"],
+    "type": "text"
+  },
+  "save": "সংরক্ষণ করুন",
+  "@save": {
+    "description": "শেয়ারহোল্ডার বিস্তারিত সংরক্ষণের বোতাম লেবেল",
+    "tags": ["add_stakeholder_business_loan"],
+    "type": "text"
+  },
+  "delete": "মুছে ফেলুন",
+  "@delete": {
+    "description": "শেয়ারহোল্ডার মুছে ফেলার বোতাম লেবেল",
+    "tags": ["add_stakeholder_business_loan"],
+    "type": "text"
+  },
+  "discard": "বাতিল করুন",
+  "@discard": {
+    "description": "শেয়ারহোল্ডার পরিবর্তন বাতিল করার বোতাম লেবেল",
+    "tags": ["add_stakeholder_business_loan"],
+    "type": "text"
   }
 }
+
 
 
 

@@ -2361,8 +2361,211 @@
     "description": "Label for the second address line input field",
     "tags": ["stakeholder_business_loan"],
     "type": "text"
+  },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  "add_stakeholder": "సహకారులను జోడించండి",
+  "@add_stakeholder": {
+    "description": "కొత్త సహకారిని జోడించడానికి బటన్ లేబుల్",
+    "tags": ["add_stakeholder_business_loan"],
+    "type": "text"
+  },
+  "select_stakeholder": "సహకారులను ఎంచుకోండి",
+  "@select_stakeholder": {
+    "description": "సహకారిని ఎంచుకోవడానికి డ్రాప్‌డౌన్ లేబుల్",
+    "tags": ["add_stakeholder_business_loan"],
+    "type": "text"
+  },
+  "relationship_type": "బ్యాంకు సంబంధం",
+  "@relationship_type": {
+    "description": "సంబంధం రకం ఫీల్డ్ కోసం లేబుల్",
+    "tags": ["add_stakeholder_business_loan"],
+    "type": "text"
+  },
+  "relationship_type_hint": "సంబంధం రకాన్ని నమోదు చేయండి",
+  "@relationship_type_hint": {
+    "description": "సంబంధం రకం ఫీల్డ్ కోసం సూచన టెక్స్ట్",
+    "tags": ["add_stakeholder_business_loan"],
+    "type": "text"
+  },
+  "first_name": "మొదటి పేరు",
+  "@first_name": {
+    "description": "మొదటి పేరుకు సంబంధించిన లేబుల్",
+    "tags": ["add_stakeholder_business_loan"],
+    "type": "text"
+  },
+  "middle_name": "మధ్య పేరు",
+  "@middle_name": {
+    "description": "మధ్య పేరుకు సంబంధించిన లేబుల్",
+    "tags": ["add_stakeholder_business_loan"],
+    "type": "text"
+  },
+  "last_name": "చివరి పేరు",
+  "@last_name": {
+    "description": "చివరి పేరుకు సంబంధించిన లేబుల్",
+    "tags": ["add_stakeholder_business_loan"],
+    "type": "text"
+  },
+  "ownership_percentage": "అధ్యక్షత్వ శాతం %",
+  "@ownership_percentage": {
+    "description": "అధ్యక్షత్వ శాతం ఫీల్డ్ కోసం లేబుల్",
+    "tags": ["add_stakeholder_business_loan"],
+    "type": "text"
+  },
+  "ownership_percentage_hint": "అధ్యక్షత్వ శాతం నమోదు చేయండి",
+  "@ownership_percentage_hint": {
+    "description": "అధ్యక్షత్వ శాతం ఫీల్డ్ కోసం సూచన టెక్స్ట్",
+    "tags": ["add_stakeholder_business_loan"],
+    "type": "text"
+  },
+  "father_name": "తండ్రి పేరు",
+  "@father_name": {
+    "description": "తండ్రి పేరుకు సంబంధించిన లేబుల్",
+    "tags": ["add_stakeholder_business_loan"],
+    "type": "text"
+  },
+  "dob": "పుట్టిన తేదీ",
+  "@dob": {
+    "description": "పుట్టిన తేదీ ఫీల్డ్ కోసం లేబుల్",
+    "tags": ["add_stakeholder_business_loan"],
+    "type": "text"
+  },
+  "mobile_number": "మొబైల్ నంబర్",
+  "@mobile_number": {
+    "description": "మొబైల్ నంబర్ ఫీల్డ్ కోసం లేబుల్",
+    "tags": ["add_stakeholder_business_loan"],
+    "type": "text"
+  },
+  "residence_status": "వసతి స్థితి",
+  "@residence_status": {
+    "description": "వసతి స్థితి ఫీల్డ్ కోసం లేబుల్",
+    "tags": ["add_stakeholder_business_loan"],
+    "type": "text"
+  },
+  "residence_status_hint": "వసతి స్థితిని నమోదు చేయండి",
+  "@residence_status_hint": {
+    "description": "వసతి స్థితి ఫీల్డ్ కోసం సూచన టెక్స్ట్",
+    "tags": ["add_stakeholder_business_loan"],
+    "type": "text"
+  },
+  "pan": "PAN నమోదు చేయండి",
+  "@pan": {
+    "description": "PAN ఫీల్డ్ కోసం లేబుల్",
+    "tags": ["add_stakeholder_business_loan"],
+    "type": "text"
+  },
+  "education_status": "ఉపాధి స్థితి",
+  "@education_status": {
+    "description": "ఉపాధి స్థితి ఫీల్డ్ కోసం లేబుల్",
+    "tags": ["add_stakeholder_business_loan"],
+    "type": "text"
+  },
+  "education_status_hint": "ఉపాధి స్థితిని నమోదు చేయండి",
+  "@education_status_hint": {
+    "description": "ఉపాధి స్థితి ఫీల్డ్ కోసం సూచన టెక్స్ట్",
+    "tags": ["add_stakeholder_business_loan"],
+    "type": "text"
+  },
+  "total_experience": "మొత్తం అనుభవం (వर्षాలు)",
+  "@total_experience": {
+    "description": "మొత్తం అనుభవం ఫీల్డ్ కోసం లేబుల్",
+    "tags": ["add_stakeholder_business_loan"],
+    "type": "text"
+  },
+  "total_experience_hint": "మొత్తం అనుభవాన్ని నమోదు చేయండి",
+  "@total_experience_hint": {
+    "description": "మొత్తం అనుభవం ఫీల్డ్ కోసం సూచన టెక్స్ట్",
+    "tags": ["add_stakeholder_business_loan"],
+    "type": "text"
+  },
+  "net_worth": "సంవత్సరపు శుభ్రము (INR)",
+  "@net_worth": {
+    "description": "శుభ్రము ఫీల్డ్ కోసం లేబుల్",
+    "tags": ["add_stakeholder_business_loan"],
+    "type": "text"
+  },
+  "net_worth_hint": "శుభ్రమును నమోదు చేయండి",
+  "@net_worth_hint": {
+    "description": "శుభ్రము ఫీల్డ్ కోసం సూచన టెక్స్ట్",
+    "tags": ["add_stakeholder_business_loan"],
+    "type": "text"
+  },
+  "address_line_one": "చిరునామా పంక్తి ఒకటి",
+  "@address_line_one": {
+    "description": "చిరునామా పంక్తి ఒకటి కోసం లేబుల్",
+    "tags": ["add_stakeholder_business_loan"],
+    "type": "text"
+  },
+  "address_line_two": "చిరునామా పంక్తి రెండు",
+  "@address_line_two": {
+    "description": "చిరునామా పంక్తి రెండు కోసం లేబుల్",
+    "tags": ["add_stakeholder_business_loan"],
+    "type": "text"
+  },
+  "phone": "ఫోన్",
+  "@phone": {
+    "description": "ఫోన్ ఫీల్డ్ కోసం లేబల్",
+    "tags": ["add_stakeholder_business_loan"],
+    "type": "text"
+  },
+
+  "@phone_hint": {
+    "description": "ఫోన్ ఇన్‌పుట్ కోసం హింట్ టెక్స్ట్",
+    "type": "text"
+  },
+  "phone_hint": "ఫోన్ నమోదు చేయండి",
+
+  "visually_impaired": "దృష్టి సంబంధిత",
+  "@visually_impaired": {
+    "description": "దృష్టి సంబంధిత ఫీల్డ్ కోసం లేబుల్",
+    "tags": ["add_stakeholder_business_loan"],
+    "type": "text"
+  },
+  "visually_impaired_hint": "స్పష్టీకరించండి",
+  "@visually_impaired_hint": {
+    "description": "దృష్టి సంబంధిత ఫీల్డ్ కోసం సూచన టెక్స్ట్",
+    "tags": ["add_stakeholder_business_loan"],
+    "type": "text"
+  },
+  "is_guarantor": "అతను గ్యారంటరా?",
+  "@is_guarantor": {
+    "description": "గ్యారంటర్ స్థితి కోసం లేబల్",
+    "tags": ["add_stakeholder_business_loan"],
+    "type": "text"
+  },
+  "save": "సేవ్",
+  "@save": {
+    "description": "సహకారాల వివరాలను సేవ్ చేయడానికి బటన్ లేబుల్",
+    "tags": ["add_stakeholder_business_loan"],
+    "type": "text"
+  },
+  "delete": "తొలగించు",
+  "@delete": {
+    "description": "సహకారాన్ని తొలగించడానికి బటన్ లేబుల్",
+    "tags": ["add_stakeholder_business_loan"],
+    "type": "text"
+  },
+  "discard": "విసర్జించు",
+  "@discard": {
+    "description": "సహకార మార్పులను విసర్జించడానికి బటన్ లేబుల్",
+    "tags": ["add_stakeholder_business_loan"],
+    "type": "text"
   }
 }
+
 
 
 
