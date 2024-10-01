@@ -4,63 +4,81 @@
     "description": "The title of the application",
     "type": "text",
     "placeholders": {},
-    "tags": ["sign-in"]
+    "tags": [
+      "sign-in"
+    ]
   },
   "signIn": "సైన్ ఇన్ చేయండి",
   "@signIn": {
     "description": "Button label for signing in",
     "type": "text",
     "placeholders": {},
-    "tags": ["sign-in"]
+    "tags": [
+      "sign-in"
+    ]
   },
   "googleSignIn": "గూగుల్",
   "@googleSignIn": {
     "description": "Label for Google Sign-In",
     "type": "text",
     "placeholders": {},
-    "tags": ["sign-in"]
+    "tags": [
+      "sign-in"
+    ]
   },
   "phoneSignIn": "ఫోన్",
   "@phoneSignIn": {
     "description": "Label for Phone Sign-In",
     "type": "text",
     "placeholders": {},
-    "tags": ["sign-in"]
+    "tags": [
+      "sign-in"
+    ]
   },
   "language": "భాష",
   "@language": {
     "description": "Label for language selection",
     "type": "text",
     "placeholders": {},
-    "tags": ["sign-in"]
+    "tags": [
+      "sign-in"
+    ]
   },
   "enterPhoneNumber": "మీ ఫోన్ నెంబర్ ని నమోదు చేయండి",
   "@enterPhoneNumber": {
     "description": "Label for phone number entry",
     "type": "text",
     "placeholders": {},
-    "tags": ["sign-in"]
+    "tags": [
+      "sign-in"
+    ]
   },
   "sendOtp": "OTP పంపించండి",
   "@sendOtp": {
     "description": "Button label for sending OTP",
     "type": "text",
     "placeholders": {},
-    "tags": ["sign-in"]
+    "tags": [
+      "sign-in"
+    ]
   },
   "verifyOtp": "OTP ధృవీకరించండి",
   "@verifyOtp": {
     "description": "Button label for verifying OTP",
     "type": "text",
     "placeholders": {},
-    "tags": ["sign-in"]
+    "tags": [
+      "sign-in"
+    ]
   },
   "resendOtp": "OTP మళ్ళీ పంపించండి",
   "@resendOtp": {
     "description": "Button label for resending OTP",
     "type": "text",
     "placeholders": {},
-    "tags": ["sign-in"]
+    "tags": [
+      "sign-in"
+    ]
   },
   "otpExpireIn": "OTP ముగియడానికి {time} సెకన్లు",
   "@otpExpireIn": {
@@ -72,48 +90,2964 @@
         "example": "120"
       }
     },
-    "tags": ["sign-in"]
+    "tags": [
+      "sign-in"
+    ]
   },
   "enterValidPhoneNumber": "దయచేసి సరైన ఫోన్ నెంబర్ ను నమోదు చేయండి",
   "@enterValidPhoneNumber": {
     "description": "Error message when phone number is invalid",
     "type": "text",
     "placeholders": {},
-    "tags": ["sign-in"]
+    "tags": [
+      "sign-in"
+    ]
   },
   "otpReceived": "OTP అందింది",
   "@otpReceived": {
     "description": "Message showing received OTP",
     "type": "text",
     "placeholders": {},
-    "tags": ["sign-in"]
+    "tags": [
+      "sign-in"
+    ]
   },
   "enterOtp": "OTP నమోదు చేయండి",
   "@enterOtp": {
     "description": "Label for OTP entry",
     "type": "text",
     "placeholders": {},
-    "tags": ["sign-in"]
+    "tags": [
+      "sign-in"
+    ]
   },
   "backButton": "తిరిగి",
   "@backButton": {
     "description": "Label for the back button",
     "type": "text",
     "placeholders": {},
-    "tags": ["sign-in"]
+    "tags": [
+      "sign-in",
+      "itr_form_manual_personal_loan",
+      "bank_details_personal_loan"
+    ]
   },
   "phoneNumber": "ఫోన్ నెంబర్",
   "@phoneNumber": {
     "description": "Label for phone number entry",
     "type": "text",
     "placeholders": {},
-    "tags": ["sign-in"]
+    "tags": [
+      "sign-in"
+    ]
   },
   "phoneSignInFormTitle": "ఫోన్ తో సైన్ ఇన్ చేయండి",
   "@phoneSignInFormTitle": {
     "description": "Title for phone sign-in form",
     "type": "text",
     "placeholders": {},
-    "tags": ["sign-in"]
+    "tags": [
+      "sign-in"
+    ]
+  },
+  "dashboard": "డాష్‌బోర్డ్",
+  "@dashboard": {
+    "description": "Title for the dashboard page",
+    "type": "text",
+    "placeholders": {},
+    "tags": [
+      "dashboard"
+    ]
+  },
+  "personalLoans": "వ్యక్తిగత రుణాలు",
+  "@personalLoans": {
+    "description": "Label for personal loan options",
+    "type": "text",
+    "placeholders": {},
+    "tags": [
+      "dashboard",
+      "personal_loan"
+    ]
+  },
+  "businessLoans": "వ్యాపార రుణాలు",
+  "@businessLoans": {
+    "description": "Label for business loan options",
+    "type": "text",
+    "placeholders": {},
+    "tags": [
+      "dashboard"
+    ]
+  },
+  "governmentSchemes": "ప్రభుత్వ పథకాలు",
+  "@governmentSchemes": {
+    "description": "Label for government schemes",
+    "type": "text",
+    "placeholders": {},
+    "tags": [
+      "dashboard"
+    ]
+  },
+  "logOut": "లాగ్ అవుట్",
+  "@logOut": {
+    "description": "Button label for logging out",
+    "type": "text",
+    "placeholders": {},
+    "tags": [
+      "dashboard"
+    ]
+  },
+  "profile": "ప్రొఫైల్",
+  "@profile": {
+    "description": "Label for profile selection",
+    "type": "text",
+    "placeholders": {},
+    "tags": [
+      "dashboard"
+    ]
+  },
+  "pendingApplications": "పెండింగ్ అప్లికేషన్లు",
+  "@pendingApplications": {
+    "description": "Label for pending applications with count",
+    "type": "text",
+    "placeholders": {},
+    "tags": [
+      "dashboard"
+    ]
+  },
+  "personalLoanDescription": "తక్కువ వడ్డీ రేట్లు మరియు అనువైన తిరిగి చెల్లింపు ఎంపికలతో వ్యక్తిగత రుణం పొందండి.",
+  "@personalLoanDescription": {
+    "description": "Description for personal loan option",
+    "type": "text",
+    "placeholders": {},
+    "tags": [
+      "personal_loan"
+    ]
+  },
+  "homeLoans": "హోమ్ రుణాలు",
+  "@homeLoans": {
+    "description": "Title for home loan option",
+    "type": "text",
+    "placeholders": {},
+    "tags": [
+      "personal_loan"
+    ]
+  },
+  "homeLoanDescription": "తక్కువ వడ్డీ రేట్లు మరియు అనువైన తిరిగి చెల్లింపు ఎంపికలతో హోమ్ రుణం పొందండి.",
+  "@homeLoanDescription": {
+    "description": "Description for home loan option",
+    "type": "text",
+    "placeholders": {},
+    "tags": [
+      "personal_loan"
+    ]
+  },
+  "autoLoans": "ఆటో రుణాలు",
+  "@autoLoans": {
+    "description": "Title for auto loan option",
+    "type": "text",
+    "placeholders": {},
+    "tags": [
+      "personal_loan"
+    ]
+  },
+  "autoLoanDescription": "తక్కువ వడ్డీ రేట్లు మరియు అనువైన తిరిగి చెల్లింపు ఎంపికలతో ఆటో రుణం పొందండి.",
+  "@autoLoanDescription": {
+    "description": "Description for auto loan option",
+    "type": "text",
+    "placeholders": {},
+    "tags": [
+      "personal_loan"
+    ]
+  },
+  "msmeLoans": "ఎంఎస్ఎంఈ రుణాలు",
+  "@msmeLoans": {
+    "description": "Title for MSME loan option",
+    "type": "text",
+    "placeholders": {},
+    "tags": [
+      "business_loan"
+    ]
+  },
+  "msmeLoanDescription": "తక్కువ వడ్డీ రేట్లు మరియు నునుగట్టు తిరిగి చెల్లించడానికి ఎంపికలతో ₹5 కోట్ల MSME రుణాలను పొందండి.",
+  "@msmeLoanDescription": {
+    "description": "Description for MSME loan option",
+    "type": "text",
+    "placeholders": {},
+    "tags": [
+      "business_loan"
+    ]
+  },
+  "termLoans": "కాలం రుణాలు",
+  "@termLoans": {
+    "description": "Title for term loan option",
+    "type": "text",
+    "placeholders": {},
+    "tags": [
+      "business_loan"
+    ]
+  },
+  "termLoanDescription": "ప్రతిస్పర్ధాత్మక ధరలు మరియు నునుగట్టు తిరిగి చెల్లింపు నిబంధనలతో ₹50 లక్షల వరకు కాలం రుణాలను పొందండి.",
+  "@termLoanDescription": {
+    "description": "Description for term loan option",
+    "type": "text",
+    "placeholders": {},
+    "tags": [
+      "business_loan"
+    ]
+  },
+  "mudraLoans": "ముద్రా రుణాలు",
+  "@mudraLoans": {
+    "description": "Title for Mudra loan option",
+    "type": "text",
+    "placeholders": {},
+    "tags": [
+      "business_loan"
+    ]
+  },
+  "mudraLoanDescription": "నునుగట్టు తిరిగి చెల్లింపు నిబంధనలతో మైక్రో ఎంటర్‌ప్రైజ్‌లకు ₹10 లక్షల వరకు ముద్రా రుణాలను పొందండి.",
+  "@mudraLoanDescription": {
+    "description": "Description for Mudra loan option",
+    "type": "text",
+    "placeholders": {},
+    "tags": [
+      "business_loan"
+    ]
+  },
+  "pendingApplicationsTitle": "వచ్చిన పత్రాలు",
+  "@pendingApplicationsTitle": {
+    "description": "Title for the pending applications dialog",
+    "type": "text",
+    "placeholders": {},
+    "tags": [
+      "dashboard_pending_applications"
+    ]
+  },
+  "noPendingApplications": "మీ వద్ద రాబోయే పత్రాలు లేవు.",
+  "@noPendingApplications": {
+    "description": "Message when there are no pending applications",
+    "type": "text",
+    "placeholders": {},
+    "tags": [
+      "dashboard_pending_applications"
+    ]
+  },
+  "closeButton": "మూసివేయి",
+  "@closeButton": {
+    "description": "Label for the close button",
+    "type": "text",
+    "placeholders": {},
+    "tags": [
+      "dashboard_pending_applications",
+      "dashboard_select_profile",
+      "bank_details_personal_loan"
+    ]
+  },
+  "selectProfileTitle": "ప్రొఫైల్ ఎంచుకోండి",
+  "@selectProfileTitle": {
+    "description": "Title for the select profile dialog",
+    "type": "text",
+    "placeholders": {},
+    "tags": [
+      "dashboard_select_profile"
+    ]
+  },
+  "noProfiles": "మీ వద్ద ప్రొఫైల్స్ లేవు.",
+  "@noProfiles": {
+    "description": "Message when there are no profiles",
+    "type": "text",
+    "placeholders": {},
+    "tags": [
+      "dashboard_select_profile"
+    ]
+  },
+  "choosePersonalProfile": "మీ వ్యక్తిగత ప్రొఫైల్ను ఎంచుకోండి",
+  "@choosePersonalProfile": {
+    "description": "Title for choosing personal profile",
+    "type": "text",
+    "placeholders": {},
+    "tags": [
+      "personal_loan_journey"
+    ]
+  },
+  "selectedProfile": "ఎంచుకున్న ప్రొఫైల్: ఆదర్శ్ వర్మ",
+  "@selectedProfile": {
+    "description": "Message showing selected profile",
+    "type": "text",
+    "placeholders": {},
+    "tags": [
+      "personal_loan_journey"
+    ]
+  },
+  "selectProfileMessage": "లభ్యమైన ప్రొఫైల్ల జాబితా నుండి మీ వ్యక్తిగత ప్రొఫైల్ను ఎంచుకోండి. మీ వద్ద ప్రొఫైల్ లేకుంటే, మీరు కొత్తది సృష్టించవచ్చు.",
+  "@selectProfileMessage": {
+    "description": "Message for selecting personal profile",
+    "type": "text",
+    "placeholders": {},
+    "tags": [
+      "personal_loan_journey"
+    ]
+  },
+  "itrImportance": "ఒక రుణానికి దరఖాస్తు చేసేటప్పుడు మీ ITRను అందించడం ముఖ్యమైనది, ఎందుకంటే ఇది నిధులను అందించే వారి ఆర్థిక స్థిరత్వం, చెల్లింపు సామర్థ్యం మరియు మొత్తం నమ్మకాన్ని నిర్ధారిస్తుంది, ఇది మీకు రుణం మంజూరు చేయబడే అవకాశం మెరుగుపరుస్తుంది. మీకు ITR లేకుంటే, మీ ఆదాయాన్ని చేతితో ప్రకటించాలనే ఎంపిక కూడా ఉంది.",
+  "@itrImportance": {
+    "description": "Importance of providing ITR in a loan application",
+    "type": "text",
+    "placeholders": {},
+    "tags": [
+      "personal_loan_journey"
+    ]
+  },
+  "itrButtonTitle": "ఆదాయపు పన్ను తిరిగి",
+  "@itrButtonTitle": {
+    "description": "Button label for providing ITR",
+    "type": "text",
+    "placeholders": {},
+    "tags": [
+      "personal_loan_journey"
+    ]
+  },
+  "itrButtonDescription": "గత 6 నెలల బ్యాంక్ స్టేట్మెంట్లు అందించండి.",
+  "@itrButtonDescription": {
+    "description": "Description for providing ITR",
+    "type": "text",
+    "placeholders": {},
+    "tags": [
+      "personal_loan_journey"
+    ]
+  },
+  "bankDetailsImportance": "బ్యాంక్ వివరాలు మరియు స్టేట్మెంట్లు నిధులందించేవారికి మీ ఆర్థిక అలవాట్లు, చెల్లింపు సామర్థ్యం మరియు మొత్తం క్రెడిట్ రిస్క్\u200Cను అంచనా వేయడానికి పారదర్శకమైన మరియు నమ్మదగిన మార్గాన్ని అందిస్తాయి, ఇవి రుణం మంజూరు చేయడంలో ముఖ్యమైన అంశాలు.",
+  "@bankDetailsImportance": {
+    "description": "Importance of providing bank details in a loan application",
+    "type": "text",
+    "placeholders": {},
+    "tags": [
+      "personal_loan_journey"
+    ]
+  },
+  "bankDetailsButtonTitle": "బ్యాంక్ వివరాలు",
+  "@bankDetailsButtonTitle": {
+    "description": "Button label for providing bank details",
+    "type": "text",
+    "placeholders": {},
+    "tags": [
+      "personal_loan_journey"
+    ]
+  },
+  "bankDetailsButtonDescription": "గత 6 నెలల బ్యాంక్ స్టేట్మెంట్లు అందించండి.",
+  "@bankDetailsButtonDescription": {
+    "description": "Description for providing bank details",
+    "type": "text",
+    "placeholders": {},
+    "tags": [
+      "personal_loan_journey"
+    ]
+  },
+  "personalDetailsImportance": "వాయిస్ నిధులందించువారికి మీరు మీ సమాచారం అందించిన ప్రొఫైల్\u200Cలు, మీ చెల్లింపు సామర్థ్యాన్ని అంచనా వేయడానికి, మీ ఆదాయ స్థిరత్వాన్ని అంచనా వేయడానికి, మీ విశ్వసనీయతను నిర్ధారించడానికి సహాయపడతాయి. మానవ శక్తి, స్థితి, తులనాత్మక భవిష్యత్తు వంటి సమాచారాన్ని కృత్రిమంగా పొందాలి.",
+  "@personalDetailsImportance": {
+    "description": "Importance of providing personal details in a loan application",
+    "type": "text",
+    "placeholders": {},
+    "tags": [
+      "personal_loan_journey"
+    ]
+  },
+  "basicDetailsButtonTitle": "మూల వివరాలు",
+  "@basicDetailsButtonTitle": {
+    "description": "Button label for providing basic details",
+    "type": "text",
+    "placeholders": {},
+    "tags": [
+      "personal_loan_journey"
+    ]
+  },
+  "basicDetailsButtonDescription": "మీ పేరు, వయస్సు, చిరునామా వంటి వ్యక్తిగత సమాచారాన్ని అందించండి.",
+  "@basicDetailsButtonDescription": {
+    "description": "Description for providing basic details",
+    "type": "text",
+    "placeholders": {},
+    "tags": [
+      "personal_loan_journey"
+    ]
+  },
+  "employmentDetailsImportance": "వాయిస్ నిధులందించువారికి, చెల్లింపు సామర్థ్యాన్ని అంచనా వేయడానికి, ఉద్యోగ స్థిరత్వాన్ని అంచనా వేయడానికి, మొత్తం ఆర్థిక ఆరోగ్యాన్ని అంచనా వేయడానికి ఉద్యోగ వివరాలు చాలా ముఖ్యమైనవి. కంపెనీ పేరు, పదవి, జీతం వంటి సమాచారాన్ని కూడా అందిస్తాయి.",
+  "@employmentDetailsImportance": {
+    "description": "Importance of providing employment details in a loan application",
+    "type": "text",
+    "placeholders": {},
+    "tags": [
+      "personal_loan_journey"
+    ]
+  },
+  "employmentDetailsButtonTitle": "ఉద్యోగ వివరాలు",
+  "@employmentDetailsButtonTitle": {
+    "description": "Button label for providing employment details",
+    "type": "text",
+    "placeholders": {},
+    "tags": [
+      "personal_loan_journey"
+    ]
+  },
+  "employmentDetailsButtonDescription": "మీ కంపెనీ పేరు, పదవి, జీతం వంటి ఉద్యోగ వివరాలను అందించండి.",
+  "@employmentDetailsButtonDescription": {
+    "description": "Description for providing employment details",
+    "type": "text",
+    "placeholders": {},
+    "tags": [
+      "personal_loan_journey"
+    ]
+  },
+  "creditInformationImportance": "క్రెడిట్ సమాచారం కీలకమైనది, ఎందుకంటే ఇది మీ క్రెడిట్\u200Cను అంచనా వేయడానికి, చెల్లింపు సామర్థ్యాన్ని అంచనా వేయడానికి మరియు మొత్తం ఆర్థిక ఆరోగ్యాన్ని అంచనా వేయడానికి అవసరం. క్రెడిట్ స్కోర్, క్రెడిట్ చరిత్ర, క్రెడిట్ కరెంటు వంటి సమాచారాన్ని కలిగి ఉంది.",
+  "@creditInformationImportance": {
+    "description": "Importance of providing credit information in a loan application",
+    "type": "text",
+    "placeholders": {},
+    "tags": [
+      "personal_loan_journey"
+    ]
+  },
+  "creditInformationButtonTitle": "క్రెడిట్ సమాచారం",
+  "@creditInformationButtonTitle": {
+    "description": "Button label for providing credit information",
+    "type": "text",
+    "placeholders": {},
+    "tags": [
+      "personal_loan_journey"
+    ]
+  },
+  "creditInformationButtonDescription": "మీ క్రెడిట్ సమాచారాన్ని అందించండి, క్రెడిట్ స్కోర్, క్రెడిట్ చరిత్ర, ప్రస్తుత రుణాలను.",
+  "@creditInformationButtonDescription": {
+    "description": "Description for providing credit information",
+    "type": "text",
+    "placeholders": {},
+    "tags": [
+      "personal_loan_journey"
+    ]
+  },
+  "contactInformationImportance": "సంప్రదింపు సమాచారం, మీ ఐడెంటిటీని అర్థం చేసుకోవడం, మీతో కమ్యూనికేట్ చేయడం, మీ చెల్లింపు సామర్థ్యాన్ని అంచనా వేయడం వంటి విభాగాలకు అవసరం.",
+  "@contactInformationImportance": {
+    "description": "Importance of providing contact information in a loan application",
+    "type": "text",
+    "placeholders": {},
+    "tags": [
+      "personal_loan_journey"
+    ]
+  },
+  "contactInformationButtonTitle": "సంప్రదింపు సమాచారం",
+  "@contactInformationButtonTitle": {
+    "description": "Button label for providing contact information",
+    "type": "text",
+    "placeholders": {},
+    "tags": [
+      "personal_loan_journey"
+    ]
+  },
+  "contactInformationButtonDescription": "మీ ఫోన్ నంబర్, ఇమెయిల్, చిరునామా వంటి సంప్రదింపు సమాచారం అందించండి.",
+  "@contactInformationButtonDescription": {
+    "description": "Description for providing contact information",
+    "type": "text",
+    "placeholders": {},
+    "tags": [
+      "personal_loan_journey"
+    ]
+  },
+  "loanFormImportance": "రుణానికి దరఖాస్తు ప్రక్రియలో రుణ ఫారం చివరి దశ. ఇది మీరు అందించే క్రమంలో అన్ని అవసరమైన సమాచారాన్ని పొందుతుంది.",
+  "@loanFormImportance": {
+    "description": "Importance of filling out the loan form",
+    "type": "text",
+    "placeholders": {},
+    "tags": [
+      "personal_loan_journey"
+    ]
+  },
+  "loanFormButtonTitle": "రుణ ఫారం",
+  "@loanFormButtonTitle": {
+    "description": "Button label for filling out the loan form",
+    "type": "text",
+    "placeholders": {},
+    "tags": [
+      "personal_loan_journey"
+    ]
+  },
+  "loanFormButtonDescription": "అవసరమైన సమాచారం కలిగి రుణ ఫారాన్ని పూరించండి.",
+  "@loanFormButtonDescription": {
+    "description": "Description for filling out the loan form",
+    "type": "text",
+    "placeholders": {},
+    "tags": [
+      "personal_loan_journey"
+    ]
+  },
+  "reviewFormButton": "మీ ఫారం ను సమీక్షించండి",
+  "@reviewFormButton": {
+    "description": "Button label for reviewing the loan form",
+    "type": "text",
+    "placeholders": {},
+    "tags": [
+      "personal_loan_journey"
+    ]
+  },
+  "reviewFormButtonDescription": "మీ రుణ దరఖాస్తును సమీక్షించడం మరియు సమర్పించడం రుణ దరఖాస్తు ప్రక్రియలో తుది దశ. మీరు అందించిన అన్ని సమాచారం సరిచూసి, దాని కచ్చితత్వాన్ని నిర్ధారించండి, మరియు రుణదాతకు మీ దరఖాస్తును ఆమోదం కోసం సమర్పించండి.",
+  "@reviewFormButtonDescription": {
+    "description": "Description for reviewing the loan form",
+    "type": "text",
+    "placeholders": {},
+    "tags": [
+      "personal_loan_journey"
+    ]
+  },
+  "itrDetailsTitle": "ఐటిఆర్ వివరాలు",
+  "@itrDetailsTitle": {
+    "description": "Title for the ITR Details section",
+    "type": "text",
+    "placeholders": {},
+    "tags": [
+      "itr_form_personal_loan"
+    ]
+  },
+  "manualDeclarationText": "మీ వార్షిక ఆదాయం 2.5 లక్షలకు తక్కువ అయితే, మీ ఆర్థిక వివరాలను ప్రకటించండి",
+  "@manualDeclarationText": {
+    "description": "Text for manual declaration option",
+    "type": "text",
+    "placeholders": {},
+    "tags": [
+      "itr_form_personal_loan"
+    ]
+  },
+  "itrMandatoryText_1": "ఆర్థిక సంవత్సరానికి చెందిన ఐటిఆర్ వివరాలు",
+  "@itrMandatoryText_1": {
+    "description": "Text for the ITR Details section",
+    "type": "text",
+    "placeholders": {},
+    "tags": [
+      "itr_form_personal_loan"
+    ]
+  },
+  "itrMandatoryText_2": "అనివార్యం",
+  "@itrMandatoryText_2": {
+    "description": "Text for the ITR Details section",
+    "type": "text",
+    "placeholders": {},
+    "tags": [
+      "itr_form_personal_loan"
+    ]
+  },
+  "uploadITRText": "ఐటిఆర్ అప్లోడ్ చేయండి",
+  "@uploadITRText": {
+    "description": "Text for the toggle button for uploading ITR",
+    "type": "text",
+    "placeholders": {},
+    "tags": [
+      "itr_form_personal_loan"
+    ]
+  },
+  "manualDeclarationButton": "మాన్యువల్ డిక్లరేషన్",
+  "@manualDeclarationButton": {
+    "description": "Text for the toggle button for manual declaration",
+    "type": "text",
+    "placeholders": {},
+    "tags": [
+      "itr_form_personal_loan"
+    ]
+  },
+  "uploadITRTitle": "ఐటిఆర్ను అప్‌లోడ్ చేయండి (పిడిఎఫ్ ఫార్మాట్)",
+  "@uploadITRTitle": {
+    "description": "Title for the upload ITR section",
+    "type": "text",
+    "placeholders": {},
+    "tags": [
+      "itr_form_upload_personal_loan"
+    ]
+  },
+  "fyLabel": "ఆర్థిక సంవత్సరం",
+  "@fyLabel": {
+    "description": "Label for the financial year",
+    "type": "text",
+    "placeholders": {},
+    "tags": [
+      "itr_form_upload_personal_loan"
+    ]
+  },
+  "uploadButton": "ఫైల్ అప్‌లోడ్ చేయండి",
+  "@uploadButton": {
+    "description": "Label for the upload button",
+    "type": "text",
+    "placeholders": {},
+    "tags": [
+      "itr_form_upload_personal_loan"
+    ]
+  },
+  "instructionsTitle": "పిడిఎఫ్ ఫార్మాట్‌లో ఐటిఆర్‌ను డౌన్‌లోడ్ చేయడం ఎలా",
+  "@instructionsTitle": {
+    "description": "Title for the instructions dialog",
+    "type": "text",
+    "placeholders": {},
+    "tags": [
+      "itr_form_upload_personal_loan"
+    ]
+  },
+  "instructionsContent": "1. పై కుడివైపున ఉన్న 'లాగిన్' బటన్‌పై క్లిక్ చేసి, మీ లాగిన్ వివరాలతో లాగిన్ అవ్వండి.\n2. పై నావిగేషన్ బార్ నుండి 'ఇ-ఫైల్' క్లిక్ చేయండి.\n3. 'ఇ-ఫైల్' డ్రాప్‌డౌన్ మెనూ నుండి 'ఇన్‌కమ్ ట్యాక్స్ రిటర్న్స్' క్లిక్ చేయండి.\n4. 'ఇన్‌కమ్ ట్యాక్స్ రిటర్న్స్' డ్రాప్‌డౌన్ మెనూ నుండి 'ఫైల్డ్ రిటర్న్స్ చూడండి' క్లిక్ చేయండి.\n5. మీరు ఐటిఆర్ 1/2 ఫైల్ చేసినట్లయితే, 'డౌన్‌లోడ్ ఫార్మ్'పై క్లిక్ చేయండి, ఆ 'ఆ.వ.' కోసం ఐటిఆర్ పిడిఎఫ్ ఫైల్ డౌన్‌లోడ్ అవుతుంది.\n6. డౌన్‌లోడ్ చేసిన ఫైళ్లను ప్లాట్‌ఫారమ్‌లో అప్‌లోడ్ చేయండి.",
+  "@instructionsContent": {
+    "description": "Content for instructions on how to download ITR",
+    "type": "text",
+    "placeholders": {},
+    "tags": [
+      "itr_form_upload_personal_loan"
+    ]
+  },
+  "instructionsButton": "సూచనలు",
+  "@instructionsButton": {
+    "description": "Text for instructions button",
+    "type": "text",
+    "placeholders": {},
+    "tags": [
+      "itr_form_upload_personal_loan"
+    ]
+  },
+  "@declareFinancialDetails": {
+    "description": "Title of the form to declare financial details.",
+    "type": "text",
+    "tags": [
+      "itr_form_manual_personal_loan"
+    ]
+  },
+  "declareFinancialDetails": "మీ ఆర్థిక వివరాలను ప్రకటించండి",
+  "@firstName": {
+    "description": "Label for the first name input field.",
+    "type": "text",
+    "tags": [
+      "itr_form_manual_personal_loan",
+      "basic_details_personal_loan"
+    ]
+  },
+  "firstName": "మొదటి పేరు*",
+  "@firstNameHint": {
+    "description": "Hint text for the first name input field.",
+    "type": "text",
+    "tags": [
+      "itr_form_manual_personal_loan",
+      "basic_details_personal_loan"
+    ]
+  },
+  "firstNameHint": "మీ మొదటి పేరును నమోదు చేయండి",
+  "@middleName": {
+    "description": "Label for the middle name input field.",
+    "type": "text",
+    "tags": [
+      "itr_form_manual_personal_loan",
+      "basic_details_personal_loan"
+    ]
+  },
+  "middleName": "మధ్య పేరు",
+  "@middleNameHint": {
+    "description": "Hint text for the middle name input field.",
+    "type": "text",
+    "tags": [
+      "itr_form_manual_personal_loan",
+      "basic_details_personal_loan"
+    ]
+  },
+  "middleNameHint": "మీ మధ్య పేరును నమోదు చేయండి",
+  "@lastName": {
+    "description": "Label for the last name input field.",
+    "type": "text",
+    "tags": [
+      "itr_form_manual_personal_loan",
+      "basic_details_personal_loan"
+    ]
+  },
+  "lastName": "చివరి పేరు*",
+  "@lastNameHint": {
+    "description": "Hint text for the last name input field.",
+    "type": "text",
+    "tags": [
+      "itr_form_manual_personal_loan",
+      "basic_details_personal_loan"
+    ]
+  },
+  "lastNameHint": "మీ చివరి పేరును నమోదు చేయండి",
+  "@dateOfBirth": {
+    "description": "Label for the date of birth input.",
+    "type": "text",
+    "tags": [
+      "itr_form_manual_personal_loan",
+      "basic_details_personal_loan"
+    ]
+  },
+  "dateOfBirth": "పుట్టిన తేది*",
+  "@dateOfBirthHint": {
+    "description": "Placeholder text for the date of birth button.",
+    "type": "text",
+    "tags": [
+      "itr_form_manual_personal_loan",
+      "basic_details_personal_loan"
+    ]
+  },
+  "dateOfBirthHint": "పుట్టిన తేది",
+  "@panNumber": {
+    "description": "Label for the PAN number input field.",
+    "type": "text",
+    "tags": [
+      "itr_form_manual_personal_loan",
+      "basic_details_personal_loan"
+    ]
+  },
+  "panNumber": "PAN సంఖ్య*",
+  "@panNumberHint": {
+    "description": "Hint text for the PAN number input field.",
+    "type": "text",
+    "tags": [
+      "itr_form_manual_personal_loan",
+      "basic_details_personal_loan"
+    ]
+  },
+  "panNumberHint": "మీ PAN సంఖ్యను నమోదు చేయండి",
+  "@mobileNumber": {
+    "description": "Label for the mobile number input field.",
+    "type": "text",
+    "tags": [
+      "itr_form_manual_personal_loan",
+      "basic_details_personal_loan"
+    ]
+  },
+  "mobileNumber": "మొబైల్ నంబర్*",
+  "@mobileNumberHint": {
+    "description": "Hint text for the mobile number input field.",
+    "type": "text",
+    "tags": [
+      "itr_form_manual_personal_loan",
+      "basic_details_personal_loan"
+    ]
+  },
+  "mobileNumberHint": "మీ మొబైల్ నంబర్‌ను నమోదు చేయండి",
+  "@email": {
+    "description": "Label for the personal email input field.",
+    "type": "text",
+    "tags": [
+      "itr_form_manual_personal_loan"
+    ]
+  },
+  "email": "ఈమెయిల్ (వ్యక్తిగత)*",
+  "@emailHint": {
+    "description": "Hint text for the personal email input field.",
+    "type": "text",
+    "tags": [
+      "itr_form_manual_personal_loan"
+    ]
+  },
+  "emailHint": "మీ ఈమెయిల్‌ని నమోదు చేయండి",
+  "@addressLine1": {
+    "description": "Label for the address line 1 input field.",
+    "type": "text",
+    "tags": [
+      "itr_form_manual_personal_loan"
+    ]
+  },
+  "addressLine1": "చిరునామా లైన్ 1*",
+  "@addressLine1Hint": {
+    "description": "Hint text for the address line 1 input field.",
+    "type": "text",
+    "tags": [
+      "itr_form_manual_personal_loan"
+    ]
+  },
+  "addressLine1Hint": "మీ చిరునామాను నమోదు చేయండి",
+  "@addressLine2": {
+    "description": "Label for the address line 2 input field.",
+    "type": "text",
+    "tags": [
+      "itr_form_manual_personal_loan"
+    ]
+  },
+  "addressLine2": "చిరునామా లైన్ 2",
+  "@addressLine2Hint": {
+    "description": "Hint text for the address line 2 input field.",
+    "type": "text",
+    "tags": [
+      "itr_form_manual_personal_loan"
+    ]
+  },
+  "addressLine2Hint": "మీ చిరునామాను నమోదు చేయండి",
+  "@landmark": {
+    "description": "Label for the landmark input field.",
+    "type": "text",
+    "tags": [
+      "itr_form_manual_personal_loan", "stakeholder_business_loan"
+    ]
+  },
+  "landmark": "ల్యాండ్మార్క్",
+  "@landmarkHint": {
+    "description": "Hint text for the landmark input field.",
+    "type": "text",
+    "tags": [
+      "itr_form_manual_personal_loan", "stakeholder_business_loan"
+    ]
+  },
+  "landmarkHint": "మీ ల్యాండ్మార్క్‌ని నమోదు చేయండి",
+  "@country": {
+    "description": "Label for the country dropdown.",
+    "type": "text",
+    "tags": [
+      "itr_form_manual_personal_loan", "stakeholder_business_loan"
+    ]
+  },
+  "country": "దేశం*",
+  "@state": {
+    "description": "Label for the state dropdown.",
+    "type": "text",
+    "tags": [
+      "itr_form_manual_personal_loan", "stakeholder_business_loan"
+    ]
+  },
+  "state": "రాజ్యం*",
+  "@city": {
+    "description": "Label for the city dropdown.",
+    "type": "text",
+    "tags": [
+      "itr_form_manual_personal_loan", "stakeholder_business_loan"
+    ]
+  },
+  "city": "నగరం*",
+  "@pinCode": {
+    "description": "Label for the pin code input field.",
+    "type": "text",
+    "tags": [
+      "itr_form_manual_personal_loan", "stakeholder_business_loan"
+    ]
+  },
+  "pinCode": "పిన్ కోడ్*",
+  "@pinCodeHint": {
+    "description": "Hint text for the pin code input field.",
+    "type": "text",
+    "tags": [
+      "itr_form_manual_personal_loan", "stakeholder_business_loan"
+    ]
+  },
+  "pinCodeHint": "మీ పిన్ కోడ్‌ను నమోదు చేయండి",
+  "@village": {
+    "description": "Label for the village input field.",
+    "type": "text",
+    "tags": [
+      "itr_form_manual_personal_loan", "stakeholder_business_loan"
+    ]
+  },
+  "village": "గ్రామం",
+  "@villageHint": {
+    "description": "Hint text for the village input field.",
+    "type": "text",
+    "tags": [
+      "itr_form_manual_personal_loan", "stakeholder_business_loan"
+    ]
+  },
+  "villageHint": "మీ గ్రామాన్ని నమోదు చేయండి",
+  "@district": {
+    "description": "Label for the district input field.",
+    "type": "text",
+    "tags": [
+      "itr_form_manual_personal_loan", "stakeholder_business_loan"
+    ]
+  },
+  "district": "జిల్లా*",
+  "@districtHint": {
+    "description": "Hint text for the district input field.",
+    "type": "text",
+    "tags": [
+      "itr_form_manual_personal_loan", "stakeholder_business_loan"
+    ]
+  },
+  "districtHint": "మీ జిల్లాను నమోదు చేయండి",
+  "@subDistrict": {
+    "description": "Label for the sub-district input field.",
+    "type": "text",
+    "tags": [
+      "itr_form_manual_personal_loan", "stakeholder_business_loan"
+    ]
+  },
+  "subDistrict": "ఉప జిల్లా*",
+  "@subDistrictHint": {
+    "description": "Hint text for the sub-district input field.",
+    "type": "text",
+    "tags": [
+      "itr_form_manual_personal_loan", "stakeholder_business_loan"
+    ]
+  },
+  "subDistrictHint": "మీ ఉప జిల్లా నమోదు చేయండి",
+  "@annualIncome": {
+    "description": "Label for annual income input field.",
+    "type": "text",
+    "tags": [
+      "itr_form_manual_personal_loan", "stakeholder_business_loan"
+    ]
+  },
+  "annualIncome": "వార్షిక ఆదాయం*",
+  "@annualIncomeHint": {
+    "description": "Hint text for the annual income input field.",
+    "type": "text",
+    "tags": [
+      "itr_form_manual_personal_loan"
+    ]
+  },
+  "annualIncomeHint": "మీ వార్షిక ఆదాయాన్ని నమోదు చేయండి",
+  "@submitButton": {
+    "description": "Label for the submit button.",
+    "type": "text",
+    "tags": [
+      "itr_form_manual_personal_loan"
+    ]
+  },
+  "submitButton": "సమర్పించు",
+  "@proceedButton": {
+    "description": "Label for the proceed button.",
+    "type": "text",
+    "tags": [
+      "itr_form_manual_personal_loan",
+      "bank_details_personal_loan"
+    ]
+  },
+  "proceedButton": "ముందుకు వెళ్ళండి",
+  "@bankDetails": {
+    "description": "Title for the bank details section.",
+    "type": "text",
+    "tags": [
+      "bank_details_personal_loan"
+    ]
+  },
+  "bankDetails": "బ్యాంక్ వివరాలు",
+  "@addUpTo3Accounts": {
+    "description": "Message indicating how many bank accounts can be added.",
+    "type": "text",
+    "tags": [
+      "bank_details_personal_loan"
+    ]
+  },
+  "addUpTo3Accounts": "మీరు 3 బ్యాంక్ ఖాతాలను చేర్చవచ్చు",
+  "@uploadBankStatement": {
+    "description": "Label for uploading bank statement.",
+    "type": "text",
+    "tags": [
+      "bank_details_personal_loan"
+    ]
+  },
+  "uploadBankStatement": "బ్యాంక్ స్టేట్‌మెంట్‌ను అప్లోడ్ చేయండి (PDF)",
+  "@addAccount": {
+    "description": "Label for adding a new bank account button.",
+    "type": "text",
+    "tags": [
+      "bank_details_personal_loan"
+    ]
+  },
+  "addAccount": "ఖాతా చేర్చండి",
+  "@bankName": {
+    "description": "Label for bank name field.",
+    "type": "text",
+    "tags": [
+      "bank_details_personal_loan"
+    ]
+  },
+  "bankName": "బ్యాంక్ పేరు*",
+  "@enterBankName": {
+    "description": "Placeholder text for bank name input field.",
+    "type": "text",
+    "tags": [
+      "bank_details_personal_loan"
+    ]
+  },
+  "enterBankName": "బ్యాంక్ పేరు నమోదు చేయండి",
+  "@accountSinceMonth": {
+    "description": "Label for account since month field.",
+    "type": "text",
+    "tags": [
+      "bank_details_personal_loan"
+    ]
+  },
+  "accountSinceMonth": "తేదీ నుండి ఖాతా (నెల)*",
+  "@month": {
+    "description": "Placeholder text for selecting the month.",
+    "type": "text",
+    "tags": [
+      "bank_details_personal_loan", "stakeholder_business_loan"
+    ]
+  },
+  "month": "నెల",
+  "@accountSinceYear": {
+    "description": "Label for account since year field.",
+    "type": "text",
+    "tags": [
+      "bank_details_personal_loan", "stakeholder_business_loan"
+    ]
+  },
+  "accountSinceYear": "తేదీ నుండి ఖాతా (సంవత్సరం)*",
+  "@yearButton": {
+    "description": "Placeholder text for selecting the year.",
+    "type": "text",
+    "tags": [
+      "bank_details_personal_loan"
+    ]
+  },
+  "yearButton": "సంవత్సరం",
+  "@isSalaryAccount": {
+    "description": "Question asking if the account is a salary account.",
+    "type": "text",
+    "tags": [
+      "bank_details_personal_loan", "stakeholder_business_loan"
+    ]
+  },
+  "isSalaryAccount": "ఇది జీత ఖాతానా?",
+  "@yesButton": {
+    "description": "Option for 'Yes' in response to a question.",
+    "type": "text",
+    "tags": [
+      "bank_details_personal_loan"
+    ]
+  },
+  "yesButton": "అవును",
+  "@noButton": {
+    "description": "Option for 'No' in response to a question.",
+    "type": "text",
+    "tags": [
+      "bank_details_personal_loan"
+    ]
+  },
+  "noButton": "కాదు",
+  "drag_file_here": "ఫైల్‌ను ఇక్కడకు లాగండి",
+  "@drag_file_here": {
+    "description": "Text for dragging and dropping a file.",
+    "type": "text",
+    "tags": [
+      "bank_details_personal_loan", "bank_details_business_loan"
+    ]
+  },
+  "@gender": {
+    "description": "Label for gender dropdown",
+    "type": "text",
+    "tags": [
+      "basic_details_personal_loan"
+    ]
+  },
+  "gender": "లింగం*",
+  "@selectGender": {
+    "description": "Placeholder for selecting gender",
+    "type": "text",
+    "tags": [
+      "basic_details_personal_loan"
+    ]
+  },
+  "selectGender": "లింగాన్ని ఎంచుకోండి",
+  "@category": {
+    "description": "Label for category dropdown",
+    "type": "text",
+    "tags": [
+      "basic_details_personal_loan"
+    ]
+  },
+  "category": "వర్గం*",
+  "@selectCategory": {
+    "description": "Placeholder for selecting category",
+    "type": "text",
+    "tags": [
+      "basic_details_personal_loan"
+    ]
+  },
+  "selectCategory": "వర్గాన్ని ఎంచుకోండి",
+  "@emailPersonal": {
+    "description": "Label for personal email input field",
+    "type": "text",
+    "tags": [
+      "basic_details_personal_loan"
+    ]
+  },
+  "emailPersonal": "ఇమెయిల్ (వ్యక్తిగత)*",
+  "@enterEmailPersonal": {
+    "description": "Placeholder for entering personal email",
+    "type": "text",
+    "tags": [
+      "basic_details_personal_loan"
+    ]
+  },
+  "enterEmailPersonal": "వ్యక్తిగత ఇమెయిల్ నమోదు చేయండి",
+  "@fatherName": {
+    "description": "Label for father's name input field",
+    "type": "text",
+    "tags": [
+      "basic_details_personal_loan"
+    ]
+  },
+  "fatherName": "తండ్రి పేరు",
+  "@enterFatherName": {
+    "description": "Placeholder for entering father's name",
+    "type": "text",
+    "tags": [
+      "basic_details_personal_loan"
+    ]
+  },
+  "enterFatherName": "తండ్రి పేరు నమోదు చేయండి",
+  "@educationQualification": {
+    "description": "Label for education qualification dropdown",
+    "type": "text",
+    "tags": [
+      "basic_details_personal_loan"
+    ]
+  },
+  "educationQualification": "అధ్యయన అర్హత*",
+  "@selectEducationQualification": {
+    "description": "Placeholder for selecting education qualification",
+    "type": "text",
+    "tags": [
+      "basic_details_personal_loan"
+    ]
+  },
+  "selectEducationQualification": "అధ్యయన అర్హతను ఎంచుకోండి",
+  "@netWorth": {
+    "description": "Label for net worth input field",
+    "type": "text",
+    "tags": [
+      "basic_details_personal_loan"
+    ]
+  },
+  "netWorth": "నికర సంపత్తి*",
+  "@enterNetWorth": {
+    "description": "Placeholder for entering net worth",
+    "type": "text",
+    "tags": [
+      "basic_details_personal_loan"
+    ]
+  },
+  "enterNetWorth": "నికర సంపత్తిని నమోదు చేయండి",
+  "@nationality": {
+    "description": "Label for nationality dropdown",
+    "type": "text",
+    "tags": [
+      "basic_details_personal_loan"
+    ]
+  },
+  "nationality": "రాజ్యాంగం*",
+  "@selectNationality": {
+    "description": "Placeholder for selecting nationality",
+    "type": "text",
+    "tags": [
+      "basic_details_personal_loan"
+    ]
+  },
+  "selectNationality": "రాజ్యాంగాన్ని ఎంచుకోండి",
+  "@dependents": {
+    "description": "Label for dependents dropdown",
+    "type": "text",
+    "tags": [
+      "basic_details_personal_loan"
+    ]
+  },
+  "dependents": "నిరాలాలు*",
+  "@selectDependents": {
+    "description": "Placeholder for selecting dependents",
+    "type": "text",
+    "tags": [
+      "basic_details_personal_loan"
+    ]
+  },
+  "selectDependents": "నిరాలాలను ఎంచుకోండి",
+  "@maritalStatus": {
+    "description": "Label for marital status dropdown",
+    "type": "text",
+    "tags": [
+      "basic_details_personal_loan"
+    ]
+  },
+  "maritalStatus": "వివాహ స్థితి*",
+  "@selectMaritalStatus": {
+    "description": "Placeholder for selecting marital status",
+    "type": "text",
+    "tags": [
+      "basic_details_personal_loan"
+    ]
+  },
+  "selectMaritalStatus": "వివాహ స్థితిని ఎంచుకోండి",
+  "@employmentDetails": {
+    "description": "Label for the employment details page",
+    "type": "text",
+    "tags": [
+      "employment_details_personal_loan"
+    ]
+  },
+  "employmentDetails": "ఉద్యోగ వివరాలు",
+  "@employmentStatus": {
+    "description": "Label for employment status dropdown",
+    "type": "text",
+    "tags": [
+      "employment_details_personal_loan"
+    ]
+  },
+  "employmentStatus": "ఉద్యోగ స్థితి*",
+  "@selectEmploymentStatus": {
+    "description": "Placeholder for selecting employment status",
+    "type": "text",
+    "tags": [
+      "employment_details_personal_loan"
+    ]
+  },
+  "selectEmploymentStatus": "ఉద్యోగ స్థితిని ఎంచుకోండి",
+  "@designation": {
+    "description": "Label for designation dropdown",
+    "type": "text",
+    "tags": [
+      "employment_details_personal_loan"
+    ]
+  },
+  "designation": "పోస్టు*",
+  "@selectDesignation": {
+    "description": "Placeholder for selecting designation",
+    "type": "text",
+    "tags": [
+      "employment_details_personal_loan"
+    ]
+  },
+  "selectDesignation": "పోస్టు ఎంచుకోండి",
+  "@employmentType": {
+    "description": "Label for employment type dropdown",
+    "type": "text",
+    "tags": [
+      "employment_details_personal_loan"
+    ]
+  },
+  "employmentType": "ఉద్యోగ రకం*",
+  "@selectEmploymentType": {
+    "description": "Placeholder for selecting employment type",
+    "type": "text",
+    "tags": [
+      "employment_details_personal_loan"
+    ]
+  },
+  "selectEmploymentType": "ఉద్యోగ రకం ఎంచుకోండి",
+  "@modeOfSalary": {
+    "description": "Label for mode of salary dropdown",
+    "type": "text",
+    "tags": [
+      "employment_details_personal_loan"
+    ]
+  },
+  "modeOfSalary": "వేతనం మోడ్*",
+  "@selectModeOfSalary": {
+    "description": "Placeholder for selecting mode of salary",
+    "type": "text",
+    "tags": [
+      "employment_details_personal_loan"
+    ]
+  },
+  "selectModeOfSalary": "వేతనం మోడ్ ఎంచుకోండి",
+  "@grossMonthlyIncome": {
+    "description": "Label for gross monthly income input field",
+    "type": "text",
+    "tags": [
+      "employment_details_personal_loan"
+    ]
+  },
+  "grossMonthlyIncome": "మొత్తం నెలవారీ ఆదాయం*",
+  "@enterGrossMonthlyIncome": {
+    "description": "Placeholder for entering gross monthly income",
+    "type": "text",
+    "tags": [
+      "employment_details_personal_loan"
+    ]
+  },
+  "enterGrossMonthlyIncome": "మీ మొత్తం నెలవారీ ఆదాయాన్ని నమోదు చేయండి",
+  "@netMonthlyIncome": {
+    "description": "Label for net monthly income input field",
+    "type": "text",
+    "tags": [
+      "employment_details_personal_loan"
+    ]
+  },
+  "netMonthlyIncome": "నికర నెలవారీ ఆదాయం*",
+  "@enterNetMonthlyIncome": {
+    "description": "Placeholder for entering net monthly income",
+    "type": "text",
+    "tags": [
+      "employment_details_personal_loan"
+    ]
+  },
+  "enterNetMonthlyIncome": "మీ నికర నెలవారీ ఆదాయాన్ని నమోదు చేయండి",
+
+
+
+
+
+
+
+
+
+
+  "@creditInformationTitle": {
+    "description": "Title of the Credit Information page",
+    "type": "text",
+    "tags": ["credit_info_personal_loan"]
+  },
+  "creditInformationTitle": "క్రెడిట్ సమాచారం",
+
+  "@declareCreditInformation": {
+    "description": "Heading for declaring credit information",
+    "type": "text",
+    "tags": ["credit_info_personal_loan"]
+  },
+  "declareCreditInformation": "క్రెడిట్ సమాచారాన్ని ప్రకటించండి",
+
+  "@loanTypeLabel": {
+    "description": "Label for loan type dropdown",
+    "type": "text",
+    "tags": ["credit_info_personal_loan"]
+  },
+  "loanTypeLabel": "ఋణ రకం*",
+
+  "@selectLoanType": {
+    "description": "Placeholder for selecting loan type",
+    "type": "text",
+    "tags": ["credit_info_personal_loan"]
+  },
+  "selectLoanType": "ఋణ రకాన్ని ఎంచుకోండి",
+
+  "@lenderLabel": {
+    "description": "Label for lender input field",
+    "type": "text",
+    "tags": ["credit_info_personal_loan"]
+  },
+  "lenderLabel": "వడ్డిదారు*",
+
+  "@enterLenderPlaceholder": {
+    "description": "Placeholder for entering lender name",
+    "type": "text",
+    "tags": ["credit_info_personal_loan"]
+  },
+  "enterLenderPlaceholder": "వడ్డిదారు పేరు నమోదు చేయండి",
+
+  "@sanctionedAmountLabel": {
+    "description": "Label for sanctioned amount input field",
+    "type": "text",
+    "tags": ["credit_info_personal_loan"]
+  },
+  "sanctionedAmountLabel": "మంజూరైన మొత్తం (₹)*",
+
+  "@enterSanctionedAmountPlaceholder": {
+    "description": "Placeholder for entering sanctioned amount",
+    "type": "text",
+    "tags": ["credit_info_personal_loan"]
+  },
+  "enterSanctionedAmountPlaceholder": "మంజూరైన మొత్తాన్ని నమోదు చేయండి",
+
+  "@outstandingAmountLabel": {
+    "description": "Label for outstanding amount input field",
+    "type": "text",
+    "tags": ["credit_info_personal_loan"]
+  },
+  "outstandingAmountLabel": "బాకీ మొత్తం (₹)*",
+
+  "@enterOutstandingAmountPlaceholder": {
+    "description": "Placeholder for entering outstanding amount",
+    "type": "text",
+    "tags": ["credit_info_personal_loan"]
+  },
+  "enterOutstandingAmountPlaceholder": "బాకీ మొత్తాన్ని నమోదు చేయండి",
+
+  "@emiAmountLabel": {
+    "description": "Label for EMI amount input field",
+    "type": "text",
+    "tags": ["credit_info_personal_loan"]
+  },
+  "emiAmountLabel": "EMI మొత్తం (₹)*",
+
+  "@enterEmiAmountPlaceholder": {
+    "description": "Placeholder for entering EMI amount",
+    "type": "text",
+    "tags": ["credit_info_personal_loan"]
+  },
+  "enterEmiAmountPlaceholder": "EMI మొత్తాన్ని నమోదు చేయండి",
+
+  "@addExistingLoanButton": {
+    "description": "Label for the button to add an existing loan",
+    "type": "text",
+    "tags": ["credit_info_personal_loan"]
+  },
+  "addExistingLoanButton": "ప్రస్తుత రుణాన్ని జోడించండి",
+
+
+
+
+
+
+
+
+
+
+
+  "@contactDetailsTitle": {
+    "description": "Title of the Contact Details page",
+    "type": "text",
+    "tags": ["contact_detail_personal_loan"]
+  },
+  "contactDetailsTitle": "సంప్రదింపు వివరాలు",
+
+  "@addressLine1Label": {
+    "description": "Label for Address Line 1 input field",
+    "type": "text",
+    "tags": ["contact_detail_personal_loan"]
+  },
+  "addressLine1Label": "చిరునామా లైన్ 1*",
+
+  "@addressLine1Placeholder": {
+    "description": "Placeholder for Address Line 1 input field",
+    "type": "text",
+    "tags": ["contact_detail_personal_loan"]
+  },
+  "addressLine1Placeholder": "మీ భవనం సంఖ్యను నమోదు చేయండి",
+
+  "@addressLine2Label": {
+    "description": "Label for Address Line 2 input field",
+    "type": "text",
+    "tags": ["contact_detail_personal_loan"]
+  },
+  "addressLine2Label": "చిరునామా లైన్ 2",
+
+  "@addressLine2Placeholder": {
+    "description": "Placeholder for Address Line 2 input field",
+    "type": "text",
+    "tags": ["contact_detail_personal_loan"]
+  },
+  "addressLine2Placeholder": "మీ వీధి పేరును నమోదు చేయండి",
+
+  "@landmarkLabel": {
+    "description": "Label for Landmark input field",
+    "type": "text",
+    "tags": ["contact_detail_personal_loan"]
+  },
+  "landmarkLabel": "ప్రాధమిక స్థానం",
+
+  "@landmarkPlaceholder": {
+    "description": "Placeholder for Landmark input field",
+    "type": "text",
+    "tags": ["contact_detail_personal_loan"]
+  },
+  "landmarkPlaceholder": "మీ ప్రాధమిక స్థానం నమోదు చేయండి",
+
+  "@countryLabel": {
+    "description": "Label for Country dropdown",
+    "type": "text",
+    "tags": ["contact_detail_personal_loan"]
+  },
+  "countryLabel": "దేశం*",
+
+  "@countryPlaceholder": {
+    "description": "Placeholder for Country dropdown",
+    "type": "text",
+    "tags": ["contact_detail_personal_loan"]
+  },
+  "countryPlaceholder": "మీ దేశాన్ని ఎంచుకోండి",
+
+  "@stateLabel": {
+    "description": "Label for State dropdown",
+    "type": "text",
+    "tags": ["contact_detail_personal_loan", "declare_business_gst_details_business_loan"]
+  },
+  "stateLabel": "రాష్ట్రం*",
+
+  "@statePlaceholder": {
+    "description": "Placeholder for State dropdown",
+    "type": "text",
+    "tags": ["contact_detail_personal_loan", "declare_business_gst_details_business_loan"]
+  },
+  "statePlaceholder": "మీ రాష్ట్రాన్ని ఎంచుకోండి",
+
+  "@cityLabel": {
+    "description": "Label for City dropdown",
+    "type": "text",
+    "tags": ["contact_detail_personal_loan", "declare_business_gst_details_business_loan"]
+  },
+  "cityLabel": "నగరం*",
+
+  "@cityPlaceholder": {
+    "description": "Placeholder for City dropdown",
+    "type": "text",
+    "tags": ["contact_detail_personal_loan", "declare_business_gst_details_business_loan"]
+  },
+  "cityPlaceholder": "మీ నగరాన్ని ఎంచుకోండి",
+
+  "@pinCodeLabel": {
+    "description": "Label for Pin Code input field",
+    "type": "text",
+    "tags": ["contact_detail_personal_loan"]
+  },
+  "pinCodeLabel": "పిన్ కోడ్*",
+
+  "@pinCodePlaceholder": {
+    "description": "Placeholder for Pin Code input field",
+    "type": "text",
+    "tags": ["contact_detail_personal_loan"]
+  },
+  "pinCodePlaceholder": "మీ పిన్ కోడ్ నమోదు చేయండి",
+
+  "@villageLabel": {
+    "description": "Label for Village/Town input field",
+    "type": "text",
+    "tags": ["contact_detail_personal_loan"]
+  },
+  "villageLabel": "గ్రామం/నగరం",
+
+  "@villagePlaceholder": {
+    "description": "Placeholder for Village/Town input field",
+    "type": "text",
+    "tags": ["contact_detail_personal_loan"]
+  },
+  "villagePlaceholder": "మీ గ్రామం/నగరాన్ని నమోదు చేయండి",
+
+  "@districtLabel": {
+    "description": "Label for District input field",
+    "type": "text",
+    "tags": ["contact_detail_personal_loan"]
+  },
+  "districtLabel": "జిల్లా*",
+
+  "@districtPlaceholder": {
+    "description": "Placeholder for District input field",
+    "type": "text",
+    "tags": ["contact_detail_personal_loan"]
+  },
+  "districtPlaceholder": "మీ జిల్లాను నమోదు చేయండి",
+
+  "@subDistrictLabel": {
+    "description": "Label for Sub-District input field",
+    "type": "text",
+    "tags": ["contact_detail_personal_loan"]
+  },
+  "subDistrictLabel": "ఉప జిల్లా*",
+
+  "@subDistrictPlaceholder": {
+    "description": "Placeholder for Sub-District input field",
+    "type": "text",
+    "tags": ["contact_detail_personal_loan"]
+  },
+  "subDistrictPlaceholder": "మీ ఉప జిల్లా నమోదు చేయండి",
+
+  "@residenceSinceMonthLabel": {
+    "description": "Label for Residence Since (Month) picker",
+    "type": "text",
+    "tags": ["contact_detail_personal_loan"]
+  },
+  "residenceSinceMonthLabel": "ఎంత కాలంగా నివసిస్తున్నారు (మాసం)",
+
+  "@residenceSinceYearLabel": {
+    "description": "Label for Residence Since (Year) picker",
+    "type": "text",
+    "tags": ["contact_detail_personal_loan"]
+  },
+  "residenceSinceYearLabel": "ఎంత కాలంగా నివసిస్తున్నారు (సంవత్సరం)",
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  "@loanFormTitle": {
+    "description": "Title of the Loan Form",
+    "type": "text",
+    "tags": ["loan_form_personal_loan"]
+  },
+  "loanFormTitle": "కాలకు ఫారం",
+
+  "@loanDetailsTitle": {
+    "description": "Title for Loan Details section",
+    "type": "text",
+    "tags": ["loan_form_personal_loan"]
+  },
+  "loanDetailsTitle": "కాలకు వివరాలు",
+
+  "@loanPurposeLabel": {
+    "description": "Label for Loan Purpose dropdown",
+    "type": "text",
+    "tags": ["loan_form_personal_loan"]
+  },
+  "loanPurposeLabel": "కాలకు ఉద్దేశ్యం*",
+
+  "@loanPurposePlaceholder": {
+    "description": "Placeholder for Loan Purpose dropdown",
+    "type": "text",
+    "tags": ["loan_form_personal_loan"]
+  },
+  "loanPurposePlaceholder": "కాలకు ఉద్దేశ్యాన్ని ఎంచుకోండి",
+
+  "@loanAmountLabel": {
+    "description": "Label for Loan Amount input field",
+    "type": "text",
+    "tags": ["loan_form_personal_loan"]
+  },
+  "loanAmountLabel": "తప్పనిసరి కాలం మొత్తం*",
+
+  "@loanAmountHint": {
+    "description": "Hint text for Loan Amount input field",
+    "type": "text",
+    "tags": ["loan_form_personal_loan"]
+  },
+  "loanAmountHint": "కాలానికి మొత్తం నమోదు చేయండి",
+
+  "@tenureLabel": {
+    "description": "Label for Tenure input field",
+    "type": "text",
+    "tags": ["loan_form_personal_loan"]
+  },
+  "tenureLabel": "కాలం (సంవత్సరాలు)*",
+
+  "@tenureHint": {
+    "description": "Hint text for Tenure input field",
+    "type": "text",
+    "tags": ["loan_form_personal_loan"]
+  },
+  "tenureHint": "కాలాన్ని నమోదు చేయండి",
+
+  "@retirementAgeLabel": {
+    "description": "Label for Retirement Age input field",
+    "type": "text",
+    "tags": ["loan_form_personal_loan"]
+  },
+  "retirementAgeLabel": "అనునది వయసు (సంవత్సరాలు)*",
+
+  "@retirementAgeHint": {
+    "description": "Hint text for Retirement Age input field",
+    "type": "text",
+    "tags": ["loan_form_personal_loan"]
+  },
+  "retirementAgeHint": "అనునది వయసును నమోదు చేయండి",
+
+  "@yourEmployerWillTitle": {
+    "description": "Title for Your Employer Will section",
+    "type": "text",
+    "tags": ["loan_form_personal_loan"]
+  },
+  "yourEmployerWillTitle": "మీ ఉద్దయోగి",
+
+  "@emiFromSalaryAccountText": {
+    "description": "Question about EMI payment from salary account",
+    "type": "text",
+    "tags": ["loan_form_personal_loan"]
+  },
+  "emiFromSalaryAccountText": "మీరు మీ జీత ఖాతాలో నేరుగా EMI చెల్లిస్తారా?",
+
+  "@outstandingLoanTerminalPaymentsText": {
+    "description": "Question about paying outstanding loan amount from terminal payments",
+    "type": "text",
+    "tags": ["loan_form_personal_loan"]
+  },
+  "outstandingLoanTerminalPaymentsText": "మీరు మీ ఉద్యోగి యొక్క అన్‌స్టాండ్ బీమా అనుమతిని తీసుకోవడానికి అంగీకరించారా?",
+
+  "@salaryAccountConfirmationText": {
+    "description": "Question about paying salary only in salary account and getting NOC",
+    "type": "text",
+    "tags": ["loan_form_personal_loan"]
+  },
+  "salaryAccountConfirmationText": "మీరు మీ జీతాన్ని కేవలం జీత ఖాతాలోనే పొందుతున్నారా మరియు ఖాతాలను మార్చడానికి ముందు బ్యాంక్ నుండి నోటిఫికేషన్ పొందాలా?",
+
+  "@whetherYouWillTitle": {
+    "description": "Title for Whether you (Employer/Borrower) will section",
+    "type": "text",
+    "tags": ["loan_form_personal_loan"]
+  },
+  "whetherYouWillTitle": "మీరు (ఉద్యోగి/అర్జిదారు) చేయనో",
+
+  "@issueLetterOutstandingLoanText": {
+    "description": "Question about issuing letter to employer to pay outstanding loan",
+    "type": "text",
+    "tags": ["loan_form_personal_loan"]
+  },
+  "issueLetterOutstandingLoanText": "మీరు మీ ఉద్దయోగికి ఒక లేఖ ఇవ్వగలరా, వారు అన్‌స్టాండ్ బీమా అనుమతిని చెల్లించడానికి?",
+
+  "@issueLetterNotChangeAccountText": {
+    "description": "Question about issuing letter to employer to not change salary account",
+    "type": "text",
+    "tags": ["loan_form_personal_loan"]
+  },
+  "issueLetterNotChangeAccountText": "మీరు మీ జీత ఖాతాను మార్చనని మీ ఉద్దయోగికి ఒక లేఖ ఇవ్వగలరా, మార్పులు వస్తే బ్యాంక్ నుండి నోటిఫికేషన్ పొందగలరా?",
+
+  "@repaymentMethodLabel": {
+    "description": "Label for Repayment Method dropdown",
+    "type": "text",
+    "tags": ["loan_form_personal_loan"]
+  },
+  "repaymentMethodLabel": "చెల్లింపు పద్ధతి*",
+
+  "@repaymentMethodPlaceholder": {
+    "description": "Placeholder for Repayment Method dropdown",
+    "type": "text",
+    "tags": ["loan_form_personal_loan"]
+  },
+  "repaymentMethodPlaceholder": "చెల్లింపు పద్ధతిని ఎంచుకోండి",
+
+
+
+
+
+
+
+
+
+
+
+
+  "@chooseBusinessProfile": {
+    "description": "Text for choosing a business profile",
+    "type": "text",
+    "tags": ["business_loan_journey"]
+  },
+  "chooseBusinessProfile": "మీ వ్యాపార ప్రొఫైల్‌ను ఎంచుకోండి",
+
+  "@selectedProfileBusiness": {
+    "description": "Text showing the selected business profile",
+    "type": "text",
+    "tags": ["business_loan_journey"]
+  },
+  "selectedProfileBusiness": "ఎంచుకోబడిన ప్రొఫైల్: ABC ప్రైవేట్ లిమిటెడ్",
+
+  "@selectProfileDescription": {
+    "description": "Instructions for selecting or creating a business profile",
+    "type": "text",
+    "tags": ["business_loan_journey"]
+  },
+  "selectProfileDescription": "కోస్తుల నుండి మీ వ్యాపార ప్రొఫైల్‌ను ఎంచుకోండి. మీకు ప్రొఫైల్ లేకపోతే, కొత్త ప్రొఫైల్‌ను కూడా సృష్టించవచ్చు.",
+
+  "@itrFormDescription": {
+    "description": "Description of the importance of the Income Tax Return",
+    "type": "text",
+    "tags": ["business_loan_journey"]
+  },
+  "itrFormDescription": "మీ వ్యాపార ఆదాయ పన్ను రిటర్న్ (ITR) అందించడం చాలా ముఖ్యమైనది, ఎందుకంటే ఇది మీ కంపెనీని ఆర్థిక ఆరోగ్యాన్ని మరియు స్థిరత్వాన్ని చూపిస్తుంది.",
+
+  "@itrButtonTitleBusiness": {
+    "description": "Button title for submitting the Income Tax Return",
+    "type": "text",
+    "tags": ["business_loan_journey"]
+  },
+  "itrButtonTitleBusiness": "ఆయ్‌టెక్ రిటర్న్",
+
+  "@itrButtonDescriptionBusiness": {
+    "description": "Instructions for providing the Income Tax Return",
+    "type": "text",
+    "tags": ["business_loan_journey"]
+  },
+  "itrButtonDescriptionBusiness": "మీ వ్యాపారం యొక్క గత 3 సంవత్సరాల ఆదాయపు పన్ను రిటర్న్ అందించండి.",
+
+
+  "@gstFormDescription": {
+    "description": "Description of the importance of GST details",
+    "type": "text",
+    "tags": ["business_loan_journey"]
+  },
+  "gstFormDescription": "మీ GST రిటర్న్ అందించడం మీ వ్యాపార పన్ను నియమాలకు అనుగుణంగా ఉండటాన్ని చూపిస్తుంది, ఇది రుణ ఆమోదంలో ముఖ్యమైన అంశం.",
+
+  "@gstButtonTitle": {
+    "description": "Button title for submitting GST details",
+    "type": "text",
+    "tags": ["business_loan_journey"]
+  },
+  "gstButtonTitle": "GST వివరాలు",
+
+  "@gstButtonDescription": {
+    "description": "Instructions for providing GST details",
+    "type": "text",
+    "tags": ["business_loan_journey"]
+  },
+  "gstButtonDescription": "మీ GST నమోదు సంఖ్య మరియు రిటర్న్ వివరాలను అందించండి.",
+
+  "@bankDetailsDescription": {
+    "description": "Description of the importance of submitting bank details",
+    "type": "text",
+    "tags": ["business_loan_journey"]
+  },
+  "bankDetailsDescription": "మీ వ్యాపార బ్యాంక్ వివరాలను అందించడం రుణ దాతలకు మీ ఆర్థిక ఆరోగ్యాన్ని మరియు నగదు ప్రవాహాన్ని అర్థం చేసుకోవడంలో సహాయపడుతుంది.",
+
+  "@bankButtonTitle": {
+    "description": "Button title for submitting bank details",
+    "type": "text",
+    "tags": ["business_loan_journey"]
+  },
+  "bankButtonTitle": "బ్యాంక్ వివరాలు",
+
+  "@bankButtonDescription": {
+    "description": "Instructions for providing bank details",
+    "type": "text",
+    "tags": ["business_loan_journey"]
+  },
+  "bankButtonDescription": "మీ వ్యాపార బ్యాంక్ వివరాలు మరియు బ్యాంక్ జాబితాను అందించండి.",
+
+  "@stakeholdersDescription": {
+    "description": "Description of the importance of providing stakeholder details",
+    "type": "text",
+    "tags": ["business_loan_journey"]
+  },
+  "stakeholdersDescription": "ప్రధాన పంక్తుల గురించి వివరాలను అందించడం రుణ దాతలకు మీ వ్యాపారం యొక్క నిర్మాణాన్ని మరియు స్వామ్యాన్ని అర్థం చేసుకోవడంలో సహాయపడుతుంది.",
+
+  "@stakeholdersButtonTitle": {
+    "description": "Button title for submitting stakeholder details",
+    "type": "text",
+    "tags": ["business_loan_journey"]
+  },
+  "stakeholdersButtonTitle": "పంక్తులు",
+
+  "@stakeholdersButtonDescription": {
+    "description": "Instructions for providing stakeholder details",
+    "type": "text",
+    "tags": ["business_loan_journey"]
+  },
+  "stakeholdersButtonDescription": "ప్రధాన పంక్తులు మరియు వారి వ్యాపారంలో భాగం గురించి వివరాలను అందించండి.",
+
+  "@loanFormDescription": {
+    "description": "Description of the final loan form step",
+    "type": "text",
+    "tags": ["business_loan_journey"]
+  },
+  "loanFormDescription": "వ్యవసాయానికి అందించబడే రుణానికి సంబంధించిన దరఖాస్తు యొక్క చివరి దశ. అన్ని వివరాలు సరైనదా అని నిర్ధారించండి.",
+
+  "@loanButtonTitle": {
+    "description": "Button title for submitting the loan form",
+    "type": "text",
+    "tags": ["business_loan_journey"]
+  },
+  "loanButtonTitle": "దరఖాస్తు సమర్పించు",
+
+  "@loanButtonDescription": {
+    "description": "Instructions for filling out the loan application form",
+    "type": "text",
+    "tags": ["business_loan_journey"]
+  },
+  "loanButtonDescription": "మీ దరఖాస్తును పూర్తి చేయడానికి రుణ దరఖాస్తును పూరించండి.",
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  "@gstDetailsTitle": {
+    "description": "Title for the GST details section",
+    "type": "text",
+    "tags": ["gst_details_business_loan"]
+  },
+  "gstDetailsTitle": "జీఎస్‌టీ వివరాలు",
+
+  "@toggleEnterGst": {
+    "description": "Label for the toggle switch to enter GST",
+    "type": "text",
+    "tags": ["gst_details_business_loan"]
+  },
+  "toggleEnterGst": "జీఎస్‌టీ నమోదు చేయండి",
+
+  "@toggleDeclareBusiness": {
+    "description": "Label for the toggle switch to declare business",
+    "type": "text",
+    "tags": ["gst_details_business_loan"]
+  },
+  "toggleDeclareBusiness": "వ్యాపారం ప్రకటించండి",
+
+
+
+
+
+
+
+
+
+
+
+  "@businessButtonLabel": {
+    "description": "Label for business button indicating the business number",
+    "type": "text",
+    "tags": ["gst_details_business_loan"]
+  },
+  "businessButtonLabel": "వ్యాపారం ",
+
+  "@addBusinessButtonLabel": {
+    "description": "Label for the button to add a new business",
+    "type": "text",
+    "tags": ["gst_details_business_loan"]
+  },
+  "addBusinessButtonLabel": "కొత్త వ్యాపారాన్ని జోడించండి",
+
+  "@gstNumberLabel": {
+    "description": "Label for the GST number input field",
+    "type": "text",
+    "tags": ["gst_details_business_loan"]
+  },
+  "gstNumberLabel": "జి.ఎస్.టి సంఖ్య*",
+
+  "@gstNumberHint": {
+    "description": "Hint text for the GST number input field",
+    "type": "text",
+    "tags": ["gst_details_business_loan"]
+  },
+  "gstNumberHint": "జి.ఎస్.టి సంఖ్యను నమోదు చేయండి",
+
+  "@gstUsernameLabel": {
+    "description": "Label for the GST username input field",
+    "type": "text",
+    "tags": ["gst_details_business_loan"]
+  },
+  "gstUsernameLabel": "జి.ఎస్.టి వినియోగదారునామ*",
+
+  "@gstUsernameHint": {
+    "description": "Hint text for the GST username input field",
+    "type": "text",
+    "tags": ["gst_details_business_loan"]
+  },
+  "gstUsernameHint": "జి.ఎస్.టి వినియోగదారునామను నమోదు చేయండి",
+
+  "@cityLabelGST": {
+    "description": "Label for the city input field",
+    "type": "text",
+    "tags": ["gst_details_business_loan"]
+  },
+  "cityLabelGST": "నగరం*",
+
+  "@totalPurchaseLabel": {
+    "description": "Label for the total purchase input field",
+    "type": "text",
+    "tags": ["gst_details_business_loan"]
+  },
+  "totalPurchaseLabel": "మొత్తం కొనుగోలు*",
+
+  "@totalPurchaseHint": {
+    "description": "Hint text for the total purchase input field",
+    "type": "text",
+    "tags": ["gst_details_business_loan"]
+  },
+  "totalPurchaseHint": "మొత్తం కొనుగోలును నమోదు చేయండి",
+
+  "@totalSalesLabel": {
+    "description": "Label for the total sales input field",
+    "type": "text",
+    "tags": ["gst_details_business_loan"]
+  },
+  "totalSalesLabel": "మొత్తం అమ్మకాలు*",
+
+  "@totalSalesHint": {
+    "description": "Hint text for the total sales input field",
+    "type": "text",
+    "tags": ["gst_details_business_loan"]
+  },
+  "totalSalesHint": "మొత్తం అమ్మకాలను నమోదు చేయండి",
+
+  "@updateOnLabel": {
+    "description": "Label for the update date picker button",
+    "type": "text",
+    "tags": ["gst_details_business_loan"]
+  },
+  "updateOnLabel": "అప్‌డేట్ చేయండి*",
+
+  "@selectBusinessToEdit": {
+    "description": "Message to display when no business is selected for editing",
+    "type": "text",
+    "tags": ["gst_details_business_loan"]
+  },
+  "selectBusinessToEdit": "సవరించడానికి వ్యాపారాన్ని ఎంచుకోండి",
+
+  "@deleteButtonLabel": {
+    "description": "Label for the delete button",
+    "type": "text",
+    "tags": ["gst_details_business_loan"]
+  },
+  "deleteButtonLabel": "తీయి",
+
+
+
+
+
+
+
+
+
+
+
+
+  "@declareBusinessLabel": {
+    "description": "Title for declaring business details",
+    "type": "text",
+    "tags": ["declare_business_gst_details_business_loan"]
+  },
+  "declareBusinessLabel": "మీ వ్యాపార వివరాలను ప్రకటించండి",
+
+  "@businessNameLabel": {
+    "description": "Label for the business name input field",
+    "type": "text",
+    "tags": ["declare_business_gst_details_business_loan"]
+  },
+  "businessNameLabel": "వ్యాపారం పేరు*",
+
+  "@businessNameHint": {
+    "description": "Hint text for the business name input field",
+    "type": "text",
+    "tags": ["declare_business_gst_details_business_loan"]
+  },
+  "businessNameHint": "మీ వ్యాపార పేరు నమోదు చేయండి",
+
+  "@dateOfIncorporationLabel": {
+    "description": "Label for the date of incorporation button",
+    "type": "text",
+    "tags": ["declare_business_gst_details_business_loan"]
+  },
+  "dateOfIncorporationLabel": "కట్టుబాట్ల తేదీ",
+
+  "@constitutionLabel": {
+    "description": "Label for the constitution input field",
+    "type": "text",
+    "tags": ["declare_business_gst_details_business_loan"]
+  },
+  "constitutionLabel": "చట్టం*",
+
+  "@constitutionHint": {
+    "description": "Hint text for the constitution input field",
+    "type": "text",
+    "tags": ["declare_business_gst_details_business_loan"]
+  },
+  "constitutionHint": "మీ చట్టాన్ని నమోదు చేయండి",
+
+  "@customersLabel": {
+    "description": "Label for the number of customers input field",
+    "type": "text",
+    "tags": ["declare_business_gst_details_business_loan"]
+  },
+  "customersLabel": "గ్రాహకుల సంఖ్య*",
+
+  "@customersHint": {
+    "description": "Hint text for the number of customers input field",
+    "type": "text",
+    "tags": ["declare_business_gst_details_business_loan"]
+  },
+  "customersHint": "మీ గ్రాహకుల సంఖ్య నమోదు చేయండి",
+
+  "@panLabel": {
+    "description": "Label for the PAN input field",
+    "type": "text",
+    "tags": ["declare_business_gst_details_business_loan"]
+  },
+  "panLabel": "PAN*",
+
+  "@panHint": {
+    "description": "Hint text for the PAN input field",
+    "type": "text",
+    "tags": ["declare_business_gst_details_business_loan"]
+  },
+  "panHint": "మీ PAN నమోదు చేయండి",
+
+  "@highestSaleLabel": {
+    "description": "Label for the highest sale input field",
+    "type": "text",
+    "tags": ["declare_business_gst_details_business_loan"]
+  },
+  "highestSaleLabel": "అత్యున్నత అమ్మకాలు*",
+
+  "@highestSaleHint": {
+    "description": "Hint text for the highest sale input field",
+    "type": "text",
+    "tags": ["declare_business_gst_details_business_loan"]
+  },
+  "highestSaleHint": "మీ అత్యున్నత అమ్మకాలను నమోదు చేయండి",
+
+  "@lastYearsSalesLabel": {
+    "description": "Header for last year's sales section",
+    "type": "text",
+    "tags": ["declare_business_gst_details_business_loan"]
+  },
+  "lastYearsSalesLabel": "గత సంవత్సరం అమ్మకాలు",
+
+  "@januaryLabel": {
+    "description": "Label for January month",
+    "type": "text",
+    "tags": ["declare_business_gst_details_business_loan"]
+  },
+  "januaryLabel": "జనవరి",
+
+  "@februaryLabel": {
+    "description": "Label for February month",
+    "type": "text",
+    "tags": ["declare_business_gst_details_business_loan"]
+  },
+  "februaryLabel": "ఫిబ్రవరి",
+
+  "@marchLabel": {
+    "description": "Label for March month",
+    "type": "text",
+    "tags": ["declare_business_gst_details_business_loan"]
+  },
+  "marchLabel": "మార్చ్",
+
+  "@aprilLabel": {
+    "description": "Label for April month",
+    "type": "text",
+    "tags": ["declare_business_gst_details_business_loan"]
+  },
+  "aprilLabel": "ఏప్రిల్",
+
+  "@mayLabel": {
+    "description": "Label for May month",
+    "type": "text",
+    "tags": ["declare_business_gst_details_business_loan"]
+  },
+  "mayLabel": "మే",
+
+  "@juneLabel": {
+    "description": "Label for June month",
+    "type": "text",
+    "tags": ["declare_business_gst_details_business_loan"]
+  },
+  "juneLabel": "జూన్",
+
+  "@julyLabel": {
+    "description": "Label for July month",
+    "type": "text",
+    "tags": ["declare_business_gst_details_business_loan"]
+  },
+  "julyLabel": "జూలై",
+
+  "@augustLabel": {
+    "description": "Label for August month",
+    "type": "text",
+    "tags": ["declare_business_gst_details_business_loan"]
+  },
+  "augustLabel": "ఆగస్టు",
+
+  "@septemberLabel": {
+    "description": "Label for September month",
+    "type": "text",
+    "tags": ["declare_business_gst_details_business_loan"]
+  },
+  "septemberLabel": "సెప్టెంబర్",
+
+  "@octoberLabel": {
+    "description": "Label for October month",
+    "type": "text",
+    "tags": ["declare_business_gst_details_business_loan"]
+  },
+  "octoberLabel": "అక్టోబర్",
+
+  "@novemberLabel": {
+    "description": "Label for November month",
+    "type": "text",
+    "tags": ["declare_business_gst_details_business_loan"]
+  },
+  "novemberLabel": "నవంబర్",
+
+  "@decemberLabel": {
+    "description": "Label for December month",
+    "type": "text",
+    "tags": ["declare_business_gst_details_business_loan"]
+  },
+  "decemberLabel": "డిసెంబర్",
+
+  "@nextButtonLabel": {
+    "description": "Label for the next button",
+    "type": "text",
+    "tags": ["declare_business_gst_details_business_loan"]
+  },
+  "nextButtonLabel": "తర్వాత",
+
+  "@gobackButtonLabel": {
+    "description": "Label for the go back button",
+    "type": "text",
+    "tags": ["declare_business_gst_details_business_loan"]
+  },
+  "gobackButtonLabel": "తిరిగి వెళ్ళండి",
+
+
+
+
+
+
+
+
+
+
+
+
+
+  "bank_details_title": "బ్యాంక్ వివరాలు",
+  "@bank_details_title": {
+    "description": "Title for the bank details page",
+    "tags": ["bank_details_business_loan"]
+  },
+  "bank_details_subtitle": "మీరు 3 బ్యాంక్ ఖాతాలను జోడించవచ్చు",
+  "@bank_details_subtitle": {
+    "description": "Subtitle indicating the number of bank accounts allowed",
+    "tags": ["bank_details_business_loan"]
+  },
+  "upload_bank_statement": "బ్యాంక్ స్టేట్‌మెంట్‌ను అప్‌లోడ్ చేయండి (PDF)",
+  "@upload_bank_statement": {
+    "description": "Label for uploading bank statements in PDF format",
+    "tags": ["bank_details_business_loan"]
+  },
+  "bank_account_button": "బ్యాంక్",
+  "@bank_account_button": {
+    "description": "Button text for bank accounts",
+    "tags": ["bank_details_business_loan"]
+  },
+  "add_account_button": "ఖాతా జోడించండి",
+  "@add_account_button": {
+    "description": "Button text for adding a new bank account",
+    "tags": ["bank_details_business_loan"]
+  },
+  "bank_name_label": "బ్యాంక్ పేరు*",
+  "@bank_name_label": {
+    "description": "Label for the bank name input field",
+    "tags": ["bank_details_business_loan"]
+  },
+  "bank_name_hint": "బ్యాంక్ పేరు ఇవ్వండి",
+  "@bank_name_hint": {
+    "description": "Hint text for the bank name input field",
+    "tags": ["bank_details_business_loan"]
+  },
+  "account_since_month_label": "ఖాతా ప్రారంభించిన నెల (నెల)*",
+  "@account_since_month_label": {
+    "description": "Label for the account since month input",
+    "tags": ["bank_details_business_loan"]
+  },
+  "account_since_year_label": "ఖాతా ప్రారంభించిన సంవత్సరం (సంవత్సరం)*",
+  "@account_since_year_label": {
+    "description": "Label for the account since year input",
+    "tags": ["bank_details_business_loan"]
+  },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  "declare_business_stakeholders": "వ్యాపార భాగస్వాములను ప్రకటించండి",
+  "@declare_business_stakeholders": {
+    "description": "Title for the page where the user declares business stakeholders",
+    "tags": ["stakeholder_business_loan"],
+    "type": "text"
+  },
+  "business_details": "వ్యాపార వివరాలు",
+  "@business_details": {
+    "description": "Section heading for business details",
+    "tags": ["stakeholder_business_loan", "business_detail_loan_form_business_loan"],
+    "type": "text"
+  },
+  "address_line_1": "చిరునామా పంక్తి 1*",
+  "@address_line_1": {
+    "description": "Label for the first address line input field",
+    "tags": ["stakeholder_business_loan"],
+    "type": "text"
+  },
+  "address_line_2": "చిరునామా పంక్తి 2",
+  "@address_line_2": {
+    "description": "Label for the second address line input field",
+    "tags": ["stakeholder_business_loan"],
+    "type": "text"
+  },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  "add_stakeholder": "సహకారులను జోడించండి",
+  "@add_stakeholder": {
+    "description": "కొత్త సహకారిని జోడించడానికి బటన్ లేబుల్",
+    "tags": ["add_stakeholder_business_loan"],
+    "type": "text"
+  },
+  "select_stakeholder": "సహకారులను ఎంచుకోండి",
+  "@select_stakeholder": {
+    "description": "సహకారిని ఎంచుకోవడానికి డ్రాప్‌డౌన్ లేబుల్",
+    "tags": ["add_stakeholder_business_loan"],
+    "type": "text"
+  },
+  "relationship_type": "బ్యాంకు సంబంధం",
+  "@relationship_type": {
+    "description": "సంబంధం రకం ఫీల్డ్ కోసం లేబుల్",
+    "tags": ["add_stakeholder_business_loan"],
+    "type": "text"
+  },
+  "relationship_type_hint": "సంబంధం రకాన్ని నమోదు చేయండి",
+  "@relationship_type_hint": {
+    "description": "సంబంధం రకం ఫీల్డ్ కోసం సూచన టెక్స్ట్",
+    "tags": ["add_stakeholder_business_loan"],
+    "type": "text"
+  },
+  "first_name": "మొదటి పేరు",
+  "@first_name": {
+    "description": "మొదటి పేరుకు సంబంధించిన లేబుల్",
+    "tags": ["add_stakeholder_business_loan"],
+    "type": "text"
+  },
+  "middle_name": "మధ్య పేరు",
+  "@middle_name": {
+    "description": "మధ్య పేరుకు సంబంధించిన లేబుల్",
+    "tags": ["add_stakeholder_business_loan"],
+    "type": "text"
+  },
+  "last_name": "చివరి పేరు",
+  "@last_name": {
+    "description": "చివరి పేరుకు సంబంధించిన లేబుల్",
+    "tags": ["add_stakeholder_business_loan"],
+    "type": "text"
+  },
+  "ownership_percentage": "అధ్యక్షత్వ శాతం %",
+  "@ownership_percentage": {
+    "description": "అధ్యక్షత్వ శాతం ఫీల్డ్ కోసం లేబుల్",
+    "tags": ["add_stakeholder_business_loan"],
+    "type": "text"
+  },
+  "ownership_percentage_hint": "అధ్యక్షత్వ శాతం నమోదు చేయండి",
+  "@ownership_percentage_hint": {
+    "description": "అధ్యక్షత్వ శాతం ఫీల్డ్ కోసం సూచన టెక్స్ట్",
+    "tags": ["add_stakeholder_business_loan"],
+    "type": "text"
+  },
+  "father_name": "తండ్రి పేరు",
+  "@father_name": {
+    "description": "తండ్రి పేరుకు సంబంధించిన లేబుల్",
+    "tags": ["add_stakeholder_business_loan"],
+    "type": "text"
+  },
+  "dob": "పుట్టిన తేదీ",
+  "@dob": {
+    "description": "పుట్టిన తేదీ ఫీల్డ్ కోసం లేబుల్",
+    "tags": ["add_stakeholder_business_loan"],
+    "type": "text"
+  },
+  "mobile_number": "మొబైల్ నంబర్",
+  "@mobile_number": {
+    "description": "మొబైల్ నంబర్ ఫీల్డ్ కోసం లేబుల్",
+    "tags": ["add_stakeholder_business_loan"],
+    "type": "text"
+  },
+  "residence_status": "వసతి స్థితి",
+  "@residence_status": {
+    "description": "వసతి స్థితి ఫీల్డ్ కోసం లేబుల్",
+    "tags": ["add_stakeholder_business_loan"],
+    "type": "text"
+  },
+  "residence_status_hint": "వసతి స్థితిని నమోదు చేయండి",
+  "@residence_status_hint": {
+    "description": "వసతి స్థితి ఫీల్డ్ కోసం సూచన టెక్స్ట్",
+    "tags": ["add_stakeholder_business_loan"],
+    "type": "text"
+  },
+  "pan": "PAN నమోదు చేయండి",
+  "@pan": {
+    "description": "PAN ఫీల్డ్ కోసం లేబుల్",
+    "tags": ["add_stakeholder_business_loan"],
+    "type": "text"
+  },
+  "education_status": "ఉపాధి స్థితి",
+  "@education_status": {
+    "description": "ఉపాధి స్థితి ఫీల్డ్ కోసం లేబుల్",
+    "tags": ["add_stakeholder_business_loan"],
+    "type": "text"
+  },
+  "education_status_hint": "ఉపాధి స్థితిని నమోదు చేయండి",
+  "@education_status_hint": {
+    "description": "ఉపాధి స్థితి ఫీల్డ్ కోసం సూచన టెక్స్ట్",
+    "tags": ["add_stakeholder_business_loan"],
+    "type": "text"
+  },
+  "total_experience": "మొత్తం అనుభవం (వर्षాలు)",
+  "@total_experience": {
+    "description": "మొత్తం అనుభవం ఫీల్డ్ కోసం లేబుల్",
+    "tags": ["add_stakeholder_business_loan"],
+    "type": "text"
+  },
+  "total_experience_hint": "మొత్తం అనుభవాన్ని నమోదు చేయండి",
+  "@total_experience_hint": {
+    "description": "మొత్తం అనుభవం ఫీల్డ్ కోసం సూచన టెక్స్ట్",
+    "tags": ["add_stakeholder_business_loan"],
+    "type": "text"
+  },
+  "net_worth": "సంవత్సరపు శుభ్రము (INR)",
+  "@net_worth": {
+    "description": "శుభ్రము ఫీల్డ్ కోసం లేబుల్",
+    "tags": ["add_stakeholder_business_loan"],
+    "type": "text"
+  },
+  "net_worth_hint": "శుభ్రమును నమోదు చేయండి",
+  "@net_worth_hint": {
+    "description": "శుభ్రము ఫీల్డ్ కోసం సూచన టెక్స్ట్",
+    "tags": ["add_stakeholder_business_loan"],
+    "type": "text"
+  },
+  "address_line_one": "చిరునామా పంక్తి ఒకటి",
+  "@address_line_one": {
+    "description": "చిరునామా పంక్తి ఒకటి కోసం లేబుల్",
+    "tags": ["add_stakeholder_business_loan"],
+    "type": "text"
+  },
+  "address_line_two": "చిరునామా పంక్తి రెండు",
+  "@address_line_two": {
+    "description": "చిరునామా పంక్తి రెండు కోసం లేబుల్",
+    "tags": ["add_stakeholder_business_loan"],
+    "type": "text"
+  },
+  "phone": "ఫోన్",
+  "@phone": {
+    "description": "ఫోన్ ఫీల్డ్ కోసం లేబల్",
+    "tags": ["add_stakeholder_business_loan"],
+    "type": "text"
+  },
+
+  "@phone_hint": {
+    "description": "ఫోన్ ఇన్‌పుట్ కోసం హింట్ టెక్స్ట్",
+    "type": "text"
+  },
+  "phone_hint": "ఫోన్ నమోదు చేయండి",
+
+  "visually_impaired": "దృష్టి సంబంధిత",
+  "@visually_impaired": {
+    "description": "దృష్టి సంబంధిత ఫీల్డ్ కోసం లేబుల్",
+    "tags": ["add_stakeholder_business_loan"],
+    "type": "text"
+  },
+  "visually_impaired_hint": "స్పష్టీకరించండి",
+  "@visually_impaired_hint": {
+    "description": "దృష్టి సంబంధిత ఫీల్డ్ కోసం సూచన టెక్స్ట్",
+    "tags": ["add_stakeholder_business_loan"],
+    "type": "text"
+  },
+  "is_guarantor": "అతను గ్యారంటరా?",
+  "@is_guarantor": {
+    "description": "గ్యారంటర్ స్థితి కోసం లేబల్",
+    "tags": ["add_stakeholder_business_loan"],
+    "type": "text"
+  },
+  "save": "సేవ్",
+  "@save": {
+    "description": "సహకారాల వివరాలను సేవ్ చేయడానికి బటన్ లేబుల్",
+    "tags": ["add_stakeholder_business_loan"],
+    "type": "text"
+  },
+  "delete": "తొలగించు",
+  "@delete": {
+    "description": "సహకారాన్ని తొలగించడానికి బటన్ లేబుల్",
+    "tags": ["add_stakeholder_business_loan"],
+    "type": "text"
+  },
+  "discard": "విసర్జించు",
+  "@discard": {
+    "description": "సహకార మార్పులను విసర్జించడానికి బటన్ లేబుల్",
+    "tags": ["add_stakeholder_business_loan"],
+    "type": "text"
+  },
+
+
+
+
+
+
+
+
+
+
+
+
+  "main_partner": "ప్రధాన భాగస్వామి",
+  "@main_partner": {
+    "description": "Title for the Main Partner page",
+    "tags": ["main_partner_business_loan"],
+    "type": "text"
+  },
+  "select_main_partner": "ప్రధాన భాగస్వామిని ఎంచుకోండి",
+  "@select_main_partner": {
+    "description": "Button label for selecting the main partner",
+    "tags": ["main_partner_business_loan"],
+    "type": "text"
+  },
+  "owning_a_house": "మీకు ఇల్లు ఉందా?",
+  "@owning_a_house": {
+    "description": "Label for the owning a house question",
+    "tags": ["main_partner_business_loan"],
+    "type": "text"
+  },
+  "assessed_for_income_tax": "ఆదాయ పన్ను కోసం అంచనా వేయబడింది?",
+  "@assessed_for_income_tax": {
+    "description": "Label for the income tax assessment question",
+    "tags": ["main_partner_business_loan"],
+    "type": "text"
+  },
+  "have_life_insurance": "మీకు జీవన బీమా ఉందా?",
+  "@have_life_insurance": {
+    "description": "Label for the life insurance question",
+    "tags": ["main_partner_business_loan"],
+    "type": "text"
+  },
+  "marital_status": "వివాహ స్థితి",
+  "@marital_status": {
+    "description": "Label for the marital status field",
+    "tags": ["main_partner_business_loan"],
+    "type": "text"
+  },
+  "marital_status_hint": "వివాహ స్థితిని నమోదు చేయండి",
+  "@marital_status_hint": {
+    "description": "Hint text for the marital status field",
+    "tags": ["main_partner_business_loan"],
+    "type": "text"
+  },
+  "spouse_name": "భర్త/భార్య పేరు",
+  "@spouse_name": {
+    "description": "Label for the spouse name field",
+    "tags": ["main_partner_business_loan"],
+    "type": "text"
+  },
+  "spouse_name_hint": "భర్త/భార్య పేరును నమోదు చేయండి",
+  "@spouse_name_hint": {
+    "description": "Hint text for the spouse name field",
+    "tags": ["main_partner_business_loan"],
+    "type": "text"
+  },
+  "no_of_children": "పిల్లల సంఖ్య",
+  "@no_of_children": {
+    "description": "Label for the number of children field",
+    "tags": ["main_partner_business_loan"],
+    "type": "text"
+  },
+  "no_of_children_hint": "పిల్లల సంఖ్యను నమోదు చేయండి",
+  "@no_of_children_hint": {
+    "description": "Hint text for the number of children field",
+    "tags": ["main_partner_business_loan"],
+    "type": "text"
+  },
+
+
+
+
+
+
+
+
+
+
+
+
+
+  "loan_form": "లొన్ ఫారం",
+  "@loan_form": {
+    "description": "Title for the Loan Form page",
+    "tags": ["loan_form_business_loan"],
+    "type": "text"
+  },
+  "total_loan": "మొత్తం రుణం",
+  "@total_loan": {
+    "description": "Label for the total loan section",
+    "tags": ["loan_form_business_loan"],
+    "type": "text"
+  },
+  "note": "గమనిక",
+  "@note": {
+    "description": "Label for the note section",
+    "tags": ["loan_form_business_loan"],
+    "type": "text"
+  },
+  "note_description": " : బ్యాంకర్ వారికి అవసరమైతే వారి బ్యాంకుకు ఉన్న రుణాలను మార్పిడి చేసుకోవచ్చు లేదా సමාన ఛార్జీలను కోరవచ్చు.",
+  "@note_description": {
+    "description": "Description of the note regarding loan details",
+    "tags": ["loan_form_business_loan"],
+    "type": "text"
+  },
+  "existing_loans": "ఉన్న రుణాలు",
+  "@existing_loans": {
+    "description": "Label for the existing loans field",
+    "tags": ["loan_form_business_loan", "existing_loans_loan_form_business_loan"],
+    "type": "text"
+  },
+  "additional_loan_required": "అదనపు రుణం అవసరం",
+  "@additional_loan_required": {
+    "description": "Label for the additional loan required field",
+    "tags": ["loan_form_business_loan"],
+    "type": "text"
+  },
+  "total_loan_label": "మొత్తం రుణం",
+  "@total_loan_label": {
+    "description": "Label for the total loan field",
+    "tags": ["loan_form_business_loan"],
+    "type": "text"
+  },
+  "submit": "సమర్పించండి",
+  "@submit": {
+    "description": "Label for the submit button",
+    "tags": ["loan_form_business_loan"],
+    "type": "text"
+  },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  "industry": "ఉద్యోగం*",
+  "@industry": {
+    "description": "Label for the industry input field",
+    "tags": ["business_detail_loan_form_business_loan"],
+    "type": "text"
+  },
+  "industry_hint": "ఉద్యోగాన్ని నమోదు చేయండి",
+  "@industry_hint": {
+    "description": "Hint text for the industry input field",
+    "tags": ["business_detail_loan_form_business_loan"],
+    "type": "text"
+  },
+  "sector_name": "క్షేత్రం పేరు*",
+  "@sector_name": {
+    "description": "Label for the sector name input field",
+    "tags": ["business_detail_loan_form_business_loan"],
+    "type": "text"
+  },
+  "sector_name_hint": "క్షేత్రం పేరును నమోదు చేయండి",
+  "@sector_name_hint": {
+    "description": "Hint text for the sector name input field",
+    "tags": ["business_detail_loan_form_business_loan"],
+    "type": "text"
+  },
+  "sub_sector_name": "ఉప-క్షేత్రం పేరు*",
+  "@sub_sector_name": {
+    "description": "Label for the sub sector name input field",
+    "tags": ["business_detail_loan_form_business_loan"],
+    "type": "text"
+  },
+  "sub_sector_name_hint": "ఉప-క్షేత్రం పేరును నమోదు చేయండి",
+  "@sub_sector_name_hint": {
+    "description": "Hint text for the sub sector name input field",
+    "tags": ["business_detail_loan_form_business_loan"],
+    "type": "text"
+  },
+  "msme_registration_number": "MSME నమోదు సంఖ్య*",
+  "@msme_registration_number": {
+    "description": "Label for the MSME registration number input field",
+    "tags": ["business_detail_loan_form_business_loan"],
+    "type": "text"
+  },
+  "msme_registration_number_hint": "MSME నమోదు సంఖ్యను నమోదు చేయండి",
+  "@msme_registration_number_hint": {
+    "description": "Hint text for the MSME registration number input field",
+    "tags": ["business_detail_loan_form_business_loan"],
+    "type": "text"
+  },
+  "udyog_aadhar_memorandum_no": "ఉద్యోగ ఆధార్ మెమొరాండమ్ సంఖ్య",
+  "@udyog_aadhar_memorandum_no": {
+    "description": "Label for the Udyog Aadhar Memorandum No. input field",
+    "tags": ["business_detail_loan_form_business_loan"],
+    "type": "text"
+  },
+  "udyog_aadhar_memorandum_no_hint": "ఉద్యోగ ఆధార్ మెమొరాండమ్ సంఖ్యను నమోదు చేయండి",
+  "@udyog_aadhar_memorandum_no_hint": {
+    "description": "Hint text for the Udyog Aadhar Memorandum No. input field",
+    "tags": ["business_detail_loan_form_business_loan"],
+    "type": "text"
+  },
+  "product_service_description": "ఉత్పత్తి/సేవ వివరణ*",
+  "@product_service_description": {
+    "description": "Label for the product/service description input field",
+    "tags": ["business_detail_loan_form_business_loan"],
+    "type": "text"
+  },
+  "product_service_description_hint": "ఉత్పత్తి/సేవ వివరణను నమోదు చేయండి",
+  "@product_service_description_hint": {
+    "description": "Hint text for the product/service description input field",
+    "tags": ["business_detail_loan_form_business_loan"],
+    "type": "text"
+  },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  "declare_collateral_security": "నిల్వ భద్రత ప్రకటించండి",
+  "@declare_collateral_security": {
+    "description": "నిల్వ భద్రత ప్రకటించే విభాగం శీర్షిక",
+    "tags": ["declare_collateral_loan_form_business_loan"],
+    "type": "text"
+  },
+  "collateral_type": "నిల్వ రకం",
+  "@collateral_type": {
+    "description": "నిల్వ రకం ఇన్‌పుట్ ఫీల్డ్‌కు శీర్షిక",
+    "tags": ["declare_collateral_loan_form_business_loan"],
+    "type": "text"
+  },
+  "collateral_type_hint": "నిల్వ రకం నమోదు చేయండి",
+  "@collateral_type_hint": {
+    "description": "నిల్వ రకం ఇన్‌పుట్ ఫీల్డ్‌కు సూచన పాఠ్యం",
+    "tags": ["declare_collateral_loan_form_business_loan"],
+    "type": "text"
+  },
+  "add_collateral": "నిల్వను జోడించండి",
+  "@add_collateral": {
+    "description": "కొత్త నిల్వను జోడించడానికి బటన్ లేబుల్",
+    "tags": ["declare_collateral_loan_form_business_loan"],
+    "type": "text"
+  },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  "loan_detail": "ఋణ వివరాలు",
+  "@loan_detail": {
+    "description": "Title for the loan details section",
+    "tags": ["loan_detail_loan_form_business_loan"],
+    "type": "text"
+  },
+  "loan_amount_required": "ఋణం అవసరమైన మొత్తం*",
+  "@loan_amount_required": {
+    "description": "Label for the loan amount required input field",
+    "tags": ["loan_detail_loan_form_business_loan"],
+    "type": "text"
+  },
+  "loan_amount_hint": "ఋణం మొత్తం నమోదు చేయండి",
+  "@loan_amount_hint": {
+    "description": "Hint text for the loan amount input field",
+    "tags": ["loan_detail_loan_form_business_loan"],
+    "type": "text"
+  },
+  "promoter_contribution": "ప్రొమోటర్ సహాయం*",
+  "@promoter_contribution": {
+    "description": "Label for the promoter contribution input field",
+    "tags": ["loan_detail_loan_form_business_loan"],
+    "type": "text"
+  },
+  "promoter_contribution_hint": "ప్రొమోటర్ సహాయం నమోదు చేయండి",
+  "@promoter_contribution_hint": {
+    "description": "Hint text for the promoter contribution input field",
+    "tags": ["loan_detail_loan_form_business_loan"],
+    "type": "text"
+  },
+  "purpose_of_loan": "ఋణం కోసం ఉద్దేశ్యం*",
+  "@purpose_of_loan": {
+    "description": "Label for the purpose of loan input field",
+    "tags": ["loan_detail_loan_form_business_loan"],
+    "type": "text"
+  },
+  "purpose_of_loan_hint": "ఋణం కోసం ఉద్దేశ్యం నమోదు చేయండి",
+  "@purpose_of_loan_hint": {
+    "description": "Hint text for the purpose of loan input field",
+    "tags": ["loan_detail_loan_form_business_loan"],
+    "type": "text"
+  },
+  "projected_sales": "అంచనా అమ్మకాలు ఆర్థిక సంవత్సరం",
+  "@projected_sales": {
+    "description": "Label for the projected sales input field",
+    "tags": ["loan_detail_loan_form_business_loan"],
+    "type": "text"
+  },
+  "projected_sales_hint": "అంచనా అమ్మకాలు నమోదు చేయండి",
+  "@projected_sales_hint": {
+    "description": "Hint text for the projected sales input field",
+    "tags": ["loan_detail_loan_form_business_loan"],
+    "type": "text"
+  },
+  "iso_certified": "మీ వ్యాపారం ISO ధృవీకరించబడింది?",
+  "@iso_certified": {
+    "description": "Label for the ISO certification switch",
+    "tags": ["loan_detail_loan_form_business_loan"],
+    "type": "text"
+  },
+  "factory_premise": "ఫ్యాక్టరీ ప్రాంగణం*",
+  "@factory_premise": {
+    "description": "Label for the factory premise input field",
+    "tags": ["loan_detail_loan_form_business_loan"],
+    "type": "text"
+  },
+  "factory_premise_hint": "ఫ్యాక్టరీ ప్రాంగణం నమోదు చేయండి",
+  "@factory_premise_hint": {
+    "description": "Hint text for the factory premise input field",
+    "tags": ["loan_detail_loan_form_business_loan"],
+    "type": "text"
+  },
+  "projected_know_how": "అంచనా తెలిసికొనటం*",
+  "@projected_know_how": {
+    "description": "Label for the projected know how input field",
+    "tags": ["loan_detail_loan_form_business_loan"],
+    "type": "text"
+  },
+  "projected_know_how_hint": "అంచనా తెలిసికొనటం నమోదు చేయండి",
+  "@projected_know_how_hint": {
+    "description": "Hint text for the projected know how input field",
+    "tags": ["loan_detail_loan_form_business_loan"],
+    "type": "text"
+  },
+  "competition": "ప్రతిస్పర్ధం*",
+  "@competition": {
+    "description": "Label for the competition input field",
+    "tags": ["loan_detail_loan_form_business_loan"],
+    "type": "text"
+  },
+  "competition_hint": "ప్రతిస్పర్ధనను నమోదు చేయండి",
+  "@competition_hint": {
+    "description": "Hint text for the competition input field",
+    "tags": ["loan_detail_loan_form_business_loan"],
+    "type": "text"
+  },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  "name_of_lender": "ధన దాత పేరు*",
+  "@name_of_lender": {
+    "description": "Label for the name of lender input field",
+    "tags": ["existing_loans_loan_form_business_loan"],
+    "type": "text"
+  },
+  "name_of_lender_hint": "ధన దాత పేరు నమోదు చేయండి",
+  "@name_of_lender_hint": {
+    "description": "Hint text for the name of lender input field",
+    "tags": ["existing_loans_loan_form_business_loan"],
+    "type": "text"
+  },
+  "sanctioned_amount": "అనుమతించిన మొత్తం (₹)*",
+  "@sanctioned_amount": {
+    "description": "Label for the sanctioned amount input field",
+    "tags": ["existing_loans_loan_form_business_loan"],
+    "type": "text"
+  },
+  "sanctioned_amount_hint": "అనుమతించిన మొత్తం నమోదు చేయండి",
+  "@sanctioned_amount_hint": {
+    "description": "Hint text for the sanctioned amount input field",
+    "tags": ["existing_loans_loan_form_business_loan"],
+    "type": "text"
+  },
+  "outstanding_amount": "ఉండబోయే మొత్తం (₹)*",
+  "@outstanding_amount": {
+    "description": "Label for the outstanding amount input field",
+    "tags": ["existing_loans_loan_form_business_loan"],
+    "type": "text"
+  },
+  "outstanding_amount_hint": "ఉండబోయే మొత్తం నమోదు చేయండి",
+  "@outstanding_amount_hint": {
+    "description": "Hint text for the outstanding amount input field",
+    "tags": ["existing_loans_loan_form_business_loan"],
+    "type": "text"
+  },
+  "emi_amount": "ఈ.ఎమ్.ఐ మొత్తం (₹)*",
+  "@emi_amount": {
+    "description": "Label for the EMI amount input field",
+    "tags": ["existing_loans_loan_form_business_loan"],
+    "type": "text"
+  },
+  "emi_amount_hint": "ఈ.ఎమ్.ఐ మొత్తం నమోదు చేయండి",
+  "@emi_amount_hint": {
+    "description": "Hint text for the EMI amount input field",
+    "tags": ["existing_loans_loan_form_business_loan"],
+    "type": "text"
+  },
+  "loan_type": "అప్పు రకం*",
+  "@loan_type": {
+    "description": "Label for the loan type input field",
+    "tags": ["existing_loans_loan_form_business_loan"],
+    "type": "text"
+  },
+  "loan_type_hint": "అప్పు రకం నమోదు చేయండి",
+  "@loan_type_hint": {
+    "description": "Hint text for the loan type input field",
+    "tags": ["existing_loans_loan_form_business_loan"],
+    "type": "text"
+  },
+  "collateral_amount": "జామీను మొత్తం (₹)*",
+  "@collateral_amount": {
+    "description": "Label for the collateral amount input field",
+    "tags": ["existing_loans_loan_form_business_loan"],
+    "type": "text"
+  },
+  "collateral_amount_hint": "జామీను మొత్తం నమోదు చేయండి",
+  "@collateral_amount_hint": {
+    "description": "Hint text for the collateral amount input field",
+    "tags": ["existing_loans_loan_form_business_loan"],
+    "type": "text"
+  },
+  "status": "స్థితి*",
+  "@status": {
+    "description": "Label for the status input field",
+    "tags": ["existing_loans_loan_form_business_loan"],
+    "type": "text"
+  },
+  "status_hint": "స్థితిని నమోదు చేయండి",
+  "@status_hint": {
+    "description": "Hint text for the status input field",
+    "tags": ["existing_loans_loan_form_business_loan"],
+    "type": "text"
+  },
+  "add_existing_loan": "ప్రస్తుత అప్పును చేర్చండి",
+  "@add_existing_loan": {
+    "description": "Button text to add an existing loan",
+    "tags": ["existing_loans_loan_form_business_loan"],
+    "type": "text"
   }
 }
+
+
+
+
+

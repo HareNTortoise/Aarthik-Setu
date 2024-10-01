@@ -8,6 +8,7 @@ class L10nAll{
     Locale('kn'),
     Locale('ta'),
     Locale('te'),
+    Locale('ml'),
   ];
   static const languageNames = {
     'en': 'English',
@@ -16,5 +17,6 @@ class L10nAll{
     'kn': 'ಕನ್ನಡ',
     'ta': 'தமிழ்',
     'te': 'తెలుగు',
+    'ml': 'മലയാളം',
   };
 }

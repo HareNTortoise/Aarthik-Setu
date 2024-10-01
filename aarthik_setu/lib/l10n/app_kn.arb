@@ -4,63 +4,81 @@
     "description": "The title of the application",
     "type": "text",
     "placeholders": {},
-    "tags": ["sign-in"]
+    "tags": [
+      "sign-in"
+    ]
   },
   "signIn": "ಸೈನ್ ಇನ್ ಮಾಡಿ",
   "@signIn": {
     "description": "Button label for signing in",
     "type": "text",
     "placeholders": {},
-    "tags": ["sign-in"]
+    "tags": [
+      "sign-in"
+    ]
   },
   "googleSignIn": "ಗೂಗಲ್",
   "@googleSignIn": {
     "description": "Label for Google Sign-In",
     "type": "text",
     "placeholders": {},
-    "tags": ["sign-in"]
+    "tags": [
+      "sign-in"
+    ]
   },
   "phoneSignIn": "ಫೋನ್",
   "@phoneSignIn": {
     "description": "Label for Phone Sign-In",
     "type": "text",
     "placeholders": {},
-    "tags": ["sign-in"]
+    "tags": [
+      "sign-in"
+    ]
   },
   "language": "ಭಾಷೆ",
   "@language": {
     "description": "Label for language selection",
     "type": "text",
     "placeholders": {},
-    "tags": ["sign-in"]
+    "tags": [
+      "sign-in"
+    ]
   },
   "enterPhoneNumber": "ನಿಮ್ಮ ಫೋನ್ ಸಂಖ್ಯೆಯನ್ನು ನಮೂದಿಸಿ",
   "@enterPhoneNumber": {
     "description": "Label for phone number entry",
     "type": "text",
     "placeholders": {},
-    "tags": ["sign-in"]
+    "tags": [
+      "sign-in"
+    ]
   },
   "sendOtp": "OTP ಕಳುಹಿಸಿ",
   "@sendOtp": {
     "description": "Button label for sending OTP",
     "type": "text",
     "placeholders": {},
-    "tags": ["sign-in"]
+    "tags": [
+      "sign-in"
+    ]
   },
   "verifyOtp": "OTP ಪರಿಶೀಲಿಸಿ",
   "@verifyOtp": {
     "description": "Button label for verifying OTP",
     "type": "text",
     "placeholders": {},
-    "tags": ["sign-in"]
+    "tags": [
+      "sign-in"
+    ]
   },
   "resendOtp": "OTP ಪುನಃ ಕಳುಹಿಸಿ",
   "@resendOtp": {
     "description": "Button label for resending OTP",
     "type": "text",
     "placeholders": {},
-    "tags": ["sign-in"]
+    "tags": [
+      "sign-in"
+    ]
   },
   "otpExpireIn": "OTP ಮಿಯಾದ್ ಮುಗಿಯಲು {time} ಸೆಕೆಂಡುಗಳು",
   "@otpExpireIn": {
@@ -72,48 +90,3087 @@
         "example": "120"
       }
     },
-    "tags": ["sign-in"]
+    "tags": [
+      "sign-in"
+    ]
   },
   "enterValidPhoneNumber": "ದಯವಿಟ್ಟು ಮಾನ್ಯವಾದ ಫೋನ್ ಸಂಖ್ಯೆಯನ್ನು ನಮೂದಿಸಿ",
   "@enterValidPhoneNumber": {
     "description": "Error message when phone number is invalid",
     "type": "text",
     "placeholders": {},
-    "tags": ["sign-in"]
+    "tags": [
+      "sign-in"
+    ]
   },
   "otpReceived": "OTP ಪಡೆದಿದೆ",
   "@otpReceived": {
     "description": "Message showing received OTP",
     "type": "text",
     "placeholders": {},
-    "tags": ["sign-in"]
+    "tags": [
+      "sign-in"
+    ]
   },
   "enterOtp": "OTP ನಮೂದಿಸಿ",
   "@enterOtp": {
     "description": "Label for OTP entry",
     "type": "text",
     "placeholders": {},
-    "tags": ["sign-in"]
+    "tags": [
+      "sign-in"
+    ]
   },
   "backButton": "ಹಿನ್ನೆಲೆ",
   "@backButton": {
     "description": "Label for the back button",
     "type": "text",
     "placeholders": {},
-    "tags": ["sign-in"]
+    "tags": [
+      "sign-in",
+      "itr_form_manual_personal_loan",
+      "bank_details_personal_loan"
+    ]
   },
   "phoneNumber": "ಫೋನ್ ಸಂಖ್ಯೆ",
   "@phoneNumber": {
     "description": "Label for phone number entry",
     "type": "text",
     "placeholders": {},
-    "tags": ["sign-in"]
+    "tags": [
+      "sign-in"
+    ]
   },
   "phoneSignInFormTitle": "ಫೋನ್ ಮೂಲಕ ಸೈನ್ ಇನ್ ಮಾಡಿ",
   "@phoneSignInFormTitle": {
     "description": "Title for phone sign-in form",
     "type": "text",
     "placeholders": {},
-    "tags": ["sign-in"]
+    "tags": [
+      "sign-in"
+    ]
+  },
+  "dashboard": "ಡ್ಯಾಶ್‌ಬೋರ್ಡ್",
+  "@dashboard": {
+    "description": "Title for the dashboard page",
+    "type": "text",
+    "placeholders": {},
+    "tags": [
+      "dashboard"
+    ]
+  },
+  "personalLoans": "ವೈಯಕ್ತಿಕ ಸಾಲಗಳು",
+  "@personalLoans": {
+    "description": "Label for personal loan options",
+    "type": "text",
+    "placeholders": {},
+    "tags": [
+      "dashboard",
+      "personal_loan"
+    ]
+  },
+  "businessLoans": "ವ್ಯಾಪಾರ ಸಾಲಗಳು",
+  "@businessLoans": {
+    "description": "Label for business loan options",
+    "type": "text",
+    "placeholders": {},
+    "tags": [
+      "dashboard"
+    ]
+  },
+  "governmentSchemes": "ಸರಕಾರಿ ಯೋಜನೆಗಳು",
+  "@governmentSchemes": {
+    "description": "Label for government schemes",
+    "type": "text",
+    "placeholders": {},
+    "tags": [
+      "dashboard"
+    ]
+  },
+  "logOut": "ಲಾಗ್ ಔಟ್",
+  "@logOut": {
+    "description": "Button label for logging out",
+    "type": "text",
+    "placeholders": {},
+    "tags": [
+      "dashboard"
+    ]
+  },
+  "profile": "ಪ್ರೊಫೈಲ್",
+  "@profile": {
+    "description": "Label for profile selection",
+    "type": "text",
+    "placeholders": {},
+    "tags": [
+      "dashboard"
+    ]
+  },
+  "pendingApplications": "ಬಾಕಿ ಇರುವ ಅರ್ಜಿ",
+  "@pendingApplications": {
+    "description": "Label for pending applications with count",
+    "type": "text",
+    "placeholders": {},
+    "tags": [
+      "dashboard"
+    ]
+  },
+  "personalLoanDescription": "ಕಡಿಮೆ ಬಡ್ಡಿದರ ಮತ್ತು ನಸುಗುವ ಬಾಕಿ ಪಾವತಿ ಆಯ್ಕೆಗಳೊಂದಿಗೆ ವೈಯಕ್ತಿಕ ಸಾಲ ಪಡೆಯಿರಿ.",
+  "@personalLoanDescription": {
+    "description": "Description for personal loan option",
+    "type": "text",
+    "placeholders": {},
+    "tags": [
+      "personal_loan"
+    ]
+  },
+  "homeLoans": "ಮನೆ ಸಾಲಗಳು",
+  "@homeLoans": {
+    "description": "Title for home loan option",
+    "type": "text",
+    "placeholders": {},
+    "tags": [
+      "personal_loan"
+    ]
+  },
+  "homeLoanDescription": "ಕಡಿಮೆ ಬಡ್ಡಿದರ ಮತ್ತು ನಸುಗುವ ಬಾಕಿ ಪಾವತಿ ಆಯ್ಕೆಗಳೊಂದಿಗೆ ಮನೆ ಸಾಲ ಪಡೆಯಿರಿ.",
+  "@homeLoanDescription": {
+    "description": "Description for home loan option",
+    "type": "text",
+    "placeholders": {},
+    "tags": [
+      "personal_loan"
+    ]
+  },
+  "autoLoans": "ವಾಹನ ಸಾಲಗಳು",
+  "@autoLoans": {
+    "description": "Title for auto loan option",
+    "type": "text",
+    "placeholders": {},
+    "tags": [
+      "personal_loan"
+    ]
+  },
+  "autoLoanDescription": "ಕಡಿಮೆ ಬಡ್ಡಿದರ ಮತ್ತು ನಸುಗುವ ಬಾಕಿ ಪಾವತಿ ಆಯ್ಕೆಗಳೊಂದಿಗೆ ವಾಹನ ಸಾಲ ಪಡೆಯಿರಿ.",
+  "@autoLoanDescription": {
+    "description": "Description for auto loan option",
+    "type": "text",
+    "placeholders": {},
+    "tags": [
+      "personal_loan"
+    ]
+  },
+  "msmeLoans": "ಎಮ್‌ಎಸ್‌ಎಮ್‌ಇ ಸಾಲುಗಳು",
+  "@msmeLoans": {
+    "description": "Title for MSME loan option",
+    "type": "text",
+    "placeholders": {},
+    "tags": [
+      "business_loan"
+    ]
+  },
+  "msmeLoanDescription": "ಕಡಿಮೆ ಬಡ್ಡಿ ದರ ಮತ್ತು ಪರ್ಯಾಯ ಪರಿಷ್ಕಾರ ಆಯ್ಕೆಗಳನ್ನು ಹೊಂದಿರುವ ₹5 ಕೋಟಿ ವರೆಗೆ MSME ಸಾಲುಗಳನ್ನು ಪಡೆಯಿರಿ.",
+  "@msmeLoanDescription": {
+    "description": "Description for MSME loan option",
+    "type": "text",
+    "placeholders": {},
+    "tags": [
+      "business_loan"
+    ]
+  },
+  "termLoans": "ಅವಧಿ ಸಾಲುಗಳು",
+  "@termLoans": {
+    "description": "Title for term loan option",
+    "type": "text",
+    "placeholders": {},
+    "tags": [
+      "business_loan"
+    ]
+  },
+  "termLoanDescription": "ಪ್ರತಿಸ್ಪರ್ಧಾತ್ಮಕ ದರ ಮತ್ತು ಪರಿಷ್ಕಾರದ ಶ್ರೇಣಿಗಳನ್ನು ಹೊಂದಿರುವ ₹50 ಲಕ್ಷ ವರೆಗೆ ಅವಧಿ ಸಾಲುಗಳನ್ನು ಪಡೆಯಿರಿ.",
+  "@termLoanDescription": {
+    "description": "Description for term loan option",
+    "type": "text",
+    "placeholders": {},
+    "tags": [
+      "business_loan"
+    ]
+  },
+  "mudraLoans": "ಮುದ್ರಾ ಸಾಲುಗಳು",
+  "@mudraLoans": {
+    "description": "Title for Mudra loan option",
+    "type": "text",
+    "placeholders": {},
+    "tags": [
+      "business_loan"
+    ]
+  },
+  "mudraLoanDescription": "ನಮ್ಮ ಲಕೋಟಿ ಮುಡುಪಿಗೆ ₹10 ಲಕ್ಷ ವರೆಗೆ ಕ್ಷುದುದ್ದೊರಿಗೆ ಮತ್ತು ಸುಲಭವಾದ ತಿರುವಿನೊಂದಿಗೆ ಸಾಲುಗಳನ್ನು ಪಡೆಯಿರಿ.",
+  "@mudraLoanDescription": {
+    "description": "Description for Mudra loan option",
+    "type": "text",
+    "placeholders": {},
+    "tags": [
+      "business_loan"
+    ]
+  },
+  "pendingApplicationsTitle": "ಬಾಕಿ ಅರ್ಜಿಗಳು",
+  "@pendingApplicationsTitle": {
+    "description": "Title for the pending applications dialog",
+    "type": "text",
+    "placeholders": {},
+    "tags": [
+      "dashboard_pending_applications"
+    ]
+  },
+  "noPendingApplications": "ನಿಮ್ಮ ಬಳಿ ಯಾವುದೇ ಬಾಕಿ ಅರ್ಜಿಗಳು ಇಲ್ಲ.",
+  "@noPendingApplications": {
+    "description": "Message when there are no pending applications",
+    "type": "text",
+    "placeholders": {},
+    "tags": [
+      "dashboard_pending_applications"
+    ]
+  },
+  "closeButton": "ಮುಚ್ಚಿ",
+  "@closeButton": {
+    "description": "Label for the close button",
+    "type": "text",
+    "placeholders": {},
+    "tags": [
+      "dashboard_pending_applications",
+      "dashboard_select_profile",
+      "bank_details_personal_loan"
+    ]
+  },
+  "selectProfileTitle": "ಪ್ರೊಫೈಲ್ ಆಯ್ಕೆ ಮಾಡಿ",
+  "@selectProfileTitle": {
+    "description": "Title for the select profile dialog",
+    "type": "text",
+    "placeholders": {},
+    "tags": [
+      "dashboard_select_profile"
+    ]
+  },
+  "noProfiles": "ನಿಮ್ಮ ಬಳಿ ಯಾವುದೇ ಪ್ರೊಫೈಲ್ ಇಲ್ಲ.",
+  "@noProfiles": {
+    "description": "Message when there are no profiles",
+    "type": "text",
+    "placeholders": {},
+    "tags": [
+      "dashboard_select_profile"
+    ]
+  },
+  "choosePersonalProfile": "ವ್ಯಕ್ತಿಗತ ಪ್ರೊಫೈಲ್ ಆಯ್ಕೆ ಮಾಡಿರಿ",
+  "@choosePersonalProfile": {
+    "description": "Title for choosing personal profile",
+    "type": "text",
+    "placeholders": {},
+    "tags": [
+      "personal_loan_journey"
+    ]
+  },
+  "selectedProfile": "ಆಯ್ಕೆಯಾದ ಪ್ರೊಫೈಲ್: ಆದರ್ಶ ಬರ್ಮಾ",
+  "@selectedProfile": {
+    "description": "Message showing selected profile",
+    "type": "text",
+    "placeholders": {},
+    "tags": [
+      "personal_loan_journey"
+    ]
+  },
+  "selectProfileMessage": "ಲಭ್ಯವಿರುವ ಪ್ರೊಫೈಲ್ ಪಟ್ಟಿಯಿಂದ ನಿಮ್ಮ ವ್ಯಕ್ತಿಗತ ಪ್ರೊಫೈಲ್ ಆಯ್ಕೆ ಮಾಡಿ. ನೀವು ಹೊಸ ಪ್ರೊಫೈಲ್ ರಚಿಸಲು ಸಾಧ್ಯವಾದರೆ, ನೀವು ಅದನ್ನು ಮಾಡಬಹುದು.",
+  "@selectProfileMessage": {
+    "description": "Message for selecting personal profile",
+    "type": "text",
+    "placeholders": {},
+    "tags": [
+      "personal_loan_journey"
+    ]
+  },
+  "itrImportance": "ನಿಮ್ಮ ITR ನೀಡುವುದು ಸಾಲಕ್ಕೆ ಅರ್ಜಿ ಸಲ್ಲಿಸುವಾಗ ಅತ್ಯಂತ ಅಗತ್ಯವಾಗಿದೆ, ಏಕೆಂದರೆ ಇದು ಸಾಲದಾತರಿಗೆ ನಿಮ್ಮ ಆರ್ಥಿಕ ಸ್ಥಿರತೆ, ಸಾಲವನ್ನು ಪುನರ್‌ಕೀಳಗೊಳ್ಳುವ ಸಾಮರ್ಥ್ಯ ಮತ್ತು ಒಟ್ಟಾರೆ ವಿಶ್ವಾಸಾರ್ಹತೆಯನ್ನು ಖಚಿತಪಡಿಸಲು ಸಹಾಯ ಮಾಡುತ್ತದೆ, ಇದು ಸಾಲದ ಒಪ್ಪಿಗೆ ಸಾಧ್ಯತೆಗಳನ್ನು ಹೆಚ್ಚಿಸುತ್ತದೆ. ITR ಇಲ್ಲದಿದ್ದರೆ, ನಿಮ್ಮ ಆದಾಯವನ್ನು ದೃಢೀಕರಿಸಲು ಬೇರೆ ಯಾವುದೇ ಮಾರ್ಗವಿಲ್ಲ.",
+  "@itrImportance": {
+    "description": "Importance of providing ITR in a loan application",
+    "type": "text",
+    "placeholders": {},
+    "tags": [
+      "personal_loan_journey"
+    ]
+  },
+  "itrButtonTitle": "ಆದಾಯ ತೆರಿಗೆ ಹಿಂತೆಗೆದುಕೊಳ್ಳಿ",
+  "@itrButtonTitle": {
+    "description": "Button label for providing ITR",
+    "type": "text",
+    "placeholders": {},
+    "tags": [
+      "personal_loan_journey"
+    ]
+  },
+  "itrButtonDescription": "ಕಳೆದ 3 ವರ್ಷಗಳ ಆದಾಯ ತೆರಿಗೆ ಹಿಂತೆಗೆದುಕೊಳ್ಳುವ ಫಾರ್ಮ್ ಅನ್ನು ಒದಗಿಸಿ ಅಥವಾ ನಿಮ್ಮ ಆದಾಯವನ್ನು ಘೋಷಿಸಿ.",
+  "@itrButtonDescription": {
+    "description": "Description for providing ITR",
+    "type": "text",
+    "placeholders": {},
+    "tags": [
+      "personal_loan_journey"
+    ]
+  },
+  "bankDetailsImportance": "ಬ್ಯಾಂಕ್ ಮಾಹಿತಿ ಮತ್ತು ನಿರೀಕ್ಷಿತವಾದವುಗಳು ಸಾಲದಾತರಿಗೆ ನಿಮ್ಮ ಆರ್ಥಿಕ ಅಭ್ಯಾಸಗಳು, ಸಾಲವನ್ನು ಪುನರ್‌ಕೀಳಗೊಳ್ಳುವ ಸಾಮರ್ಥ್ಯ ಮತ್ತು ಸಾಲದ ಅಪಾಯಗಳ ಬಗ್ಗೆ ಶುದ್ಧ ಮತ್ತು ವಿಶ್ವಾಸಾರ್ಹ ಚಿತ್ರಣವನ್ನು ನೀಡಲು ಸಹಾಯ ಮಾಡುತ್ತವೆ, ಇದು ಸಾಲದ ಒಪ್ಪಿಗೆಗೆ ಪ್ರಮುಖ ಅಂಶವಾಗಿದೆ.",
+  "@bankDetailsImportance": {
+    "description": "Importance of providing bank details in a loan application",
+    "type": "text",
+    "placeholders": {},
+    "tags": [
+      "personal_loan_journey"
+    ]
+  },
+  "bankDetailsButtonTitle": "ಬ್ಯಾಂಕ್ ವಿವರಗಳು",
+  "@bankDetailsButtonTitle": {
+    "description": "Button label for providing bank details",
+    "type": "text",
+    "placeholders": {},
+    "tags": [
+      "personal_loan_journey"
+    ]
+  },
+  "bankDetailsButtonDescription": "ನಿಮ್ಮ ಬ್ಯಾಂಕ್ ವಿವರಗಳನ್ನು ಪ್ರಸ್ತಾಪಿಸಿ, ಕಳೆದ 6 ತಿಂಗಳ ಬ್ಯಾಂಕ್ ನಿರೀಕ್ಷಿತ ಮಾಹಿತಿಯನ್ನು ಒದಗಿಸಿ.",
+  "@bankDetailsButtonDescription": {
+    "description": "Description for providing bank details",
+    "type": "text",
+    "placeholders": {},
+    "tags": [
+      "personal_loan_journey"
+    ]
+  },
+  "personalDetailsImportance": "ಸಾಲ ಅರ್ಜಿಯ ಸಮರ್ಪಣೆಗಾಗು ವ್ಯಕ್ತಿಗತ ಮಾಹಿತಿಯು ಬಹಳ ಮುಖ್ಯವಾಗಿದೆ, ಏಕೆಂದರೆ ಇದು ನಿಮ್ಮ ಗುರುತನ್ನು ಖಚಿತಪಡಿಸಲು, ಅರ್ಹತೆಯನ್ನು ನಿರ್ಧರಿಸಲು ಮತ್ತು ಸಾಲಕ್ಕೆ ಅರ್ಹತೆವನ್ನು ಅಂದಾಜಿಸಲು ಸಹಾಯ ಮಾಡುತ್ತದೆ. ವಯಸ್ಸು, ವಿಳಾಸ, ಉದ್ಯೋಗದ ಮಾಹಿತಿ ಮತ್ತು ಇತರವು ನಿಮ್ಮ ಸ್ಥಿರತೆ ಮತ್ತು ಸಾಲವನ್ನು ಪುನರ್‌ಕೀಳಗೊಳ್ಳುವ ಸಾಮರ್ಥ್ಯದ ಮಾಹಿತಿ ನೀಡುತ್ತದೆ. ಸರಿಯಾದ ವ್ಯಕ್ತಿಗತ ಮಾಹಿತಿ ಕಾನೂನುಬದ್ಧ ಮತ್ತು ಪ್ರಕ್ರಿಯಾತ್ಮಕವಾಗಿ ಅನುಪಾಲನೆಯ ಹಕ್ಕುಗಳನ್ನು ಖಚಿತಪಡಿಸುತ್ತದೆ.",
+  "@personalDetailsImportance": {
+    "description": "Importance of providing personal details in a loan application",
+    "type": "text",
+    "placeholders": {},
+    "tags": [
+      "personal_loan_journey"
+    ]
+  },
+  "basicDetailsButtonTitle": "ಮೂಲ ಮಾಹಿತಿ",
+  "@basicDetailsButtonTitle": {
+    "description": "Button label for providing basic details",
+    "type": "text",
+    "placeholders": {},
+    "tags": [
+      "personal_loan_journey"
+    ]
+  },
+  "basicDetailsButtonDescription": "ನಿಮ್ಮ ವ್ಯಕ್ತಿಗತ ಮಾಹಿತಿ, ಹೆಸರು, ವಯಸ್ಸು, ವಿಳಾಸ ಇತ್ಯಾದಿ ಒದಗಿಸಿ.",
+  "@basicDetailsButtonDescription": {
+    "description": "Description for providing basic details",
+    "type": "text",
+    "placeholders": {},
+    "tags": [
+      "personal_loan_journey"
+    ]
+  },
+  "employmentDetailsImportance": "ಉದ್ಯೋಗದ ವಿವರಗಳನ್ನು ಸಾಲ ಅರ್ಜಿಯಲ್ಲಿ ಒದಗಿಸುವುದು ಮುಖ್ಯವಾಗಿದೆ, ಏಕೆಂದರೆ ಇದು ಸಾಲದಾತರಿಗೆ ನಿಮ್ಮ ಸಾಲವನ್ನು ಪುನರ್‌ಕೀಳಗೊಳ್ಳುವ ಸಾಮರ್ಥ್ಯ, ಉದ್ಯೋಗದಲ್ಲಿ ಸ್ಥಿರತೆ, ಆರ್ಥಿಕ ಮಾಹಿತಿ ಅಂದಾಜಿಸಲು ಸಹಾಯ ಮಾಡುತ್ತದೆ. ಕಂಪನಿಯ ಹೆಸರು, ಹುದ್ದೆ, ವೇತನ ಇತ್ಯಾದಿ ನಿಮ್ಮ ಆದಾಯದ ಸ್ಥಿರತೆಯ ಬಗ್ಗೆ ಮಾಹಿತಿ ನೀಡುತ್ತದೆ.",
+  "@employmentDetailsImportance": {
+    "description": "Importance of providing employment details in a loan application",
+    "type": "text",
+    "placeholders": {},
+    "tags": [
+      "personal_loan_journey"
+    ]
+  },
+  "employmentDetailsButtonTitle": "ಉದ್ಯೋಗದ ವಿವರಗಳು",
+  "@employmentDetailsButtonTitle": {
+    "description": "Button label for providing employment details",
+    "type": "text",
+    "placeholders": {},
+    "tags": [
+      "personal_loan_journey"
+    ]
+  },
+  "employmentDetailsButtonDescription": "ನಿಮ್ಮ ಉದ್ಯೋಗದ ವಿವರಗಳನ್ನು, ಕಂಪನಿಯ ಹೆಸರು, ಹುದ್ದೆ, ವೇತನ ಇತ್ಯಾದಿ ಒದಗಿಸಿ.",
+  "@employmentDetailsButtonDescription": {
+    "description": "Description for providing employment details",
+    "type": "text",
+    "placeholders": {},
+    "tags": [
+      "personal_loan_journey"
+    ]
+  },
+  "creditInformationImportance": "ಕ್ರೆಡಿಟ್ ಮಾಹಿತಿಯನ್ನು ಸಾಲ ಅರ್ಜಿಯಲ್ಲಿ ಒದಗಿಸುವುದು ಮುಖ್ಯವಾಗಿದೆ, ಏಕೆಂದರೆ ಇದು ಸಾಲದಾತರಿಗೆ ನಿಮ್ಮ ಸಾಲಕ್ಕೆ ಅರ್ಹತೆ, ಸಾಲವನ್ನು ಪುನರ್‌ಕೀಳಗೊಳ್ಳುವ ಸಾಮರ್ಥ್ಯ, ಆರ್ಥಿಕ ಮಾಹಿತಿ ಅಂದಾಜಿಸಲು ಸಹಾಯ ಮಾಡುತ್ತದೆ. ಕ್ರೆಡಿಟ್ ಸ್ಕೋರ್, ಕ್ರೆಡಿಟ್ ಇತಿಹಾಸ, ಪ್ರಸ್ತುತ ಸಾಲ ಇತ್ಯಾದಿ ನಿಮ್ಮ ಕ್ರೆಡಿಟ್ ಅಪಾಯ ಮತ್ತು ಸಾಲವನ್ನು ಪುನರ್‌ಕೀಳಗೊಳ್ಳುವ ಸಾಮರ್ಥ್ಯದ ಬಗ್ಗೆ ಮಾಹಿತಿ ನೀಡುತ್ತದೆ. ಸರಿಯಾದ ಕ್ರೆಡಿಟ್ ಮಾಹಿತಿ ಕಾನೂನುಬದ್ಧ ಮತ್ತು ಪ್ರಕ್ರಿಯಾತ್ಮಕವಾಗಿ ಅನುಪಾಲನೆಯ ಹಕ್ಕುಗಳನ್ನು ಖಚಿತಪಡಿಸುತ್ತದೆ.",
+  "@creditInformationImportance": {
+    "description": "Importance of providing credit information in a loan application",
+    "type": "text",
+    "placeholders": {},
+    "tags": [
+      "personal_loan_journey"
+    ]
+  },
+  "creditInformationButtonTitle": "ಕ್ರೆಡಿಟ್ ಮಾಹಿತಿ",
+  "@creditInformationButtonTitle": {
+    "description": "Button label for providing credit information",
+    "type": "text",
+    "placeholders": {},
+    "tags": [
+      "personal_loan_journey"
+    ]
+  },
+  "creditInformationButtonDescription": "ನಿಮ್ಮ ಕ್ರೆಡಿಟ್ ಮಾಹಿತಿ, ಕ್ರೆಡಿಟ್ ಸ್ಕೋರ್, ಕ್ರೆಡಿಟ್ ಇತಿಹಾಸ, ಪ್ರಸ್ತುತ ಸಾಲ ಇತ್ಯಾದಿ ಒದಗಿಸಿ.",
+  "@creditInformationButtonDescription": {
+    "description": "Description for providing credit information",
+    "type": "text",
+    "placeholders": {},
+    "tags": [
+      "personal_loan_journey"
+    ]
+  },
+  "contactInformationImportance": "ಸಂಪರ್ಕ ಮಾಹಿತಿ ಸಾಲ ಅರ್ಜಿಯಲ್ಲಿ ಮುಖ್ಯವಾಗಿದೆ, ಏಕೆಂದರೆ ಇದು ಸಾಲದಾತರಿಗೆ ನಿಮ್ಮ ಗುರುತನ್ನು ಖಚಿತಪಡಿಸಲು, ನಿಮ್ಮನ್ನು ಸಂಪರ್ಕಿಸಲು ಮತ್ತು ನಿಮ್ಮ ಸಾಲವನ್ನು ಪುನರ್‌ಕೀಳಗೊಳ್ಳುವ ಸಾಮರ್ಥ್ಯವನ್ನು ಅಂದಾಜಿಸಲು ಸಹಾಯ ಮಾಡುತ್ತದೆ. ಫೋನ್ ಸಂಖ್ಯೆಗಳು, ಇಮೇಲ್, ವಿಳಾಸ ಇತ್ಯಾದಿ ನಿಮ್ಮ ಲಭ್ಯತೆ, ಸಂಪರ್ಕ ಸಾಮರ್ಥ್ಯದ ಬಗ್ಗೆ ಮಾಹಿತಿ ನೀಡುತ್ತವೆ.",
+  "@contactInformationImportance": {
+    "description": "Importance of providing contact information in a loan application",
+    "type": "text",
+    "placeholders": {},
+    "tags": [
+      "personal_loan_journey"
+    ]
+  },
+  "contactInformationButtonTitle": "ಸಂಪರ್ಕ ಮಾಹಿತಿ",
+  "@contactInformationButtonTitle": {
+    "description": "Button label for providing contact information",
+    "type": "text",
+    "placeholders": {},
+    "tags": [
+      "personal_loan_journey"
+    ]
+  },
+  "contactInformationButtonDescription": "ನಿಮ್ಮ ಸಂಪರ್ಕ ಮಾಹಿತಿ, ಫೋನ್ ಸಂಖ್ಯೆ, ಇಮೇಲ್, ವಿಳಾಸ ಇತ್ಯಾದಿ ಒದಗಿಸಿ.",
+  "@contactInformationButtonDescription": {
+    "description": "Description for providing contact information",
+    "type": "text",
+    "placeholders": {},
+    "tags": [
+      "personal_loan_journey"
+    ]
+  },
+  "loanFormTitle": "ಸಾಲದ ಅರ್ಜಿ",
+  "@loanFormTitle": {
+    "description": "Title for loan form",
+    "type": "text",
+    "placeholders": {},
+    "tags": [
+      "personal_loan_journey", "loan_form_personal_loan"
+    ]
+  },
+  "loanFormDescription": "ಅರ್ಜಿ ಸಲ್ಲಿಸಲು, ನಿಮ್ಮ ವೈಯಕ್ತಿಕ ಮಾಹಿತಿಯನ್ನು ಭರ್ತಿಮಾಡಿ ಮತ್ತು ಅಗತ್ಯವಿದ್ದರೆ ಬೆಂಬಲ ಡಾಕ್ಯುಮೆಂಟ್‌ಗಳನ್ನು ಲೋಡ್ ಮಾಡಿ.",
+  "@loanFormDescription": {
+    "description": "Description for loan form submission",
+    "type": "text",
+    "placeholders": {},
+    "tags": [
+      "personal_loan_journey", "business_loan_journey"
+    ]
+  },
+  "loanFormButtonTitle": "ಅರ್ಜಿಯ ಮುಚ್ಚುವಿಕೆ",
+  "@loanFormButtonTitle": {
+    "description": "Button label for submitting loan form",
+    "type": "text",
+    "placeholders": {},
+    "tags": [
+      "personal_loan_journey"
+    ]
+  },
+  "loanFormButtonDescription": "ಋಣಕ್ಕಾಗಿ ಅರ್ಜಿ ಸಲ್ಲಿಸಲು, ನಿಮ್ಮ ವೆಚ್ಚ, ಉದ್ದೇಶ ಮತ್ತು ಹಣಕಾಸು ಅಗತ್ಯಗಳನ್ನು ಒದಗಿಸಿ.",
+  "@loanFormButtonDescription": {
+    "description": "Description for loan form submission",
+    "type": "text",
+    "placeholders": {},
+    "tags": [
+      "personal_loan_journey"
+    ]
+  },
+  "reviewFormButton": "ನಿಮ್ಮ ಫಾರ್ಮ್ ಪರಿಶೀಲಿಸಿ",
+  "@reviewFormButton": {
+    "description": "Button label for reviewing the loan form",
+    "type": "text",
+    "placeholders": {},
+    "tags": [
+      "personal_loan_journey"
+    ]
+  },
+  "reviewFormButtonDescription": "ನಿಮ್ಮ ಸಾಲದ ಅರ್ಜಿಯನ್ನು ಪರಿಶೀಲಿಸುವುದು ಮತ್ತು ಸಲ್ಲಿಸುವುದು ಸಾಲದ ಅರ್ಜಿ ಪ್ರಕ್ರಿಯೆಯ ಅಂತಿಮ ಹಂತವಾಗಿದೆ. ನೀವು ನೀಡಿರುವ ಎಲ್ಲಾ ಮಾಹಿತಿಯನ್ನು ಪರಿಶೀಲಿಸಿ, ಅದರ ಖಚಿತತೆಯನ್ನು ದೃಢೀಕರಿಸಿ, ಮತ್ತು ಸಾಲದಾತರಿಗೆ ಅನುಮೋದನೆಗಾಗಿ ನಿಮ್ಮ ಅರ್ಜಿಯನ್ನು ಸಲ್ಲಿಸಿ.",
+  "@reviewFormButtonDescription": {
+    "description": "Description for reviewing the loan form",
+    "type": "text",
+    "placeholders": {},
+    "tags": [
+      "personal_loan_journey"
+    ]
+  },
+  "itrDetailsTitle": "ಐಟಿಆರ್ ವಿವರಗಳು",
+  "@itrDetailsTitle": {
+    "description": "Title for the ITR Details section",
+    "type": "text",
+    "placeholders": {},
+    "tags": [
+      "itr_form_personal_loan"
+    ]
+  },
+  "manualDeclarationText": "ನಿಮ್ಮ ವಾರ್ಷಿಕ ಆದಾಯವು 2.5 ಲಕ್ಷಕ್ಕಿಂತ ಕಡಿಮೆಯಿದ್ದರೆ, ನಿಮ್ಮ ಆರ್ಥಿಕ ವಿವರಗಳನ್ನು ಘೋಷಿಸಿ",
+  "@manualDeclarationText": {
+    "description": "Text for manual declaration option",
+    "type": "text",
+    "placeholders": {},
+    "tags": [
+      "itr_form_personal_loan"
+    ]
+  },
+  "itrMandatoryText_1": "ಆರ್ಥಿಕ ವರ್ಷದ ಐಟಿಆರ್ ವಿವರಗಳು",
+  "@itrMandatoryText_1": {
+    "description": "Text for the ITR Details section",
+    "type": "text",
+    "placeholders": {},
+    "tags": [
+      "itr_form_personal_loan"
+    ]
+  },
+  "itrMandatoryText_2": "ಅಗತ್ಯವಿದೆ",
+  "@itrMandatoryText_2": {
+    "description": "Text for the ITR Details section",
+    "type": "text",
+    "placeholders": {},
+    "tags": [
+      "itr_form_personal_loan"
+    ]
+  },
+  "uploadITRText": "ಐಟಿಆರ್ ಅಪ್ಲೋಡ್ ಮಾಡಿ",
+  "@uploadITRText": {
+    "description": "Text for the toggle button for uploading ITR",
+    "type": "text",
+    "placeholders": {},
+    "tags": [
+      "itr_form_personal_loan"
+    ]
+  },
+  "manualDeclarationButton": "ಮ್ಯಾನುಯಲ್ ಘೋಷಣೆ",
+  "@manualDeclarationButton": {
+    "description": "Text for the toggle button for manual declaration",
+    "type": "text",
+    "placeholders": {},
+    "tags": [
+      "itr_form_personal_loan"
+    ]
+  },
+  "uploadITRTitle": "ಐಟಿಆರ್ ಅಪ್ಲೋಡ್ ಮಾಡಿ (ಪಿಡಿಎಫ್ ಫಾರ್ಮಾಟ್)",
+  "@uploadITRTitle": {
+    "description": "Title for the upload ITR section",
+    "type": "text",
+    "placeholders": {},
+    "tags": [
+      "itr_form_upload_personal_loan"
+    ]
+  },
+  "fyLabel": "ಆರ್ಥಿಕ ವರ್ಷ",
+  "@fyLabel": {
+    "description": "Label for the financial year",
+    "type": "text",
+    "placeholders": {},
+    "tags": [
+      "itr_form_upload_personal_loan"
+    ]
+  },
+  "uploadButton": "ಫೈಲ್ ಅಪ್ಲೋಡ್ ಮಾಡಿ",
+  "@uploadButton": {
+    "description": "Label for the upload button",
+    "type": "text",
+    "placeholders": {},
+    "tags": [
+      "itr_form_upload_personal_loan"
+    ]
+  },
+  "instructionsTitle": "ಐಟಿಆರ್ ಅನ್ನು ಪಿಡಿಎಫ್ ಫಾರ್ಮಾಟ್‌ನಲ್ಲಿ ಡೌನ್‌ಲೋಡ್ ಮಾಡುವುದು ಹೇಗೆ",
+  "@instructionsTitle": {
+    "description": "Title for the instructions dialog",
+    "type": "text",
+    "placeholders": {},
+    "tags": [
+      "itr_form_upload_personal_loan"
+    ]
+  },
+  "instructionsContent": "1. ಮೇಲಿನ ಬಲಭಾಗದಲ್ಲಿರುವ 'ಲಾಗಿನ್' ಬಟನ್ ಕ್ಲಿಕ್ ಮಾಡಿ ಮತ್ತು ನಿಮ್ಮ ಲಾಗಿನ್ ವಿವರಗಳನ್ನು ಬಳಸಿ ಲಾಗಿನ್ ಮಾಡಿ.\n2. ಮೇಲಿನ ನ್ಯಾವಿಗೇಶನ್ ಬಾರ್ನಿಂದ 'ಇ-ಫೈಲ್' ಕ್ಲಿಕ್ ಮಾಡಿ.\n3. 'ಇ-ಫೈಲ್' ಡ್ರಾಪ್‌ಡೌನ್ ಮೆನುನಿಂದ 'ಆದಾಯ ತೆರಿಗೆ ರಿಟರ್ನ್' ಕ್ಲಿಕ್ ಮಾಡಿ.\n4. 'ಆದಾಯ ತೆರಿಗೆ ರಿಟರ್ನ್' ಡ್ರಾಪ್‌ಡೌನ್ ಮೆನುನಿಂದ 'ಫೈಲ್ ಮಾಡಿದ ರಿಟರ್ನ್ಸ್ ನೋಡಿ' ಕ್ಲಿಕ್ ಮಾಡಿ.\n5. ನೀವು ಐಟಿಆರ್ ಪ್ರಕಾರ - 1/2 ಫೈಲ್ ಮಾಡಿದ್ದರೆ, 'ಫಾರ್ಮ್ ಡೌನ್‌ಲೋಡ್ ಮಾಡಿ' ಕ್ಲಿಕ್ ಮಾಡಿ, ಆ 'ಆ.ವ.'ಗಾಗಿ ಐಟಿಆರ್ ಪಿಡಿಎಫ್ ಫೈಲ್ ಡೌನ್‌ಲೋಡ್ ಮಾಡಲಾಗುತ್ತದೆ.\n6. ಡೌನ್‌ಲೋಡ್ ಮಾಡಲಾದ ಫೈಲ್‌ಗಳನ್ನು ಪ್ಲಾಟ್‌ಫಾರ್ಮ್‌ನಲ್ಲಿ ಅಪ್ಲೋಡ್ ಮಾಡಿ.",
+  "@instructionsContent": {
+    "description": "Content for instructions on how to download ITR",
+    "type": "text",
+    "placeholders": {},
+    "tags": [
+      "itr_form_upload_personal_loan"
+    ]
+  },
+  "instructionsButton": "ಸೂಚನೆಗಳು",
+  "@instructionsButton": {
+    "description": "Text for instructions button",
+    "type": "text",
+    "placeholders": {},
+    "tags": [
+      "itr_form_upload_personal_loan"
+    ]
+  },
+  "@declareFinancialDetails": {
+    "description": "Title of the form to declare financial details.",
+    "type": "text",
+    "tags": [
+      "itr_form_manual_personal_loan"
+    ]
+  },
+  "declareFinancialDetails": "ನಿಮ್ಮ ಹಣಕಾಸಿನ ವಿವರಗಳನ್ನು ಘೋಷಿಸಿ",
+  "@firstName": {
+    "description": "Label for the first name input field.",
+    "type": "text",
+    "tags": [
+      "itr_form_manual_personal_loan",
+      "basic_details_personal_loan"
+    ]
+  },
+  "firstName": "ಮೊದಲ ಹೆಸರು*",
+  "@firstNameHint": {
+    "description": "Hint text for the first name input field.",
+    "type": "text",
+    "tags": [
+      "itr_form_manual_personal_loan",
+      "basic_details_personal_loan"
+    ]
+  },
+  "firstNameHint": "ನಿಮ್ಮ ಮೊದಲ ಹೆಸರನ್ನು ನಮೂದಿಸಿ",
+  "@middleName": {
+    "description": "Label for the middle name input field.",
+    "type": "text",
+    "tags": [
+      "itr_form_manual_personal_loan",
+      "basic_details_personal_loan"
+    ]
+  },
+  "middleName": "ಮಧ್ಯ ಹೆಸರು",
+  "@middleNameHint": {
+    "description": "Hint text for the middle name input field.",
+    "type": "text",
+    "tags": [
+      "itr_form_manual_personal_loan",
+      "basic_details_personal_loan"
+    ]
+  },
+  "middleNameHint": "ನಿಮ್ಮ ಮಧ್ಯ ಹೆಸರನ್ನು ನಮೂದಿಸಿ",
+  "@lastName": {
+    "description": "Label for the last name input field.",
+    "type": "text",
+    "tags": [
+      "itr_form_manual_personal_loan",
+      "basic_details_personal_loan"
+    ]
+  },
+  "lastName": "ಕೊನೆಯ ಹೆಸರು*",
+  "@lastNameHint": {
+    "description": "Hint text for the last name input field.",
+    "type": "text",
+    "tags": [
+      "itr_form_manual_personal_loan",
+      "basic_details_personal_loan"
+    ]
+  },
+  "lastNameHint": "ನಿಮ್ಮ ಕೊನೆಯ ಹೆಸರನ್ನು ನಮೂದಿಸಿ",
+  "@dateOfBirth": {
+    "description": "Label for the date of birth input.",
+    "type": "text",
+    "tags": [
+      "itr_form_manual_personal_loan",
+      "basic_details_personal_loan"
+    ]
+  },
+  "dateOfBirth": "ಹುಟ್ಟು ದಿನಾಂಕ*",
+  "@dateOfBirthHint": {
+    "description": "Placeholder text for the date of birth button.",
+    "type": "text",
+    "tags": [
+      "itr_form_manual_personal_loan",
+      "basic_details_personal_loan"
+    ]
+  },
+  "dateOfBirthHint": "ಹುಟ್ಟು ದಿನಾಂಕ",
+  "@panNumber": {
+    "description": "Label for the PAN number input field.",
+    "type": "text",
+    "tags": [
+      "itr_form_manual_personal_loan",
+      "basic_details_personal_loan"
+    ]
+  },
+  "panNumber": "PAN ಸಂಖ್ಯೆ*",
+  "@panNumberHint": {
+    "description": "Hint text for the PAN number input field.",
+    "type": "text",
+    "tags": [
+      "itr_form_manual_personal_loan",
+      "basic_details_personal_loan"
+    ]
+  },
+  "panNumberHint": "ನಿಮ್ಮ PAN ಸಂಖ್ಯೆಯನ್ನು ನಮೂದಿಸಿ",
+  "@mobileNumber": {
+    "description": "Label for the mobile number input field.",
+    "type": "text",
+    "tags": [
+      "itr_form_manual_personal_loan",
+      "basic_details_personal_loan"
+    ]
+  },
+  "mobileNumber": "ಮೊಬೈಲ್ ನಂಬರ್*",
+  "@mobileNumberHint": {
+    "description": "Hint text for the mobile number input field.",
+    "type": "text",
+    "tags": [
+      "itr_form_manual_personal_loan",
+      "basic_details_personal_loan"
+    ]
+  },
+  "mobileNumberHint": "ನಿಮ್ಮ ಮೊಬೈಲ್ ನಂಬರನ್ನು ನಮೂದಿಸಿ",
+  "@email": {
+    "description": "Label for the personal email input field.",
+    "type": "text",
+    "tags": [
+      "itr_form_manual_personal_loan"
+    ]
+  },
+  "email": "ಇಮೇಲ್ (ವ್ಯಕ್ತಿಗತ)*",
+  "@emailHint": {
+    "description": "Hint text for the personal email input field.",
+    "type": "text",
+    "tags": [
+      "itr_form_manual_personal_loan"
+    ]
+  },
+  "emailHint": "ನಿಮ್ಮ ಇಮೇಲ್ ಅನ್ನು ನಮೂದಿಸಿ",
+  "@addressLine1": {
+    "description": "Label for the address line 1 input field.",
+    "type": "text",
+    "tags": [
+      "itr_form_manual_personal_loan"
+    ]
+  },
+  "addressLine1": "ವಿಳಾಸ ಸಾಲು 1*",
+  "@addressLine1Hint": {
+    "description": "Hint text for the address line 1 input field.",
+    "type": "text",
+    "tags": [
+      "itr_form_manual_personal_loan"
+    ]
+  },
+  "addressLine1Hint": "ನಿಮ್ಮ ವಿಳಾಸವನ್ನು ನಮೂದಿಸಿ",
+  "@addressLine2": {
+    "description": "Label for the address line 2 input field.",
+    "type": "text",
+    "tags": [
+      "itr_form_manual_personal_loan"
+    ]
+  },
+  "addressLine2": "ವಿಳಾಸ ಸಾಲು 2",
+  "@addressLine2Hint": {
+    "description": "Hint text for the address line 2 input field.",
+    "type": "text",
+    "tags": [
+      "itr_form_manual_personal_loan"
+    ]
+  },
+  "addressLine2Hint": "ನಿಮ್ಮ ವಿಳಾಸವನ್ನು ನಮೂದಿಸಿ",
+  "@landmark": {
+    "description": "Label for the landmark input field.",
+    "type": "text",
+    "tags": [
+      "itr_form_manual_personal_loan", "stakeholder_business_loan"
+    ]
+  },
+  "landmark": "ಲ್ಯಾಂಡ್ ಮಾರ್ಕ್",
+  "@landmarkHint": {
+    "description": "Hint text for the landmark input field.",
+    "type": "text",
+    "tags": [
+      "itr_form_manual_personal_loan", "stakeholder_business_loan"
+    ]
+  },
+  "landmarkHint": "ಲ್ಯಾಂಡ್ ಮಾರ್ಕ್ ಅನ್ನು ನಮೂದಿಸಿ",
+  "@country": {
+    "description": "Label for the country dropdown.",
+    "type": "text",
+    "tags": [
+      "itr_form_manual_personal_loan", "stakeholder_business_loan"
+    ]
+  },
+  "country": "ದೇಶ*",
+  "@state": {
+    "description": "Label for the state dropdown.",
+    "type": "text",
+    "tags": [
+      "itr_form_manual_personal_loan", "stakeholder_business_loan"
+    ]
+  },
+  "state": "ರಾಜ್ಯ*",
+  "@city": {
+    "description": "Label for the city dropdown.",
+    "type": "text",
+    "tags": [
+      "itr_form_manual_personal_loan", "stakeholder_business_loan"
+    ]
+  },
+  "city": "ನಗರ*",
+  "@pinCode": {
+    "description": "Label for the pin code input field.",
+    "type": "text",
+    "tags": [
+      "itr_form_manual_personal_loan", "stakeholder_business_loan"
+    ]
+  },
+  "pinCode": "ಪಿನ್ ಕೋಡ್*",
+  "@pinCodeHint": {
+    "description": "Hint text for the pin code input field.",
+    "type": "text",
+    "tags": [
+      "itr_form_manual_personal_loan", "stakeholder_business_loan"
+    ]
+  },
+  "pinCodeHint": "ನಿಮ್ಮ ಪಿನ್ ಕೋಡ್ ಅನ್ನು ನಮೂದಿಸಿ",
+  "@village": {
+    "description": "Label for the village input field.",
+    "type": "text",
+    "tags": [
+      "itr_form_manual_personal_loan", "stakeholder_business_loan"
+    ]
+  },
+  "village": "ಗ್ರಾಮ",
+  "@villageHint": {
+    "description": "Hint text for the village input field.",
+    "type": "text",
+    "tags": [
+      "itr_form_manual_personal_loan", "stakeholder_business_loan"
+    ]
+  },
+  "villageHint": "ನಿಮ್ಮ ಗ್ರಾಮವನ್ನು ನಮೂದಿಸಿ",
+  "@district": {
+    "description": "Label for the district input field.",
+    "type": "text",
+    "tags": [
+      "itr_form_manual_personal_loan", "stakeholder_business_loan"
+    ]
+  },
+  "district": "ಜಿಲ್ಲೆ*",
+  "@districtHint": {
+    "description": "Hint text for the district input field.",
+    "type": "text",
+    "tags": [
+      "itr_form_manual_personal_loan", "stakeholder_business_loan"
+    ]
+  },
+  "districtHint": "ನಿಮ್ಮ ಜಿಲ್ಲೆಯನ್ನು ನಮೂದಿಸಿ",
+  "@subDistrict": {
+    "description": "Label for the sub-district input field.",
+    "type": "text",
+    "tags": [
+      "itr_form_manual_personal_loan"
+    ]
+  },
+  "subDistrict": "ಉಪಜಿಲ್ಲೆ*",
+  "@subDistrictHint": {
+    "description": "Hint text for the sub-district input field.",
+    "type": "text",
+    "tags": [
+      "itr_form_manual_personal_loan", "stakeholder_business_loan"
+    ]
+  },
+  "subDistrictHint": "ನಿಮ್ಮ ಉಪಜಿಲ್ಲೆಯನ್ನು ನಮೂದಿಸಿ",
+  "@netAnnualIncome": {
+    "description": "Label for the net annual income input field.",
+    "type": "text",
+    "tags": [
+      "itr_form_manual_personal_loan", "stakeholder_business_loan"
+    ]
+  },
+  "netAnnualIncome": "ಶುದ್ಧ ವಾರ್ಷಿಕ ಆದಾಯ*",
+  "@netAnnualIncomeHint": {
+    "description": "Hint text for the net annual income input field.",
+    "type": "text",
+    "tags": [
+      "itr_form_manual_personal_loan"
+    ]
+  },
+  "netAnnualIncomeHint": "ನಿಮ್ಮ ಶುದ್ಧ ವಾರ್ಷಿಕ ಆದಾಯವನ್ನು ನಮೂದಿಸಿ",
+  "@annualIncome": {
+    "description": "Label for annual income input field.",
+    "type": "text",
+    "tags": [
+      "itr_form_manual_personal_loan"
+    ]
+  },
+  "annualIncome": "ವಾರ್ಷಿಕ ಆದಾಯ*",
+  "@annualIncomeHint": {
+    "description": "Hint text for the annual income input field.",
+    "type": "text",
+    "tags": [
+      "itr_form_manual_personal_loan"
+    ]
+  },
+  "annualIncomeHint": "ನಿಮ್ಮ ವಾರ್ಷಿಕ ಆದಾಯವನ್ನು ನಮೂದಿಸಿ",
+  "@submitButton": {
+    "description": "Label for the submit button.",
+    "type": "text",
+    "tags": [
+      "itr_form_manual_personal_loan"
+    ]
+  },
+  "submitButton": "ಸಮರ್ಪಿಸಲು",
+  "@proceedButton": {
+    "description": "Label for the proceed button.",
+    "type": "text",
+    "tags": [
+      "itr_form_manual_personal_loan",
+      "bank_details_personal_loan"
+    ]
+  },
+  "proceedButton": "ಮುಂದುವರಿಯಿರಿ",
+  "@bankDetails": {
+    "description": "Title for the bank details section.",
+    "type": "text",
+    "tags": [
+      "bank_details_personal_loan"
+    ]
+  },
+  "bankDetails": "ಬ್ಯಾಂಕ್ ವಿವರಗಳು",
+  "@addUpTo3Accounts": {
+    "description": "Message indicating how many bank accounts can be added.",
+    "type": "text",
+    "tags": [
+      "bank_details_personal_loan"
+    ]
+  },
+  "addUpTo3Accounts": "ನೀವು 3 ಬ್ಯಾಂಕ್ ಖಾತೆಗಳನ್ನು ಸೇರಿಸಬಹುದು",
+  "@uploadBankStatement": {
+    "description": "Label for uploading bank statement.",
+    "type": "text",
+    "tags": [
+      "bank_details_personal_loan"
+    ]
+  },
+  "uploadBankStatement": "ಬ್ಯಾಂಕ್ ಸ್ಟೇಟ್ಮೆಂಟ್ ಅಪ್ಲೋಡ್ ಮಾಡಿ (PDF)",
+  "@addAccount": {
+    "description": "Label for adding a new bank account button.",
+    "type": "text",
+    "tags": [
+      "bank_details_personal_loan"
+    ]
+  },
+  "addAccount": "ಖಾತೆ ಸೇರಿಸಿ",
+  "@bankName": {
+    "description": "Label for bank name field.",
+    "type": "text",
+    "tags": [
+      "bank_details_personal_loan"
+    ]
+  },
+  "bankName": "ಬ್ಯಾಂಕ್ ಹೆಸರು*",
+  "@enterBankName": {
+    "description": "Placeholder text for bank name input field.",
+    "type": "text",
+    "tags": [
+      "bank_details_personal_loan"
+    ]
+  },
+  "enterBankName": "ಬ್ಯಾಂಕ್ ಹೆಸರನ್ನು ನಮೂದಿಸಿ",
+  "@accountSinceMonth": {
+    "description": "Label for account since month field.",
+    "type": "text",
+    "tags": [
+      "bank_details_personal_loan"
+    ]
+  },
+  "accountSinceMonth": "ಖಾತೆ (ತಿಂಗಳು)*",
+  "@month": {
+    "description": "Placeholder text for selecting the month.",
+    "type": "text",
+    "tags": [
+      "bank_details_personal_loan", "stakeholder_business_loan"
+    ]
+  },
+  "month": "ತಿಂಗಳು",
+  "@accountSinceYear": {
+    "description": "Label for account since year field.",
+    "type": "text",
+    "tags": [
+      "bank_details_personal_loan", "stakeholder_business_loan"
+    ]
+  },
+  "accountSinceYear": "ಖಾತೆ (ವರ್ಷ)*",
+  "@yearButton": {
+    "description": "Placeholder text for selecting the year.",
+    "type": "text",
+    "tags": [
+      "bank_details_personal_loan"
+    ]
+  },
+  "yearButton": "ವರ್ಷ",
+  "@isSalaryAccount": {
+    "description": "Question asking if the account is a salary account.",
+    "type": "text",
+    "tags": [
+      "bank_details_personal_loan", "stakeholder_business_loan"
+    ]
+  },
+  "isSalaryAccount": "ಇದು ವೇತನ ಖಾತೆವೆ?",
+  "@yesButton": {
+    "description": "Option for 'Yes' in response to a question.",
+    "type": "text",
+    "tags": [
+      "bank_details_personal_loan"
+    ]
+  },
+  "yesButton": "ಹೌದು",
+  "@noButton": {
+    "description": "Option for 'No' in response to a question.",
+    "type": "text",
+    "tags": [
+      "bank_details_personal_loan"
+    ]
+  },
+  "noButton": "ಇಲ್ಲ",
+  "drag_file_here": "ಫೈಲ್ ಅನ್ನು ಇಲ್ಲಿ ಎಳೆಯಿರಿ",
+  "@drag_file_here": {
+    "description": "Text for dragging and dropping a file.",
+    "type": "text",
+    "tags": [
+      "bank_details_personal_loan", "bank_details_business_loan"
+    ]
+  },
+  "@basicDetails": {
+    "description": "Title for the basic details section",
+    "type": "text",
+    "tags": [
+      "basic_details_personal_loan"
+    ]
+  },
+  "basicDetails": "ಮೂಲ ಮಾಹಿತಿಗಳು",
+  "@salutation": {
+    "description": "Label for salutation dropdown",
+    "type": "text",
+    "tags": [
+      "basic_details_personal_loan"
+    ]
+  },
+  "salutation": "ನಮಸ್ಕಾರ*",
+  "@selectSalutation": {
+    "description": "Placeholder for selecting salutation",
+    "type": "text",
+    "tags": [
+      "basic_details_personal_loan"
+    ]
+  },
+  "selectSalutation": "ನಮಸ್ಕಾರ ಆಯ್ಕೆ ಮಾಡಿ",
+  "@gender": {
+    "description": "Label for gender dropdown",
+    "type": "text",
+    "tags": [
+      "basic_details_personal_loan"
+    ]
+  },
+  "gender": "ಲಿಂಗ*",
+  "@selectGender": {
+    "description": "Placeholder for selecting gender",
+    "type": "text",
+    "tags": [
+      "basic_details_personal_loan"
+    ]
+  },
+  "selectGender": "ಲಿಂಗ ಆಯ್ಕೆ ಮಾಡಿ",
+  "@category": {
+    "description": "Label for category dropdown",
+    "type": "text",
+    "tags": [
+      "basic_details_personal_loan"
+    ]
+  },
+  "category": "ವರ್ಗ*",
+  "@selectCategory": {
+    "description": "Placeholder for selecting category",
+    "type": "text",
+    "tags": [
+      "basic_details_personal_loan"
+    ]
+  },
+  "selectCategory": "ವರ್ಗ ಆಯ್ಕೆ ಮಾಡಿ",
+  "@emailPersonal": {
+    "description": "Label for personal email input field",
+    "type": "text",
+    "tags": [
+      "basic_details_personal_loan"
+    ]
+  },
+  "emailPersonal": "ಇಮೇಲ್ (ವ್ಯಕ್ತಿಗತ)*",
+  "@enterEmailPersonal": {
+    "description": "Placeholder for entering personal email",
+    "type": "text",
+    "tags": [
+      "basic_details_personal_loan"
+    ]
+  },
+  "enterEmailPersonal": "ವ್ಯಕ್ತಿಗತ ಇಮೇಲ್ ನಮೂದಿಸಿ",
+  "@fatherName": {
+    "description": "Label for father's name input field",
+    "type": "text",
+    "tags": [
+      "basic_details_personal_loan"
+    ]
+  },
+  "fatherName": "ತಂದೆಯ ಹೆಸರು",
+  "@enterFatherName": {
+    "description": "Placeholder for entering father's name",
+    "type": "text",
+    "tags": [
+      "basic_details_personal_loan"
+    ]
+  },
+  "enterFatherName": "ತಂದೆಯ ಹೆಸರು ನಮೂದಿಸಿ",
+  "@educationQualification": {
+    "description": "Label for education qualification dropdown",
+    "type": "text",
+    "tags": [
+      "basic_details_personal_loan"
+    ]
+  },
+  "educationQualification": "ಶಿಕ್ಷಣ ಅರ್ಹತೆ*",
+  "@selectEducationQualification": {
+    "description": "Placeholder for selecting education qualification",
+    "type": "text",
+    "tags": [
+      "basic_details_personal_loan"
+    ]
+  },
+  "selectEducationQualification": "ಶಿಕ್ಷಣ ಅರ್ಹತೆ ಆಯ್ಕೆ ಮಾಡಿ",
+  "@netWorth": {
+    "description": "Label for net worth input field",
+    "type": "text",
+    "tags": [
+      "basic_details_personal_loan"
+    ]
+  },
+  "netWorth": "ಆರ್ಥಿಕ ಶಕ್ತಿ*",
+  "@enterNetWorth": {
+    "description": "Placeholder for entering net worth",
+    "type": "text",
+    "tags": [
+      "basic_details_personal_loan"
+    ]
+  },
+  "enterNetWorth": "ಆರ್ಥಿಕ ಶಕ್ತಿ ನಮೂದಿಸಿ",
+  "@nationality": {
+    "description": "Label for nationality dropdown",
+    "type": "text",
+    "tags": [
+      "basic_details_personal_loan"
+    ]
+  },
+  "nationality": "ರಾಷ್ಟ್ರೀಯತೆಯನ್ನು*",
+  "@selectNationality": {
+    "description": "Placeholder for selecting nationality",
+    "type": "text",
+    "tags": [
+      "basic_details_personal_loan"
+    ]
+  },
+  "selectNationality": "ರಾಷ್ಟ್ರೀಯತೆಯನ್ನು ಆಯ್ಕೆ ಮಾಡಿ",
+  "@dependents": {
+    "description": "Label for dependents dropdown",
+    "type": "text",
+    "tags": [
+      "basic_details_personal_loan"
+    ]
+  },
+  "dependents": "ಅನುದಾನಗಳು*",
+  "@selectDependents": {
+    "description": "Placeholder for selecting dependents",
+    "type": "text",
+    "tags": [
+      "basic_details_personal_loan"
+    ]
+  },
+  "selectDependents": "ಅನುದಾನಗಳನ್ನು ಆಯ್ಕೆ ಮಾಡಿ",
+  "@maritalStatus": {
+    "description": "Label for marital status dropdown",
+    "type": "text",
+    "tags": [
+      "basic_details_personal_loan"
+    ]
+  },
+  "maritalStatus": "ಮದುವೆ ಸ್ಥಿತಿ*",
+  "@selectMaritalStatus": {
+    "description": "Placeholder for selecting marital status",
+    "type": "text",
+    "tags": [
+      "basic_details_personal_loan"
+    ]
+  },
+  "selectMaritalStatus": "ಮದುವೆ ಸ್ಥಿತಿಯನ್ನು ಆಯ್ಕೆ ಮಾಡಿ",
+  "@employmentDetails": {
+    "description": "Label for the employment details page",
+    "type": "text",
+    "tags": [
+      "employment_details_personal_loan"
+    ]
+  },
+  "employmentDetails": "ಉದ್ಯೋಗ ವಿವರಗಳು",
+  "@employmentStatus": {
+    "description": "Label for employment status dropdown",
+    "type": "text",
+    "tags": [
+      "employment_details_personal_loan"
+    ]
+  },
+  "employmentStatus": "ಉದ್ಯೋಗ ಸ್ಥಿತಿ*",
+  "@selectEmploymentStatus": {
+    "description": "Placeholder for selecting employment status",
+    "type": "text",
+    "tags": [
+      "employment_details_personal_loan"
+    ]
+  },
+  "selectEmploymentStatus": "ಉದ್ಯೋಗ ಸ್ಥಿತಿ ಆಯ್ಕೆ ಮಾಡಿರಿ",
+  "@designation": {
+    "description": "Label for designation dropdown",
+    "type": "text",
+    "tags": [
+      "employment_details_personal_loan"
+    ]
+  },
+  "designation": "ನಾಮಾಂಕಿತ*",
+  "@selectDesignation": {
+    "description": "Placeholder for selecting designation",
+    "type": "text",
+    "tags": [
+      "employment_details_personal_loan"
+    ]
+  },
+  "selectDesignation": "ನಾಮಾಂಕಿತ ಆಯ್ಕೆ ಮಾಡಿರಿ",
+  "@employmentType": {
+    "description": "Label for employment type dropdown",
+    "type": "text",
+    "tags": [
+      "employment_details_personal_loan"
+    ]
+  },
+  "employmentType": "ಉದ್ಯೋಗ ಪ್ರಕಾರ*",
+  "@selectEmploymentType": {
+    "description": "Placeholder for selecting employment type",
+    "type": "text",
+    "tags": [
+      "employment_details_personal_loan"
+    ]
+  },
+  "selectEmploymentType": "ಉದ್ಯೋಗ ಪ್ರಕಾರ ಆಯ್ಕೆ ಮಾಡಿರಿ",
+  "@modeOfSalary": {
+    "description": "Label for mode of salary dropdown",
+    "type": "text",
+    "tags": [
+      "employment_details_personal_loan"
+    ]
+  },
+  "modeOfSalary": "Salary Modal*",
+  "@selectModeOfSalary": {
+    "description": "Placeholder for selecting mode of salary",
+    "type": "text",
+    "tags": [
+      "employment_details_personal_loan"
+    ]
+  },
+  "selectModeOfSalary": "Salary Modal ಆಯ್ಕೆ ಮಾಡಿರಿ",
+  "@grossMonthlyIncome": {
+    "description": "Label for gross monthly income input field",
+    "type": "text",
+    "tags": [
+      "employment_details_personal_loan"
+    ]
+  },
+  "grossMonthlyIncome": "ಒಟ್ಟೆ ಮಾಸಿಕ ಆದಾಯ*",
+  "@enterGrossMonthlyIncome": {
+    "description": "Placeholder for entering gross monthly income",
+    "type": "text",
+    "tags": [
+      "employment_details_personal_loan"
+    ]
+  },
+  "enterGrossMonthlyIncome": "ನಿಮ್ಮ ಒಟ್ಟೆ ಮಾಸಿಕ ಆದಾಯವನ್ನು ನಮೂದಿಸಿ",
+  "@netMonthlyIncome": {
+    "description": "Label for net monthly income input field",
+    "type": "text",
+    "tags": [
+      "employment_details_personal_loan"
+    ]
+  },
+  "netMonthlyIncome": "ನಿವ್ವಳ ಮಾಸಿಕ ಆದಾಯ*",
+  "@enterNetMonthlyIncome": {
+    "description": "Placeholder for entering net monthly income",
+    "type": "text",
+    "tags": [
+      "employment_details_personal_loan"
+    ]
+  },
+  "enterNetMonthlyIncome": "ನಿಮ್ಮ ನಿವ್ವಳ ಮಾಸಿಕ ಆದಾಯವನ್ನು ನಮೂದಿಸಿ",
+  "@creditInformationTitle": {
+    "description": "Title of the Credit Information page",
+    "type": "text",
+    "tags": [
+      "credit_info_personal_loan"
+    ]
+  },
+  "creditInformationTitle": "ಕ್ರೆಡಿಟ್ ಮಾಹಿತಿ",
+  "@declareCreditInformation": {
+    "description": "Heading for declaring credit information",
+    "type": "text",
+    "tags": [
+      "credit_info_personal_loan"
+    ]
+  },
+  "declareCreditInformation": "ಕ್ರೆಡಿಟ್ ಮಾಹಿತಿ ಘೋಷಿಸಿ",
+  "@loanTypeLabel": {
+    "description": "Label for loan type dropdown",
+    "type": "text",
+    "tags": [
+      "credit_info_personal_loan"
+    ]
+  },
+  "loanTypeLabel": "ಕಡನದ ಪ್ರಕಾರ*",
+  "@selectLoanType": {
+    "description": "Placeholder for selecting loan type",
+    "type": "text",
+    "tags": [
+      "credit_info_personal_loan"
+    ]
+  },
+  "selectLoanType": "ಕಡನದ ಪ್ರಕಾರವನ್ನು ಆಯ್ಕೆಮಾಡಿ",
+  "@lenderLabel": {
+    "description": "Label for lender input field",
+    "type": "text",
+    "tags": [
+      "credit_info_personal_loan"
+    ]
+  },
+  "lenderLabel": "ಸಾಲದಾತ*",
+  "@enterLenderPlaceholder": {
+    "description": "Placeholder for entering lender name",
+    "type": "text",
+    "tags": [
+      "credit_info_personal_loan"
+    ]
+  },
+  "enterLenderPlaceholder": "ಸಾಲದಾತನ ಹೆಸರನ್ನು ನಮೂದಿಸಿ",
+  "@sanctionedAmountLabel": {
+    "description": "Label for sanctioned amount input field",
+    "type": "text",
+    "tags": [
+      "credit_info_personal_loan"
+    ]
+  },
+  "sanctionedAmountLabel": "ಮಂಜೂರು ಮಾಡಿದ ಮೊತ್ತ (₹)*",
+  "@enterSanctionedAmountPlaceholder": {
+    "description": "Placeholder for entering sanctioned amount",
+    "type": "text",
+    "tags": [
+      "credit_info_personal_loan"
+    ]
+  },
+  "enterSanctionedAmountPlaceholder": "ಮಂಜೂರು ಮಾಡಿದ ಮೊತ್ತವನ್ನು ನಮೂದಿಸಿ",
+  "@outstandingAmountLabel": {
+    "description": "Label for outstanding amount input field",
+    "type": "text",
+    "tags": [
+      "credit_info_personal_loan"
+    ]
+  },
+  "outstandingAmountLabel": "ಬಾಕಿ ಮೊತ್ತ (₹)*",
+  "@enterOutstandingAmountPlaceholder": {
+    "description": "Placeholder for entering outstanding amount",
+    "type": "text",
+    "tags": [
+      "credit_info_personal_loan"
+    ]
+  },
+  "enterOutstandingAmountPlaceholder": "ಬಾಕಿ ಮೊತ್ತವನ್ನು ನಮೂದಿಸಿ",
+  "@emiAmountLabel": {
+    "description": "Label for EMI amount input field",
+    "type": "text",
+    "tags": [
+      "credit_info_personal_loan"
+    ]
+  },
+  "emiAmountLabel": "EMI ಮೊತ್ತ (₹)*",
+  "@enterEmiAmountPlaceholder": {
+    "description": "Placeholder for entering EMI amount",
+    "type": "text",
+    "tags": [
+      "credit_info_personal_loan"
+    ]
+  },
+  "enterEmiAmountPlaceholder": "EMI ಮೊತ್ತವನ್ನು ನಮೂದಿಸಿ",
+  "@addExistingLoanButton": {
+    "description": "Label for the button to add an existing loan",
+    "type": "text",
+    "tags": [
+      "credit_info_personal_loan"
+    ]
+  },
+  "addExistingLoanButton": "ಪ್ರಸ್ತುತ ಸಾಲವನ್ನು ಸೇರಿಸಿ",
+
+
+
+
+
+
+
+
+
+
+
+
+  "@contactDetailsTitle": {
+    "description": "Title of the Contact Details page",
+    "type": "text",
+    "tags": ["contact_detail_personal_loan"]
+  },
+  "contactDetailsTitle": "ಸಂಪರ್ಕ ವಿವರಗಳು",
+
+  "@addressLine1Label": {
+    "description": "Label for Address Line 1 input field",
+    "type": "text",
+    "tags": ["contact_detail_personal_loan"]
+  },
+  "addressLine1Label": "ವಿಳಾಸ ಸಾಲು 1*",
+
+  "@addressLine1Placeholder": {
+    "description": "Placeholder for Address Line 1 input field",
+    "type": "text",
+    "tags": ["contact_detail_personal_loan"]
+  },
+  "addressLine1Placeholder": "ನಿಮ್ಮ ಕಟ್ಟಡದ ಸಂಖ್ಯೆಯನ್ನು ನಮೂದಿಸಿ",
+
+  "@addressLine2Label": {
+    "description": "Label for Address Line 2 input field",
+    "type": "text",
+    "tags": ["contact_detail_personal_loan"]
+  },
+  "addressLine2Label": "ವಿಳಾಸ ಸಾಲು 2",
+
+  "@addressLine2Placeholder": {
+    "description": "Placeholder for Address Line 2 input field",
+    "type": "text",
+    "tags": ["contact_detail_personal_loan"]
+  },
+  "addressLine2Placeholder": "ನಿಮ್ಮ ರಸ್ತೆ ಹೆಸರನ್ನು ನಮೂದಿಸಿ",
+
+  "@landmarkLabel": {
+    "description": "Label for Landmark input field",
+    "type": "text",
+    "tags": ["contact_detail_personal_loan"]
+  },
+  "landmarkLabel": "ಪ್ರಮುಖ ಸ್ಥಳ",
+
+  "@landmarkPlaceholder": {
+    "description": "Placeholder for Landmark input field",
+    "type": "text",
+    "tags": ["contact_detail_personal_loan"]
+  },
+  "landmarkPlaceholder": "ನಿಮ್ಮ ಪ್ರಮುಖ ಸ್ಥಳವನ್ನು ನಮೂದಿಸಿ",
+
+  "@countryLabel": {
+    "description": "Label for Country dropdown",
+    "type": "text",
+    "tags": ["contact_detail_personal_loan"]
+  },
+  "countryLabel": "ದೇಶ*",
+
+  "@countryPlaceholder": {
+    "description": "Placeholder for Country dropdown",
+    "type": "text",
+    "tags": ["contact_detail_personal_loan"]
+  },
+  "countryPlaceholder": "ನಿಮ್ಮ ದೇಶವನ್ನು ಆಯ್ಕೆಮಾಡಿ",
+
+  "@stateLabel": {
+    "description": "Label for State dropdown",
+    "type": "text",
+    "tags": ["contact_detail_personal_loan", "declare_business_gst_details_business_loan"]
+  },
+  "stateLabel": "ರಾಜ್ಯ*",
+
+  "@statePlaceholder": {
+    "description": "Placeholder for State dropdown",
+    "type": "text",
+    "tags": ["contact_detail_personal_loan", "declare_business_gst_details_business_loan"]
+  },
+  "statePlaceholder": "ನಿಮ್ಮ ರಾಜ್ಯವನ್ನು ಆಯ್ಕೆಮಾಡಿ",
+
+  "@cityLabel": {
+    "description": "Label for City dropdown",
+    "type": "text",
+    "tags": ["contact_detail_personal_loan", "declare_business_gst_details_business_loan"]
+  },
+  "cityLabel": "ನಗರ*",
+
+  "@cityPlaceholder": {
+    "description": "Placeholder for City dropdown",
+    "type": "text",
+    "tags": ["contact_detail_personal_loan", "declare_business_gst_details_business_loan"]
+  },
+  "cityPlaceholder": "ನಿಮ್ಮ ನಗರವನ್ನು ಆಯ್ಕೆಮಾಡಿ",
+
+  "@pinCodeLabel": {
+    "description": "Label for Pin Code input field",
+    "type": "text",
+    "tags": ["contact_detail_personal_loan"]
+  },
+  "pinCodeLabel": "ಪಿನ್ ಕೋಡ್*",
+
+  "@pinCodePlaceholder": {
+    "description": "Placeholder for Pin Code input field",
+    "type": "text",
+    "tags": ["contact_detail_personal_loan"]
+  },
+  "pinCodePlaceholder": "ನಿಮ್ಮ ಪಿನ್ ಕೋಡ್ ನಮೂದಿಸಿ",
+
+  "@villageLabel": {
+    "description": "Label for Village/Town input field",
+    "type": "text",
+    "tags": ["contact_detail_personal_loan"]
+  },
+  "villageLabel": "ಗ್ರಾಮ/ಪಟ್ಟಣ",
+
+  "@villagePlaceholder": {
+    "description": "Placeholder for Village/Town input field",
+    "type": "text",
+    "tags": ["contact_detail_personal_loan"]
+  },
+  "villagePlaceholder": "ನಿಮ್ಮ ಗ್ರಾಮ/ಪಟ್ಟಣ ನಮೂದಿಸಿ",
+
+  "@districtLabel": {
+    "description": "Label for District input field",
+    "type": "text",
+    "tags": ["contact_detail_personal_loan"]
+  },
+  "districtLabel": "ಜಿಲ್ಲೆ*",
+
+  "@districtPlaceholder": {
+    "description": "Placeholder for District input field",
+    "type": "text",
+    "tags": ["contact_detail_personal_loan"]
+  },
+  "districtPlaceholder": "ನಿಮ್ಮ ಜಿಲ್ಲೆಯನ್ನು ನಮೂದಿಸಿ",
+
+  "@subDistrictLabel": {
+    "description": "Label for Sub-District input field",
+    "type": "text",
+    "tags": ["contact_detail_personal_loan"]
+  },
+  "subDistrictLabel": "ಉಪ-ಜಿಲ್ಲೆ*",
+
+  "@subDistrictPlaceholder": {
+    "description": "Placeholder for Sub-District input field",
+    "type": "text",
+    "tags": ["contact_detail_personal_loan"]
+  },
+  "subDistrictPlaceholder": "ನಿಮ್ಮ ಉಪ-ಜಿಲ್ಲೆ ನಮೂದಿಸಿ",
+
+  "@residenceSinceMonthLabel": {
+    "description": "Label for Residence Since (Month) picker",
+    "type": "text",
+    "tags": ["contact_detail_personal_loan"]
+  },
+  "residenceSinceMonthLabel": "ವಾಸಮಾಡುತ್ತಿದ್ದ ಸಮಯ (ತಿಂಗಳು)",
+
+  "@residenceSinceYearLabel": {
+    "description": "Label for Residence Since (Year) picker",
+    "type": "text",
+    "tags": ["contact_detail_personal_loan"]
+  },
+  "residenceSinceYearLabel": "ವಾಸಮಾಡುತ್ತಿದ್ದ ಸಮಯ (ವರ್ಷ)",
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  "@loanDetailsTitle": {
+    "description": "Title for Loan Details section",
+    "type": "text",
+    "tags": ["loan_form_personal_loan"]
+  },
+  "loanDetailsTitle": "ಕೋರುವ ವಿವರಗಳು",
+
+  "@loanPurposeLabel": {
+    "description": "Label for Loan Purpose dropdown",
+    "type": "text",
+    "tags": ["loan_form_personal_loan"]
+  },
+  "loanPurposeLabel": "ಕೋರುವ ಉದ್ದೇಶ*",
+
+  "@loanPurposePlaceholder": {
+    "description": "Placeholder for Loan Purpose dropdown",
+    "type": "text",
+    "tags": ["loan_form_personal_loan"]
+  },
+  "loanPurposePlaceholder": "ಕೋರುವ ಉದ್ದೇಶವನ್ನು ಆಯ್ಕೆ ಮಾಡಿ",
+
+  "@loanAmountLabel": {
+    "description": "Label for Loan Amount input field",
+    "type": "text",
+    "tags": ["loan_form_personal_loan"]
+  },
+  "loanAmountLabel": "ಅಗತ್ಯ ಕೋರು ಮೊತ್ತ*",
+
+  "@loanAmountHint": {
+    "description": "Hint text for Loan Amount input field",
+    "type": "text",
+    "tags": ["loan_form_personal_loan"]
+  },
+  "loanAmountHint": "ಕೋರು ಮೊತ್ತವನ್ನು ನಮೂದಿಸಿ",
+
+  "@tenureLabel": {
+    "description": "Label for Tenure input field",
+    "type": "text",
+    "tags": ["loan_form_personal_loan"]
+  },
+  "tenureLabel": "ಕಾಲಾವಧಿ (ವರ್ಷ)*",
+
+  "@tenureHint": {
+    "description": "Hint text for Tenure input field",
+    "type": "text",
+    "tags": ["loan_form_personal_loan"]
+  },
+  "tenureHint": "ಕಾಲಾವಧಿಯನ್ನು ನಮೂದಿಸಿ",
+
+  "@retirementAgeLabel": {
+    "description": "Label for Retirement Age input field",
+    "type": "text",
+    "tags": ["loan_form_personal_loan"]
+  },
+  "retirementAgeLabel": "ಅನುದಾನರಹಿತ ವಯಸ್ಸು (ವರ್ಷ)*",
+
+  "@retirementAgeHint": {
+    "description": "Hint text for Retirement Age input field",
+    "type": "text",
+    "tags": ["loan_form_personal_loan"]
+  },
+  "retirementAgeHint": "ಅನುದಾನರಹಿತ ವಯಸ್ಸನ್ನು ನಮೂದಿಸಿ",
+
+  "@yourEmployerWillTitle": {
+    "description": "Title for Your Employer Will section",
+    "type": "text",
+    "tags": ["loan_form_personal_loan"]
+  },
+  "yourEmployerWillTitle": "ನಿಮ್ಮ ಉದ್ಯೋಗಿ",
+
+  "@emiFromSalaryAccountText": {
+    "description": "Question about EMI payment from salary account",
+    "type": "text",
+    "tags": ["loan_form_personal_loan"]
+  },
+  "emiFromSalaryAccountText": "ನೀವು ನಿಮ್ಮ ವೇತನ ಖಾತೆಯಿಂದ ನೇರವಾಗಿ EMI ಅನ್ನು ಪಾವತಿಸುತ್ತೀರಾ?",
+
+  "@outstandingLoanTerminalPaymentsText": {
+    "description": "Question about paying outstanding loan amount from terminal payments",
+    "type": "text",
+    "tags": ["loan_form_personal_loan"]
+  },
+  "outstandingLoanTerminalPaymentsText": "ನೀವು ನಿಮ್ಮ ಉದ್ಯೋಗಿಯ ಬಿಡುವಿನ ಸಮಯದಲ್ಲಿ ಟರ್ಮಿನಲ್ ಪಾವತಿಗಳಿಂದ ಬಾಕಿ ಹಣವನ್ನು ಪಾವತಿಸಲು ಒಪ್ಪುತ್ತೀರಾ?",
+
+  "@salaryAccountConfirmationText": {
+    "description": "Question about paying salary only in salary account and getting NOC",
+    "type": "text",
+    "tags": ["loan_form_personal_loan"]
+  },
+  "salaryAccountConfirmationText": "ನೀವು ಕೇವಲ ನಿಮ್ಮ ವೇತನ ಖಾತೆಯಲ್ಲಿ ವೇತನವನ್ನು ಪಡೆಯುತ್ತೀರಾ ಮತ್ತು ಖಾತೆಗಳನ್ನು ಬದಲಾಯಿಸುವ ಮೊದಲು ಬ್ಯಾಂಕಿನಿಂದ ದೃಢೀಕರಣ (NOC) ಪಡೆಯುತ್ತೀರಾ?",
+
+  "@whetherYouWillTitle": {
+    "description": "Title for Whether you (Employer/Borrower) will section",
+    "type": "text",
+    "tags": ["loan_form_personal_loan"]
+  },
+  "whetherYouWillTitle": "ನೀವು (ಉದ್ಯೋಗಿ/ಊರ್ತಿಕರ್ತಾ) ಮಾಡುತ್ತೀರಾ",
+
+  "@issueLetterOutstandingLoanText": {
+    "description": "Question about issuing letter to employer to pay outstanding loan",
+    "type": "text",
+    "tags": ["loan_form_personal_loan"]
+  },
+  "issueLetterOutstandingLoanText": "ನೀವು ನಿಮ್ಮ ಉದ್ಯೋಗಿಗೆ, ಅವರು ಟರ್ಮಿನಲ್ ಪಾವತಿಗಳಿಂದ ಬಾಕಿ ಹಣವನ್ನು ಪಾವತಿಸುತ್ತಾರೆ ಎಂಬ ಪತ್ರವನ್ನು ಬಿಡುಗಡೆ ಮಾಡುತ್ತೀರಾ?",
+
+  "@issueLetterNotChangeAccountText": {
+    "description": "Question about issuing letter to employer to not change salary account",
+    "type": "text",
+    "tags": ["loan_form_personal_loan"]
+  },
+  "issueLetterNotChangeAccountText": "ನೀವು ನಿಮ್ಮ ಉದ್ಯೋಗಿಗೆ, ಪಾವತಿ ಖಾತೆ ಬದಲಾಯಿಸದಂತೆ ತಿಳಿಸುತ್ತಿದ್ದೀರಿ ಮತ್ತು ಬದಲಾವಣೆಗಳಿದ್ದಾಗ ಬ್ಯಾಂಕಿನಿಂದ ದೃಢೀಕರಣ (NOC) ಪಡೆಯುತ್ತೀರಾ?",
+
+  "@repaymentMethodLabel": {
+    "description": "Label for Repayment Method dropdown",
+    "type": "text",
+    "tags": ["loan_form_personal_loan"]
+  },
+  "repaymentMethodLabel": "ಪಾವತಿ ವಿಧಾನ*",
+
+  "@repaymentMethodPlaceholder": {
+    "description": "Placeholder for Repayment Method dropdown",
+    "type": "text",
+    "tags": ["loan_form_personal_loan"]
+  },
+  "repaymentMethodPlaceholder": "ಪಾವತಿ ವಿಧಾನವನ್ನು ಆಯ್ಕೆ ಮಾಡಿ",
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  "@chooseBusinessProfile": {
+    "description": "Text for choosing a business profile",
+    "type": "text",
+    "tags": ["business_loan_journey"]
+  },
+  "chooseBusinessProfile": "ನಿಮ್ಮ ವ್ಯಾಪಾರ ಪ್ರೊಫೈಲ್ ಆಯ್ಕೆ ಮಾಡಿ",
+
+  "@selectedProfileBusiness": {
+    "description": "Text showing the selected business profile",
+    "type": "text",
+    "tags": ["business_loan_journey"]
+  },
+  "selectedProfileBusiness": "ಆಯ್ಕೆಯಾದ ಪ್ರೊಫೈಲ್: ABC ಪ್ರೈವೇಟ್ ಲಿಮಿಟೆಡ್",
+
+  "@selectProfileDescription": {
+    "description": "Instructions for selecting or creating a business profile",
+    "type": "text",
+    "tags": ["business_loan_journey"]
+  },
+  "selectProfileDescription": "ಪಟ್ಟಿಯಲ್ಲಿಂದ ನಿಮ್ಮ ವ್ಯಾಪಾರ ಪ್ರೊಫೈಲ್ ಆಯ್ಕೆ ಮಾಡಿ. ನೀವು ಪ್ರೊಫೈಲ್ ಇಲ್ಲದಿದ್ದರೆ, ಹೊಸ ಪ್ರೊಫೈಲ್ ಸಹ ರಚಿಸಬಹುದು.",
+
+  "@itrFormDescription": {
+    "description": "Description of the importance of the Income Tax Return",
+    "type": "text",
+    "tags": ["business_loan_journey"]
+  },
+  "itrFormDescription": "ನಿಮ್ಮ ವ್ಯಾಪಾರದ ಆದಾಯ ತೆರಿಗೆ ರಿಟರ್ನ್ (ITR) ನೀಡುವುದು ಅತೀ ಮುಖ್ಯ, ಏಕೆಂದರೆ ಇದು ನಿಮ್ಮ ಕಂಪನಿಯ ಹಣಕಾಸಿನ ಆರೋಗ್ಯ ಮತ್ತು ಸ್ಥಿರತೆಯನ್ನು ತೋರಿಸುತ್ತದೆ.",
+
+  "@itrButtonTitleBusiness": {
+    "description": "Button title for submitting the Income Tax Return",
+    "type": "text",
+    "tags": ["business_loan_journey"]
+  },
+  "itrButtonTitleBusiness": "ಆಯಕರ್ ವಾಪಸು",
+
+  "@itrButtonDescriptionBusiness": {
+    "description": "Instructions for providing the Income Tax Return",
+    "type": "text",
+    "tags": ["business_loan_journey"]
+  },
+  "itrButtonDescriptionBusiness": "ನಿಮ್ಮ ವ್ಯಾಪಾರಕ್ಕೆ ಸಂಬಂಧಿಸಿದ ಕೊನೆಯ 3 ವರ್ಷಗಳ ಆಯಕರ್ ವಾಪಸು ನೀಡಿರಿ.",
+
+  "@gstFormDescription": {
+    "description": "Description of the importance of GST details",
+    "type": "text",
+    "tags": ["business_loan_journey"]
+  },
+  "gstFormDescription": "ನಿಮ್ಮ GST ರಿಟರ್ನ್ ನೀಡುವುದು ನಿಮ್ಮ ವ್ಯಾಪಾರದ ತೆರಿಗೆ ನಿಯಮಗಳಿಗೆ ಅನುಕೂಲವಾಗುವುದನ್ನು ತೋರಿಸುತ್ತದೆ, ಇದು ಸಾಲದ ಅನುಮೋದನೆಯಲ್ಲಿ ಪ್ರಮುಖ ಅಂಶವಾಗಿದೆ.",
+
+  "@gstButtonTitle": {
+    "description": "Button title for submitting GST details",
+    "type": "text",
+    "tags": ["business_loan_journey"]
+  },
+  "gstButtonTitle": "GST ವಿವರಗಳು",
+
+  "@gstButtonDescription": {
+    "description": "Instructions for providing GST details",
+    "type": "text",
+    "tags": ["business_loan_journey"]
+  },
+  "gstButtonDescription": "ನಿಮ್ಮ GST ನೋಂದಣಿ ಸಂಖ್ಯೆಯ ಮತ್ತು ರಿಟರ್ನ್ ವಿವರಗಳನ್ನು ಒದಗಿಸಿ.",
+
+  "@bankDetailsDescription": {
+    "description": "Description of the importance of submitting bank details",
+    "type": "text",
+    "tags": ["business_loan_journey"]
+  },
+  "bankDetailsDescription": "ನಿಮ್ಮ ವ್ಯಾಪಾರದ ಬ್ಯಾಂಕ್ ವಿವರಗಳನ್ನು ಒದಗಿಸುವುದು ಸಾಲದದಾರರಿಗೆ ನಿಮ್ಮ ಹಣಕಾಸಿನ ಆರೋಗ್ಯ ಮತ್ತು ನಗದು ಹರಿವನ್ನು ಅರ್ಥಮಾಡಿಕೊಳ್ಳಲು ಸಹಾಯ ಮಾಡುತ್ತದೆ.",
+
+  "@bankButtonTitle": {
+    "description": "Button title for submitting bank details",
+    "type": "text",
+    "tags": ["business_loan_journey"]
+  },
+  "bankButtonTitle": "ಬ್ಯಾಂಕ್ ವಿವರಗಳು",
+
+  "@bankButtonDescription": {
+    "description": "Instructions for providing bank details",
+    "type": "text",
+    "tags": ["business_loan_journey"]
+  },
+  "bankButtonDescription": "ನಿಮ್ಮ ವ್ಯಾಪಾರದ ಬ್ಯಾಂಕ್ ವಿವರಗಳು ಮತ್ತು ಬ್ಯಾಂಕ್ ಪಟ್ಟಿ ನೀಡಲು ಒದಗಿಸಿ.",
+
+  "@stakeholdersDescription": {
+    "description": "Description of the importance of providing stakeholder details",
+    "type": "text",
+    "tags": ["business_loan_journey"]
+  },
+  "stakeholdersDescription": "ಪ್ರಮುಖ ಭಾಗಸಹಾಯಕರ ಕುರಿತು ವಿವರಗಳನ್ನು ಒದಗಿಸುವುದು ಸಾಲದದಾರರಿಗೆ ವ್ಯಾಪಾರದ ರಚನೆ ಮತ್ತು ಸ್ವಾಮ್ಯವನ್ನು ಅರ್ಥಮಾಡಿಕೊಳ್ಳಲು ಸಹಾಯ ಮಾಡುತ್ತದೆ.",
+
+  "@stakeholdersButtonTitle": {
+    "description": "Button title for submitting stakeholder details",
+    "type": "text",
+    "tags": ["business_loan_journey"]
+  },
+  "stakeholdersButtonTitle": "ಭಾಗಸಹಾಯಕರನ್ನು",
+
+  "@stakeholdersButtonDescription": {
+    "description": "Instructions for providing stakeholder details",
+    "type": "text",
+    "tags": ["business_loan_journey"]
+  },
+  "stakeholdersButtonDescription": "ಪ್ರಮುಖ ಭಾಗಸಹಾಯಕರ ಹಾಗೂ ವ್ಯಾಪಾರದಲ್ಲಿ ಅವರ ಪಾಲೆಗಳ ಕುರಿತು ವಿವರಗಳನ್ನು ಒದಗಿಸಿ.",
+
+  "@loanButtonTitle": {
+    "description": "Button title for submitting the loan form",
+    "type": "text",
+    "tags": ["business_loan_journey"]
+  },
+  "loanButtonTitle": "ಸಾಲದ ಅರ್ಜಿ",
+
+  "@loanButtonDescription": {
+    "description": "Instructions for filling out the loan application form",
+    "type": "text",
+    "tags": ["business_loan_journey"]
+  },
+  "loanButtonDescription": "ನಿಮ್ಮ ವಿನಂತಿಯನ್ನು ಅಂತಿಮಗೊಳಿಸಲು ಸಾಲದ ಅರ್ಜಿಯ ವಿವರವನ್ನು ತುಂಬಿ.",
+
+
+
+
+
+
+
+
+
+
+
+
+  "@gstDetailsTitle": {
+    "description": "Title for the GST details section",
+    "type": "text",
+    "tags": ["gst_details_business_loan"]
+  },
+  "gstDetailsTitle": "ಜಿಎಸ್‌ಟಿ ವಿವರಗಳು",
+
+  "@toggleEnterGst": {
+    "description": "Label for the toggle switch to enter GST",
+    "type": "text",
+    "tags": ["gst_details_business_loan"]
+  },
+  "toggleEnterGst": "ಜಿಎಸ್‌ಟಿಯನ್ನು ನಮೂದಿಸಿ",
+
+  "@toggleDeclareBusiness": {
+    "description": "Label for the toggle switch to declare business",
+    "type": "text",
+    "tags": ["gst_details_business_loan"]
+  },
+  "toggleDeclareBusiness": "ವ್ಯಾಪಾರವನ್ನು ಘೋಷಿಸಿ",
+
+
+
+
+
+
+
+
+
+
+
+
+  "@businessButtonLabel": {
+    "description": "Label for business button indicating the business number",
+    "type": "text",
+    "tags": ["gst_details_business_loan"]
+  },
+  "businessButtonLabel": "ವ್ಯಾಪಾರ ",
+
+  "@addBusinessButtonLabel": {
+    "description": "Label for the button to add a new business",
+    "type": "text",
+    "tags": ["gst_details_business_loan"]
+  },
+  "addBusinessButtonLabel": "ಹೊಸ ವ್ಯಾಪಾರ ಸೇರಿಸಿ",
+
+  "@gstNumberLabel": {
+    "description": "Label for the GST number input field",
+    "type": "text",
+    "tags": ["gst_details_business_loan"]
+  },
+  "gstNumberLabel": "ಜಿಎಸ್‌ಟಿ ಸಂಖ್ಯೆ*",
+
+  "@gstNumberHint": {
+    "description": "Hint text for the GST number input field",
+    "type": "text",
+    "tags": ["gst_details_business_loan"]
+  },
+  "gstNumberHint": "ಜಿಎಸ್‌ಟಿ ಸಂಖ್ಯೆಯನ್ನು ದಾಖಲಿಸಿ",
+
+  "@gstUsernameLabel": {
+    "description": "Label for the GST username input field",
+    "type": "text",
+    "tags": ["gst_details_business_loan"]
+  },
+  "gstUsernameLabel": "ಜಿಎಸ್‌ಟಿ ಬಳಕೆದಾರನಾಮ*",
+
+  "@gstUsernameHint": {
+    "description": "Hint text for the GST username input field",
+    "type": "text",
+    "tags": ["gst_details_business_loan"]
+  },
+  "gstUsernameHint": "ಜಿಎಸ್‌ಟಿ ಬಳಕೆದಾರನಾಮವನ್ನು ದಾಖಲಿಸಿ",
+
+  "@cityLabelGST": {
+    "description": "Label for the city input field",
+    "type": "text",
+    "tags": ["gst_details_business_loan"]
+  },
+  "cityLabelGST": "ನಗರ*",
+
+  "@totalPurchaseLabel": {
+    "description": "Label for the total purchase input field",
+    "type": "text",
+    "tags": ["gst_details_business_loan"]
+  },
+  "totalPurchaseLabel": "ಮೊತ್ತದ ಖರೀದಿ*",
+
+  "@totalPurchaseHint": {
+    "description": "Hint text for the total purchase input field",
+    "type": "text",
+    "tags": ["gst_details_business_loan"]
+  },
+  "totalPurchaseHint": "ಮೊತ್ತದ ಖರೀದಿಯನ್ನು ದಾಖಲಿಸಿ",
+
+  "@totalSalesLabel": {
+    "description": "Label for the total sales input field",
+    "type": "text",
+    "tags": ["gst_details_business_loan"]
+  },
+  "totalSalesLabel": "ಮೊತ್ತದ ಮಾರಾಟ*",
+
+  "@totalSalesHint": {
+    "description": "Hint text for the total sales input field",
+    "type": "text",
+    "tags": ["gst_details_business_loan"]
+  },
+  "totalSalesHint": "ಮೊತ್ತದ ಮಾರಾಟವನ್ನು ದಾಖಲಿಸಿ",
+
+  "@updateOnLabel": {
+    "description": "Label for the update date picker button",
+    "type": "text",
+    "tags": ["gst_details_business_loan"]
+  },
+  "updateOnLabel": "ಅಪ್ಡೇಟ್ ಮಾಡಿ*",
+
+  "@selectBusinessToEdit": {
+    "description": "Message to display when no business is selected for editing",
+    "type": "text",
+    "tags": ["gst_details_business_loan"]
+  },
+  "selectBusinessToEdit": "ತಿದ್ದುಪಡಿ ಮಾಡಲು ವ್ಯವಹಾರ ಆಯ್ಕೆ ಮಾಡಿಲ್ಲ",
+
+  "@deleteButtonLabel": {
+    "description": "Label for the delete button",
+    "type": "text",
+    "tags": ["gst_details_business_loan"]
+  },
+  "deleteButtonLabel": "ಅಳಿಸಿ",
+
+
+
+
+
+
+
+
+
+
+
+
+
+  "@declareBusinessLabel": {
+    "description": "Title for declaring business details",
+    "type": "text",
+    "tags": ["declare_business_gst_details_business_loan"]
+  },
+  "declareBusinessLabel": "ನಿಮ್ಮ ವ್ಯವಹಾರದ ವಿವರಗಳನ್ನು ಘೋಷಿಸಿ",
+
+  "@businessNameLabel": {
+    "description": "Label for the business name input field",
+    "type": "text",
+    "tags": ["declare_business_gst_details_business_loan"]
+  },
+  "businessNameLabel": "ವ್ಯವಹಾರದ ಹೆಸರು*",
+
+  "@businessNameHint": {
+    "description": "Hint text for the business name input field",
+    "type": "text",
+    "tags": ["declare_business_gst_details_business_loan"]
+  },
+  "businessNameHint": "ವ್ಯವಹಾರದ ಹೆಸರು ನೀಡಿ",
+
+  "@dateOfIncorporationLabel": {
+    "description": "Label for the date of incorporation button",
+    "type": "text",
+    "tags": ["declare_business_gst_details_business_loan"]
+  },
+  "dateOfIncorporationLabel": "ಸ್ಥಾಪನೆ ದಿನಾಂಕ",
+
+  "@constitutionLabel": {
+    "description": "Label for the constitution input field",
+    "type": "text",
+    "tags": ["declare_business_gst_details_business_loan"]
+  },
+  "constitutionLabel": "ಘಟನೆ*",
+
+  "@constitutionHint": {
+    "description": "Hint text for the constitution input field",
+    "type": "text",
+    "tags": ["declare_business_gst_details_business_loan"]
+  },
+  "constitutionHint": "ನಿಮ್ಮ ಘಟನೆಯು ನೀಡಿ",
+
+  "@customersLabel": {
+    "description": "Label for the number of customers input field",
+    "type": "text",
+    "tags": ["declare_business_gst_details_business_loan"]
+  },
+  "customersLabel": "ಗ್ರಾಹಕರ ಸಂಖ್ಯೆಯನ್ನು*",
+
+  "@customersHint": {
+    "description": "Hint text for the number of customers input field",
+    "type": "text",
+    "tags": ["declare_business_gst_details_business_loan"]
+  },
+  "customersHint": "ನಿಮ್ಮ ಗ್ರಾಹಕರ ಸಂಖ್ಯೆಯನ್ನು ನೀಡಿ",
+
+  "@panLabel": {
+    "description": "Label for the PAN input field",
+    "type": "text",
+    "tags": ["declare_business_gst_details_business_loan"]
+  },
+  "panLabel": "PAN*",
+
+  "@panHint": {
+    "description": "Hint text for the PAN input field",
+    "type": "text",
+    "tags": ["declare_business_gst_details_business_loan"]
+  },
+  "panHint": "ನಿಮ್ಮ PAN ಅನ್ನು ನೀಡಿ",
+
+  "@highestSaleLabel": {
+    "description": "Label for the highest sale input field",
+    "type": "text",
+    "tags": ["declare_business_gst_details_business_loan"]
+  },
+  "highestSaleLabel": "ಅತ್ಯುತ್ತಮ ಮಾರಾಟ*",
+
+  "@highestSaleHint": {
+    "description": "Hint text for the highest sale input field",
+    "type": "text",
+    "tags": ["declare_business_gst_details_business_loan"]
+  },
+  "highestSaleHint": "ನಿಮ್ಮ ಅತ್ಯುತ್ತಮ ಮಾರಾಟವನ್ನು ನೀಡಿ",
+
+  "@lastYearsSalesLabel": {
+    "description": "Header for last year's sales section",
+    "type": "text",
+    "tags": ["declare_business_gst_details_business_loan"]
+  },
+  "lastYearsSalesLabel": "ಕಳೆದ ವರ್ಷದ ಮಾರಾಟ",
+
+  "@januaryLabel": {
+    "description": "Label for January month",
+    "type": "text",
+    "tags": ["declare_business_gst_details_business_loan"]
+  },
+  "januaryLabel": "ಜನವರಿ",
+
+  "@februaryLabel": {
+    "description": "Label for February month",
+    "type": "text",
+    "tags": ["declare_business_gst_details_business_loan"]
+  },
+  "februaryLabel": "ಫೆಬ್ರವರಿ",
+
+  "@marchLabel": {
+    "description": "Label for March month",
+    "type": "text",
+    "tags": ["declare_business_gst_details_business_loan"]
+  },
+  "marchLabel": "ಮಾರ್ಚ್",
+
+  "@aprilLabel": {
+    "description": "Label for April month",
+    "type": "text",
+    "tags": ["declare_business_gst_details_business_loan"]
+  },
+  "aprilLabel": "ಏಪ್ರಿಲ್",
+
+  "@mayLabel": {
+    "description": "Label for May month",
+    "type": "text",
+    "tags": ["declare_business_gst_details_business_loan"]
+  },
+  "mayLabel": "ಮೇ",
+
+  "@juneLabel": {
+    "description": "Label for June month",
+    "type": "text",
+    "tags": ["declare_business_gst_details_business_loan"]
+  },
+  "juneLabel": "ಜೂನ್",
+
+  "@julyLabel": {
+    "description": "Label for July month",
+    "type": "text",
+    "tags": ["declare_business_gst_details_business_loan"]
+  },
+  "julyLabel": "ಜುಲೈ",
+
+  "@augustLabel": {
+    "description": "Label for August month",
+    "type": "text",
+    "tags": ["declare_business_gst_details_business_loan"]
+  },
+  "augustLabel": "ಆಗಸ್ಟ್",
+
+  "@septemberLabel": {
+    "description": "Label for September month",
+    "type": "text",
+    "tags": ["declare_business_gst_details_business_loan"]
+  },
+  "septemberLabel": "ಸೆಪ್ಟೆಂಬರ್",
+
+  "@octoberLabel": {
+    "description": "Label for October month",
+    "type": "text",
+    "tags": ["declare_business_gst_details_business_loan"]
+  },
+  "octoberLabel": "ಅಕ್ಟೋಬರ್",
+
+  "@novemberLabel": {
+    "description": "Label for November month",
+    "type": "text",
+    "tags": ["declare_business_gst_details_business_loan"]
+  },
+  "novemberLabel": "ನವೆಂಬರ್",
+
+  "@decemberLabel": {
+    "description": "Label for December month",
+    "type": "text",
+    "tags": ["declare_business_gst_details_business_loan"]
+  },
+  "decemberLabel": "ಡಿಸೆಂಬರ್",
+
+  "@januarySalesLabel": {
+    "description": "Label for January sales input field",
+    "type": "text",
+    "tags": ["declare_business_gst_details_business_loan"]
+  },
+  "januarySalesLabel": "ಮಾರಾಟ (ಜನವರಿ)",
+
+  "@februarySalesLabel": {
+    "description": "Label for February sales input field",
+    "type": "text",
+    "tags": ["declare_business_gst_details_business_loan"]
+  },
+  "februarySalesLabel": "ಮಾರಾಟ (ಫೆಬ್ರವರಿ)",
+
+  "@marchSalesLabel": {
+    "description": "Label for March sales input field",
+    "type": "text",
+    "tags": ["declare_business_gst_details_business_loan"]
+  },
+  "marchSalesLabel": "ಮಾರಾಟ (ಮಾರ್ಚ್)",
+
+  "@aprilSalesLabel": {
+    "description": "Label for April sales input field",
+    "type": "text",
+    "tags": ["declare_business_gst_details_business_loan"]
+  },
+  "aprilSalesLabel": "ಮಾರಾಟ (ಏಪ್ರಿಲ್)",
+
+  "@maySalesLabel": {
+    "description": "Label for May sales input field",
+    "type": "text",
+    "tags": ["declare_business_gst_details_business_loan"]
+  },
+  "maySalesLabel": "ಮಾರಾಟ (ಮೇ)",
+
+  "@juneSalesLabel": {
+    "description": "Label for June sales input field",
+    "type": "text",
+    "tags": ["declare_business_gst_details_business_loan"]
+  },
+  "juneSalesLabel": "ಮಾರಾಟ (ಜೂನ್)",
+
+  "@julySalesLabel": {
+    "description": "Label for July sales input field",
+    "type": "text",
+    "tags": ["declare_business_gst_details_business_loan"]
+  },
+  "julySalesLabel": "ಮಾರಾಟ (ಜುಲೈ)",
+
+  "@augustSalesLabel": {
+    "description": "Label for August sales input field",
+    "type": "text",
+    "tags": ["declare_business_gst_details_business_loan"]
+  },
+  "augustSalesLabel": "ಮಾರಾಟ (ಆಗಸ್ಟ್)",
+
+  "@septemberSalesLabel": {
+    "description": "Label for September sales input field",
+    "type": "text",
+    "tags": ["declare_business_gst_details_business_loan"]
+  },
+  "septemberSalesLabel": "ಮಾರಾಟ (ಸೆಪ್ಟೆಂಬರ್)",
+
+  "@octoberSalesLabel": {
+    "description": "Label for October sales input field",
+    "type": "text",
+    "tags": ["declare_business_gst_details_business_loan"]
+  },
+  "octoberSalesLabel": "ಮಾರಾಟ (ಅಕ್ಟೋಬರ್)",
+
+  "@novemberSalesLabel": {
+    "description": "Label for November sales input field",
+    "type": "text",
+    "tags": ["declare_business_gst_details_business_loan"]
+  },
+  "novemberSalesLabel": "ಮಾರಾಟ (ನವೆಂಬರ್)",
+
+  "@decemberSalesLabel": {
+    "description": "Label for December sales input field",
+    "type": "text",
+    "tags": ["declare_business_gst_details_business_loan"]
+  },
+  "decemberSalesLabel": "ಮಾರಾಟ (ಡಿಸೆಂಬರ್)",
+
+  "@nextButtonLabel": {
+    "description": "Label for the next button",
+    "type": "text",
+    "tags": ["declare_business_gst_details_business_loan"]
+  },
+  "nextButtonLabel": "ಮುಂದೆ",
+
+  "@gobackButtonLabel": {
+    "description": "Label for the go back button",
+    "type": "text",
+    "tags": ["declare_business_gst_details_business_loan"]
+  },
+  "gobackButtonLabel": "ಹಿಂತೆಗೆದುಕೊಳ್ಳಿ",
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  "bank_details_title": "ಬ್ಯಾಂಕ್ ವಿವರಗಳು",
+  "@bank_details_title": {
+    "description": "Title for the bank details page",
+    "tags": ["bank_details_business_loan"]
+  },
+  "bank_details_subtitle": "ನೀವು 3 ಬ್ಯಾಂಕ್ ಖಾತೆಗಳು ಸೇರಿಸಬಹುದು",
+  "@bank_details_subtitle": {
+    "description": "Subtitle indicating the number of bank accounts allowed",
+    "tags": ["bank_details_business_loan"]
+  },
+  "upload_bank_statement": "ಬ್ಯಾಂಕ್ ಸ್ಟೇಟ್ಮೆಂಟ್ ಅಪ್ಲೋಡ್ ಮಾಡಿ (PDF)",
+  "@upload_bank_statement": {
+    "description": "Label for uploading bank statements in PDF format",
+    "tags": ["bank_details_business_loan"]
+  },
+  "bank_account_button": "ಬ್ಯಾಂಕ್",
+  "@bank_account_button": {
+    "description": "Button text for bank accounts",
+    "tags": ["bank_details_business_loan"]
+  },
+  "add_account_button": "ಖಾತೆ ಸೇರಿಸಿ",
+  "@add_account_button": {
+    "description": "Button text for adding a new bank account",
+    "tags": ["bank_details_business_loan"]
+  },
+  "bank_name_label": "ಬ್ಯಾಂಕ್ ಹೆಸರು*",
+  "@bank_name_label": {
+    "description": "Label for the bank name input field",
+    "tags": ["bank_details_business_loan"]
+  },
+  "bank_name_hint": "ಬ್ಯಾಂಕ್ ಹೆಸರು ನಮೂದಿಸಿ",
+  "@bank_name_hint": {
+    "description": "Hint text for the bank name input field",
+    "tags": ["bank_details_business_loan"]
+  },
+  "account_since_month_label": "ಅಕೌಂಟ್ ತೆರೆಯಿದ ಸಮಯ (ತಿಂಗಳು)*",
+  "@account_since_month_label": {
+    "description": "Label for the account since month input",
+    "tags": ["bank_details_business_loan"]
+  },
+  "account_since_year_label": "ಅಕೌಂಟ್ ತೆರೆಯಿದ ಸಮಯ (ವರ್ಷ)*",
+  "@account_since_year_label": {
+    "description": "Label for the account since year input",
+    "tags": ["bank_details_business_loan"]
+  },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  "declare_business_stakeholders": "ವ್ಯವಸ್ಥೆಯ ಹೂಡಿಕೆದಾರರನ್ನು ಘೋಷಿಸಿ",
+  "@declare_business_stakeholders": {
+    "description": "Title for the page where the user declares business stakeholders",
+    "tags": ["stakeholder_business_loan"],
+    "type": "text"
+  },
+  "business_details": "ವ್ಯವಸ್ಥೆಯ ವಿವರಗಳು",
+  "@business_details": {
+    "description": "Section heading for business details",
+    "tags": ["stakeholder_business_loan", "business_detail_loan_form_business_loan"],
+    "type": "text"
+  },
+  "address_line_1": "ವಿಳಾಸ ಲೈನ್ 1*",
+  "@address_line_1": {
+    "description": "Label for the first address line input field",
+    "tags": ["stakeholder_business_loan"],
+    "type": "text"
+  },
+  "address_line_2": "ವಿಳಾಸ ಲೈನ್ 2",
+  "@address_line_2": {
+    "description": "Label for the second address line input field",
+    "tags": ["stakeholder_business_loan"],
+    "type": "text"
+  },
+
+
+
+
+
+
+
+
+
+
+
+
+  "add_stakeholder": "ಹಂಚಿಕೊಳ್ಳುವವರನ್ನು ಸೇರಿಸಿ",
+  "@add_stakeholder": {
+    "description": "Button label for adding a new stakeholder",
+    "tags": ["add_stakeholder_business_loan"],
+    "type": "text"
+  },
+  "select_stakeholder": "ಹಂಚಿಕೊಳ್ಳುವವರನ್ನು ಆಯ್ಕೆ ಮಾಡಿ",
+  "@select_stakeholder": {
+    "description": "Dropdown label for selecting a stakeholder",
+    "tags": ["add_stakeholder_business_loan"],
+    "type": "text"
+  },
+  "relationship_type": "ಬ್ಯಾಂಕಿನ ಸಂಬಂಧ",
+  "@relationship_type": {
+    "description": "Label for the relationship type field",
+    "tags": ["add_stakeholder_business_loan"],
+    "type": "text"
+  },
+  "relationship_type_hint": "ಬ್ಯಾಂಕಿನ ಸಂಬಂಧವನ್ನು ನಮೂದಿಸಿ",
+  "@relationship_type_hint": {
+    "description": "Hint text for the relationship type field",
+    "tags": ["add_stakeholder_business_loan"],
+    "type": "text"
+  },
+  "first_name": "ಮೊದಲ ಹೆಸರು",
+  "@first_name": {
+    "description": "Label for the first name field",
+    "tags": ["add_stakeholder_business_loan"],
+    "type": "text"
+  },
+  "middle_name": "ಮಧ್ಯದ ಹೆಸರು",
+  "@middle_name": {
+    "description": "Label for the middle name field",
+    "tags": ["add_stakeholder_business_loan"],
+    "type": "text"
+  },
+  "last_name": "ಕೊನೆಯ ಹೆಸರು",
+  "@last_name": {
+    "description": "Label for the last name field",
+    "tags": ["add_stakeholder_business_loan"],
+    "type": "text"
+  },
+  "ownership_percentage": "ಮಾಲೀಕತ್ವ %",
+  "@ownership_percentage": {
+    "description": "Label for the ownership percentage field",
+    "tags": ["add_stakeholder_business_loan"],
+    "type": "text"
+  },
+  "ownership_percentage_hint": "ಮಾಲೀಕತ್ವ % ನಮೂದಿಸಿ",
+  "@ownership_percentage_hint": {
+    "description": "Hint text for the ownership percentage field",
+    "tags": ["add_stakeholder_business_loan"],
+    "type": "text"
+  },
+  "father_name": "ತಂದೆಯ ಹೆಸರು",
+  "@father_name": {
+    "description": "Label for the father name field",
+    "tags": ["add_stakeholder_business_loan"],
+    "type": "text"
+  },
+  "dob": "ಜನನ ದಿನಾಂಕ",
+  "@dob": {
+    "description": "Label for the date of birth field",
+    "tags": ["add_stakeholder_business_loan"],
+    "type": "text"
+  },
+  "mobile_number": "ಮೊಬೈಲ್ ಸಂಖ್ಯೆ",
+  "@mobile_number": {
+    "description": "Label for the mobile number field",
+    "tags": ["add_stakeholder_business_loan"],
+    "type": "text"
+  },
+  "residence_status": "ನಿವಾಸದ ಸ್ಥಿತಿ",
+  "@residence_status": {
+    "description": "Label for the residence status field",
+    "tags": ["add_stakeholder_business_loan"],
+    "type": "text"
+  },
+  "residence_status_hint": "ನಿವಾಸದ ಸ್ಥಿತಿಯನ್ನು ನಮೂದಿಸಿ",
+  "@residence_status_hint": {
+    "description": "Hint text for the residence status field",
+    "tags": ["add_stakeholder_business_loan"],
+    "type": "text"
+  },
+  "pan": "PAN ನಮೂದಿಸಿ",
+  "@pan": {
+    "description": "Label for the PAN field",
+    "tags": ["add_stakeholder_business_loan"],
+    "type": "text"
+  },
+  "education_status": "ಶಿಕ್ಷಣ ಸ್ಥಿತಿ",
+  "@education_status": {
+    "description": "Label for the education status field",
+    "tags": ["add_stakeholder_business_loan"],
+    "type": "text"
+  },
+  "education_status_hint": "ಶಿಕ್ಷಣ ಸ್ಥಿತಿ ನಮೂದಿಸಿ",
+  "@education_status_hint": {
+    "description": "Hint text for the education status field",
+    "tags": ["add_stakeholder_business_loan"],
+    "type": "text"
+  },
+  "total_experience": "ಒಟ್ಟು ಅನುಭವ (ವರ್ಷಗಳು)",
+  "@total_experience": {
+    "description": "Label for the total experience field",
+    "tags": ["add_stakeholder_business_loan"],
+    "type": "text"
+  },
+  "total_experience_hint": "ಒಟ್ಟು ಅನುಭವ ನಮೂದಿಸಿ",
+  "@total_experience_hint": {
+    "description": "Hint text for the total experience field",
+    "tags": ["add_stakeholder_business_loan"],
+    "type": "text"
+  },
+  "net_worth": "ಶುದ್ಧ ಹಕ್ಕು (INR)",
+  "@net_worth": {
+    "description": "Label for the net worth field",
+    "tags": ["add_stakeholder_business_loan"],
+    "type": "text"
+  },
+  "net_worth_hint": "ಶುದ್ಧ ಹಕ್ಕು ನಮೂದಿಸಿ",
+  "@net_worth_hint": {
+    "description": "Hint text for the net worth field",
+    "tags": ["add_stakeholder_business_loan"],
+    "type": "text"
+  },
+  "address_line_one": "ಊರ ಏಕ",
+  "@address_line_one": {
+    "description": "Label for the first line of address",
+    "tags": ["add_stakeholder_business_loan"],
+    "type": "text"
+  },
+  "address_line_two": "ಊರ ಎರಡು",
+  "@address_line_two": {
+    "description": "Label for the second line of address",
+    "tags": ["add_stakeholder_business_loan"],
+    "type": "text"
+  },
+  "phone": "ದೂರವಾಣಿ",
+  "@phone": {
+    "description": "Label for the phone field",
+    "tags": ["add_stakeholder_business_loan"],
+    "type": "text"
+  },
+
+  "@phone_hint": {
+    "description": "ಫೋನ್ ಇನ್ಪುಟ್ಗೆ ಹಿಂಟ್ ಟೆಕ್ಸ್ಟ್",
+    "type": "text"
+  },
+  "phone_hint": "ಫೋನ್ ನಮೂದಿಸಿ",
+
+  "visually_impaired": "ದೃಷ್ಟಿ ಸಮಸ್ಯೆ",
+  "@visually_impaired": {
+    "description": "Label for the visually impaired field",
+    "tags": ["add_stakeholder_business_loan"],
+    "type": "text"
+  },
+  "visually_impaired_hint": "ನಿರ್ದಿಷ್ಟಿಸಿ",
+  "@visually_impaired_hint": {
+    "description": "Hint text for the visually impaired field",
+    "tags": ["add_stakeholder_business_loan"],
+    "type": "text"
+  },
+  "is_guarantor": "ಅವರು ಜಾಮೀನುಧಾರಿಯಾಗಿವೆಯಾ?",
+  "@is_guarantor": {
+    "description": "Label for the guarantor status",
+    "tags": ["add_stakeholder_business_loan"],
+    "type": "text"
+  },
+  "save": "ಉಳಿತಾಯ",
+  "@save": {
+    "description": "Button label for saving stakeholder details",
+    "tags": ["add_stakeholder_business_loan"],
+    "type": "text"
+  },
+  "delete": "ಅಳಿಸು",
+  "@delete": {
+    "description": "Button label for deleting stakeholder",
+    "tags": ["add_stakeholder_business_loan"],
+    "type": "text"
+  },
+  "discard": "ದೂರವಾಣಿ",
+  "@discard": {
+    "description": "Button label for discarding stakeholder changes",
+    "tags": ["add_stakeholder_business_loan"],
+    "type": "text"
+  },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  "main_partner": "ಮೇಲ್ಮಟ್ಟದ ಪಾಲುದಾರ",
+  "@main_partner": {
+    "description": "Title for the Main Partner page",
+    "tags": ["main_partner_business_loan"],
+    "type": "text"
+  },
+  "select_main_partner": "ಮೇಲ್ಮಟ್ಟದ ಪಾಲುದಾರವನ್ನು ಆಯ್ಕೆ ಮಾಡಿ",
+  "@select_main_partner": {
+    "description": "Button label for selecting the main partner",
+    "tags": ["main_partner_business_loan"],
+    "type": "text"
+  },
+  "owning_a_house": "ನೀವು ಮನೆಯನ್ನು ಹೊಂದಿದ್ದೀರಾ?",
+  "@owning_a_house": {
+    "description": "Label for the owning a house question",
+    "tags": ["main_partner_business_loan"],
+    "type": "text"
+  },
+  "assessed_for_income_tax": "ಆದಾಯ ತೆರಿಗೆಗಾಗಿ ಮೌಲ್ಯಮಾಪನ ಮಾಡಲಾಗಿದೆಯೆ?",
+  "@assessed_for_income_tax": {
+    "description": "Label for the income tax assessment question",
+    "tags": ["main_partner_business_loan"],
+    "type": "text"
+  },
+  "have_life_insurance": "ನಿಮ್ಮ ಬಳಿ ಜೀವನ ವಿಮೆ ಇದೆಯೇ?",
+  "@have_life_insurance": {
+    "description": "Label for the life insurance question",
+    "tags": ["main_partner_business_loan"],
+    "type": "text"
+  },
+  "marital_status": "ಪತ್ನಿ/ಪತ್ನಿಯ ಸ್ಥಿತಿ",
+  "@marital_status": {
+    "description": "Label for the marital status field",
+    "tags": ["main_partner_business_loan"],
+    "type": "text"
+  },
+  "marital_status_hint": "ಪತ್ನಿ/ಪತ್ನಿಯ ಸ್ಥಿತಿಯನ್ನು ನಮೂದಿಸಿ",
+  "@marital_status_hint": {
+    "description": "Hint text for the marital status field",
+    "tags": ["main_partner_business_loan"],
+    "type": "text"
+  },
+  "spouse_name": "ಪತ್ನಿಯ ಹೆಸರು",
+  "@spouse_name": {
+    "description": "Label for the spouse name field",
+    "tags": ["main_partner_business_loan"],
+    "type": "text"
+  },
+  "spouse_name_hint": "ಪತ್ನಿಯ ಹೆಸರು ನಮೂದಿಸಿ",
+  "@spouse_name_hint": {
+    "description": "Hint text for the spouse name field",
+    "tags": ["main_partner_business_loan"],
+    "type": "text"
+  },
+  "no_of_children": "ಮಕ್ಕಳ ಸಂಖ್ಯೆ",
+  "@no_of_children": {
+    "description": "Label for the number of children field",
+    "tags": ["main_partner_business_loan"],
+    "type": "text"
+  },
+  "no_of_children_hint": "ಮಕ್ಕಳ ಸಂಖ್ಯೆಯನ್ನು ನಮೂದಿಸಿ",
+  "@no_of_children_hint": {
+    "description": "Hint text for the number of children field",
+    "tags": ["main_partner_business_loan"],
+    "type": "text"
+  },
+
+
+
+
+
+
+
+
+
+
+
+  "loan_form": "ಕೋಷ್ಟಕವು",
+  "@loan_form": {
+    "description": "Title for the Loan Form page",
+    "tags": ["loan_form_business_loan"],
+    "type": "text"
+  },
+  "total_loan": "ಒಟ್ಟು ಸಾಲ",
+  "@total_loan": {
+    "description": "Label for the total loan section",
+    "tags": ["loan_form_business_loan"],
+    "type": "text"
+  },
+  "note": "ಗಮನಿಸಿ",
+  "@note": {
+    "description": "Label for the note section",
+    "tags": ["loan_form_business_loan"],
+    "type": "text"
+  },
+  "note_description": " : ಬ್ಯಾಂಕರ್ ಅವರ ಬ್ಯಾಂಕಿಗೆ ಇರುವ ಸಾಲಗಳನ್ನು ಸ್ಥಳಾಂತರಿಸಲು ಅಥವಾ ಸಮಾನವಾಗಿ ಶುಲ್ಕಗಳನ್ನು ಕೇಳಲು ಆಯ್ಕೆಯನ್ನು ಹೊಂದಿರುತ್ತಾನೆ.",
+  "@note_description": {
+    "description": "Description of the note regarding loan details",
+    "tags": ["loan_form_business_loan"],
+    "type": "text"
+  },
+  "existing_loans": "ಹಸ್ತಾಂತರಗೊಳ್ಳುವ ಸಾಲ",
+  "@existing_loans": {
+    "description": "Label for the existing loans field",
+    "tags": ["loan_form_business_loan", "existing_loans_loan_form_business_loan"],
+    "type": "text"
+  },
+  "additional_loan_required": "ಹೆಚ್ಚುವರಿ ಸಾಲ ಅಗತ್ಯವಿದೆ",
+  "@additional_loan_required": {
+    "description": "Label for the additional loan required field",
+    "tags": ["loan_form_business_loan"],
+    "type": "text"
+  },
+  "total_loan_label": "ಒಟ್ಟು ಸಾಲ",
+  "@total_loan_label": {
+    "description": "Label for the total loan field",
+    "tags": ["loan_form_business_loan"],
+    "type": "text"
+  },
+  "submit": "ಸಮರ್ಪಿಸಿ",
+  "@submit": {
+    "description": "Label for the submit button",
+    "tags": ["loan_form_business_loan"],
+    "type": "text"
+  },
+
+
+
+
+
+
+
+
+
+
+  "industry": "ಉದ್ಯೋಗ*",
+  "@industry": {
+    "description": "Label for the industry input field",
+    "tags": ["business_detail_loan_form_business_loan"],
+    "type": "text"
+  },
+  "industry_hint": "ಉದ್ಯೋಗವನ್ನು ನಮೂದಿಸಿ",
+  "@industry_hint": {
+    "description": "Hint text for the industry input field",
+    "tags": ["business_detail_loan_form_business_loan"],
+    "type": "text"
+  },
+  "sector_name": "ಕ್ಷೇತ್ರದ ಹೆಸರು*",
+  "@sector_name": {
+    "description": "Label for the sector name input field",
+    "tags": ["business_detail_loan_form_business_loan"],
+    "type": "text"
+  },
+  "sector_name_hint": "ಕ್ಷೇತ್ರದ ಹೆಸರು ನಮೂದಿಸಿ",
+  "@sector_name_hint": {
+    "description": "Hint text for the sector name input field",
+    "tags": ["business_detail_loan_form_business_loan"],
+    "type": "text"
+  },
+  "sub_sector_name": "ಉಪ ಕ್ಷೇತ್ರದ ಹೆಸರು*",
+  "@sub_sector_name": {
+    "description": "Label for the sub sector name input field",
+    "tags": ["business_detail_loan_form_business_loan"],
+    "type": "text"
+  },
+  "sub_sector_name_hint": "ಉಪ ಕ್ಷೇತ್ರದ ಹೆಸರು ನಮೂದಿಸಿ",
+  "@sub_sector_name_hint": {
+    "description": "Hint text for the sub sector name input field",
+    "tags": ["business_detail_loan_form_business_loan"],
+    "type": "text"
+  },
+  "msme_registration_number": "MSME ನೋಂದಣಿ ಸಂಖ್ಯೆ*",
+  "@msme_registration_number": {
+    "description": "Label for the MSME registration number input field",
+    "tags": ["business_detail_loan_form_business_loan"],
+    "type": "text"
+  },
+  "msme_registration_number_hint": "MSME ನೋಂದಣಿ ಸಂಖ್ಯೆಯನ್ನು ನಮೂದಿಸಿ",
+  "@msme_registration_number_hint": {
+    "description": "Hint text for the MSME registration number input field",
+    "tags": ["business_detail_loan_form_business_loan"],
+    "type": "text"
+  },
+  "udyog_aadhar_memorandum_no": "ಉದ್ಯೋಗ ಆದಾರ್ ಮೆಮೋರಂಡಮ್ ಸಂಖ್ಯೆ",
+  "@udyog_aadhar_memorandum_no": {
+    "description": "Label for the Udyog Aadhar Memorandum No. input field",
+    "tags": ["business_detail_loan_form_business_loan"],
+    "type": "text"
+  },
+  "udyog_aadhar_memorandum_no_hint": "ಉದ್ಯೋಗ ಆದಾರ್ ಮೆಮೋರಂಡಮ್ ಸಂಖ್ಯೆಯನ್ನು ನಮೂದಿಸಿ",
+  "@udyog_aadhar_memorandum_no_hint": {
+    "description": "Hint text for the Udyog Aadhar Memorandum No. input field",
+    "tags": ["business_detail_loan_form_business_loan"],
+    "type": "text"
+  },
+  "product_service_description": "ಉತ್ಪನ್ನ/ಸೇವೆಯ ವಿವರಣೆ*",
+  "@product_service_description": {
+    "description": "Label for the product/service description input field",
+    "tags": ["business_detail_loan_form_business_loan"],
+    "type": "text"
+  },
+  "product_service_description_hint": "ಉತ್ಪನ್ನ/ಸೇವೆಯ ವಿವರಣೆ ನಮೂದಿಸಿ",
+  "@product_service_description_hint": {
+    "description": "Hint text for the product/service description input field",
+    "tags": ["business_detail_loan_form_business_loan"],
+    "type": "text"
+  },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  "declare_collateral_security": "ಗಿರವಿಗಾಗಿ ಭದ್ರತಾ ಪ್ರಕಟಣೆ",
+  "@declare_collateral_security": {
+    "description": "ಗಿರವಿ ಭದ್ರತಾ ಪ್ರಕಟಣೆಯ ಶೀರ್ಷಿಕೆ",
+    "tags": ["declare_collateral_loan_form_business_loan"],
+    "type": "text"
+  },
+  "collateral_type": "ಭದ್ರತಾ ವಿಧ",
+  "@collateral_type": {
+    "description": "ಭದ್ರತಾ ವಿಧದ ನಿಖರವಾದ ಫಲಕ",
+    "tags": ["declare_collateral_loan_form_business_loan"],
+    "type": "text"
+  },
+  "collateral_type_hint": "ಭದ್ರತಾ ವಿಧ ನಮೂದಿಸಿ",
+  "@collateral_type_hint": {
+    "description": "ಭದ್ರತಾ ವಿಧದ ನಿಖರವಾದ ಫಲಕಕ್ಕೆ ಸೂಚನೆ",
+    "tags": ["declare_collateral_loan_form_business_loan"],
+    "type": "text"
+  },
+  "collateral_amount": "ಭದ್ರತಾ ಮೊತ್ತ (₹)",
+  "@collateral_amount": {
+    "description": "ಭದ್ರತಾ ಮೊತ್ತದ ನಿಖರವಾದ ಫಲಕ",
+    "tags": ["declare_collateral_loan_form_business_loan", "existing_loans_loan_form_business_loan"],
+    "type": "text"
+  },
+  "collateral_amount_hint": "ಭದ್ರತಾ ಮೊತ್ತ ನಮೂದಿಸಿ",
+  "@collateral_amount_hint": {
+    "description": "ಭದ್ರತಾ ಮೊತ್ತದ ನಿಖರವಾದ ಫಲಕಕ್ಕೆ ಸೂಚನೆ",
+    "tags": ["declare_collateral_loan_form_business_loan", "existing_loans_loan_form_business_loan"],
+    "type": "text"
+  },
+  "add_collateral": "ಭದ್ರತೆಯನ್ನು ಸೇರಿಸಿ",
+  "@add_collateral": {
+    "description": "ಹೊಸ ಭದ್ರತೆಯನ್ನು ಸೇರಿಸಲು ಬಟನ್ ಲೇಬಲ್",
+    "tags": ["declare_collateral_loan_form_business_loan"],
+    "type": "text"
+  },
+
+
+
+
+
+
+
+
+
+
+
+
+
+  "loan_detail": "ಋಣದ ವಿವರಗಳು",
+  "@loan_detail": {
+    "description": "Title for the loan details section",
+    "tags": ["loan_detail_loan_form_business_loan"],
+    "type": "text"
+  },
+  "loan_amount_required": "ಋಣದ ಅಗತ್ಯ ಪ್ರಮಾಣ*",
+  "@loan_amount_required": {
+    "description": "Label for the loan amount required input field",
+    "tags": ["loan_detail_loan_form_business_loan"],
+    "type": "text"
+  },
+  "loan_amount_hint": "ಋಣದ ಪ್ರಮಾಣ ನಮೂದಿಸಿ",
+  "@loan_amount_hint": {
+    "description": "Hint text for the loan amount input field",
+    "tags": ["loan_detail_loan_form_business_loan"],
+    "type": "text"
+  },
+  "promoter_contribution": "ಪ್ರೋತ್ಸಾಹಕರ ಕೊಡುಗೆ*",
+  "@promoter_contribution": {
+    "description": "Label for the promoter contribution input field",
+    "tags": ["loan_detail_loan_form_business_loan"],
+    "type": "text"
+  },
+  "promoter_contribution_hint": "ಪ್ರೋತ್ಸಾಹಕರ ಕೊಡುಗೆ ನಮೂದಿಸಿ",
+  "@promoter_contribution_hint": {
+    "description": "Hint text for the promoter contribution input field",
+    "tags": ["loan_detail_loan_form_business_loan"],
+    "type": "text"
+  },
+  "purpose_of_loan": "ಋಣದ ಉದ್ದೇಶ*",
+  "@purpose_of_loan": {
+    "description": "Label for the purpose of loan input field",
+    "tags": ["loan_detail_loan_form_business_loan"],
+    "type": "text"
+  },
+  "purpose_of_loan_hint": "ಋಣದ ಉದ್ದೇಶ ನಮೂದಿಸಿ",
+  "@purpose_of_loan_hint": {
+    "description": "Hint text for the purpose of loan input field",
+    "tags": ["loan_detail_loan_form_business_loan"],
+    "type": "text"
+  },
+  "projected_sales": "ಕಂಡಿತವಾದ ಮಾರಾಟ ಸಾಲ ವರ್ಷ",
+  "@projected_sales": {
+    "description": "Label for the projected sales input field",
+    "tags": ["loan_detail_loan_form_business_loan"],
+    "type": "text"
+  },
+  "projected_sales_hint": "ಕಂಡಿತವಾದ ಮಾರಾಟ ನಮೂದಿಸಿ",
+  "@projected_sales_hint": {
+    "description": "Hint text for the projected sales input field",
+    "tags": ["loan_detail_loan_form_business_loan"],
+    "type": "text"
+  },
+  "iso_certified": "ನಿಮ್ಮ ವ್ಯಾಪಾರ ISO ಪ್ರಮಾಣಿತವಾಗಿದೆವೇ?",
+  "@iso_certified": {
+    "description": "Label for the ISO certification switch",
+    "tags": ["loan_detail_loan_form_business_loan"],
+    "type": "text"
+  },
+  "factory_premise": "ಕಾರ್ಮಿಕ ಸ್ಥಳ*",
+  "@factory_premise": {
+    "description": "Label for the factory premise input field",
+    "tags": ["loan_detail_loan_form_business_loan"],
+    "type": "text"
+  },
+  "factory_premise_hint": "ಕಾರ್ಮಿಕ ಸ್ಥಳ ನಮೂದಿಸಿ",
+  "@factory_premise_hint": {
+    "description": "Hint text for the factory premise input field",
+    "tags": ["loan_detail_loan_form_business_loan"],
+    "type": "text"
+  },
+  "projected_know_how": "ಕಂಡಿತವಾದ ತಿಳಿವಳಿಕೆ*",
+  "@projected_know_how": {
+    "description": "Label for the projected know how input field",
+    "tags": ["loan_detail_loan_form_business_loan"],
+    "type": "text"
+  },
+  "projected_know_how_hint": "ಕಂಡಿತವಾದ ತಿಳಿವಳಿಕೆ ನಮೂದಿಸಿ",
+  "@projected_know_how_hint": {
+    "description": "Hint text for the projected know how input field",
+    "tags": ["loan_detail_loan_form_business_loan"],
+    "type": "text"
+  },
+  "competition": "ಸ್ಪರ್ಧೆ*",
+  "@competition": {
+    "description": "Label for the competition input field",
+    "tags": ["loan_detail_loan_form_business_loan"],
+    "type": "text"
+  },
+  "competition_hint": "ಸ್ಪರ್ಧೆ ನಮೂದಿಸಿ",
+  "@competition_hint": {
+    "description": "Hint text for the competition input field",
+    "tags": ["loan_detail_loan_form_business_loan"],
+    "type": "text"
+  },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  "name_of_lender": "ಸಾಲದಾತನ ಹೆಸರು*",
+  "@name_of_lender": {
+    "description": "Label for the name of lender input field",
+    "tags": ["existing_loans_loan_form_business_loan"],
+    "type": "text"
+  },
+  "name_of_lender_hint": "ಸಾಲದಾತನ ಹೆಸರನ್ನು ನಮೂದಿಸಿ",
+  "@name_of_lender_hint": {
+    "description": "Hint text for the name of lender input field",
+    "tags": ["existing_loans_loan_form_business_loan"],
+    "type": "text"
+  },
+  "sanctioned_amount": "ಅನುಮೋದಿತ ಮೊತ್ತ (₹)*",
+  "@sanctioned_amount": {
+    "description": "Label for the sanctioned amount input field",
+    "tags": ["existing_loans_loan_form_business_loan"],
+    "type": "text"
+  },
+  "sanctioned_amount_hint": "ಅನುಮೋದಿತ ಮೊತ್ತವನ್ನು ನಮೂದಿಸಿ",
+  "@sanctioned_amount_hint": {
+    "description": "Hint text for the sanctioned amount input field",
+    "tags": ["existing_loans_loan_form_business_loan"],
+    "type": "text"
+  },
+  "outstanding_amount": "ಬಾಕಿ ಮೊತ್ತ (₹)*",
+  "@outstanding_amount": {
+    "description": "Label for the outstanding amount input field",
+    "tags": ["existing_loans_loan_form_business_loan"],
+    "type": "text"
+  },
+  "outstanding_amount_hint": "ಬಾಕಿ ಮೊತ್ತವನ್ನು ನಮೂದಿಸಿ",
+  "@outstanding_amount_hint": {
+    "description": "Hint text for the outstanding amount input field",
+    "tags": ["existing_loans_loan_form_business_loan"],
+    "type": "text"
+  },
+  "emi_amount": "ಇಎಮ್‌ಐ ಮೊತ್ತ (₹)*",
+  "@emi_amount": {
+    "description": "Label for the EMI amount input field",
+    "tags": ["existing_loans_loan_form_business_loan"],
+    "type": "text"
+  },
+  "emi_amount_hint": "ಇಎಮ್‌ಐ ಮೊತ್ತವನ್ನು ನಮೂದಿಸಿ",
+  "@emi_amount_hint": {
+    "description": "Hint text for the EMI amount input field",
+    "tags": ["existing_loans_loan_form_business_loan"],
+    "type": "text"
+  },
+  "loan_type": "ಸಾಲದ ಪ್ರಕಾರ*",
+  "@loan_type": {
+    "description": "Label for the loan type input field",
+    "tags": ["existing_loans_loan_form_business_loan"],
+    "type": "text"
+  },
+  "loan_type_hint": "ಸಾಲದ ಪ್ರಕಾರವನ್ನು ನಮೂದಿಸಿ",
+  "@loan_type_hint": {
+    "description": "Hint text for the loan type input field",
+    "tags": ["existing_loans_loan_form_business_loan"],
+    "type": "text"
+  },
+
+  "status": "ಸ್ಥಿತಿ*",
+  "@status": {
+    "description": "Label for the status input field",
+    "tags": ["existing_loans_loan_form_business_loan"],
+    "type": "text"
+  },
+  "status_hint": "ಸ್ಥಿತಿಯನ್ನು ನಮೂದಿಸಿ",
+  "@status_hint": {
+    "description": "Hint text for the status input field",
+    "tags": ["existing_loans_loan_form_business_loan"],
+    "type": "text"
+  },
+  "add_existing_loan": "ನಡೆಯುವ ಸಾಲವನ್ನು ಸೇರಿಸಿ",
+  "@add_existing_loan": {
+    "description": "Button text to add an existing loan",
+    "tags": ["existing_loans_loan_form_business_loan"],
+    "type": "text"
   }
 }
+
+
+
+
+
+
+
+

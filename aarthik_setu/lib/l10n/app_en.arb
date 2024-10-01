@@ -100,7 +100,7 @@
     "description": "Label for the back button",
     "type": "text",
     "placeholders": {},
-    "tags": ["sign-in"]
+    "tags": ["sign-in", "itr_form_manual_personal_loan", "bank_details_personal_loan"]
   },
   "phoneNumber": "Phone Number",
   "@phoneNumber": {
@@ -115,5 +115,2868 @@
     "type": "text",
     "placeholders": {},
     "tags": ["sign-in"]
+  },
+
+
+
+
+
+
+
+
+  "dashboard": "Dashboard",
+  "@dashboard": {
+    "description": "Title for the dashboard page",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["dashboard"]
+  },
+  "personalLoans": "Personal Loans",
+  "@personalLoans": {
+    "description": "Label for personal loan options",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["dashboard", "personal_loan"]
+  },
+  "businessLoans": "Business Loans",
+  "@businessLoans": {
+    "description": "Label for business loan options",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["dashboard"]
+  },
+  "governmentSchemes": "Government Schemes",
+  "@governmentSchemes": {
+    "description": "Label for government schemes",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["dashboard"]
+  },
+  "logOut": "Log Out",
+  "@logOut": {
+    "description": "Button label for logging out",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["dashboard"]
+  },
+  "profile": "Profile",
+  "@profile": {
+    "description": "Label for profile selection",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["dashboard"]
+  },
+  "pendingApplications": "Pending Applications",
+  "@pendingApplications": {
+    "description": "Label for pending applications with count",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["dashboard"]
+  },
+
+
+
+
+
+
+  "personalLoanDescription": "Get a personal loan with low interest rates and flexible repayment options.",
+  "@personalLoanDescription": {
+    "description": "Description for personal loan option",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["personal_loan"]
+  },
+  "homeLoans": "Home Loans",
+  "@homeLoans": {
+    "description": "Title for home loan option",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["personal_loan"]
+  },
+  "homeLoanDescription": "Get a home loan with low interest rates and flexible repayment options.",
+  "@homeLoanDescription": {
+    "description": "Description for home loan option",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["personal_loan"]
+  },
+  "autoLoans": "Auto Loans",
+  "@autoLoans": {
+    "description": "Title for auto loan option",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["personal_loan"]
+  },
+  "autoLoanDescription": "Get an auto loan with low interest rates and flexible repayment options.",
+  "@autoLoanDescription": {
+    "description": "Description for auto loan option",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["personal_loan"]
+  },
+
+
+
+
+
+
+
+  "msmeLoans": "MSME Loans",
+  "@msmeLoans": {
+    "description": "Title for MSME loan option",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["business_loan"]
+  },
+  "msmeLoanDescription": "Get MSME loans up to ₹5 Crores with low interest rates and flexible repayment options.",
+  "@msmeLoanDescription": {
+    "description": "Description for MSME loan option",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["business_loan"]
+  },
+  "termLoans": "Term Loans",
+  "@termLoans": {
+    "description": "Title for term loan option",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["business_loan"]
+  },
+  "termLoanDescription": "Get term loans up to ₹50 Lakhs with competitive rates and flexible repayment terms.",
+  "@termLoanDescription": {
+    "description": "Description for term loan option",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["business_loan"]
+  },
+  "mudraLoans": "Mudra Loans",
+  "@mudraLoans": {
+    "description": "Title for Mudra loan option",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["business_loan"]
+  },
+  "mudraLoanDescription": "Get Mudra loans up to ₹10 Lakhs for micro-enterprises with flexible repayment.",
+  "@mudraLoanDescription": {
+    "description": "Description for Mudra loan option",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["business_loan"]
+  },
+
+
+
+
+
+
+
+  "pendingApplicationsTitle": "Pending Applications",
+  "@pendingApplicationsTitle": {
+    "description": "Title for the pending applications dialog",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["dashboard_pending_applications"]
+  },
+  "noPendingApplications": "You have no pending applications.",
+  "@noPendingApplications": {
+    "description": "Message when there are no pending applications",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["dashboard_pending_applications"]
+  },
+  "closeButton": "Close",
+  "@closeButton": {
+    "description": "Label for the close button",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["dashboard_pending_applications", "dashboard_select_profile", "bank_details_personal_loan"]
+  },
+
+
+
+
+
+
+
+  "selectProfileTitle": "Select Profile",
+  "@selectProfileTitle": {
+    "description": "Title for the select profile dialog",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["dashboard_select_profile"]
+  },
+  "noProfiles": "You have no profiles.",
+  "@noProfiles": {
+    "description": "Message when there are no profiles",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["dashboard_select_profile"]
+  },
+
+
+
+
+
+
+  "choosePersonalProfile": "Choose your Personal Profile",
+  "@choosePersonalProfile": {
+    "description": "Title for choosing personal profile",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["personal_loan_journey"]
+  },
+  "selectedProfile": "Selected Profile: Aadarsh Verma",
+  "@selectedProfile": {
+    "description": "Message showing selected profile",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["personal_loan_journey"]
+  },
+  "selectProfileMessage": "Select your personal profile from the list of available profiles. If you do not have a profile, you can create a new one.",
+  "@selectProfileMessage": {
+    "description": "Message for selecting personal profile",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["personal_loan_journey"]
+  },
+  "itrImportance": "Providing your ITR when applying for a loan is crucial because it assures lenders of your financial stability, repayment capacity, and overall trustworthiness, which ultimately improves your chances of getting the loan approved. You also have the option to manually declare your income if you do not have an ITR.",
+  "@itrImportance": {
+    "description": "Importance of providing ITR in a loan application",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["personal_loan_journey"]
+  },
+  "itrButtonTitle": "Income Tax Return",
+  "@itrButtonTitle": {
+    "description": "Button label for providing ITR",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["personal_loan_journey", "business_loan_journey"]
+  },
+  "itrButtonDescription": "Provide your income tax return form for up to the last 3 years or declare your income.",
+  "@itrButtonDescription": {
+    "description": "Description for providing ITR",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["personal_loan_journey", "business_loan_journey"]
+  },
+  "bankDetailsImportance": "Bank details and statements offer lenders a transparent and reliable way to assess your financial habits, repayment capacity, and overall credit risk, which are key factors in approving a loan.",
+  "@bankDetailsImportance": {
+    "description": "Importance of providing bank details in a loan application",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["personal_loan_journey"]
+  },
+  "bankDetailsButtonTitle": "Bank Details",
+  "@bankDetailsButtonTitle": {
+    "description": "Button label for providing bank details",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["personal_loan_journey"]
+  },
+  "bankDetailsButtonDescription": "Declare your bank details and provide bank statements for the last 6 months.",
+  "@bankDetailsButtonDescription": {
+    "description": "Description for providing bank details",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["personal_loan_journey"]
+  },
+  "personalDetailsImportance": "Personal details are essential in a loan application as they help verify your identity, assess your eligibility, and determine your creditworthiness. Information like age, address, and employment status provide insight into your stability and repayment capability. Accurate personal details also ensure compliance with legal and regulatory requirements.",
+  "@personalDetailsImportance": {
+    "description": "Importance of providing personal details in a loan application",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["personal_loan_journey"]
+  },
+  "basicDetailsButtonTitle": "Basic Details",
+  "@basicDetailsButtonTitle": {
+    "description": "Button label for providing basic details",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["personal_loan_journey"]
+  },
+  "basicDetailsButtonDescription": "Provide your personal information like name, age, and address.",
+  "@basicDetailsButtonDescription": {
+    "description": "Description for providing basic details",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["personal_loan_journey"]
+  },
+  "employmentDetailsImportance": "Employment details are crucial in a loan application as they help lenders assess your repayment capacity, job stability, and overall financial health. Information like company name, designation, and salary provide insight into your income stability and repayment capability.",
+  "@employmentDetailsImportance": {
+    "description": "Importance of providing employment details in a loan application",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["personal_loan_journey"]
+  },
+  "employmentDetailsButtonTitle": "Employment Details",
+  "@employmentDetailsButtonTitle": {
+    "description": "Button label for providing employment details",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["personal_loan_journey"]
+  },
+  "employmentDetailsButtonDescription": "Provide your employment details like company name, designation, and salary.",
+  "@employmentDetailsButtonDescription": {
+    "description": "Description for providing employment details",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["personal_loan_journey"]
+  },
+  "creditInformationImportance": "Credit information is essential in a loan application as it helps lenders assess your creditworthiness, repayment capacity, and overall financial health. Information like credit score, credit history, and existing loans provide insight into your credit risk and repayment capability. Accurate credit information also ensures compliance with legal and regulatory requirements.",
+  "@creditInformationImportance": {
+    "description": "Importance of providing credit information in a loan application",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["personal_loan_journey"]
+  },
+  "creditInformationButtonTitle": "Credit Information",
+  "@creditInformationButtonTitle": {
+    "description": "Button label for providing credit information",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["personal_loan_journey"]
+  },
+  "creditInformationButtonDescription": "Provide your credit information like credit score, credit history, and existing loans.",
+  "@creditInformationButtonDescription": {
+    "description": "Description for providing credit information",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["personal_loan_journey"]
+  },
+  "contactInformationImportance": "Contact information is essential in a loan application as it helps lenders verify your identity, communicate with you, and assess your repayment capability. Information like phone number, email, and address provide insight into your accessibility and communication.",
+  "@contactInformationImportance": {
+    "description": "Importance of providing contact information in a loan application",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["personal_loan_journey"]
+  },
+  "contactInformationButtonTitle": "Contact Information",
+  "@contactInformationButtonTitle": {
+    "description": "Button label for providing contact information",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["personal_loan_journey"]
+  },
+  "contactInformationButtonDescription": "Provide your contact information like phone number, email, and address.",
+  "@contactInformationButtonDescription": {
+    "description": "Description for providing contact information",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["personal_loan_journey"]
+  },
+  "loanFormImportance": "The loan form is the final step in the loan application process. It is where you provide all the required information, documents, and details to the lender for approval. Make sure to fill out the form accurately and completely to improve your chances of getting the loan approved.",
+  "@loanFormImportance": {
+    "description": "Importance of filling out the loan form",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["personal_loan_journey"]
+  },
+  "loanFormButtonTitle": "Loan Form",
+  "@loanFormButtonTitle": {
+    "description": "Button label for filling out the loan form",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["personal_loan_journey"]
+  },
+  "loanFormButtonDescription": "Fill out the loan form with all the required information.",
+  "@loanFormButtonDescription": {
+    "description": "Description for filling out the loan form",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["personal_loan_journey"]
+  },
+  "reviewFormButton": "Review Form",
+    "@reviewFormButton": {
+        "description": "Button label for reviewing the loan form",
+        "type": "text",
+        "placeholders": {},
+        "tags": ["personal_loan_journey"]
+  },
+  "reviewFormButtonDescription": "Reviewing and submitting your loan application is the final step in the loan application process. Make sure to review all the information you have provided, ensure its accuracy, and submit your application to the lender for approval.",
+    "@reviewFormButtonDescription": {
+        "description": "Description for reviewing the loan form",
+        "type": "text",
+        "placeholders": {},
+        "tags": ["personal_loan_journey"]
+    },
+
+
+
+
+
+
+
+  "itrDetailsTitle": "ITR Details",
+  "@itrDetailsTitle": {
+    "description": "Title for the ITR Details section",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["itr_form_personal_loan", "itr_form_business_loan"]
+  },
+  "manualDeclarationText": "Declare your financial details if your annual income is less than 2.5 LPA",
+  "@manualDeclarationText": {
+    "description": "Text for manual declaration option",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["itr_form_personal_loan"]
+  },
+  "itrMandatoryText_1": "ITR Details of Financial Year",
+  "@itrMandatoryText_1": {
+    "description": "Text for the ITR Details section",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["itr_form_personal_loan"]
+  },
+  "itrMandatoryText_2": "is mandatory",
+  "@itrMandatoryText_2": {
+    "description": "Text for the ITR Details section",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["itr_form_personal_loan"]
+  },
+  "uploadITRText": "Upload ITR",
+  "@uploadITRText": {
+    "description": "Text for the toggle button for uploading ITR",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["itr_form_personal_loan"]
+  },
+  "manualDeclarationButton": "Manual Declaration",
+  "@manualDeclarationButton": {
+    "description": "Text for the toggle button for manual declaration",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["itr_form_personal_loan"]
+  },
+
+
+
+
+
+
+
+  "uploadITRTitle": "Upload ITR (PDF format)",
+  "@uploadITRTitle": {
+    "description": "Title for the upload ITR section",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["itr_form_upload_personal_loan"]
+  },
+  "fyLabel": "Financial Year",
+  "@fyLabel": {
+    "description": "Label for the financial year",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["itr_form_upload_personal_loan", "itr_form_manual_personal_loan"]
+  },
+  "uploadButton": "Upload File",
+  "@uploadButton": {
+    "description": "Label for the upload button",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["itr_form_upload_personal_loan"]
+  },
+  "instructionsTitle": "How to download ITR in PDF format",
+  "@instructionsTitle": {
+    "description": "Title for the instructions dialog",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["itr_form_upload_personal_loan"]
+  },
+  "instructionsContent": "1. Visit click on the 'Login' button on the top right corner, and login with your login details.\n2. Click on 'e-File' from the top Navigation Bar.\n3. Click on 'Income Tax Returns' from the e-File drop-down menu.\n4. Click on 'View Filed Returns' from the Income Tax Return drop-down menu.\n5. If you have filed ITR type - 1/2, click on 'Download Form', the ITR PDF file for that 'A.Y.' will get downloaded.\n6. Upload the downloaded files on the Platform.",
+  "@instructionsContent": {
+    "description": "Content for instructions on how to download ITR",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["itr_form_upload_personal_loan"]
+  },
+  "instructionsButton": "Instructions",
+  "@instructionsButton": {
+    "description": "Text for instructions button",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["itr_form_upload_personal_loan"]
+  },
+
+
+
+
+
+
+
+
+  "@declareFinancialDetails": {
+    "description": "Title of the form to declare financial details.",
+    "type": "text",
+    "tags": ["itr_form_manual_personal_loan"]
+  },
+  "declareFinancialDetails": "Declare your financial details",
+
+  "@firstName": {
+    "description": "Label for the first name input field.",
+    "type": "text",
+    "tags": ["itr_form_manual_personal_loan", "basic_details_personal_loan"]
+  },
+  "firstName": "First Name*",
+
+  "@firstNameHint": {
+    "description": "Hint text for the first name input field.",
+    "type": "text",
+    "tags": ["itr_form_manual_personal_loan", "basic_details_personal_loan"]
+  },
+  "firstNameHint": "Enter your first name",
+
+  "@middleName": {
+    "description": "Label for the middle name input field.",
+    "type": "text",
+    "tags": ["itr_form_manual_personal_loan", "basic_details_personal_loan"]
+  },
+  "middleName": "Middle Name",
+  "@middleNameHint": {
+    "description": "Hint text for the middle name input field.",
+    "type": "text",
+    "tags": ["itr_form_manual_personal_loan", "basic_details_personal_loan"]
+  },
+  "middleNameHint": "Enter your middle name",
+
+  "@lastName": {
+    "description": "Label for the last name input field.",
+    "type": "text",
+    "tags": ["itr_form_manual_personal_loan", "basic_details_personal_loan"]
+  },
+  "lastName": "Last Name*",
+  "@lastNameHint": {
+    "description": "Hint text for the last name input field.",
+    "type": "text",
+    "tags": ["itr_form_manual_personal_loan", "basic_details_personal_loan"]
+  },
+  "lastNameHint": "Enter your last name",
+
+  "@dateOfBirth": {
+    "description": "Label for the date of birth input.",
+    "type": "text",
+    "tags": ["itr_form_manual_personal_loan", "basic_details_personal_loan"]
+  },
+  "dateOfBirth": "Date of Birth*",
+  "@dateOfBirthHint": {
+    "description": "Placeholder text for the date of birth button.",
+    "type": "text",
+    "tags": ["itr_form_manual_personal_loan", "basic_details_personal_loan"]
+  },
+  "dateOfBirthHint": "Date of Birth",
+
+  "@panNumber": {
+    "description": "Label for the PAN number input field.",
+    "type": "text",
+    "tags": ["itr_form_manual_personal_loan", "basic_details_personal_loan"]
+  },
+  "panNumber": "PAN Number*",
+  "@panNumberHint": {
+    "description": "Hint text for the PAN number input field.",
+    "type": "text",
+    "tags": ["itr_form_manual_personal_loan", "basic_details_personal_loan"]
+  },
+  "panNumberHint": "Enter your PAN number",
+
+  "@mobileNumber": {
+    "description": "Label for the mobile number input field.",
+    "type": "text",
+    "tags": ["itr_form_manual_personal_loan", "basic_details_personal_loan"]
+  },
+  "mobileNumber": "Mobile Number*",
+  "@mobileNumberHint": {
+    "description": "Hint text for the mobile number input field.",
+    "type": "text",
+    "tags": ["itr_form_manual_personal_loan", "basic_details_personal_loan"]
+  },
+  "mobileNumberHint": "Enter your mobile number",
+
+  "@email": {
+    "description": "Label for the personal email input field.",
+    "type": "text",
+    "tags": ["itr_form_manual_personal_loan"]
+  },
+  "email": "Email (Personal)*",
+  "@emailHint": {
+    "description": "Hint text for the personal email input field.",
+    "type": "text",
+    "tags": ["itr_form_manual_personal_loan"]
+  },
+  "emailHint": "Enter your email",
+
+  "@addressLine1": {
+    "description": "Label for the address line 1 input field.",
+    "type": "text",
+    "tags": ["itr_form_manual_personal_loan"]
+  },
+  "addressLine1": "Address Line 1*",
+  "@addressLine1Hint": {
+    "description": "Hint text for the address line 1 input field.",
+    "type": "text",
+    "tags": ["itr_form_manual_personal_loan"]
+  },
+  "addressLine1Hint": "Enter your address",
+
+  "@addressLine2": {
+    "description": "Label for the address line 2 input field.",
+    "type": "text",
+    "tags": ["itr_form_manual_personal_loan"]
+  },
+  "addressLine2": "Address Line 2",
+  "@addressLine2Hint": {
+    "description": "Hint text for the address line 2 input field.",
+    "type": "text",
+    "tags": ["itr_form_manual_personal_loan"]
+  },
+  "addressLine2Hint": "Enter your address",
+
+  "@landmark": {
+    "description": "Label for the landmark input field.",
+    "type": "text",
+    "tags": ["itr_form_manual_personal_loan", "stakeholder_business_loan", "add_stakeholder_business_loan"]
+  },
+  "landmark": "Landmark",
+  "@landmarkHint": {
+    "description": "Hint text for the landmark input field.",
+    "type": "text",
+    "tags": ["itr_form_manual_personal_loan", "stakeholder_business_loan", "add_stakeholder_business_loan"]
+  },
+  "landmarkHint": "Enter landmark",
+
+  "@country": {
+    "description": "Label for the country dropdown.",
+    "type": "text",
+    "tags": ["itr_form_manual_personal_loan", "stakeholder_business_loan", "add_stakeholder_business_loan"]
+  },
+  "country": "Country*",
+
+  "@state": {
+    "description": "Label for the state dropdown.",
+    "type": "text",
+    "tags": ["itr_form_manual_personal_loan", "stakeholder_business_loan", "add_stakeholder_business_loan"]
+  },
+  "state": "State*",
+
+  "@city": {
+    "description": "Label for the city dropdown.",
+    "type": "text",
+    "tags": ["itr_form_manual_personal_loan", "stakeholder_business_loan", "add_stakeholder_business_loan"]
+  },
+  "city": "City*",
+
+  "@pinCode": {
+    "description": "Label for the pin code input field.",
+    "type": "text",
+    "tags": ["itr_form_manual_personal_loan", "add_stakeholder_business_loan"]
+  },
+  "pinCode": "Pin code*",
+  "@pinCodeHint": {
+    "description": "Hint text for the pin code input field.",
+    "type": "text",
+    "tags": ["itr_form_manual_personal_loan", "add_stakeholder_business_loan"]
+  },
+  "pinCodeHint": "Enter your pin code",
+
+  "@village": {
+    "description": "Label for the village input field.",
+    "type": "text",
+    "tags": ["itr_form_manual_personal_loan", "stakeholder_business_loan", "add_stakeholder_business_loan"]
+  },
+  "village": "Village",
+
+  "@villageHint": {
+    "description": "Hint text for the village input field.",
+    "type": "text",
+    "tags": ["itr_form_manual_personal_loan", "stakeholder_business_loan", "add_stakeholder_business_loan"]
+  },
+  "villageHint": "Enter your village",
+
+  "@district": {
+    "description": "Label for the district input field.",
+    "type": "text",
+    "tags": ["itr_form_manual_personal_loan", "stakeholder_business_loan", "add_stakeholder_business_loan"]
+  },
+  "district": "District*",
+  "@districtHint": {
+    "description": "Hint text for the district input field.",
+    "type": "text",
+    "tags": ["itr_form_manual_personal_loan", "stakeholder_business_loan", "add_stakeholder_business_loan"]
+  },
+  "districtHint": "Enter your district",
+
+  "@subDistrict": {
+    "description": "Label for the sub-district input field.",
+    "type": "text",
+    "tags": ["itr_form_manual_personal_loan", "add_stakeholder_business_loan"]
+  },
+  "subDistrict": "Enter sub-district*",
+  "@subDistrictHint": {
+    "description": "Hint text for the sub-district input field.",
+    "type": "text",
+    "tags": ["itr_form_manual_personal_loan", "add_stakeholder_business_loan"]
+  },
+  "subDistrictHint": "Enter your sub-district",
+
+  "@netAnnualIncome": {
+    "description": "Title for the net annual income section.",
+    "type": "text",
+    "tags": ["itr_form_manual_personal_loan"]
+  },
+  "netAnnualIncome": "Net Annual Income Details",
+
+  "@annualIncomeFY": {
+    "description": "Label for net annual income for the financial year.",
+    "type": "text",
+    "tags": ["itr_form_manual_personal_loan"]
+  },
+  "annualIncomeFY": "FY {year1}-{year2}*",
+
+  "@annualIncomeHint": {
+    "description": "Hint text for entering net annual income.",
+    "type": "text",
+    "tags": ["itr_form_manual_personal_loan"]
+  },
+  "annualIncomeHint": "Enter your net annual income",
+
+  "@proceedButton": {
+    "description": "Label for the proceed button.",
+    "type": "text",
+    "tags": ["itr_form_manual_personal_loan", "bank_details_personal_loan"]
+  },
+  "proceedButton": "Proceed",
+
+
+
+
+
+
+
+
+
+
+
+  "@bankDetails": {
+    "description": "Title for the bank details section.",
+    "type": "text",
+    "tags": ["bank_details_personal_loan"]
+  },
+  "bankDetails": "Bank Details",
+
+  "@addUpTo3Accounts": {
+    "description": "Message indicating how many bank accounts can be added.",
+    "type": "text",
+    "tags": ["bank_details_personal_loan"]
+  },
+  "addUpTo3Accounts": "You can add up to 3 bank accounts",
+
+  "@uploadBankStatement": {
+    "description": "Label for uploading bank statement.",
+    "type": "text",
+    "tags": ["bank_details_personal_loan"]
+  },
+  "uploadBankStatement": "Upload Bank Statement (PDF)",
+
+  "@addAccount": {
+    "description": "Label for adding a new bank account button.",
+    "type": "text",
+    "tags": ["bank_details_personal_loan"]
+  },
+  "addAccount": "Add Account",
+
+  "@bankName": {
+    "description": "Label for bank name field.",
+    "type": "text",
+    "tags": ["bank_details_personal_loan"]
+  },
+  "bankName": "Bank Name*",
+
+  "@enterBankName": {
+    "description": "Placeholder text for bank name input field.",
+    "type": "text",
+    "tags": ["bank_details_personal_loan"]
+  },
+  "enterBankName": "Enter bank name",
+
+  "@accountSinceMonth": {
+    "description": "Label for account since month field.",
+    "type": "text",
+    "tags": ["bank_details_personal_loan"]
+  },
+  "accountSinceMonth": "Account Since (Month)*",
+
+  "@month": {
+    "description": "Placeholder text for selecting the month.",
+    "type": "text",
+    "tags": ["bank_details_personal_loan", "stakeholder_business_loan"]
+  },
+  "month": "Month",
+
+  "@accountSinceYear": {
+    "description": "Label for account since year field.",
+    "type": "text",
+    "tags": ["bank_details_personal_loan"]
+  },
+  "accountSinceYear": "Account Since (Year)*",
+
+  "@yearButton": {
+    "description": "Placeholder text for selecting the year.",
+    "type": "text",
+    "tags": ["bank_details_personal_loan", "stakeholder_business_loan"]
+  },
+  "yearButton": "Year",
+
+  "@isSalaryAccount": {
+    "description": "Question asking if the account is a salary account.",
+    "type": "text",
+    "tags": ["bank_details_personal_loan"]
+  },
+  "isSalaryAccount": "Is this a salary account?",
+
+  "@yesButton": {
+    "description": "Option for 'Yes' in response to a question.",
+    "type": "text",
+    "tags": ["bank_details_personal_loan"]
+  },
+  "yesButton": "Yes",
+
+  "@noButton": {
+    "description": "Option for 'No' in response to a question.",
+    "type": "text",
+    "tags": ["bank_details_personal_loan"]
+  },
+  "noButton": "No",
+
+  "drag_file_here": "Drag file here",
+    "@drag_file_here": {
+        "description": "Text for dragging and dropping a file.",
+        "type": "text",
+        "tags": ["bank_details_personal_loan", "bank_details_business_loan"]
+  },
+
+
+
+
+
+
+
+
+
+  "@basicDetails": {
+    "description": "Title for the basic details section",
+    "type": "text",
+    "tags": ["basic_details_personal_loan"]
+  },
+  "basicDetails": "Basic Details",
+
+  "@salutation": {
+    "description": "Label for salutation dropdown",
+    "type": "text",
+    "tags": ["basic_details_personal_loan", "add_stakeholder_business_loan"]
+  },
+  "salutation": "Salutation*",
+
+  "@selectSalutation": {
+    "description": "Placeholder for selecting salutation",
+    "type": "text",
+    "tags": ["basic_details_personal_loan"]
+  },
+  "selectSalutation": "Select Salutation",
+
+  "@selectDateOfBirth": {
+    "description": "Placeholder for selecting date of birth",
+    "type": "text",
+    "tags": ["basic_details_personal_loan"]
+  },
+  "selectDateOfBirth": "Select Date of Birth",
+
+  "@gender": {
+    "description": "Label for gender dropdown",
+    "type": "text",
+    "tags": ["basic_details_personal_loan", "add_stakeholder_business_loan"]
+  },
+  "gender": "Gender*",
+
+  "@selectGender": {
+    "description": "Placeholder for selecting gender",
+    "type": "text",
+    "tags": ["basic_details_personal_loan"]
+  },
+  "selectGender": "Select Gender",
+
+  "@category": {
+    "description": "Label for category dropdown",
+    "type": "text",
+    "tags": ["basic_details_personal_loan"]
+  },
+  "category": "Category*",
+
+  "@selectCategory": {
+    "description": "Placeholder for selecting category",
+    "type": "text",
+    "tags": ["basic_details_personal_loan"]
+  },
+  "selectCategory": "Select Category",
+
+  "@emailPersonal": {
+    "description": "Label for personal email input field",
+    "type": "text",
+    "tags": ["basic_details_personal_loan"]
+  },
+  "emailPersonal": "Email (Personal)*",
+
+  "@enterEmailPersonal": {
+    "description": "Placeholder for entering personal email",
+    "type": "text",
+    "tags": ["basic_details_personal_loan"]
+  },
+  "enterEmailPersonal": "Enter your email",
+
+  "@fatherName": {
+    "description": "Label for father's name input field",
+    "type": "text",
+    "tags": ["basic_details_personal_loan"]
+  },
+  "fatherName": "Father's Name",
+
+  "@enterFatherName": {
+    "description": "Placeholder for entering father's name",
+    "type": "text",
+    "tags": ["basic_details_personal_loan"]
+  },
+  "enterFatherName": "Enter your father's name",
+
+  "@educationQualification": {
+    "description": "Label for education qualification dropdown",
+    "type": "text",
+    "tags": ["basic_details_personal_loan"]
+  },
+  "educationQualification": "Education Qualification*",
+
+  "@selectEducationQualification": {
+    "description": "Placeholder for selecting education qualification",
+    "type": "text",
+    "tags": ["basic_details_personal_loan"]
+  },
+  "selectEducationQualification": "Select Education Qualification",
+
+  "@netWorth": {
+    "description": "Label for net worth input field",
+    "type": "text",
+    "tags": ["basic_details_personal_loan"]
+  },
+  "netWorth": "Net Worth*",
+
+  "@enterNetWorth": {
+    "description": "Placeholder for entering net worth",
+    "type": "text",
+    "tags": ["basic_details_personal_loan"]
+  },
+  "enterNetWorth": "Enter your net worth",
+
+  "@nationality": {
+    "description": "Label for nationality dropdown",
+    "type": "text",
+    "tags": ["basic_details_personal_loan"]
+  },
+  "nationality": "Nationality*",
+
+  "@selectNationality": {
+    "description": "Placeholder for selecting nationality",
+    "type": "text",
+    "tags": ["basic_details_personal_loan"]
+  },
+  "selectNationality": "Select Nationality",
+
+  "@dependents": {
+    "description": "Label for dependents dropdown",
+    "type": "text",
+    "tags": ["basic_details_personal_loan"]
+  },
+  "dependents": "Dependents*",
+
+  "@selectDependents": {
+    "description": "Placeholder for selecting dependents",
+    "type": "text",
+    "tags": ["basic_details_personal_loan"]
+  },
+  "selectDependents": "Select Dependents",
+
+  "@maritalStatus": {
+    "description": "Label for marital status dropdown",
+    "type": "text",
+    "tags": ["basic_details_personal_loan"]
+  },
+  "maritalStatus": "Marital Status*",
+
+  "@selectMaritalStatus": {
+    "description": "Placeholder for selecting marital status",
+    "type": "text",
+    "tags": ["basic_details_personal_loan"]
+  },
+  "selectMaritalStatus": "Select Marital Status",
+
+
+
+
+
+
+
+  "@employmentDetails": {
+    "description": "Label for the employment details page",
+    "type": "text",
+    "tags": ["employment_details_personal_loan"]
+  },
+  "employmentDetails": "Employment Details",
+
+  "@employmentStatus": {
+    "description": "Label for employment status dropdown",
+    "type": "text",
+    "tags": ["employment_details_personal_loan"]
+  },
+  "employmentStatus": "Employment Status*",
+
+  "@selectEmploymentStatus": {
+    "description": "Placeholder for selecting employment status",
+    "type": "text",
+    "tags": ["employment_details_personal_loan"]
+  },
+  "selectEmploymentStatus": "Select Employment Status",
+
+  "@designation": {
+    "description": "Label for designation dropdown",
+    "type": "text",
+    "tags": ["employment_details_personal_loan"]
+  },
+  "designation": "Designation*",
+
+  "@selectDesignation": {
+    "description": "Placeholder for selecting designation",
+    "type": "text",
+    "tags": ["employment_details_personal_loan"]
+  },
+  "selectDesignation": "Select Designation",
+
+  "@employmentType": {
+    "description": "Label for employment type dropdown",
+    "type": "text",
+    "tags": ["employment_details_personal_loan"]
+  },
+  "employmentType": "Employment Type*",
+
+  "@selectEmploymentType": {
+    "description": "Placeholder for selecting employment type",
+    "type": "text",
+    "tags": ["employment_details_personal_loan"]
+  },
+  "selectEmploymentType": "Select Employment Type",
+
+  "@modeOfSalary": {
+    "description": "Label for mode of salary dropdown",
+    "type": "text",
+    "tags": ["employment_details_personal_loan"]
+  },
+  "modeOfSalary": "Mode of Salary*",
+
+  "@selectModeOfSalary": {
+    "description": "Placeholder for selecting mode of salary",
+    "type": "text",
+    "tags": ["employment_details_personal_loan"]
+  },
+  "selectModeOfSalary": "Select Mode of Salary",
+
+  "@grossMonthlyIncome": {
+    "description": "Label for gross monthly income input field",
+    "type": "text",
+    "tags": ["employment_details_personal_loan"]
+  },
+  "grossMonthlyIncome": "Gross Monthly Income*",
+
+  "@enterGrossMonthlyIncome": {
+    "description": "Placeholder for entering gross monthly income",
+    "type": "text",
+    "tags": ["employment_details_personal_loan"]
+  },
+  "enterGrossMonthlyIncome": "Enter your gross monthly income",
+
+  "@netMonthlyIncome": {
+    "description": "Label for net monthly income input field",
+    "type": "text",
+    "tags": ["employment_details_personal_loan"]
+  },
+  "netMonthlyIncome": "Net Monthly Income*",
+
+  "@enterNetMonthlyIncome": {
+    "description": "Placeholder for entering net monthly income",
+    "type": "text",
+    "tags": ["employment_details_personal_loan"]
+  },
+  "enterNetMonthlyIncome": "Enter your net monthly income",
+
+
+
+
+
+
+
+
+
+
+
+  "@creditInformationTitle": {
+    "description": "Title of the Credit Information page",
+    "type": "text",
+    "tags": ["credit_info_personal_loan"]
+  },
+  "creditInformationTitle": "Credit Information",
+
+  "@declareCreditInformation": {
+    "description": "Heading for declaring credit information",
+    "type": "text",
+    "tags": ["credit_info_personal_loan"]
+  },
+  "declareCreditInformation": "Declare Credit Information",
+
+  "@loanTypeLabel": {
+    "description": "Label for loan type dropdown",
+    "type": "text",
+    "tags": ["credit_info_personal_loan"]
+  },
+  "loanTypeLabel": "Loan Type*",
+
+  "@selectLoanType": {
+    "description": "Placeholder for selecting loan type",
+    "type": "text",
+    "tags": ["credit_info_personal_loan"]
+  },
+  "selectLoanType": "Select Loan Type",
+
+  "@lenderLabel": {
+    "description": "Label for lender input field",
+    "type": "text",
+    "tags": ["credit_info_personal_loan"]
+  },
+  "lenderLabel": "Lender*",
+
+  "@enterLenderPlaceholder": {
+    "description": "Placeholder for entering lender name",
+    "type": "text",
+    "tags": ["credit_info_personal_loan"]
+  },
+  "enterLenderPlaceholder": "Enter lender",
+
+  "@sanctionedAmountLabel": {
+    "description": "Label for sanctioned amount input field",
+    "type": "text",
+    "tags": ["credit_info_personal_loan"]
+  },
+  "sanctionedAmountLabel": "Sanctioned Amount (₹)*",
+
+  "@enterSanctionedAmountPlaceholder": {
+    "description": "Placeholder for entering sanctioned amount",
+    "type": "text",
+    "tags": ["credit_info_personal_loan"]
+  },
+  "enterSanctionedAmountPlaceholder": "Enter sanctioned amount",
+
+  "@outstandingAmountLabel": {
+    "description": "Label for outstanding amount input field",
+    "type": "text",
+    "tags": ["credit_info_personal_loan"]
+  },
+  "outstandingAmountLabel": "Outstanding Amount (₹)*",
+
+  "@enterOutstandingAmountPlaceholder": {
+    "description": "Placeholder for entering outstanding amount",
+    "type": "text",
+    "tags": ["credit_info_personal_loan"]
+  },
+  "enterOutstandingAmountPlaceholder": "Enter outstanding amount",
+
+  "@emiAmountLabel": {
+    "description": "Label for EMI amount input field",
+    "type": "text",
+    "tags": ["credit_info_personal_loan"]
+  },
+  "emiAmountLabel": "EMI Amount (₹)*",
+
+  "@enterEmiAmountPlaceholder": {
+    "description": "Placeholder for entering EMI amount",
+    "type": "text",
+    "tags": ["credit_info_personal_loan"]
+  },
+  "enterEmiAmountPlaceholder": "Enter EMI amount",
+
+  "@addExistingLoanButton": {
+    "description": "Label for the button to add an existing loan",
+    "type": "text",
+    "tags": ["credit_info_personal_loan"]
+  },
+  "addExistingLoanButton": "Add Existing Loan",
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  "@contactDetailsTitle": {
+    "description": "Title of the Contact Details page",
+    "type": "text",
+    "tags": ["contact_detail_personal_loan"]
+  },
+  "contactDetailsTitle": "Contact Details",
+
+  "@addressLine1Label": {
+    "description": "Label for Address Line 1 input field",
+    "type": "text",
+    "tags": ["contact_detail_personal_loan"]
+  },
+  "addressLine1Label": "Address Line 1*",
+
+  "@addressLine1Placeholder": {
+    "description": "Placeholder for Address Line 1 input field",
+    "type": "text",
+    "tags": ["contact_detail_personal_loan"]
+  },
+  "addressLine1Placeholder": "Enter your building number",
+
+  "@addressLine2Label": {
+    "description": "Label for Address Line 2 input field",
+    "type": "text",
+    "tags": ["contact_detail_personal_loan"]
+  },
+  "addressLine2Label": "Address Line 2",
+
+  "@addressLine2Placeholder": {
+    "description": "Placeholder for Address Line 2 input field",
+    "type": "text",
+    "tags": ["contact_detail_personal_loan"]
+  },
+  "addressLine2Placeholder": "Enter your street name",
+
+  "@landmarkLabel": {
+    "description": "Label for Landmark input field",
+    "type": "text",
+    "tags": ["contact_detail_personal_loan"]
+  },
+  "landmarkLabel": "Landmark",
+
+  "@landmarkPlaceholder": {
+    "description": "Placeholder for Landmark input field",
+    "type": "text",
+    "tags": ["contact_detail_personal_loan"]
+  },
+  "landmarkPlaceholder": "Enter your landmark",
+
+  "@countryLabel": {
+    "description": "Label for Country dropdown",
+    "type": "text",
+    "tags": ["contact_detail_personal_loan"]
+  },
+  "countryLabel": "Country*",
+
+  "@countryPlaceholder": {
+    "description": "Placeholder for Country dropdown",
+    "type": "text",
+    "tags": ["contact_detail_personal_loan"]
+  },
+  "countryPlaceholder": "Select your country",
+
+  "@stateLabel": {
+    "description": "Label for State dropdown",
+    "type": "text",
+    "tags": ["contact_detail_personal_loan", "declare_business_gst_details_business_loan"]
+  },
+  "stateLabel": "State*",
+
+  "@statePlaceholder": {
+    "description": "Placeholder for State dropdown",
+    "type": "text",
+    "tags": ["contact_detail_personal_loan", "declare_business_gst_details_business_loan"]
+  },
+  "statePlaceholder": "Select your state",
+
+  "@cityLabel": {
+    "description": "Label for City dropdown",
+    "type": "text",
+    "tags": ["contact_detail_personal_loan", "declare_business_gst_details_business_loan"]
+  },
+  "cityLabel": "City*",
+
+  "@cityPlaceholder": {
+    "description": "Placeholder for City dropdown",
+    "type": "text",
+    "tags": ["contact_detail_personal_loan", "declare_business_gst_details_business_loan"]
+  },
+  "cityPlaceholder": "Select your city",
+
+  "@pinCodeLabel": {
+    "description": "Label for Pin Code input field",
+    "type": "text",
+    "tags": ["contact_detail_personal_loan"]
+  },
+  "pinCodeLabel": "Pin code*",
+
+  "@pinCodePlaceholder": {
+    "description": "Placeholder for Pin Code input field",
+    "type": "text",
+    "tags": ["contact_detail_personal_loan"]
+  },
+  "pinCodePlaceholder": "Enter your pin code",
+
+  "@villageLabel": {
+    "description": "Label for Village/Town input field",
+    "type": "text",
+    "tags": ["contact_detail_personal_loan"]
+  },
+  "villageLabel": "Village/Town",
+
+  "@villagePlaceholder": {
+    "description": "Placeholder for Village/Town input field",
+    "type": "text",
+    "tags": ["contact_detail_personal_loan"]
+  },
+  "villagePlaceholder": "Enter your village/town",
+
+  "@districtLabel": {
+    "description": "Label for District input field",
+    "type": "text",
+    "tags": ["contact_detail_personal_loan"]
+  },
+  "districtLabel": "District*",
+
+  "@districtPlaceholder": {
+    "description": "Placeholder for District input field",
+    "type": "text",
+    "tags": ["contact_detail_personal_loan"]
+  },
+  "districtPlaceholder": "Enter your district",
+
+  "@subDistrictLabel": {
+    "description": "Label for Sub-District input field",
+    "type": "text",
+    "tags": ["contact_detail_personal_loan"]
+  },
+  "subDistrictLabel": "Sub-District*",
+
+  "@subDistrictPlaceholder": {
+    "description": "Placeholder for Sub-District input field",
+    "type": "text",
+    "tags": ["contact_detail_personal_loan"]
+  },
+  "subDistrictPlaceholder": "Enter your sub-district",
+
+  "@residenceSinceMonthLabel": {
+    "description": "Label for Residence Since (Month) picker",
+    "type": "text",
+    "tags": ["contact_detail_personal_loan"]
+  },
+  "residenceSinceMonthLabel": "Residence Since (Month)",
+
+  "@residenceSinceYearLabel": {
+    "description": "Label for Residence Since (Year) picker",
+    "type": "text",
+    "tags": ["contact_detail_personal_loan"]
+  },
+  "residenceSinceYearLabel": "Residence Since (Year)",
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  "@loanFormTitle": {
+    "description": "Title of the Loan Form",
+    "type": "text",
+    "tags": ["loan_form_personal_loan"]
+  },
+  "loanFormTitle": "Loan Form",
+
+  "@loanDetailsTitle": {
+    "description": "Title for Loan Details section",
+    "type": "text",
+    "tags": ["loan_form_personal_loan"]
+  },
+  "loanDetailsTitle": "Loan Details",
+
+  "@loanPurposeLabel": {
+    "description": "Label for Loan Purpose dropdown",
+    "type": "text",
+    "tags": ["loan_form_personal_loan"]
+  },
+  "loanPurposeLabel": "Loan Purpose*",
+
+  "@loanPurposePlaceholder": {
+    "description": "Placeholder for Loan Purpose dropdown",
+    "type": "text",
+    "tags": ["loan_form_personal_loan"]
+  },
+  "loanPurposePlaceholder": "Select Loan Purpose",
+
+  "@loanAmountLabel": {
+    "description": "Label for Loan Amount input field",
+    "type": "text",
+    "tags": ["loan_form_personal_loan"]
+  },
+  "loanAmountLabel": "Loan Amount Required*",
+
+  "@loanAmountHint": {
+    "description": "Hint text for Loan Amount input field",
+    "type": "text",
+    "tags": ["loan_form_personal_loan"]
+  },
+  "loanAmountHint": "Enter loan amount",
+
+  "@tenureLabel": {
+    "description": "Label for Tenure input field",
+    "type": "text",
+    "tags": ["loan_form_personal_loan"]
+  },
+  "tenureLabel": "Tenure (Years)*",
+
+  "@tenureHint": {
+    "description": "Hint text for Tenure input field",
+    "type": "text",
+    "tags": ["loan_form_personal_loan"]
+  },
+  "tenureHint": "Enter tenure",
+
+  "@retirementAgeLabel": {
+    "description": "Label for Retirement Age input field",
+    "type": "text",
+    "tags": ["loan_form_personal_loan"]
+  },
+  "retirementAgeLabel": "Retirement Age (Years)*",
+
+  "@retirementAgeHint": {
+    "description": "Hint text for Retirement Age input field",
+    "type": "text",
+    "tags": ["loan_form_personal_loan"]
+  },
+  "retirementAgeHint": "Enter retirement age",
+
+  "@yourEmployerWillTitle": {
+    "description": "Title for Your Employer Will section",
+    "type": "text",
+    "tags": ["loan_form_personal_loan"]
+  },
+  "yourEmployerWillTitle": "Your Employer Will",
+
+  "@emiFromSalaryAccountText": {
+    "description": "Question about EMI payment from salary account",
+    "type": "text",
+    "tags": ["loan_form_personal_loan"]
+  },
+  "emiFromSalaryAccountText": "Pay EMI directly from your salary account?",
+
+  "@outstandingLoanTerminalPaymentsText": {
+    "description": "Question about paying outstanding loan amount from terminal payments",
+    "type": "text",
+    "tags": ["loan_form_personal_loan"]
+  },
+  "outstandingLoanTerminalPaymentsText": "Agree to pay outstanding loan amount from terminal payments in event you leave your employer?",
+
+  "@salaryAccountConfirmationText": {
+    "description": "Question about paying salary only in salary account and getting NOC",
+    "type": "text",
+    "tags": ["loan_form_personal_loan"]
+  },
+  "salaryAccountConfirmationText": "Pay salary only in your salary account and take confirmation (NOC) from bank before shifting your salary account?",
+
+  "@whetherYouWillTitle": {
+    "description": "Title for Whether you (Employer/Borrower) will section",
+    "type": "text",
+    "tags": ["loan_form_personal_loan"]
+  },
+  "whetherYouWillTitle": "Whether you (Employer/Borrower) will",
+
+  "@issueLetterOutstandingLoanText": {
+    "description": "Question about issuing letter to employer to pay outstanding loan",
+    "type": "text",
+    "tags": ["loan_form_personal_loan"]
+  },
+  "issueLetterOutstandingLoanText": "Issue letter to your employer, to pay outstanding loan from your terminal payments in event you leave your employer?",
+
+  "@issueLetterNotChangeAccountText": {
+    "description": "Question about issuing letter to employer to not change salary account",
+    "type": "text",
+    "tags": ["loan_form_personal_loan"]
+  },
+  "issueLetterNotChangeAccountText": "Issue letter to your employer to not change your salary account and take confirmation from bank (NOC) in case of a change?",
+
+  "@repaymentMethodLabel": {
+    "description": "Label for Repayment Method dropdown",
+    "type": "text",
+    "tags": ["loan_form_personal_loan"]
+  },
+  "repaymentMethodLabel": "Repayment Method*",
+
+  "@repaymentMethodPlaceholder": {
+    "description": "Placeholder for Repayment Method dropdown",
+    "type": "text",
+    "tags": ["loan_form_personal_loan"]
+  },
+  "repaymentMethodPlaceholder": "Select Repayment Method",
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  "@chooseBusinessProfile": {
+    "description": "Text for choosing a business profile",
+    "type": "text",
+    "tags": ["business_loan_journey"]
+  },
+  "chooseBusinessProfile": "Choose your Business Profile",
+
+  "@selectedProfileBusiness": {
+    "description": "Text showing the selected business profile",
+    "type": "text",
+    "tags": ["business_loan_journey"]
+  },
+  "selectedProfileBusiness": "Selected Profile: ABC Pvt Ltd",
+
+  "@selectProfileDescription": {
+    "description": "Instructions for selecting or creating a business profile",
+    "type": "text",
+    "tags": ["business_loan_journey"]
+  },
+  "selectProfileDescription": "Select your business profile from the list. You can also create a new profile if you don’t have one.",
+
+  "@itrFormDescription": {
+    "description": "Description of the importance of the Income Tax Return",
+    "type": "text",
+    "tags": ["business_loan_journey"]
+  },
+  "itrFormDescription": "Providing your business’s Income Tax Return (ITR) is essential as it demonstrates your company’s financial health and stability.",
+
+  "@itrButtonTitleBusiness": {
+    "description": "Button title for submitting the Income Tax Return",
+    "type": "text",
+    "tags": ["business_loan_journey"]
+  },
+  "itrButtonTitleBusiness": "Income Tax Return",
+
+  "@itrButtonDescriptionBusiness": {
+    "description": "Instructions for providing the Income Tax Return",
+    "type": "text",
+    "tags": ["business_loan_journey"]
+  },
+  "itrButtonDescriptionBusiness": "Provide your business’s income tax return for the last 3 years.",
+
+  "@gstFormDescription": {
+    "description": "Description of the importance of GST details",
+    "type": "text",
+    "tags": ["business_loan_journey"]
+  },
+  "gstFormDescription": "Providing your GST return shows your business’s compliance with tax regulations, which is a key factor in loan approval.",
+
+  "@gstButtonTitle": {
+    "description": "Button title for submitting GST details",
+    "type": "text",
+    "tags": ["business_loan_journey"]
+  },
+  "gstButtonTitle": "GST Details",
+
+  "@gstButtonDescription": {
+    "description": "Instructions for providing GST details",
+    "type": "text",
+    "tags": ["business_loan_journey"]
+  },
+  "gstButtonDescription": "Provide your GST registration number and return details.",
+
+  "@bankDetailsDescription": {
+    "description": "Description of the importance of submitting bank details",
+    "type": "text",
+    "tags": ["business_loan_journey"]
+  },
+  "bankDetailsDescription": "Submitting your business’s bank details helps the lender assess your financial health and cash flow.",
+
+  "@bankButtonTitle": {
+    "description": "Button title for submitting bank details",
+    "type": "text",
+    "tags": ["business_loan_journey"]
+  },
+  "bankButtonTitle": "Bank Details",
+
+  "@bankButtonDescription": {
+    "description": "Instructions for providing bank details",
+    "type": "text",
+    "tags": ["business_loan_journey"]
+  },
+  "bankButtonDescription": "Provide your business’s bank details and bank statements.",
+
+  "@stakeholdersDescription": {
+    "description": "Description of the importance of providing stakeholder details",
+    "type": "text",
+    "tags": ["business_loan_journey"]
+  },
+  "stakeholdersDescription": "Providing details about key stakeholders helps lenders understand the structure and ownership of the business.",
+
+  "@stakeholdersButtonTitle": {
+    "description": "Button title for submitting stakeholder details",
+    "type": "text",
+    "tags": ["business_loan_journey"]
+  },
+  "stakeholdersButtonTitle": "Stakeholders",
+
+  "@stakeholdersButtonDescription": {
+    "description": "Instructions for providing stakeholder details",
+    "type": "text",
+    "tags": ["business_loan_journey"]
+  },
+  "stakeholdersButtonDescription": "Provide details about key stakeholders and their shares in the business.",
+
+  "@loanFormDescription": {
+    "description": "Description of the final loan form step",
+    "type": "text",
+    "tags": ["business_loan_journey"]
+  },
+  "loanFormDescription": "The loan form is the final step in your business loan application. Make sure all details are accurate.",
+
+  "@loanButtonTitle": {
+    "description": "Button title for submitting the loan form",
+    "type": "text",
+    "tags": ["business_loan_journey"]
+  },
+  "loanButtonTitle": "Loan Form",
+
+  "@loanButtonDescription": {
+    "description": "Instructions for filling out the loan application form",
+    "type": "text",
+    "tags": ["business_loan_journey"]
+  },
+  "loanButtonDescription": "Fill in the loan application form to finalize your request.",
+
+
+
+
+
+
+
+
+
+
+
+
+
+  "@gstDetailsTitle": {
+    "description": "Title for the GST details section",
+    "type": "text",
+    "tags": ["gst_details_business_loan"]
+  },
+  "gstDetailsTitle": "GST Details",
+
+  "@toggleEnterGst": {
+    "description": "Label for the toggle switch to enter GST",
+    "type": "text",
+    "tags": ["gst_details_business_loan"]
+  },
+  "toggleEnterGst": "Enter GST",
+
+  "@toggleDeclareBusiness": {
+    "description": "Label for the toggle switch to declare business",
+    "type": "text",
+    "tags": ["gst_details_business_loan"]
+  },
+  "toggleDeclareBusiness": "Declare Business",
+
+
+
+
+
+
+
+
+
+  "@businessButtonLabel": {
+    "description": "Label for business button indicating the business number",
+    "type": "text",
+    "tags": ["gst_details_business_loan"]
+  },
+  "businessButtonLabel": "Business ",
+
+  "@addBusinessButtonLabel": {
+    "description": "Label for the button to add a new business",
+    "type": "text",
+    "tags": ["gst_details_business_loan"]
+  },
+  "addBusinessButtonLabel": "Add Business",
+
+  "@gstNumberLabel": {
+    "description": "Label for the GST number input field",
+    "type": "text",
+    "tags": ["gst_details_business_loan"]
+  },
+  "gstNumberLabel": "GST Number*",
+
+  "@gstNumberHint": {
+    "description": "Hint text for the GST number input field",
+    "type": "text",
+    "tags": ["gst_details_business_loan"]
+  },
+  "gstNumberHint": "Enter GST Number",
+
+  "@gstUsernameLabel": {
+    "description": "Label for the GST username input field",
+    "type": "text",
+    "tags": ["gst_details_business_loan"]
+  },
+  "gstUsernameLabel": "GST Username*",
+
+  "@gstUsernameHint": {
+    "description": "Hint text for the GST username input field",
+    "type": "text",
+    "tags": ["gst_details_business_loan"]
+  },
+  "gstUsernameHint": "Enter GST Username",
+
+  "@cityLabelGST": {
+    "description": "Label for the city input field",
+    "type": "text",
+    "tags": ["gst_details_business_loan"]
+  },
+  "cityLabelGST": "City*",
+
+  "@totalPurchaseLabel": {
+    "description": "Label for the total purchase input field",
+    "type": "text",
+    "tags": ["gst_details_business_loan"]
+  },
+  "totalPurchaseLabel": "Total Purchase*",
+
+  "@totalPurchaseHint": {
+    "description": "Hint text for the total purchase input field",
+    "type": "text",
+    "tags": ["gst_details_business_loan"]
+  },
+  "totalPurchaseHint": "Enter Total Purchase",
+
+  "@totalSalesLabel": {
+    "description": "Label for the total sales input field",
+    "type": "text",
+    "tags": ["gst_details_business_loan"]
+  },
+  "totalSalesLabel": "Total Sales*",
+
+  "@totalSalesHint": {
+    "description": "Hint text for the total sales input field",
+    "type": "text",
+    "tags": ["gst_details_business_loan"]
+  },
+  "totalSalesHint": "Enter Total Sales",
+
+  "@updateOnLabel": {
+    "description": "Label for the update date picker button",
+    "type": "text",
+    "tags": ["gst_details_business_loan"]
+  },
+  "updateOnLabel": "Update On*",
+
+  "@selectBusinessToEdit": {
+    "description": "Message to display when no business is selected for editing",
+    "type": "text",
+    "tags": ["gst_details_business_loan"]
+  },
+  "selectBusinessToEdit": "Select a business to edit",
+
+  "@deleteButtonLabel": {
+    "description": "Label for the delete button",
+    "type": "text",
+    "tags": ["gst_details_business_loan"]
+  },
+  "deleteButtonLabel": "Delete",
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  "@declareBusinessLabel": {
+    "description": "Title for declaring business details",
+    "type": "text",
+    "tags": ["declare_business_gst_details_business_loan"]
+  },
+  "declareBusinessLabel": "Declare your business details",
+
+  "@businessNameLabel": {
+    "description": "Label for the business name input field",
+    "type": "text",
+    "tags": ["declare_business_gst_details_business_loan"]
+  },
+  "businessNameLabel": "Business Name*",
+
+  "@businessNameHint": {
+    "description": "Hint text for the business name input field",
+    "type": "text",
+    "tags": ["declare_business_gst_details_business_loan"]
+  },
+  "businessNameHint": "Enter business name",
+
+  "@dateOfIncorporationLabel": {
+    "description": "Label for the date of incorporation button",
+    "type": "text",
+    "tags": ["declare_business_gst_details_business_loan"]
+  },
+  "dateOfIncorporationLabel": "Date of Incorporation",
+
+  "@constitutionLabel": {
+    "description": "Label for the constitution input field",
+    "type": "text",
+    "tags": ["declare_business_gst_details_business_loan"]
+  },
+  "constitutionLabel": "Constitution*",
+
+  "@constitutionHint": {
+    "description": "Hint text for the constitution input field",
+    "type": "text",
+    "tags": ["declare_business_gst_details_business_loan"]
+  },
+  "constitutionHint": "Enter your constitution",
+
+  "@customersLabel": {
+    "description": "Label for the number of customers input field",
+    "type": "text",
+    "tags": ["declare_business_gst_details_business_loan"]
+  },
+  "customersLabel": "No. of Customers*",
+
+  "@customersHint": {
+    "description": "Hint text for the number of customers input field",
+    "type": "text",
+    "tags": ["declare_business_gst_details_business_loan"]
+  },
+  "customersHint": "Enter your number of customers",
+
+  "@panLabel": {
+    "description": "Label for the PAN input field",
+    "type": "text",
+    "tags": ["declare_business_gst_details_business_loan"]
+  },
+  "panLabel": "PAN*",
+
+  "@panHint": {
+    "description": "Hint text for the PAN input field",
+    "type": "text",
+    "tags": ["declare_business_gst_details_business_loan"]
+  },
+  "panHint": "Enter your PAN",
+
+  "@highestSaleLabel": {
+    "description": "Label for the highest sale input field",
+    "type": "text",
+    "tags": ["declare_business_gst_details_business_loan"]
+  },
+  "highestSaleLabel": "Highest sale recorded*",
+
+  "@highestSaleHint": {
+    "description": "Hint text for the highest sale input field",
+    "type": "text",
+    "tags": ["declare_business_gst_details_business_loan"]
+  },
+  "highestSaleHint": "Enter your highest sale recorded",
+
+  "@lastYearsSalesLabel": {
+    "description": "Header for last year's sales section",
+    "type": "text",
+    "tags": ["declare_business_gst_details_business_loan"]
+  },
+  "lastYearsSalesLabel": "Last Year's Sales",
+
+  "@januaryLabel": {
+    "description": "Label for January month",
+    "type": "text",
+    "tags": ["declare_business_gst_details_business_loan"]
+  },
+  "januaryLabel": "January",
+
+  "@februaryLabel": {
+    "description": "Label for February month",
+    "type": "text",
+    "tags": ["declare_business_gst_details_business_loan"]
+  },
+  "februaryLabel": "February",
+
+  "@marchLabel": {
+    "description": "Label for March month",
+    "type": "text",
+    "tags": ["declare_business_gst_details_business_loan"]
+  },
+  "marchLabel": "March",
+
+  "@aprilLabel": {
+    "description": "Label for April month",
+    "type": "text",
+    "tags": ["declare_business_gst_details_business_loan"]
+  },
+  "aprilLabel": "April",
+
+  "@mayLabel": {
+    "description": "Label for May month",
+    "type": "text",
+    "tags": ["declare_business_gst_details_business_loan"]
+  },
+  "mayLabel": "May",
+
+  "@juneLabel": {
+    "description": "Label for June month",
+    "type": "text",
+    "tags": ["declare_business_gst_details_business_loan"]
+  },
+  "juneLabel": "June",
+
+  "@julyLabel": {
+    "description": "Label for July month",
+    "type": "text",
+    "tags": ["declare_business_gst_details_business_loan"]
+  },
+  "julyLabel": "July",
+
+  "@augustLabel": {
+    "description": "Label for August month",
+    "type": "text",
+    "tags": ["declare_business_gst_details_business_loan"]
+  },
+  "augustLabel": "August",
+
+  "@septemberLabel": {
+    "description": "Label for September month",
+    "type": "text",
+    "tags": ["declare_business_gst_details_business_loan"]
+  },
+  "septemberLabel": "September",
+
+  "@octoberLabel": {
+    "description": "Label for October month",
+    "type": "text",
+    "tags": ["declare_business_gst_details_business_loan"]
+  },
+  "octoberLabel": "October",
+
+  "@novemberLabel": {
+    "description": "Label for November month",
+    "type": "text",
+    "tags": ["declare_business_gst_details_business_loan"]
+  },
+  "novemberLabel": "November",
+
+  "@decemberLabel": {
+    "description": "Label for December month",
+    "type": "text",
+    "tags": ["declare_business_gst_details_business_loan"]
+  },
+  "decemberLabel": "December",
+
+  "@januarySalesLabel": {
+    "description": "Label for January sales input field",
+    "type": "text",
+    "tags": ["declare_business_gst_details_business_loan"]
+  },
+  "januarySalesLabel": "Sales (January)",
+
+  "@februarySalesLabel": {
+    "description": "Label for February sales input field",
+    "type": "text",
+    "tags": ["declare_business_gst_details_business_loan"]
+  },
+  "februarySalesLabel": "Sales (February)",
+
+  "@marchSalesLabel": {
+    "description": "Label for March sales input field",
+    "type": "text",
+    "tags": ["declare_business_gst_details_business_loan"]
+  },
+  "marchSalesLabel": "Sales (March)",
+
+  "@aprilSalesLabel": {
+    "description": "Label for April sales input field",
+    "type": "text",
+    "tags": ["declare_business_gst_details_business_loan"]
+  },
+  "aprilSalesLabel": "Sales (April)",
+
+  "@maySalesLabel": {
+    "description": "Label for May sales input field",
+    "type": "text",
+    "tags": ["declare_business_gst_details_business_loan"]
+  },
+  "maySalesLabel": "Sales (May)",
+
+  "@juneSalesLabel": {
+    "description": "Label for June sales input field",
+    "type": "text",
+    "tags": ["declare_business_gst_details_business_loan"]
+  },
+  "juneSalesLabel": "Sales (June)",
+
+  "@julySalesLabel": {
+    "description": "Label for July sales input field",
+    "type": "text",
+    "tags": ["declare_business_gst_details_business_loan"]
+  },
+  "julySalesLabel": "Sales (July)",
+
+  "@augustSalesLabel": {
+    "description": "Label for August sales input field",
+    "type": "text",
+    "tags": ["declare_business_gst_details_business_loan"]
+  },
+  "augustSalesLabel": "Sales (August)",
+
+  "@septemberSalesLabel": {
+    "description": "Label for September sales input field",
+    "type": "text",
+    "tags": ["declare_business_gst_details_business_loan"]
+  },
+  "septemberSalesLabel": "Sales (September)",
+
+  "@octoberSalesLabel": {
+    "description": "Label for October sales input field",
+    "type": "text",
+    "tags": ["declare_business_gst_details_business_loan"]
+  },
+  "octoberSalesLabel": "Sales (October)",
+
+  "@novemberSalesLabel": {
+    "description": "Label for November sales input field",
+    "type": "text",
+    "tags": ["declare_business_gst_details_business_loan"]
+  },
+  "novemberSalesLabel": "Sales (November)",
+
+  "@decemberSalesLabel": {
+    "description": "Label for December sales input field",
+    "type": "text",
+    "tags": ["declare_business_gst_details_business_loan"]
+  },
+  "decemberSalesLabel": "Sales (December)",
+
+  "@salesHint": {
+    "description": "Hint text for the sales input field",
+    "type": "text",
+    "tags": ["declare_business_gst_details_business_loan"]
+  },
+  "salesHint": "Enter sales",
+
+
+
+
+
+
+
+
+
+
+
+  "bank_details_title": "Bank Details",
+  "@bank_details_title": {
+    "description": "Title for the bank details page",
+    "tags": ["bank_details_business_loan"]
+  },
+  "bank_details_subtitle": "You can add up to 3 bank accounts",
+  "@bank_details_subtitle": {
+    "description": "Subtitle indicating the number of bank accounts allowed",
+    "tags": ["bank_details_business_loan"]
+  },
+  "upload_bank_statement": "Upload Bank Statement (PDF)",
+  "@upload_bank_statement": {
+    "description": "Label for uploading bank statements in PDF format",
+    "tags": ["bank_details_business_loan"]
+  },
+  "bank_account_button": "Bank",
+  "@bank_account_button": {
+    "description": "Button text for bank accounts",
+    "tags": ["bank_details_business_loan"]
+  },
+  "add_account_button": "Add Account",
+  "@add_account_button": {
+    "description": "Button text for adding a new bank account",
+    "tags": ["bank_details_business_loan"]
+  },
+  "bank_name_label": "Bank Name*",
+  "@bank_name_label": {
+    "description": "Label for the bank name input field",
+    "tags": ["bank_details_business_loan"]
+  },
+  "bank_name_hint": "Enter bank name",
+  "@bank_name_hint": {
+    "description": "Hint text for the bank name input field",
+    "tags": ["bank_details_business_loan"]
+  },
+  "account_since_month_label": "Account Since (Month)*",
+  "@account_since_month_label": {
+    "description": "Label for the account since month input",
+    "tags": ["bank_details_business_loan"]
+  },
+  "account_since_year_label": "Account Since (Year)*",
+  "@account_since_year_label": {
+    "description": "Label for the account since year input",
+    "tags": ["bank_details_business_loan"]
+  },
+
+
+
+
+
+
+
+
+
+
+
+
+
+  "declare_business_stakeholders": "Declare Business Stakeholders",
+  "@declare_business_stakeholders": {
+    "description": "Title for the page where the user declares business stakeholders",
+    "tags": ["stakeholder_business_loan"],
+    "type": "text"
+  },
+  "business_details": "Business details",
+  "@business_details": {
+    "description": "Section heading for business details",
+    "tags": ["stakeholder_business_loan", "business_detail_loan_form_business_loan"],
+    "type": "text"
+  },
+  "address_line_1": "Address Line 1*",
+  "@address_line_1": {
+    "description": "Label for the first address line input field",
+    "tags": ["stakeholder_business_loan"],
+    "type": "text"
+  },
+  "address_line_2": "Address Line 2",
+  "@address_line_2": {
+    "description": "Label for the second address line input field",
+    "tags": ["stakeholder_business_loan"],
+    "type": "text"
+  },
+
+
+
+
+
+
+
+
+
+
+
+
+
+  "add_stakeholder": "Add Stakeholder",
+  "@add_stakeholder": {
+    "description": "Button label for adding a new stakeholder",
+    "tags": ["add_stakeholder_business_loan"],
+    "type": "text"
+  },
+  "select_stakeholder": "Select Stakeholder",
+  "@select_stakeholder": {
+    "description": "Dropdown label for selecting a stakeholder",
+    "tags": ["add_stakeholder_business_loan"],
+    "type": "text"
+  },
+  "relationship_type": "Relationship type",
+  "@relationship_type": {
+    "description": "Label for the relationship type field",
+    "tags": ["add_stakeholder_business_loan"],
+    "type": "text"
+  },
+
+  "relationship_type_hint": "Enter relationship type",
+  "@relationship_type_hint": {
+      "description": "Hint text for the relationship type field",
+      "tags": ["add_stakeholder_business_loan"],
+      "type": "text"
+    },
+
+  "first_name": "First Name",
+  "@first_name": {
+    "description": "Label for the first name field",
+    "tags": ["add_stakeholder_business_loan"],
+    "type": "text"
+  },
+  "middle_name": "Middle Name",
+  "@middle_name": {
+    "description": "Label for the middle name field",
+    "tags": ["add_stakeholder_business_loan"],
+    "type": "text"
+  },
+  "last_name": "Last Name",
+  "@last_name": {
+    "description": "Label for the last name field",
+    "tags": ["add_stakeholder_business_loan"],
+    "type": "text"
+  },
+  "ownership_percentage": "Ownership %",
+  "@ownership_percentage": {
+    "description": "Label for the ownership percentage field",
+    "tags": ["add_stakeholder_business_loan"],
+    "type": "text"
+  },
+
+  "ownership_percentage_hint": "Enter ownership %",
+  "@ownership_percentage_hint": {
+      "description": "Hint text for the ownership percentage field",
+      "tags": ["add_stakeholder_business_loan"],
+      "type": "text"
+    },
+
+  "father_name": "Father Name",
+  "@father_name": {
+    "description": "Label for the father name field",
+    "tags": ["add_stakeholder_business_loan"],
+    "type": "text"
+  },
+  "dob": "Date of Birth",
+  "@dob": {
+    "description": "Label for the date of birth field",
+    "tags": ["add_stakeholder_business_loan"],
+    "type": "text"
+  },
+  "mobile_number": "Mobile Number",
+  "@mobile_number": {
+    "description": "Label for the mobile number field",
+    "tags": ["add_stakeholder_business_loan"],
+    "type": "text"
+  },
+  "residence_status": "Residence Status",
+  "@residence_status": {
+    "description": "Label for the residence status field",
+    "tags": ["add_stakeholder_business_loan"],
+    "type": "text"
+  },
+
+  "residence_status_hint": "Enter residence status",
+  "@residence_status_hint": {
+      "description": "Hint text for the residence status field",
+      "tags": ["add_stakeholder_business_loan"],
+      "type": "text"
+  },
+
+  "pan": "Enter PAN",
+  "@pan": {
+    "description": "Label for the PAN field",
+    "tags": ["add_stakeholder_business_loan"],
+    "type": "text"
+  },
+  "education_status": "Education Status",
+  "@education_status": {
+    "description": "Label for the education status field",
+    "tags": ["add_stakeholder_business_loan"],
+    "type": "text"
+  },
+
+  "education_status_hint": "Enter education status",
+  "@education_status_hint": {
+      "description": "Hint text for the education status field",
+      "tags": ["add_stakeholder_business_loan"],
+      "type": "text"
+  },
+
+  "total_experience": "Total Experience (years)",
+  "@total_experience": {
+    "description": "Label for the total experience field",
+    "tags": ["add_stakeholder_business_loan"],
+    "type": "text"
+  },
+
+  "total_experience_hint": "Enter total experience",
+  "@total_experience_hint": {
+      "description": "Hint text for the total experience field",
+      "tags": ["add_stakeholder_business_loan"],
+      "type": "text"
+  },
+
+  "net_worth": "Net Worth (INR)",
+  "@net_worth": {
+    "description": "Label for the net worth field",
+    "tags": ["add_stakeholder_business_loan"],
+    "type": "text"
+  },
+
+  "net_worth_hint": "Enter net worth",
+  "@net_worth_hint": {
+      "description": "Hint text for the net worth field",
+      "tags": ["add_stakeholder_business_loan"],
+      "type": "text"
+  },
+
+  "address_line_one": "Address Line One*",
+  "@address_line_one": {
+    "description": "Label for the first line of address",
+    "tags": ["add_stakeholder_business_loan"],
+    "type": "text"
+  },
+  "address_line_two": "Address Line Two",
+  "@address_line_two": {
+    "description": "Label for the second line of address",
+    "tags": ["add_stakeholder_business_loan"],
+    "type": "text"
+  },
+  "phone": "Phone",
+  "@phone": {
+    "description": "Label for the phone field",
+    "tags": ["add_stakeholder_business_loan"],
+    "type": "text"
+  },
+
+  "@phone_hint": {
+    "description": "Hint text for phone input",
+    "type": "text"
+  },
+  "phone_hint": "Enter phone",
+
+  "visually_impaired": "Visually Impaired",
+  "@visually_impaired": {
+    "description": "Label for the visually impaired field",
+    "tags": ["add_stakeholder_business_loan"],
+    "type": "text"
+  },
+
+  "visually_impaired_hint": "Enter level",
+  "@visually_impaired_hint": {
+    "description": "Hint text for the visually impaired field",
+    "tags": ["add_stakeholder_business_loan"],
+    "type": "text"
+  },
+
+  "is_guarantor": "Is it Guarantor?",
+  "@is_guarantor": {
+    "description": "Label for the guarantor status",
+    "tags": ["add_stakeholder_business_loan"],
+    "type": "text"
+  },
+  "save": "Save",
+  "@save": {
+    "description": "Button label for saving stakeholder details",
+    "tags": ["add_stakeholder_business_loan"],
+    "type": "text"
+  },
+  "delete": "Delete",
+  "@delete": {
+    "description": "Button label for deleting stakeholder",
+    "tags": ["add_stakeholder_business_loan"],
+    "type": "text"
+  },
+  "discard": "Discard",
+  "@discard": {
+    "description": "Button label for discarding stakeholder changes",
+    "tags": ["add_stakeholder_business_loan"],
+    "type": "text"
+  },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  "main_partner": "Main Partner",
+  "@main_partner": {
+    "description": "Title for the Main Partner page",
+    "tags": ["main_partner_business_loan"],
+    "type": "text"
+  },
+  "select_main_partner": "Select Main Partner",
+  "@select_main_partner": {
+    "description": "Button label for selecting the main partner",
+    "tags": ["main_partner_business_loan"],
+    "type": "text"
+  },
+  "owning_a_house": "Owning a House?",
+  "@owning_a_house": {
+    "description": "Label for the owning a house question",
+    "tags": ["main_partner_business_loan"],
+    "type": "text"
+  },
+  "assessed_for_income_tax": "Assessed for Income Tax?",
+  "@assessed_for_income_tax": {
+    "description": "Label for the income tax assessment question",
+    "tags": ["main_partner_business_loan"],
+    "type": "text"
+  },
+  "have_life_insurance": "Have Life Insurance?",
+  "@have_life_insurance": {
+    "description": "Label for the life insurance question",
+    "tags": ["main_partner_business_loan"],
+    "type": "text"
+  },
+  "marital_status": "Marital Status",
+  "@marital_status": {
+    "description": "Label for the marital status field",
+    "tags": ["main_partner_business_loan"],
+    "type": "text"
+  },
+  "marital_status_hint": "Enter Marital Status",
+  "@marital_status_hint": {
+    "description": "Hint text for the marital status field",
+    "tags": ["main_partner_business_loan"],
+    "type": "text"
+  },
+  "spouse_name": "Spouse Name",
+  "@spouse_name": {
+    "description": "Label for the spouse name field",
+    "tags": ["main_partner_business_loan"],
+    "type": "text"
+  },
+  "spouse_name_hint": "Enter Spouse Name",
+  "@spouse_name_hint": {
+    "description": "Hint text for the spouse name field",
+    "tags": ["main_partner_business_loan"],
+    "type": "text"
+  },
+  "no_of_children": "No. of Children",
+  "@no_of_children": {
+    "description": "Label for the number of children field",
+    "tags": ["main_partner_business_loan"],
+    "type": "text"
+  },
+  "no_of_children_hint": "Enter No. of Children",
+  "@no_of_children_hint": {
+    "description": "Hint text for the number of children field",
+    "tags": ["main_partner_business_loan"],
+    "type": "text"
+  },
+
+
+
+
+
+
+
+
+
+  "loan_form": "Loan Form",
+  "@loan_form": {
+    "description": "Title for the Loan Form page",
+    "tags": ["loan_form_business_loan"],
+    "type": "text"
+  },
+  "total_loan": "Total Loan",
+  "@total_loan": {
+    "description": "Label for the total loan section",
+    "tags": ["loan_form_business_loan"],
+    "type": "text"
+  },
+  "note": "Note",
+  "@note": {
+    "description": "Label for the note section",
+    "tags": ["loan_form_business_loan"],
+    "type": "text"
+  },
+  "note_description": " : The Banker will have the option to request shifting of existing facilities/limits to their bank or ask for pari passu charges.",
+  "@note_description": {
+    "description": "Description of the note regarding loan details",
+    "tags": ["loan_form_business_loan"],
+    "type": "text"
+  },
+  "existing_loans": "Existing loans",
+  "@existing_loans": {
+    "description": "Label for the existing loans field",
+    "tags": ["loan_form_business_loan", "existing_loans_loan_form_business_loan"],
+    "type": "text"
+  },
+  "additional_loan_required": "Additional Loan Required",
+  "@additional_loan_required": {
+    "description": "Label for the additional loan required field",
+    "tags": ["loan_form_business_loan"],
+    "type": "text"
+  },
+  "total_loan_label": "Total loan",
+  "@total_loan_label": {
+    "description": "Label for the total loan field",
+    "tags": ["loan_form_business_loan"],
+    "type": "text"
+  },
+  "submit": "Submit",
+  "@submit": {
+    "description": "Label for the submit button",
+    "tags": ["loan_form_business_loan"],
+    "type": "text"
+  },
+
+
+
+
+
+
+
+
+
+
+
+
+
+  "industry": "Industry*",
+  "@industry": {
+    "description": "Label for the industry input field",
+    "tags": ["business_detail_loan_form_business_loan"],
+    "type": "text"
+  },
+  "industry_hint": "Enter Industry",
+  "@industry_hint": {
+    "description": "Hint text for the industry input field",
+    "tags": ["business_detail_loan_form_business_loan"],
+    "type": "text"
+  },
+  "sector_name": "Sector Name*",
+  "@sector_name": {
+    "description": "Label for the sector name input field",
+    "tags": ["business_detail_loan_form_business_loan"],
+    "type": "text"
+  },
+  "sector_name_hint": "Enter sector name",
+  "@sector_name_hint": {
+    "description": "Hint text for the sector name input field",
+    "tags": ["business_detail_loan_form_business_loan"],
+    "type": "text"
+  },
+  "sub_sector_name": "Sub Sector Name*",
+  "@sub_sector_name": {
+    "description": "Label for the sub sector name input field",
+    "tags": ["business_detail_loan_form_business_loan"],
+    "type": "text"
+  },
+  "sub_sector_name_hint": "Enter sub sector name",
+  "@sub_sector_name_hint": {
+    "description": "Hint text for the sub sector name input field",
+    "tags": ["business_detail_loan_form_business_loan"],
+    "type": "text"
+  },
+  "msme_registration_number": "MSME Registration Number*",
+  "@msme_registration_number": {
+    "description": "Label for the MSME registration number input field",
+    "tags": ["business_detail_loan_form_business_loan"],
+    "type": "text"
+  },
+  "msme_registration_number_hint": "Enter MSME Registration Number",
+  "@msme_registration_number_hint": {
+    "description": "Hint text for the MSME registration number input field",
+    "tags": ["business_detail_loan_form_business_loan"],
+    "type": "text"
+  },
+  "udyog_aadhar_memorandum_no": "Udyog Aadhar Memorandum No.",
+  "@udyog_aadhar_memorandum_no": {
+    "description": "Label for the Udyog Aadhar Memorandum No. input field",
+    "tags": ["business_detail_loan_form_business_loan"],
+    "type": "text"
+  },
+  "udyog_aadhar_memorandum_no_hint": "Enter Udyog Aadhar Memorandum No.",
+  "@udyog_aadhar_memorandum_no_hint": {
+    "description": "Hint text for the Udyog Aadhar Memorandum No. input field",
+    "tags": ["business_detail_loan_form_business_loan"],
+    "type": "text"
+  },
+  "product_service_description": "Product/Service Description*",
+  "@product_service_description": {
+    "description": "Label for the product/service description input field",
+    "tags": ["business_detail_loan_form_business_loan"],
+    "type": "text"
+  },
+  "product_service_description_hint": "Enter Product/Service Description",
+  "@product_service_description_hint": {
+    "description": "Hint text for the product/service description input field",
+    "tags": ["business_detail_loan_form_business_loan"],
+    "type": "text"
+  },
+
+
+
+
+
+
+
+
+
+
+
+
+  "declare_collateral_security": "Declare Collateral Security",
+  "@declare_collateral_security": {
+    "description": "Title for the collateral security declaration section",
+    "tags": ["declare_collateral_loan_form_business_loan"],
+    "type": "text"
+  },
+  "collateral_type": "Collateral Type",
+  "@collateral_type": {
+    "description": "Label for the collateral type input field",
+    "tags": ["declare_collateral_loan_form_business_loan"],
+    "type": "text"
+  },
+  "collateral_type_hint": "Enter Collateral Type",
+  "@collateral_type_hint": {
+    "description": "Hint text for the collateral type input field",
+    "tags": ["declare_collateral_loan_form_business_loan"],
+    "type": "text"
+  },
+  "collateral_amount": "Collateral Amount (₹)",
+  "@collateral_amount": {
+    "description": "Label for the collateral amount input field",
+    "tags": ["declare_collateral_loan_form_business_loan", "existing_loans_loan_form_business_loan"],
+    "type": "text"
+  },
+  "collateral_amount_hint": "Enter Collateral Amount",
+  "@collateral_amount_hint": {
+    "description": "Hint text for the collateral amount input field",
+    "tags": ["declare_collateral_loan_form_business_loan", "existing_loans_loan_form_business_loan"],
+    "type": "text"
+  },
+  "add_collateral": "Add Collateral",
+  "@add_collateral": {
+    "description": "Label for the button to add a new collateral",
+    "tags": ["declare_collateral_loan_form_business_loan"],
+    "type": "text"
+  },
+
+
+
+
+
+
+
+
+
+
+
+
+
+  "loan_detail": "Loan details",
+  "@loan_detail": {
+    "description": "Title for the loan details section",
+    "tags": ["loan_detail_loan_form_business_loan"],
+    "type": "text"
+  },
+  "loan_amount_required": "Loan Amount Required*",
+  "@loan_amount_required": {
+    "description": "Label for the loan amount required input field",
+    "tags": ["loan_detail_loan_form_business_loan"],
+    "type": "text"
+  },
+  "loan_amount_hint": "Enter Loan Amount",
+  "@loan_amount_hint": {
+    "description": "Hint text for the loan amount input field",
+    "tags": ["loan_detail_loan_form_business_loan"],
+    "type": "text"
+  },
+  "promoter_contribution": "Promoter Contribution*",
+  "@promoter_contribution": {
+    "description": "Label for the promoter contribution input field",
+    "tags": ["loan_detail_loan_form_business_loan"],
+    "type": "text"
+  },
+  "promoter_contribution_hint": "Enter promoter contribution",
+  "@promoter_contribution_hint": {
+    "description": "Hint text for the promoter contribution input field",
+    "tags": ["loan_detail_loan_form_business_loan"],
+    "type": "text"
+  },
+  "purpose_of_loan": "Purpose of Loan*",
+  "@purpose_of_loan": {
+    "description": "Label for the purpose of loan input field",
+    "tags": ["loan_detail_loan_form_business_loan"],
+    "type": "text"
+  },
+  "purpose_of_loan_hint": "Enter purpose of loan",
+  "@purpose_of_loan_hint": {
+    "description": "Hint text for the purpose of loan input field",
+    "tags": ["loan_detail_loan_form_business_loan"],
+    "type": "text"
+  },
+  "projected_sales": "Projected Sales FY",
+  "@projected_sales": {
+    "description": "Label for the projected sales input field",
+    "tags": ["loan_detail_loan_form_business_loan"],
+    "type": "text"
+  },
+  "projected_sales_hint": "Enter projected sales",
+  "@projected_sales_hint": {
+    "description": "Hint text for the projected sales input field",
+    "tags": ["loan_detail_loan_form_business_loan"],
+    "type": "text"
+  },
+  "iso_certified": "Is your business ISO certified?",
+  "@iso_certified": {
+    "description": "Label for the ISO certification switch",
+    "tags": ["loan_detail_loan_form_business_loan"],
+    "type": "text"
+  },
+  "factory_premise": "Factory Premise*",
+  "@factory_premise": {
+    "description": "Label for the factory premise input field",
+    "tags": ["loan_detail_loan_form_business_loan"],
+    "type": "text"
+  },
+  "factory_premise_hint": "Enter factory premise",
+  "@factory_premise_hint": {
+    "description": "Hint text for the factory premise input field",
+    "tags": ["loan_detail_loan_form_business_loan"],
+    "type": "text"
+  },
+  "projected_know_how": "Projected Know How*",
+  "@projected_know_how": {
+    "description": "Label for the projected know how input field",
+    "tags": ["loan_detail_loan_form_business_loan"],
+    "type": "text"
+  },
+  "projected_know_how_hint": "Enter projected know how",
+  "@projected_know_how_hint": {
+    "description": "Hint text for the projected know how input field",
+    "tags": ["loan_detail_loan_form_business_loan"],
+    "type": "text"
+  },
+  "competition": "Competition*",
+  "@competition": {
+    "description": "Label for the competition input field",
+    "tags": ["loan_detail_loan_form_business_loan"],
+    "type": "text"
+  },
+  "competition_hint": "Enter competition",
+  "@competition_hint": {
+    "description": "Hint text for the competition input field",
+    "tags": ["loan_detail_loan_form_business_loan"],
+    "type": "text"
+  },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  "name_of_lender": "Name of Lender*",
+  "@name_of_lender": {
+    "description": "Label for the name of lender input field",
+    "tags": ["existing_loans_loan_form_business_loan"],
+    "type": "text"
+  },
+  "name_of_lender_hint": "Enter lender name",
+  "@name_of_lender_hint": {
+    "description": "Hint text for the name of lender input field",
+    "tags": ["existing_loans_loan_form_business_loan"],
+    "type": "text"
+  },
+  "sanctioned_amount": "Sanctioned Amount (₹)*",
+  "@sanctioned_amount": {
+    "description": "Label for the sanctioned amount input field",
+    "tags": ["existing_loans_loan_form_business_loan"],
+    "type": "text"
+  },
+  "sanctioned_amount_hint": "Enter sanctioned amount",
+  "@sanctioned_amount_hint": {
+    "description": "Hint text for the sanctioned amount input field",
+    "tags": ["existing_loans_loan_form_business_loan"],
+    "type": "text"
+  },
+  "outstanding_amount": "Outstanding Amount (₹)*",
+  "@outstanding_amount": {
+    "description": "Label for the outstanding amount input field",
+    "tags": ["existing_loans_loan_form_business_loan"],
+    "type": "text"
+  },
+  "outstanding_amount_hint": "Enter outstanding amount",
+  "@outstanding_amount_hint": {
+    "description": "Hint text for the outstanding amount input field",
+    "tags": ["existing_loans_loan_form_business_loan"],
+    "type": "text"
+  },
+  "emi_amount": "EMI Amount (₹)*",
+  "@emi_amount": {
+    "description": "Label for the EMI amount input field",
+    "tags": ["existing_loans_loan_form_business_loan"],
+    "type": "text"
+  },
+  "emi_amount_hint": "Enter EMI amount",
+  "@emi_amount_hint": {
+    "description": "Hint text for the EMI amount input field",
+    "tags": ["existing_loans_loan_form_business_loan"],
+    "type": "text"
+  },
+  "loan_type": "Loan Type*",
+  "@loan_type": {
+    "description": "Label for the loan type input field",
+    "tags": ["existing_loans_loan_form_business_loan"],
+    "type": "text"
+  },
+  "loan_type_hint": "Enter loan type",
+  "@loan_type_hint": {
+    "description": "Hint text for the loan type input field",
+    "tags": ["existing_loans_loan_form_business_loan"],
+    "type": "text"
+  },
+
+  "status": "Status*",
+  "@status": {
+    "description": "Label for the status input field",
+    "tags": ["existing_loans_loan_form_business_loan"],
+    "type": "text"
+  },
+  "status_hint": "Enter status",
+  "@status_hint": {
+    "description": "Hint text for the status input field",
+    "tags": ["existing_loans_loan_form_business_loan"],
+    "type": "text"
+  },
+  "add_existing_loan": "Add Existing Loan",
+  "@add_existing_loan": {
+    "description": "Button text to add an existing loan",
+    "tags": ["existing_loans_loan_form_business_loan"],
+    "type": "text"
   }
 }
+
+

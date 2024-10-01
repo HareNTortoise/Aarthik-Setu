@@ -100,7 +100,7 @@
     "description": "Label for the back button",
     "type": "text",
     "placeholders": {},
-    "tags": ["sign-in"]
+    "tags": ["sign-in", "itr_form_manual_personal_loan", "bank_details_personal_loan"]
   },
   "phoneNumber": "ফোন নম্বর",
   "@phoneNumber": {
@@ -115,5 +115,2802 @@
     "type": "text",
     "placeholders": {},
     "tags": ["sign-in"]
+  },
+
+
+
+
+
+
+  "dashboard": "ড্যাশবোর্ড",
+  "@dashboard": {
+    "description": "Title for the dashboard page",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["dashboard"]
+  },
+  "personalLoans": "ব্যক্তিগত ঋণ",
+  "@personalLoans": {
+    "description": "Label for personal loan options",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["dashboard", "personal_loan"]
+  },
+  "businessLoans": "ব্যবসায়িক ঋণ",
+  "@businessLoans": {
+    "description": "Label for business loan options",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["dashboard"]
+  },
+  "governmentSchemes": "সরকারি প্রকল্প",
+  "@governmentSchemes": {
+    "description": "Label for government schemes",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["dashboard"]
+  },
+  "logOut": "লগ আউট",
+  "@logOut": {
+    "description": "Button label for logging out",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["dashboard"]
+  },
+  "profile": "প্রোফাইল",
+  "@profile": {
+    "description": "Label for profile selection",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["dashboard"]
+  },
+  "pendingApplications": "মুলতুবি আবেদন",
+  "@pendingApplications": {
+    "description": "Label for pending applications with count",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["dashboard"]
+  },
+
+
+
+
+
+
+
+
+  "personalLoanDescription": "কম সুদের হার এবং নমনীয় পরিশোধ বিকল্প সহ ব্যক্তিগত ঋণ পান।",
+  "@personalLoanDescription": {
+    "description": "Description for personal loan option",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["personal_loan"]
+  },
+  "homeLoans": "বাড়ির ঋণ",
+  "@homeLoans": {
+    "description": "Title for home loan option",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["personal_loan"]
+  },
+  "homeLoanDescription": "কম সুদের হার এবং নমনীয় পরিশোধ বিকল্প সহ বাড়ির ঋণ পান।",
+  "@homeLoanDescription": {
+    "description": "Description for home loan option",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["personal_loan"]
+  },
+  "autoLoans": "গাড়ির ঋণ",
+  "@autoLoans": {
+    "description": "Title for auto loan option",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["personal_loan"]
+  },
+  "autoLoanDescription": "কম সুদের হার এবং নমনীয় পরিশোধ বিকল্প সহ গাড়ির ঋণ পান।",
+  "@autoLoanDescription": {
+    "description": "Description for auto loan option",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["personal_loan"]
+  },
+
+
+
+
+
+
+
+
+
+
+
+  "msmeLoans": "এমএসএমই ঋণ",
+  "@msmeLoans": {
+    "description": "Title for MSME loan option",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["business_loan"]
+  },
+  "msmeLoanDescription": "কম সুদের হার এবং নমনীয় পরিশোধের বিকল্পগুলির সাথে ₹5 কোটি পর্যন্ত এমএসএমই ঋণ পান।",
+  "@msmeLoanDescription": {
+    "description": "Description for MSME loan option",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["business_loan"]
+  },
+  "termLoans": "টার্ম ঋণ",
+  "@termLoans": {
+    "description": "Title for term loan option",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["business_loan"]
+  },
+  "termLoanDescription": "প্রতিযোগিতামূলক হার এবং নমনীয় পরিশোধের শর্তগুলির সাথে ₹50 লক্ষ পর্যন্ত টার্ম ঋণ পান।",
+  "@termLoanDescription": {
+    "description": "Description for term loan option",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["business_loan"]
+  },
+  "mudraLoans": "মুদ্রা ঋণ",
+  "@mudraLoans": {
+    "description": "Title for Mudra loan option",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["business_loan"]
+  },
+  "mudraLoanDescription": "নমনীয় পরিশোধের সাথে ক্ষুদ্র উদ্যোগগুলির জন্য ₹10 লক্ষ পর্যন্ত মুদ্রা ঋণ পান।",
+  "@mudraLoanDescription": {
+    "description": "Description for Mudra loan option",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["business_loan"]
+  },
+
+
+
+
+
+
+
+
+
+  "pendingApplicationsTitle": "অপেক্ষমাণ আবেদনসমূহ",
+  "@pendingApplicationsTitle": {
+    "description": "Title for the pending applications dialog",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["dashboard_pending_applications"]
+  },
+  "noPendingApplications": "আপনার কোনও অপেক্ষমাণ আবেদন নেই।",
+  "@noPendingApplications": {
+    "description": "Message when there are no pending applications",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["dashboard_pending_applications"]
+  },
+  "closeButton": "বন্ধ করুন",
+  "@closeButton": {
+    "description": "Label for the close button",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["dashboard_pending_applications", "dashboard_select_profile", "bank_details_personal_loan"]
+  },
+
+
+
+
+
+
+  "selectProfileTitle": "প্রোফাইল নির্বাচন করুন",
+  "@selectProfileTitle": {
+    "description": "Title for the select profile dialog",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["dashboard_select_profile"]
+  },
+  "noProfiles": "আপনার কোনো প্রোফাইল নেই।",
+  "@noProfiles": {
+    "description": "Message when there are no profiles",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["dashboard_select_profile"]
+  },
+
+
+
+
+
+
+
+  "choosePersonalProfile": "ব্যক্তিগত প্রোফাইল বেছে নিন",
+  "@choosePersonalProfile": {
+    "description": "Title for choosing personal profile",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["personal_loan_journey"]
+  },
+  "selectedProfile": "নির্বাচিত প্রোফাইল: আদর্শ বর্মা",
+  "@selectedProfile": {
+    "description": "Message showing selected profile",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["personal_loan_journey"]
+  },
+  "selectProfileMessage": "প্রাপ্য প্রোফাইলের তালিকা থেকে আপনার ব্যক্তিগত প্রোফাইল নির্বাচন করুন। যদি আপনার কোনো প্রোফাইল না থাকে, তবে নতুন প্রোফাইল তৈরি করতে পারেন।",
+  "@selectProfileMessage": {
+    "description": "Message for selecting personal profile",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["personal_loan_journey"]
+  },
+  "itrImportance": "আপনার ITR দেওয়া ঋণের জন্য আবেদন করার সময় অত্যন্ত প্রয়োজনীয়, কারণ এটি ঋণদাতাদের আপনার আর্থিক স্থিতিশীলতা, ঋণ পরিশোধের সক্ষমতা এবং সর্বমোট বিশ্বাসযোগ্যতা নিশ্চিত করতে সাহায্য করে, যা ঋণ অনুমোদনের সম্ভাবনা বাড়ায়। ITR না থাকলে, আপনার আয় যাচাই করার জন্য বিকল্প কোন উপায় থাকবে না।",
+  "@itrImportance": {
+    "description": "Importance of providing ITR in a loan application",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["personal_loan_journey"]
+  },
+  "itrButtonTitle": "আয় কর রিটার্ন",
+  "@itrButtonTitle": {
+    "description": "Button label for providing ITR",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["personal_loan_journey"]
+  },
+  "itrButtonDescription": "গত ৩ বছরের আয় কর রিটার্নের ফর্ম প্রদান করুন অথবা আপনার আয় ঘোষণা করুন।",
+  "@itrButtonDescription": {
+    "description": "Description for providing ITR",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["personal_loan_journey"]
+  },
+  "bankDetailsImportance": "ব্যাংক তথ্য এবং বিবৃতি ঋণদাতাদের আপনার আর্থিক অভ্যাস, ঋণ পরিশোধের সক্ষমতা এবং ঋণের ঝুঁকি সম্পর্কে পরিষ্কার এবং বিশ্বাসযোগ্য ধারণা দিতে সাহায্য করে, যা ঋণ অনুমোদনে একটি গুরুত্বপূর্ণ উপাদান।",
+  "@bankDetailsImportance": {
+    "description": "Importance of providing bank details in a loan application",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["personal_loan_journey"]
+  },
+  "bankDetailsButtonTitle": "ব্যাংক বিস্তারিত",
+  "@bankDetailsButtonTitle": {
+    "description": "Button label for providing bank details",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["personal_loan_journey"]
+  },
+  "bankDetailsButtonDescription": "আপনার ব্যাংক বিস্তারিত প্রকাশ করুন, গত ৬ মাসের ব্যাংক বিবৃতি প্রদান করুন।",
+  "@bankDetailsButtonDescription": {
+    "description": "Description for providing bank details",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["personal_loan_journey"]
+  },
+  "personalDetailsImportance": "ঋণ আবেদন করতে ব্যক্তিগত তথ্য খুব গুরুত্বপূর্ণ, কারণ এটি আপনার পরিচয় নিশ্চিত করতে, আপনার যোগ্যতা নির্ধারণ করতে এবং আপনার ঋণযোগ্যতা মূল্যায়ন করতে সহায়তা করে। বয়স, ঠিকানা, চাকরির তথ্য ইত্যাদি আপনার স্থিতিশীলতা এবং ঋণ পরিশোধের সক্ষমতার তথ্য প্রদান করে। সঠিক ব্যক্তিগত তথ্য আইনগত এবং পদ্ধতিগতভাবে প্রতিপালন নিশ্চিত করে।",
+  "@personalDetailsImportance": {
+    "description": "Importance of providing personal details in a loan application",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["personal_loan_journey"]
+  },
+  "basicDetailsButtonTitle": "মূল তথ্য",
+  "@basicDetailsButtonTitle": {
+    "description": "Button label for providing basic details",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["personal_loan_journey"]
+  },
+  "basicDetailsButtonDescription": "আপনার ব্যক্তিগত তথ্য, নাম, বয়স, ঠিকানা ইত্যাদি প্রদান করুন।",
+  "@basicDetailsButtonDescription": {
+    "description": "Description for providing basic details",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["personal_loan_journey"]
+  },
+  "employmentDetailsImportance": "ঋণ আবেদন করতে চাকরির বিস্তারিত তথ্য গুরুত্বপূর্ণ, কারণ এটি ঋণদাতাদের আপনার ঋণ পরিশোধের সক্ষমতা, চাকরিতে স্থিতিশীলতা, আর্থিক তথ্য মূল্যায়নে সহায়তা করে। কোম্পানির নাম, পদ, বেতন ইত্যাদি আপনার আয়ের স্থিতিশীলতার তথ্য প্রদান করে।",
+  "@employmentDetailsImportance": {
+    "description": "Importance of providing employment details in a loan application",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["personal_loan_journey"]
+  },
+  "employmentDetailsButtonTitle": "চাকরির বিস্তারিত",
+  "@employmentDetailsButtonTitle": {
+    "description": "Button label for providing employment details",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["personal_loan_journey"]
+  },
+  "employmentDetailsButtonDescription": "আপনার চাকরির বিস্তারিত, কোম্পানির নাম, পদ, বেতন ইত্যাদি প্রদান করুন।",
+  "@employmentDetailsButtonDescription": {
+    "description": "Description for providing employment details",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["personal_loan_journey"]
+  },
+  "creditInformationImportance": "ক্রেডিট তথ্য ঋণ আবেদন করতে গুরুত্বপূর্ণ, কারণ এটি ঋণদাতাদের আপনার ঋণযোগ্যতা, ঋণ পরিশোধের সক্ষমতা, আর্থিক তথ্য মূল্যায়নে সহায়তা করে। ক্রেডিট স্কোর, ক্রেডিট ইতিহাস, বর্তমান ঋণ ইত্যাদি আপনার ক্রেডিট ঝুঁকি এবং ঋণ পরিশোধের সক্ষমতার তথ্য প্রদান করে। সঠিক ক্রেডিট তথ্য আইনগত এবং পদ্ধতিগতভাবে প্রতিপালন নিশ্চিত করে।",
+  "@creditInformationImportance": {
+    "description": "Importance of providing credit information in a loan application",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["personal_loan_journey"]
+  },
+  "creditInformationButtonTitle": "ক্রেডিট তথ্য",
+  "@creditInformationButtonTitle": {
+    "description": "Button label for providing credit information",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["personal_loan_journey"]
+  },
+  "creditInformationButtonDescription": "আপনার ক্রেডিট তথ্য, ক্রেডিট স্কোর, ক্রেডিট ইতিহাস, বর্তমান ঋণ ইত্যাদি প্রদান করুন।",
+  "@creditInformationButtonDescription": {
+    "description": "Description for providing credit information",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["personal_loan_journey"]
+  },
+  "contactInformationImportance": "যোগাযোগের তথ্য ঋণ আবেদন করতে গুরুত্বপূর্ণ, কারণ এটি ঋণদাতাদের আপনার পরিচয় নিশ্চিত করতে, আপনার সাথে যোগাযোগ করতে এবং আপনার ঋণ পরিশোধের সক্ষমতা মূল্যায়নে সহায়তা করে। ফোন নম্বর, ইমেইল, ঠিকানা ইত্যাদির তথ্য আপনার প্রাপ্যতা, যোগাযোগের সক্ষমতার তথ্য প্রদান করে।",
+  "@contactInformationImportance": {
+    "description": "Importance of providing contact information in a loan application",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["personal_loan_journey"]
+  },
+  "contactInformationButtonTitle": "যোগাযোগের তথ্য",
+  "@contactInformationButtonTitle": {
+    "description": "Button label for providing contact information",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["personal_loan_journey"]
+  },
+  "contactInformationButtonDescription": "আপনার যোগাযোগের তথ্য, ফোন নম্বর, ইমেইল, ঠিকানা ইত্যাদি প্রদান করুন।",
+  "@contactInformationButtonDescription": {
+    "description": "Description for providing contact information",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["personal_loan_journey"]
+  },
+  "loanFormImportance": "ঋণের প্রয়োজনীয়তা এবং উদ্দেশ্য ঋণদাতাদের আপনার আর্থিক চাহিদা, লক্ষ্য, প্রত্যাশার একটি পরিষ্কার ধারণা দেয়, যা ঋণের জন্য আবেদন করার সময় দায়িত্ব, নির্ভুলতা, এবং সেরা মতামত নিশ্চিত করে।",
+  "@loanFormImportance": {
+    "description": "Importance of filling out the loan form accurately",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["personal_loan_journey"]
+  },
+  "loanFormButtonTitle": "ঋণের ফর্ম",
+  "@loanFormButtonTitle": {
+    "description": "Button label for loan form submission",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["personal_loan_journey"]
+  },
+  "loanFormButtonDescription": "ঋণের আবেদনকারী চাহিদা, লক্ষ্য, আর্থিক প্রয়োজনীয়তা জমা করুন।",
+  "@loanFormButtonDescription": {
+    "description": "Description for loan form submission",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["personal_loan_journey"]
+  },
+  "reviewFormButton": "আপনার ফর্ম পর্যালোচনা করুন",
+  "@reviewFormButton": {
+    "description": "Button label for reviewing the loan form",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["personal_loan_journey"]
+  },
+  "reviewFormButtonDescription": "আপনার ঋণ আবেদনটি পর্যালোচনা করা এবং জমা দেওয়া ঋণ আবেদন প্রক্রিয়ার শেষ ধাপ। আপনি যে সমস্ত তথ্য প্রদান করেছেন তা পর্যালোচনা করুন, এর যথার্থতা নিশ্চিত করুন এবং আপনার আবেদনটি অনুমোদনের জন্য ঋণদাতার কাছে জমা দিন।",
+  "@reviewFormButtonDescription": {
+    "description": "Description for reviewing the loan form",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["personal_loan_journey"]
+  },
+
+
+
+
+
+
+
+  "itrDetailsTitle": "আইটিআর বিবরণ",
+  "@itrDetailsTitle": {
+    "description": "Title for the ITR Details section",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["itr_form_personal_loan"]
+  },
+  "manualDeclarationText": "যদি আপনার বার্ষিক আয় 2.5 লাখের কম হয়, তাহলে আপনার আর্থিক বিবরণ প্রকাশ করুন",
+  "@manualDeclarationText": {
+    "description": "Text for manual declaration option",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["itr_form_personal_loan"]
+  },
+  "itrMandatoryText_1": "আর্থিক বছরের আইটিআর বিবরণ",
+  "@itrMandatoryText_1": {
+    "description": "Text for the ITR Details section",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["itr_form_personal_loan"]
+  },
+  "itrMandatoryText_2": "আবশ্যক",
+  "@itrMandatoryText_2": {
+    "description": "Text for the ITR Details section",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["itr_form_personal_loan"]
+  },
+  "uploadITRText": "আইটিআর আপলোড করুন",
+  "@uploadITRText": {
+    "description": "Text for the toggle button for uploading ITR",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["itr_form_personal_loan"]
+  },
+  "manualDeclarationButton": "ম্যানুয়াল ডিক্লারেশন",
+  "@manualDeclarationButton": {
+    "description": "Text for the toggle button for manual declaration",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["itr_form_personal_loan"]
+  },
+
+
+
+
+
+
+
+
+  "uploadITRTitle": "আইটিআর আপলোড করুন (পিডিএফ ফরম্যাট)",
+  "@uploadITRTitle": {
+    "description": "Title for the upload ITR section",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["itr_form_upload_personal_loan"]
+  },
+  "fyLabel": "আর্থিক বছর",
+  "@fyLabel": {
+    "description": "Label for the financial year",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["itr_form_upload_personal_loan"]
+  },
+  "uploadButton": "ফাইল আপলোড করুন",
+  "@uploadButton": {
+    "description": "Label for the upload button",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["itr_form_upload_personal_loan"]
+  },
+  "instructionsTitle": "পিডিএফ ফরম্যাটে আইটিআর ডাউনলোড করার পদ্ধতি",
+  "@instructionsTitle": {
+    "description": "Title for the instructions dialog",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["itr_form_upload_personal_loan"]
+  },
+  "instructionsContent": "1. উপরের ডানদিকে 'লগইন' বোতামে ক্লিক করুন এবং আপনার লগইন তথ্য দিয়ে লগইন করুন।\n\n2. উপরের নেভিগেশন বার থেকে 'ই-ফাইল' এ ক্লিক করুন।\n\n3. ই-ফাইল ড্রপডাউন মেনু থেকে 'আয়কর রিটার্ন' এ ক্লিক করুন।\n\n4. আয়কর রিটার্ন ড্রপডাউন মেনু থেকে 'ফাইল করা রিটার্ন দেখুন' এ ক্লিক করুন।\n\n5. আপনি যদি ITR টাইপ - 1/2 দাখিল করেন, তাহলে 'ডাউনলোড ফর্ম'-এ ক্লিক করুন, নির্দিষ্ট 'আয়বর্ষ' এর জন্য আইটিআর পিডিএফ ফাইল ডাউনলোড হবে।\n\n6. ডাউনলোড করা ফাইলগুলি প্ল্যাটফর্মে আপলোড করুন।",
+  "@instructionsContent": {
+    "description": "Content for instructions on how to download ITR",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["itr_form_upload_personal_loan"]
+  },
+  "instructionsButton": "নির্দেশ",
+  "@instructionsButton": {
+    "description": "Text for instructions button",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["itr_form_upload_personal_loan"]
+  },
+
+
+
+
+
+
+
+
+
+
+  "@declareFinancialDetails": {
+    "description": "Title of the form to declare financial details.",
+    "type": "text",
+    "tags": ["itr_form_manual_personal_loan"]
+  },
+  "declareFinancialDetails": "আপনার আর্থিক তথ্য ঘোষণা করুন",
+
+  "@firstName": {
+    "description": "Label for the first name input field.",
+    "type": "text",
+    "tags": ["itr_form_manual_personal_loan", "basic_details_personal_loan"]
+  },
+  "firstName": "প্রথম নাম*",
+
+  "@firstNameHint": {
+    "description": "Hint text for the first name input field.",
+    "type": "text",
+    "tags": ["itr_form_manual_personal_loan", "basic_details_personal_loan"]
+  },
+  "firstNameHint": "আপনার প্রথম নাম লিখুন",
+
+  "@middleName": {
+    "description": "Label for the middle name input field.",
+    "type": "text",
+    "tags": ["itr_form_manual_personal_loan", "basic_details_personal_loan"]
+  },
+  "middleName": "মাঝের নাম",
+
+  "@middleNameHint": {
+    "description": "Hint text for the middle name input field.",
+    "type": "text",
+    "tags": ["itr_form_manual_personal_loan", "basic_details_personal_loan"]
+  },
+  "middleNameHint": "আপনার মাঝের নাম লিখুন",
+
+  "@lastName": {
+    "description": "Label for the last name input field.",
+    "type": "text",
+    "tags": ["itr_form_manual_personal_loan", "basic_details_personal_loan"]
+  },
+  "lastName": "শেষ নাম*",
+
+  "@lastNameHint": {
+    "description": "Hint text for the last name input field.",
+    "type": "text",
+    "tags": ["itr_form_manual_personal_loan", "basic_details_personal_loan"]
+  },
+  "lastNameHint": "আপনার শেষ নাম লিখুন",
+
+  "@dateOfBirth": {
+    "description": "Label for the date of birth input.",
+    "type": "text",
+    "tags": ["itr_form_manual_personal_loan", "basic_details_personal_loan"]
+  },
+  "dateOfBirth": "জন্ম তারিখ*",
+
+  "@dateOfBirthHint": {
+    "description": "Placeholder text for the date of birth button.",
+    "type": "text",
+    "tags": ["itr_form_manual_personal_loan", "basic_details_personal_loan"]
+  },
+  "dateOfBirthHint": "জন্ম তারিখ",
+
+  "@panNumber": {
+    "description": "Label for the PAN number input field.",
+    "type": "text",
+    "tags": ["itr_form_manual_personal_loan", "basic_details_personal_loan"]
+  },
+  "panNumber": "প্যান নম্বর*",
+
+  "@panNumberHint": {
+    "description": "Hint text for the PAN number input field.",
+    "type": "text",
+    "tags": ["itr_form_manual_personal_loan", "basic_details_personal_loan"]
+  },
+  "panNumberHint": "আপনার প্যান নম্বর লিখুন",
+
+  "@mobileNumber": {
+    "description": "Label for the mobile number input field.",
+    "type": "text",
+    "tags": ["itr_form_manual_personal_loan", "basic_details_personal_loan"]
+  },
+  "mobileNumber": "মোবাইল নম্বর*",
+
+  "@mobileNumberHint": {
+    "description": "Hint text for the mobile number input field.",
+    "type": "text",
+    "tags": ["itr_form_manual_personal_loan", "basic_details_personal_loan"]
+  },
+  "mobileNumberHint": "আপনার মোবাইল নম্বর লিখুন",
+
+  "@email": {
+    "description": "Label for the personal email input field.",
+    "type": "text",
+    "tags": ["itr_form_manual_personal_loan"]
+  },
+  "email": "ইমেইল (ব্যক্তিগত)*",
+
+  "@emailHint": {
+    "description": "Hint text for the personal email input field.",
+    "type": "text",
+    "tags": ["itr_form_manual_personal_loan"]
+  },
+  "emailHint": "আপনার ইমেইল লিখুন",
+
+  "@addressLine1": {
+    "description": "Label for the address line 1 input field.",
+    "type": "text",
+    "tags": ["itr_form_manual_personal_loan"]
+  },
+  "addressLine1": "ঠিকানা লাইন 1*",
+
+  "@addressLine1Hint": {
+    "description": "Hint text for the address line 1 input field.",
+    "type": "text",
+    "tags": ["itr_form_manual_personal_loan"]
+  },
+  "addressLine1Hint": "আপনার ঠিকানা লিখুন",
+
+  "@addressLine2": {
+    "description": "Label for the address line 2 input field.",
+    "type": "text",
+    "tags": ["itr_form_manual_personal_loan"]
+  },
+  "addressLine2": "ঠিকানা লাইন 2",
+
+  "@addressLine2Hint": {
+    "description": "Hint text for the address line 2 input field.",
+    "type": "text",
+    "tags": ["itr_form_manual_personal_loan"]
+  },
+  "addressLine2Hint": "আপনার ঠিকানা লিখুন",
+
+  "@landmark": {
+    "description": "Label for the landmark input field.",
+    "type": "text",
+    "tags": ["itr_form_manual_personal_loan", "stakeholder_business_loan"]
+  },
+  "landmark": "মাইলফলক",
+
+  "@landmarkHint": {
+    "description": "Hint text for the landmark input field.",
+    "type": "text",
+    "tags": ["itr_form_manual_personal_loan", "stakeholder_business_loan"]
+  },
+  "landmarkHint": "মাইলফলক লিখুন",
+
+  "@country": {
+    "description": "Label for the country dropdown.",
+    "type": "text",
+    "tags": ["itr_form_manual_personal_loan", "stakeholder_business_loan"]
+  },
+  "country": "দেশ*",
+
+  "@state": {
+    "description": "Label for the state dropdown.",
+    "type": "text",
+    "tags": ["itr_form_manual_personal_loan", "stakeholder_business_loan"]
+  },
+  "state": "রাজ্য*",
+
+  "@city": {
+    "description": "Label for the city dropdown.",
+    "type": "text",
+    "tags": ["itr_form_manual_personal_loan", "stakeholder_business_loan"]
+  },
+  "city": "শহর*",
+
+  "@pinCode": {
+    "description": "Label for the pin code input field.",
+    "type": "text",
+    "tags": ["itr_form_manual_personal_loan", "stakeholder_business_loan"]
+  },
+  "pinCode": "পিন কোড*",
+
+  "@pinCodeHint": {
+    "description": "Hint text for the pin code input field.",
+    "type": "text",
+    "tags": ["itr_form_manual_personal_loan", "stakeholder_business_loan"]
+  },
+  "pinCodeHint": "আপনার পিন কোড লিখুন",
+
+  "@village": {
+    "description": "Label for the village input field.",
+    "type": "text",
+    "tags": ["itr_form_manual_personal_loan", "stakeholder_business_loan"]
+  },
+  "village": "গ্রাম",
+
+  "@villageHint": {
+    "description": "Hint text for the village input field.",
+    "type": "text",
+    "tags": ["itr_form_manual_personal_loan", "stakeholder_business_loan"]
+  },
+  "villageHint": "আপনার গ্রাম লিখুন",
+
+  "@district": {
+    "description": "Label for the district input field.",
+    "type": "text",
+    "tags": ["itr_form_manual_personal_loan", "stakeholder_business_loan"]
+  },
+  "district": "জেলা*",
+
+  "@districtHint": {
+    "description": "Hint text for the district input field.",
+    "type": "text",
+    "tags": ["itr_form_manual_personal_loan", "stakeholder_business_loan"]
+  },
+  "districtHint": "আপনার জেলা লিখুন",
+
+  "@subDistrict": {
+    "description": "Label for the sub-district input field.",
+    "type": "text",
+    "tags": ["itr_form_manual_personal_loan", "stakeholder_business_loan"]
+  },
+  "subDistrict": "উপজেলা*",
+
+  "@subDistrictHint": {
+    "description": "Hint text for the sub-district input field.",
+    "type": "text",
+    "tags": ["itr_form_manual_personal_loan", "stakeholder_business_loan"]
+  },
+  "subDistrictHint": "আপনার উপজেলা লিখুন",
+
+  "@netAnnualIncome": {
+    "description": "Title for the net annual income section.",
+    "type": "text",
+    "tags": ["itr_form_manual_personal_loan"]
+  },
+  "netAnnualIncome": "নেট বার্ষিক আয়ের বিবরণ",
+
+  "@annualIncomeFY": {
+    "description": "Label for net annual income for the financial year.",
+    "type": "text",
+    "tags": ["itr_form_manual_personal_loan"]
+  },
+  "annualIncomeFY": "আর্থিক বছর {year1}-{year2}*",
+
+  "@annualIncomeHint": {
+    "description": "Hint text for entering net annual income.",
+    "type": "text",
+    "tags": ["itr_form_manual_personal_loan"]
+  },
+  "annualIncomeHint": "আপনার বার্ষিক আয় লিখুন",
+
+  "@annualIncome": {
+    "description": "Label for annual income input field.",
+    "type": "text",
+    "tags": ["itr_form_manual_personal_loan"]
+  },
+  "annualIncome": "বার্ষিক আয়*",
+
+  "@submitButton": {
+    "description": "Label for the submit button.",
+    "type": "text",
+    "tags": ["itr_form_manual_personal_loan"]
+  },
+  "submitButton": "জমা দিন",
+
+  "@proceedButton": {
+    "description": "Label for the proceed button.",
+    "type": "text",
+    "tags": ["itr_form_manual_personal_loan", "bank_details_personal_loan"]
+  },
+  "proceedButton": "অগ্রসর হন",
+
+
+
+
+
+
+
+
+
+
+  "@bankDetails": {
+    "description": "Title for the bank details section.",
+    "type": "text",
+    "tags": ["bank_details_personal_loan"]
+  },
+  "bankDetails": "ব্যাংকের বিবরণ",
+
+  "@addUpTo3Accounts": {
+    "description": "Message indicating how many bank accounts can be added.",
+    "type": "text",
+    "tags": ["bank_details_personal_loan"]
+  },
+  "addUpTo3Accounts": "আপনি সর্বাধিক 3টি ব্যাংক অ্যাকাউন্ট যোগ করতে পারেন",
+
+  "@uploadBankStatement": {
+    "description": "Label for uploading bank statement.",
+    "type": "text",
+    "tags": ["bank_details_personal_loan"]
+  },
+  "uploadBankStatement": "ব্যাংক স্টেটমেন্ট আপলোড করুন (PDF)",
+
+  "@addAccount": {
+    "description": "Label for adding a new bank account button.",
+    "type": "text",
+    "tags": ["bank_details_personal_loan"]
+  },
+  "addAccount": "অ্যাকাউন্ট যোগ করুন",
+
+  "@bankName": {
+    "description": "Label for bank name field.",
+    "type": "text",
+    "tags": ["bank_details_personal_loan"]
+  },
+  "bankName": "ব্যাংকের নাম*",
+
+  "@enterBankName": {
+    "description": "Placeholder text for bank name input field.",
+    "type": "text",
+    "tags": ["bank_details_personal_loan"]
+  },
+  "enterBankName": "ব্যাংকের নাম লিখুন",
+
+  "@accountSinceMonth": {
+    "description": "Label for account since month field.",
+    "type": "text",
+    "tags": ["bank_details_personal_loan"]
+  },
+  "accountSinceMonth": "মাস থেকে অ্যাকাউন্ট*",
+
+  "@month": {
+    "description": "Placeholder text for selecting the month.",
+    "type": "text",
+    "tags": ["bank_details_personal_loan", "stakeholder_business_loan"]
+  },
+  "month": "মাস",
+
+  "@accountSinceYear": {
+    "description": "Label for account since year field.",
+    "type": "text",
+    "tags": ["bank_details_personal_loan"]
+  },
+  "accountSinceYear": "বছর থেকে অ্যাকাউন্ট*",
+
+  "@yearButton": {
+    "description": "Placeholder text for selecting the year.",
+    "type": "text",
+    "tags": ["bank_details_personal_loan", "stakeholder_business_loan"]
+  },
+  "yearButton": "বছর",
+
+  "@isSalaryAccount": {
+    "description": "Question asking if the account is a salary account.",
+    "type": "text",
+    "tags": ["bank_details_personal_loan"]
+  },
+  "isSalaryAccount": "এটি কি বেতন অ্যাকাউন্ট?",
+
+  "@yesButton": {
+    "description": "Option for 'Yes' in response to a question.",
+    "type": "text",
+    "tags": ["bank_details_personal_loan"]
+  },
+  "yesButton": "হ্যাঁ",
+
+  "@noButton": {
+    "description": "Option for 'No' in response to a question.",
+    "type": "text",
+    "tags": ["bank_details_personal_loan"]
+  },
+  "noButton": "না",
+
+  "drag_file_here": "ফাইলটি এখানে টেনে আনুন",
+  "@drag_file_here": {
+    "description": "Text for dragging and dropping a file.",
+    "type": "text",
+    "tags": ["bank_details_personal_loan", "bank_details_business_loan"]
+  },
+
+
+
+
+
+
+
+
+
+
+
+
+  "@gender": {
+    "description": "Label for gender dropdown",
+    "type": "text",
+    "tags": ["basic_details_personal_loan"]
+  },
+  "gender": "লিঙ্গ*",
+
+  "@selectGender": {
+    "description": "Placeholder for selecting gender",
+    "type": "text",
+    "tags": ["basic_details_personal_loan"]
+  },
+  "selectGender": "লিঙ্গ নির্বাচন করুন",
+
+  "@category": {
+    "description": "Label for category dropdown",
+    "type": "text",
+    "tags": ["basic_details_personal_loan"]
+  },
+  "category": "শ্রেণী*",
+
+  "@selectCategory": {
+    "description": "Placeholder for selecting category",
+    "type": "text",
+    "tags": ["basic_details_personal_loan"]
+  },
+  "selectCategory": "শ্রেণী নির্বাচন করুন",
+
+  "@emailPersonal": {
+    "description": "Label for personal email input field",
+    "type": "text",
+    "tags": ["basic_details_personal_loan"]
+  },
+  "emailPersonal": "ইমেইল (ব্যক্তিগত)*",
+
+  "@enterEmailPersonal": {
+    "description": "Placeholder for entering personal email",
+    "type": "text",
+    "tags": ["basic_details_personal_loan"]
+  },
+  "enterEmailPersonal": "ব্যক্তিগত ইমেইল লিখুন",
+
+  "@fatherName": {
+    "description": "Label for father's name input field",
+    "type": "text",
+    "tags": ["basic_details_personal_loan"]
+  },
+  "fatherName": "বাবার নাম",
+
+  "@enterFatherName": {
+    "description": "Placeholder for entering father's name",
+    "type": "text",
+    "tags": ["basic_details_personal_loan"]
+  },
+  "enterFatherName": "বাবার নাম লিখুন",
+
+  "@educationQualification": {
+    "description": "Label for education qualification dropdown",
+    "type": "text",
+    "tags": ["basic_details_personal_loan"]
+  },
+  "educationQualification": "শিক্ষাগত যোগ্যতা*",
+
+  "@selectEducationQualification": {
+    "description": "Placeholder for selecting education qualification",
+    "type": "text",
+    "tags": ["basic_details_personal_loan"]
+  },
+  "selectEducationQualification": "শিক্ষাগত যোগ্যতা নির্বাচন করুন",
+
+  "@netWorth": {
+    "description": "Label for net worth input field",
+    "type": "text",
+    "tags": ["basic_details_personal_loan"]
+  },
+  "netWorth": "নেট ওার্থ*",
+
+  "@enterNetWorth": {
+    "description": "Placeholder for entering net worth",
+    "type": "text",
+    "tags": ["basic_details_personal_loan"]
+  },
+  "enterNetWorth": "নেট ওার্থ লিখুন",
+
+  "@nationality": {
+    "description": "Label for nationality dropdown",
+    "type": "text",
+    "tags": ["basic_details_personal_loan"]
+  },
+  "nationality": "জাতীয়তা*",
+
+  "@selectNationality": {
+    "description": "Placeholder for selecting nationality",
+    "type": "text",
+    "tags": ["basic_details_personal_loan"]
+  },
+  "selectNationality": "জাতীয়তা নির্বাচন করুন",
+
+  "@dependents": {
+    "description": "Label for dependents dropdown",
+    "type": "text",
+    "tags": ["basic_details_personal_loan"]
+  },
+  "dependents": "নির্ভরশীল*",
+
+  "@selectDependents": {
+    "description": "Placeholder for selecting dependents",
+    "type": "text",
+    "tags": ["basic_details_personal_loan"]
+  },
+  "selectDependents": "নির্ভরশীল নির্বাচন করুন",
+
+  "@maritalStatus": {
+    "description": "Label for marital status dropdown",
+    "type": "text",
+    "tags": ["basic_details_personal_loan"]
+  },
+  "maritalStatus": "বৈবাহিক অবস্থা*",
+
+  "@selectMaritalStatus": {
+    "description": "Placeholder for selecting marital status",
+    "type": "text",
+    "tags": ["basic_details_personal_loan"]
+  },
+  "selectMaritalStatus": "বৈবাহিক অবস্থা নির্বাচন করুন",
+
+
+
+
+
+
+
+
+
+
+
+
+  "@employmentDetails": {
+    "description": "Label for the employment details page",
+    "type": "text",
+    "tags": ["employment_details_personal_loan"]
+  },
+  "employmentDetails": "কর্মসংস্থান বিস্তারিত",
+
+  "@employmentStatus": {
+    "description": "Label for employment status dropdown",
+    "type": "text",
+    "tags": ["employment_details_personal_loan"]
+  },
+  "employmentStatus": "কর্মসংস্থানের অবস্থা*",
+
+  "@selectEmploymentStatus": {
+    "description": "Placeholder for selecting employment status",
+    "type": "text",
+    "tags": ["employment_details_personal_loan"]
+  },
+  "selectEmploymentStatus": "কর্মসংস্থানের অবস্থা নির্বাচন করুন",
+
+  "@designation": {
+    "description": "Label for designation dropdown",
+    "type": "text",
+    "tags": ["employment_details_personal_loan"]
+  },
+  "designation": "পদবী*",
+
+  "@selectDesignation": {
+    "description": "Placeholder for selecting designation",
+    "type": "text",
+    "tags": ["employment_details_personal_loan"]
+  },
+  "selectDesignation": "পদবী নির্বাচন করুন",
+
+  "@employmentType": {
+    "description": "Label for employment type dropdown",
+    "type": "text",
+    "tags": ["employment_details_personal_loan"]
+  },
+  "employmentType": "কর্মসংস্থানের ধরন*",
+
+  "@selectEmploymentType": {
+    "description": "Placeholder for selecting employment type",
+    "type": "text",
+    "tags": ["employment_details_personal_loan"]
+  },
+  "selectEmploymentType": "কর্মসংস্থানের ধরন নির্বাচন করুন",
+
+  "@modeOfSalary": {
+    "description": "Label for mode of salary dropdown",
+    "type": "text",
+    "tags": ["employment_details_personal_loan"]
+  },
+  "modeOfSalary": "বেতন পদ্ধতি*",
+
+  "@selectModeOfSalary": {
+    "description": "Placeholder for selecting mode of salary",
+    "type": "text",
+    "tags": ["employment_details_personal_loan"]
+  },
+  "selectModeOfSalary": "বেতন পদ্ধতি নির্বাচন করুন",
+
+  "@grossMonthlyIncome": {
+    "description": "Label for gross monthly income input field",
+    "type": "text",
+    "tags": ["employment_details_personal_loan"]
+  },
+  "grossMonthlyIncome": "মোট মাসিক আয়*",
+
+  "@enterGrossMonthlyIncome": {
+    "description": "Placeholder for entering gross monthly income",
+    "type": "text",
+    "tags": ["employment_details_personal_loan"]
+  },
+  "enterGrossMonthlyIncome": "আপনার মোট মাসিক আয় লিখুন",
+
+  "@netMonthlyIncome": {
+    "description": "Label for net monthly income input field",
+    "type": "text",
+    "tags": ["employment_details_personal_loan"]
+  },
+  "netMonthlyIncome": "নিট মাসিক আয়*",
+
+  "@enterNetMonthlyIncome": {
+    "description": "Placeholder for entering net monthly income",
+    "type": "text",
+    "tags": ["employment_details_personal_loan"]
+  },
+  "enterNetMonthlyIncome": "আপনার নিট মাসিক আয় লিখুন",
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  "@creditInformationTitle": {
+    "description": "Title of the Credit Information page",
+    "type": "text",
+    "tags": ["credit_info_personal_loan"]
+  },
+  "creditInformationTitle": "ঋণ তথ্য",
+
+  "@declareCreditInformation": {
+    "description": "Heading for declaring credit information",
+    "type": "text",
+    "tags": ["credit_info_personal_loan"]
+  },
+  "declareCreditInformation": "ঋণের তথ্য ঘোষণা করুন",
+
+  "@loanTypeLabel": {
+    "description": "Label for loan type dropdown",
+    "type": "text",
+    "tags": ["credit_info_personal_loan"]
+  },
+  "loanTypeLabel": "ঋণের ধরন*",
+
+  "@selectLoanType": {
+    "description": "Placeholder for selecting loan type",
+    "type": "text",
+    "tags": ["credit_info_personal_loan"]
+  },
+  "selectLoanType": "ঋণের ধরন নির্বাচন করুন",
+
+  "@lenderLabel": {
+    "description": "Label for lender input field",
+    "type": "text",
+    "tags": ["credit_info_personal_loan"]
+  },
+  "lenderLabel": "ঋণদাতা*",
+
+  "@enterLenderPlaceholder": {
+    "description": "Placeholder for entering lender name",
+    "type": "text",
+    "tags": ["credit_info_personal_loan"]
+  },
+  "enterLenderPlaceholder": "ঋণদাতার নাম লিখুন",
+
+  "@sanctionedAmountLabel": {
+    "description": "Label for sanctioned amount input field",
+    "type": "text",
+    "tags": ["credit_info_personal_loan"]
+  },
+  "sanctionedAmountLabel": "অনুমোদিত পরিমাণ (₹)*",
+
+  "@enterSanctionedAmountPlaceholder": {
+    "description": "Placeholder for entering sanctioned amount",
+    "type": "text",
+    "tags": ["credit_info_personal_loan"]
+  },
+  "enterSanctionedAmountPlaceholder": "অনুমোদিত পরিমাণ লিখুন",
+
+  "@outstandingAmountLabel": {
+    "description": "Label for outstanding amount input field",
+    "type": "text",
+    "tags": ["credit_info_personal_loan"]
+  },
+  "outstandingAmountLabel": "বকেয়া পরিমাণ (₹)*",
+
+  "@enterOutstandingAmountPlaceholder": {
+    "description": "Placeholder for entering outstanding amount",
+    "type": "text",
+    "tags": ["credit_info_personal_loan"]
+  },
+  "enterOutstandingAmountPlaceholder": "বকেয়া পরিমাণ লিখুন",
+
+  "@emiAmountLabel": {
+    "description": "Label for EMI amount input field",
+    "type": "text",
+    "tags": ["credit_info_personal_loan"]
+  },
+  "emiAmountLabel": "EMI পরিমাণ (₹)*",
+
+  "@enterEmiAmountPlaceholder": {
+    "description": "Placeholder for entering EMI amount",
+    "type": "text",
+    "tags": ["credit_info_personal_loan"]
+  },
+  "enterEmiAmountPlaceholder": "EMI পরিমাণ লিখুন",
+
+  "@addExistingLoanButton": {
+    "description": "Label for the button to add an existing loan",
+    "type": "text",
+    "tags": ["credit_info_personal_loan"]
+  },
+  "addExistingLoanButton": "বিদ্যমান ঋণ যোগ করুন",
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  "@contactDetailsTitle": {
+    "description": "Title of the Contact Details page",
+    "type": "text",
+    "tags": ["contact_detail_personal_loan"]
+  },
+  "contactDetailsTitle": "যোগাযোগের বিবরণ",
+
+  "@addressLine1Label": {
+    "description": "Label for Address Line 1 input field",
+    "type": "text",
+    "tags": ["contact_detail_personal_loan"]
+  },
+  "addressLine1Label": "ঠিকানা লাইন 1*",
+
+  "@addressLine1Placeholder": {
+    "description": "Placeholder for Address Line 1 input field",
+    "type": "text",
+    "tags": ["contact_detail_personal_loan"]
+  },
+  "addressLine1Placeholder": "আপনার বিল্ডিং নম্বর প্রবেশ করুন",
+
+  "@addressLine2Label": {
+    "description": "Label for Address Line 2 input field",
+    "type": "text",
+    "tags": ["contact_detail_personal_loan"]
+  },
+  "addressLine2Label": "ঠিকানা লাইন 2",
+
+  "@addressLine2Placeholder": {
+    "description": "Placeholder for Address Line 2 input field",
+    "type": "text",
+    "tags": ["contact_detail_personal_loan"]
+  },
+  "addressLine2Placeholder": "আপনার রাস্তার নাম প্রবেশ করুন",
+
+  "@landmarkLabel": {
+    "description": "Label for Landmark input field",
+    "type": "text",
+    "tags": ["contact_detail_personal_loan"]
+  },
+  "landmarkLabel": "বিশিষ্ট স্থান",
+
+  "@landmarkPlaceholder": {
+    "description": "Placeholder for Landmark input field",
+    "type": "text",
+    "tags": ["contact_detail_personal_loan"]
+  },
+  "landmarkPlaceholder": "আপনার বিশিষ্ট স্থান প্রবেশ করুন",
+
+  "@countryLabel": {
+    "description": "Label for Country dropdown",
+    "type": "text",
+    "tags": ["contact_detail_personal_loan"]
+  },
+  "countryLabel": "দেশ*",
+
+  "@countryPlaceholder": {
+    "description": "Placeholder for Country dropdown",
+    "type": "text",
+    "tags": ["contact_detail_personal_loan"]
+  },
+  "countryPlaceholder": "আপনার দেশ নির্বাচন করুন",
+
+  "@stateLabel": {
+    "description": "Label for State dropdown",
+    "type": "text",
+    "tags": ["contact_detail_personal_loan", "declare_business_gst_details_business_loan"]
+  },
+  "stateLabel": "রাজ্য*",
+
+  "@statePlaceholder": {
+    "description": "Placeholder for State dropdown",
+    "type": "text",
+    "tags": ["contact_detail_personal_loan", "declare_business_gst_details_business_loan"]
+  },
+  "statePlaceholder": "আপনার রাজ্য নির্বাচন করুন",
+
+  "@cityLabel": {
+    "description": "Label for City dropdown",
+    "type": "text",
+    "tags": ["contact_detail_personal_loan", "declare_business_gst_details_business_loan"]
+  },
+  "cityLabel": "শহর*",
+
+  "@cityPlaceholder": {
+    "description": "Placeholder for City dropdown",
+    "type": "text",
+    "tags": ["contact_detail_personal_loan", "declare_business_gst_details_business_loan"]
+  },
+  "cityPlaceholder": "আপনার শহর নির্বাচন করুন",
+
+  "@pinCodeLabel": {
+    "description": "Label for Pin Code input field",
+    "type": "text",
+    "tags": ["contact_detail_personal_loan"]
+  },
+  "pinCodeLabel": "পিন কোড*",
+
+  "@pinCodePlaceholder": {
+    "description": "Placeholder for Pin Code input field",
+    "type": "text",
+    "tags": ["contact_detail_personal_loan"]
+  },
+  "pinCodePlaceholder": "আপনার পিন কোড প্রবেশ করুন",
+
+  "@villageLabel": {
+    "description": "Label for Village/Town input field",
+    "type": "text",
+    "tags": ["contact_detail_personal_loan"]
+  },
+  "villageLabel": "গ্রাম/শহর",
+
+  "@villagePlaceholder": {
+    "description": "Placeholder for Village/Town input field",
+    "type": "text",
+    "tags": ["contact_detail_personal_loan"]
+  },
+  "villagePlaceholder": "আপনার গ্রাম/শহর প্রবেশ করুন",
+
+  "@districtLabel": {
+    "description": "Label for District input field",
+    "type": "text",
+    "tags": ["contact_detail_personal_loan"]
+  },
+  "districtLabel": "জেলা*",
+
+  "@districtPlaceholder": {
+    "description": "Placeholder for District input field",
+    "type": "text",
+    "tags": ["contact_detail_personal_loan"]
+  },
+  "districtPlaceholder": "আপনার জেলা প্রবেশ করুন",
+
+  "@subDistrictLabel": {
+    "description": "Label for Sub-District input field",
+    "type": "text",
+    "tags": ["contact_detail_personal_loan"]
+  },
+  "subDistrictLabel": "উপজেলা*",
+
+  "@subDistrictPlaceholder": {
+    "description": "Placeholder for Sub-District input field",
+    "type": "text",
+    "tags": ["contact_detail_personal_loan"]
+  },
+  "subDistrictPlaceholder": "আপনার উপজেলা প্রবেশ করুন",
+
+  "@residenceSinceMonthLabel": {
+    "description": "Label for Residence Since (Month) picker",
+    "type": "text",
+    "tags": ["contact_detail_personal_loan"]
+  },
+  "residenceSinceMonthLabel": "কত মাস ধরে বসবাস করছেন",
+
+  "@residenceSinceYearLabel": {
+    "description": "Label for Residence Since (Year) picker",
+    "type": "text",
+    "tags": ["contact_detail_personal_loan"]
+  },
+  "residenceSinceYearLabel": "কত বছর ধরে বসবাস করছেন",
+
+
+
+
+
+
+
+
+
+
+
+
+
+  "@loanFormTitle": {
+    "description": "Title of the Loan Form",
+    "type": "text",
+    "tags": ["loan_form_personal_loan"]
+  },
+  "loanFormTitle": "ঋণ ফর্ম",
+
+  "@loanDetailsTitle": {
+    "description": "Title for Loan Details section",
+    "type": "text",
+    "tags": ["loan_form_personal_loan"]
+  },
+  "loanDetailsTitle": "ঋণের বিস্তারিত",
+
+  "@loanPurposeLabel": {
+    "description": "Label for Loan Purpose dropdown",
+    "type": "text",
+    "tags": ["loan_form_personal_loan"]
+  },
+  "loanPurposeLabel": "ঋণের উদ্দেশ্য*",
+
+  "@loanPurposePlaceholder": {
+    "description": "Placeholder for Loan Purpose dropdown",
+    "type": "text",
+    "tags": ["loan_form_personal_loan"]
+  },
+  "loanPurposePlaceholder": "ঋণের উদ্দেশ্য নির্বাচন করুন",
+
+  "@loanAmountLabel": {
+    "description": "Label for Loan Amount input field",
+    "type": "text",
+    "tags": ["loan_form_personal_loan"]
+  },
+  "loanAmountLabel": "ঋণের পরিমাণ*",
+
+  "@loanAmountHint": {
+    "description": "Hint text for Loan Amount input field",
+    "type": "text",
+    "tags": ["loan_form_personal_loan"]
+  },
+  "loanAmountHint": "ঋণের পরিমাণ লিখুন",
+
+  "@tenureLabel": {
+    "description": "Label for Tenure input field",
+    "type": "text",
+    "tags": ["loan_form_personal_loan"]
+  },
+  "tenureLabel": "কাল (বছর)*",
+
+  "@tenureHint": {
+    "description": "Hint text for Tenure input field",
+    "type": "text",
+    "tags": ["loan_form_personal_loan"]
+  },
+  "tenureHint": "কাল লিখুন",
+
+  "@retirementAgeLabel": {
+    "description": "Label for Retirement Age input field",
+    "type": "text",
+    "tags": ["loan_form_personal_loan"]
+  },
+  "retirementAgeLabel": "বিরতি বয়স (বছর)*",
+
+  "@retirementAgeHint": {
+    "description": "Hint text for Retirement Age input field",
+    "type": "text",
+    "tags": ["loan_form_personal_loan"]
+  },
+  "retirementAgeHint": "বিরতি বয়স লিখুন",
+
+  "@yourEmployerWillTitle": {
+    "description": "Title for Your Employer Will section",
+    "type": "text",
+    "tags": ["loan_form_personal_loan"]
+  },
+  "yourEmployerWillTitle": "আপনার নিয়োগকর্তা",
+
+  "@emiFromSalaryAccountText": {
+    "description": "Question about EMI payment from salary account",
+    "type": "text",
+    "tags": ["loan_form_personal_loan"]
+  },
+  "emiFromSalaryAccountText": "আপনি কি আপনার বেতন অ্যাকাউন্ট থেকে সরাসরি EMI পরিশোধ করছেন?",
+
+  "@outstandingLoanTerminalPaymentsText": {
+    "description": "Question about paying outstanding loan amount from terminal payments",
+    "type": "text",
+    "tags": ["loan_form_personal_loan"]
+  },
+  "outstandingLoanTerminalPaymentsText": "আপনি কি আপনার নিয়োগকর্তার বিরতি সময়ে অপ্রাপ্ত ঋণ পরিশোধ করতে সম্মত?",
+
+  "@salaryAccountConfirmationText": {
+    "description": "Question about paying salary only in salary account and getting NOC",
+    "type": "text",
+    "tags": ["loan_form_personal_loan"]
+  },
+  "salaryAccountConfirmationText": "আপনি কি আপনার বেতন শুধুমাত্র বেতন অ্যাকাউন্টে পাচ্ছেন এবং অ্যাকাউন্ট পরিবর্তনের আগে ব্যাংক থেকে NOC পেতে চান?",
+
+  "@whetherYouWillTitle": {
+    "description": "Title for Whether you (Employer/Borrower) will section",
+    "type": "text",
+    "tags": ["loan_form_personal_loan"]
+  },
+  "whetherYouWillTitle": "আপনি (নিয়োগকর্তা/ধারী) করবেন কি",
+
+  "@issueLetterOutstandingLoanText": {
+    "description": "Question about issuing letter to employer to pay outstanding loan",
+    "type": "text",
+    "tags": ["loan_form_personal_loan"]
+  },
+  "issueLetterOutstandingLoanText": "আপনি কি আপনার নিয়োগকর্তাকে একটি চিঠি দেবেন, যাতে তারা অপ্রাপ্ত ঋণ পরিশোধ করবেন?",
+
+  "@issueLetterNotChangeAccountText": {
+    "description": "Question about issuing letter to employer to not change salary account",
+    "type": "text",
+    "tags": ["loan_form_personal_loan"]
+  },
+  "issueLetterNotChangeAccountText": "আপনি কি আপনার বেতন অ্যাকাউন্ট পরিবর্তন না করার জন্য নিয়োগকর্তাকে একটি চিঠি দেবেন, ব্যাংক থেকে NOC পাবেন যখন পরিবর্তন হয়?",
+
+  "@repaymentMethodLabel": {
+    "description": "Label for Repayment Method dropdown",
+    "type": "text",
+    "tags": ["loan_form_personal_loan"]
+  },
+  "repaymentMethodLabel": "পরিশোধ পদ্ধতি*",
+
+  "@repaymentMethodPlaceholder": {
+    "description": "Placeholder for Repayment Method dropdown",
+    "type": "text",
+    "tags": ["loan_form_personal_loan"]
+  },
+  "repaymentMethodPlaceholder": "পরিশোধ পদ্ধতি নির্বাচন করুন",
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  "@chooseBusinessProfile": {
+    "description": "Text for choosing a business profile",
+    "type": "text",
+    "tags": ["business_loan_journey"]
+  },
+  "chooseBusinessProfile": "আপনার ব্যবসার প্রোফাইল নির্বাচন করুন",
+
+  "@selectedProfileBusiness": {
+    "description": "Text showing the selected business profile",
+    "type": "text",
+    "tags": ["business_loan_journey"]
+  },
+  "selectedProfileBusiness": "নির্বাচিত প্রোফাইল: ABC প্রাইভেট লিমিটেড",
+
+  "@selectProfileDescription": {
+    "description": "Instructions for selecting or creating a business profile",
+    "type": "text",
+    "tags": ["business_loan_journey"]
+  },
+  "selectProfileDescription": "গোষ্ঠী থেকে আপনার ব্যবসার প্রোফাইল নির্বাচন করুন। যদি আপনার প্রোফাইল না থাকে, তবে একটি নতুন প্রোফাইলও তৈরি করতে পারেন।",
+
+  "@itrFormDescription": {
+    "description": "Description of the importance of the Income Tax Return",
+    "type": "text",
+    "tags": ["business_loan_journey"]
+  },
+  "itrFormDescription": "আপনার ব্যবসার আয়কর রিটার্ন (ITR) জমা দেওয়া অত্যন্ত গুরুত্বপূর্ণ, কারণ এটি আপনার কোম্পানির আর্থিক স্বাস্থ্যের এবং স্থায়িত্বের প্রমাণ।",
+
+  "@itrButtonTitleBusiness": {
+    "description": "Button title for submitting the Income Tax Return",
+    "type": "text",
+    "tags": ["business_loan_journey"]
+  },
+  "itrButtonTitleBusiness": "আয়কর রিটার্ন",
+
+  "@itrButtonDescriptionBusiness": {
+    "description": "Instructions for providing the Income Tax Return",
+    "type": "text",
+    "tags": ["business_loan_journey"]
+  },
+  "itrButtonDescriptionBusiness": "আপনার ব্যবসার জন্য গত 3 বছরের আয়কর রিটার্ন প্রদান করুন।",
+
+  "@gstFormDescription": {
+    "description": "Description of the importance of GST details",
+    "type": "text",
+    "tags": ["business_loan_journey"]
+  },
+  "gstFormDescription": "আপনার GST রিটার্ন জমা দেওয়া আপনার ব্যবসার কর নিয়মের সাথে সামঞ্জস্য বজায় রাখতে সাহায্য করে, যা ঋণ অনুমোদনে একটি গুরুত্বপূর্ণ উপাদান।",
+
+  "@gstButtonTitle": {
+    "description": "Button title for submitting GST details",
+    "type": "text",
+    "tags": ["business_loan_journey"]
+  },
+  "gstButtonTitle": "GST বিস্তারিত",
+
+  "@gstButtonDescription": {
+    "description": "Instructions for providing GST details",
+    "type": "text",
+    "tags": ["business_loan_journey"]
+  },
+  "gstButtonDescription": "আপনার GST নিবন্ধন নম্বর এবং রিটার্নের বিস্তারিত দিন।",
+
+  "@bankDetailsDescription": {
+    "description": "Description of the importance of submitting bank details",
+    "type": "text",
+    "tags": ["business_loan_journey"]
+  },
+  "bankDetailsDescription": "আপনার ব্যবসার ব্যাংক বিস্তারিত জমা দেওয়া ঋণদাতাদের জন্য আপনার আর্থিক স্বাস্থ্যের এবং নগদ প্রবাহ বোঝার জন্য সহায়ক।",
+
+  "@bankButtonTitle": {
+    "description": "Button title for submitting bank details",
+    "type": "text",
+    "tags": ["business_loan_journey"]
+  },
+  "bankButtonTitle": "ব্যাংক বিস্তারিত",
+
+  "@bankButtonDescription": {
+    "description": "Instructions for providing bank details",
+    "type": "text",
+    "tags": ["business_loan_journey"]
+  },
+  "bankButtonDescription": "আপনার ব্যবসার ব্যাংক বিস্তারিত এবং ব্যাংকের তালিকা দিন।",
+
+  "@stakeholdersDescription": {
+    "description": "Description of the importance of providing stakeholder details",
+    "type": "text",
+    "tags": ["business_loan_journey"]
+  },
+  "stakeholdersDescription": "প্রধান অংশীদারদের সম্পর্কে বিস্তারিত প্রদান করা ঋণদাতাদের জন্য আপনার ব্যবসার কাঠামো এবং মালিকানা বুঝতে সহায়ক।",
+
+  "@stakeholdersButtonTitle": {
+    "description": "Button title for submitting stakeholder details",
+    "type": "text",
+    "tags": ["business_loan_journey"]
+  },
+  "stakeholdersButtonTitle": "অংশীদার",
+
+  "@stakeholdersButtonDescription": {
+    "description": "Instructions for providing stakeholder details",
+    "type": "text",
+    "tags": ["business_loan_journey"]
+  },
+  "stakeholdersButtonDescription": "প্রধান অংশীদারদের এবং তাদের ব্যবসায়ের অংশীদারি সম্পর্কে বিস্তারিত প্রদান করুন।",
+
+  "@loanFormDescription": {
+    "description": "Description of the final loan form step",
+    "type": "text",
+    "tags": ["business_loan_journey"]
+  },
+  "loanFormDescription": "ব্যবসার জন্য প্রদান করা ঋণের জন্য আবেদনপত্রের চূড়ান্ত ধাপ। সমস্ত বিস্তারিত সঠিক কিনা তা নিশ্চিত করুন।",
+
+  "@loanButtonTitle": {
+    "description": "Button title for submitting the loan form",
+    "type": "text",
+    "tags": ["business_loan_journey"]
+  },
+  "loanButtonTitle": "আবেদন জমা দিন",
+
+  "@loanButtonDescription": {
+    "description": "Instructions for filling out the loan application form",
+    "type": "text",
+    "tags": ["business_loan_journey"]
+  },
+  "loanButtonDescription": "আপনার আবেদন সম্পূর্ণ করতে ঋণ আবেদন পূরণ করুন।",
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  "@gstDetailsTitle": {
+    "description": "Title for the GST details section",
+    "type": "text",
+    "tags": ["gst_details_business_loan"]
+  },
+  "gstDetailsTitle": "জিএসটি বিবরণ",
+
+  "@toggleEnterGst": {
+    "description": "Label for the toggle switch to enter GST",
+    "type": "text",
+    "tags": ["gst_details_business_loan"]
+  },
+  "toggleEnterGst": "জিএসটি প্রবেশ করান",
+
+  "@toggleDeclareBusiness": {
+    "description": "Label for the toggle switch to declare business",
+    "type": "text",
+    "tags": ["gst_details_business_loan"]
+  },
+  "toggleDeclareBusiness": "ব্যবসা ঘোষণা করুন",
+
+
+
+
+
+
+
+
+
+
+
+  "@businessButtonLabel": {
+    "description": "Label for business button indicating the business number",
+    "type": "text",
+    "tags": ["gst_details_business_loan"]
+  },
+  "businessButtonLabel": "ব্যবসা ",
+
+  "@addBusinessButtonLabel": {
+    "description": "Label for the button to add a new business",
+    "type": "text",
+    "tags": ["gst_details_business_loan"]
+  },
+  "addBusinessButtonLabel": "নতুন ব্যবসা যোগ করুন",
+
+  "@gstNumberLabel": {
+    "description": "Label for the GST number input field",
+    "type": "text",
+    "tags": ["gst_details_business_loan"]
+  },
+  "gstNumberLabel": "জিএসটি নম্বর*",
+
+  "@gstNumberHint": {
+    "description": "Hint text for the GST number input field",
+    "type": "text",
+    "tags": ["gst_details_business_loan"]
+  },
+  "gstNumberHint": "জিএসটি নম্বর লিখুন",
+
+  "@gstUsernameLabel": {
+    "description": "Label for the GST username input field",
+    "type": "text",
+    "tags": ["gst_details_business_loan"]
+  },
+  "gstUsernameLabel": "জিএসটি ব্যবহারকারীর নাম*",
+
+  "@gstUsernameHint": {
+    "description": "Hint text for the GST username input field",
+    "type": "text",
+    "tags": ["gst_details_business_loan"]
+  },
+  "gstUsernameHint": "জিএসটি ব্যবহারকারীর নাম লিখুন",
+
+  "@cityLabelGST": {
+    "description": "Label for the city input field",
+    "type": "text",
+    "tags": ["gst_details_business_loan"]
+  },
+  "cityLabelGST": "শহর*",
+
+  "@totalPurchaseLabel": {
+    "description": "Label for the total purchase input field",
+    "type": "text",
+    "tags": ["gst_details_business_loan"]
+  },
+  "totalPurchaseLabel": "মোট ক্রয়*",
+
+  "@totalPurchaseHint": {
+    "description": "Hint text for the total purchase input field",
+    "type": "text",
+    "tags": ["gst_details_business_loan"]
+  },
+  "totalPurchaseHint": "মোট ক্রয় লিখুন",
+
+  "@totalSalesLabel": {
+    "description": "Label for the total sales input field",
+    "type": "text",
+    "tags": ["gst_details_business_loan"]
+  },
+  "totalSalesLabel": "মোট বিক্রি*",
+
+  "@totalSalesHint": {
+    "description": "Hint text for the total sales input field",
+    "type": "text",
+    "tags": ["gst_details_business_loan"]
+  },
+  "totalSalesHint": "মোট বিক্রি লিখুন",
+
+  "@updateOnLabel": {
+    "description": "Label for the update date picker button",
+    "type": "text",
+    "tags": ["gst_details_business_loan"]
+  },
+  "updateOnLabel": "আপডেট করুন*",
+
+  "@selectBusinessToEdit": {
+    "description": "Message to display when no business is selected for editing",
+    "type": "text",
+    "tags": ["gst_details_business_loan"]
+  },
+  "selectBusinessToEdit": "সম্পাদনার জন্য ব্যবসা নির্বাচন করা হয়নি",
+
+  "@deleteButtonLabel": {
+    "description": "Label for the delete button",
+    "type": "text",
+    "tags": ["gst_details_business_loan"]
+  },
+  "deleteButtonLabel": "মুছুন",
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  "@declareBusinessLabel": {
+    "description": "Title for declaring business details",
+    "type": "text",
+    "tags": ["declare_business_gst_details_business_loan"]
+  },
+  "declareBusinessLabel": "আপনার ব্যবসার বিস্তারিত জানান",
+
+  "@businessNameLabel": {
+    "description": "Label for the business name input field",
+    "type": "text",
+    "tags": ["declare_business_gst_details_business_loan"]
+  },
+  "businessNameLabel": "ব্যবসার নাম*",
+
+  "@businessNameHint": {
+    "description": "Hint text for the business name input field",
+    "type": "text",
+    "tags": ["declare_business_gst_details_business_loan"]
+  },
+  "businessNameHint": "আপনার ব্যবসার নাম লিখুন",
+
+  "@dateOfIncorporationLabel": {
+    "description": "Label for the date of incorporation button",
+    "type": "text",
+    "tags": ["declare_business_gst_details_business_loan"]
+  },
+  "dateOfIncorporationLabel": "সংবিধান তারিখ",
+
+  "@constitutionLabel": {
+    "description": "Label for the constitution input field",
+    "type": "text",
+    "tags": ["declare_business_gst_details_business_loan"]
+  },
+  "constitutionLabel": "আইন*",
+
+  "@constitutionHint": {
+    "description": "Hint text for the constitution input field",
+    "type": "text",
+    "tags": ["declare_business_gst_details_business_loan"]
+  },
+  "constitutionHint": "আপনার আইন লিখুন",
+
+  "@customersLabel": {
+    "description": "Label for the number of customers input field",
+    "type": "text",
+    "tags": ["declare_business_gst_details_business_loan"]
+  },
+  "customersLabel": "গ্রাহকের সংখ্যা*",
+
+  "@customersHint": {
+    "description": "Hint text for the number of customers input field",
+    "type": "text",
+    "tags": ["declare_business_gst_details_business_loan"]
+  },
+  "customersHint": "আপনার গ্রাহকের সংখ্যা লিখুন",
+
+  "@panLabel": {
+    "description": "Label for the PAN input field",
+    "type": "text",
+    "tags": ["declare_business_gst_details_business_loan"]
+  },
+  "panLabel": "PAN*",
+
+  "@panHint": {
+    "description": "Hint text for the PAN input field",
+    "type": "text",
+    "tags": ["declare_business_gst_details_business_loan"]
+  },
+  "panHint": "আপনার PAN লিখুন",
+
+  "@highestSaleLabel": {
+    "description": "Label for the highest sale input field",
+    "type": "text",
+    "tags": ["declare_business_gst_details_business_loan"]
+  },
+  "highestSaleLabel": "সর্বোচ্চ বিক্রয়*",
+
+  "@highestSaleHint": {
+    "description": "Hint text for the highest sale input field",
+    "type": "text",
+    "tags": ["declare_business_gst_details_business_loan"]
+  },
+  "highestSaleHint": "আপনার সর্বোচ্চ বিক্রয় লিখুন",
+
+  "@lastYearsSalesLabel": {
+    "description": "Header for last year's sales section",
+    "type": "text",
+    "tags": ["declare_business_gst_details_business_loan"]
+  },
+  "lastYearsSalesLabel": "গত বছরের বিক্রয়",
+
+  "@januaryLabel": {
+    "description": "Label for January month",
+    "type": "text",
+    "tags": ["declare_business_gst_details_business_loan"]
+  },
+  "januaryLabel": "জানুয়ারী",
+
+  "@februaryLabel": {
+    "description": "Label for February month",
+    "type": "text",
+    "tags": ["declare_business_gst_details_business_loan"]
+  },
+  "februaryLabel": "ফেব্রুয়ারী",
+
+  "@marchLabel": {
+    "description": "Label for March month",
+    "type": "text",
+    "tags": ["declare_business_gst_details_business_loan"]
+  },
+  "marchLabel": "মার্চ",
+
+  "@aprilLabel": {
+    "description": "Label for April month",
+    "type": "text",
+    "tags": ["declare_business_gst_details_business_loan"]
+  },
+  "aprilLabel": "এপ্রিল",
+
+  "@mayLabel": {
+    "description": "Label for May month",
+    "type": "text",
+    "tags": ["declare_business_gst_details_business_loan"]
+  },
+  "mayLabel": "মে",
+
+  "@juneLabel": {
+    "description": "Label for June month",
+    "type": "text",
+    "tags": ["declare_business_gst_details_business_loan"]
+  },
+  "juneLabel": "জুন",
+
+  "@julyLabel": {
+    "description": "Label for July month",
+    "type": "text",
+    "tags": ["declare_business_gst_details_business_loan"]
+  },
+  "julyLabel": "জুলাই",
+
+  "@augustLabel": {
+    "description": "Label for August month",
+    "type": "text",
+    "tags": ["declare_business_gst_details_business_loan"]
+  },
+  "augustLabel": "অগস্ট",
+
+  "@septemberLabel": {
+    "description": "Label for September month",
+    "type": "text",
+    "tags": ["declare_business_gst_details_business_loan"]
+  },
+  "septemberLabel": "সেপ্টেম্বর",
+
+  "@octoberLabel": {
+    "description": "Label for October month",
+    "type": "text",
+    "tags": ["declare_business_gst_details_business_loan"]
+  },
+  "octoberLabel": "অক্টোবর",
+
+  "@novemberLabel": {
+    "description": "Label for November month",
+    "type": "text",
+    "tags": ["declare_business_gst_details_business_loan"]
+  },
+  "novemberLabel": "নভেম্বর",
+
+  "@decemberLabel": {
+    "description": "Label for December month",
+    "type": "text",
+    "tags": ["declare_business_gst_details_business_loan"]
+  },
+  "decemberLabel": "ডিসেম্বর",
+
+  "@nextButtonLabel": {
+    "description": "Label for the next button",
+    "type": "text",
+    "tags": ["declare_business_gst_details_business_loan"]
+  },
+  "nextButtonLabel": "পরবর্তী",
+
+  "@gobackButtonLabel": {
+    "description": "Label for the go back button",
+    "type": "text",
+    "tags": ["declare_business_gst_details_business_loan"]
+  },
+  "gobackButtonLabel": "পিছনে যান",
+
+
+
+
+
+
+
+
+
+
+
+
+
+  "bank_details_title": "ব্যাংক বিশদ",
+  "@bank_details_title": {
+    "description": "Title for the bank details page",
+    "tags": ["bank_details_business_loan"]
+  },
+  "bank_details_subtitle": "আপনি ৩টি ব্যাংক অ্যাকাউন্ট যোগ করতে পারেন",
+  "@bank_details_subtitle": {
+    "description": "Subtitle indicating the number of bank accounts allowed",
+    "tags": ["bank_details_business_loan"]
+  },
+  "upload_bank_statement": "ব্যাংক স্টেটমেন্ট আপলোড করুন (PDF)",
+  "@upload_bank_statement": {
+    "description": "Label for uploading bank statements in PDF format",
+    "tags": ["bank_details_business_loan"]
+  },
+  "bank_account_button": "ব্যাংক",
+  "@bank_account_button": {
+    "description": "Button text for bank accounts",
+    "tags": ["bank_details_business_loan"]
+  },
+  "add_account_button": "অ্যাকাউন্ট যোগ করুন",
+  "@add_account_button": {
+    "description": "Button text for adding a new bank account",
+    "tags": ["bank_details_business_loan"]
+  },
+  "bank_name_label": "ব্যাংক নাম*",
+  "@bank_name_label": {
+    "description": "Label for the bank name input field",
+    "tags": ["bank_details_business_loan"]
+  },
+  "bank_name_hint": "ব্যাংকের নাম লিখুন",
+  "@bank_name_hint": {
+    "description": "Hint text for the bank name input field",
+    "tags": ["bank_details_business_loan"]
+  },
+  "account_since_month_label": "অ্যাকাউন্ট খোলার সময় (মাস)*",
+  "@account_since_month_label": {
+    "description": "Label for the account since month input",
+    "tags": ["bank_details_business_loan"]
+  },
+  "account_since_year_label": "অ্যাকাউন্ট খোলার সময় (বছর)*",
+  "@account_since_year_label": {
+    "description": "Label for the account since year input",
+    "tags": ["bank_details_business_loan"]
+  },
+
+
+
+
+
+
+
+
+
+
+
+
+
+  "declare_business_stakeholders": "ব্যবসায় অংশীদারদের ঘোষণা করুন",
+  "@declare_business_stakeholders": {
+    "description": "Title for the page where the user declares business stakeholders",
+    "tags": ["stakeholder_business_loan"],
+    "type": "text"
+  },
+  "business_details": "ব্যবসার বিবরণ",
+  "@business_details": {
+    "description": "Section heading for business details",
+    "tags": ["stakeholder_business_loan", "business_detail_loan_form_business_loan"],
+    "type": "text"
+  },
+  "address_line_1": "ঠিকানা লাইন 1*",
+  "@address_line_1": {
+    "description": "Label for the first address line input field",
+    "tags": ["stakeholder_business_loan"],
+    "type": "text"
+  },
+  "address_line_2": "ঠিকানা লাইন 2",
+  "@address_line_2": {
+    "description": "Label for the second address line input field",
+    "tags": ["stakeholder_business_loan"],
+    "type": "text"
+  },
+
+
+
+
+
+
+
+
+
+
+
+
+
+  "add_stakeholder": "শেয়ারহোল্ডার যোগ করুন",
+  "@add_stakeholder": {
+    "description": "নতুন শেয়ারহোল্ডার যোগ করার জন্য বোতাম লেবেল",
+    "tags": ["add_stakeholder_business_loan"],
+    "type": "text"
+  },
+  "select_stakeholder": "শেয়ারহোল্ডার নির্বাচন করুন",
+  "@select_stakeholder": {
+    "description": "শেয়ারহোল্ডার নির্বাচন করতে ড্রপডাউন লেবেল",
+    "tags": ["add_stakeholder_business_loan"],
+    "type": "text"
+  },
+  "relationship_type": "সম্পর্কের প্রকার",
+  "@relationship_type": {
+    "description": "সম্পর্কের প্রকার ক্ষেত্রের জন্য লেবেল",
+    "tags": ["add_stakeholder_business_loan"],
+    "type": "text"
+  },
+  "relationship_type_hint": "সম্পর্কের প্রকার লিখুন",
+  "@relationship_type_hint": {
+    "description": "সম্পর্কের প্রকার ক্ষেত্রের জন্য হিন্ট টেক্সট",
+    "tags": ["add_stakeholder_business_loan"],
+    "type": "text"
+  },
+  "first_name": "প্রথম নাম",
+  "@first_name": {
+    "description": "প্রথম নামের জন্য লেবেল",
+    "tags": ["add_stakeholder_business_loan"],
+    "type": "text"
+  },
+  "middle_name": "মধ্য নাম",
+  "@middle_name": {
+    "description": "মধ্য নামের জন্য লেবেল",
+    "tags": ["add_stakeholder_business_loan"],
+    "type": "text"
+  },
+  "last_name": "শেষ নাম",
+  "@last_name": {
+    "description": "শেষ নামের জন্য লেবেল",
+    "tags": ["add_stakeholder_business_loan"],
+    "type": "text"
+  },
+  "ownership_percentage": "মালিকানা শতাংশ %",
+  "@ownership_percentage": {
+    "description": "মালিকানা শতাংশ ক্ষেত্রের জন্য লেবেল",
+    "tags": ["add_stakeholder_business_loan"],
+    "type": "text"
+  },
+  "ownership_percentage_hint": "মালিকানা শতাংশ লিখুন",
+  "@ownership_percentage_hint": {
+    "description": "মালিকানা শতাংশ ক্ষেত্রের জন্য হিন্ট টেক্সট",
+    "tags": ["add_stakeholder_business_loan"],
+    "type": "text"
+  },
+  "father_name": "বাবার নাম",
+  "@father_name": {
+    "description": "বাবার নামের জন্য লেবেল",
+    "tags": ["add_stakeholder_business_loan"],
+    "type": "text"
+  },
+  "dob": "জন্ম তারিখ",
+  "@dob": {
+    "description": "জন্ম তারিখ ক্ষেত্রের জন্য লেবেল",
+    "tags": ["add_stakeholder_business_loan"],
+    "type": "text"
+  },
+  "mobile_number": "মোবাইল নম্বর",
+  "@mobile_number": {
+    "description": "মোবাইল নম্বর ক্ষেত্রের জন্য লেবেল",
+    "tags": ["add_stakeholder_business_loan"],
+    "type": "text"
+  },
+  "residence_status": "বাসস্থানের অবস্থা",
+  "@residence_status": {
+    "description": "বাসস্থানের অবস্থা ক্ষেত্রের জন্য লেবেল",
+    "tags": ["add_stakeholder_business_loan"],
+    "type": "text"
+  },
+  "residence_status_hint": "বাসস্থানের অবস্থা লিখুন",
+  "@residence_status_hint": {
+    "description": "বাসস্থানের অবস্থা ক্ষেত্রের জন্য হিন্ট টেক্সট",
+    "tags": ["add_stakeholder_business_loan"],
+    "type": "text"
+  },
+  "pan": "PAN লিখুন",
+  "@pan": {
+    "description": "PAN ক্ষেত্রের জন্য লেবেল",
+    "tags": ["add_stakeholder_business_loan"],
+    "type": "text"
+  },
+  "education_status": "শিক্ষার অবস্থা",
+  "@education_status": {
+    "description": "শিক্ষার অবস্থা ক্ষেত্রের জন্য লেবেল",
+    "tags": ["add_stakeholder_business_loan"],
+    "type": "text"
+  },
+  "education_status_hint": "শিক্ষার অবস্থা লিখুন",
+  "@education_status_hint": {
+    "description": "শিক্ষার অবস্থা ক্ষেত্রের জন্য হিন্ট টেক্সট",
+    "tags": ["add_stakeholder_business_loan"],
+    "type": "text"
+  },
+  "total_experience": "মোট অভিজ্ঞতা (বছর)",
+  "@total_experience": {
+    "description": "মোট অভিজ্ঞতা ক্ষেত্রের জন্য লেবেল",
+    "tags": ["add_stakeholder_business_loan"],
+    "type": "text"
+  },
+  "total_experience_hint": "মোট অভিজ্ঞতা লিখুন",
+  "@total_experience_hint": {
+    "description": "মোট অভিজ্ঞতা ক্ষেত্রের জন্য হিন্ট টেক্সট",
+    "tags": ["add_stakeholder_business_loan"],
+    "type": "text"
+  },
+  "net_worth": "নেট মূল্য (INR)",
+  "@net_worth": {
+    "description": "নেট মূল্য ক্ষেত্রের জন্য লেবেল",
+    "tags": ["add_stakeholder_business_loan"],
+    "type": "text"
+  },
+  "net_worth_hint": "নেট মূল্য লিখুন",
+  "@net_worth_hint": {
+    "description": "নেট মূল্য ক্ষেত্রের জন্য হিন্ট টেক্সট",
+    "tags": ["add_stakeholder_business_loan"],
+    "type": "text"
+  },
+  "address_line_one": "ঠিকানা লাইন এক",
+  "@address_line_one": {
+    "description": "ঠিকানা লাইন একের জন্য লেবেল",
+    "tags": ["add_stakeholder_business_loan"],
+    "type": "text"
+  },
+  "address_line_two": "ঠিকানা লাইন দুই",
+  "@address_line_two": {
+    "description": "ঠিকানা লাইন দুইয়ের জন্য লেবেল",
+    "tags": ["add_stakeholder_business_loan"],
+    "type": "text"
+  },
+  "phone": "ফোন",
+  "@phone": {
+    "description": "ফোন ক্ষেত্রের জন্য লেবেল",
+    "tags": ["add_stakeholder_business_loan"],
+    "type": "text"
+  },
+  "visually_impaired": "দৃষ্টিহীন",
+  "@visually_impaired": {
+    "description": "দৃষ্টিহীন ক্ষেত্রের জন্য লেবেল",
+    "tags": ["add_stakeholder_business_loan"],
+    "type": "text"
+  },
+  "visually_impaired_hint": "বিস্তারিত লিখুন",
+  "@visually_impaired_hint": {
+    "description": "দৃষ্টিহীন ক্ষেত্রের জন্য হিন্ট টেক্সট",
+    "tags": ["add_stakeholder_business_loan"],
+    "type": "text"
+  },
+  "is_guarantor": "তিনি গ্যারান্টার?",
+  "@is_guarantor": {
+    "description": "গ্যারান্টার অবস্থার জন্য লেবেল",
+    "tags": ["add_stakeholder_business_loan"],
+    "type": "text"
+  },
+  "save": "সংরক্ষণ করুন",
+  "@save": {
+    "description": "শেয়ারহোল্ডার বিস্তারিত সংরক্ষণের বোতাম লেবেল",
+    "tags": ["add_stakeholder_business_loan"],
+    "type": "text"
+  },
+  "delete": "মুছে ফেলুন",
+  "@delete": {
+    "description": "শেয়ারহোল্ডার মুছে ফেলার বোতাম লেবেল",
+    "tags": ["add_stakeholder_business_loan"],
+    "type": "text"
+  },
+  "discard": "বাতিল করুন",
+  "@discard": {
+    "description": "শেয়ারহোল্ডার পরিবর্তন বাতিল করার বোতাম লেবেল",
+    "tags": ["add_stakeholder_business_loan"],
+    "type": "text"
+  },
+
+
+
+
+
+
+
+
+
+
+
+  "main_partner": "মুখ্য অংশীদার",
+  "@main_partner": {
+    "description": "Title for the Main Partner page",
+    "tags": ["main_partner_business_loan"],
+    "type": "text"
+  },
+  "select_main_partner": "মুখ্য অংশীদার নির্বাচন করুন",
+  "@select_main_partner": {
+    "description": "Button label for selecting the main partner",
+    "tags": ["main_partner_business_loan"],
+    "type": "text"
+  },
+  "owning_a_house": "আপনার কি বাড়ি আছে?",
+  "@owning_a_house": {
+    "description": "Label for the owning a house question",
+    "tags": ["main_partner_business_loan"],
+    "type": "text"
+  },
+  "assessed_for_income_tax": "আয়কর হিসাবে মূল্যায়িত?",
+  "@assessed_for_income_tax": {
+    "description": "Label for the income tax assessment question",
+    "tags": ["main_partner_business_loan"],
+    "type": "text"
+  },
+  "have_life_insurance": "আপনার কি জীবন বীমা আছে?",
+  "@have_life_insurance": {
+    "description": "Label for the life insurance question",
+    "tags": ["main_partner_business_loan"],
+    "type": "text"
+  },
+  "marital_status": "বৈবাহিক অবস্থা",
+  "@marital_status": {
+    "description": "Label for the marital status field",
+    "tags": ["main_partner_business_loan"],
+    "type": "text"
+  },
+  "marital_status_hint": "বৈবাহিক অবস্থা লিখুন",
+  "@marital_status_hint": {
+    "description": "Hint text for the marital status field",
+    "tags": ["main_partner_business_loan"],
+    "type": "text"
+  },
+  "spouse_name": "স্বামী/স্ত্রীর নাম",
+  "@spouse_name": {
+    "description": "Label for the spouse name field",
+    "tags": ["main_partner_business_loan"],
+    "type": "text"
+  },
+  "spouse_name_hint": "স্বামী/স্ত্রীর নাম লিখুন",
+  "@spouse_name_hint": {
+    "description": "Hint text for the spouse name field",
+    "tags": ["main_partner_business_loan"],
+    "type": "text"
+  },
+  "no_of_children": "সন্তানের সংখ্যা",
+  "@no_of_children": {
+    "description": "Label for the number of children field",
+    "tags": ["main_partner_business_loan"],
+    "type": "text"
+  },
+  "no_of_children_hint": "সন্তানের সংখ্যা লিখুন",
+  "@no_of_children_hint": {
+    "description": "Hint text for the number of children field",
+    "tags": ["main_partner_business_loan"],
+    "type": "text"
+  },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  "loan_form": "লোন ফর্ম",
+  "@loan_form": {
+    "description": "Title for the Loan Form page",
+    "tags": ["loan_form_business_loan"],
+    "type": "text"
+  },
+  "total_loan": "মোট লোন",
+  "@total_loan": {
+    "description": "Label for the total loan section",
+    "tags": ["loan_form_business_loan"],
+    "type": "text"
+  },
+  "note": "নোট",
+  "@note": {
+    "description": "Label for the note section",
+    "tags": ["loan_form_business_loan"],
+    "type": "text"
+  },
+  "note_description": " : ব্যাংকার তাদের ব্যাংকে বিদ্যমান সুবিধাগুলি স্থানান্তরের বা সমান চার্জের জন্য আবেদন করার অপশন পাবেন।",
+  "@note_description": {
+    "description": "Description of the note regarding loan details",
+    "tags": ["loan_form_business_loan"],
+    "type": "text"
+  },
+  "existing_loans": "বিদ্যমান ঋণ",
+  "@existing_loans": {
+    "description": "Label for the existing loans field",
+    "tags": ["loan_form_business_loan", "existing_loans_loan_form_business_loan"],
+    "type": "text"
+  },
+  "additional_loan_required": "অতিরিক্ত ঋণের প্রয়োজন",
+  "@additional_loan_required": {
+    "description": "Label for the additional loan required field",
+    "tags": ["loan_form_business_loan"],
+    "type": "text"
+  },
+  "total_loan_label": "মোট ঋণ",
+  "@total_loan_label": {
+    "description": "Label for the total loan field",
+    "tags": ["loan_form_business_loan"],
+    "type": "text"
+  },
+  "submit": "জমা দিন",
+  "@submit": {
+    "description": "Label for the submit button",
+    "tags": ["loan_form_business_loan"],
+    "type": "text"
+  },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  "industry": "শিল্প*",
+  "@industry": {
+    "description": "Label for the industry input field",
+    "tags": ["business_detail_loan_form_business_loan"],
+    "type": "text"
+  },
+  "industry_hint": "শিল্প লিখুন",
+  "@industry_hint": {
+    "description": "Hint text for the industry input field",
+    "tags": ["business_detail_loan_form_business_loan"],
+    "type": "text"
+  },
+  "sector_name": "সেক্টর নাম*",
+  "@sector_name": {
+    "description": "Label for the sector name input field",
+    "tags": ["business_detail_loan_form_business_loan"],
+    "type": "text"
+  },
+  "sector_name_hint": "সেক্টর নাম লিখুন",
+  "@sector_name_hint": {
+    "description": "Hint text for the sector name input field",
+    "tags": ["business_detail_loan_form_business_loan"],
+    "type": "text"
+  },
+  "sub_sector_name": "উপ সেক্টর নাম*",
+  "@sub_sector_name": {
+    "description": "Label for the sub sector name input field",
+    "tags": ["business_detail_loan_form_business_loan"],
+    "type": "text"
+  },
+  "sub_sector_name_hint": "উপ সেক্টর নাম লিখুন",
+  "@sub_sector_name_hint": {
+    "description": "Hint text for the sub sector name input field",
+    "tags": ["business_detail_loan_form_business_loan"],
+    "type": "text"
+  },
+  "msme_registration_number": "MSME নিবন্ধন নম্বর*",
+  "@msme_registration_number": {
+    "description": "Label for the MSME registration number input field",
+    "tags": ["business_detail_loan_form_business_loan"],
+    "type": "text"
+  },
+  "msme_registration_number_hint": "MSME নিবন্ধন নম্বর লিখুন",
+  "@msme_registration_number_hint": {
+    "description": "Hint text for the MSME registration number input field",
+    "tags": ["business_detail_loan_form_business_loan"],
+    "type": "text"
+  },
+  "udyog_aadhar_memorandum_no": "উদ্যোগ আধার স্মারক নম্বর",
+  "@udyog_aadhar_memorandum_no": {
+    "description": "Label for the Udyog Aadhar Memorandum No. input field",
+    "tags": ["business_detail_loan_form_business_loan"],
+    "type": "text"
+  },
+  "udyog_aadhar_memorandum_no_hint": "উদ্যোগ আধার স্মারক নম্বর লিখুন",
+  "@udyog_aadhar_memorandum_no_hint": {
+    "description": "Hint text for the Udyog Aadhar Memorandum No. input field",
+    "tags": ["business_detail_loan_form_business_loan"],
+    "type": "text"
+  },
+  "product_service_description": "পণ্য/সেবা বিবরণ*",
+  "@product_service_description": {
+    "description": "Label for the product/service description input field",
+    "tags": ["business_detail_loan_form_business_loan"],
+    "type": "text"
+  },
+  "product_service_description_hint": "পণ্য/সেবা বিবরণ লিখুন",
+  "@product_service_description_hint": {
+    "description": "Hint text for the product/service description input field",
+    "tags": ["business_detail_loan_form_business_loan"],
+    "type": "text"
+  },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  "declare_collateral_security": "গৃহীত জামানত ঘোষণা করুন",
+  "@declare_collateral_security": {
+    "description": "গৃহীত জামানতের ঘোষণা বিভাগের শিরোনাম",
+    "tags": ["declare_collateral_loan_form_business_loan"],
+    "type": "text"
+  },
+  "collateral_type": "জামানতের প্রকার",
+  "@collateral_type": {
+    "description": "জামানতের প্রকার ইনপুট ক্ষেত্রের জন্য লেবেল",
+    "tags": ["declare_collateral_loan_form_business_loan"],
+    "type": "text"
+  },
+  "collateral_type_hint": "জামানতের প্রকার লিখুন",
+  "@collateral_type_hint": {
+    "description": "জামানতের প্রকার ইনপুট ক্ষেত্রের জন্য হিন্ট টেক্সট",
+    "tags": ["declare_collateral_loan_form_business_loan"],
+    "type": "text"
+  },
+  "collateral_amount": "জামানতের পরিমাণ (₹)",
+  "@collateral_amount": {
+    "description": "জামানতের পরিমাণ ইনপুট ক্ষেত্রের জন্য লেবেল",
+    "tags": ["declare_collateral_loan_form_business_loan", "existing_loans_loan_form_business_loan"],
+    "type": "text"
+  },
+  "collateral_amount_hint": "জামানতের পরিমাণ লিখুন",
+  "@collateral_amount_hint": {
+    "description": "জামানতের পরিমাণ ইনপুট ক্ষেত্রের জন্য হিন্ট টেক্সট",
+    "tags": ["declare_collateral_loan_form_business_loan", "existing_loans_loan_form_business_loan"],
+    "type": "text"
+  },
+  "add_collateral": "জামানত যোগ করুন",
+  "@add_collateral": {
+    "description": "নতুন জামানত যোগ করার জন্য বোতামের লেবেল",
+    "tags": ["declare_collateral_loan_form_business_loan"],
+    "type": "text"
+  },
+
+
+
+
+
+
+
+
+
+
+
+
+
+  "loan_detail": "ঋণের বিস্তারিত",
+  "@loan_detail": {
+    "description": "Title for the loan details section",
+    "tags": ["loan_detail_loan_form_business_loan"],
+    "type": "text"
+  },
+  "loan_amount_required": "ঋণের প্রয়োজনীয় পরিমাণ*",
+  "@loan_amount_required": {
+    "description": "Label for the loan amount required input field",
+    "tags": ["loan_detail_loan_form_business_loan"],
+    "type": "text"
+  },
+  "loan_amount_hint": "ঋণের পরিমাণ লিখুন",
+  "@loan_amount_hint": {
+    "description": "Hint text for the loan amount input field",
+    "tags": ["loan_detail_loan_form_business_loan"],
+    "type": "text"
+  },
+  "promoter_contribution": "প্রোমোটার অবদান*",
+  "@promoter_contribution": {
+    "description": "Label for the promoter contribution input field",
+    "tags": ["loan_detail_loan_form_business_loan"],
+    "type": "text"
+  },
+  "promoter_contribution_hint": "প্রোমোটার অবদান লিখুন",
+  "@promoter_contribution_hint": {
+    "description": "Hint text for the promoter contribution input field",
+    "tags": ["loan_detail_loan_form_business_loan"],
+    "type": "text"
+  },
+  "purpose_of_loan": "ঋণের উদ্দেশ্য*",
+  "@purpose_of_loan": {
+    "description": "Label for the purpose of loan input field",
+    "tags": ["loan_detail_loan_form_business_loan"],
+    "type": "text"
+  },
+  "purpose_of_loan_hint": "ঋণের উদ্দেশ্য লিখুন",
+  "@purpose_of_loan_hint": {
+    "description": "Hint text for the purpose of loan input field",
+    "tags": ["loan_detail_loan_form_business_loan"],
+    "type": "text"
+  },
+  "projected_sales": "প্রত্যাশিত বিক্রয় অর্থবছর",
+  "@projected_sales": {
+    "description": "Label for the projected sales input field",
+    "tags": ["loan_detail_loan_form_business_loan"],
+    "type": "text"
+  },
+  "projected_sales_hint": "প্রত্যাশিত বিক্রয় লিখুন",
+  "@projected_sales_hint": {
+    "description": "Hint text for the projected sales input field",
+    "tags": ["loan_detail_loan_form_business_loan"],
+    "type": "text"
+  },
+  "iso_certified": "আপনার ব্যবসা ISO সার্টিফাইড?",
+  "@iso_certified": {
+    "description": "Label for the ISO certification switch",
+    "tags": ["loan_detail_loan_form_business_loan"],
+    "type": "text"
+  },
+  "factory_premise": "কারখানা প্রাঙ্গণ*",
+  "@factory_premise": {
+    "description": "Label for the factory premise input field",
+    "tags": ["loan_detail_loan_form_business_loan"],
+    "type": "text"
+  },
+  "factory_premise_hint": "কারখানা প্রাঙ্গণ লিখুন",
+  "@factory_premise_hint": {
+    "description": "Hint text for the factory premise input field",
+    "tags": ["loan_detail_loan_form_business_loan"],
+    "type": "text"
+  },
+  "projected_know_how": "প্রত্যাশিত জ্ঞান*",
+  "@projected_know_how": {
+    "description": "Label for the projected know how input field",
+    "tags": ["loan_detail_loan_form_business_loan"],
+    "type": "text"
+  },
+  "projected_know_how_hint": "প্রত্যাশিত জ্ঞান লিখুন",
+  "@projected_know_how_hint": {
+    "description": "Hint text for the projected know how input field",
+    "tags": ["loan_detail_loan_form_business_loan"],
+    "type": "text"
+  },
+  "competition": "প্রতিযোগিতা*",
+  "@competition": {
+    "description": "Label for the competition input field",
+    "tags": ["loan_detail_loan_form_business_loan"],
+    "type": "text"
+  },
+  "competition_hint": "প্রতিযোগিতা লিখুন",
+  "@competition_hint": {
+    "description": "Hint text for the competition input field",
+    "tags": ["loan_detail_loan_form_business_loan"],
+    "type": "text"
+  },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  "name_of_lender": "ঋণদাতার নাম*",
+  "@name_of_lender": {
+    "description": "Label for the name of lender input field",
+    "tags": ["existing_loans_loan_form_business_loan"],
+    "type": "text"
+  },
+  "name_of_lender_hint": "ঋণদাতার নাম লিখুন",
+  "@name_of_lender_hint": {
+    "description": "Hint text for the name of lender input field",
+    "tags": ["existing_loans_loan_form_business_loan"],
+    "type": "text"
+  },
+  "sanctioned_amount": "অনুমোদিত পরিমাণ (₹)*",
+  "@sanctioned_amount": {
+    "description": "Label for the sanctioned amount input field",
+    "tags": ["existing_loans_loan_form_business_loan"],
+    "type": "text"
+  },
+  "sanctioned_amount_hint": "অনুমোদিত পরিমাণ লিখুন",
+  "@sanctioned_amount_hint": {
+    "description": "Hint text for the sanctioned amount input field",
+    "tags": ["existing_loans_loan_form_business_loan"],
+    "type": "text"
+  },
+  "outstanding_amount": "বাকী পরিমাণ (₹)*",
+  "@outstanding_amount": {
+    "description": "Label for the outstanding amount input field",
+    "tags": ["existing_loans_loan_form_business_loan"],
+    "type": "text"
+  },
+  "outstanding_amount_hint": "বাকী পরিমাণ লিখুন",
+  "@outstanding_amount_hint": {
+    "description": "Hint text for the outstanding amount input field",
+    "tags": ["existing_loans_loan_form_business_loan"],
+    "type": "text"
+  },
+  "emi_amount": "ইএমআই পরিমাণ (₹)*",
+  "@emi_amount": {
+    "description": "Label for the EMI amount input field",
+    "tags": ["existing_loans_loan_form_business_loan"],
+    "type": "text"
+  },
+  "emi_amount_hint": "ইএমআই পরিমাণ লিখুন",
+  "@emi_amount_hint": {
+    "description": "Hint text for the EMI amount input field",
+    "tags": ["existing_loans_loan_form_business_loan"],
+    "type": "text"
+  },
+  "loan_type": "ঋণের ধরণ*",
+  "@loan_type": {
+    "description": "Label for the loan type input field",
+    "tags": ["existing_loans_loan_form_business_loan"],
+    "type": "text"
+  },
+  "loan_type_hint": "ঋণের ধরণ লিখুন",
+  "@loan_type_hint": {
+    "description": "Hint text for the loan type input field",
+    "tags": ["existing_loans_loan_form_business_loan"],
+    "type": "text"
+  },
+
+  "status": "স্থিতি*",
+  "@status": {
+    "description": "Label for the status input field",
+    "tags": ["existing_loans_loan_form_business_loan"],
+    "type": "text"
+  },
+  "status_hint": "স্থিতি লিখুন",
+  "@status_hint": {
+    "description": "Hint text for the status input field",
+    "tags": ["existing_loans_loan_form_business_loan"],
+    "type": "text"
+  },
+  "add_existing_loan": "বিদ্যমান ঋণ যোগ করুন",
+  "@add_existing_loan": {
+    "description": "Button text to add an existing loan",
+    "tags": ["existing_loans_loan_form_business_loan"],
+    "type": "text"
   }
 }
+
