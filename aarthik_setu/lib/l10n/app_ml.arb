@@ -1803,8 +1803,159 @@
     "type": "text",
     "tags": ["business_loan_journey"]
   },
-  "loanButtonDescription": "നിങ്ങളുടെ അഭ്യർത്ഥന പൂർത്തിയാക്കാൻ വായ്പാ അപേക്ഷ ഫോർം പൂരിപ്പിക്കുക."
+  "loanButtonDescription": "നിങ്ങളുടെ അഭ്യർത്ഥന പൂർത്തിയാക്കാൻ വായ്പാ അപേക്ഷ ഫോർം പൂരിപ്പിക്കുക.",
+
+
+
+
+
+
+
+
+
+
+
+  "@gstDetailsTitle": {
+    "description": "Title for the GST details section",
+    "type": "text",
+    "tags": ["gst_details_business_loan"]
+  },
+  "gstDetailsTitle": "ജിഎസ്‌ടി വിശദാംശങ്ങൾ",
+
+  "@toggleEnterGst": {
+    "description": "Label for the toggle switch to enter GST",
+    "type": "text",
+    "tags": ["gst_details_business_loan"]
+  },
+  "toggleEnterGst": "ജിഎസ്‌ടി നൽകുക",
+
+  "@toggleDeclareBusiness": {
+    "description": "Label for the toggle switch to declare business",
+    "type": "text",
+    "tags": ["gst_details_business_loan"]
+  },
+  "toggleDeclareBusiness": "ബിസിനസ് പ്രഖ്യാപിക്കുക",
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  "@businessButtonLabel": {
+    "description": "Label for business button indicating the business number",
+    "type": "text",
+    "tags": ["gst_details_business_loan"]
+  },
+  "businessButtonLabel": "ബിസിനസ് ",
+
+  "@addBusinessButtonLabel": {
+    "description": "Label for the button to add a new business",
+    "type": "text",
+    "tags": ["gst_details_business_loan"]
+  },
+  "addBusinessButtonLabel": "പുതിയ ബിസിനസ് ചേർക്കുക",
+
+  "@gstNumberLabel": {
+    "description": "Label for the GST number input field",
+    "type": "text",
+    "tags": ["gst_details_business_loan"]
+  },
+  "gstNumberLabel": "ജിഎസ്‌ടി നമ്പർ*",
+
+  "@gstNumberHint": {
+    "description": "Hint text for the GST number input field",
+    "type": "text",
+    "tags": ["gst_details_business_loan"]
+  },
+  "gstNumberHint": "ജിഎസ്‌ടി നമ്പർ നൽകുക",
+
+  "@gstUsernameLabel": {
+    "description": "Label for the GST username input field",
+    "type": "text",
+    "tags": ["gst_details_business_loan"]
+  },
+  "gstUsernameLabel": "ജിഎസ്‌ടി ഉപയോക്തൃനാമം*",
+
+  "@gstUsernameHint": {
+    "description": "Hint text for the GST username input field",
+    "type": "text",
+    "tags": ["gst_details_business_loan"]
+  },
+  "gstUsernameHint": "ജിഎസ്‌ടി ഉപയോക്തൃനാമം നൽകുക",
+
+  "@cityLabelGST": {
+    "description": "Label for the city input field",
+    "type": "text",
+    "tags": ["gst_details_business_loan"]
+  },
+  "cityLabelGST": "നഗരം*",
+
+  "@cityHint": {
+    "description": "Hint text for the city input field",
+    "type": "text",
+    "tags": ["gst_details_business_loan"]
+  },
+  "cityHint": "നഗരം നൽകുക",
+
+  "@totalPurchaseLabel": {
+    "description": "Label for the total purchase input field",
+    "type": "text",
+    "tags": ["gst_details_business_loan"]
+  },
+  "totalPurchaseLabel": "മൊത്തം വാങ്ങൽ*",
+
+  "@totalPurchaseHint": {
+    "description": "Hint text for the total purchase input field",
+    "type": "text",
+    "tags": ["gst_details_business_loan"]
+  },
+  "totalPurchaseHint": "മൊത്തം വാങ്ങൽ നൽകുക",
+
+  "@totalSalesLabel": {
+    "description": "Label for the total sales input field",
+    "type": "text",
+    "tags": ["gst_details_business_loan"]
+  },
+  "totalSalesLabel": "മൊത്തം വിൽപ്പന*",
+
+  "@totalSalesHint": {
+    "description": "Hint text for the total sales input field",
+    "type": "text",
+    "tags": ["gst_details_business_loan"]
+  },
+  "totalSalesHint": "മൊത്തം വിൽപ്പന നൽകുക",
+
+  "@updateOnLabel": {
+    "description": "Label for the update date picker button",
+    "type": "text",
+    "tags": ["gst_details_business_loan"]
+  },
+  "updateOnLabel": "അപ്ഡേറ്റ് ചെയ്യുക*",
+
+  "@selectBusinessToEdit": {
+    "description": "Message to display when no business is selected for editing",
+    "type": "text",
+    "tags": ["gst_details_business_loan"]
+  },
+  "selectBusinessToEdit": "തിരുത്താൻ ഒരു ബിസിനസ് തിരഞ്ഞെടുക്കുക",
+
+  "@deleteButtonLabel": {
+    "description": "Label for the delete button",
+    "type": "text",
+    "tags": ["gst_details_business_loan"]
+  },
+  "deleteButtonLabel": "കുറച്ചു"
 }
+
 
 
 
