@@ -2960,8 +2960,119 @@
     "description": "ಹೊಸ ಭದ್ರತೆಯನ್ನು ಸೇರಿಸಲು ಬಟನ್ ಲೇಬಲ್",
     "tags": ["declare_collateral_loan_form_business_loan"],
     "type": "text"
+  },
+
+
+
+
+
+
+
+
+
+
+
+
+
+  "loan_detail": "ಋಣದ ವಿವರಗಳು",
+  "@loan_detail": {
+    "description": "Title for the loan details section",
+    "tags": ["loan_detail_loan_form_business_loan"],
+    "type": "text"
+  },
+  "loan_amount_required": "ಋಣದ ಅಗತ್ಯ ಪ್ರಮಾಣ*",
+  "@loan_amount_required": {
+    "description": "Label for the loan amount required input field",
+    "tags": ["loan_detail_loan_form_business_loan"],
+    "type": "text"
+  },
+  "loan_amount_hint": "ಋಣದ ಪ್ರಮಾಣ ನಮೂದಿಸಿ",
+  "@loan_amount_hint": {
+    "description": "Hint text for the loan amount input field",
+    "tags": ["loan_detail_loan_form_business_loan"],
+    "type": "text"
+  },
+  "promoter_contribution": "ಪ್ರೋತ್ಸಾಹಕರ ಕೊಡುಗೆ*",
+  "@promoter_contribution": {
+    "description": "Label for the promoter contribution input field",
+    "tags": ["loan_detail_loan_form_business_loan"],
+    "type": "text"
+  },
+  "promoter_contribution_hint": "ಪ್ರೋತ್ಸಾಹಕರ ಕೊಡುಗೆ ನಮೂದಿಸಿ",
+  "@promoter_contribution_hint": {
+    "description": "Hint text for the promoter contribution input field",
+    "tags": ["loan_detail_loan_form_business_loan"],
+    "type": "text"
+  },
+  "purpose_of_loan": "ಋಣದ ಉದ್ದೇಶ*",
+  "@purpose_of_loan": {
+    "description": "Label for the purpose of loan input field",
+    "tags": ["loan_detail_loan_form_business_loan"],
+    "type": "text"
+  },
+  "purpose_of_loan_hint": "ಋಣದ ಉದ್ದೇಶ ನಮೂದಿಸಿ",
+  "@purpose_of_loan_hint": {
+    "description": "Hint text for the purpose of loan input field",
+    "tags": ["loan_detail_loan_form_business_loan"],
+    "type": "text"
+  },
+  "projected_sales": "ಕಂಡಿತವಾದ ಮಾರಾಟ ಸಾಲ ವರ್ಷ",
+  "@projected_sales": {
+    "description": "Label for the projected sales input field",
+    "tags": ["loan_detail_loan_form_business_loan"],
+    "type": "text"
+  },
+  "projected_sales_hint": "ಕಂಡಿತವಾದ ಮಾರಾಟ ನಮೂದಿಸಿ",
+  "@projected_sales_hint": {
+    "description": "Hint text for the projected sales input field",
+    "tags": ["loan_detail_loan_form_business_loan"],
+    "type": "text"
+  },
+  "iso_certified": "ನಿಮ್ಮ ವ್ಯಾಪಾರ ISO ಪ್ರಮಾಣಿತವಾಗಿದೆವೇ?",
+  "@iso_certified": {
+    "description": "Label for the ISO certification switch",
+    "tags": ["loan_detail_loan_form_business_loan"],
+    "type": "text"
+  },
+  "factory_premise": "ಕಾರ್ಮಿಕ ಸ್ಥಳ*",
+  "@factory_premise": {
+    "description": "Label for the factory premise input field",
+    "tags": ["loan_detail_loan_form_business_loan"],
+    "type": "text"
+  },
+  "factory_premise_hint": "ಕಾರ್ಮಿಕ ಸ್ಥಳ ನಮೂದಿಸಿ",
+  "@factory_premise_hint": {
+    "description": "Hint text for the factory premise input field",
+    "tags": ["loan_detail_loan_form_business_loan"],
+    "type": "text"
+  },
+  "projected_know_how": "ಕಂಡಿತವಾದ ತಿಳಿವಳಿಕೆ*",
+  "@projected_know_how": {
+    "description": "Label for the projected know how input field",
+    "tags": ["loan_detail_loan_form_business_loan"],
+    "type": "text"
+  },
+  "projected_know_how_hint": "ಕಂಡಿತವಾದ ತಿಳಿವಳಿಕೆ ನಮೂದಿಸಿ",
+  "@projected_know_how_hint": {
+    "description": "Hint text for the projected know how input field",
+    "tags": ["loan_detail_loan_form_business_loan"],
+    "type": "text"
+  },
+  "competition": "ಸ್ಪರ್ಧೆ*",
+  "@competition": {
+    "description": "Label for the competition input field",
+    "tags": ["loan_detail_loan_form_business_loan"],
+    "type": "text"
+  },
+  "competition_hint": "ಸ್ಪರ್ಧೆ ನಮೂದಿಸಿ",
+  "@competition_hint": {
+    "description": "Hint text for the competition input field",
+    "tags": ["loan_detail_loan_form_business_loan"],
+    "type": "text"
   }
 }
+
+
 
 
 
