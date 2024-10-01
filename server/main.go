@@ -7,6 +7,7 @@ import (
 	personal_forms "server/routes/forms/personal_forms"
 	info_extraction "server/routes/info_extraction"
 	profile_applications "server/routes/profile_applications"
+
 	"github.com/gin-contrib/cors"
 	"github.com/gin-gonic/gin"
 	"github.com/joho/godotenv"
@@ -65,7 +66,8 @@ func main() {
 	// Register profile routes
 	profile_applications.RegisterPersonalProfileRoutes(router)
 	profile_applications.RegisterBusinessProfileRoutes(router)
-	profile_applications.RegisterApplicationsRoutes(router)
+	profile_applications.RegisterBusinessApplicationsRoutes(router)
+	profile_applications.RegisterPersonalApplicationsRoutes(router)
 
 	// Start the HTTP server
 	log.Println("Starting server on :8080")
