@@ -477,7 +477,7 @@
     "description": "Description for loan form submission",
     "type": "text",
     "placeholders": {},
-    "tags": ["personal_loan_journey"]
+    "tags": ["personal_loan_journey", "business_loan_journey"]
   },
   "loanFormButtonTitle": "விண்ணப்பத்தை சமர்ப்பிக்கவும்",
   "@loanFormButtonTitle": {
@@ -1633,8 +1633,143 @@
     "type": "text",
     "tags": ["loan_form_personal_loan"]
   },
-  "repaymentMethodPlaceholder": "மீட்பு முறையை தேர்ந்தெடுக்கவும்"
+  "repaymentMethodPlaceholder": "மீட்பு முறையை தேர்ந்தெடுக்கவும்",
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  "@chooseBusinessProfile": {
+    "description": "Text for choosing a business profile",
+    "type": "text",
+    "tags": ["business_loan_journey"]
+  },
+  "chooseBusinessProfile": "உங்கள் வணிக சுயவிவரத்தைத் தேர்ந்தெடுக்கவும்",
+
+  "@selectedProfileBusiness": {
+    "description": "Text showing the selected business profile",
+    "type": "text",
+    "tags": ["business_loan_journey"]
+  },
+  "selectedProfileBusiness": "தேர்ந்தெடுக்கப்பட்ட சுயவிவரம்: ABC புரட்சிகள் லிமிடெட்",
+
+  "@selectProfileDescription": {
+    "description": "Instructions for selecting or creating a business profile",
+    "type": "text",
+    "tags": ["business_loan_journey"]
+  },
+  "selectProfileDescription": "கோஷ்டியில் இருந்து உங்கள் வணிக சுயவிவரத்தைத் தேர்ந்தெடுக்கவும். உங்களுக்கு சுயவிவரம் இல்லையெனில், புதிய சுயவிவரம் உருவாக்கவும்.",
+
+  "@itrFormDescription": {
+    "description": "Description of the importance of the Income Tax Return",
+    "type": "text",
+    "tags": ["business_loan_journey"]
+  },
+  "itrFormDescription": "உங்கள் வணிகத்தின் வருமான வரி திருப்பி (ITR) அளிப்பது முக்கியம், ஏனெனில் இது உங்கள் நிறுவனத்தின் நிதி ஆரோக்கியத்தை மற்றும் நிலைத்தன்மையை காட்டுகிறது.",
+
+  "@itrButtonTitleBusiness": {
+    "description": "Button title for submitting the Income Tax Return",
+    "type": "text",
+    "tags": ["business_loan_journey"]
+  },
+  "itrButtonTitleBusiness": "வருமான வரி திரும்பவும்",
+
+  "@itrButtonDescriptionBusiness": {
+    "description": "Instructions for providing the Income Tax Return",
+    "type": "text",
+    "tags": ["business_loan_journey"]
+  },
+  "itrButtonDescriptionBusiness": "உங்கள் தொழிலின் கடைசி 3 ஆண்டுகளுக்கான வருமான வரி திரும்பவும் அளிக்கவும்.",
+
+
+  "@gstFormDescription": {
+    "description": "Description of the importance of GST details",
+    "type": "text",
+    "tags": ["business_loan_journey"]
+  },
+  "gstFormDescription": "உங்கள் GST திருப்பி அளிப்பது உங்கள் வணிகத்தின் வரி விதிமுறைகளைப் பின்பற்றுவதைக் காட்டுகிறது, இது கடன் அங்கீகாரத்தில் முக்கிய அம்சமாகும்.",
+
+  "@gstButtonTitle": {
+    "description": "Button title for submitting GST details",
+    "type": "text",
+    "tags": ["business_loan_journey"]
+  },
+  "gstButtonTitle": "GST விவரங்கள்",
+
+  "@gstButtonDescription": {
+    "description": "Instructions for providing GST details",
+    "type": "text",
+    "tags": ["business_loan_journey"]
+  },
+  "gstButtonDescription": "உங்கள் GST பதிவு எண் மற்றும் திருப்பி விவரங்களை வழங்கவும்.",
+
+  "@bankDetailsDescription": {
+    "description": "Description of the importance of submitting bank details",
+    "type": "text",
+    "tags": ["business_loan_journey"]
+  },
+  "bankDetailsDescription": "உங்கள் வணிகத்தின் வங்கி விவரங்களை வழங்குவது கடன் வழங்குநர்களுக்கு உங்கள் நிதி ஆரோக்கியம் மற்றும் பணவீக்கம் அடையாளமிட உதவுகிறது.",
+
+  "@bankButtonTitle": {
+    "description": "Button title for submitting bank details",
+    "type": "text",
+    "tags": ["business_loan_journey"]
+  },
+  "bankButtonTitle": "வங்கி விவரங்கள்",
+
+  "@bankButtonDescription": {
+    "description": "Instructions for providing bank details",
+    "type": "text",
+    "tags": ["business_loan_journey"]
+  },
+  "bankButtonDescription": "உங்கள் வணிகத்தின் வங்கி விவரங்கள் மற்றும் வங்கியின் பட்டியலை வழங்கவும்.",
+
+  "@stakeholdersDescription": {
+    "description": "Description of the importance of providing stakeholder details",
+    "type": "text",
+    "tags": ["business_loan_journey"]
+  },
+  "stakeholdersDescription": "முக்கிய பங்குதாரர்கள் குறித்த விவரங்களை வழங்குவது கடன் வழங்குநர்களுக்கு வணிகத்தின் அமைப்பு மற்றும் உரிமத்தைப் புரிந்து கொள்ள உதவுகிறது.",
+
+  "@stakeholdersButtonTitle": {
+    "description": "Button title for submitting stakeholder details",
+    "type": "text",
+    "tags": ["business_loan_journey"]
+  },
+  "stakeholdersButtonTitle": "பங்குதாரர்கள்",
+
+  "@stakeholdersButtonDescription": {
+    "description": "Instructions for providing stakeholder details",
+    "type": "text",
+    "tags": ["business_loan_journey"]
+  },
+  "stakeholdersButtonDescription": "முக்கிய பங்குதாரர்கள் மற்றும் அவர்களது வணிகத்தில் உள்ள பங்கு பற்றிய விவரங்களை வழங்கவும்.",
+
+  "@loanButtonTitle": {
+    "description": "Button title for submitting the loan form",
+    "type": "text",
+    "tags": ["business_loan_journey"]
+  },
+  "loanButtonTitle": "வாழ்வியல் அஞ்சல்",
+
+  "@loanButtonDescription": {
+    "description": "Instructions for filling out the loan application form",
+    "type": "text",
+    "tags": ["business_loan_journey"]
+  },
+  "loanButtonDescription": "உங்கள் விண்ணப்பத்தை முடிக்க கடன் விண்ணப்பத்தை நிரப்பவும்."
 }
+
 
 
 

@@ -1780,8 +1780,147 @@
     "type": "text",
     "tags": ["loan_form_personal_loan"]
   },
-  "repaymentMethodPlaceholder": "చెల్లింపు పద్ధతిని ఎంచుకోండి"
+  "repaymentMethodPlaceholder": "చెల్లింపు పద్ధతిని ఎంచుకోండి",
+
+
+
+
+
+
+
+
+
+
+
+
+  "@chooseBusinessProfile": {
+    "description": "Text for choosing a business profile",
+    "type": "text",
+    "tags": ["business_loan_journey"]
+  },
+  "chooseBusinessProfile": "మీ వ్యాపార ప్రొఫైల్‌ను ఎంచుకోండి",
+
+  "@selectedProfileBusiness": {
+    "description": "Text showing the selected business profile",
+    "type": "text",
+    "tags": ["business_loan_journey"]
+  },
+  "selectedProfileBusiness": "ఎంచుకోబడిన ప్రొఫైల్: ABC ప్రైవేట్ లిమిటెడ్",
+
+  "@selectProfileDescription": {
+    "description": "Instructions for selecting or creating a business profile",
+    "type": "text",
+    "tags": ["business_loan_journey"]
+  },
+  "selectProfileDescription": "కోస్తుల నుండి మీ వ్యాపార ప్రొఫైల్‌ను ఎంచుకోండి. మీకు ప్రొఫైల్ లేకపోతే, కొత్త ప్రొఫైల్‌ను కూడా సృష్టించవచ్చు.",
+
+  "@itrFormDescription": {
+    "description": "Description of the importance of the Income Tax Return",
+    "type": "text",
+    "tags": ["business_loan_journey"]
+  },
+  "itrFormDescription": "మీ వ్యాపార ఆదాయ పన్ను రిటర్న్ (ITR) అందించడం చాలా ముఖ్యమైనది, ఎందుకంటే ఇది మీ కంపెనీని ఆర్థిక ఆరోగ్యాన్ని మరియు స్థిరత్వాన్ని చూపిస్తుంది.",
+
+  "@itrButtonTitleBusiness": {
+    "description": "Button title for submitting the Income Tax Return",
+    "type": "text",
+    "tags": ["business_loan_journey"]
+  },
+  "itrButtonTitleBusiness": "ఆయ్‌టెక్ రిటర్న్",
+
+  "@itrButtonDescriptionBusiness": {
+    "description": "Instructions for providing the Income Tax Return",
+    "type": "text",
+    "tags": ["business_loan_journey"]
+  },
+  "itrButtonDescriptionBusiness": "మీ వ్యాపారం యొక్క గత 3 సంవత్సరాల ఆదాయపు పన్ను రిటర్న్ అందించండి.",
+
+
+  "@gstFormDescription": {
+    "description": "Description of the importance of GST details",
+    "type": "text",
+    "tags": ["business_loan_journey"]
+  },
+  "gstFormDescription": "మీ GST రిటర్న్ అందించడం మీ వ్యాపార పన్ను నియమాలకు అనుగుణంగా ఉండటాన్ని చూపిస్తుంది, ఇది రుణ ఆమోదంలో ముఖ్యమైన అంశం.",
+
+  "@gstButtonTitle": {
+    "description": "Button title for submitting GST details",
+    "type": "text",
+    "tags": ["business_loan_journey"]
+  },
+  "gstButtonTitle": "GST వివరాలు",
+
+  "@gstButtonDescription": {
+    "description": "Instructions for providing GST details",
+    "type": "text",
+    "tags": ["business_loan_journey"]
+  },
+  "gstButtonDescription": "మీ GST నమోదు సంఖ్య మరియు రిటర్న్ వివరాలను అందించండి.",
+
+  "@bankDetailsDescription": {
+    "description": "Description of the importance of submitting bank details",
+    "type": "text",
+    "tags": ["business_loan_journey"]
+  },
+  "bankDetailsDescription": "మీ వ్యాపార బ్యాంక్ వివరాలను అందించడం రుణ దాతలకు మీ ఆర్థిక ఆరోగ్యాన్ని మరియు నగదు ప్రవాహాన్ని అర్థం చేసుకోవడంలో సహాయపడుతుంది.",
+
+  "@bankButtonTitle": {
+    "description": "Button title for submitting bank details",
+    "type": "text",
+    "tags": ["business_loan_journey"]
+  },
+  "bankButtonTitle": "బ్యాంక్ వివరాలు",
+
+  "@bankButtonDescription": {
+    "description": "Instructions for providing bank details",
+    "type": "text",
+    "tags": ["business_loan_journey"]
+  },
+  "bankButtonDescription": "మీ వ్యాపార బ్యాంక్ వివరాలు మరియు బ్యాంక్ జాబితాను అందించండి.",
+
+  "@stakeholdersDescription": {
+    "description": "Description of the importance of providing stakeholder details",
+    "type": "text",
+    "tags": ["business_loan_journey"]
+  },
+  "stakeholdersDescription": "ప్రధాన పంక్తుల గురించి వివరాలను అందించడం రుణ దాతలకు మీ వ్యాపారం యొక్క నిర్మాణాన్ని మరియు స్వామ్యాన్ని అర్థం చేసుకోవడంలో సహాయపడుతుంది.",
+
+  "@stakeholdersButtonTitle": {
+    "description": "Button title for submitting stakeholder details",
+    "type": "text",
+    "tags": ["business_loan_journey"]
+  },
+  "stakeholdersButtonTitle": "పంక్తులు",
+
+  "@stakeholdersButtonDescription": {
+    "description": "Instructions for providing stakeholder details",
+    "type": "text",
+    "tags": ["business_loan_journey"]
+  },
+  "stakeholdersButtonDescription": "ప్రధాన పంక్తులు మరియు వారి వ్యాపారంలో భాగం గురించి వివరాలను అందించండి.",
+
+  "@loanFormDescription": {
+    "description": "Description of the final loan form step",
+    "type": "text",
+    "tags": ["business_loan_journey"]
+  },
+  "loanFormDescription": "వ్యవసాయానికి అందించబడే రుణానికి సంబంధించిన దరఖాస్తు యొక్క చివరి దశ. అన్ని వివరాలు సరైనదా అని నిర్ధారించండి.",
+
+  "@loanButtonTitle": {
+    "description": "Button title for submitting the loan form",
+    "type": "text",
+    "tags": ["business_loan_journey"]
+  },
+  "loanButtonTitle": "దరఖాస్తు సమర్పించు",
+
+  "@loanButtonDescription": {
+    "description": "Instructions for filling out the loan application form",
+    "type": "text",
+    "tags": ["business_loan_journey"]
+  },
+  "loanButtonDescription": "మీ దరఖాస్తును పూర్తి చేయడానికి రుణ దరఖాస్తును పూరించండి."
 }
+
 
 
 

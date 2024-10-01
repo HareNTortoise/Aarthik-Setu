@@ -351,14 +351,14 @@
     "description": "Button label for providing ITR",
     "type": "text",
     "placeholders": {},
-    "tags": ["personal_loan_journey"]
+    "tags": ["personal_loan_journey", "business_loan_journey"]
   },
   "itrButtonDescription": "Provide your income tax return form for up to the last 3 years or declare your income.",
   "@itrButtonDescription": {
     "description": "Description for providing ITR",
     "type": "text",
     "placeholders": {},
-    "tags": ["personal_loan_journey"]
+    "tags": ["personal_loan_journey", "business_loan_journey"]
   },
   "bankDetailsImportance": "Bank details and statements offer lenders a transparent and reliable way to assess your financial habits, repayment capacity, and overall credit risk, which are key factors in approving a loan.",
   "@bankDetailsImportance": {
@@ -1634,8 +1634,149 @@
     "type": "text",
     "tags": ["loan_form_personal_loan"]
   },
-  "repaymentMethodPlaceholder": "Select Repayment Method"
+  "repaymentMethodPlaceholder": "Select Repayment Method",
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  "@chooseBusinessProfile": {
+    "description": "Text for choosing a business profile",
+    "type": "text",
+    "tags": ["business_loan_journey"]
+  },
+  "chooseBusinessProfile": "Choose your Business Profile",
+
+  "@selectedProfileBusiness": {
+    "description": "Text showing the selected business profile",
+    "type": "text",
+    "tags": ["business_loan_journey"]
+  },
+  "selectedProfileBusiness": "Selected Profile: ABC Pvt Ltd",
+
+  "@selectProfileDescription": {
+    "description": "Instructions for selecting or creating a business profile",
+    "type": "text",
+    "tags": ["business_loan_journey"]
+  },
+  "selectProfileDescription": "Select your business profile from the list. You can also create a new profile if you don’t have one.",
+
+  "@itrFormDescription": {
+    "description": "Description of the importance of the Income Tax Return",
+    "type": "text",
+    "tags": ["business_loan_journey"]
+  },
+  "itrFormDescription": "Providing your business’s Income Tax Return (ITR) is essential as it demonstrates your company’s financial health and stability.",
+
+  "@itrButtonTitleBusiness": {
+    "description": "Button title for submitting the Income Tax Return",
+    "type": "text",
+    "tags": ["business_loan_journey"]
+  },
+  "itrButtonTitleBusiness": "Income Tax Return",
+
+  "@itrButtonDescriptionBusiness": {
+    "description": "Instructions for providing the Income Tax Return",
+    "type": "text",
+    "tags": ["business_loan_journey"]
+  },
+  "itrButtonDescriptionBusiness": "Provide your business’s income tax return for the last 3 years.",
+
+  "@gstFormDescription": {
+    "description": "Description of the importance of GST details",
+    "type": "text",
+    "tags": ["business_loan_journey"]
+  },
+  "gstFormDescription": "Providing your GST return shows your business’s compliance with tax regulations, which is a key factor in loan approval.",
+
+  "@gstButtonTitle": {
+    "description": "Button title for submitting GST details",
+    "type": "text",
+    "tags": ["business_loan_journey"]
+  },
+  "gstButtonTitle": "GST Details",
+
+  "@gstButtonDescription": {
+    "description": "Instructions for providing GST details",
+    "type": "text",
+    "tags": ["business_loan_journey"]
+  },
+  "gstButtonDescription": "Provide your GST registration number and return details.",
+
+  "@bankDetailsDescription": {
+    "description": "Description of the importance of submitting bank details",
+    "type": "text",
+    "tags": ["business_loan_journey"]
+  },
+  "bankDetailsDescription": "Submitting your business’s bank details helps the lender assess your financial health and cash flow.",
+
+  "@bankButtonTitle": {
+    "description": "Button title for submitting bank details",
+    "type": "text",
+    "tags": ["business_loan_journey"]
+  },
+  "bankButtonTitle": "Bank Details",
+
+  "@bankButtonDescription": {
+    "description": "Instructions for providing bank details",
+    "type": "text",
+    "tags": ["business_loan_journey"]
+  },
+  "bankButtonDescription": "Provide your business’s bank details and bank statements.",
+
+  "@stakeholdersDescription": {
+    "description": "Description of the importance of providing stakeholder details",
+    "type": "text",
+    "tags": ["business_loan_journey"]
+  },
+  "stakeholdersDescription": "Providing details about key stakeholders helps lenders understand the structure and ownership of the business.",
+
+  "@stakeholdersButtonTitle": {
+    "description": "Button title for submitting stakeholder details",
+    "type": "text",
+    "tags": ["business_loan_journey"]
+  },
+  "stakeholdersButtonTitle": "Stakeholders",
+
+  "@stakeholdersButtonDescription": {
+    "description": "Instructions for providing stakeholder details",
+    "type": "text",
+    "tags": ["business_loan_journey"]
+  },
+  "stakeholdersButtonDescription": "Provide details about key stakeholders and their shares in the business.",
+
+  "@loanFormDescription": {
+    "description": "Description of the final loan form step",
+    "type": "text",
+    "tags": ["business_loan_journey"]
+  },
+  "loanFormDescription": "The loan form is the final step in your business loan application. Make sure all details are accurate.",
+
+  "@loanButtonTitle": {
+    "description": "Button title for submitting the loan form",
+    "type": "text",
+    "tags": ["business_loan_journey"]
+  },
+  "loanButtonTitle": "Loan Form",
+
+  "@loanButtonDescription": {
+    "description": "Instructions for filling out the loan application form",
+    "type": "text",
+    "tags": ["business_loan_journey"]
+  },
+  "loanButtonDescription": "Fill in the loan application form to finalize your request."
 }
+
 
 
 

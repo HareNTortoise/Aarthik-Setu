@@ -1829,8 +1829,150 @@
     "type": "text",
     "tags": ["loan_form_personal_loan"]
   },
-  "repaymentMethodPlaceholder": "ಪಾವತಿ ವಿಧಾನವನ್ನು ಆಯ್ಕೆ ಮಾಡಿ"
+  "repaymentMethodPlaceholder": "ಪಾವತಿ ವಿಧಾನವನ್ನು ಆಯ್ಕೆ ಮಾಡಿ",
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  "@chooseBusinessProfile": {
+    "description": "Text for choosing a business profile",
+    "type": "text",
+    "tags": ["business_loan_journey"]
+  },
+  "chooseBusinessProfile": "ನಿಮ್ಮ ವ್ಯಾಪಾರ ಪ್ರೊಫೈಲ್ ಆಯ್ಕೆ ಮಾಡಿ",
+
+  "@selectedProfileBusiness": {
+    "description": "Text showing the selected business profile",
+    "type": "text",
+    "tags": ["business_loan_journey"]
+  },
+  "selectedProfileBusiness": "ಆಯ್ಕೆಯಾದ ಪ್ರೊಫೈಲ್: ABC ಪ್ರೈವೇಟ್ ಲಿಮಿಟೆಡ್",
+
+  "@selectProfileDescription": {
+    "description": "Instructions for selecting or creating a business profile",
+    "type": "text",
+    "tags": ["business_loan_journey"]
+  },
+  "selectProfileDescription": "ಪಟ್ಟಿಯಲ್ಲಿಂದ ನಿಮ್ಮ ವ್ಯಾಪಾರ ಪ್ರೊಫೈಲ್ ಆಯ್ಕೆ ಮಾಡಿ. ನೀವು ಪ್ರೊಫೈಲ್ ಇಲ್ಲದಿದ್ದರೆ, ಹೊಸ ಪ್ರೊಫೈಲ್ ಸಹ ರಚಿಸಬಹುದು.",
+
+  "@itrFormDescription": {
+    "description": "Description of the importance of the Income Tax Return",
+    "type": "text",
+    "tags": ["business_loan_journey"]
+  },
+  "itrFormDescription": "ನಿಮ್ಮ ವ್ಯಾಪಾರದ ಆದಾಯ ತೆರಿಗೆ ರಿಟರ್ನ್ (ITR) ನೀಡುವುದು ಅತೀ ಮುಖ್ಯ, ಏಕೆಂದರೆ ಇದು ನಿಮ್ಮ ಕಂಪನಿಯ ಹಣಕಾಸಿನ ಆರೋಗ್ಯ ಮತ್ತು ಸ್ಥಿರತೆಯನ್ನು ತೋರಿಸುತ್ತದೆ.",
+
+  "@itrButtonTitleBusiness": {
+    "description": "Button title for submitting the Income Tax Return",
+    "type": "text",
+    "tags": ["business_loan_journey"]
+  },
+  "itrButtonTitleBusiness": "ಆಯಕರ್ ವಾಪಸು",
+
+  "@itrButtonDescriptionBusiness": {
+    "description": "Instructions for providing the Income Tax Return",
+    "type": "text",
+    "tags": ["business_loan_journey"]
+  },
+  "itrButtonDescriptionBusiness": "ನಿಮ್ಮ ವ್ಯಾಪಾರಕ್ಕೆ ಸಂಬಂಧಿಸಿದ ಕೊನೆಯ 3 ವರ್ಷಗಳ ಆಯಕರ್ ವಾಪಸು ನೀಡಿರಿ.",
+
+  "@gstFormDescription": {
+    "description": "Description of the importance of GST details",
+    "type": "text",
+    "tags": ["business_loan_journey"]
+  },
+  "gstFormDescription": "ನಿಮ್ಮ GST ರಿಟರ್ನ್ ನೀಡುವುದು ನಿಮ್ಮ ವ್ಯಾಪಾರದ ತೆರಿಗೆ ನಿಯಮಗಳಿಗೆ ಅನುಕೂಲವಾಗುವುದನ್ನು ತೋರಿಸುತ್ತದೆ, ಇದು ಸಾಲದ ಅನುಮೋದನೆಯಲ್ಲಿ ಪ್ರಮುಖ ಅಂಶವಾಗಿದೆ.",
+
+  "@gstButtonTitle": {
+    "description": "Button title for submitting GST details",
+    "type": "text",
+    "tags": ["business_loan_journey"]
+  },
+  "gstButtonTitle": "GST ವಿವರಗಳು",
+
+  "@gstButtonDescription": {
+    "description": "Instructions for providing GST details",
+    "type": "text",
+    "tags": ["business_loan_journey"]
+  },
+  "gstButtonDescription": "ನಿಮ್ಮ GST ನೋಂದಣಿ ಸಂಖ್ಯೆಯ ಮತ್ತು ರಿಟರ್ನ್ ವಿವರಗಳನ್ನು ಒದಗಿಸಿ.",
+
+  "@bankDetailsDescription": {
+    "description": "Description of the importance of submitting bank details",
+    "type": "text",
+    "tags": ["business_loan_journey"]
+  },
+  "bankDetailsDescription": "ನಿಮ್ಮ ವ್ಯಾಪಾರದ ಬ್ಯಾಂಕ್ ವಿವರಗಳನ್ನು ಒದಗಿಸುವುದು ಸಾಲದದಾರರಿಗೆ ನಿಮ್ಮ ಹಣಕಾಸಿನ ಆರೋಗ್ಯ ಮತ್ತು ನಗದು ಹರಿವನ್ನು ಅರ್ಥಮಾಡಿಕೊಳ್ಳಲು ಸಹಾಯ ಮಾಡುತ್ತದೆ.",
+
+  "@bankButtonTitle": {
+    "description": "Button title for submitting bank details",
+    "type": "text",
+    "tags": ["business_loan_journey"]
+  },
+  "bankButtonTitle": "ಬ್ಯಾಂಕ್ ವಿವರಗಳು",
+
+  "@bankButtonDescription": {
+    "description": "Instructions for providing bank details",
+    "type": "text",
+    "tags": ["business_loan_journey"]
+  },
+  "bankButtonDescription": "ನಿಮ್ಮ ವ್ಯಾಪಾರದ ಬ್ಯಾಂಕ್ ವಿವರಗಳು ಮತ್ತು ಬ್ಯಾಂಕ್ ಪಟ್ಟಿ ನೀಡಲು ಒದಗಿಸಿ.",
+
+  "@stakeholdersDescription": {
+    "description": "Description of the importance of providing stakeholder details",
+    "type": "text",
+    "tags": ["business_loan_journey"]
+  },
+  "stakeholdersDescription": "ಪ್ರಮುಖ ಭಾಗಸಹಾಯಕರ ಕುರಿತು ವಿವರಗಳನ್ನು ಒದಗಿಸುವುದು ಸಾಲದದಾರರಿಗೆ ವ್ಯಾಪಾರದ ರಚನೆ ಮತ್ತು ಸ್ವಾಮ್ಯವನ್ನು ಅರ್ಥಮಾಡಿಕೊಳ್ಳಲು ಸಹಾಯ ಮಾಡುತ್ತದೆ.",
+
+  "@stakeholdersButtonTitle": {
+    "description": "Button title for submitting stakeholder details",
+    "type": "text",
+    "tags": ["business_loan_journey"]
+  },
+  "stakeholdersButtonTitle": "ಭಾಗಸಹಾಯಕರನ್ನು",
+
+  "@stakeholdersButtonDescription": {
+    "description": "Instructions for providing stakeholder details",
+    "type": "text",
+    "tags": ["business_loan_journey"]
+  },
+  "stakeholdersButtonDescription": "ಪ್ರಮುಖ ಭಾಗಸಹಾಯಕರ ಹಾಗೂ ವ್ಯಾಪಾರದಲ್ಲಿ ಅವರ ಪಾಲೆಗಳ ಕುರಿತು ವಿವರಗಳನ್ನು ಒದಗಿಸಿ.",
+
+  "@loanFormDescription": {
+    "description": "Description of the final loan form step",
+    "type": "text",
+    "tags": ["business_loan_journey"]
+  },
+  "loanFormDescription": "ವೇತನದ ಅಳತೆಗಳಿಗೆ ಸಂಬಂಧಿಸಿದಂತೆ ಸಾಲದ ಅರ್ಜಿಯ ಅಂತಿಮ ಹಂತವಾಗಿದೆ. ಎಲ್ಲಾ ವಿವರಗಳು ನಿಖರವಾದವು ಎಂದು ಖಚಿತಪಡಿಸಿಕೊಳ್ಳಿ.",
+
+  "@loanButtonTitle": {
+    "description": "Button title for submitting the loan form",
+    "type": "text",
+    "tags": ["business_loan_journey"]
+  },
+  "loanButtonTitle": "ಸಾಲದ ಅರ್ಜಿ",
+
+  "@loanButtonDescription": {
+    "description": "Instructions for filling out the loan application form",
+    "type": "text",
+    "tags": ["business_loan_journey"]
+  },
+  "loanButtonDescription": "ನಿಮ್ಮ ವಿನಂತಿಯನ್ನು ಅಂತಿಮಗೊಳಿಸಲು ಸಾಲದ ಅರ್ಜಿಯ ವಿವರವನ್ನು ತುಂಬಿ."
 }
+
 
 
 

@@ -1648,7 +1648,149 @@
     "type": "text",
     "tags": ["loan_form_personal_loan"]
   },
-  "repaymentMethodPlaceholder": "পরিশোধ পদ্ধতি নির্বাচন করুন"
+  "repaymentMethodPlaceholder": "পরিশোধ পদ্ধতি নির্বাচন করুন",
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  "@chooseBusinessProfile": {
+    "description": "Text for choosing a business profile",
+    "type": "text",
+    "tags": ["business_loan_journey"]
+  },
+  "chooseBusinessProfile": "আপনার ব্যবসার প্রোফাইল নির্বাচন করুন",
+
+  "@selectedProfileBusiness": {
+    "description": "Text showing the selected business profile",
+    "type": "text",
+    "tags": ["business_loan_journey"]
+  },
+  "selectedProfileBusiness": "নির্বাচিত প্রোফাইল: ABC প্রাইভেট লিমিটেড",
+
+  "@selectProfileDescription": {
+    "description": "Instructions for selecting or creating a business profile",
+    "type": "text",
+    "tags": ["business_loan_journey"]
+  },
+  "selectProfileDescription": "গোষ্ঠী থেকে আপনার ব্যবসার প্রোফাইল নির্বাচন করুন। যদি আপনার প্রোফাইল না থাকে, তবে একটি নতুন প্রোফাইলও তৈরি করতে পারেন।",
+
+  "@itrFormDescription": {
+    "description": "Description of the importance of the Income Tax Return",
+    "type": "text",
+    "tags": ["business_loan_journey"]
+  },
+  "itrFormDescription": "আপনার ব্যবসার আয়কর রিটার্ন (ITR) জমা দেওয়া অত্যন্ত গুরুত্বপূর্ণ, কারণ এটি আপনার কোম্পানির আর্থিক স্বাস্থ্যের এবং স্থায়িত্বের প্রমাণ।",
+
+  "@itrButtonTitleBusiness": {
+    "description": "Button title for submitting the Income Tax Return",
+    "type": "text",
+    "tags": ["business_loan_journey"]
+  },
+  "itrButtonTitleBusiness": "আয়কর রিটার্ন",
+
+  "@itrButtonDescriptionBusiness": {
+    "description": "Instructions for providing the Income Tax Return",
+    "type": "text",
+    "tags": ["business_loan_journey"]
+  },
+  "itrButtonDescriptionBusiness": "আপনার ব্যবসার জন্য গত 3 বছরের আয়কর রিটার্ন প্রদান করুন।",
+
+  "@gstFormDescription": {
+    "description": "Description of the importance of GST details",
+    "type": "text",
+    "tags": ["business_loan_journey"]
+  },
+  "gstFormDescription": "আপনার GST রিটার্ন জমা দেওয়া আপনার ব্যবসার কর নিয়মের সাথে সামঞ্জস্য বজায় রাখতে সাহায্য করে, যা ঋণ অনুমোদনে একটি গুরুত্বপূর্ণ উপাদান।",
+
+  "@gstButtonTitle": {
+    "description": "Button title for submitting GST details",
+    "type": "text",
+    "tags": ["business_loan_journey"]
+  },
+  "gstButtonTitle": "GST বিস্তারিত",
+
+  "@gstButtonDescription": {
+    "description": "Instructions for providing GST details",
+    "type": "text",
+    "tags": ["business_loan_journey"]
+  },
+  "gstButtonDescription": "আপনার GST নিবন্ধন নম্বর এবং রিটার্নের বিস্তারিত দিন।",
+
+  "@bankDetailsDescription": {
+    "description": "Description of the importance of submitting bank details",
+    "type": "text",
+    "tags": ["business_loan_journey"]
+  },
+  "bankDetailsDescription": "আপনার ব্যবসার ব্যাংক বিস্তারিত জমা দেওয়া ঋণদাতাদের জন্য আপনার আর্থিক স্বাস্থ্যের এবং নগদ প্রবাহ বোঝার জন্য সহায়ক।",
+
+  "@bankButtonTitle": {
+    "description": "Button title for submitting bank details",
+    "type": "text",
+    "tags": ["business_loan_journey"]
+  },
+  "bankButtonTitle": "ব্যাংক বিস্তারিত",
+
+  "@bankButtonDescription": {
+    "description": "Instructions for providing bank details",
+    "type": "text",
+    "tags": ["business_loan_journey"]
+  },
+  "bankButtonDescription": "আপনার ব্যবসার ব্যাংক বিস্তারিত এবং ব্যাংকের তালিকা দিন।",
+
+  "@stakeholdersDescription": {
+    "description": "Description of the importance of providing stakeholder details",
+    "type": "text",
+    "tags": ["business_loan_journey"]
+  },
+  "stakeholdersDescription": "প্রধান অংশীদারদের সম্পর্কে বিস্তারিত প্রদান করা ঋণদাতাদের জন্য আপনার ব্যবসার কাঠামো এবং মালিকানা বুঝতে সহায়ক।",
+
+  "@stakeholdersButtonTitle": {
+    "description": "Button title for submitting stakeholder details",
+    "type": "text",
+    "tags": ["business_loan_journey"]
+  },
+  "stakeholdersButtonTitle": "অংশীদার",
+
+  "@stakeholdersButtonDescription": {
+    "description": "Instructions for providing stakeholder details",
+    "type": "text",
+    "tags": ["business_loan_journey"]
+  },
+  "stakeholdersButtonDescription": "প্রধান অংশীদারদের এবং তাদের ব্যবসায়ের অংশীদারি সম্পর্কে বিস্তারিত প্রদান করুন।",
+
+  "@loanFormDescription": {
+    "description": "Description of the final loan form step",
+    "type": "text",
+    "tags": ["business_loan_journey"]
+  },
+  "loanFormDescription": "ব্যবসার জন্য প্রদান করা ঋণের জন্য আবেদনপত্রের চূড়ান্ত ধাপ। সমস্ত বিস্তারিত সঠিক কিনা তা নিশ্চিত করুন।",
+
+  "@loanButtonTitle": {
+    "description": "Button title for submitting the loan form",
+    "type": "text",
+    "tags": ["business_loan_journey"]
+  },
+  "loanButtonTitle": "আবেদন জমা দিন",
+
+  "@loanButtonDescription": {
+    "description": "Instructions for filling out the loan application form",
+    "type": "text",
+    "tags": ["business_loan_journey"]
+  },
+  "loanButtonDescription": "আপনার আবেদন সম্পূর্ণ করতে ঋণ আবেদন পূরণ করুন।"
 }
+
 
 

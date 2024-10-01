@@ -1639,8 +1639,148 @@
     "type": "text",
     "tags": ["loan_form_personal_loan"]
   },
-  "repaymentMethodPlaceholder": "भुगतान विधि चुनें"
+  "repaymentMethodPlaceholder": "भुगतान विधि चुनें",
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  "@chooseBusinessProfile": {
+    "description": "Text for choosing a business profile",
+    "type": "text",
+    "tags": ["business_loan_journey"]
+  },
+  "chooseBusinessProfile": "अपने व्यवसाय का प्रोफ़ाइल चुनें",
+
+  "@selectedProfileBusiness": {
+    "description": "Text showing the selected business profile",
+    "type": "text",
+    "tags": ["business_loan_journey"]
+  },
+  "selectedProfileBusiness": "चुना गया प्रोफ़ाइल: ABC प्रा. लि.",
+
+  "@selectProfileDescription": {
+    "description": "Instructions for selecting or creating a business profile",
+    "type": "text",
+    "tags": ["business_loan_journey"]
+  },
+  "selectProfileDescription": "सूची से अपने व्यवसाय का प्रोफ़ाइल चुनें। यदि आपके पास एक नहीं है, तो आप एक नया प्रोफ़ाइल भी बना सकते हैं।",
+
+  "@itrFormDescription": {
+    "description": "Description of the importance of the Income Tax Return",
+    "type": "text",
+    "tags": ["business_loan_journey"]
+  },
+  "itrFormDescription": "आपके व्यवसाय का आयकर रिटर्न (ITR) प्रदान करना आवश्यक है क्योंकि यह आपकी कंपनी की वित्तीय स्थिति और स्थिरता को दर्शाता है।",
+
+  "@gstFormDescription": {
+    "description": "Description of the importance of GST details",
+    "type": "text",
+    "tags": ["business_loan_journey"]
+  },
+  "gstFormDescription": "आपका GST रिटर्न प्रदान करना आपके व्यवसाय की कर नियमों के साथ अनुपालन को दर्शाता है, जो ऋण स्वीकृति में एक महत्वपूर्ण कारक है।",
+
+  "@itrButtonTitleBusiness": {
+    "description": "Button title for submitting the Income Tax Return",
+    "type": "text",
+    "tags": ["business_loan_journey"]
+  },
+  "itrButtonTitleBusiness": "आयकर रिटर्न",
+
+  "@itrButtonDescriptionBusiness": {
+    "description": "Instructions for providing the Income Tax Return",
+    "type": "text",
+    "tags": ["business_loan_journey"]
+  },
+  "itrButtonDescriptionBusiness": "अपने व्यवसाय का पिछले 3 वर्षों का आयकर रिटर्न प्रदान करें।",
+
+  "@gstButtonTitle": {
+    "description": "Button title for submitting GST details",
+    "type": "text",
+    "tags": ["business_loan_journey"]
+  },
+  "gstButtonTitle": "GST विवरण",
+
+  "@gstButtonDescription": {
+    "description": "Instructions for providing GST details",
+    "type": "text",
+    "tags": ["business_loan_journey"]
+  },
+  "gstButtonDescription": "अपने GST पंजीकरण संख्या और रिटर्न विवरण प्रदान करें।",
+
+  "@bankDetailsDescription": {
+    "description": "Description of the importance of submitting bank details",
+    "type": "text",
+    "tags": ["business_loan_journey"]
+  },
+  "bankDetailsDescription": "आपके व्यवसाय का बैंक विवरण प्रदान करने से ऋणदाता को आपकी वित्तीय स्थिति और नकद प्रवाह का आकलन करने में मदद मिलती है।",
+
+  "@bankButtonTitle": {
+    "description": "Button title for submitting bank details",
+    "type": "text",
+    "tags": ["business_loan_journey"]
+  },
+  "bankButtonTitle": "बैंक विवरण",
+
+  "@bankButtonDescription": {
+    "description": "Instructions for providing bank details",
+    "type": "text",
+    "tags": ["business_loan_journey"]
+  },
+  "bankButtonDescription": "अपने व्यवसाय का बैंक विवरण और बैंक स्टेटमेंट प्रदान करें।",
+
+  "@stakeholdersDescription": {
+    "description": "Description of the importance of providing stakeholder details",
+    "type": "text",
+    "tags": ["business_loan_journey"]
+  },
+  "stakeholdersDescription": "प्रमुख हितधारकों के विवरण प्रदान करने से ऋणदाताओं को व्यवसाय की संरचना और स्वामित्व को समझने में मदद मिलती है।",
+
+  "@stakeholdersButtonTitle": {
+    "description": "Button title for submitting stakeholder details",
+    "type": "text",
+    "tags": ["business_loan_journey"]
+  },
+  "stakeholdersButtonTitle": "हितधारक",
+
+  "@stakeholdersButtonDescription": {
+    "description": "Instructions for providing stakeholder details",
+    "type": "text",
+    "tags": ["business_loan_journey"]
+  },
+  "stakeholdersButtonDescription": "प्रमुख हितधारकों और उनके व्यवसाय में शेयरों के बारे में जानकारी प्रदान करें।",
+
+  "@loanFormDescription": {
+    "description": "Description of the final loan form step",
+    "type": "text",
+    "tags": ["business_loan_journey"]
+  },
+  "loanFormDescription": "ऋण फॉर्म आपके व्यवसाय ऋण आवेदन में अंतिम चरण है। सुनिश्चित करें कि सभी विवरण सटीक हैं।",
+
+  "@loanButtonTitle": {
+    "description": "Button title for submitting the loan form",
+    "type": "text",
+    "tags": ["business_loan_journey"]
+  },
+  "loanButtonTitle": "ऋण फॉर्म",
+
+  "@loanButtonDescription": {
+    "description": "Instructions for filling out the loan application form",
+    "type": "text",
+    "tags": ["business_loan_journey"]
+  },
+  "loanButtonDescription": "अपनी अनुरोध को अंतिम रूप देने के लिए ऋण आवेदन फॉर्म भरें।"
 }
+
 
 
 

@@ -1663,8 +1663,149 @@
     "type": "text",
     "tags": ["loan_form_personal_loan"]
   },
-  "repaymentMethodPlaceholder": "പണയത്തിനുള്ള രീതി തിരഞ്ഞെടുക്കുക"
+  "repaymentMethodPlaceholder": "പണയത്തിനുള്ള രീതി തിരഞ്ഞെടുക്കുക",
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  "@chooseBusinessProfile": {
+    "description": "Text for choosing a business profile",
+    "type": "text",
+    "tags": ["business_loan_journey"]
+  },
+  "chooseBusinessProfile": "നിങ്ങളുടെ ബിസിനസ്സ് പ്രൊഫൈൽ തിരഞ്ഞെടുക്കുക",
+
+  "@selectedProfileBusiness": {
+    "description": "Text showing the selected business profile",
+    "type": "text",
+    "tags": ["business_loan_journey"]
+  },
+  "selectedProfileBusiness": "തിരഞ്ഞെടുത്ത പ്രൊഫൈൽ: ABC പ്രൈവറ്റ് ലിമിറ്റഡ്",
+
+  "@selectProfileDescription": {
+    "description": "Instructions for selecting or creating a business profile",
+    "type": "text",
+    "tags": ["business_loan_journey"]
+  },
+  "selectProfileDescription": "ലിസ്റ്റിൽ നിന്നു നിങ്ങളുടെ ബിസിനസ്സ് പ്രൊഫൈൽ തിരഞ്ഞെടുക്കുക. നിങ്ങൾക്കു ഒരു പ്രൊഫൈൽ ഇല്ലെങ്കിൽ, ഒരു പുതിയ പ്രൊഫൈൽ കൂടി സൃഷ്ടിക്കാവുന്നതാണ്.",
+
+  "@itrFormDescription": {
+    "description": "Description of the importance of the Income Tax Return",
+    "type": "text",
+    "tags": ["business_loan_journey"]
+  },
+  "itrFormDescription": "നിങ്ങളുടെ ബിസിനസിന്റെ വരുമാന നികുതി റിട്ടേൺ (ITR) നൽകുന്നത് ആവശ്യമാണ്, കാരണം ഇത് നിങ്ങളുടെ കമ്പനി സാമ്പത്തിക ആരോഗ്യം மற்றும் സ്ഥിരത വ്യക്തമാക്കുന്നു.",
+
+  "@itrButtonTitleBusiness": {
+    "description": "Button title for submitting the Income Tax Return",
+    "type": "text",
+    "tags": ["business_loan_journey"]
+  },
+  "itrButtonTitleBusiness": "ആവശ്യമായ വരുമാന നികുതി",
+
+  "@itrButtonDescriptionBusiness": {
+    "description": "Instructions for providing the Income Tax Return",
+    "type": "text",
+    "tags": ["business_loan_journey"]
+  },
+  "itrButtonDescriptionBusiness": "നിങ്ങളുടെ ബിസിനസിന്റെ കഴിഞ്ഞ 3 വർഷത്തിലെ വരുമാന നികുതി റിട്ടേൺ നൽകുക.",
+
+  "@gstFormDescription": {
+    "description": "Description of the importance of GST details",
+    "type": "text",
+    "tags": ["business_loan_journey"]
+  },
+  "gstFormDescription": "നിങ്ങളുടെ GST റിട്ടേൺ നൽകുന്നത് നിങ്ങളുടെ ബിസിനസ്സ് നികുതി ചട്ടങ്ങളുമായി അനുസരിക്കുന്നതിനുള്ള ഉറപ്പാണ്, ഇത് കടം അനുമതി നേടുന്നതിൽ ഒരു പ്രധാന ഘടകമാണ്.",
+
+  "@gstButtonTitle": {
+    "description": "Button title for submitting GST details",
+    "type": "text",
+    "tags": ["business_loan_journey"]
+  },
+  "gstButtonTitle": "GST വിശദാംശങ്ങൾ",
+
+  "@gstButtonDescription": {
+    "description": "Instructions for providing GST details",
+    "type": "text",
+    "tags": ["business_loan_journey"]
+  },
+  "gstButtonDescription": "നിങ്ങളുടെ GST രജിസ്ട്രേഷൻ നമ്പറും റിട്ടേൺ വിശദാംശങ്ങളും നൽകുക.",
+
+  "@bankDetailsDescription": {
+    "description": "Description of the importance of submitting bank details",
+    "type": "text",
+    "tags": ["business_loan_journey"]
+  },
+  "bankDetailsDescription": "നിങ്ങളുടെ ബിസിനസ്സിന്റെ ബാങ്ക് വിശദാംശങ്ങൾ നൽകുന്നത് വായ്പയെടുത്തുന്നവൻ നിങ്ങളുടെ സാമ്പത്തിക ആരോഗ്യവും കാഷ് ഫ്ലോയും വിലയിരുത്താൻ സഹായിക്കുന്നു.",
+
+  "@bankButtonTitle": {
+    "description": "Button title for submitting bank details",
+    "type": "text",
+    "tags": ["business_loan_journey"]
+  },
+  "bankButtonTitle": "ബാങ്ക് വിശദാംശങ്ങൾ",
+
+  "@bankButtonDescription": {
+    "description": "Instructions for providing bank details",
+    "type": "text",
+    "tags": ["business_loan_journey"]
+  },
+  "bankButtonDescription": "നിങ്ങളുടെ ബിസിനസിന്റെ ബാങ്ക് വിശദാംശങ്ങളും ബാങ്ക് സ്റ്റേറ്റ്മെന്റുകളും നൽകുക.",
+
+  "@stakeholdersDescription": {
+    "description": "Description of the importance of providing stakeholder details",
+    "type": "text",
+    "tags": ["business_loan_journey"]
+  },
+  "stakeholdersDescription": "പ്രധാന പങ്കാളികളുടെ വിശദാംശങ്ങൾ നൽകുന്നതിലൂടെ വായ്പയെടുത്തുന്നവൻ ബിസിനസിന്റെ ഘടനയും ഉടമസ്ഥതയും മനസ്സിലാക്കാൻ സഹായിക്കുന്നു.",
+
+  "@stakeholdersButtonTitle": {
+    "description": "Button title for submitting stakeholder details",
+    "type": "text",
+    "tags": ["business_loan_journey"]
+  },
+  "stakeholdersButtonTitle": "പങ്കാളികൾ",
+
+  "@stakeholdersButtonDescription": {
+    "description": "Instructions for providing stakeholder details",
+    "type": "text",
+    "tags": ["business_loan_journey"]
+  },
+  "stakeholdersButtonDescription": "പ്രധാന പങ്കാളികളും അവരുടെ ബിസിനസ്സിൽ ഉള്ള പങ്കുകളും സംബന്ധിച്ച വിവരങ്ങൾ നൽകുക.",
+
+  "@loanFormDescription": {
+    "description": "Description of the final loan form step",
+    "type": "text",
+    "tags": ["business_loan_journey"]
+  },
+  "loanFormDescription": "വായ്പാ ഫോർം നിങ്ങളുടെ ബിസിനസ്സ് വായ്പാ അപേക്ഷയിലെ അവസാന ഘട്ടമാണ്. എല്ലാ വിശദാംശങ്ങളും ശരിയാണ് എന്ന് ഉറപ്പുവരുത്തുക.",
+
+  "@loanButtonTitle": {
+    "description": "Button title for submitting the loan form",
+    "type": "text",
+    "tags": ["business_loan_journey"]
+  },
+  "loanButtonTitle": "വായ്പാ ഫോം",
+
+  "@loanButtonDescription": {
+    "description": "Instructions for filling out the loan application form",
+    "type": "text",
+    "tags": ["business_loan_journey"]
+  },
+  "loanButtonDescription": "നിങ്ങളുടെ അഭ്യർത്ഥന പൂർത്തിയാക്കാൻ വായ്പാ അപേക്ഷ ഫോർം പൂരിപ്പിക്കുക."
 }
+
 
 
 
