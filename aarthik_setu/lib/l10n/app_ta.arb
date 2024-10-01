@@ -2730,7 +2730,57 @@
     "description": "Hint text for the product/service description input field",
     "tags": ["business_detail_loan_form_business_loan"],
     "type": "text"
+  },
+
+
+
+
+
+
+
+
+
+
+
+
+
+  "declare_collateral_security": "குழு உறுதிமொழி அறிவிக்கவும்",
+  "@declare_collateral_security": {
+    "description": "குழு உறுதிமொழி அறிவிப்பு தலைப்பு",
+    "tags": ["declare_collateral_loan_form_business_loan"],
+    "type": "text"
+  },
+  "collateral_type": "குழு வகை",
+  "@collateral_type": {
+    "description": "குழு வகை உள்ளீட்டு புலத்திற்கான லேபிள்",
+    "tags": ["declare_collateral_loan_form_business_loan"],
+    "type": "text"
+  },
+  "collateral_type_hint": "குழு வகையை உள்ளிடவும்",
+  "@collateral_type_hint": {
+    "description": "குழு வகை உள்ளீட்டு புலத்திற்கான குறிப்பு",
+    "tags": ["declare_collateral_loan_form_business_loan"],
+    "type": "text"
+  },
+  "collateral_amount": "குழு தொகை (₹)",
+  "@collateral_amount": {
+    "description": "குழு தொகை உள்ளீட்டு புலத்திற்கான லேபிள்",
+    "tags": ["declare_collateral_loan_form_business_loan"],
+    "type": "text"
+  },
+  "collateral_amount_hint": "குழு தொகையை உள்ளிடவும்",
+  "@collateral_amount_hint": {
+    "description": "குழு தொகை உள்ளீட்டு புலத்திற்கான குறிப்பு",
+    "tags": ["declare_collateral_loan_form_business_loan"],
+    "type": "text"
+  },
+  "add_collateral": "குழுவைச் சேர்க்கவும்",
+  "@add_collateral": {
+    "description": "புதிய குழுவைச் சேர்க்க கண்ணாடியுடன்",
+    "tags": ["declare_collateral_loan_form_business_loan"],
+    "type": "text"
   }
 }
+
 
 

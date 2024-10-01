@@ -2717,8 +2717,58 @@
     "description": "Hint text for the product/service description input field",
     "tags": ["business_detail_loan_form_business_loan"],
     "type": "text"
+  },
+
+
+
+
+
+
+
+
+
+
+
+
+
+  "declare_collateral_security": "गिरवी सुरक्षा की घोषणा करें",
+  "@declare_collateral_security": {
+    "description": "गिरवी सुरक्षा की घोषणा अनुभाग का शीर्षक",
+    "tags": ["declare_collateral_loan_form_business_loan"],
+    "type": "text"
+  },
+  "collateral_type": "गिरवी प्रकार",
+  "@collateral_type": {
+    "description": "गिरवी प्रकार इनपुट फ़ील्ड के लिए लेबल",
+    "tags": ["declare_collateral_loan_form_business_loan"],
+    "type": "text"
+  },
+  "collateral_type_hint": "गिरवी प्रकार दर्ज करें",
+  "@collateral_type_hint": {
+    "description": "गिरवी प्रकार इनपुट फ़ील्ड के लिए संकेत पाठ",
+    "tags": ["declare_collateral_loan_form_business_loan"],
+    "type": "text"
+  },
+  "collateral_amount": "गिरवी राशि (₹)",
+  "@collateral_amount": {
+    "description": "गिरवी राशि इनपुट फ़ील्ड के लिए लेबल",
+    "tags": ["declare_collateral_loan_form_business_loan"],
+    "type": "text"
+  },
+  "collateral_amount_hint": "गिरवी राशि दर्ज करें",
+  "@collateral_amount_hint": {
+    "description": "गिरवी राशि इनपुट फ़ील्ड के लिए संकेत पाठ",
+    "tags": ["declare_collateral_loan_form_business_loan"],
+    "type": "text"
+  },
+  "add_collateral": "गिरवी जोड़ें",
+  "@add_collateral": {
+    "description": "नए गिरवी जोड़ने के लिए बटन का लेबल",
+    "tags": ["declare_collateral_loan_form_business_loan"],
+    "type": "text"
   }
 }
+
 
 
 

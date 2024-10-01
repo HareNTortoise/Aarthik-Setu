@@ -2748,8 +2748,56 @@
     "description": "Hint text for the product/service description input field",
     "tags": ["business_detail_loan_form_business_loan"],
     "type": "text"
+  },
+
+
+
+
+
+
+
+
+
+
+
+  "declare_collateral_security": "ഉപരിതല സുരക്ഷ പ്രഖ്യാപിക്കുക",
+  "@declare_collateral_security": {
+    "description": "ഉപരിതല സുരക്ഷാ പ്രഖ്യാപനത്തിന്റെ തലക്കെട്ട്",
+    "tags": ["declare_collateral_loan_form_business_loan"],
+    "type": "text"
+  },
+  "collateral_type": "ഉപരിതല തരം",
+  "@collateral_type": {
+    "description": "ഉപരിതല തരം ഇൻപുട്ട് ഫീൽഡിന്റെ ലേബൽ",
+    "tags": ["declare_collateral_loan_form_business_loan"],
+    "type": "text"
+  },
+  "collateral_type_hint": "ഉപരിതല തരം നൽകുക",
+  "@collateral_type_hint": {
+    "description": "ഉപരിതല തരം ഇൻപുട്ട് ഫീൽഡിന് വേണ്ടി സൂചനാ എഴുത്ത്",
+    "tags": ["declare_collateral_loan_form_business_loan"],
+    "type": "text"
+  },
+  "collateral_amount": "ഉപരിതല തുക (₹)",
+  "@collateral_amount": {
+    "description": "ഉപരിതല തുക ഇൻപുട്ട് ഫീൽഡിന്റെ ലേബൽ",
+    "tags": ["declare_collateral_loan_form_business_loan"],
+    "type": "text"
+  },
+  "collateral_amount_hint": "ഉപരിതല തുക നൽകുക",
+  "@collateral_amount_hint": {
+    "description": "ഉപരിതല തുക ഇൻപുട്ട് ഫീൽഡിന് വേണ്ടി സൂചനാ എഴുത്ത്",
+    "tags": ["declare_collateral_loan_form_business_loan"],
+    "type": "text"
+  },
+  "add_collateral": "ഉപരിതല ചേർക്കുക",
+  "@add_collateral": {
+    "description": "പുതിയ ഉപരിതല ചേർക്കുന്നതിന് ബട്ടണിന്റെ ലേബൽ",
+    "tags": ["declare_collateral_loan_form_business_loan"],
+    "type": "text"
   }
 }
+
 
 
 

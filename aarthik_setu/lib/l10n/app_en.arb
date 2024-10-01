@@ -2725,5 +2725,54 @@
     "description": "Hint text for the product/service description input field",
     "tags": ["business_detail_loan_form_business_loan"],
     "type": "text"
+  },
+
+
+
+
+
+
+
+
+
+
+
+
+  "declare_collateral_security": "Declare Collateral Security",
+  "@declare_collateral_security": {
+    "description": "Title for the collateral security declaration section",
+    "tags": ["declare_collateral_loan_form_business_loan"],
+    "type": "text"
+  },
+  "collateral_type": "Collateral Type",
+  "@collateral_type": {
+    "description": "Label for the collateral type input field",
+    "tags": ["declare_collateral_loan_form_business_loan"],
+    "type": "text"
+  },
+  "collateral_type_hint": "Enter Collateral Type",
+  "@collateral_type_hint": {
+    "description": "Hint text for the collateral type input field",
+    "tags": ["declare_collateral_loan_form_business_loan"],
+    "type": "text"
+  },
+  "collateral_amount": "Collateral Amount (₹)",
+  "@collateral_amount": {
+    "description": "Label for the collateral amount input field",
+    "tags": ["declare_collateral_loan_form_business_loan"],
+    "type": "text"
+  },
+  "collateral_amount_hint": "Enter Collateral Amount",
+  "@collateral_amount_hint": {
+    "description": "Hint text for the collateral amount input field",
+    "tags": ["declare_collateral_loan_form_business_loan"],
+    "type": "text"
+  },
+  "add_collateral": "Add Collateral",
+  "@add_collateral": {
+    "description": "Label for the button to add a new collateral",
+    "tags": ["declare_collateral_loan_form_business_loan"],
+    "type": "text"
   }
 }
+

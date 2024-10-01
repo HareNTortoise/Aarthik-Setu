@@ -2910,8 +2910,59 @@
     "description": "Hint text for the product/service description input field",
     "tags": ["business_detail_loan_form_business_loan"],
     "type": "text"
+  },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  "declare_collateral_security": "ಗಿರವಿಗಾಗಿ ಭದ್ರತಾ ಪ್ರಕಟಣೆ",
+  "@declare_collateral_security": {
+    "description": "ಗಿರವಿ ಭದ್ರತಾ ಪ್ರಕಟಣೆಯ ಶೀರ್ಷಿಕೆ",
+    "tags": ["declare_collateral_loan_form_business_loan"],
+    "type": "text"
+  },
+  "collateral_type": "ಭದ್ರತಾ ವಿಧ",
+  "@collateral_type": {
+    "description": "ಭದ್ರತಾ ವಿಧದ ನಿಖರವಾದ ಫಲಕ",
+    "tags": ["declare_collateral_loan_form_business_loan"],
+    "type": "text"
+  },
+  "collateral_type_hint": "ಭದ್ರತಾ ವಿಧ ನಮೂದಿಸಿ",
+  "@collateral_type_hint": {
+    "description": "ಭದ್ರತಾ ವಿಧದ ನಿಖರವಾದ ಫಲಕಕ್ಕೆ ಸೂಚನೆ",
+    "tags": ["declare_collateral_loan_form_business_loan"],
+    "type": "text"
+  },
+  "collateral_amount": "ಭದ್ರತಾ ಮೊತ್ತ (₹)",
+  "@collateral_amount": {
+    "description": "ಭದ್ರತಾ ಮೊತ್ತದ ನಿಖರವಾದ ಫಲಕ",
+    "tags": ["declare_collateral_loan_form_business_loan"],
+    "type": "text"
+  },
+  "collateral_amount_hint": "ಭದ್ರತಾ ಮೊತ್ತ ನಮೂದಿಸಿ",
+  "@collateral_amount_hint": {
+    "description": "ಭದ್ರತಾ ಮೊತ್ತದ ನಿಖರವಾದ ಫಲಕಕ್ಕೆ ಸೂಚನೆ",
+    "tags": ["declare_collateral_loan_form_business_loan"],
+    "type": "text"
+  },
+  "add_collateral": "ಭದ್ರತೆಯನ್ನು ಸೇರಿಸಿ",
+  "@add_collateral": {
+    "description": "ಹೊಸ ಭದ್ರತೆಯನ್ನು ಸೇರಿಸಲು ಬಟನ್ ಲೇಬಲ್",
+    "tags": ["declare_collateral_loan_form_business_loan"],
+    "type": "text"
   }
 }
+
 
 
 

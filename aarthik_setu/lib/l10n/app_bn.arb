@@ -2654,6 +2654,57 @@
     "description": "Hint text for the product/service description input field",
     "tags": ["business_detail_loan_form_business_loan"],
     "type": "text"
+  },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  "declare_collateral_security": "গৃহীত জামানত ঘোষণা করুন",
+  "@declare_collateral_security": {
+    "description": "গৃহীত জামানতের ঘোষণা বিভাগের শিরোনাম",
+    "tags": ["declare_collateral_loan_form_business_loan"],
+    "type": "text"
+  },
+  "collateral_type": "জামানতের প্রকার",
+  "@collateral_type": {
+    "description": "জামানতের প্রকার ইনপুট ক্ষেত্রের জন্য লেবেল",
+    "tags": ["declare_collateral_loan_form_business_loan"],
+    "type": "text"
+  },
+  "collateral_type_hint": "জামানতের প্রকার লিখুন",
+  "@collateral_type_hint": {
+    "description": "জামানতের প্রকার ইনপুট ক্ষেত্রের জন্য হিন্ট টেক্সট",
+    "tags": ["declare_collateral_loan_form_business_loan"],
+    "type": "text"
+  },
+  "collateral_amount": "জামানতের পরিমাণ (₹)",
+  "@collateral_amount": {
+    "description": "জামানতের পরিমাণ ইনপুট ক্ষেত্রের জন্য লেবেল",
+    "tags": ["declare_collateral_loan_form_business_loan"],
+    "type": "text"
+  },
+  "collateral_amount_hint": "জামানতের পরিমাণ লিখুন",
+  "@collateral_amount_hint": {
+    "description": "জামানতের পরিমাণ ইনপুট ক্ষেত্রের জন্য হিন্ট টেক্সট",
+    "tags": ["declare_collateral_loan_form_business_loan"],
+    "type": "text"
+  },
+  "add_collateral": "জামানত যোগ করুন",
+  "@add_collateral": {
+    "description": "নতুন জামানত যোগ করার জন্য বোতামের লেবেল",
+    "tags": ["declare_collateral_loan_form_business_loan"],
+    "type": "text"
   }
 }
-

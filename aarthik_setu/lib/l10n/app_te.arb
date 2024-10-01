@@ -2788,6 +2788,57 @@
     "description": "Hint text for the product/service description input field",
     "tags": ["business_detail_loan_form_business_loan"],
     "type": "text"
+  },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  "declare_collateral_security": "నిల్వ భద్రత ప్రకటించండి",
+  "@declare_collateral_security": {
+    "description": "నిల్వ భద్రత ప్రకటించే విభాగం శీర్షిక",
+    "tags": ["declare_collateral_loan_form_business_loan"],
+    "type": "text"
+  },
+  "collateral_type": "నిల్వ రకం",
+  "@collateral_type": {
+    "description": "నిల్వ రకం ఇన్‌పుట్ ఫీల్డ్‌కు శీర్షిక",
+    "tags": ["declare_collateral_loan_form_business_loan"],
+    "type": "text"
+  },
+  "collateral_type_hint": "నిల్వ రకం నమోదు చేయండి",
+  "@collateral_type_hint": {
+    "description": "నిల్వ రకం ఇన్‌పుట్ ఫీల్డ్‌కు సూచన పాఠ్యం",
+    "tags": ["declare_collateral_loan_form_business_loan"],
+    "type": "text"
+  },
+  "collateral_amount": "నిల్వ మొత్తం (₹)",
+  "@collateral_amount": {
+    "description": "నిల్వ మొత్తం ఇన్‌పుట్ ఫీల్డ్‌కు శీర్షిక",
+    "tags": ["declare_collateral_loan_form_business_loan"],
+    "type": "text"
+  },
+  "collateral_amount_hint": "నిల్వ మొత్తం నమోదు చేయండి",
+  "@collateral_amount_hint": {
+    "description": "నిల్వ మొత్తం ఇన్‌పుట్ ఫీల్డ్‌కు సూచన పాఠ్యం",
+    "tags": ["declare_collateral_loan_form_business_loan"],
+    "type": "text"
+  },
+  "add_collateral": "నిల్వను జోడించండి",
+  "@add_collateral": {
+    "description": "కొత్త నిల్వను జోడించడానికి బటన్ లేబుల్",
+    "tags": ["declare_collateral_loan_form_business_loan"],
+    "type": "text"
   }
 }
 
