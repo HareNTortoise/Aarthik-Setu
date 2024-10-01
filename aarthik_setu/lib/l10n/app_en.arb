@@ -512,7 +512,7 @@
     "description": "Title for the ITR Details section",
     "type": "text",
     "placeholders": {},
-    "tags": ["itr_form_personal_loan"]
+    "tags": ["itr_form_personal_loan", "itr_form_business_loan"]
   },
   "manualDeclarationText": "Declare your financial details if your annual income is less than 2.5 LPA",
   "@manualDeclarationText": {
