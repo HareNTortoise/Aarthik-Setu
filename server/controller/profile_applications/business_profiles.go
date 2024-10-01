@@ -1,13 +1,15 @@
 package profile_applications
 
 import (
-	"github.com/gin-gonic/gin"
-	utils "server/config/firebase"
-	"cloud.google.com/go/firestore"
 	"context"
-	"time"
 	"net/http"
+	utils "server/config/firebase"
+	"time"
+
+	"cloud.google.com/go/firestore"
+	"github.com/gin-gonic/gin"
 )
+
 // var client *firestore.Client
 
 func init() {
@@ -17,12 +19,12 @@ func init() {
 //Create new Profile
 
 func CreateBusinessProfile(c *gin.Context) {
-	userId:= c.Param("userId")
+	userId := c.Param("userId")
 	name := c.PostForm("name")
 	pan := c.PostForm("pan")
 	ctx := context.Background()
 
-	profileId,_ := utils.GenerateRandomString(16)
+	id, _ := utils.GenerateRandomString(16)
 	// Check if the user's bank details already exist
 	query := client.Collection("business_profiles").
 		Where("pan", "==", pan).
@@ -38,12 +40,12 @@ func CreateBusinessProfile(c *gin.Context) {
 		c.JSON(http.StatusConflict, gin.H{"error": "Profile already exist"})
 		return
 	}
-	created_at:= time.Now()
-	_, err = client.Collection("business_profiles").Doc(profileId).Set(ctx, map[string]interface{}{
-		"userId": userId,
-		"profileId": profileId,
-		"name": name,
-		"pan": pan,
+	created_at := time.Now()
+	_, err = client.Collection("business_profiles").Doc(id).Set(ctx, map[string]interface{}{
+		"userId":    userId,
+		"id":        id,
+		"name":      name,
+		"pan":       pan,
 		"createdAt": created_at,
 		"updatedAt": created_at,
 	})
@@ -80,16 +82,15 @@ func GetBusinessProfiles(c *gin.Context) {
 	c.JSON(http.StatusOK, result)
 }
 
-
 func UpdateBusinessProfile(c *gin.Context) {
 	userId := c.Param("userId")
-	profileId := c.Param("profileId")
+	id := c.Param("id")
 	name := c.PostForm("name")
 	pan := c.PostForm("pan")
 	ctx := context.Background()
 
 	// Check if the profile exists
-	docRef := client.Collection("business_profiles").Doc(profileId)
+	docRef := client.Collection("business_profiles").Doc(id)
 	doc, err := docRef.Get(ctx)
 	if err != nil {
 		c.JSON(http.StatusNotFound, gin.H{"error": "Profile not found", "details": err.Error()})
@@ -119,11 +120,11 @@ func UpdateBusinessProfile(c *gin.Context) {
 
 func DeleteBusinessProfile(c *gin.Context) {
 	userId := c.Param("userId")
-	profileId := c.Param("profileId")
+	id := c.Param("id")
 	ctx := context.Background()
 
 	// Get the document reference
-	docRef := client.Collection("business_profiles").Doc(profileId)
+	docRef := client.Collection("business_profiles").Doc(id)
 	doc, err := docRef.Get(ctx)
 	if err != nil {
 		c.JSON(http.StatusNotFound, gin.H{"error": "Profile not found", "details": err.Error()})
