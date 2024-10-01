@@ -1633,7 +1633,154 @@
     "type": "text",
     "tags": ["contact_detail_personal_loan"]
   },
-  "residenceSinceYearLabel": "ఎంత కాలంగా నివసిస్తున్నారు (సంవత్సరం)"
+  "residenceSinceYearLabel": "ఎంత కాలంగా నివసిస్తున్నారు (సంవత్సరం)",
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  "@loanFormTitle": {
+    "description": "Title of the Loan Form",
+    "type": "text",
+    "tags": ["loan_form_personal_loan"]
+  },
+  "loanFormTitle": "కాలకు ఫారం",
+
+  "@loanDetailsTitle": {
+    "description": "Title for Loan Details section",
+    "type": "text",
+    "tags": ["loan_form_personal_loan"]
+  },
+  "loanDetailsTitle": "కాలకు వివరాలు",
+
+  "@loanPurposeLabel": {
+    "description": "Label for Loan Purpose dropdown",
+    "type": "text",
+    "tags": ["loan_form_personal_loan"]
+  },
+  "loanPurposeLabel": "కాలకు ఉద్దేశ్యం*",
+
+  "@loanPurposePlaceholder": {
+    "description": "Placeholder for Loan Purpose dropdown",
+    "type": "text",
+    "tags": ["loan_form_personal_loan"]
+  },
+  "loanPurposePlaceholder": "కాలకు ఉద్దేశ్యాన్ని ఎంచుకోండి",
+
+  "@loanAmountLabel": {
+    "description": "Label for Loan Amount input field",
+    "type": "text",
+    "tags": ["loan_form_personal_loan"]
+  },
+  "loanAmountLabel": "తప్పనిసరి కాలం మొత్తం*",
+
+  "@loanAmountHint": {
+    "description": "Hint text for Loan Amount input field",
+    "type": "text",
+    "tags": ["loan_form_personal_loan"]
+  },
+  "loanAmountHint": "కాలానికి మొత్తం నమోదు చేయండి",
+
+  "@tenureLabel": {
+    "description": "Label for Tenure input field",
+    "type": "text",
+    "tags": ["loan_form_personal_loan"]
+  },
+  "tenureLabel": "కాలం (సంవత్సరాలు)*",
+
+  "@tenureHint": {
+    "description": "Hint text for Tenure input field",
+    "type": "text",
+    "tags": ["loan_form_personal_loan"]
+  },
+  "tenureHint": "కాలాన్ని నమోదు చేయండి",
+
+  "@retirementAgeLabel": {
+    "description": "Label for Retirement Age input field",
+    "type": "text",
+    "tags": ["loan_form_personal_loan"]
+  },
+  "retirementAgeLabel": "అనునది వయసు (సంవత్సరాలు)*",
+
+  "@retirementAgeHint": {
+    "description": "Hint text for Retirement Age input field",
+    "type": "text",
+    "tags": ["loan_form_personal_loan"]
+  },
+  "retirementAgeHint": "అనునది వయసును నమోదు చేయండి",
+
+  "@yourEmployerWillTitle": {
+    "description": "Title for Your Employer Will section",
+    "type": "text",
+    "tags": ["loan_form_personal_loan"]
+  },
+  "yourEmployerWillTitle": "మీ ఉద్దయోగి",
+
+  "@emiFromSalaryAccountText": {
+    "description": "Question about EMI payment from salary account",
+    "type": "text",
+    "tags": ["loan_form_personal_loan"]
+  },
+  "emiFromSalaryAccountText": "మీరు మీ జీత ఖాతాలో నేరుగా EMI చెల్లిస్తారా?",
+
+  "@outstandingLoanTerminalPaymentsText": {
+    "description": "Question about paying outstanding loan amount from terminal payments",
+    "type": "text",
+    "tags": ["loan_form_personal_loan"]
+  },
+  "outstandingLoanTerminalPaymentsText": "మీరు మీ ఉద్యోగి యొక్క అన్‌స్టాండ్ బీమా అనుమతిని తీసుకోవడానికి అంగీకరించారా?",
+
+  "@salaryAccountConfirmationText": {
+    "description": "Question about paying salary only in salary account and getting NOC",
+    "type": "text",
+    "tags": ["loan_form_personal_loan"]
+  },
+  "salaryAccountConfirmationText": "మీరు మీ జీతాన్ని కేవలం జీత ఖాతాలోనే పొందుతున్నారా మరియు ఖాతాలను మార్చడానికి ముందు బ్యాంక్ నుండి నోటిఫికేషన్ పొందాలా?",
+
+  "@whetherYouWillTitle": {
+    "description": "Title for Whether you (Employer/Borrower) will section",
+    "type": "text",
+    "tags": ["loan_form_personal_loan"]
+  },
+  "whetherYouWillTitle": "మీరు (ఉద్యోగి/అర్జిదారు) చేయనో",
+
+  "@issueLetterOutstandingLoanText": {
+    "description": "Question about issuing letter to employer to pay outstanding loan",
+    "type": "text",
+    "tags": ["loan_form_personal_loan"]
+  },
+  "issueLetterOutstandingLoanText": "మీరు మీ ఉద్దయోగికి ఒక లేఖ ఇవ్వగలరా, వారు అన్‌స్టాండ్ బీమా అనుమతిని చెల్లించడానికి?",
+
+  "@issueLetterNotChangeAccountText": {
+    "description": "Question about issuing letter to employer to not change salary account",
+    "type": "text",
+    "tags": ["loan_form_personal_loan"]
+  },
+  "issueLetterNotChangeAccountText": "మీరు మీ జీత ఖాతాను మార్చనని మీ ఉద్దయోగికి ఒక లేఖ ఇవ్వగలరా, మార్పులు వస్తే బ్యాంక్ నుండి నోటిఫికేషన్ పొందగలరా?",
+
+  "@repaymentMethodLabel": {
+    "description": "Label for Repayment Method dropdown",
+    "type": "text",
+    "tags": ["loan_form_personal_loan"]
+  },
+  "repaymentMethodLabel": "చెల్లింపు పద్ధతి*",
+
+  "@repaymentMethodPlaceholder": {
+    "description": "Placeholder for Repayment Method dropdown",
+    "type": "text",
+    "tags": ["loan_form_personal_loan"]
+  },
+  "repaymentMethodPlaceholder": "చెల్లింపు పద్ధతిని ఎంచుకోండి"
 }
 
 

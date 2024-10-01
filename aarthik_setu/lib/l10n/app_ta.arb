@@ -470,7 +470,7 @@
     "description": "Title for loan form",
     "type": "text",
     "placeholders": {},
-    "tags": ["personal_loan_journey"]
+    "tags": ["personal_loan_journey", "loan_form_personal_loan"]
   },
   "loanFormDescription": "விண்ணப்பிக்க, உங்கள் தனிப்பட்ட தகவல்களை நிரப்பவும் மற்றும் தேவையான ஆதரவு ஆவணங்களை பதிவேற்றவும்.",
   "@loanFormDescription": {
@@ -1492,8 +1492,150 @@
     "type": "text",
     "tags": ["contact_detail_personal_loan"]
   },
-  "residenceSinceYearLabel": "குடியிருப்பு (வருடம் முதல்)"
+  "residenceSinceYearLabel": "குடியிருப்பு (வருடம் முதல்)",
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  "@loanDetailsTitle": {
+    "description": "Title for Loan Details section",
+    "type": "text",
+    "tags": ["loan_form_personal_loan"]
+  },
+  "loanDetailsTitle": "கோரை விவரங்கள்",
+
+  "@loanPurposeLabel": {
+    "description": "Label for Loan Purpose dropdown",
+    "type": "text",
+    "tags": ["loan_form_personal_loan"]
+  },
+  "loanPurposeLabel": "கோரக்கூடிய நோக்கம்*",
+
+  "@loanPurposePlaceholder": {
+    "description": "Placeholder for Loan Purpose dropdown",
+    "type": "text",
+    "tags": ["loan_form_personal_loan"]
+  },
+  "loanPurposePlaceholder": "கோரை நோக்கத்தைத் தேர்ந்தெடுக்கவும்",
+
+  "@loanAmountLabel": {
+    "description": "Label for Loan Amount input field",
+    "type": "text",
+    "tags": ["loan_form_personal_loan"]
+  },
+  "loanAmountLabel": "தேவையான கோர் தொகை*",
+
+  "@loanAmountHint": {
+    "description": "Hint text for Loan Amount input field",
+    "type": "text",
+    "tags": ["loan_form_personal_loan"]
+  },
+  "loanAmountHint": "கோர் தொகையை உள்ளிடவும்",
+
+  "@tenureLabel": {
+    "description": "Label for Tenure input field",
+    "type": "text",
+    "tags": ["loan_form_personal_loan"]
+  },
+  "tenureLabel": "காலாவதி (வर्षங்கள்)*",
+
+  "@tenureHint": {
+    "description": "Hint text for Tenure input field",
+    "type": "text",
+    "tags": ["loan_form_personal_loan"]
+  },
+  "tenureHint": "காலாவதியை உள்ளிடவும்",
+
+  "@retirementAgeLabel": {
+    "description": "Label for Retirement Age input field",
+    "type": "text",
+    "tags": ["loan_form_personal_loan"]
+  },
+  "retirementAgeLabel": "பணிவிடு வயது (வर्षங்கள்)*",
+
+  "@retirementAgeHint": {
+    "description": "Hint text for Retirement Age input field",
+    "type": "text",
+    "tags": ["loan_form_personal_loan"]
+  },
+  "retirementAgeHint": "பணிவிடு வயதை உள்ளிடவும்",
+
+  "@yourEmployerWillTitle": {
+    "description": "Title for Your Employer Will section",
+    "type": "text",
+    "tags": ["loan_form_personal_loan"]
+  },
+  "yourEmployerWillTitle": "உங்கள் பணியாளர்",
+
+  "@emiFromSalaryAccountText": {
+    "description": "Question about EMI payment from salary account",
+    "type": "text",
+    "tags": ["loan_form_personal_loan"]
+  },
+  "emiFromSalaryAccountText": "நீங்கள் உங்கள் சம்பள கணக்கில் நேரடியாக EMI செலுத்துகிறீர்களா?",
+
+  "@outstandingLoanTerminalPaymentsText": {
+    "description": "Question about paying outstanding loan amount from terminal payments",
+    "type": "text",
+    "tags": ["loan_form_personal_loan"]
+  },
+  "outstandingLoanTerminalPaymentsText": "நீங்கள் உங்கள் பணியாளரின் விடுப்பு காலத்தில் தற்காலிக பேமென்ட்களிலிருந்து Outstanding Loan பணம் செலுத்துவதற்கு ஒப்புக்கொள்கிறீர்களா?",
+
+  "@salaryAccountConfirmationText": {
+    "description": "Question about paying salary only in salary account and getting NOC",
+    "type": "text",
+    "tags": ["loan_form_personal_loan"]
+  },
+  "salaryAccountConfirmationText": "நீங்கள் வெறும் சம்பள கணக்கில் சம்பளம் பெறுகிறீர்களா மற்றும் கணக்குகளை மாற்றுவதற்கு முன் வங்கியிலிருந்து உறுதிப்பத்திரம் (NOC) பெறுகிறீர்களா?",
+
+  "@whetherYouWillTitle": {
+    "description": "Title for Whether you (Employer/Borrower) will section",
+    "type": "text",
+    "tags": ["loan_form_personal_loan"]
+  },
+  "whetherYouWillTitle": "நீங்கள் (உத்யோகி/விண்ணப்பதாரர்) செய்யிறீர்களா",
+
+  "@issueLetterOutstandingLoanText": {
+    "description": "Question about issuing letter to employer to pay outstanding loan",
+    "type": "text",
+    "tags": ["loan_form_personal_loan"]
+  },
+  "issueLetterOutstandingLoanText": "நீங்கள் உங்கள் பணியாளருக்கு ஒரு கடிதம் வழங்குவீர்களா, அவர்கள் தற்காலிக பணங்களில் Outstanding Loan பணம் செலுத்துவார்கள்?",
+
+  "@issueLetterNotChangeAccountText": {
+    "description": "Question about issuing letter to employer to not change salary account",
+    "type": "text",
+    "tags": ["loan_form_personal_loan"]
+  },
+  "issueLetterNotChangeAccountText": "நீங்கள் உங்கள் சம்பள கணக்கை மாற்றாதது பற்றி உங்கள் பணியாளருக்கு ஒரு கடிதம் வழங்குவீர்களா, மாற்றங்கள் வரும் போது வங்கியிலிருந்து உறுதிப்பத்திரம் (NOC) பெறுவீர்களா?",
+
+  "@repaymentMethodLabel": {
+    "description": "Label for Repayment Method dropdown",
+    "type": "text",
+    "tags": ["loan_form_personal_loan"]
+  },
+  "repaymentMethodLabel": "மீட்பு முறையை*",
+
+  "@repaymentMethodPlaceholder": {
+    "description": "Placeholder for Repayment Method dropdown",
+    "type": "text",
+    "tags": ["loan_form_personal_loan"]
+  },
+  "repaymentMethodPlaceholder": "மீட்பு முறையை தேர்ந்தெடுக்கவும்"
 }
+
 
 
 

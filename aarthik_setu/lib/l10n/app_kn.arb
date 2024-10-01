@@ -555,7 +555,7 @@
     "type": "text",
     "placeholders": {},
     "tags": [
-      "personal_loan_journey"
+      "personal_loan_journey", "loan_form_personal_loan"
     ]
   },
   "loanFormDescription": "ಅರ್ಜಿ ಸಲ್ಲಿಸಲು, ನಿಮ್ಮ ವೈಯಕ್ತಿಕ ಮಾಹಿತಿಯನ್ನು ಭರ್ತಿಮಾಡಿ ಮತ್ತು ಅಗತ್ಯವಿದ್ದರೆ ಬೆಂಬಲ ಡಾಕ್ಯುಮೆಂಟ್‌ಗಳನ್ನು ಲೋಡ್ ಮಾಡಿ.",
@@ -1687,9 +1687,151 @@
     "type": "text",
     "tags": ["contact_detail_personal_loan"]
   },
-  "residenceSinceYearLabel": "ವಾಸಮಾಡುತ್ತಿದ್ದ ಸಮಯ (ವರ್ಷ)"
+  "residenceSinceYearLabel": "ವಾಸಮಾಡುತ್ತಿದ್ದ ಸಮಯ (ವರ್ಷ)",
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  "@loanDetailsTitle": {
+    "description": "Title for Loan Details section",
+    "type": "text",
+    "tags": ["loan_form_personal_loan"]
+  },
+  "loanDetailsTitle": "ಕೋರುವ ವಿವರಗಳು",
+
+  "@loanPurposeLabel": {
+    "description": "Label for Loan Purpose dropdown",
+    "type": "text",
+    "tags": ["loan_form_personal_loan"]
+  },
+  "loanPurposeLabel": "ಕೋರುವ ಉದ್ದೇಶ*",
+
+  "@loanPurposePlaceholder": {
+    "description": "Placeholder for Loan Purpose dropdown",
+    "type": "text",
+    "tags": ["loan_form_personal_loan"]
+  },
+  "loanPurposePlaceholder": "ಕೋರುವ ಉದ್ದೇಶವನ್ನು ಆಯ್ಕೆ ಮಾಡಿ",
+
+  "@loanAmountLabel": {
+    "description": "Label for Loan Amount input field",
+    "type": "text",
+    "tags": ["loan_form_personal_loan"]
+  },
+  "loanAmountLabel": "ಅಗತ್ಯ ಕೋರು ಮೊತ್ತ*",
+
+  "@loanAmountHint": {
+    "description": "Hint text for Loan Amount input field",
+    "type": "text",
+    "tags": ["loan_form_personal_loan"]
+  },
+  "loanAmountHint": "ಕೋರು ಮೊತ್ತವನ್ನು ನಮೂದಿಸಿ",
+
+  "@tenureLabel": {
+    "description": "Label for Tenure input field",
+    "type": "text",
+    "tags": ["loan_form_personal_loan"]
+  },
+  "tenureLabel": "ಕಾಲಾವಧಿ (ವರ್ಷ)*",
+
+  "@tenureHint": {
+    "description": "Hint text for Tenure input field",
+    "type": "text",
+    "tags": ["loan_form_personal_loan"]
+  },
+  "tenureHint": "ಕಾಲಾವಧಿಯನ್ನು ನಮೂದಿಸಿ",
+
+  "@retirementAgeLabel": {
+    "description": "Label for Retirement Age input field",
+    "type": "text",
+    "tags": ["loan_form_personal_loan"]
+  },
+  "retirementAgeLabel": "ಅನುದಾನರಹಿತ ವಯಸ್ಸು (ವರ್ಷ)*",
+
+  "@retirementAgeHint": {
+    "description": "Hint text for Retirement Age input field",
+    "type": "text",
+    "tags": ["loan_form_personal_loan"]
+  },
+  "retirementAgeHint": "ಅನುದಾನರಹಿತ ವಯಸ್ಸನ್ನು ನಮೂದಿಸಿ",
+
+  "@yourEmployerWillTitle": {
+    "description": "Title for Your Employer Will section",
+    "type": "text",
+    "tags": ["loan_form_personal_loan"]
+  },
+  "yourEmployerWillTitle": "ನಿಮ್ಮ ಉದ್ಯೋಗಿ",
+
+  "@emiFromSalaryAccountText": {
+    "description": "Question about EMI payment from salary account",
+    "type": "text",
+    "tags": ["loan_form_personal_loan"]
+  },
+  "emiFromSalaryAccountText": "ನೀವು ನಿಮ್ಮ ವೇತನ ಖಾತೆಯಿಂದ ನೇರವಾಗಿ EMI ಅನ್ನು ಪಾವತಿಸುತ್ತೀರಾ?",
+
+  "@outstandingLoanTerminalPaymentsText": {
+    "description": "Question about paying outstanding loan amount from terminal payments",
+    "type": "text",
+    "tags": ["loan_form_personal_loan"]
+  },
+  "outstandingLoanTerminalPaymentsText": "ನೀವು ನಿಮ್ಮ ಉದ್ಯೋಗಿಯ ಬಿಡುವಿನ ಸಮಯದಲ್ಲಿ ಟರ್ಮಿನಲ್ ಪಾವತಿಗಳಿಂದ ಬಾಕಿ ಹಣವನ್ನು ಪಾವತಿಸಲು ಒಪ್ಪುತ್ತೀರಾ?",
+
+  "@salaryAccountConfirmationText": {
+    "description": "Question about paying salary only in salary account and getting NOC",
+    "type": "text",
+    "tags": ["loan_form_personal_loan"]
+  },
+  "salaryAccountConfirmationText": "ನೀವು ಕೇವಲ ನಿಮ್ಮ ವೇತನ ಖಾತೆಯಲ್ಲಿ ವೇತನವನ್ನು ಪಡೆಯುತ್ತೀರಾ ಮತ್ತು ಖಾತೆಗಳನ್ನು ಬದಲಾಯಿಸುವ ಮೊದಲು ಬ್ಯಾಂಕಿನಿಂದ ದೃಢೀಕರಣ (NOC) ಪಡೆಯುತ್ತೀರಾ?",
+
+  "@whetherYouWillTitle": {
+    "description": "Title for Whether you (Employer/Borrower) will section",
+    "type": "text",
+    "tags": ["loan_form_personal_loan"]
+  },
+  "whetherYouWillTitle": "ನೀವು (ಉದ್ಯೋಗಿ/ಊರ್ತಿಕರ್ತಾ) ಮಾಡುತ್ತೀರಾ",
+
+  "@issueLetterOutstandingLoanText": {
+    "description": "Question about issuing letter to employer to pay outstanding loan",
+    "type": "text",
+    "tags": ["loan_form_personal_loan"]
+  },
+  "issueLetterOutstandingLoanText": "ನೀವು ನಿಮ್ಮ ಉದ್ಯೋಗಿಗೆ, ಅವರು ಟರ್ಮಿನಲ್ ಪಾವತಿಗಳಿಂದ ಬಾಕಿ ಹಣವನ್ನು ಪಾವತಿಸುತ್ತಾರೆ ಎಂಬ ಪತ್ರವನ್ನು ಬಿಡುಗಡೆ ಮಾಡುತ್ತೀರಾ?",
+
+  "@issueLetterNotChangeAccountText": {
+    "description": "Question about issuing letter to employer to not change salary account",
+    "type": "text",
+    "tags": ["loan_form_personal_loan"]
+  },
+  "issueLetterNotChangeAccountText": "ನೀವು ನಿಮ್ಮ ಉದ್ಯೋಗಿಗೆ, ಪಾವತಿ ಖಾತೆ ಬದಲಾಯಿಸದಂತೆ ತಿಳಿಸುತ್ತಿದ್ದೀರಿ ಮತ್ತು ಬದಲಾವಣೆಗಳಿದ್ದಾಗ ಬ್ಯಾಂಕಿನಿಂದ ದೃಢೀಕರಣ (NOC) ಪಡೆಯುತ್ತೀರಾ?",
+
+  "@repaymentMethodLabel": {
+    "description": "Label for Repayment Method dropdown",
+    "type": "text",
+    "tags": ["loan_form_personal_loan"]
+  },
+  "repaymentMethodLabel": "ಪಾವತಿ ವಿಧಾನ*",
+
+  "@repaymentMethodPlaceholder": {
+    "description": "Placeholder for Repayment Method dropdown",
+    "type": "text",
+    "tags": ["loan_form_personal_loan"]
+  },
+  "repaymentMethodPlaceholder": "ಪಾವತಿ ವಿಧಾನವನ್ನು ಆಯ್ಕೆ ಮಾಡಿ"
 }
+
 
 
 

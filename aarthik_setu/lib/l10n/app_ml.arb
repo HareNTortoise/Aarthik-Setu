@@ -1513,8 +1513,159 @@
     "type": "text",
     "tags": ["contact_detail_personal_loan"]
   },
-  "residenceSinceYearLabel": "വാസം (വർഷം മുതൽ)"
+  "residenceSinceYearLabel": "വാസം (വർഷം മുതൽ)",
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  "@loanFormTitle": {
+    "description": "Title of the Loan Form",
+    "type": "text",
+    "tags": ["loan_form_personal_loan"]
+  },
+  "loanFormTitle": " വായ്പ ഫോമ് ",
+
+  "@loanDetailsTitle": {
+    "description": "Title for Loan Details section",
+    "type": "text",
+    "tags": ["loan_form_personal_loan"]
+  },
+  "loanDetailsTitle": " വായ്പ വിശദാംശങ്ങൾ ",
+
+  "@loanPurposeLabel": {
+    "description": "Label for Loan Purpose dropdown",
+    "type": "text",
+    "tags": ["loan_form_personal_loan"]
+  },
+  "loanPurposeLabel": "വായ്പയുടെ ഉദ്ദേശ്യം*",
+
+  "@loanPurposePlaceholder": {
+    "description": "Placeholder for Loan Purpose dropdown",
+    "type": "text",
+    "tags": ["loan_form_personal_loan"]
+  },
+  "loanPurposePlaceholder": "വായ്പയുടെ ഉദ്ദേശ്യം തിരഞ്ഞെടുക്കുക",
+
+  "@loanAmountLabel": {
+    "description": "Label for Loan Amount input field",
+    "type": "text",
+    "tags": ["loan_form_personal_loan"]
+  },
+  "loanAmountLabel": "ആവശ്യമായ വായ്പ തുക*",
+
+  "@loanAmountHint": {
+    "description": "Hint text for Loan Amount input field",
+    "type": "text",
+    "tags": ["loan_form_personal_loan"]
+  },
+  "loanAmountHint": "വായ്പ തുക നിക്ഷേപിക്കുക",
+
+  "@tenureLabel": {
+    "description": "Label for Tenure input field",
+    "type": "text",
+    "tags": ["loan_form_personal_loan"]
+  },
+  "tenureLabel": "കാലാവധി (വർഷം)*",
+
+  "@tenureHint": {
+    "description": "Hint text for Tenure input field",
+    "type": "text",
+    "tags": ["loan_form_personal_loan"]
+  },
+  "tenureHint": "കാലാവധി നൽകുക",
+
+  "@retirementAgeLabel": {
+    "description": "Label for Retirement Age input field",
+    "type": "text",
+    "tags": ["loan_form_personal_loan"]
+  },
+  "retirementAgeLabel": "ഇതികാലത്തിൻ്റെ പ്രായം (വർഷം)*",
+
+  "@retirementAgeHint": {
+    "description": "Hint text for Retirement Age input field",
+    "type": "text",
+    "tags": ["loan_form_personal_loan"]
+  },
+  "retirementAgeHint": "ഇതികാലത്തിൻ്റെ പ്രായം നൽകുക",
+
+  "@yourEmployerWillTitle": {
+    "description": "Title for Your Employer Will section",
+    "type": "text",
+    "tags": ["loan_form_personal_loan"]
+  },
+  "yourEmployerWillTitle": "നിങ്ങളുടെ തൊഴിലുടമ",
+
+  "@emiFromSalaryAccountText": {
+    "description": "Question about EMI payment from salary account",
+    "type": "text",
+    "tags": ["loan_form_personal_loan"]
+  },
+  "emiFromSalaryAccountText": "നിങ്ങളുടെ ശമ്പള അക്കൗണ്ടിൽ നിന്ന് EMI നേരിട്ട് പേയ്‌മെന്റ് ചെയ്യും吗?",
+
+  "@outstandingLoanTerminalPaymentsText": {
+    "description": "Question about paying outstanding loan amount from terminal payments",
+    "type": "text",
+    "tags": ["loan_form_personal_loan"]
+  },
+  "outstandingLoanTerminalPaymentsText": "നിങ്ങളുടെ തൊഴിലുടമയെ വിട്ടുകൊടുക്കുന്ന സമയത്ത് ടേർമിനൽ പേയ്‌മെന്റുകളിൽ നിന്ന് ബാക്കിയുള്ള വായ്പ തുക കൈമാറാൻ നിങ്ങൾ തയാറാണോ?",
+
+  "@salaryAccountConfirmationText": {
+    "description": "Question about paying salary only in salary account and getting NOC",
+    "type": "text",
+    "tags": ["loan_form_personal_loan"]
+  },
+  "salaryAccountConfirmationText": "നിങ്ങൾ മാത്രം ശമ്പള അക്കൗണ്ടിൽ ശമ്പളമെടുക്കും എന്നുപറയുന്നുവോ, അക്കൗണ്ടുകൾ മാറ്റുന്നതിന് മുമ്പ് ബാങ്കിൽ നിന്ന് സ്ഥിരീകരണം (NOC) നേടും?",
+
+  "@whetherYouWillTitle": {
+    "description": "Title for Whether you (Employer/Borrower) will section",
+    "type": "text",
+    "tags": ["loan_form_personal_loan"]
+  },
+  "whetherYouWillTitle": "നിങ്ങൾ (തൊഴിലുടമ/ഉഴിതിരിക്കുക) ചെയ്യും",
+
+  "@issueLetterOutstandingLoanText": {
+    "description": "Question about issuing letter to employer to pay outstanding loan",
+    "type": "text",
+    "tags": ["loan_form_personal_loan"]
+  },
+  "issueLetterOutstandingLoanText": "നിങ്ങളുടെ തൊഴിലുടമയ്ക്ക് ഒരു കത്ത് നൽകുമോ, അവർ ടേർമിനൽ പേയ്‌മെന്റുകളിൽ നിന്നുള്ള ബാക്കിയുള്ള വായ്പ നൽകും?",
+
+  "@issueLetterNotChangeAccountText": {
+    "description": "Question about issuing letter to employer to not change salary account",
+    "type": "text",
+    "tags": ["loan_form_personal_loan"]
+  },
+  "issueLetterNotChangeAccountText": "നിങ്ങളുടെ ശമ്പള അക്കൗണ്ടിനെ മാറ്റാൻ അനുവദിക്കാത്ത ഒരു കത്ത് നിങ്ങൾ നൽകുമോ, മാറ്റങ്ങൾ വരുമ്പോൾ ബാങ്കിൽ നിന്ന് സ്ഥിരീകരണം (NOC) വാങ്ങണോ?",
+
+  "@repaymentMethodLabel": {
+    "description": "Label for Repayment Method dropdown",
+    "type": "text",
+    "tags": ["loan_form_personal_loan"]
+  },
+  "repaymentMethodLabel": "പണയത്തിനുള്ള രീതി*",
+
+  "@repaymentMethodPlaceholder": {
+    "description": "Placeholder for Repayment Method dropdown",
+    "type": "text",
+    "tags": ["loan_form_personal_loan"]
+  },
+  "repaymentMethodPlaceholder": "പണയത്തിനുള്ള രീതി തിരഞ്ഞെടുക്കുക"
 }
+
 
 
 
