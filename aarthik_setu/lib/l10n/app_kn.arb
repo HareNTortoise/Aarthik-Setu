@@ -2475,7 +2475,7 @@
   "business_details": "ವ್ಯವಸ್ಥೆಯ ವಿವರಗಳು",
   "@business_details": {
     "description": "Section heading for business details",
-    "tags": ["stakeholder_business_loan"],
+    "tags": ["stakeholder_business_loan", "business_detail_loan_form_business_loan"],
     "type": "text"
   },
   "address_line_1": "ವಿಳಾಸ ಲೈನ್ 1*",
@@ -2827,6 +2827,88 @@
   "@submit": {
     "description": "Label for the submit button",
     "tags": ["loan_form_business_loan"],
+    "type": "text"
+  },
+
+
+
+
+
+
+
+
+
+
+  "industry": "ಉದ್ಯೋಗ*",
+  "@industry": {
+    "description": "Label for the industry input field",
+    "tags": ["business_detail_loan_form_business_loan"],
+    "type": "text"
+  },
+  "industry_hint": "ಉದ್ಯೋಗವನ್ನು ನಮೂದಿಸಿ",
+  "@industry_hint": {
+    "description": "Hint text for the industry input field",
+    "tags": ["business_detail_loan_form_business_loan"],
+    "type": "text"
+  },
+  "sector_name": "ಕ್ಷೇತ್ರದ ಹೆಸರು*",
+  "@sector_name": {
+    "description": "Label for the sector name input field",
+    "tags": ["business_detail_loan_form_business_loan"],
+    "type": "text"
+  },
+  "sector_name_hint": "ಕ್ಷೇತ್ರದ ಹೆಸರು ನಮೂದಿಸಿ",
+  "@sector_name_hint": {
+    "description": "Hint text for the sector name input field",
+    "tags": ["business_detail_loan_form_business_loan"],
+    "type": "text"
+  },
+  "sub_sector_name": "ಉಪ ಕ್ಷೇತ್ರದ ಹೆಸರು*",
+  "@sub_sector_name": {
+    "description": "Label for the sub sector name input field",
+    "tags": ["business_detail_loan_form_business_loan"],
+    "type": "text"
+  },
+  "sub_sector_name_hint": "ಉಪ ಕ್ಷೇತ್ರದ ಹೆಸರು ನಮೂದಿಸಿ",
+  "@sub_sector_name_hint": {
+    "description": "Hint text for the sub sector name input field",
+    "tags": ["business_detail_loan_form_business_loan"],
+    "type": "text"
+  },
+  "msme_registration_number": "MSME ನೋಂದಣಿ ಸಂಖ್ಯೆ*",
+  "@msme_registration_number": {
+    "description": "Label for the MSME registration number input field",
+    "tags": ["business_detail_loan_form_business_loan"],
+    "type": "text"
+  },
+  "msme_registration_number_hint": "MSME ನೋಂದಣಿ ಸಂಖ್ಯೆಯನ್ನು ನಮೂದಿಸಿ",
+  "@msme_registration_number_hint": {
+    "description": "Hint text for the MSME registration number input field",
+    "tags": ["business_detail_loan_form_business_loan"],
+    "type": "text"
+  },
+  "udyog_aadhar_memorandum_no": "ಉದ್ಯೋಗ ಆದಾರ್ ಮೆಮೋರಂಡಮ್ ಸಂಖ್ಯೆ",
+  "@udyog_aadhar_memorandum_no": {
+    "description": "Label for the Udyog Aadhar Memorandum No. input field",
+    "tags": ["business_detail_loan_form_business_loan"],
+    "type": "text"
+  },
+  "udyog_aadhar_memorandum_no_hint": "ಉದ್ಯೋಗ ಆದಾರ್ ಮೆಮೋರಂಡಮ್ ಸಂಖ್ಯೆಯನ್ನು ನಮೂದಿಸಿ",
+  "@udyog_aadhar_memorandum_no_hint": {
+    "description": "Hint text for the Udyog Aadhar Memorandum No. input field",
+    "tags": ["business_detail_loan_form_business_loan"],
+    "type": "text"
+  },
+  "product_service_description": "ಉತ್ಪನ್ನ/ಸೇವೆಯ ವಿವರಣೆ*",
+  "@product_service_description": {
+    "description": "Label for the product/service description input field",
+    "tags": ["business_detail_loan_form_business_loan"],
+    "type": "text"
+  },
+  "product_service_description_hint": "ಉತ್ಪನ್ನ/ಸೇವೆಯ ವಿವರಣೆ ನಮೂದಿಸಿ",
+  "@product_service_description_hint": {
+    "description": "Hint text for the product/service description input field",
+    "tags": ["business_detail_loan_form_business_loan"],
     "type": "text"
   }
 }

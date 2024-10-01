@@ -2307,7 +2307,7 @@
   "business_details": "ബിസിനസ് വിവരങ്ങൾ",
   "@business_details": {
     "description": "Section heading for business details",
-    "tags": ["stakeholder_business_loan"],
+    "tags": ["stakeholder_business_loan", "business_detail_loan_form_business_loan"],
     "type": "text"
   },
   "address_line_1": "വിലാസം വരി 1*",
@@ -2661,9 +2661,95 @@
     "description": "Label for the submit button",
     "tags": ["loan_form_business_loan"],
     "type": "text"
+  },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  "industry": "തൊഴിൽ*",
+  "@industry": {
+    "description": "Label for the industry input field",
+    "tags": ["business_detail_loan_form_business_loan"],
+    "type": "text"
+  },
+  "industry_hint": "തൊഴിൽ നൽകുക",
+  "@industry_hint": {
+    "description": "Hint text for the industry input field",
+    "tags": ["business_detail_loan_form_business_loan"],
+    "type": "text"
+  },
+  "sector_name": "വിഭവശ്രേണി പേര്*",
+  "@sector_name": {
+    "description": "Label for the sector name input field",
+    "tags": ["business_detail_loan_form_business_loan"],
+    "type": "text"
+  },
+  "sector_name_hint": "വിഭവശ്രേണി പേര് നൽകുക",
+  "@sector_name_hint": {
+    "description": "Hint text for the sector name input field",
+    "tags": ["business_detail_loan_form_business_loan"],
+    "type": "text"
+  },
+  "sub_sector_name": "ഉപവിഭവശ്രേണി പേര്*",
+  "@sub_sector_name": {
+    "description": "Label for the sub sector name input field",
+    "tags": ["business_detail_loan_form_business_loan"],
+    "type": "text"
+  },
+  "sub_sector_name_hint": "ഉപവിഭവശ്രേണി പേര് നൽകുക",
+  "@sub_sector_name_hint": {
+    "description": "Hint text for the sub sector name input field",
+    "tags": ["business_detail_loan_form_business_loan"],
+    "type": "text"
+  },
+  "msme_registration_number": "MSME രജിസ്ട്രേഷൻ നമ്പർ*",
+  "@msme_registration_number": {
+    "description": "Label for the MSME registration number input field",
+    "tags": ["business_detail_loan_form_business_loan"],
+    "type": "text"
+  },
+  "msme_registration_number_hint": "MSME രജിസ്ട്രേഷൻ നമ്പർ നൽകുക",
+  "@msme_registration_number_hint": {
+    "description": "Hint text for the MSME registration number input field",
+    "tags": ["business_detail_loan_form_business_loan"],
+    "type": "text"
+  },
+  "udyog_aadhar_memorandum_no": "ഉദ്യോഗ ആദാർ മേമോറൻഡം നമ്പർ",
+  "@udyog_aadhar_memorandum_no": {
+    "description": "Label for the Udyog Aadhar Memorandum No. input field",
+    "tags": ["business_detail_loan_form_business_loan"],
+    "type": "text"
+  },
+  "udyog_aadhar_memorandum_no_hint": "ഉദ്യോഗ ആദാർ മേമോറൻഡം നമ്പർ നൽകുക",
+  "@udyog_aadhar_memorandum_no_hint": {
+    "description": "Hint text for the Udyog Aadhar Memorandum No. input field",
+    "tags": ["business_detail_loan_form_business_loan"],
+    "type": "text"
+  },
+  "product_service_description": "ഉൽപ്പന്നം/സേവന വിവരണം*",
+  "@product_service_description": {
+    "description": "Label for the product/service description input field",
+    "tags": ["business_detail_loan_form_business_loan"],
+    "type": "text"
+  },
+  "product_service_description_hint": "ഉൽപ്പന്നം/സേവന വിവരണം നൽകുക",
+  "@product_service_description_hint": {
+    "description": "Hint text for the product/service description input field",
+    "tags": ["business_detail_loan_form_business_loan"],
+    "type": "text"
   }
 }
-
 
 
 
