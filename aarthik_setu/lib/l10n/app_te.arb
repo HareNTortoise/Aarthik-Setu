@@ -870,7 +870,7 @@
     "description": "Label for the landmark input field.",
     "type": "text",
     "tags": [
-      "itr_form_manual_personal_loan"
+      "itr_form_manual_personal_loan", "stakeholder_business_loan"
     ]
   },
   "landmark": "ల్యాండ్మార్క్",
@@ -878,7 +878,7 @@
     "description": "Hint text for the landmark input field.",
     "type": "text",
     "tags": [
-      "itr_form_manual_personal_loan"
+      "itr_form_manual_personal_loan", "stakeholder_business_loan"
     ]
   },
   "landmarkHint": "మీ ల్యాండ్మార్క్‌ని నమోదు చేయండి",
@@ -886,7 +886,7 @@
     "description": "Label for the country dropdown.",
     "type": "text",
     "tags": [
-      "itr_form_manual_personal_loan"
+      "itr_form_manual_personal_loan", "stakeholder_business_loan"
     ]
   },
   "country": "దేశం*",
@@ -894,7 +894,7 @@
     "description": "Label for the state dropdown.",
     "type": "text",
     "tags": [
-      "itr_form_manual_personal_loan"
+      "itr_form_manual_personal_loan", "stakeholder_business_loan"
     ]
   },
   "state": "రాజ్యం*",
@@ -902,7 +902,7 @@
     "description": "Label for the city dropdown.",
     "type": "text",
     "tags": [
-      "itr_form_manual_personal_loan"
+      "itr_form_manual_personal_loan", "stakeholder_business_loan"
     ]
   },
   "city": "నగరం*",
@@ -910,7 +910,7 @@
     "description": "Label for the pin code input field.",
     "type": "text",
     "tags": [
-      "itr_form_manual_personal_loan"
+      "itr_form_manual_personal_loan", "stakeholder_business_loan"
     ]
   },
   "pinCode": "పిన్ కోడ్*",
@@ -918,7 +918,7 @@
     "description": "Hint text for the pin code input field.",
     "type": "text",
     "tags": [
-      "itr_form_manual_personal_loan"
+      "itr_form_manual_personal_loan", "stakeholder_business_loan"
     ]
   },
   "pinCodeHint": "మీ పిన్ కోడ్‌ను నమోదు చేయండి",
@@ -926,7 +926,7 @@
     "description": "Label for the village input field.",
     "type": "text",
     "tags": [
-      "itr_form_manual_personal_loan"
+      "itr_form_manual_personal_loan", "stakeholder_business_loan"
     ]
   },
   "village": "గ్రామం",
@@ -934,7 +934,7 @@
     "description": "Hint text for the village input field.",
     "type": "text",
     "tags": [
-      "itr_form_manual_personal_loan"
+      "itr_form_manual_personal_loan", "stakeholder_business_loan"
     ]
   },
   "villageHint": "మీ గ్రామాన్ని నమోదు చేయండి",
@@ -942,7 +942,7 @@
     "description": "Label for the district input field.",
     "type": "text",
     "tags": [
-      "itr_form_manual_personal_loan"
+      "itr_form_manual_personal_loan", "stakeholder_business_loan"
     ]
   },
   "district": "జిల్లా*",
@@ -950,7 +950,7 @@
     "description": "Hint text for the district input field.",
     "type": "text",
     "tags": [
-      "itr_form_manual_personal_loan"
+      "itr_form_manual_personal_loan", "stakeholder_business_loan"
     ]
   },
   "districtHint": "మీ జిల్లాను నమోదు చేయండి",
@@ -958,7 +958,7 @@
     "description": "Label for the sub-district input field.",
     "type": "text",
     "tags": [
-      "itr_form_manual_personal_loan"
+      "itr_form_manual_personal_loan", "stakeholder_business_loan"
     ]
   },
   "subDistrict": "ఉప జిల్లా*",
@@ -966,7 +966,7 @@
     "description": "Hint text for the sub-district input field.",
     "type": "text",
     "tags": [
-      "itr_form_manual_personal_loan"
+      "itr_form_manual_personal_loan", "stakeholder_business_loan"
     ]
   },
   "subDistrictHint": "మీ ఉప జిల్లా నమోదు చేయండి",
@@ -974,7 +974,7 @@
     "description": "Label for annual income input field.",
     "type": "text",
     "tags": [
-      "itr_form_manual_personal_loan"
+      "itr_form_manual_personal_loan", "stakeholder_business_loan"
     ]
   },
   "annualIncome": "వార్షిక ఆదాయం*",
@@ -1063,7 +1063,7 @@
     "description": "Placeholder text for selecting the month.",
     "type": "text",
     "tags": [
-      "bank_details_personal_loan"
+      "bank_details_personal_loan", "stakeholder_business_loan"
     ]
   },
   "month": "నెల",
@@ -1071,7 +1071,7 @@
     "description": "Label for account since year field.",
     "type": "text",
     "tags": [
-      "bank_details_personal_loan"
+      "bank_details_personal_loan", "stakeholder_business_loan"
     ]
   },
   "accountSinceYear": "తేదీ నుండి ఖాతా (సంవత్సరం)*",
@@ -1087,7 +1087,7 @@
     "description": "Question asking if the account is a salary account.",
     "type": "text",
     "tags": [
-      "bank_details_personal_loan"
+      "bank_details_personal_loan", "stakeholder_business_loan"
     ]
   },
   "isSalaryAccount": "ఇది జీత ఖాతానా?",
@@ -2318,8 +2318,52 @@
   "@account_since_year_label": {
     "description": "Label for the account since year input",
     "tags": ["bank_details_business_loan"]
+  },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  "declare_business_stakeholders": "వ్యాపార భాగస్వాములను ప్రకటించండి",
+  "@declare_business_stakeholders": {
+    "description": "Title for the page where the user declares business stakeholders",
+    "tags": ["stakeholder_business_loan"],
+    "type": "text"
+  },
+  "business_details": "వ్యాపార వివరాలు",
+  "@business_details": {
+    "description": "Section heading for business details",
+    "tags": ["stakeholder_business_loan"],
+    "type": "text"
+  },
+  "address_line_1": "చిరునామా పంక్తి 1*",
+  "@address_line_1": {
+    "description": "Label for the first address line input field",
+    "tags": ["stakeholder_business_loan"],
+    "type": "text"
+  },
+  "address_line_2": "చిరునామా పంక్తి 2",
+  "@address_line_2": {
+    "description": "Label for the second address line input field",
+    "tags": ["stakeholder_business_loan"],
+    "type": "text"
   }
 }
+
 
 
 

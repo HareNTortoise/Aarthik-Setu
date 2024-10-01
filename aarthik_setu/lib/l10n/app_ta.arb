@@ -755,91 +755,91 @@
   "@landmark": {
     "description": "Label for the landmark input field.",
     "type": "text",
-    "tags": ["itr_form_manual_personal_loan"]
+    "tags": ["itr_form_manual_personal_loan", "stakeholder_business_loan"]
   },
   "landmark": "நிகழ்ச்சி இடம்",
 
   "@landmarkHint": {
     "description": "Hint text for the landmark input field.",
     "type": "text",
-    "tags": ["itr_form_manual_personal_loan"]
+    "tags": ["itr_form_manual_personal_loan", "stakeholder_business_loan"]
   },
   "landmarkHint": "நிகழ்ச்சி இடத்தை உள்ளிடவும்",
 
   "@country": {
     "description": "Label for the country dropdown.",
     "type": "text",
-    "tags": ["itr_form_manual_personal_loan"]
+    "tags": ["itr_form_manual_personal_loan", "stakeholder_business_loan"]
   },
   "country": "நாடு*",
 
   "@state": {
     "description": "Label for the state dropdown.",
     "type": "text",
-    "tags": ["itr_form_manual_personal_loan"]
+    "tags": ["itr_form_manual_personal_loan", "stakeholder_business_loan"]
   },
   "state": "அமைச்சகம்*",
 
   "@city": {
     "description": "Label for the city dropdown.",
     "type": "text",
-    "tags": ["itr_form_manual_personal_loan"]
+    "tags": ["itr_form_manual_personal_loan", "stakeholder_business_loan"]
   },
   "city": "நகரம்*",
 
   "@pinCode": {
     "description": "Label for the pin code input field.",
     "type": "text",
-    "tags": ["itr_form_manual_personal_loan"]
+    "tags": ["itr_form_manual_personal_loan", "stakeholder_business_loan"]
   },
   "pinCode": "பின் குறியீடு*",
 
   "@pinCodeHint": {
     "description": "Hint text for the pin code input field.",
     "type": "text",
-    "tags": ["itr_form_manual_personal_loan"]
+    "tags": ["itr_form_manual_personal_loan", "stakeholder_business_loan"]
   },
   "pinCodeHint": "உங்கள் பின் குறியீட்டை உள்ளிடவும்",
 
   "@village": {
     "description": "Label for the village input field.",
     "type": "text",
-    "tags": ["itr_form_manual_personal_loan"]
+    "tags": ["itr_form_manual_personal_loan", "stakeholder_business_loan"]
   },
   "village": "கிராமம்",
 
   "@villageHint": {
     "description": "Hint text for the village input field.",
     "type": "text",
-    "tags": ["itr_form_manual_personal_loan"]
+    "tags": ["itr_form_manual_personal_loan", "stakeholder_business_loan"]
   },
   "villageHint": "உங்கள் கிராமத்தை உள்ளிடவும்",
 
   "@district": {
     "description": "Label for the district input field.",
     "type": "text",
-    "tags": ["itr_form_manual_personal_loan"]
+    "tags": ["itr_form_manual_personal_loan", "stakeholder_business_loan"]
   },
   "district": "மாவட்டம்*",
 
   "@districtHint": {
     "description": "Hint text for the district input field.",
     "type": "text",
-    "tags": ["itr_form_manual_personal_loan"]
+    "tags": ["itr_form_manual_personal_loan", "stakeholder_business_loan"]
   },
   "districtHint": "உங்கள் மாவட்டத்தை உள்ளிடவும்",
 
   "@subDistrict": {
     "description": "Label for the sub-district input field.",
     "type": "text",
-    "tags": ["itr_form_manual_personal_loan"]
+    "tags": ["itr_form_manual_personal_loan", "stakeholder_business_loan"]
   },
   "subDistrict": "உப மாவட்டம்*",
 
   "@subDistrictHint": {
     "description": "Hint text for the sub-district input field.",
     "type": "text",
-    "tags": ["itr_form_manual_personal_loan"]
+    "tags": ["itr_form_manual_personal_loan", "stakeholder_business_loan"]
   },
   "subDistrictHint": "உங்கள் உப மாவட்டத்தை உள்ளிடவும்",
 
@@ -932,7 +932,7 @@
   "@month": {
     "description": "Placeholder text for selecting the month.",
     "type": "text",
-    "tags": ["bank_details_personal_loan"]
+    "tags": ["bank_details_personal_loan", "stakeholder_business_loan"]
   },
   "month": "மாதம்",
 
@@ -946,7 +946,7 @@
   "@yearButton": {
     "description": "Placeholder text for selecting the year.",
     "type": "text",
-    "tags": ["bank_details_personal_loan"]
+    "tags": ["bank_details_personal_loan", "stakeholder_business_loan"]
   },
   "yearButton": "ஆண்டு",
 
@@ -2258,8 +2258,50 @@
   "@account_since_year_label": {
     "description": "Label for the account since year input",
     "tags": ["bank_details_business_loan"]
+  },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  "declare_business_stakeholders": "வியாபார பங்குதாரர்களை அறிவிக்கவும்",
+  "@declare_business_stakeholders": {
+    "description": "Title for the page where the user declares business stakeholders",
+    "tags": ["stakeholder_business_loan"],
+    "type": "text"
+  },
+  "business_details": "வியாபார விவரங்கள்",
+  "@business_details": {
+    "description": "Section heading for business details",
+    "tags": ["stakeholder_business_loan"],
+    "type": "text"
+  },
+  "address_line_1": "முகவரி வரி 1*",
+  "@address_line_1": {
+    "description": "Label for the first address line input field",
+    "tags": ["stakeholder_business_loan"],
+    "type": "text"
+  },
+  "address_line_2": "முகவரி வரி 2",
+  "@address_line_2": {
+    "description": "Label for the second address line input field",
+    "tags": ["stakeholder_business_loan"],
+    "type": "text"
   }
 }
+
 
 
 

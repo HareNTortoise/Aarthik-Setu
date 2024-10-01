@@ -734,34 +734,34 @@
   "@landmark": {
     "description": "Label for the landmark input field.",
     "type": "text",
-    "tags": ["itr_form_manual_personal_loan"]
+    "tags": ["itr_form_manual_personal_loan", "stakeholder_business_loan"]
   },
   "landmark": "Landmark",
   "@landmarkHint": {
     "description": "Hint text for the landmark input field.",
     "type": "text",
-    "tags": ["itr_form_manual_personal_loan"]
+    "tags": ["itr_form_manual_personal_loan", "stakeholder_business_loan"]
   },
   "landmarkHint": "Enter landmark",
 
   "@country": {
     "description": "Label for the country dropdown.",
     "type": "text",
-    "tags": ["itr_form_manual_personal_loan"]
+    "tags": ["itr_form_manual_personal_loan", "stakeholder_business_loan"]
   },
   "country": "Country*",
 
   "@state": {
     "description": "Label for the state dropdown.",
     "type": "text",
-    "tags": ["itr_form_manual_personal_loan"]
+    "tags": ["itr_form_manual_personal_loan", "stakeholder_business_loan"]
   },
   "state": "State*",
 
   "@city": {
     "description": "Label for the city dropdown.",
     "type": "text",
-    "tags": ["itr_form_manual_personal_loan"]
+    "tags": ["itr_form_manual_personal_loan", "stakeholder_business_loan"]
   },
   "city": "City*",
 
@@ -781,26 +781,27 @@
   "@village": {
     "description": "Label for the village input field.",
     "type": "text",
-    "tags": ["itr_form_manual_personal_loan"]
+    "tags": ["itr_form_manual_personal_loan", "stakeholder_business_loan"]
   },
   "village": "Village",
+
   "@villageHint": {
     "description": "Hint text for the village input field.",
     "type": "text",
-    "tags": ["itr_form_manual_personal_loan"]
+    "tags": ["itr_form_manual_personal_loan", "stakeholder_business_loan"]
   },
   "villageHint": "Enter your village",
 
   "@district": {
     "description": "Label for the district input field.",
     "type": "text",
-    "tags": ["itr_form_manual_personal_loan"]
+    "tags": ["itr_form_manual_personal_loan", "stakeholder_business_loan"]
   },
   "district": "District*",
   "@districtHint": {
     "description": "Hint text for the district input field.",
     "type": "text",
-    "tags": ["itr_form_manual_personal_loan"]
+    "tags": ["itr_form_manual_personal_loan", "stakeholder_business_loan"]
   },
   "districtHint": "Enter your district",
 
@@ -907,7 +908,7 @@
   "@month": {
     "description": "Placeholder text for selecting the month.",
     "type": "text",
-    "tags": ["bank_details_personal_loan"]
+    "tags": ["bank_details_personal_loan", "stakeholder_business_loan"]
   },
   "month": "Month",
 
@@ -921,7 +922,7 @@
   "@yearButton": {
     "description": "Placeholder text for selecting the year.",
     "type": "text",
-    "tags": ["bank_details_personal_loan"]
+    "tags": ["bank_details_personal_loan", "stakeholder_business_loan"]
   },
   "yearButton": "Year",
 
@@ -2250,8 +2251,46 @@
   "@account_since_year_label": {
     "description": "Label for the account since year input",
     "tags": ["bank_details_business_loan"]
+  },
+
+
+
+
+
+
+
+
+
+
+
+
+
+  "declare_business_stakeholders": "Declare Business Stakeholders",
+  "@declare_business_stakeholders": {
+    "description": "Title for the page where the user declares business stakeholders",
+    "tags": ["stakeholder_business_loan"],
+    "type": "text"
+  },
+  "business_details": "Business details",
+  "@business_details": {
+    "description": "Section heading for business details",
+    "tags": ["stakeholder_business_loan"],
+    "type": "text"
+  },
+  "address_line_1": "Address Line 1*",
+  "@address_line_1": {
+    "description": "Label for the first address line input field",
+    "tags": ["stakeholder_business_loan"],
+    "type": "text"
+  },
+  "address_line_2": "Address Line 2",
+  "@address_line_2": {
+    "description": "Label for the second address line input field",
+    "tags": ["stakeholder_business_loan"],
+    "type": "text"
   }
 }
+
 
 
 
