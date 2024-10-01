@@ -2547,7 +2547,7 @@
   "existing_loans": "বিদ্যমান ঋণ",
   "@existing_loans": {
     "description": "Label for the existing loans field",
-    "tags": ["loan_form_business_loan"],
+    "tags": ["loan_form_business_loan", "existing_loans_loan_form_business_loan"],
     "type": "text"
   },
   "additional_loan_required": "অতিরিক্ত ঋণের প্রয়োজন",
@@ -2692,13 +2692,13 @@
   "collateral_amount": "জামানতের পরিমাণ (₹)",
   "@collateral_amount": {
     "description": "জামানতের পরিমাণ ইনপুট ক্ষেত্রের জন্য লেবেল",
-    "tags": ["declare_collateral_loan_form_business_loan"],
+    "tags": ["declare_collateral_loan_form_business_loan", "existing_loans_loan_form_business_loan"],
     "type": "text"
   },
   "collateral_amount_hint": "জামানতের পরিমাণ লিখুন",
   "@collateral_amount_hint": {
     "description": "জামানতের পরিমাণ ইনপুট ক্ষেত্রের জন্য হিন্ট টেক্সট",
-    "tags": ["declare_collateral_loan_form_business_loan"],
+    "tags": ["declare_collateral_loan_form_business_loan", "existing_loans_loan_form_business_loan"],
     "type": "text"
   },
   "add_collateral": "জামানত যোগ করুন",
@@ -2814,6 +2814,102 @@
   "@competition_hint": {
     "description": "Hint text for the competition input field",
     "tags": ["loan_detail_loan_form_business_loan"],
+    "type": "text"
+  },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  "name_of_lender": "ঋণদাতার নাম*",
+  "@name_of_lender": {
+    "description": "Label for the name of lender input field",
+    "tags": ["existing_loans_loan_form_business_loan"],
+    "type": "text"
+  },
+  "name_of_lender_hint": "ঋণদাতার নাম লিখুন",
+  "@name_of_lender_hint": {
+    "description": "Hint text for the name of lender input field",
+    "tags": ["existing_loans_loan_form_business_loan"],
+    "type": "text"
+  },
+  "sanctioned_amount": "অনুমোদিত পরিমাণ (₹)*",
+  "@sanctioned_amount": {
+    "description": "Label for the sanctioned amount input field",
+    "tags": ["existing_loans_loan_form_business_loan"],
+    "type": "text"
+  },
+  "sanctioned_amount_hint": "অনুমোদিত পরিমাণ লিখুন",
+  "@sanctioned_amount_hint": {
+    "description": "Hint text for the sanctioned amount input field",
+    "tags": ["existing_loans_loan_form_business_loan"],
+    "type": "text"
+  },
+  "outstanding_amount": "বাকী পরিমাণ (₹)*",
+  "@outstanding_amount": {
+    "description": "Label for the outstanding amount input field",
+    "tags": ["existing_loans_loan_form_business_loan"],
+    "type": "text"
+  },
+  "outstanding_amount_hint": "বাকী পরিমাণ লিখুন",
+  "@outstanding_amount_hint": {
+    "description": "Hint text for the outstanding amount input field",
+    "tags": ["existing_loans_loan_form_business_loan"],
+    "type": "text"
+  },
+  "emi_amount": "ইএমআই পরিমাণ (₹)*",
+  "@emi_amount": {
+    "description": "Label for the EMI amount input field",
+    "tags": ["existing_loans_loan_form_business_loan"],
+    "type": "text"
+  },
+  "emi_amount_hint": "ইএমআই পরিমাণ লিখুন",
+  "@emi_amount_hint": {
+    "description": "Hint text for the EMI amount input field",
+    "tags": ["existing_loans_loan_form_business_loan"],
+    "type": "text"
+  },
+  "loan_type": "ঋণের ধরণ*",
+  "@loan_type": {
+    "description": "Label for the loan type input field",
+    "tags": ["existing_loans_loan_form_business_loan"],
+    "type": "text"
+  },
+  "loan_type_hint": "ঋণের ধরণ লিখুন",
+  "@loan_type_hint": {
+    "description": "Hint text for the loan type input field",
+    "tags": ["existing_loans_loan_form_business_loan"],
+    "type": "text"
+  },
+
+  "status": "স্থিতি*",
+  "@status": {
+    "description": "Label for the status input field",
+    "tags": ["existing_loans_loan_form_business_loan"],
+    "type": "text"
+  },
+  "status_hint": "স্থিতি লিখুন",
+  "@status_hint": {
+    "description": "Hint text for the status input field",
+    "tags": ["existing_loans_loan_form_business_loan"],
+    "type": "text"
+  },
+  "add_existing_loan": "বিদ্যমান ঋণ যোগ করুন",
+  "@add_existing_loan": {
+    "description": "Button text to add an existing loan",
+    "tags": ["existing_loans_loan_form_business_loan"],
     "type": "text"
   }
 }

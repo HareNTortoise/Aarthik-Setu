@@ -2641,7 +2641,7 @@
   "existing_loans": "നിലവിലുള്ള വായ്പകൾ",
   "@existing_loans": {
     "description": "Label for the existing loans field",
-    "tags": ["loan_form_business_loan"],
+    "tags": ["loan_form_business_loan", "existing_loans_loan_form_business_loan"],
     "type": "text"
   },
   "additional_loan_required": "അധിക വായ്പ ആവശ്യമാണ്",
@@ -2781,13 +2781,13 @@
   "collateral_amount": "ഉപരിതല തുക (₹)",
   "@collateral_amount": {
     "description": "ഉപരിതല തുക ഇൻപുട്ട് ഫീൽഡിന്റെ ലേബൽ",
-    "tags": ["declare_collateral_loan_form_business_loan"],
+    "tags": ["declare_collateral_loan_form_business_loan", "existing_loans_loan_form_business_loan"],
     "type": "text"
   },
   "collateral_amount_hint": "ഉപരിതല തുക നൽകുക",
   "@collateral_amount_hint": {
     "description": "ഉപരിതല തുക ഇൻപുട്ട് ഫീൽഡിന് വേണ്ടി സൂചനാ എഴുത്ത്",
-    "tags": ["declare_collateral_loan_form_business_loan"],
+    "tags": ["declare_collateral_loan_form_business_loan", "existing_loans_loan_form_business_loan"],
     "type": "text"
   },
   "add_collateral": "ഉപരിതല ചേർക്കുക",
@@ -2904,8 +2904,103 @@
     "description": "Hint text for the competition input field",
     "tags": ["loan_detail_loan_form_business_loan"],
     "type": "text"
+  },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  "name_of_lender": "വായ്പദായകന്റെ പേര്*",
+  "@name_of_lender": {
+    "description": "Label for the name of lender input field",
+    "tags": ["existing_loans_loan_form_business_loan"],
+    "type": "text"
+  },
+  "name_of_lender_hint": "വായ്പദായകന്റെ പേര് നൽകുക",
+  "@name_of_lender_hint": {
+    "description": "Hint text for the name of lender input field",
+    "tags": ["existing_loans_loan_form_business_loan"],
+    "type": "text"
+  },
+  "sanctioned_amount": "അനുമതിച്ച തുക (₹)*",
+  "@sanctioned_amount": {
+    "description": "Label for the sanctioned amount input field",
+    "tags": ["existing_loans_loan_form_business_loan"],
+    "type": "text"
+  },
+  "sanctioned_amount_hint": "അനുമതിച്ച തുക നൽകുക",
+  "@sanctioned_amount_hint": {
+    "description": "Hint text for the sanctioned amount input field",
+    "tags": ["existing_loans_loan_form_business_loan"],
+    "type": "text"
+  },
+  "outstanding_amount": "ബാക്കി തുക (₹)*",
+  "@outstanding_amount": {
+    "description": "Label for the outstanding amount input field",
+    "tags": ["existing_loans_loan_form_business_loan"],
+    "type": "text"
+  },
+  "outstanding_amount_hint": "ബാക്കി തുക നൽകുക",
+  "@outstanding_amount_hint": {
+    "description": "Hint text for the outstanding amount input field",
+    "tags": ["existing_loans_loan_form_business_loan"],
+    "type": "text"
+  },
+  "emi_amount": "ഇഎമ്മി തുക (₹)*",
+  "@emi_amount": {
+    "description": "Label for the EMI amount input field",
+    "tags": ["existing_loans_loan_form_business_loan"],
+    "type": "text"
+  },
+  "emi_amount_hint": "ഇഎമ്മി തുക നൽകുക",
+  "@emi_amount_hint": {
+    "description": "Hint text for the EMI amount input field",
+    "tags": ["existing_loans_loan_form_business_loan"],
+    "type": "text"
+  },
+  "loan_type": "വായ്പയുടെ തരങ്ങൾ*",
+  "@loan_type": {
+    "description": "Label for the loan type input field",
+    "tags": ["existing_loans_loan_form_business_loan"],
+    "type": "text"
+  },
+  "loan_type_hint": "വായ്പയുടെ തരങ്ങൾ നൽകുക",
+  "@loan_type_hint": {
+    "description": "Hint text for the loan type input field",
+    "tags": ["existing_loans_loan_form_business_loan"],
+    "type": "text"
+  },
+
+  "status": "സ്ഥിതി*",
+  "@status": {
+    "description": "Label for the status input field",
+    "tags": ["existing_loans_loan_form_business_loan"],
+    "type": "text"
+  },
+  "status_hint": "സ്ഥിതി നൽകുക",
+  "@status_hint": {
+    "description": "Hint text for the status input field",
+    "tags": ["existing_loans_loan_form_business_loan"],
+    "type": "text"
+  },
+  "add_existing_loan": "നിലവിലെ വായ്പ ചേർക്കുക",
+  "@add_existing_loan": {
+    "description": "Button text to add an existing loan",
+    "tags": ["existing_loans_loan_form_business_loan"],
+    "type": "text"
   }
 }
+
 
 
 

@@ -2612,7 +2612,7 @@
   "existing_loans": "मौजूदा ऋण",
   "@existing_loans": {
     "description": "Label for the existing loans field",
-    "tags": ["loan_form_business_loan"],
+    "tags": ["loan_form_business_loan", "existing_loans_loan_form_business_loan"],
     "type": "text"
   },
   "additional_loan_required": "अतिरिक्त ऋण आवश्यक",
@@ -2752,13 +2752,13 @@
   "collateral_amount": "गिरवी राशि (₹)",
   "@collateral_amount": {
     "description": "गिरवी राशि इनपुट फ़ील्ड के लिए लेबल",
-    "tags": ["declare_collateral_loan_form_business_loan"],
+    "tags": ["declare_collateral_loan_form_business_loan", "existing_loans_loan_form_business_loan"],
     "type": "text"
   },
   "collateral_amount_hint": "गिरवी राशि दर्ज करें",
   "@collateral_amount_hint": {
     "description": "गिरवी राशि इनपुट फ़ील्ड के लिए संकेत पाठ",
-    "tags": ["declare_collateral_loan_form_business_loan"],
+    "tags": ["declare_collateral_loan_form_business_loan", "existing_loans_loan_form_business_loan"],
     "type": "text"
   },
   "add_collateral": "गिरवी जोड़ें",
@@ -2872,6 +2872,100 @@
   "@competition_hint": {
     "description": "Hint text for the competition input field",
     "tags": ["loan_detail_loan_form_business_loan"],
+    "type": "text"
+  },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  "name_of_lender": "ऋणदाता का नाम*",
+  "@name_of_lender": {
+    "description": "Label for the name of lender input field",
+    "tags": ["existing_loans_loan_form_business_loan"],
+    "type": "text"
+  },
+  "name_of_lender_hint": "ऋणदाता का नाम दर्ज करें",
+  "@name_of_lender_hint": {
+    "description": "Hint text for the name of lender input field",
+    "tags": ["existing_loans_loan_form_business_loan"],
+    "type": "text"
+  },
+  "sanctioned_amount": "अनुमोदित राशि (₹)*",
+  "@sanctioned_amount": {
+    "description": "Label for the sanctioned amount input field",
+    "tags": ["existing_loans_loan_form_business_loan"],
+    "type": "text"
+  },
+  "sanctioned_amount_hint": "अनुमोदित राशि दर्ज करें",
+  "@sanctioned_amount_hint": {
+    "description": "Hint text for the sanctioned amount input field",
+    "tags": ["existing_loans_loan_form_business_loan"],
+    "type": "text"
+  },
+  "outstanding_amount": "बकाया राशि (₹)*",
+  "@outstanding_amount": {
+    "description": "Label for the outstanding amount input field",
+    "tags": ["existing_loans_loan_form_business_loan"],
+    "type": "text"
+  },
+  "outstanding_amount_hint": "बकाया राशि दर्ज करें",
+  "@outstanding_amount_hint": {
+    "description": "Hint text for the outstanding amount input field",
+    "tags": ["existing_loans_loan_form_business_loan"],
+    "type": "text"
+  },
+  "emi_amount": "ईएमआई राशि (₹)*",
+  "@emi_amount": {
+    "description": "Label for the EMI amount input field",
+    "tags": ["existing_loans_loan_form_business_loan"],
+    "type": "text"
+  },
+  "emi_amount_hint": "ईएमआई राशि दर्ज करें",
+  "@emi_amount_hint": {
+    "description": "Hint text for the EMI amount input field",
+    "tags": ["existing_loans_loan_form_business_loan"],
+    "type": "text"
+  },
+  "loan_type": "ऋण प्रकार*",
+  "@loan_type": {
+    "description": "Label for the loan type input field",
+    "tags": ["existing_loans_loan_form_business_loan"],
+    "type": "text"
+  },
+  "loan_type_hint": "ऋण प्रकार दर्ज करें",
+  "@loan_type_hint": {
+    "description": "Hint text for the loan type input field",
+    "tags": ["existing_loans_loan_form_business_loan"],
+    "type": "text"
+  },
+
+  "status": "स्थिति*",
+  "@status": {
+    "description": "Label for the status input field",
+    "tags": ["existing_loans_loan_form_business_loan"],
+    "type": "text"
+  },
+  "status_hint": "स्थिति दर्ज करें",
+  "@status_hint": {
+    "description": "Hint text for the status input field",
+    "tags": ["existing_loans_loan_form_business_loan"],
+    "type": "text"
+  },
+  "add_existing_loan": "मौजूदा ऋण जोड़ें",
+  "@add_existing_loan": {
+    "description": "Button text to add an existing loan",
+    "tags": ["existing_loans_loan_form_business_loan"],
     "type": "text"
   }
 }

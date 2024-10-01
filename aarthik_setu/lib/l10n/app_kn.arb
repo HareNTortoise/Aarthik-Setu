@@ -2808,7 +2808,7 @@
   "existing_loans": "ಹಸ್ತಾಂತರಗೊಳ್ಳುವ ಸಾಲ",
   "@existing_loans": {
     "description": "Label for the existing loans field",
-    "tags": ["loan_form_business_loan"],
+    "tags": ["loan_form_business_loan", "existing_loans_loan_form_business_loan"],
     "type": "text"
   },
   "additional_loan_required": "ಹೆಚ್ಚುವರಿ ಸಾಲ ಅಗತ್ಯವಿದೆ",
@@ -2946,13 +2946,13 @@
   "collateral_amount": "ಭದ್ರತಾ ಮೊತ್ತ (₹)",
   "@collateral_amount": {
     "description": "ಭದ್ರತಾ ಮೊತ್ತದ ನಿಖರವಾದ ಫಲಕ",
-    "tags": ["declare_collateral_loan_form_business_loan"],
+    "tags": ["declare_collateral_loan_form_business_loan", "existing_loans_loan_form_business_loan"],
     "type": "text"
   },
   "collateral_amount_hint": "ಭದ್ರತಾ ಮೊತ್ತ ನಮೂದಿಸಿ",
   "@collateral_amount_hint": {
     "description": "ಭದ್ರತಾ ಮೊತ್ತದ ನಿಖರವಾದ ಫಲಕಕ್ಕೆ ಸೂಚನೆ",
-    "tags": ["declare_collateral_loan_form_business_loan"],
+    "tags": ["declare_collateral_loan_form_business_loan", "existing_loans_loan_form_business_loan"],
     "type": "text"
   },
   "add_collateral": "ಭದ್ರತೆಯನ್ನು ಸೇರಿಸಿ",
@@ -3069,8 +3069,104 @@
     "description": "Hint text for the competition input field",
     "tags": ["loan_detail_loan_form_business_loan"],
     "type": "text"
+  },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  "name_of_lender": "ಸಾಲದಾತನ ಹೆಸರು*",
+  "@name_of_lender": {
+    "description": "Label for the name of lender input field",
+    "tags": ["existing_loans_loan_form_business_loan"],
+    "type": "text"
+  },
+  "name_of_lender_hint": "ಸಾಲದಾತನ ಹೆಸರನ್ನು ನಮೂದಿಸಿ",
+  "@name_of_lender_hint": {
+    "description": "Hint text for the name of lender input field",
+    "tags": ["existing_loans_loan_form_business_loan"],
+    "type": "text"
+  },
+  "sanctioned_amount": "ಅನುಮೋದಿತ ಮೊತ್ತ (₹)*",
+  "@sanctioned_amount": {
+    "description": "Label for the sanctioned amount input field",
+    "tags": ["existing_loans_loan_form_business_loan"],
+    "type": "text"
+  },
+  "sanctioned_amount_hint": "ಅನುಮೋದಿತ ಮೊತ್ತವನ್ನು ನಮೂದಿಸಿ",
+  "@sanctioned_amount_hint": {
+    "description": "Hint text for the sanctioned amount input field",
+    "tags": ["existing_loans_loan_form_business_loan"],
+    "type": "text"
+  },
+  "outstanding_amount": "ಬಾಕಿ ಮೊತ್ತ (₹)*",
+  "@outstanding_amount": {
+    "description": "Label for the outstanding amount input field",
+    "tags": ["existing_loans_loan_form_business_loan"],
+    "type": "text"
+  },
+  "outstanding_amount_hint": "ಬಾಕಿ ಮೊತ್ತವನ್ನು ನಮೂದಿಸಿ",
+  "@outstanding_amount_hint": {
+    "description": "Hint text for the outstanding amount input field",
+    "tags": ["existing_loans_loan_form_business_loan"],
+    "type": "text"
+  },
+  "emi_amount": "ಇಎಮ್‌ಐ ಮೊತ್ತ (₹)*",
+  "@emi_amount": {
+    "description": "Label for the EMI amount input field",
+    "tags": ["existing_loans_loan_form_business_loan"],
+    "type": "text"
+  },
+  "emi_amount_hint": "ಇಎಮ್‌ಐ ಮೊತ್ತವನ್ನು ನಮೂದಿಸಿ",
+  "@emi_amount_hint": {
+    "description": "Hint text for the EMI amount input field",
+    "tags": ["existing_loans_loan_form_business_loan"],
+    "type": "text"
+  },
+  "loan_type": "ಸಾಲದ ಪ್ರಕಾರ*",
+  "@loan_type": {
+    "description": "Label for the loan type input field",
+    "tags": ["existing_loans_loan_form_business_loan"],
+    "type": "text"
+  },
+  "loan_type_hint": "ಸಾಲದ ಪ್ರಕಾರವನ್ನು ನಮೂದಿಸಿ",
+  "@loan_type_hint": {
+    "description": "Hint text for the loan type input field",
+    "tags": ["existing_loans_loan_form_business_loan"],
+    "type": "text"
+  },
+
+  "status": "ಸ್ಥಿತಿ*",
+  "@status": {
+    "description": "Label for the status input field",
+    "tags": ["existing_loans_loan_form_business_loan"],
+    "type": "text"
+  },
+  "status_hint": "ಸ್ಥಿತಿಯನ್ನು ನಮೂದಿಸಿ",
+  "@status_hint": {
+    "description": "Hint text for the status input field",
+    "tags": ["existing_loans_loan_form_business_loan"],
+    "type": "text"
+  },
+  "add_existing_loan": "ನಡೆಯುವ ಸಾಲವನ್ನು ಸೇರಿಸಿ",
+  "@add_existing_loan": {
+    "description": "Button text to add an existing loan",
+    "tags": ["existing_loans_loan_form_business_loan"],
+    "type": "text"
   }
 }
+
 
 
 

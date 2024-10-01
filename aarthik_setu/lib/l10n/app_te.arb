@@ -2682,7 +2682,7 @@
   "existing_loans": "ఉన్న రుణాలు",
   "@existing_loans": {
     "description": "Label for the existing loans field",
-    "tags": ["loan_form_business_loan"],
+    "tags": ["loan_form_business_loan", "existing_loans_loan_form_business_loan"],
     "type": "text"
   },
   "additional_loan_required": "అదనపు రుణం అవసరం",
@@ -2822,18 +2822,6 @@
     "tags": ["declare_collateral_loan_form_business_loan"],
     "type": "text"
   },
-  "collateral_amount": "నిల్వ మొత్తం (₹)",
-  "@collateral_amount": {
-    "description": "నిల్వ మొత్తం ఇన్‌పుట్ ఫీల్డ్‌కు శీర్షిక",
-    "tags": ["declare_collateral_loan_form_business_loan"],
-    "type": "text"
-  },
-  "collateral_amount_hint": "నిల్వ మొత్తం నమోదు చేయండి",
-  "@collateral_amount_hint": {
-    "description": "నిల్వ మొత్తం ఇన్‌పుట్ ఫీల్డ్‌కు సూచన పాఠ్యం",
-    "tags": ["declare_collateral_loan_form_business_loan"],
-    "type": "text"
-  },
   "add_collateral": "నిల్వను జోడించండి",
   "@add_collateral": {
     "description": "కొత్త నిల్వను జోడించడానికి బటన్ లేబుల్",
@@ -2949,8 +2937,116 @@
     "description": "Hint text for the competition input field",
     "tags": ["loan_detail_loan_form_business_loan"],
     "type": "text"
+  },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  "name_of_lender": "ధన దాత పేరు*",
+  "@name_of_lender": {
+    "description": "Label for the name of lender input field",
+    "tags": ["existing_loans_loan_form_business_loan"],
+    "type": "text"
+  },
+  "name_of_lender_hint": "ధన దాత పేరు నమోదు చేయండి",
+  "@name_of_lender_hint": {
+    "description": "Hint text for the name of lender input field",
+    "tags": ["existing_loans_loan_form_business_loan"],
+    "type": "text"
+  },
+  "sanctioned_amount": "అనుమతించిన మొత్తం (₹)*",
+  "@sanctioned_amount": {
+    "description": "Label for the sanctioned amount input field",
+    "tags": ["existing_loans_loan_form_business_loan"],
+    "type": "text"
+  },
+  "sanctioned_amount_hint": "అనుమతించిన మొత్తం నమోదు చేయండి",
+  "@sanctioned_amount_hint": {
+    "description": "Hint text for the sanctioned amount input field",
+    "tags": ["existing_loans_loan_form_business_loan"],
+    "type": "text"
+  },
+  "outstanding_amount": "ఉండబోయే మొత్తం (₹)*",
+  "@outstanding_amount": {
+    "description": "Label for the outstanding amount input field",
+    "tags": ["existing_loans_loan_form_business_loan"],
+    "type": "text"
+  },
+  "outstanding_amount_hint": "ఉండబోయే మొత్తం నమోదు చేయండి",
+  "@outstanding_amount_hint": {
+    "description": "Hint text for the outstanding amount input field",
+    "tags": ["existing_loans_loan_form_business_loan"],
+    "type": "text"
+  },
+  "emi_amount": "ఈ.ఎమ్.ఐ మొత్తం (₹)*",
+  "@emi_amount": {
+    "description": "Label for the EMI amount input field",
+    "tags": ["existing_loans_loan_form_business_loan"],
+    "type": "text"
+  },
+  "emi_amount_hint": "ఈ.ఎమ్.ఐ మొత్తం నమోదు చేయండి",
+  "@emi_amount_hint": {
+    "description": "Hint text for the EMI amount input field",
+    "tags": ["existing_loans_loan_form_business_loan"],
+    "type": "text"
+  },
+  "loan_type": "అప్పు రకం*",
+  "@loan_type": {
+    "description": "Label for the loan type input field",
+    "tags": ["existing_loans_loan_form_business_loan"],
+    "type": "text"
+  },
+  "loan_type_hint": "అప్పు రకం నమోదు చేయండి",
+  "@loan_type_hint": {
+    "description": "Hint text for the loan type input field",
+    "tags": ["existing_loans_loan_form_business_loan"],
+    "type": "text"
+  },
+  "collateral_amount": "జామీను మొత్తం (₹)*",
+  "@collateral_amount": {
+    "description": "Label for the collateral amount input field",
+    "tags": ["existing_loans_loan_form_business_loan"],
+    "type": "text"
+  },
+  "collateral_amount_hint": "జామీను మొత్తం నమోదు చేయండి",
+  "@collateral_amount_hint": {
+    "description": "Hint text for the collateral amount input field",
+    "tags": ["existing_loans_loan_form_business_loan"],
+    "type": "text"
+  },
+  "status": "స్థితి*",
+  "@status": {
+    "description": "Label for the status input field",
+    "tags": ["existing_loans_loan_form_business_loan"],
+    "type": "text"
+  },
+  "status_hint": "స్థితిని నమోదు చేయండి",
+  "@status_hint": {
+    "description": "Hint text for the status input field",
+    "tags": ["existing_loans_loan_form_business_loan"],
+    "type": "text"
+  },
+  "add_existing_loan": "ప్రస్తుత అప్పును చేర్చండి",
+  "@add_existing_loan": {
+    "description": "Button text to add an existing loan",
+    "tags": ["existing_loans_loan_form_business_loan"],
+    "type": "text"
   }
 }
+
 
 
 

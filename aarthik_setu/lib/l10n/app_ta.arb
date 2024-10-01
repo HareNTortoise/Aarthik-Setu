@@ -2623,7 +2623,7 @@
   "existing_loans": "இருக்கும் கடன்கள்",
   "@existing_loans": {
     "description": "Label for the existing loans field",
-    "tags": ["loan_form_business_loan"],
+    "tags": ["loan_form_business_loan", "existing_loans_loan_form_business_loan"],
     "type": "text"
   },
   "additional_loan_required": "கூடுதல் கடன் தேவை",
@@ -2762,18 +2762,7 @@
     "tags": ["declare_collateral_loan_form_business_loan"],
     "type": "text"
   },
-  "collateral_amount": "குழு தொகை (₹)",
-  "@collateral_amount": {
-    "description": "குழு தொகை உள்ளீட்டு புலத்திற்கான லேபிள்",
-    "tags": ["declare_collateral_loan_form_business_loan"],
-    "type": "text"
-  },
-  "collateral_amount_hint": "குழு தொகையை உள்ளிடவும்",
-  "@collateral_amount_hint": {
-    "description": "குழு தொகை உள்ளீட்டு புலத்திற்கான குறிப்பு",
-    "tags": ["declare_collateral_loan_form_business_loan"],
-    "type": "text"
-  },
+
   "add_collateral": "குழுவைச் சேர்க்கவும்",
   "@add_collateral": {
     "description": "புதிய குழுவைச் சேர்க்க கண்ணாடியுடன்",
@@ -2890,8 +2879,115 @@
     "description": "Hint text for the competition input field",
     "tags": ["loan_detail_loan_form_business_loan"],
     "type": "text"
+  },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  "name_of_lender": "கடன் வழங்குனரின் பெயர்*",
+  "@name_of_lender": {
+    "description": "Label for the name of lender input field",
+    "tags": ["existing_loans_loan_form_business_loan"],
+    "type": "text"
+  },
+  "name_of_lender_hint": "கடன் வழங்குனரின் பெயரை உள்ளிடவும்",
+  "@name_of_lender_hint": {
+    "description": "Hint text for the name of lender input field",
+    "tags": ["existing_loans_loan_form_business_loan"],
+    "type": "text"
+  },
+  "sanctioned_amount": "அனுமதிக்கப்பட்ட தொகை (₹)*",
+  "@sanctioned_amount": {
+    "description": "Label for the sanctioned amount input field",
+    "tags": ["existing_loans_loan_form_business_loan"],
+    "type": "text"
+  },
+  "sanctioned_amount_hint": "அனுமதிக்கப்பட்ட தொகையை உள்ளிடவும்",
+  "@sanctioned_amount_hint": {
+    "description": "Hint text for the sanctioned amount input field",
+    "tags": ["existing_loans_loan_form_business_loan"],
+    "type": "text"
+  },
+  "outstanding_amount": "முடியாத தொகை (₹)*",
+  "@outstanding_amount": {
+    "description": "Label for the outstanding amount input field",
+    "tags": ["existing_loans_loan_form_business_loan"],
+    "type": "text"
+  },
+  "outstanding_amount_hint": "முடியாத தொகையை உள்ளிடவும்",
+  "@outstanding_amount_hint": {
+    "description": "Hint text for the outstanding amount input field",
+    "tags": ["existing_loans_loan_form_business_loan"],
+    "type": "text"
+  },
+  "emi_amount": "இ.எம்.ஐ தொகை (₹)*",
+  "@emi_amount": {
+    "description": "Label for the EMI amount input field",
+    "tags": ["existing_loans_loan_form_business_loan"],
+    "type": "text"
+  },
+  "emi_amount_hint": "இ.எம்.ஐ தொகையை உள்ளிடவும்",
+  "@emi_amount_hint": {
+    "description": "Hint text for the EMI amount input field",
+    "tags": ["existing_loans_loan_form_business_loan"],
+    "type": "text"
+  },
+  "loan_type": "கடனின் வகை*",
+  "@loan_type": {
+    "description": "Label for the loan type input field",
+    "tags": ["existing_loans_loan_form_business_loan"],
+    "type": "text"
+  },
+  "loan_type_hint": "கடனின் வகையை உள்ளிடவும்",
+  "@loan_type_hint": {
+    "description": "Hint text for the loan type input field",
+    "tags": ["existing_loans_loan_form_business_loan"],
+    "type": "text"
+  },
+  "collateral_amount": "ஜாமீனுதொகை (₹)*",
+  "@collateral_amount": {
+    "description": "Label for the collateral amount input field",
+    "tags": ["existing_loans_loan_form_business_loan"],
+    "type": "text"
+  },
+  "collateral_amount_hint": "ஜாமீனுதொகையை உள்ளிடவும்",
+  "@collateral_amount_hint": {
+    "description": "Hint text for the collateral amount input field",
+    "tags": ["existing_loans_loan_form_business_loan"],
+    "type": "text"
+  },
+  "status": "நிலை*",
+  "@status": {
+    "description": "Label for the status input field",
+    "tags": ["existing_loans_loan_form_business_loan"],
+    "type": "text"
+  },
+  "status_hint": "நிலையை உள்ளிடவும்",
+  "@status_hint": {
+    "description": "Hint text for the status input field",
+    "tags": ["existing_loans_loan_form_business_loan"],
+    "type": "text"
+  },
+  "add_existing_loan": "தற்போதைய கடன்களைச் சேர்க்கவும்",
+  "@add_existing_loan": {
+    "description": "Button text to add an existing loan",
+    "tags": ["existing_loans_loan_form_business_loan"],
+    "type": "text"
   }
 }
+
 
 
 
