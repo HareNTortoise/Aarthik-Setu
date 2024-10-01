@@ -29,7 +29,7 @@ class LoanFormJourneyTemplate extends StatelessWidget {
                 children: [
                   const SizedBox(height: 60),
                   Text(
-                    formTitle,
+                    formTitle,  //TODO: Add localization
                     style: GoogleFonts.poppins(
                       fontSize: 80,
                     ),

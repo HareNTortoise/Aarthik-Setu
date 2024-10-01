@@ -100,7 +100,7 @@
     "description": "Label for the back button",
     "type": "text",
     "placeholders": {},
-    "tags": ["sign-in"]
+    "tags": ["sign-in", "itr_form_manual_personal_loan", "bank_details_personal_loan"]
   },
   "phoneNumber": "फोन नंबर",
   "@phoneNumber": {
@@ -115,5 +115,2862 @@
     "type": "text",
     "placeholders": {},
     "tags": ["sign-in"]
+  },
+
+
+
+
+
+  "dashboard": "डैशबोर्ड",
+  "@dashboard": {
+    "description": "Title for the dashboard page",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["dashboard"]
+  },
+  "personalLoans": "व्यक्तिगत ऋण",
+  "@personalLoans": {
+    "description": "Label for personal loan options",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["dashboard", "personal_loan"]
+  },
+  "businessLoans": "व्यावसायिक ऋण",
+  "@businessLoans": {
+    "description": "Label for business loan options",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["dashboard"]
+  },
+  "governmentSchemes": "सरकारी योजनाएँ",
+  "@governmentSchemes": {
+    "description": "Label for government schemes",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["dashboard"]
+  },
+  "logOut": "लॉग आउट",
+  "@logOut": {
+    "description": "Button label for logging out",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["dashboard"]
+  },
+  "profile": "प्रोफ़ाइल",
+  "@profile": {
+    "description": "Label for profile selection",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["dashboard"]
+  },
+  "pendingApplications": "लंबित आवेदन",
+  "@pendingApplications": {
+    "description": "Label for pending applications with count",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["dashboard"]
+  },
+
+
+
+
+
+
+
+
+  "personalLoanDescription": "कम ब्याज दरों और लचीले भुगतान विकल्पों के साथ व्यक्तिगत ऋण प्राप्त करें।",
+  "@personalLoanDescription": {
+    "description": "Description for personal loan option",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["personal_loan"]
+  },
+  "homeLoans": "गृह ऋण",
+  "@homeLoans": {
+    "description": "Title for home loan option",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["personal_loan"]
+  },
+  "homeLoanDescription": "कम ब्याज दरों और लचीले भुगतान विकल्पों के साथ गृह ऋण प्राप्त करें।",
+  "@homeLoanDescription": {
+    "description": "Description for home loan option",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["personal_loan"]
+  },
+  "autoLoans": "ऑटो ऋण",
+  "@autoLoans": {
+    "description": "Title for auto loan option",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["personal_loan"]
+  },
+  "autoLoanDescription": "कम ब्याज दरों और लचीले भुगतान विकल्पों के साथ ऑटो ऋण प्राप्त करें।",
+  "@autoLoanDescription": {
+    "description": "Description for auto loan option",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["personal_loan"]
+  },
+
+
+
+
+
+
+
+
+
+  "msmeLoans": "MSME ऋण",
+  "@msmeLoans": {
+    "description": "Title for MSME loan option",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["business_loan"]
+  },
+  "msmeLoanDescription": "कम ब्याज दरों और लचीले भुगतान विकल्पों के साथ MSME ऋण प्राप्त करें ₹5 करोड़ तक।",
+  "@msmeLoanDescription": {
+    "description": "Description for MSME loan option",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["business_loan"]
+  },
+  "termLoans": "अवधि ऋण",
+  "@termLoans": {
+    "description": "Title for term loan option",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["business_loan"]
+  },
+  "termLoanDescription": "प्रतिस्पर्धी दरों और लचीले भुगतान शर्तों के साथ ₹50 लाख तक की अवधि ऋण प्राप्त करें।",
+  "@termLoanDescription": {
+    "description": "Description for term loan option",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["business_loan"]
+  },
+  "mudraLoans": "मुद्रा ऋण",
+  "@mudraLoans": {
+    "description": "Title for Mudra loan option",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["business_loan"]
+  },
+  "mudraLoanDescription": "लचीले भुगतान के साथ माइक्रो-उद्यमों के लिए ₹10 लाख तक के मुद्रा ऋण प्राप्त करें।",
+  "@mudraLoanDescription": {
+    "description": "Description for Mudra loan option",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["business_loan"]
+  },
+
+
+
+
+
+
+
+
+
+  "pendingApplicationsTitle": "लंबित आवेदन",
+  "@pendingApplicationsTitle": {
+    "description": "Title for the pending applications dialog",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["dashboard_pending_applications"]
+  },
+  "noPendingApplications": "आपके पास कोई लंबित आवेदन नहीं है।",
+  "@noPendingApplications": {
+    "description": "Message when there are no pending applications",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["dashboard_pending_applications"]
+  },
+  "closeButton": "बंद करें",
+  "@closeButton": {
+    "description": "Label for the close button",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["dashboard_pending_applications", "dashboard_select_profile", "bank_details_personal_loan"]
+  },
+
+
+
+  "selectProfileTitle": "प्रोफ़ाइल चुनें",
+  "@selectProfileTitle": {
+    "description": "Title for the select profile dialog",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["dashboard_select_profile"]
+  },
+  "noProfiles": "आपके पास कोई प्रोफ़ाइल नहीं है।",
+  "@noProfiles": {
+    "description": "Message when there are no profiles",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["dashboard_select_profile"]
+  },
+
+
+
+
+
+
+
+  "choosePersonalProfile": "अपनी व्यक्तिगत प्रोफ़ाइल चुनें",
+  "@choosePersonalProfile": {
+    "description": "Title for choosing personal profile",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["personal_loan_journey"]
+  },
+  "selectedProfile": "चयनित प्रोफ़ाइल: आदर्श वर्मा",
+  "@selectedProfile": {
+    "description": "Message showing selected profile",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["personal_loan_journey"]
+  },
+  "selectProfileMessage": "उपलब्ध प्रोफाइलों की सूची से अपनी व्यक्तिगत प्रोफाइल चुनें। यदि आपके पास प्रोफ़ाइल नहीं है, तो आप एक नई प्रोफ़ाइल बना सकते हैं।",
+  "@selectProfileMessage": {
+    "description": "Message for selecting personal profile",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["personal_loan_journey"]
+  },
+  "itrImportance": "ऋण के लिए आवेदन करते समय अपना ITR प्रदान करना महत्वपूर्ण है क्योंकि यह उधारदाताओं को आपकी वित्तीय स्थिरता, पुनर्भुगतान क्षमता और कुल मिलाकर विश्वसनीयता का आश्वासन देता है, जिससे आपके ऋण स्वीकृत होने की संभावना बढ़ जाती है। यदि आपके पास ITR नहीं है तो आप अपनी आय को मैन्युअली घोषित करने का विकल्प भी चुन सकते हैं।",
+  "@itrImportance": {
+    "description": "Importance of providing ITR in a loan application",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["personal_loan_journey"]
+  },
+  "itrButtonTitle": "आयकर रिटर्न",
+  "@itrButtonTitle": {
+    "description": "Button label for providing ITR",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["personal_loan_journey"]
+  },
+  "itrButtonDescription": "पिछले 3 वर्षों तक के लिए अपना आयकर रिटर्न फ़ॉर्म प्रदान करें या अपनी आय घोषित करें।",
+  "@itrButtonDescription": {
+    "description": "Description for providing ITR",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["personal_loan_journey"]
+  },
+  "bankDetailsImportance": "बैंक विवरण और स्टेटमेंट उधारदाताओं को आपकी वित्तीय आदतों, पुनर्भुगतान क्षमता और कुल मिलाकर क्रेडिट जोखिम का आकलन करने का एक पारदर्शी और विश्वसनीय तरीका प्रदान करते हैं, जो ऋण स्वीकृत करने में महत्वपूर्ण कारक होते हैं।",
+  "@bankDetailsImportance": {
+    "description": "Importance of providing bank details in a loan application",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["personal_loan_journey"]
+  },
+  "bankDetailsButtonTitle": "बैंक विवरण",
+  "@bankDetailsButtonTitle": {
+    "description": "Button label for providing bank details",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["personal_loan_journey"]
+  },
+  "bankDetailsButtonDescription": "अपने बैंक विवरण की घोषणा करें और पिछले 6 महीनों के लिए बैंक स्टेटमेंट प्रदान करें।",
+  "@bankDetailsButtonDescription": {
+    "description": "Description for providing bank details",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["personal_loan_journey"]
+  },
+  "personalDetailsImportance": "ऋण आवेदन में व्यक्तिगत विवरण महत्वपूर्ण होते हैं क्योंकि वे आपकी पहचान सत्यापित करने, आपकी पात्रता का आकलन करने और आपकी क्रेडिट योग्यता का निर्धारण करने में मदद करते हैं। उम्र, पता और रोजगार स्थिति जैसी जानकारी आपकी स्थिरता और पुनर्भुगतान क्षमता के बारे में जानकारी प्रदान करती है। सही व्यक्तिगत विवरण भी कानूनी और नियामक आवश्यकताओं का पालन सुनिश्चित करते हैं।",
+  "@personalDetailsImportance": {
+    "description": "Importance of providing personal details in a loan application",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["personal_loan_journey"]
+  },
+  "basicDetailsButtonTitle": "मूल विवरण",
+  "@basicDetailsButtonTitle": {
+    "description": "Button label for providing basic details",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["personal_loan_journey"]
+  },
+  "basicDetailsButtonDescription": "अपनी व्यक्तिगत जानकारी जैसे नाम, उम्र और पता प्रदान करें।",
+  "@basicDetailsButtonDescription": {
+    "description": "Description for providing basic details",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["personal_loan_journey"]
+  },
+  "employmentDetailsImportance": "रोजगार विवरण ऋण आवेदन में महत्वपूर्ण होते हैं क्योंकि वे उधारदाताओं को आपकी पुनर्भुगतान क्षमता, नौकरी स्थिरता और कुल मिलाकर वित्तीय स्थिति का आकलन करने में मदद करते हैं। कंपनी का नाम, पदनाम और वेतन जैसी जानकारी आपकी आय की स्थिरता और पुनर्भुगतान क्षमता के बारे में जानकारी प्रदान करती है।",
+  "@employmentDetailsImportance": {
+    "description": "Importance of providing employment details in a loan application",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["personal_loan_journey"]
+  },
+  "employmentDetailsButtonTitle": "रोजगार विवरण",
+  "@employmentDetailsButtonTitle": {
+    "description": "Button label for providing employment details",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["personal_loan_journey"]
+  },
+  "employmentDetailsButtonDescription": "अपना रोजगार विवरण जैसे कंपनी का नाम, पदनाम और वेतन प्रदान करें।",
+  "@employmentDetailsButtonDescription": {
+    "description": "Description for providing employment details",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["personal_loan_journey"]
+  },
+  "creditInformationImportance": "क्रेडिट जानकारी ऋण आवेदन में महत्वपूर्ण होती है क्योंकि यह उधारदाताओं को आपकी क्रेडिट योग्यता, पुनर्भुगतान क्षमता और कुल मिलाकर वित्तीय स्थिति का आकलन करने में मदद करती है। क्रेडिट स्कोर, क्रेडिट इतिहास और मौजूदा ऋण जैसी जानकारी आपकी क्रेडिट जोखिम और पुनर्भुगतान क्षमता के बारे में जानकारी प्रदान करती है। सही क्रेडिट जानकारी कानूनी और नियामक आवश्यकताओं का पालन सुनिश्चित करती है।",
+  "@creditInformationImportance": {
+    "description": "Importance of providing credit information in a loan application",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["personal_loan_journey"]
+  },
+  "creditInformationButtonTitle": "क्रेडिट जानकारी",
+  "@creditInformationButtonTitle": {
+    "description": "Button label for providing credit information",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["personal_loan_journey"]
+  },
+  "creditInformationButtonDescription": "अपनी क्रेडिट जानकारी जैसे क्रेडिट स्कोर, क्रेडिट इतिहास और मौजूदा ऋण प्रदान करें।",
+  "@creditInformationButtonDescription": {
+    "description": "Description for providing credit information",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["personal_loan_journey"]
+  },
+  "contactInformationImportance": "संपर्क जानकारी ऋण आवेदन में महत्वपूर्ण होती है क्योंकि यह उधारदाताओं को आपकी पहचान सत्यापित करने, आपसे संवाद करने और आपकी पुनर्भुगतान क्षमता का आकलन करने में मदद करती है। फोन नंबर, ईमेल और पता जैसी जानकारी आपकी उपलब्धता और संचार क्षमता के बारे में जानकारी प्रदान करती है।",
+  "@contactInformationImportance": {
+    "description": "Importance of providing contact information in a loan application",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["personal_loan_journey"]
+  },
+  "contactInformationButtonTitle": "संपर्क जानकारी",
+  "@contactInformationButtonTitle": {
+    "description": "Button label for providing contact information",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["personal_loan_journey"]
+  },
+  "contactInformationButtonDescription": "अपनी संपर्क जानकारी जैसे फोन नंबर, ईमेल और पता प्रदान करें।",
+  "@contactInformationButtonDescription": {
+    "description": "Description for providing contact information",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["personal_loan_journey"]
+  },
+  "loanFormImportance": "ऋण आवेदन प्रक्रिया का अंतिम चरण ऋण फॉर्म है। इसमें आप उधारदाता को स्वीकृति के लिए सभी आवश्यक जानकारी, दस्तावेज़ और विवरण प्रदान करते हैं। ऋण स्वीकृत होने की संभावना बढ़ाने के लिए फॉर्म को सटीक और पूरी तरह से भरें।",
+  "@loanFormImportance": {
+    "description": "Importance of filling out the loan form",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["personal_loan_journey"]
+  },
+  "loanFormButtonTitle": "ऋण फॉर्म",
+  "@loanFormButtonTitle": {
+    "description": "Button label for filling out the loan form",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["personal_loan_journey"]
+  },
+  "loanFormButtonDescription": "सभी आवश्यक जानकारी और दस्तावेज़ जमा करें।",
+  "@loanFormButtonDescription": {
+    "description": "Description for loan form submission",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["personal_loan_journey"]
+  },
+  "reviewFormButton": "अपना फॉर्म समीक्षा करें",
+  "@reviewFormButton": {
+    "description": "Button label for reviewing the loan form",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["personal_loan_journey"]
+  },
+  "reviewFormButtonDescription": "आपके ऋण आवेदन की समीक्षा और इसे जमा करना ऋण आवेदन प्रक्रिया का अंतिम चरण है। कृपया सभी जानकारी को ध्यान से पढ़ें, इसकी सटीकता सुनिश्चित करें, और अनुमोदन के लिए अपने आवेदन को ऋणदाता को भेजें।",
+  "@reviewFormButtonDescription": {
+    "description": "Description for reviewing the loan form",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["personal_loan_journey"]
+  },
+
+
+
+
+
+
+
+  "itrDetailsTitle": "आईटीआर विवरण",
+  "@itrDetailsTitle": {
+    "description": "Title for the ITR Details section",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["itr_form_personal_loan"]
+  },
+  "manualDeclarationText": "यदि आपकी वार्षिक आय 2.5 लाख से कम है, तो अपने वित्तीय विवरण की घोषणा करें",
+  "@manualDeclarationText": {
+    "description": "Text for manual declaration option",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["itr_form_personal_loan"]
+  },
+  "itrMandatoryText_1": "वित्तीय वर्ष का ITR विवरण",
+  "@itrMandatoryText_1": {
+    "description": "Text for the ITR Details section",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["itr_form_personal_loan"]
+  },
+  "itrMandatoryText_2": "आवश्यक है",
+  "@itrMandatoryText_2": {
+    "description": "Text for the ITR Details section",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["itr_form_personal_loan"]
+  },
+  "uploadITRText": "आईटीआर अपलोड करें",
+  "@uploadITRText": {
+    "description": "Text for the toggle button for uploading ITR",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["itr_form_personal_loan"]
+  },
+  "manualDeclarationButton": "मैनुअल घोषणा",
+  "@manualDeclarationButton": {
+    "description": "Text for the toggle button for manual declaration",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["itr_form_personal_loan"]
+  },
+
+
+
+
+
+  "uploadITRTitle": "आईटीआर अपलोड करें (पीडीएफ प्रारूप)",
+  "@uploadITRTitle": {
+    "description": "Title for the upload ITR section",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["itr_form_upload_personal_loan"]
+  },
+  "fyLabel": "वित्तीय वर्ष",
+  "@fyLabel": {
+    "description": "Label for the financial year",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["itr_form_upload_personal_loan"]
+  },
+  "uploadButton": "फ़ाइल अपलोड करें",
+  "@uploadButton": {
+    "description": "Label for the upload button",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["itr_form_upload_personal_loan"]
+  },
+  "instructionsTitle": "आईटीआर पीडीएफ प्रारूप में कैसे डाउनलोड करें",
+  "@instructionsTitle": {
+    "description": "Title for the instructions dialog",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["itr_form_upload_personal_loan"]
+  },
+  "instructionsContent": "1. शीर्ष दाईं ओर 'लॉगिन' बटन पर क्लिक करें, और अपनी लॉगिन जानकारी के साथ लॉगिन करें।\n\n2. शीर्ष नेविगेशन बार से 'ई-फाइल' पर क्लिक करें।\n\n3. ई-फाइल ड्रॉपडाउन मेनू से 'आयकर रिटर्न' पर क्लिक करें।\n\n4. आयकर रिटर्न ड्रॉपडाउन मेनू से 'दाखिल किए गए रिटर्न देखें' पर क्लिक करें।\n\n5. यदि आपने आईटीआर प्रकार - 1/2 दाखिल किया है, तो 'डाउनलोड फॉर्म' पर क्लिक करें, उस 'आ.व.' के लिए आईटीआर पीडीएफ फ़ाइल डाउनलोड हो जाएगी।\n\n6. डाउनलोड की गई फाइलें प्लेटफार्म पर अपलोड करें।",
+  "@instructionsContent": {
+    "description": "Content for instructions on how to download ITR",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["itr_form_upload_personal_loan"]
+  },
+  "instructionsButton": "निर्देश",
+  "@instructionsButton": {
+    "description": "Text for instructions button",
+    "type": "text"
+  },
+
+
+
+
+
+
+  "@declareFinancialDetails": {
+    "description": "Title of the form to declare financial details.",
+    "type": "text",
+    "tags": ["itr_form_manual_personal_loan"]
+  },
+  "declareFinancialDetails": "अपने वित्तीय विवरण घोषित करें",
+
+  "@firstName": {
+    "description": "Label for the first name input field.",
+    "type": "text",
+    "tags": ["itr_form_manual_personal_loan", "basic_details_personal_loan"]
+  },
+  "firstName": "पहला नाम*",
+
+  "@firstNameHint": {
+    "description": "Hint text for the first name input field.",
+    "type": "text",
+    "tags": ["itr_form_manual_personal_loan", "basic_details_personal_loan"]
+  },
+  "firstNameHint": "अपना पहला नाम दर्ज करें",
+
+  "@middleName": {
+    "description": "Label for the middle name input field.",
+    "type": "text",
+    "tags": ["itr_form_manual_personal_loan", "basic_details_personal_loan"]
+  },
+  "middleName": "मध्यम नाम",
+
+  "@middleNameHint": {
+    "description": "Hint text for the middle name input field.",
+    "type": "text",
+    "tags": ["itr_form_manual_personal_loan", "basic_details_personal_loan"]
+  },
+  "middleNameHint": "अपना मध्य नाम दर्ज करें",
+
+  "@lastName": {
+    "description": "Label for the last name input field.",
+    "type": "text",
+    "tags": ["itr_form_manual_personal_loan", "basic_details_personal_loan"]
+  },
+  "lastName": "अंतिम नाम*",
+
+  "@lastNameHint": {
+    "description": "Hint text for the last name input field.",
+    "type": "text",
+    "tags": ["itr_form_manual_personal_loan", "basic_details_personal_loan"]
+  },
+  "lastNameHint": "अपना अंतिम नाम दर्ज करें",
+
+  "@dateOfBirth": {
+    "description": "Label for the date of birth input.",
+    "type": "text",
+    "tags": ["itr_form_manual_personal_loan", "basic_details_personal_loan"]
+  },
+  "dateOfBirth": "जन्म तिथि*",
+
+  "@dateOfBirthHint": {
+    "description": "Placeholder text for the date of birth button.",
+    "type": "text",
+    "tags": ["itr_form_manual_personal_loan", "basic_details_personal_loan"]
+  },
+  "dateOfBirthHint": "जन्म तिथि",
+
+  "@panNumber": {
+    "description": "Label for the PAN number input field.",
+    "type": "text",
+    "tags": ["itr_form_manual_personal_loan", "basic_details_personal_loan"]
+  },
+  "panNumber": "पैन नंबर*",
+
+  "@panNumberHint": {
+    "description": "Hint text for the PAN number input field.",
+    "type": "text",
+    "tags": ["itr_form_manual_personal_loan", "basic_details_personal_loan"]
+  },
+  "panNumberHint": "अपना पैन नंबर दर्ज करें",
+
+  "@mobileNumber": {
+    "description": "Label for the mobile number input field.",
+    "type": "text",
+    "tags": ["itr_form_manual_personal_loan", "basic_details_personal_loan"]
+  },
+  "mobileNumber": "मोबाइल नंबर*",
+
+  "@mobileNumberHint": {
+    "description": "Hint text for the mobile number input field.",
+    "type": "text",
+    "tags": ["itr_form_manual_personal_loan", "basic_details_personal_loan"]
+  },
+  "mobileNumberHint": "अपना मोबाइल नंबर दर्ज करें",
+
+  "@email": {
+    "description": "Label for the personal email input field.",
+    "type": "text",
+    "tags": ["itr_form_manual_personal_loan"]
+  },
+  "email": "ईमेल (व्यक्तिगत)*",
+
+  "@emailHint": {
+    "description": "Hint text for the personal email input field.",
+    "type": "text",
+    "tags": ["itr_form_manual_personal_loan"]
+  },
+  "emailHint": "अपना ईमेल दर्ज करें",
+
+  "@addressLine1": {
+    "description": "Label for the address line 1 input field.",
+    "type": "text",
+    "tags": ["itr_form_manual_personal_loan"]
+  },
+  "addressLine1": "पता पंक्ति 1*",
+
+  "@addressLine1Hint": {
+    "description": "Hint text for the address line 1 input field.",
+    "type": "text",
+    "tags": ["itr_form_manual_personal_loan"]
+  },
+  "addressLine1Hint": "अपना पता दर्ज करें",
+
+  "@addressLine2": {
+    "description": "Label for the address line 2 input field.",
+    "type": "text",
+    "tags": ["itr_form_manual_personal_loan"]
+  },
+  "addressLine2": "पता पंक्ति 2",
+
+  "@addressLine2Hint": {
+    "description": "Hint text for the address line 2 input field.",
+    "type": "text",
+    "tags": ["itr_form_manual_personal_loan"]
+  },
+  "addressLine2Hint": "अपना पता दर्ज करें",
+
+  "@landmark": {
+    "description": "Label for the landmark input field.",
+    "type": "text",
+    "tags": ["itr_form_manual_personal_loan", "stakeholder_business_loan"]
+  },
+  "landmark": "स्थान चिह्न",
+
+  "@landmarkHint": {
+    "description": "Hint text for the landmark input field.",
+    "type": "text",
+    "tags": ["itr_form_manual_personal_loan", "stakeholder_business_loan"]
+  },
+  "landmarkHint": "स्थान चिह्न दर्ज करें",
+
+  "@country": {
+    "description": "Label for the country dropdown.",
+    "type": "text",
+    "tags": ["itr_form_manual_personal_loan", "stakeholder_business_loan"]
+  },
+  "country": "देश*",
+
+  "@state": {
+    "description": "Label for the state dropdown.",
+    "type": "text",
+    "tags": ["itr_form_manual_personal_loan", "stakeholder_business_loan"]
+  },
+  "state": "राज्य*",
+
+  "@city": {
+    "description": "Label for the city dropdown.",
+    "type": "text",
+    "tags": ["itr_form_manual_personal_loan", "stakeholder_business_loan"]
+  },
+  "city": "शहर*",
+
+  "@pinCode": {
+    "description": "Label for the pin code input field.",
+    "type": "text",
+    "tags": ["itr_form_manual_personal_loan", "stakeholder_business_loan"]
+  },
+  "pinCode": "पिन कोड*",
+
+  "@pinCodeHint": {
+    "description": "Hint text for the pin code input field.",
+    "type": "text",
+    "tags": ["itr_form_manual_personal_loan", "stakeholder_business_loan"]
+  },
+  "pinCodeHint": "अपना पिन कोड दर्ज करें",
+
+  "@village": {
+    "description": "Label for the village input field.",
+    "type": "text",
+    "tags": ["itr_form_manual_personal_loan", "stakeholder_business_loan"]
+  },
+  "village": "गाँव",
+
+  "@villageHint": {
+    "description": "Hint text for the village input field.",
+    "type": "text",
+    "tags": ["itr_form_manual_personal_loan", "stakeholder_business_loan"]
+  },
+  "villageHint": "अपना गाँव दर्ज करें",
+
+  "@district": {
+    "description": "Label for the district input field.",
+    "type": "text",
+    "tags": ["itr_form_manual_personal_loan", "stakeholder_business_loan"]
+  },
+  "district": "जिला*",
+
+  "@districtHint": {
+    "description": "Hint text for the district input field.",
+    "type": "text",
+    "tags": ["itr_form_manual_personal_loan", "stakeholder_business_loan"]
+  },
+  "districtHint": "अपना जिला दर्ज करें",
+
+  "@subDistrict": {
+    "description": "Label for the sub-district input field.",
+    "type": "text",
+    "tags": ["itr_form_manual_personal_loan", "stakeholder_business_loan"]
+  },
+  "subDistrict": "उप-जिला*",
+
+  "@subDistrictHint": {
+    "description": "Hint text for the sub-district input field.",
+    "type": "text",
+    "tags": ["itr_form_manual_personal_loan", "stakeholder_business_loan"]
+  },
+  "subDistrictHint": "अपना उप-जिला दर्ज करें",
+
+  "@netAnnualIncome": {
+    "description": "Title for the net annual income section.",
+    "type": "text",
+    "tags": ["itr_form_manual_personal_loan"]
+  },
+  "netAnnualIncome": "शुद्ध वार्षिक आय विवरण",
+
+  "@annualIncomeFY": {
+    "description": "Label for net annual income for the financial year.",
+    "type": "text",
+    "tags": ["itr_form_manual_personal_loan"]
+  },
+  "annualIncomeFY": "वित्तीय वर्ष {year1}-{year2}*",
+
+  "@annualIncomeHint": {
+    "description": "Hint text for entering net annual income.",
+    "type": "text",
+    "tags": ["itr_form_manual_personal_loan"]
+  },
+  "annualIncomeHint": "अपनी शुद्ध वार्षिक आय दर्ज करें",
+
+  "@submitButton": {
+    "description": "Label for the submit button.",
+    "type": "text",
+    "tags": ["itr_form_manual_personal_loan"]
+  },
+  "submitButton": "जमा करें",
+
+  "@proceedButton": {
+    "description": "Label for the proceed button.",
+    "type": "text",
+    "tags": ["itr_form_manual_personal_loan", "bank_details_personal_loan"]
+  },
+  "proceedButton": "आगे बढ़ें",
+
+
+
+
+
+
+
+
+
+  "@bankDetails": {
+    "description": "Title for the bank details section.",
+    "type": "text",
+    "tags": ["bank_details_personal_loan"]
+  },
+  "bankDetails": "बैंक विवरण",
+
+  "@addUpTo3Accounts": {
+    "description": "Message indicating how many bank accounts can be added.",
+    "type": "text",
+    "tags": ["bank_details_personal_loan"]
+  },
+  "addUpTo3Accounts": "आप 3 बैंक खाते तक जोड़ सकते हैं",
+
+  "@uploadBankStatement": {
+    "description": "Label for uploading bank statement.",
+    "type": "text",
+    "tags": ["bank_details_personal_loan"]
+  },
+  "uploadBankStatement": "बैंक स्टेटमेंट अपलोड करें (PDF)",
+
+  "@addAccount": {
+    "description": "Label for adding a new bank account button.",
+    "type": "text",
+    "tags": ["bank_details_personal_loan"]
+  },
+  "addAccount": "खाता जोड़ें",
+
+  "@bankName": {
+    "description": "Label for bank name field.",
+    "type": "text",
+    "tags": ["bank_details_personal_loan"]
+  },
+  "bankName": "बैंक का नाम*",
+
+  "@enterBankName": {
+    "description": "Placeholder text for bank name input field.",
+    "type": "text",
+    "tags": ["bank_details_personal_loan"]
+  },
+  "enterBankName": "बैंक का नाम दर्ज करें",
+
+  "@accountSinceMonth": {
+    "description": "Label for account since month field.",
+    "type": "text",
+    "tags": ["bank_details_personal_loan"]
+  },
+  "accountSinceMonth": "खाता (महीना)* से",
+
+  "@month": {
+    "description": "Placeholder text for selecting the month.",
+    "type": "text",
+    "tags": ["bank_details_personal_loan", "stakeholder_business_loan"]
+  },
+  "month": "महीना",
+
+  "@accountSinceYear": {
+    "description": "Label for account since year field.",
+    "type": "text",
+    "tags": ["bank_details_personal_loan"]
+  },
+  "accountSinceYear": "खाता (वर्ष)* से",
+
+  "@yearButton": {
+    "description": "Placeholder text for selecting the year.",
+    "type": "text",
+    "tags": ["bank_details_personal_loan", "stakeholder_business_loan"]
+  },
+  "yearButton": "वर्ष",
+
+  "@isSalaryAccount": {
+    "description": "Question asking if the account is a salary account.",
+    "type": "text",
+    "tags": ["bank_details_personal_loan"]
+  },
+  "isSalaryAccount": "क्या यह वेतन खाता है?",
+
+  "@yesButton": {
+    "description": "Option for 'Yes' in response to a question.",
+    "type": "text",
+    "tags": ["bank_details_personal_loan"]
+  },
+  "yesButton": "हाँ",
+
+  "@noButton": {
+    "description": "Option for 'No' in response to a question.",
+    "type": "text",
+    "tags": ["bank_details_personal_loan"]
+  },
+  "noButton": "नहीं",
+
+  "drag_file_here": "यहाँ फाइल खींचें",
+  "@drag_file_here": {
+    "description": "Text for dragging and dropping a file.",
+    "type": "text",
+    "tags": ["bank_details_personal_loan", "bank_details_business_loan"]
+  },
+
+
+
+
+
+
+
+  "@basicDetails": {
+    "description": "Title for the basic details section",
+    "type": "text",
+    "tags": ["basic_details_personal_loan"]
+  },
+  "basicDetails": "बुनियादी विवरण",
+
+  "@salutation": {
+    "description": "Label for salutation dropdown",
+    "type": "text",
+    "tags": ["basic_details_personal_loan"]
+  },
+  "salutation": "अभिवादन*",
+
+  "@selectSalutation": {
+    "description": "Placeholder for selecting salutation",
+    "type": "text",
+    "tags": ["basic_details_personal_loan"]
+  },
+  "selectSalutation": "अभिवादन चुनें",
+
+  "@gender": {
+    "description": "Label for gender dropdown",
+    "type": "text",
+    "tags": ["basic_details_personal_loan"]
+  },
+  "gender": "लिंग*",
+
+  "@selectGender": {
+    "description": "Placeholder for selecting gender",
+    "type": "text",
+    "tags": ["basic_details_personal_loan"]
+  },
+  "selectGender": "लिंग चुनें",
+
+  "@category": {
+    "description": "Label for category dropdown",
+    "type": "text",
+    "tags": ["basic_details_personal_loan"]
+  },
+  "category": "श्रेणी*",
+
+  "@selectCategory": {
+    "description": "Placeholder for selecting category",
+    "type": "text",
+    "tags": ["basic_details_personal_loan"]
+  },
+  "selectCategory": "श्रेणी चुनें",
+
+  "@emailPersonal": {
+    "description": "Label for personal email input field",
+    "type": "text",
+    "tags": ["basic_details_personal_loan"]
+  },
+  "emailPersonal": "ईमेल (व्यक्तिगत)*",
+
+  "@enterEmailPersonal": {
+    "description": "Placeholder for entering personal email",
+    "type": "text",
+    "tags": ["basic_details_personal_loan"]
+  },
+  "enterEmailPersonal": "अपना ईमेल दर्ज करें",
+
+  "@fatherName": {
+    "description": "Label for father's name input field",
+    "type": "text",
+    "tags": ["basic_details_personal_loan"]
+  },
+  "fatherName": "पिता का नाम",
+
+  "@enterFatherName": {
+    "description": "Placeholder for entering father's name",
+    "type": "text",
+    "tags": ["basic_details_personal_loan"]
+  },
+  "enterFatherName": "अपने पिता का नाम दर्ज करें",
+
+  "@educationQualification": {
+    "description": "Label for education qualification dropdown",
+    "type": "text",
+    "tags": ["basic_details_personal_loan"]
+  },
+  "educationQualification": "शैक्षिक योग्यता*",
+
+  "@selectEducationQualification": {
+    "description": "Placeholder for selecting education qualification",
+    "type": "text",
+    "tags": ["basic_details_personal_loan"]
+  },
+  "selectEducationQualification": "शैक्षिक योग्यता चुनें",
+
+  "@netWorth": {
+    "description": "Label for net worth input field",
+    "type": "text",
+    "tags": ["basic_details_personal_loan"]
+  },
+  "netWorth": "कुल संपत्ति*",
+
+  "@enterNetWorth": {
+    "description": "Placeholder for entering net worth",
+    "type": "text",
+    "tags": ["basic_details_personal_loan"]
+  },
+  "enterNetWorth": "अपनी कुल संपत्ति दर्ज करें",
+
+  "@nationality": {
+    "description": "Label for nationality dropdown",
+    "type": "text",
+    "tags": ["basic_details_personal_loan"]
+  },
+  "nationality": "राष्ट्रीयता*",
+
+  "@selectNationality": {
+    "description": "Placeholder for selecting nationality",
+    "type": "text",
+    "tags": ["basic_details_personal_loan"]
+  },
+  "selectNationality": "राष्ट्रीयता चुनें",
+
+  "@dependents": {
+    "description": "Label for dependents dropdown",
+    "type": "text",
+    "tags": ["basic_details_personal_loan"]
+  },
+  "dependents": "निर्भरता*",
+
+  "@selectDependents": {
+    "description": "Placeholder for selecting dependents",
+    "type": "text",
+    "tags": ["basic_details_personal_loan"]
+  },
+  "selectDependents": "निर्भरता चुनें",
+
+  "@maritalStatus": {
+    "description": "Label for marital status dropdown",
+    "type": "text",
+    "tags": ["basic_details_personal_loan"]
+  },
+  "maritalStatus": "वैवाहिक स्थिति*",
+
+  "@selectMaritalStatus": {
+    "description": "Placeholder for selecting marital status",
+    "type": "text",
+    "tags": ["basic_details_personal_loan"]
+  },
+  "selectMaritalStatus": "वैवाहिक स्थिति चुनें",
+
+
+
+
+
+
+
+
+
+  "@employmentDetails": {
+    "description": "Label for the employment details page",
+    "type": "text",
+    "tags": ["employment_details_personal_loan"]
+  },
+  "employmentDetails": "रोज़गार विवरण",
+
+  "@employmentStatus": {
+    "description": "Label for employment status dropdown",
+    "type": "text",
+    "tags": ["employment_details_personal_loan"]
+  },
+  "employmentStatus": "रोज़गार की स्थिति*",
+
+  "@selectEmploymentStatus": {
+    "description": "Placeholder for selecting employment status",
+    "type": "text",
+    "tags": ["employment_details_personal_loan"]
+  },
+  "selectEmploymentStatus": "रोज़गार की स्थिति चुनें",
+
+  "@designation": {
+    "description": "Label for designation dropdown",
+    "type": "text",
+    "tags": ["employment_details_personal_loan"]
+  },
+  "designation": "पदनाम*",
+
+  "@selectDesignation": {
+    "description": "Placeholder for selecting designation",
+    "type": "text",
+    "tags": ["employment_details_personal_loan"]
+  },
+  "selectDesignation": "पदनाम चुनें",
+
+  "@employmentType": {
+    "description": "Label for employment type dropdown",
+    "type": "text",
+    "tags": ["employment_details_personal_loan"]
+  },
+  "employmentType": "रोज़गार का प्रकार*",
+
+  "@selectEmploymentType": {
+    "description": "Placeholder for selecting employment type",
+    "type": "text",
+    "tags": ["employment_details_personal_loan"]
+  },
+  "selectEmploymentType": "रोज़गार का प्रकार चुनें",
+
+  "@modeOfSalary": {
+    "description": "Label for mode of salary dropdown",
+    "type": "text",
+    "tags": ["employment_details_personal_loan"]
+  },
+  "modeOfSalary": "वेतन का मोड*",
+
+  "@selectModeOfSalary": {
+    "description": "Placeholder for selecting mode of salary",
+    "type": "text",
+    "tags": ["employment_details_personal_loan"]
+  },
+  "selectModeOfSalary": "वेतन का मोड चुनें",
+
+  "@grossMonthlyIncome": {
+    "description": "Label for gross monthly income input field",
+    "type": "text",
+    "tags": ["employment_details_personal_loan"]
+  },
+  "grossMonthlyIncome": "सकल मासिक आय*",
+
+  "@enterGrossMonthlyIncome": {
+    "description": "Placeholder for entering gross monthly income",
+    "type": "text",
+    "tags": ["employment_details_personal_loan"]
+  },
+  "enterGrossMonthlyIncome": "अपनी सकल मासिक आय दर्ज करें",
+
+  "@netMonthlyIncome": {
+    "description": "Label for net monthly income input field",
+    "type": "text",
+    "tags": ["employment_details_personal_loan"]
+  },
+  "netMonthlyIncome": "शुद्ध मासिक आय*",
+
+  "@enterNetMonthlyIncome": {
+    "description": "Placeholder for entering net monthly income",
+    "type": "text",
+    "tags": ["employment_details_personal_loan"]
+  },
+  "enterNetMonthlyIncome": "अपनी शुद्ध मासिक आय दर्ज करें",
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  "@creditInformationTitle": {
+    "description": "Title of the Credit Information page",
+    "type": "text",
+    "tags": ["credit_info_personal_loan"]
+  },
+  "creditInformationTitle": "क्रेडिट जानकारी",
+
+  "@declareCreditInformation": {
+    "description": "Heading for declaring credit information",
+    "type": "text",
+    "tags": ["credit_info_personal_loan"]
+  },
+  "declareCreditInformation": "क्रेडिट जानकारी घोषित करें",
+
+  "@loanTypeLabel": {
+    "description": "Label for loan type dropdown",
+    "type": "text",
+    "tags": ["credit_info_personal_loan"]
+  },
+  "loanTypeLabel": "ऋण प्रकार*",
+
+  "@selectLoanType": {
+    "description": "Placeholder for selecting loan type",
+    "type": "text",
+    "tags": ["credit_info_personal_loan"]
+  },
+  "selectLoanType": "ऋण प्रकार चुनें",
+
+  "@lenderLabel": {
+    "description": "Label for lender input field",
+    "type": "text",
+    "tags": ["credit_info_personal_loan"]
+  },
+  "lenderLabel": "ऋणदाता*",
+
+  "@enterLenderPlaceholder": {
+    "description": "Placeholder for entering lender name",
+    "type": "text",
+    "tags": ["credit_info_personal_loan"]
+  },
+  "enterLenderPlaceholder": "ऋणदाता दर्ज करें",
+
+  "@sanctionedAmountLabel": {
+    "description": "Label for sanctioned amount input field",
+    "type": "text",
+    "tags": ["credit_info_personal_loan"]
+  },
+  "sanctionedAmountLabel": "स्वीकृत राशि (₹)*",
+
+  "@enterSanctionedAmountPlaceholder": {
+    "description": "Placeholder for entering sanctioned amount",
+    "type": "text",
+    "tags": ["credit_info_personal_loan"]
+  },
+  "enterSanctionedAmountPlaceholder": "स्वीकृत राशि दर्ज करें",
+
+  "@outstandingAmountLabel": {
+    "description": "Label for outstanding amount input field",
+    "type": "text",
+    "tags": ["credit_info_personal_loan"]
+  },
+  "outstandingAmountLabel": "बकाया राशि (₹)*",
+
+  "@enterOutstandingAmountPlaceholder": {
+    "description": "Placeholder for entering outstanding amount",
+    "type": "text",
+    "tags": ["credit_info_personal_loan"]
+  },
+  "enterOutstandingAmountPlaceholder": "बकाया राशि दर्ज करें",
+
+  "@emiAmountLabel": {
+    "description": "Label for EMI amount input field",
+    "type": "text",
+    "tags": ["credit_info_personal_loan"]
+  },
+  "emiAmountLabel": "EMI राशि (₹)*",
+
+  "@enterEmiAmountPlaceholder": {
+    "description": "Placeholder for entering EMI amount",
+    "type": "text",
+    "tags": ["credit_info_personal_loan"]
+  },
+  "enterEmiAmountPlaceholder": "EMI राशि दर्ज करें",
+
+  "@addExistingLoanButton": {
+    "description": "Label for the button to add an existing loan",
+    "type": "text",
+    "tags": ["credit_info_personal_loan"]
+  },
+  "addExistingLoanButton": "मौजूदा ऋण जोड़ें",
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  "@contactDetailsTitle": {
+    "description": "Title of the Contact Details page",
+    "type": "text",
+    "tags": ["contact_detail_personal_loan"]
+  },
+  "contactDetailsTitle": "संपर्क विवरण",
+
+  "@addressLine1Label": {
+    "description": "Label for Address Line 1 input field",
+    "type": "text",
+    "tags": ["contact_detail_personal_loan"]
+  },
+  "addressLine1Label": "पता पंक्ति 1*",
+
+  "@addressLine1Placeholder": {
+    "description": "Placeholder for Address Line 1 input field",
+    "type": "text",
+    "tags": ["contact_detail_personal_loan"]
+  },
+  "addressLine1Placeholder": "अपना भवन नंबर दर्ज करें",
+
+  "@addressLine2Label": {
+    "description": "Label for Address Line 2 input field",
+    "type": "text",
+    "tags": ["contact_detail_personal_loan"]
+  },
+  "addressLine2Label": "पता पंक्ति 2",
+
+  "@addressLine2Placeholder": {
+    "description": "Placeholder for Address Line 2 input field",
+    "type": "text",
+    "tags": ["contact_detail_personal_loan"]
+  },
+  "addressLine2Placeholder": "अपना सड़क का नाम दर्ज करें",
+
+  "@landmarkLabel": {
+    "description": "Label for Landmark input field",
+    "type": "text",
+    "tags": ["contact_detail_personal_loan"]
+  },
+  "landmarkLabel": "लैंडमार्क",
+
+  "@landmarkPlaceholder": {
+    "description": "Placeholder for Landmark input field",
+    "type": "text",
+    "tags": ["contact_detail_personal_loan"]
+  },
+  "landmarkPlaceholder": "अपना लैंडमार्क दर्ज करें",
+
+  "@countryLabel": {
+    "description": "Label for Country dropdown",
+    "type": "text",
+    "tags": ["contact_detail_personal_loan"]
+  },
+  "countryLabel": "देश*",
+
+  "@countryPlaceholder": {
+    "description": "Placeholder for Country dropdown",
+    "type": "text",
+    "tags": ["contact_detail_personal_loan"]
+  },
+  "countryPlaceholder": "अपना देश चुनें",
+
+  "@stateLabel": {
+    "description": "Label for State dropdown",
+    "type": "text",
+    "tags": ["contact_detail_personal_loan", "declare_business_gst_details_business_loan"]
+  },
+  "stateLabel": "राज्य*",
+
+  "@statePlaceholder": {
+    "description": "Placeholder for State dropdown",
+    "type": "text",
+    "tags": ["contact_detail_personal_loan", "declare_business_gst_details_business_loan"]
+  },
+  "statePlaceholder": "अपना राज्य चुनें",
+
+  "@cityLabel": {
+    "description": "Label for City dropdown",
+    "type": "text",
+    "tags": ["contact_detail_personal_loan", "declare_business_gst_details_business_loan"]
+  },
+  "cityLabel": "शहर*",
+
+  "@cityPlaceholder": {
+    "description": "Placeholder for City dropdown",
+    "type": "text",
+    "tags": ["contact_detail_personal_loan", "declare_business_gst_details_business_loan"]
+  },
+  "cityPlaceholder": "अपना शहर चुनें",
+
+  "@pinCodeLabel": {
+    "description": "Label for Pin Code input field",
+    "type": "text",
+    "tags": ["contact_detail_personal_loan"]
+  },
+  "pinCodeLabel": "पिन कोड*",
+
+  "@pinCodePlaceholder": {
+    "description": "Placeholder for Pin Code input field",
+    "type": "text",
+    "tags": ["contact_detail_personal_loan"]
+  },
+  "pinCodePlaceholder": "अपना पिन कोड दर्ज करें",
+
+  "@villageLabel": {
+    "description": "Label for Village/Town input field",
+    "type": "text",
+    "tags": ["contact_detail_personal_loan"]
+  },
+  "villageLabel": "गांव/कस्बा",
+
+  "@villagePlaceholder": {
+    "description": "Placeholder for Village/Town input field",
+    "type": "text",
+    "tags": ["contact_detail_personal_loan"]
+  },
+  "villagePlaceholder": "अपना गांव/कस्बा दर्ज करें",
+
+  "@districtLabel": {
+    "description": "Label for District input field",
+    "type": "text",
+    "tags": ["contact_detail_personal_loan"]
+  },
+  "districtLabel": "जिला*",
+
+  "@districtPlaceholder": {
+    "description": "Placeholder for District input field",
+    "type": "text",
+    "tags": ["contact_detail_personal_loan"]
+  },
+  "districtPlaceholder": "अपना जिला दर्ज करें",
+
+  "@subDistrictLabel": {
+    "description": "Label for Sub-District input field",
+    "type": "text",
+    "tags": ["contact_detail_personal_loan"]
+  },
+  "subDistrictLabel": "उप-जिला*",
+
+  "@subDistrictPlaceholder": {
+    "description": "Placeholder for Sub-District input field",
+    "type": "text",
+    "tags": ["contact_detail_personal_loan"]
+  },
+  "subDistrictPlaceholder": "अपना उप-जिला दर्ज करें",
+
+  "@residenceSinceMonthLabel": {
+    "description": "Label for Residence Since (Month) picker",
+    "type": "text",
+    "tags": ["contact_detail_personal_loan"]
+  },
+  "residenceSinceMonthLabel": "रहने का समय (महीना)",
+
+  "@residenceSinceYearLabel": {
+    "description": "Label for Residence Since (Year) picker",
+    "type": "text",
+    "tags": ["contact_detail_personal_loan"]
+  },
+  "residenceSinceYearLabel": "रहने का समय (साल)",
+
+
+
+
+
+
+
+
+
+
+
+
+
+  "@loanFormTitle": {
+    "description": "Title of the Loan Form",
+    "type": "text",
+    "tags": ["loan_form_personal_loan"]
+  },
+  "loanFormTitle": "ऋण फॉर्म",
+
+  "@loanDetailsTitle": {
+    "description": "Title for Loan Details section",
+    "type": "text",
+    "tags": ["loan_form_personal_loan"]
+  },
+  "loanDetailsTitle": "ऋण विवरण",
+
+  "@loanPurposeLabel": {
+    "description": "Label for Loan Purpose dropdown",
+    "type": "text",
+    "tags": ["loan_form_personal_loan"]
+  },
+  "loanPurposeLabel": "ऋण का उद्देश्य*",
+
+  "@loanPurposePlaceholder": {
+    "description": "Placeholder for Loan Purpose dropdown",
+    "type": "text",
+    "tags": ["loan_form_personal_loan"]
+  },
+  "loanPurposePlaceholder": "ऋण का उद्देश्य चुनें",
+
+  "@loanAmountLabel": {
+    "description": "Label for Loan Amount input field",
+    "type": "text",
+    "tags": ["loan_form_personal_loan"]
+  },
+  "loanAmountLabel": "आवश्यक ऋण राशि*",
+
+  "@loanAmountHint": {
+    "description": "Hint text for Loan Amount input field",
+    "type": "text",
+    "tags": ["loan_form_personal_loan"]
+  },
+  "loanAmountHint": "ऋण राशि दर्ज करें",
+
+  "@tenureLabel": {
+    "description": "Label for Tenure input field",
+    "type": "text",
+    "tags": ["loan_form_personal_loan"]
+  },
+  "tenureLabel": "अवधि (वर्ष)*",
+
+  "@tenureHint": {
+    "description": "Hint text for Tenure input field",
+    "type": "text",
+    "tags": ["loan_form_personal_loan"]
+  },
+  "tenureHint": "अवधि दर्ज करें",
+
+  "@retirementAgeLabel": {
+    "description": "Label for Retirement Age input field",
+    "type": "text",
+    "tags": ["loan_form_personal_loan"]
+  },
+  "retirementAgeLabel": "सेवानिवृत्ति की उम्र (वर्ष)*",
+
+  "@retirementAgeHint": {
+    "description": "Hint text for Retirement Age input field",
+    "type": "text",
+    "tags": ["loan_form_personal_loan"]
+  },
+  "retirementAgeHint": "सेवानिवृत्ति की उम्र दर्ज करें",
+
+  "@yourEmployerWillTitle": {
+    "description": "Title for Your Employer Will section",
+    "type": "text",
+    "tags": ["loan_form_personal_loan"]
+  },
+  "yourEmployerWillTitle": "आपका नियोक्ता करेगा",
+
+  "@emiFromSalaryAccountText": {
+    "description": "Question about EMI payment from salary account",
+    "type": "text",
+    "tags": ["loan_form_personal_loan"]
+  },
+  "emiFromSalaryAccountText": "क्या आप वेतन खाते से सीधे EMI का भुगतान करेंगे?",
+
+  "@outstandingLoanTerminalPaymentsText": {
+    "description": "Question about paying outstanding loan amount from terminal payments",
+    "type": "text",
+    "tags": ["loan_form_personal_loan"]
+  },
+  "outstandingLoanTerminalPaymentsText": "क्या आप अपने नियोक्ता को छोड़ने की स्थिति में टर्मिनल भुगतान से बकाया ऋण राशि का भुगतान करने के लिए सहमत हैं?",
+
+  "@salaryAccountConfirmationText": {
+    "description": "Question about paying salary only in salary account and getting NOC",
+    "type": "text",
+    "tags": ["loan_form_personal_loan"]
+  },
+  "salaryAccountConfirmationText": "क्या आप केवल अपने वेतन खाते में वेतन प्राप्त करेंगे और अपने वेतन खाते को बदलने से पहले बैंक से पुष्टि (NOC) लेंगे?",
+
+  "@whetherYouWillTitle": {
+    "description": "Title for Whether you (Employer/Borrower) will section",
+    "type": "text",
+    "tags": ["loan_form_personal_loan"]
+  },
+  "whetherYouWillTitle": "क्या आप (नियोक्ता/उधारकर्ता) करेंगे",
+
+  "@issueLetterOutstandingLoanText": {
+    "description": "Question about issuing letter to employer to pay outstanding loan",
+    "type": "text",
+    "tags": ["loan_form_personal_loan"]
+  },
+  "issueLetterOutstandingLoanText": "क्या आप अपने नियोक्ता को पत्र जारी करेंगे, ताकि वे आपके टर्मिनल भुगतानों से बकाया ऋण का भुगतान कर सकें?",
+
+  "@issueLetterNotChangeAccountText": {
+    "description": "Question about issuing letter to employer to not change salary account",
+    "type": "text",
+    "tags": ["loan_form_personal_loan"]
+  },
+  "issueLetterNotChangeAccountText": "क्या आप अपने नियोक्ता को पत्र जारी करेंगे कि वेतन खाते को न बदलें और परिवर्तन की स्थिति में बैंक से पुष्टि (NOC) लें?",
+
+  "@repaymentMethodLabel": {
+    "description": "Label for Repayment Method dropdown",
+    "type": "text",
+    "tags": ["loan_form_personal_loan"]
+  },
+  "repaymentMethodLabel": "भुगतान विधि*",
+
+  "@repaymentMethodPlaceholder": {
+    "description": "Placeholder for Repayment Method dropdown",
+    "type": "text",
+    "tags": ["loan_form_personal_loan"]
+  },
+  "repaymentMethodPlaceholder": "भुगतान विधि चुनें",
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  "@chooseBusinessProfile": {
+    "description": "Text for choosing a business profile",
+    "type": "text",
+    "tags": ["business_loan_journey"]
+  },
+  "chooseBusinessProfile": "अपने व्यवसाय का प्रोफ़ाइल चुनें",
+
+  "@selectedProfileBusiness": {
+    "description": "Text showing the selected business profile",
+    "type": "text",
+    "tags": ["business_loan_journey"]
+  },
+  "selectedProfileBusiness": "चुना गया प्रोफ़ाइल: ABC प्रा. लि.",
+
+  "@selectProfileDescription": {
+    "description": "Instructions for selecting or creating a business profile",
+    "type": "text",
+    "tags": ["business_loan_journey"]
+  },
+  "selectProfileDescription": "सूची से अपने व्यवसाय का प्रोफ़ाइल चुनें। यदि आपके पास एक नहीं है, तो आप एक नया प्रोफ़ाइल भी बना सकते हैं।",
+
+  "@itrFormDescription": {
+    "description": "Description of the importance of the Income Tax Return",
+    "type": "text",
+    "tags": ["business_loan_journey"]
+  },
+  "itrFormDescription": "आपके व्यवसाय का आयकर रिटर्न (ITR) प्रदान करना आवश्यक है क्योंकि यह आपकी कंपनी की वित्तीय स्थिति और स्थिरता को दर्शाता है।",
+
+  "@gstFormDescription": {
+    "description": "Description of the importance of GST details",
+    "type": "text",
+    "tags": ["business_loan_journey"]
+  },
+  "gstFormDescription": "आपका GST रिटर्न प्रदान करना आपके व्यवसाय की कर नियमों के साथ अनुपालन को दर्शाता है, जो ऋण स्वीकृति में एक महत्वपूर्ण कारक है।",
+
+  "@itrButtonTitleBusiness": {
+    "description": "Button title for submitting the Income Tax Return",
+    "type": "text",
+    "tags": ["business_loan_journey"]
+  },
+  "itrButtonTitleBusiness": "आयकर रिटर्न",
+
+  "@itrButtonDescriptionBusiness": {
+    "description": "Instructions for providing the Income Tax Return",
+    "type": "text",
+    "tags": ["business_loan_journey"]
+  },
+  "itrButtonDescriptionBusiness": "अपने व्यवसाय का पिछले 3 वर्षों का आयकर रिटर्न प्रदान करें।",
+
+  "@gstButtonTitle": {
+    "description": "Button title for submitting GST details",
+    "type": "text",
+    "tags": ["business_loan_journey"]
+  },
+  "gstButtonTitle": "GST विवरण",
+
+  "@gstButtonDescription": {
+    "description": "Instructions for providing GST details",
+    "type": "text",
+    "tags": ["business_loan_journey"]
+  },
+  "gstButtonDescription": "अपने GST पंजीकरण संख्या और रिटर्न विवरण प्रदान करें।",
+
+  "@bankDetailsDescription": {
+    "description": "Description of the importance of submitting bank details",
+    "type": "text",
+    "tags": ["business_loan_journey"]
+  },
+  "bankDetailsDescription": "आपके व्यवसाय का बैंक विवरण प्रदान करने से ऋणदाता को आपकी वित्तीय स्थिति और नकद प्रवाह का आकलन करने में मदद मिलती है।",
+
+  "@bankButtonTitle": {
+    "description": "Button title for submitting bank details",
+    "type": "text",
+    "tags": ["business_loan_journey"]
+  },
+  "bankButtonTitle": "बैंक विवरण",
+
+  "@bankButtonDescription": {
+    "description": "Instructions for providing bank details",
+    "type": "text",
+    "tags": ["business_loan_journey"]
+  },
+  "bankButtonDescription": "अपने व्यवसाय का बैंक विवरण और बैंक स्टेटमेंट प्रदान करें।",
+
+  "@stakeholdersDescription": {
+    "description": "Description of the importance of providing stakeholder details",
+    "type": "text",
+    "tags": ["business_loan_journey"]
+  },
+  "stakeholdersDescription": "प्रमुख हितधारकों के विवरण प्रदान करने से ऋणदाताओं को व्यवसाय की संरचना और स्वामित्व को समझने में मदद मिलती है।",
+
+  "@stakeholdersButtonTitle": {
+    "description": "Button title for submitting stakeholder details",
+    "type": "text",
+    "tags": ["business_loan_journey"]
+  },
+  "stakeholdersButtonTitle": "हितधारक",
+
+  "@stakeholdersButtonDescription": {
+    "description": "Instructions for providing stakeholder details",
+    "type": "text",
+    "tags": ["business_loan_journey"]
+  },
+  "stakeholdersButtonDescription": "प्रमुख हितधारकों और उनके व्यवसाय में शेयरों के बारे में जानकारी प्रदान करें।",
+
+  "@loanFormDescription": {
+    "description": "Description of the final loan form step",
+    "type": "text",
+    "tags": ["business_loan_journey"]
+  },
+  "loanFormDescription": "ऋण फॉर्म आपके व्यवसाय ऋण आवेदन में अंतिम चरण है। सुनिश्चित करें कि सभी विवरण सटीक हैं।",
+
+  "@loanButtonTitle": {
+    "description": "Button title for submitting the loan form",
+    "type": "text",
+    "tags": ["business_loan_journey"]
+  },
+  "loanButtonTitle": "ऋण फॉर्म",
+
+  "@loanButtonDescription": {
+    "description": "Instructions for filling out the loan application form",
+    "type": "text",
+    "tags": ["business_loan_journey"]
+  },
+  "loanButtonDescription": "अपनी अनुरोध को अंतिम रूप देने के लिए ऋण आवेदन फॉर्म भरें।",
+
+
+
+
+
+
+
+
+
+
+
+
+  "@gstDetailsTitle": {
+    "description": "Title for the GST details section",
+    "type": "text",
+    "tags": ["gst_details_business_loan"]
+  },
+  "gstDetailsTitle": "जीएसटी विवरण",
+
+  "@toggleEnterGst": {
+    "description": "Label for the toggle switch to enter GST",
+    "type": "text",
+    "tags": ["gst_details_business_loan"]
+  },
+  "toggleEnterGst": "जीएसटी दर्ज करें",
+
+  "@toggleDeclareBusiness": {
+    "description": "Label for the toggle switch to declare business",
+    "type": "text",
+    "tags": ["gst_details_business_loan"]
+  },
+  "toggleDeclareBusiness": "व्यवसाय घोषित करें",
+
+
+
+
+
+
+
+
+
+
+
+  "@businessButtonLabel": {
+    "description": "Label for business button indicating the business number",
+    "type": "text",
+    "tags": ["gst_details_business_loan"]
+  },
+  "businessButtonLabel": "व्यापार ",
+
+  "@addBusinessButtonLabel": {
+    "description": "Label for the button to add a new business",
+    "type": "text",
+    "tags": ["gst_details_business_loan"]
+  },
+  "addBusinessButtonLabel": "नया व्यवसाय जोड़ें",
+
+  "@gstNumberLabel": {
+    "description": "Label for the GST number input field",
+    "type": "text",
+    "tags": ["gst_details_business_loan"]
+  },
+  "gstNumberLabel": "जीएसटी नंबर*",
+
+  "@gstNumberHint": {
+    "description": "Hint text for the GST number input field",
+    "type": "text",
+    "tags": ["gst_details_business_loan"]
+  },
+  "gstNumberHint": "जीएसटी नंबर दर्ज करें",
+
+  "@gstUsernameLabel": {
+    "description": "Label for the GST username input field",
+    "type": "text",
+    "tags": ["gst_details_business_loan"]
+  },
+  "gstUsernameLabel": "जीएसटी उपयोगकर्ता नाम*",
+
+  "@gstUsernameHint": {
+    "description": "Hint text for the GST username input field",
+    "type": "text",
+    "tags": ["gst_details_business_loan"]
+  },
+  "gstUsernameHint": "जीएसटी उपयोगकर्ता नाम दर्ज करें",
+
+  "@cityLabelGST": {
+    "description": "Label for the city input field",
+    "type": "text",
+    "tags": ["gst_details_business_loan"]
+  },
+  "cityLabelGST": "शहर*",
+
+  "@totalPurchaseLabel": {
+    "description": "Label for the total purchase input field",
+    "type": "text",
+    "tags": ["gst_details_business_loan"]
+  },
+  "totalPurchaseLabel": "कुल खरीद*",
+
+  "@totalPurchaseHint": {
+    "description": "Hint text for the total purchase input field",
+    "type": "text",
+    "tags": ["gst_details_business_loan"]
+  },
+  "totalPurchaseHint": "कुल खरीद दर्ज करें",
+
+  "@totalSalesLabel": {
+    "description": "Label for the total sales input field",
+    "type": "text",
+    "tags": ["gst_details_business_loan"]
+  },
+  "totalSalesLabel": "कुल बिक्री*",
+
+  "@totalSalesHint": {
+    "description": "Hint text for the total sales input field",
+    "type": "text",
+    "tags": ["gst_details_business_loan"]
+  },
+  "totalSalesHint": "कुल बिक्री दर्ज करें",
+
+  "@updateOnLabel": {
+    "description": "Label for the update date picker button",
+    "type": "text",
+    "tags": ["gst_details_business_loan"]
+  },
+  "updateOnLabel": "अपडेट करें*",
+
+  "@selectBusinessToEdit": {
+    "description": "Message to display when no business is selected for editing",
+    "type": "text",
+    "tags": ["gst_details_business_loan"]
+  },
+  "selectBusinessToEdit": "संपादन के लिए एक व्यवसाय चुनें",
+
+  "@deleteButtonLabel": {
+    "description": "Label for the delete button",
+    "type": "text",
+    "tags": ["gst_details_business_loan"]
+  },
+  "deleteButtonLabel": "हटाएं",
+
+
+
+
+
+
+
+
+
+  "@declareBusinessLabel": {
+    "description": "Title for declaring business details",
+    "type": "text",
+    "tags": ["declare_business_gst_details_business_loan"]
+  },
+  "declareBusinessLabel": "अपने व्यवसाय के विवरण घोषित करें",
+
+  "@businessNameLabel": {
+    "description": "Label for the business name input field",
+    "type": "text",
+    "tags": ["declare_business_gst_details_business_loan"]
+  },
+  "businessNameLabel": "व्यवसाय का नाम*",
+
+  "@businessNameHint": {
+    "description": "Hint text for the business name input field",
+    "type": "text",
+    "tags": ["declare_business_gst_details_business_loan"]
+  },
+  "businessNameHint": "व्यवसाय का नाम दर्ज करें",
+
+  "@dateOfIncorporationLabel": {
+    "description": "Label for the date of incorporation button",
+    "type": "text",
+    "tags": ["declare_business_gst_details_business_loan"]
+  },
+  "dateOfIncorporationLabel": "स्थापना की तारीख",
+
+  "@constitutionLabel": {
+    "description": "Label for the constitution input field",
+    "type": "text",
+    "tags": ["declare_business_gst_details_business_loan"]
+  },
+  "constitutionLabel": "संविधान*",
+
+  "@constitutionHint": {
+    "description": "Hint text for the constitution input field",
+    "type": "text",
+    "tags": ["declare_business_gst_details_business_loan"]
+  },
+  "constitutionHint": "अपना संविधान दर्ज करें",
+
+  "@customersLabel": {
+    "description": "Label for the number of customers input field",
+    "type": "text",
+    "tags": ["declare_business_gst_details_business_loan"]
+  },
+  "customersLabel": "ग्राहकों की संख्या*",
+
+  "@customersHint": {
+    "description": "Hint text for the number of customers input field",
+    "type": "text",
+    "tags": ["declare_business_gst_details_business_loan"]
+  },
+  "customersHint": "अपने ग्राहकों की संख्या दर्ज करें",
+
+  "@panLabel": {
+    "description": "Label for the PAN input field",
+    "type": "text",
+    "tags": ["declare_business_gst_details_business_loan"]
+  },
+  "panLabel": "PAN*",
+
+  "@panHint": {
+    "description": "Hint text for the PAN input field",
+    "type": "text",
+    "tags": ["declare_business_gst_details_business_loan"]
+  },
+  "panHint": "अपना PAN दर्ज करें",
+
+  "@highestSaleLabel": {
+    "description": "Label for the highest sale input field",
+    "type": "text",
+    "tags": ["declare_business_gst_details_business_loan"]
+  },
+  "highestSaleLabel": "अधिकतम बिक्री रिकॉर्ड की गई*",
+
+  "@highestSaleHint": {
+    "description": "Hint text for the highest sale input field",
+    "type": "text",
+    "tags": ["declare_business_gst_details_business_loan"]
+  },
+  "highestSaleHint": "अपनी अधिकतम बिक्री दर्ज करें",
+
+  "@lastYearsSalesLabel": {
+    "description": "Header for last year's sales section",
+    "type": "text",
+    "tags": ["declare_business_gst_details_business_loan"]
+  },
+  "lastYearsSalesLabel": "पिछले साल की बिक्री",
+
+  "@januaryLabel": {
+    "description": "Label for January month",
+    "type": "text",
+    "tags": ["declare_business_gst_details_business_loan"]
+  },
+  "januaryLabel": "जनवरी",
+
+  "@februaryLabel": {
+    "description": "Label for February month",
+    "type": "text",
+    "tags": ["declare_business_gst_details_business_loan"]
+  },
+  "februaryLabel": "फरवरी",
+
+  "@marchLabel": {
+    "description": "Label for March month",
+    "type": "text",
+    "tags": ["declare_business_gst_details_business_loan"]
+  },
+  "marchLabel": "मार्च",
+
+  "@aprilLabel": {
+    "description": "Label for April month",
+    "type": "text",
+    "tags": ["declare_business_gst_details_business_loan"]
+  },
+  "aprilLabel": "अप्रैल",
+
+  "@mayLabel": {
+    "description": "Label for May month",
+    "type": "text",
+    "tags": ["declare_business_gst_details_business_loan"]
+  },
+  "mayLabel": "मई",
+
+  "@juneLabel": {
+    "description": "Label for June month",
+    "type": "text",
+    "tags": ["declare_business_gst_details_business_loan"]
+  },
+  "juneLabel": "जून",
+
+  "@julyLabel": {
+    "description": "Label for July month",
+    "type": "text",
+    "tags": ["declare_business_gst_details_business_loan"]
+  },
+  "julyLabel": "जुलाई",
+
+  "@augustLabel": {
+    "description": "Label for August month",
+    "type": "text",
+    "tags": ["declare_business_gst_details_business_loan"]
+  },
+  "augustLabel": "अगस्त",
+
+  "@septemberLabel": {
+    "description": "Label for September month",
+    "type": "text",
+    "tags": ["declare_business_gst_details_business_loan"]
+  },
+  "septemberLabel": "सितंबर",
+
+  "@octoberLabel": {
+    "description": "Label for October month",
+    "type": "text",
+    "tags": ["declare_business_gst_details_business_loan"]
+  },
+  "octoberLabel": "अक्टूबर",
+
+  "@novemberLabel": {
+    "description": "Label for November month",
+    "type": "text",
+    "tags": ["declare_business_gst_details_business_loan"]
+  },
+  "novemberLabel": "नवंबर",
+
+  "@decemberLabel": {
+    "description": "Label for December month",
+    "type": "text",
+    "tags": ["declare_business_gst_details_business_loan"]
+  },
+  "decemberLabel": "दिसंबर",
+
+  "@januarySalesLabel": {
+    "description": "Label for January sales input field",
+    "type": "text",
+    "tags": ["declare_business_gst_details_business_loan"]
+  },
+  "januarySalesLabel": "बिक्री (जनवरी)",
+
+  "@februarySalesLabel": {
+    "description": "Label for February sales input field",
+    "type": "text",
+    "tags": ["declare_business_gst_details_business_loan"]
+  },
+  "februarySalesLabel": "बिक्री (फरवरी)",
+
+  "@marchSalesLabel": {
+    "description": "Label for March sales input field",
+    "type": "text",
+    "tags": ["declare_business_gst_details_business_loan"]
+  },
+  "marchSalesLabel": "बिक्री (मार्च)",
+
+  "@aprilSalesLabel": {
+    "description": "Label for April sales input field",
+    "type": "text",
+    "tags": ["declare_business_gst_details_business_loan"]
+  },
+  "aprilSalesLabel": "बिक्री (अप्रैल)",
+
+  "@maySalesLabel": {
+    "description": "Label for May sales input field",
+    "type": "text",
+    "tags": ["declare_business_gst_details_business_loan"]
+  },
+  "maySalesLabel": "बिक्री (मई)",
+
+  "@juneSalesLabel": {
+    "description": "Label for June sales input field",
+    "type": "text",
+    "tags": ["declare_business_gst_details_business_loan"]
+  },
+  "juneSalesLabel": "बिक्री (जून)",
+
+  "@julySalesLabel": {
+    "description": "Label for July sales input field",
+    "type": "text",
+    "tags": ["declare_business_gst_details_business_loan"]
+  },
+  "julySalesLabel": "बिक्री (जुलाई)",
+
+  "@augustSalesLabel": {
+    "description": "Label for August sales input field",
+    "type": "text",
+    "tags": ["declare_business_gst_details_business_loan"]
+  },
+  "augustSalesLabel": "बिक्री (अगस्त)",
+
+  "@septemberSalesLabel": {
+    "description": "Label for September sales input field",
+    "type": "text",
+    "tags": ["declare_business_gst_details_business_loan"]
+  },
+  "septemberSalesLabel": "बिक्री (सितंबर)",
+
+  "@octoberSalesLabel": {
+    "description": "Label for October sales input field",
+    "type": "text",
+    "tags": ["declare_business_gst_details_business_loan"]
+  },
+  "octoberSalesLabel": "बिक्री (अक्टूबर)",
+
+  "@novemberSalesLabel": {
+    "description": "Label for November sales input field",
+    "type": "text",
+    "tags": ["declare_business_gst_details_business_loan"]
+  },
+  "novemberSalesLabel": "बिक्री (नवंबर)",
+
+  "@decemberSalesLabel": {
+    "description": "Label for December sales input field",
+    "type": "text",
+    "tags": ["declare_business_gst_details_business_loan"]
+  },
+  "decemberSalesLabel": "बिक्री (दिसंबर)",
+
+  "@nextButtonLabel": {
+    "description": "Label for the next button",
+    "type": "text",
+    "tags": ["declare_business_gst_details_business_loan"]
+  },
+  "nextButtonLabel": "आगे बढ़ें",
+
+  "@gobackButtonLabel": {
+    "description": "Label for the go back button",
+    "type": "text",
+    "tags": ["declare_business_gst_details_business_loan"]
+  },
+  "gobackButtonLabel": "वापस जाएं",
+
+
+
+
+
+
+
+
+
+
+
+
+  "bank_details_title": "बैंक विवरण",
+  "@bank_details_title": {
+    "description": "Title for the bank details page",
+    "tags": ["bank_details_business_loan"]
+  },
+  "bank_details_subtitle": "आप 3 बैंक खाते जोड़ सकते हैं",
+  "@bank_details_subtitle": {
+    "description": "Subtitle indicating the number of bank accounts allowed",
+    "tags": ["bank_details_business_loan"]
+  },
+  "upload_bank_statement": "बैंक स्टेटमेंट अपलोड करें (PDF)",
+  "@upload_bank_statement": {
+    "description": "Label for uploading bank statements in PDF format",
+    "tags": ["bank_details_business_loan"]
+  },
+  "bank_account_button": "बैंक",
+  "@bank_account_button": {
+    "description": "Button text for bank accounts",
+    "tags": ["bank_details_business_loan"]
+  },
+  "add_account_button": "खाता जोड़ें",
+  "@add_account_button": {
+    "description": "Button text for adding a new bank account",
+    "tags": ["bank_details_business_loan"]
+  },
+  "bank_name_label": "बैंक का नाम*",
+  "@bank_name_label": {
+    "description": "Label for the bank name input field",
+    "tags": ["bank_details_business_loan"]
+  },
+  "bank_name_hint": "बैंक का नाम दर्ज करें",
+  "@bank_name_hint": {
+    "description": "Hint text for the bank name input field",
+    "tags": ["bank_details_business_loan"]
+  },
+  "account_since_month_label": "खाता तब से (माह)*",
+  "@account_since_month_label": {
+    "description": "Label for the account since month input",
+    "tags": ["bank_details_business_loan"]
+  },
+  "account_since_year_label": "खाता तब से (वर्ष)*",
+  "@account_since_year_label": {
+    "description": "Label for the account since year input",
+    "tags": ["bank_details_business_loan"]
+  },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  "declare_business_stakeholders": "व्यवसाय हितधारकों की घोषणा करें",
+  "@declare_business_stakeholders": {
+    "description": "Title for the page where the user declares business stakeholders",
+    "tags": ["stakeholder_business_loan"],
+    "type": "text"
+  },
+  "business_details": "व्यवसाय विवरण",
+  "@business_details": {
+    "description": "Section heading for business details",
+    "tags": ["stakeholder_business_loan", "business_detail_loan_form_business_loan"],
+    "type": "text"
+  },
+  "address_line_1": "पता पंक्ति 1*",
+  "@address_line_1": {
+    "description": "Label for the first address line input field",
+    "tags": ["stakeholder_business_loan"],
+    "type": "text"
+  },
+  "address_line_2": "पता पंक्ति 2",
+  "@address_line_2": {
+    "description": "Label for the second address line input field",
+    "tags": ["stakeholder_business_loan"],
+    "type": "text"
+  },
+
+
+
+
+
+
+
+  "add_stakeholder": "शेयरधारक जोड़ें",
+  "@add_stakeholder": {
+    "description": "Button label for adding a new stakeholder",
+    "tags": ["add_stakeholder_business_loan"],
+    "type": "text"
+  },
+  "select_stakeholder": "शेयरधारक चुनें",
+  "@select_stakeholder": {
+    "description": "Dropdown label for selecting a stakeholder",
+    "tags": ["add_stakeholder_business_loan"],
+    "type": "text"
+  },
+  "relationship_type": "रिश्ते का प्रकार",
+  "@relationship_type": {
+    "description": "Label for the relationship type field",
+    "tags": ["add_stakeholder_business_loan"],
+    "type": "text"
+  },
+  "relationship_type_hint": "रिश्ते का प्रकार दर्ज करें",
+  "@relationship_type_hint": {
+    "description": "Hint text for the relationship type field",
+    "tags": ["add_stakeholder_business_loan"],
+    "type": "text"
+  },
+  "first_name": "पहला नाम",
+  "@first_name": {
+    "description": "Label for the first name field",
+    "tags": ["add_stakeholder_business_loan"],
+    "type": "text"
+  },
+  "middle_name": "मध्य नाम",
+  "@middle_name": {
+    "description": "Label for the middle name field",
+    "tags": ["add_stakeholder_business_loan"],
+    "type": "text"
+  },
+  "last_name": "अंतिम नाम",
+  "@last_name": {
+    "description": "Label for the last name field",
+    "tags": ["add_stakeholder_business_loan"],
+    "type": "text"
+  },
+  "ownership_percentage": "स्वामित्व %",
+  "@ownership_percentage": {
+    "description": "Label for the ownership percentage field",
+    "tags": ["add_stakeholder_business_loan"],
+    "type": "text"
+  },
+  "ownership_percentage_hint": "स्वामित्व % दर्ज करें",
+  "@ownership_percentage_hint": {
+    "description": "Hint text for the ownership percentage field",
+    "tags": ["add_stakeholder_business_loan"],
+    "type": "text"
+  },
+  "father_name": "पिता का नाम",
+  "@father_name": {
+    "description": "Label for the father name field",
+    "tags": ["add_stakeholder_business_loan"],
+    "type": "text"
+  },
+  "dob": "जन्म तिथि",
+  "@dob": {
+    "description": "Label for the date of birth field",
+    "tags": ["add_stakeholder_business_loan"],
+    "type": "text"
+  },
+  "mobile_number": "मोबाइल नंबर",
+  "@mobile_number": {
+    "description": "Label for the mobile number field",
+    "tags": ["add_stakeholder_business_loan"],
+    "type": "text"
+  },
+  "residence_status": "आवासीय स्थिति",
+  "@residence_status": {
+    "description": "Label for the residence status field",
+    "tags": ["add_stakeholder_business_loan"],
+    "type": "text"
+  },
+  "residence_status_hint": "आवासीय स्थिति दर्ज करें",
+  "@residence_status_hint": {
+    "description": "Hint text for the residence status field",
+    "tags": ["add_stakeholder_business_loan"],
+    "type": "text"
+  },
+  "pan": "पैन दर्ज करें",
+  "@pan": {
+    "description": "Label for the PAN field",
+    "tags": ["add_stakeholder_business_loan"],
+    "type": "text"
+  },
+  "education_status": "शिक्षा की स्थिति",
+  "@education_status": {
+    "description": "Label for the education status field",
+    "tags": ["add_stakeholder_business_loan"],
+    "type": "text"
+  },
+  "education_status_hint": "शिक्षा की स्थिति दर्ज करें",
+  "@education_status_hint": {
+    "description": "Hint text for the education status field",
+    "tags": ["add_stakeholder_business_loan"],
+    "type": "text"
+  },
+  "total_experience": "कुल अनुभव (वर्ष)",
+  "@total_experience": {
+    "description": "Label for the total experience field",
+    "tags": ["add_stakeholder_business_loan"],
+    "type": "text"
+  },
+  "total_experience_hint": "कुल अनुभव दर्ज करें",
+  "@total_experience_hint": {
+    "description": "Hint text for the total experience field",
+    "tags": ["add_stakeholder_business_loan"],
+    "type": "text"
+  },
+  "net_worth": "नेट वर्थ (INR)",
+  "@net_worth": {
+    "description": "Label for the net worth field",
+    "tags": ["add_stakeholder_business_loan"],
+    "type": "text"
+  },
+  "net_worth_hint": "नेट वर्थ दर्ज करें",
+  "@net_worth_hint": {
+    "description": "Hint text for the net worth field",
+    "tags": ["add_stakeholder_business_loan"],
+    "type": "text"
+  },
+  "address_line_one": "पता पंक्ति एक*",
+  "@address_line_one": {
+    "description": "Label for the first line of address",
+    "tags": ["add_stakeholder_business_loan"],
+    "type": "text"
+  },
+  "address_line_two": "पता पंक्ति दो",
+  "@address_line_two": {
+    "description": "Label for the second line of address",
+    "tags": ["add_stakeholder_business_loan"],
+    "type": "text"
+  },
+  "phone": "फोन",
+  "@phone": {
+    "description": "Label for the phone field",
+    "tags": ["add_stakeholder_business_loan"],
+    "type": "text"
+  },
+
+
+  "@phone_hint": {
+    "description": "फोन इनपुट के लिए हिन्ट टेक्स्ट",
+    "type": "text"
+  },
+  "phone_hint": "फोन दर्ज करें",
+
+"visually_impaired": "दृश्य रूप से विकलांग",
+  "@visually_impaired": {
+    "description": "Label for the visually impaired field",
+    "tags": ["add_stakeholder_business_loan"],
+    "type": "text"
+  },
+  "visually_impaired_hint": "स्तर दर्ज करें",
+  "@visually_impaired_hint": {
+    "description": "Hint text for the visually impaired field",
+    "tags": ["add_stakeholder_business_loan"],
+    "type": "text"
+  },
+  "is_guarantor": "क्या यह गारंटर है?",
+  "@is_guarantor": {
+    "description": "Label for the guarantor status",
+    "tags": ["add_stakeholder_business_loan"],
+    "type": "text"
+  },
+  "save": "सहेजें",
+  "@save": {
+    "description": "Button label for saving stakeholder details",
+    "tags": ["add_stakeholder_business_loan"],
+    "type": "text"
+  },
+  "delete": "हटाएँ",
+  "@delete": {
+    "description": "Button label for deleting stakeholder",
+    "tags": ["add_stakeholder_business_loan"],
+    "type": "text"
+  },
+  "discard": "छोड़ें",
+  "@discard": {
+    "description": "Button label for discarding stakeholder changes",
+    "tags": ["add_stakeholder_business_loan"],
+    "type": "text"
+  },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  "main_partner": "मुख्य भागीदार",
+  "@main_partner": {
+    "description": "Title for the Main Partner page",
+    "tags": ["main_partner_business_loan"],
+    "type": "text"
+  },
+  "select_main_partner": "मुख्य भागीदार का चयन करें",
+  "@select_main_partner": {
+    "description": "Button label for selecting the main partner",
+    "tags": ["main_partner_business_loan"],
+    "type": "text"
+  },
+  "owning_a_house": "क्या आप घर के मालिक हैं?",
+  "@owning_a_house": {
+    "description": "Label for the owning a house question",
+    "tags": ["main_partner_business_loan"],
+    "type": "text"
+  },
+  "assessed_for_income_tax": "क्या आयकर के लिए आंका गया?",
+  "@assessed_for_income_tax": {
+    "description": "Label for the income tax assessment question",
+    "tags": ["main_partner_business_loan"],
+    "type": "text"
+  },
+  "have_life_insurance": "क्या आपके पास जीवन बीमा है?",
+  "@have_life_insurance": {
+    "description": "Label for the life insurance question",
+    "tags": ["main_partner_business_loan"],
+    "type": "text"
+  },
+  "marital_status": "वैवाहिक स्थिति",
+  "@marital_status": {
+    "description": "Label for the marital status field",
+    "tags": ["main_partner_business_loan"],
+    "type": "text"
+  },
+  "marital_status_hint": "वैवाहिक स्थिति दर्ज करें",
+  "@marital_status_hint": {
+    "description": "Hint text for the marital status field",
+    "tags": ["main_partner_business_loan"],
+    "type": "text"
+  },
+  "spouse_name": "पत्नी का नाम",
+  "@spouse_name": {
+    "description": "Label for the spouse name field",
+    "tags": ["main_partner_business_loan"],
+    "type": "text"
+  },
+  "spouse_name_hint": "पत्नी का नाम दर्ज करें",
+  "@spouse_name_hint": {
+    "description": "Hint text for the spouse name field",
+    "tags": ["main_partner_business_loan"],
+    "type": "text"
+  },
+  "no_of_children": "बच्चों की संख्या",
+  "@no_of_children": {
+    "description": "Label for the number of children field",
+    "tags": ["main_partner_business_loan"],
+    "type": "text"
+  },
+  "no_of_children_hint": "बच्चों की संख्या दर्ज करें",
+  "@no_of_children_hint": {
+    "description": "Hint text for the number of children field",
+    "tags": ["main_partner_business_loan"],
+    "type": "text"
+  },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  "loan_form": "लोन फॉर्म",
+  "@loan_form": {
+    "description": "Title for the Loan Form page",
+    "tags": ["loan_form_business_loan"],
+    "type": "text"
+  },
+  "total_loan": "कुल लोन",
+  "@total_loan": {
+    "description": "Label for the total loan section",
+    "tags": ["loan_form_business_loan"],
+    "type": "text"
+  },
+  "note": "नोट",
+  "@note": {
+    "description": "Label for the note section",
+    "tags": ["loan_form_business_loan"],
+    "type": "text"
+  },
+  "note_description": " : बैंकर को अपने बैंक में मौजूदा सुविधाओं/सीमाओं को स्थानांतरित करने या समान चार्ज मांगने का विकल्प होगा।",
+  "@note_description": {
+    "description": "Description of the note regarding loan details",
+    "tags": ["loan_form_business_loan"],
+    "type": "text"
+  },
+  "existing_loans": "मौजूदा ऋण",
+  "@existing_loans": {
+    "description": "Label for the existing loans field",
+    "tags": ["loan_form_business_loan", "existing_loans_loan_form_business_loan"],
+    "type": "text"
+  },
+  "additional_loan_required": "अतिरिक्त ऋण आवश्यक",
+  "@additional_loan_required": {
+    "description": "Label for the additional loan required field",
+    "tags": ["loan_form_business_loan"],
+    "type": "text"
+  },
+  "total_loan_label": "कुल ऋण",
+  "@total_loan_label": {
+    "description": "Label for the total loan field",
+    "tags": ["loan_form_business_loan"],
+    "type": "text"
+  },
+  "submit": "जमा करें",
+  "@submit": {
+    "description": "Label for the submit button",
+    "tags": ["loan_form_business_loan"],
+    "type": "text"
+  },
+
+
+
+
+
+
+
+
+
+
+
+
+
+  "industry": "उद्योग*",
+  "@industry": {
+    "description": "Label for the industry input field",
+    "tags": ["business_detail_loan_form_business_loan"],
+    "type": "text"
+  },
+  "industry_hint": "उद्योग दर्ज करें",
+  "@industry_hint": {
+    "description": "Hint text for the industry input field",
+    "tags": ["business_detail_loan_form_business_loan"],
+    "type": "text"
+  },
+  "sector_name": "क्षेत्र का नाम*",
+  "@sector_name": {
+    "description": "Label for the sector name input field",
+    "tags": ["business_detail_loan_form_business_loan"],
+    "type": "text"
+  },
+  "sector_name_hint": "क्षेत्र का नाम दर्ज करें",
+  "@sector_name_hint": {
+    "description": "Hint text for the sector name input field",
+    "tags": ["business_detail_loan_form_business_loan"],
+    "type": "text"
+  },
+  "sub_sector_name": "उप क्षेत्र का नाम*",
+  "@sub_sector_name": {
+    "description": "Label for the sub sector name input field",
+    "tags": ["business_detail_loan_form_business_loan"],
+    "type": "text"
+  },
+  "sub_sector_name_hint": "उप क्षेत्र का नाम दर्ज करें",
+  "@sub_sector_name_hint": {
+    "description": "Hint text for the sub sector name input field",
+    "tags": ["business_detail_loan_form_business_loan"],
+    "type": "text"
+  },
+  "msme_registration_number": "MSME पंजीकरण संख्या*",
+  "@msme_registration_number": {
+    "description": "Label for the MSME registration number input field",
+    "tags": ["business_detail_loan_form_business_loan"],
+    "type": "text"
+  },
+  "msme_registration_number_hint": "MSME पंजीकरण संख्या दर्ज करें",
+  "@msme_registration_number_hint": {
+    "description": "Hint text for the MSME registration number input field",
+    "tags": ["business_detail_loan_form_business_loan"],
+    "type": "text"
+  },
+  "udyog_aadhar_memorandum_no": "उद्योग आधार ज्ञापन संख्या",
+  "@udyog_aadhar_memorandum_no": {
+    "description": "Label for the Udyog Aadhar Memorandum No. input field",
+    "tags": ["business_detail_loan_form_business_loan"],
+    "type": "text"
+  },
+  "udyog_aadhar_memorandum_no_hint": "उद्योग आधार ज्ञापन संख्या दर्ज करें",
+  "@udyog_aadhar_memorandum_no_hint": {
+    "description": "Hint text for the Udyog Aadhar Memorandum No. input field",
+    "tags": ["business_detail_loan_form_business_loan"],
+    "type": "text"
+  },
+  "product_service_description": "उत्पाद/सेवा विवरण*",
+  "@product_service_description": {
+    "description": "Label for the product/service description input field",
+    "tags": ["business_detail_loan_form_business_loan"],
+    "type": "text"
+  },
+  "product_service_description_hint": "उत्पाद/सेवा विवरण दर्ज करें",
+  "@product_service_description_hint": {
+    "description": "Hint text for the product/service description input field",
+    "tags": ["business_detail_loan_form_business_loan"],
+    "type": "text"
+  },
+
+
+
+
+
+
+
+
+
+
+
+
+
+  "declare_collateral_security": "गिरवी सुरक्षा की घोषणा करें",
+  "@declare_collateral_security": {
+    "description": "गिरवी सुरक्षा की घोषणा अनुभाग का शीर्षक",
+    "tags": ["declare_collateral_loan_form_business_loan"],
+    "type": "text"
+  },
+  "collateral_type": "गिरवी प्रकार",
+  "@collateral_type": {
+    "description": "गिरवी प्रकार इनपुट फ़ील्ड के लिए लेबल",
+    "tags": ["declare_collateral_loan_form_business_loan"],
+    "type": "text"
+  },
+  "collateral_type_hint": "गिरवी प्रकार दर्ज करें",
+  "@collateral_type_hint": {
+    "description": "गिरवी प्रकार इनपुट फ़ील्ड के लिए संकेत पाठ",
+    "tags": ["declare_collateral_loan_form_business_loan"],
+    "type": "text"
+  },
+  "collateral_amount": "गिरवी राशि (₹)",
+  "@collateral_amount": {
+    "description": "गिरवी राशि इनपुट फ़ील्ड के लिए लेबल",
+    "tags": ["declare_collateral_loan_form_business_loan", "existing_loans_loan_form_business_loan"],
+    "type": "text"
+  },
+  "collateral_amount_hint": "गिरवी राशि दर्ज करें",
+  "@collateral_amount_hint": {
+    "description": "गिरवी राशि इनपुट फ़ील्ड के लिए संकेत पाठ",
+    "tags": ["declare_collateral_loan_form_business_loan", "existing_loans_loan_form_business_loan"],
+    "type": "text"
+  },
+  "add_collateral": "गिरवी जोड़ें",
+  "@add_collateral": {
+    "description": "नए गिरवी जोड़ने के लिए बटन का लेबल",
+    "tags": ["declare_collateral_loan_form_business_loan"],
+    "type": "text"
+  },
+
+
+
+
+
+
+
+
+
+
+
+  "loan_detail": "ऋण विवरण",
+  "@loan_detail": {
+    "description": "Title for the loan details section",
+    "tags": ["loan_detail_loan_form_business_loan"],
+    "type": "text"
+  },
+  "loan_amount_required": "ऋण राशि आवश्यक*",
+  "@loan_amount_required": {
+    "description": "Label for the loan amount required input field",
+    "tags": ["loan_detail_loan_form_business_loan"],
+    "type": "text"
+  },
+  "loan_amount_hint": "ऋण राशि दर्ज करें",
+  "@loan_amount_hint": {
+    "description": "Hint text for the loan amount input field",
+    "tags": ["loan_detail_loan_form_business_loan"],
+    "type": "text"
+  },
+  "promoter_contribution": "प्रवर्तक योगदान*",
+  "@promoter_contribution": {
+    "description": "Label for the promoter contribution input field",
+    "tags": ["loan_detail_loan_form_business_loan"],
+    "type": "text"
+  },
+  "promoter_contribution_hint": "प्रवर्तक योगदान दर्ज करें",
+  "@promoter_contribution_hint": {
+    "description": "Hint text for the promoter contribution input field",
+    "tags": ["loan_detail_loan_form_business_loan"],
+    "type": "text"
+  },
+  "purpose_of_loan": "ऋण का उद्देश्य*",
+  "@purpose_of_loan": {
+    "description": "Label for the purpose of loan input field",
+    "tags": ["loan_detail_loan_form_business_loan"],
+    "type": "text"
+  },
+  "purpose_of_loan_hint": "ऋण का उद्देश्य दर्ज करें",
+  "@purpose_of_loan_hint": {
+    "description": "Hint text for the purpose of loan input field",
+    "tags": ["loan_detail_loan_form_business_loan"],
+    "type": "text"
+  },
+  "projected_sales": "संभावित बिक्री वित्तीय वर्ष",
+  "@projected_sales": {
+    "description": "Label for the projected sales input field",
+    "tags": ["loan_detail_loan_form_business_loan"],
+    "type": "text"
+  },
+  "projected_sales_hint": "संभावित बिक्री दर्ज करें",
+  "@projected_sales_hint": {
+    "description": "Hint text for the projected sales input field",
+    "tags": ["loan_detail_loan_form_business_loan"],
+    "type": "text"
+  },
+  "iso_certified": "क्या आपका व्यवसाय ISO प्रमाणित है?",
+  "@iso_certified": {
+    "description": "Label for the ISO certification switch",
+    "tags": ["loan_detail_loan_form_business_loan"],
+    "type": "text"
+  },
+  "factory_premise": "कारखाना परिसर*",
+  "@factory_premise": {
+    "description": "Label for the factory premise input field",
+    "tags": ["loan_detail_loan_form_business_loan"],
+    "type": "text"
+  },
+  "factory_premise_hint": "कारखाना परिसर दर्ज करें",
+  "@factory_premise_hint": {
+    "description": "Hint text for the factory premise input field",
+    "tags": ["loan_detail_loan_form_business_loan"],
+    "type": "text"
+  },
+  "projected_know_how": "संभावित ज्ञान*",
+  "@projected_know_how": {
+    "description": "Label for the projected know how input field",
+    "tags": ["loan_detail_loan_form_business_loan"],
+    "type": "text"
+  },
+  "projected_know_how_hint": "संभावित ज्ञान दर्ज करें",
+  "@projected_know_how_hint": {
+    "description": "Hint text for the projected know how input field",
+    "tags": ["loan_detail_loan_form_business_loan"],
+    "type": "text"
+  },
+  "competition": "प्रतिस्पर्धा*",
+  "@competition": {
+    "description": "Label for the competition input field",
+    "tags": ["loan_detail_loan_form_business_loan"],
+    "type": "text"
+  },
+  "competition_hint": "प्रतिस्पर्धा दर्ज करें",
+  "@competition_hint": {
+    "description": "Hint text for the competition input field",
+    "tags": ["loan_detail_loan_form_business_loan"],
+    "type": "text"
+  },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  "name_of_lender": "ऋणदाता का नाम*",
+  "@name_of_lender": {
+    "description": "Label for the name of lender input field",
+    "tags": ["existing_loans_loan_form_business_loan"],
+    "type": "text"
+  },
+  "name_of_lender_hint": "ऋणदाता का नाम दर्ज करें",
+  "@name_of_lender_hint": {
+    "description": "Hint text for the name of lender input field",
+    "tags": ["existing_loans_loan_form_business_loan"],
+    "type": "text"
+  },
+  "sanctioned_amount": "अनुमोदित राशि (₹)*",
+  "@sanctioned_amount": {
+    "description": "Label for the sanctioned amount input field",
+    "tags": ["existing_loans_loan_form_business_loan"],
+    "type": "text"
+  },
+  "sanctioned_amount_hint": "अनुमोदित राशि दर्ज करें",
+  "@sanctioned_amount_hint": {
+    "description": "Hint text for the sanctioned amount input field",
+    "tags": ["existing_loans_loan_form_business_loan"],
+    "type": "text"
+  },
+  "outstanding_amount": "बकाया राशि (₹)*",
+  "@outstanding_amount": {
+    "description": "Label for the outstanding amount input field",
+    "tags": ["existing_loans_loan_form_business_loan"],
+    "type": "text"
+  },
+  "outstanding_amount_hint": "बकाया राशि दर्ज करें",
+  "@outstanding_amount_hint": {
+    "description": "Hint text for the outstanding amount input field",
+    "tags": ["existing_loans_loan_form_business_loan"],
+    "type": "text"
+  },
+  "emi_amount": "ईएमआई राशि (₹)*",
+  "@emi_amount": {
+    "description": "Label for the EMI amount input field",
+    "tags": ["existing_loans_loan_form_business_loan"],
+    "type": "text"
+  },
+  "emi_amount_hint": "ईएमआई राशि दर्ज करें",
+  "@emi_amount_hint": {
+    "description": "Hint text for the EMI amount input field",
+    "tags": ["existing_loans_loan_form_business_loan"],
+    "type": "text"
+  },
+  "loan_type": "ऋण प्रकार*",
+  "@loan_type": {
+    "description": "Label for the loan type input field",
+    "tags": ["existing_loans_loan_form_business_loan"],
+    "type": "text"
+  },
+  "loan_type_hint": "ऋण प्रकार दर्ज करें",
+  "@loan_type_hint": {
+    "description": "Hint text for the loan type input field",
+    "tags": ["existing_loans_loan_form_business_loan"],
+    "type": "text"
+  },
+
+  "status": "स्थिति*",
+  "@status": {
+    "description": "Label for the status input field",
+    "tags": ["existing_loans_loan_form_business_loan"],
+    "type": "text"
+  },
+  "status_hint": "स्थिति दर्ज करें",
+  "@status_hint": {
+    "description": "Hint text for the status input field",
+    "tags": ["existing_loans_loan_form_business_loan"],
+    "type": "text"
+  },
+  "add_existing_loan": "मौजूदा ऋण जोड़ें",
+  "@add_existing_loan": {
+    "description": "Button text to add an existing loan",
+    "tags": ["existing_loans_loan_form_business_loan"],
+    "type": "text"
   }
 }
+
+
+
+
+
