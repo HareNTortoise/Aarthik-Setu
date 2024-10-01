@@ -2641,5 +2641,67 @@
     "description": "Hint text for the number of children field",
     "tags": ["main_partner_business_loan"],
     "type": "text"
+  },
+
+
+
+
+
+
+
+
+
+
+
+
+
+  "loan_form": "లొన్ ఫారం",
+  "@loan_form": {
+    "description": "Title for the Loan Form page",
+    "tags": ["loan_form_business_loan"],
+    "type": "text"
+  },
+  "total_loan": "మొత్తం రుణం",
+  "@total_loan": {
+    "description": "Label for the total loan section",
+    "tags": ["loan_form_business_loan"],
+    "type": "text"
+  },
+  "note": "గమనిక",
+  "@note": {
+    "description": "Label for the note section",
+    "tags": ["loan_form_business_loan"],
+    "type": "text"
+  },
+  "note_description": " : బ్యాంకర్ వారికి అవసరమైతే వారి బ్యాంకుకు ఉన్న రుణాలను మార్పిడి చేసుకోవచ్చు లేదా సමාన ఛార్జీలను కోరవచ్చు.",
+  "@note_description": {
+    "description": "Description of the note regarding loan details",
+    "tags": ["loan_form_business_loan"],
+    "type": "text"
+  },
+  "existing_loans": "ఉన్న రుణాలు",
+  "@existing_loans": {
+    "description": "Label for the existing loans field",
+    "tags": ["loan_form_business_loan"],
+    "type": "text"
+  },
+  "additional_loan_required": "అదనపు రుణం అవసరం",
+  "@additional_loan_required": {
+    "description": "Label for the additional loan required field",
+    "tags": ["loan_form_business_loan"],
+    "type": "text"
+  },
+  "total_loan_label": "మొత్తం రుణం",
+  "@total_loan_label": {
+    "description": "Label for the total loan field",
+    "tags": ["loan_form_business_loan"],
+    "type": "text"
+  },
+  "submit": "సమర్పించండి",
+  "@submit": {
+    "description": "Label for the submit button",
+    "tags": ["loan_form_business_loan"],
+    "type": "text"
   }
 }
+
