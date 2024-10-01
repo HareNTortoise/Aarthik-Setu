@@ -1112,7 +1112,7 @@
     "description": "Text for dragging and dropping a file.",
     "type": "text",
     "tags": [
-      "bank_details_personal_loan"
+      "bank_details_personal_loan", "bank_details_business_loan"
     ]
   },
   "@gender": {
@@ -2260,8 +2260,67 @@
     "type": "text",
     "tags": ["declare_business_gst_details_business_loan"]
   },
-  "gobackButtonLabel": "తిరిగి వెళ్ళండి"
+  "gobackButtonLabel": "తిరిగి వెళ్ళండి",
+
+
+
+
+
+
+
+
+
+
+
+
+
+  "bank_details_title": "బ్యాంక్ వివరాలు",
+  "@bank_details_title": {
+    "description": "Title for the bank details page",
+    "tags": ["bank_details_business_loan"]
+  },
+  "bank_details_subtitle": "మీరు 3 బ్యాంక్ ఖాతాలను జోడించవచ్చు",
+  "@bank_details_subtitle": {
+    "description": "Subtitle indicating the number of bank accounts allowed",
+    "tags": ["bank_details_business_loan"]
+  },
+  "upload_bank_statement": "బ్యాంక్ స్టేట్‌మెంట్‌ను అప్‌లోడ్ చేయండి (PDF)",
+  "@upload_bank_statement": {
+    "description": "Label for uploading bank statements in PDF format",
+    "tags": ["bank_details_business_loan"]
+  },
+  "bank_account_button": "బ్యాంక్",
+  "@bank_account_button": {
+    "description": "Button text for bank accounts",
+    "tags": ["bank_details_business_loan"]
+  },
+  "add_account_button": "ఖాతా జోడించండి",
+  "@add_account_button": {
+    "description": "Button text for adding a new bank account",
+    "tags": ["bank_details_business_loan"]
+  },
+  "bank_name_label": "బ్యాంక్ పేరు*",
+  "@bank_name_label": {
+    "description": "Label for the bank name input field",
+    "tags": ["bank_details_business_loan"]
+  },
+  "bank_name_hint": "బ్యాంక్ పేరు ఇవ్వండి",
+  "@bank_name_hint": {
+    "description": "Hint text for the bank name input field",
+    "tags": ["bank_details_business_loan"]
+  },
+  "account_since_month_label": "ఖాతా ప్రారంభించిన నెల (నెల)*",
+  "@account_since_month_label": {
+    "description": "Label for the account since month input",
+    "tags": ["bank_details_business_loan"]
+  },
+  "account_since_year_label": "ఖాతా ప్రారంభించిన సంవత్సరం (సంవత్సరం)*",
+  "@account_since_year_label": {
+    "description": "Label for the account since year input",
+    "tags": ["bank_details_business_loan"]
+  }
 }
+
 
 
 

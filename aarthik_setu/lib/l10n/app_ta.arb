@@ -975,7 +975,7 @@
   "@drag_file_here": {
     "description": "Text for dragging and dropping a file.",
     "type": "text",
-    "tags": ["bank_details_personal_loan"]
+    "tags": ["bank_details_personal_loan", "bank_details_business_loan"]
   },
 
 
@@ -2194,8 +2194,73 @@
     "type": "text",
     "tags": ["declare_business_gst_details_business_loan"]
   },
-  "gobackButtonLabel": "மீண்டும் செல்க"
+  "gobackButtonLabel": "மீண்டும் செல்க",
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  "bank_details_title": "வங்கி விவரங்கள்",
+  "@bank_details_title": {
+    "description": "Title for the bank details page",
+    "tags": ["bank_details_business_loan"]
+  },
+  "bank_details_subtitle": "நீங்கள் 3 வங்கி கணக்குகளை சேர்க்கலாம்",
+  "@bank_details_subtitle": {
+    "description": "Subtitle indicating the number of bank accounts allowed",
+    "tags": ["bank_details_business_loan"]
+  },
+  "upload_bank_statement": "வங்கி அறிக்கையை பதிவேற்றுக (PDF)",
+  "@upload_bank_statement": {
+    "description": "Label for uploading bank statements in PDF format",
+    "tags": ["bank_details_business_loan"]
+  },
+  "bank_account_button": "வங்கி",
+  "@bank_account_button": {
+    "description": "Button text for bank accounts",
+    "tags": ["bank_details_business_loan"]
+  },
+  "add_account_button": "கணக்கைச் சேர்க்கவும்",
+  "@add_account_button": {
+    "description": "Button text for adding a new bank account",
+    "tags": ["bank_details_business_loan"]
+  },
+  "bank_name_label": "வங்கி பெயர்*",
+  "@bank_name_label": {
+    "description": "Label for the bank name input field",
+    "tags": ["bank_details_business_loan"]
+  },
+  "bank_name_hint": "வங்கி பெயரை உள்ளிடவும்",
+  "@bank_name_hint": {
+    "description": "Hint text for the bank name input field",
+    "tags": ["bank_details_business_loan"]
+  },
+  "account_since_month_label": "கணக்கு இருந்தது முதல் (மாதம்)*",
+  "@account_since_month_label": {
+    "description": "Label for the account since month input",
+    "tags": ["bank_details_business_loan"]
+  },
+  "account_since_year_label": "கணக்கு இருந்தது முதல் (வருடம்)*",
+  "@account_since_year_label": {
+    "description": "Label for the account since year input",
+    "tags": ["bank_details_business_loan"]
+  }
 }
+
 
 
 

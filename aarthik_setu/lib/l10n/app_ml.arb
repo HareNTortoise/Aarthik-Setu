@@ -985,7 +985,7 @@
   "@drag_file_here": {
     "description": "Text for dragging and dropping a file.",
     "type": "text",
-    "tags": ["bank_details_personal_loan"]
+    "tags": ["bank_details_personal_loan", "bank_details_business_loan"]
   },
 
 
@@ -2231,6 +2231,61 @@
     "type": "text",
     "tags": ["declare_business_gst_details_business_loan"]
   },
-  "gobackButtonLabel": "തിരിച്ചു പോവ്"
+  "gobackButtonLabel": "തിരിച്ചു പോവ്",
+
+
+
+
+
+
+
+
+
+  "bank_details_title": "ബാങ്ക് വിശദാംശങ്ങൾ",
+  "@bank_details_title": {
+    "description": "Title for the bank details page",
+    "tags": ["bank_details_business_loan"]
+  },
+  "bank_details_subtitle": "നിങ്ങൾക്ക് 3 ബാങ്ക് അക്കൗണ്ടുകൾ വരെ ചേർക്കാൻ കഴിയും",
+  "@bank_details_subtitle": {
+    "description": "Subtitle indicating the number of bank accounts allowed",
+    "tags": ["bank_details_business_loan"]
+  },
+  "upload_bank_statement": "ബാങ്ക് സ്റ്റേറ്റ്മെന്റ് അപ്‌ലോഡ് ചെയ്യുക (PDF)",
+  "@upload_bank_statement": {
+    "description": "Label for uploading bank statements in PDF format",
+    "tags": ["bank_details_business_loan"]
+  },
+  "bank_account_button": "ബാങ്ക്",
+  "@bank_account_button": {
+    "description": "Button text for bank accounts",
+    "tags": ["bank_details_business_loan"]
+  },
+  "add_account_button": "അക്കൗണ്ട് ചേർക്കുക",
+  "@add_account_button": {
+    "description": "Button text for adding a new bank account",
+    "tags": ["bank_details_business_loan"]
+  },
+  "bank_name_label": "ബാങ്ക് പേര്*",
+  "@bank_name_label": {
+    "description": "Label for the bank name input field",
+    "tags": ["bank_details_business_loan"]
+  },
+  "bank_name_hint": "ബാങ്ക് പേര് നൽകുക",
+  "@bank_name_hint": {
+    "description": "Hint text for the bank name input field",
+    "tags": ["bank_details_business_loan"]
+  },
+  "account_since_month_label": "അക്കൗണ്ട് ആരംഭിച്ച കാലം (മാസം)*",
+  "@account_since_month_label": {
+    "description": "Label for the account since month input",
+    "tags": ["bank_details_business_loan"]
+  },
+  "account_since_year_label": "അക്കൗണ്ട് ആരംഭിച്ച കാലം (വർഷം)*",
+  "@account_since_year_label": {
+    "description": "Label for the account since year input",
+    "tags": ["bank_details_business_loan"]
+  }
 }
+
 
