@@ -2,34 +2,75 @@ package firebase
 
 import (
 	"context"
-	"log"
-	"cloud.google.com/go/firestore"
-	"google.golang.org/api/option"
-	"cloud.google.com/go/storage"
 	"crypto/rand"
 	"encoding/hex"
 	"fmt"
+	"log"
+	"os"
 
+	"cloud.google.com/go/firestore"
+	"cloud.google.com/go/storage"
+	"github.com/joho/godotenv"
+	"google.golang.org/api/option"
 )
+
+func createFirebaseCredentialsFromEnv() string {
+	return `{
+		"type": "service_account",
+		"project_id": "` + os.Getenv("FIREBASE_PROJECT_ID") + `",
+		"private_key_id": "` + os.Getenv("FIREBASE_PRIVATE_KEY_ID") + `",
+		"private_key": "` + os.Getenv("FIREBASE_PRIVATE_KEY") + `",
+		"client_email": "` + os.Getenv("FIREBASE_CLIENT_EMAIL") + `",
+		"client_id": "` + os.Getenv("FIREBASE_CLIENT_ID") + `",
+		"auth_uri": "` + os.Getenv("FIREBASE_AUTH_URI") + `",
+		"token_uri": "` + os.Getenv("FIREBASE_TOKEN_URI") + `",
+		"auth_provider_x509_cert_url": "` + os.Getenv("FIREBASE_AUTH_PROVIDER_CERT_URL") + `",
+		"client_x509_cert_url": "` + os.Getenv("FIREBASE_CLIENT_CERT_URL") + `",
+		"universe_domain": "googleapis.com"
+	}`
+}
 
 // Initialize Firebase Firestore
 func InitFirestore() *firestore.Client {
+
+	// Load environment variables from .env file
+	err := godotenv.Load(".env")
+	if err != nil {
+		log.Fatalf("Error loading .env file: %v", err)
+	}
+
 	ctx := context.Background()
-	sa := option.WithCredentialsFile("./config/firebase/firebase-service-account.json") // Use your credentials file path
-	client, err := firestore.NewClient(ctx, "aarthik-setu", sa)
+
+	// Create Firebase credentials from environment variables
+	creds := option.WithCredentialsJSON([]byte(createFirebaseCredentialsFromEnv()))
+
+	client, err := firestore.NewClient(ctx, os.Getenv("FIREBASE_PROJECT_ID"), creds)
 	if err != nil {
 		log.Fatalf("Failed to initialize Firestore: %v", err)
+	} else {
+		log.Println("Firestore initialized")
 	}
 	return client
 }
 
 // Initialize Firebase Cloud Storage
 func InitStorage() *storage.Client {
+	// Load environment variables from .env file
+	err := godotenv.Load(".env")
+	if err != nil {
+		log.Fatalf("Error loading .env file: %v", err)
+	}
+
 	ctx := context.Background()
-	sa := option.WithCredentialsFile("./config/firebase/firebase-service-account.json") // Use your credentials file path
-	client, err := storage.NewClient(ctx, sa)
+
+	// Create Firebase credentials from environment variables
+	creds := option.WithCredentialsJSON([]byte(createFirebaseCredentialsFromEnv()))
+
+	client, err := storage.NewClient(ctx, creds)
 	if err != nil {
 		log.Fatalf("Failed to initialize Cloud Storage: %v", err)
+	} else {
+		log.Println("Cloud Storage initialized")
 	}
 	return client
 }
