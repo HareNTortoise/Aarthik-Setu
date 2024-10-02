@@ -6,6 +6,7 @@ import (
 	"net/http"
 	"os"
 	"path/filepath"
+	"strconv"
 
 	"github.com/gin-gonic/gin"
 )
@@ -23,7 +24,6 @@ type Scheme struct {
 func LoadSchemes(filename string) ([]Scheme, error) {
 	log.Printf("Loading schemes from file: %s", filename)
 
-	// Use os.ReadFile instead of ioutil.ReadFile
 	jsonData, err := os.ReadFile(filename)
 	if err != nil {
 		log.Printf("Failed to read file %s: %v", filename, err)
@@ -31,7 +31,6 @@ func LoadSchemes(filename string) ([]Scheme, error) {
 	}
 	log.Printf("Successfully read data from %s", filename)
 
-	// Unmarshal the JSON data into a slice of Scheme
 	var schemes []Scheme
 	err = json.Unmarshal(jsonData, &schemes)
 	if err != nil {
@@ -43,31 +42,25 @@ func LoadSchemes(filename string) ([]Scheme, error) {
 	return schemes, nil
 }
 
-// GetGovtSchemes is the handler for the /schemes endpoint
+// GetGovtSchemes is the handler for the /govt_schemes endpoint
 func GetGovtSchemes(c *gin.Context) {
 	log.Println("Received request to get government schemes")
 
-	// Get the current working directory
 	cwd, err := os.Getwd()
 	if err != nil {
 		log.Fatalf("Failed to get current working directory: %v", err)
 	}
 	log.Printf("Current working directory: %s", cwd)
 
-	// Define the path to the JSON file relative to the current working directory
 	filePath := filepath.Join(cwd, "schemes.json") // Adjust the path as needed
 	log.Printf("Path to JSON file: %s", filePath)
 
-	// Check if the file exists
 	if _, err := os.Stat(filePath); os.IsNotExist(err) {
 		log.Printf("The file does not exist at the specified path: %s", filePath)
 		c.JSON(http.StatusInternalServerError, gin.H{"error": "JSON file not found"})
 		return
-	} else {
-		log.Println("The file exists.")
 	}
 
-	// Load the schemes from the file
 	schemes, err := LoadSchemes(filePath)
 	if err != nil {
 		log.Printf("Error loading schemes: %v", err)
@@ -75,10 +68,42 @@ func GetGovtSchemes(c *gin.Context) {
 		return
 	}
 
-	// Log the count of schemes loaded
-	log.Printf("Successfully loaded %d schemes", len(schemes))
+	// Get limit and offset from query parameters
+	limitStr := c.Query("limit")
+	offsetStr := c.Query("offset")
+
+	limit := 10 // Default limit
+	offset := 0 // Default offset
+
+	// Parse limit
+	if limitStr != "" {
+		if l, err := strconv.Atoi(limitStr); err == nil && l > 0 {
+			limit = l
+		}
+	}
+
+	// Parse offset
+	if offsetStr != "" {
+		if o, err := strconv.Atoi(offsetStr); err == nil && o >= 0 {
+			offset = o
+		}
+	}
+
+	// Apply pagination
+	if offset > len(schemes) {
+		c.JSON(http.StatusOK, []Scheme{}) // Return empty slice if offset is out of range
+		return
+	}
+
+	// Slice the schemes for pagination
+	end := offset + limit
+	if end > len(schemes) {
+		end = len(schemes) // Ensure we don't exceed the slice length
+	}
+
+	paginatedSchemes := schemes[offset:end]
 
 	// Return the schemes in JSON format
-	log.Printf("Returning %d schemes to the client", len(schemes))
-	c.JSON(http.StatusOK, schemes)
+	log.Printf("Returning %d schemes to the client", len(paginatedSchemes))
+	c.JSON(http.StatusOK, paginatedSchemes)
 }
