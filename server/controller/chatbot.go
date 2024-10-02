@@ -26,8 +26,7 @@ func HandleChat(c *gin.Context) {
 		return
 	}
 
-	// Append instruction to message
-	message = message + " Write without markdown." // Ensure proper instruction context
+	message += " Write without markdown."
 
 	// Call the ChatbotResponse function from the model
 	response, err := model.ChatbotResponse(message)
