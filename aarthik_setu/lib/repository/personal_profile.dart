@@ -12,17 +12,17 @@ class PersonalProfileRepository {
 
   final Logger _logger = Logger();
 
-
-  Future<Map<String,dynamic>> createProfile(Map<String,dynamic> profile) async {
+  Future<Map<String, dynamic>> createProfile(PersonalProfile personalProfile) async {
     try {
-      final response = await _client.post('/profile', data: profile);
+      final response = await _client.post('/personal/profile/${personalProfile.userId}',
+          data: FormData.fromMap(personalProfile.toJson()));
       return response.data;
     } catch (e) {
-      _logger.e('Error creating profile: $e');
+      _logger.e('Error creating personal profile: $e');
       return {};
     }
   }
-  
+
   Future<List<PersonalProfile>> getProfile(String userId) async {
     try {
       final response = await _client.get('/personal/profile/$userId');
@@ -37,7 +37,7 @@ class PersonalProfileRepository {
     }
   }
 
-  Future<Map<String,dynamic>> updateProfile(String profileId, Map<String,dynamic> profile) async {
+  Future<Map<String, dynamic>> updateProfile(String profileId, Map<String, dynamic> profile) async {
     try {
       final response = await _client.put('/profile/$profileId', data: profile);
       return response.data;
@@ -47,9 +47,9 @@ class PersonalProfileRepository {
     }
   }
 
-  Future<Map<String,dynamic>> deleteProfile(String profileId) async {
+  Future<Map<String, dynamic>> deleteProfile(String profileId) async {
     try {
-      final response = await _client.delete('/profile/$profileId');
+      final response = await _client.delete('/personal/profile/$profileId');
       return response.data;
     } catch (e) {
       _logger.e('Error deleting profile: $e');
