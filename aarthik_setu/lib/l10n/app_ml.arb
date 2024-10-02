@@ -1,0 +1,3010 @@
+{
+  "appTitle": "ആർത്ഥിക സെതു",
+  "@appTitle": {
+    "description": "The title of the application",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["sign-in"]
+  },
+  "signIn": "സൈൻ ഇൻ",
+  "@signIn": {
+    "description": "Button label for signing in",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["sign-in"]
+  },
+  "googleSignIn": "ഗൂഗിൾ",
+  "@googleSignIn": {
+    "description": "Label for Google Sign-In",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["sign-in"]
+  },
+  "phoneSignIn": "ഫോൺ",
+  "@phoneSignIn": {
+    "description": "Label for Phone Sign-In",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["sign-in"]
+  },
+  "language": "ഭാഷ",
+  "@language": {
+    "description": "Label for language selection",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["sign-in"]
+  },
+  "enterPhoneNumber": "നിങ്ങളുടെ ഫോൺ നമ്പർ ടൈപ്പ് ചെയ്യുക",
+  "@enterPhoneNumber": {
+    "description": "Label for phone number entry",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["sign-in"]
+  },
+  "sendOtp": "OTP അയക്കുക",
+  "@sendOtp": {
+    "description": "Button label for sending OTP",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["sign-in"]
+  },
+  "verifyOtp": "OTP സ്ഥിരീകരിക്കുക",
+  "@verifyOtp": {
+    "description": "Button label for verifying OTP",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["sign-in"]
+  },
+  "resendOtp": "OTP വീണ്ടും അയക്കുക",
+  "@resendOtp": {
+    "description": "Button label for resending OTP",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["sign-in"]
+  },
+  "otpExpireIn": "OTPExpires in {time} സെക്കൻഡുകൾ",
+  "@otpExpireIn": {
+    "description": "Message showing time left to resend OTP",
+    "type": "text",
+    "placeholders": {
+      "time": {
+        "type": "int",
+        "example": "120"
+      }
+    },
+    "tags": ["sign-in"]
+  },
+  "enterValidPhoneNumber": "ദയവായി ഒരു ശരിയായ ഫോൺ നമ്പർ നൽകുക",
+  "@enterValidPhoneNumber": {
+    "description": "Error message when phone number is invalid",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["sign-in"]
+  },
+  "otpReceived": "OTP ലഭിച്ചു",
+  "@otpReceived": {
+    "description": "Message showing received OTP",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["sign-in"]
+  },
+  "enterOtp": "OTP ടൈപ്പ് ചെയ്യുക",
+  "@enterOtp": {
+    "description": "Label for OTP entry",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["sign-in"]
+  },
+  "backButton": "തിരികെ",
+  "@backButton": {
+    "description": "Label for the back button",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["sign-in", "itr_form_manual_personal_loan", "bank_details_personal_loan"]
+  },
+  "phoneNumber": "ഫോൺ നമ്പർ",
+  "@phoneNumber": {
+    "description": "Label for phone number entry",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["sign-in"]
+  },
+  "phoneSignInFormTitle": "ഫോണിലൂടെ സൈൻ ഇൻ ചെയ്യുക",
+  "@phoneSignInFormTitle": {
+    "description": "Title for phone sign-in form",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["sign-in"]
+  },
+
+
+
+
+
+
+
+
+  "dashboard": "ഡാഷ്ബോർഡ്",
+  "@dashboard": {
+    "description": "Title for the dashboard page",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["dashboard"]
+  },
+  "personalLoans": "സ്വകാര്യ വായ്പകൾ",
+  "@personalLoans": {
+    "description": "Label for personal loan options",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["dashboard", "personal_loan"]
+  },
+  "businessLoans": "ബിസിനസ് വായ്പകൾ",
+  "@businessLoans": {
+    "description": "Label for business loan options",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["dashboard"]
+  },
+  "governmentSchemes": "സർക്കാരിന്റെ പദ്ധതി",
+  "@governmentSchemes": {
+    "description": "Label for government schemes",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["dashboard"]
+  },
+  "logOut": "ലോഗ് ഔട്ട്",
+  "@logOut": {
+    "description": "Button label for logging out",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["dashboard"]
+  },
+  "profile": "പ്രൊഫൈൽ",
+  "@profile": {
+    "description": "Label for profile selection",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["dashboard"]
+  },
+  "pendingApplications": "തുടർച്ചയിൽ ഉള്ള അപേക്ഷകൾ",
+  "@pendingApplications": {
+    "description": "Label for pending applications with count",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["dashboard"]
+  },
+
+
+
+
+
+
+
+
+
+
+  "personalLoanDescription": "അനുകൂല പലിശ നിരക്കുകളും വൈകല്യങ്ങളും കൊണ്ട് വ്യക്തിഗത വായ്പ നേടുക.",
+  "@personalLoanDescription": {
+    "description": "Description for personal loan option",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["personal_loan"]
+  },
+  "homeLoans": "വീടുവായ്പകൾ",
+  "@homeLoans": {
+    "description": "Title for home loan option",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["personal_loan"]
+  },
+  "homeLoanDescription": "അനുകൂല പലിശ നിരക്കുകളും വൈകല്യങ്ങളും കൊണ്ട് വീട് വായ്പ നേടുക.",
+  "@homeLoanDescription": {
+    "description": "Description for home loan option",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["personal_loan"]
+  },
+  "autoLoans": "ഓട്ടോ വായ്പകൾ",
+  "@autoLoans": {
+    "description": "Title for auto loan option",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["personal_loan"]
+  },
+  "autoLoanDescription": "അനുകൂല പലിശ നിരക്കുകളും വൈകല്യങ്ങളും കൊണ്ട് ഓട്ടോ വായ്പ നേടുക.",
+  "@autoLoanDescription": {
+    "description": "Description for auto loan option",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["personal_loan"]
+  },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  "msmeLoans": "എംഎസ്‌എംഇ വായ്പകൾ",
+  "@msmeLoans": {
+    "description": "Title for MSME loan option",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["business_loan"]
+  },
+  "msmeLoanDescription": "₹5 കോടി വരെ കുറഞ്ഞ പലിശ നിരക്കിലും വൈകല്യങ്ങളും അടങ്ങിയ MSME വായ്പകൾ നേടുക.",
+  "@msmeLoanDescription": {
+    "description": "Description for MSME loan option",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["business_loan"]
+  },
+  "termLoans": "ടേം വായ്പകൾ",
+  "@termLoans": {
+    "description": "Title for term loan option",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["business_loan"]
+  },
+  "termLoanDescription": "₹50 ലക്ഷം വരെ കുറഞ്ഞ നിരക്കിലും വൈകല്യങ്ങൾ അടങ്ങിയ ടേം വായ്പകൾ നേടുക.",
+  "@termLoanDescription": {
+    "description": "Description for term loan option",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["business_loan"]
+  },
+  "mudraLoans": "മുദ്ര വായ്പകൾ",
+  "@mudraLoans": {
+    "description": "Title for Mudra loan option",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["business_loan"]
+  },
+  "mudraLoanDescription": "₹10 ലക്ഷം വരെ കുറഞ്ഞ പലിശ നിരക്കിലും വൈകല്യങ്ങൾ അടങ്ങിയ മൈക്രോ എന്റർപ്രൈസുകൾക്കായുള്ള മുദ്ര വായ്പകൾ നേടുക.",
+  "@mudraLoanDescription": {
+    "description": "Description for Mudra loan option",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["business_loan"]
+  },
+
+
+
+
+
+
+  "pendingApplicationsTitle": "പ്രതീക്ഷിക്കുന്ന അപേക്ഷകൾ",
+  "@pendingApplicationsTitle": {
+    "description": "Title for the pending applications dialog",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["dashboard_pending_applications"]
+  },
+  "noPendingApplications": "നിങ്ങളുടെ അടുത്തേക്ക് ഏത് അപേക്ഷകളും ഇല്ല.",
+  "@noPendingApplications": {
+    "description": "Message when there are no pending applications",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["dashboard_pending_applications"]
+  },
+  "closeButton": "ചെറുതായി",
+  "@closeButton": {
+    "description": "Label for the close button",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["dashboard_pending_applications", "dashboard_select_profile", "bank_details_personal_loan"]
+  },
+
+
+
+
+
+
+  "selectProfileTitle": "പ്രൊഫൈൽ തിരഞ്ഞെടുക്കുക",
+  "@selectProfileTitle": {
+    "description": "Title for the select profile dialog",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["dashboard_select_profile"]
+  },
+  "noProfiles": "നിങ്ങളുടെ പ്രൊഫൈലുകൾ ഇല്ല.",
+  "@noProfiles": {
+    "description": "Message when there are no profiles",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["dashboard_select_profile"]
+  },
+
+
+
+
+
+
+
+  "choosePersonalProfile": "സ്വന്തം പ്രൊഫൈൽ തിരഞ്ഞെടുക്കുക",
+  "@choosePersonalProfile": {
+    "description": "Title for choosing personal profile",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["personal_loan_journey"]
+  },
+  "selectedProfile": "തിരഞ്ഞെടുത്ത പ്രൊഫൈൽ: ആദർശ് വർമ",
+  "@selectedProfile": {
+    "description": "Message showing selected profile",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["personal_loan_journey"]
+  },
+  "selectProfileMessage": "ലഭ്യമായ പ്രൊഫൈലുകളുടെ പട്ടികയിൽ നിന്ന് നിങ്ങളുടെ വ്യക്തിഗത പ്രൊഫൈൽ തിരഞ്ഞെടുക്കുക. നിങ്ങൾക്ക് ഒരു പ്രൊഫൈൽ ഇല്ലെങ്കിൽ, പുതിയ പ്രൊഫൈൽ സൃഷ്ടിക്കാനാകും.",
+  "@selectProfileMessage": {
+    "description": "Message for selecting personal profile",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["personal_loan_journey"]
+  },
+  "itrImportance": "നിങ്ങളുടെ ITR നൽകുന്നത് വായ്പക്കായി അപേക്ഷിക്കുമ്പോൾ അത്യാവശ്യമാണെന്ന് ഇത് വായ്പ ദാതാക്കൾക്ക് നിങ്ങളുടെ സാമ്പത്തിക സ്ഥിരത, തിരിച്ചടവിന്റെ ശേഷി, ഒരുമിച്ചു വിശ്വാസ്യത ഉറപ്പ് നൽകുന്നതാണ്, അത് വായ്പ അംഗീകരിക്കാനുള്ള സാധ്യത വർദ്ധിപ്പിക്കുന്നു. ITR ഇല്ലെങ്കിൽ, നിങ്ങൾക്ക് നിങ്ങളുടെ വരുമാനം കൈമാറ്റം ചെയ്യാനുള്ള ഒരു ഓപ്ഷനും ഉണ്ടായിരിക്കും.",
+  "@itrImportance": {
+    "description": "Importance of providing ITR in a loan application",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["personal_loan_journey"]
+  },
+  "itrButtonTitle": "ഇൻകം ടാക്സ് റിട്ടേൺ",
+  "@itrButtonTitle": {
+    "description": "Button label for providing ITR",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["personal_loan_journey"]
+  },
+  "itrButtonDescription": "കഴിഞ്ഞ 3 വർഷങ്ങളുടെ ഇൻകം ടാക്സ് റിട്ടേൺ ഫോം നൽകുക അല്ലെങ്കിൽ നിങ്ങളുടെ വരുമാനം പ്രഖ്യാപിക്കുക.",
+  "@itrButtonDescription": {
+    "description": "Description for providing ITR",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["personal_loan_journey"]
+  },
+  "bankDetailsImportance": "ബാങ്ക് വിവരങ്ങളും സ്റ്റേറ്റ്മെന്റും വായ്പ ദാതാക്കൾക്ക് നിങ്ങളുടെ സാമ്പത്തിക ശീലങ്ങൾ, തിരിച്ചടവിന്റെ ശേഷി, വായ്പാ റിസ്‌ക് എന്നിവയുടെ ഒരു വ്യക്തമായതും വിശ്വാസ്യമായതുമായ ദൃഷ്ടികോണം നൽകുന്നു, അത് വായ്പ അംഗീകരിക്കാനുളള നിർണായക ഘടകങ്ങളാണ്.",
+  "@bankDetailsImportance": {
+    "description": "Importance of providing bank details in a loan application",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["personal_loan_journey"]
+  },
+  "bankDetailsButtonTitle": "ബാങ്ക് വിവരങ്ങൾ",
+  "@bankDetailsButtonTitle": {
+    "description": "Button label for providing bank details",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["personal_loan_journey"]
+  },
+  "bankDetailsButtonDescription": "നിങ്ങളുടെ ബാങ്ക് വിശദാംശങ്ങൾ പ്രഖ്യാപിക്കുക, കഴിഞ്ഞ 6 മാസങ്ങളിലുളള ബാങ്ക് സ്റ്റേറ്റ്മെന്റ് നൽകുക.",
+  "@bankDetailsButtonDescription": {
+    "description": "Description for providing bank details",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["personal_loan_journey"]
+  },
+  "personalDetailsImportance": "വായ്പ അപേക്ഷയിൽ വ്യക്തിഗത വിവരങ്ങൾ നിർണായകമാണ്, കാരണം അത് നിങ്ങളുടെ തിരിച്ചറിവ് സ്ഥിരീകരിക്കാൻ, നിങ്ങളുടെ യോഗ്യത നിശ്ചയിക്കാൻ, നിങ്ങളുടെ വായ്പാ യോഗ്യത നിർണയിക്കാൻ സഹായിക്കുന്നു. പ്രായം, വിലാസം, തൊഴിൽ സ്ഥിതിവിവരക്കണക്കുകൾ തുടങ്ങിയ വിവരങ്ങൾ നിങ്ങളുടെ സ്ഥിരതയും തിരിച്ചടവിന്റെ ശേഷിയും സംബന്ധിച്ച വിവരങ്ങൾ നൽകുന്നു. ശരിയായ വ്യക്തിഗത വിവരങ്ങൾ നിയമപരമായും ക്രമാത്മകമായും പാലനം ഉറപ്പാക്കുന്നു.",
+  "@personalDetailsImportance": {
+    "description": "Importance of providing personal details in a loan application",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["personal_loan_journey"]
+  },
+  "basicDetailsButtonTitle": "അടിസ്ഥാന വിവരങ്ങൾ",
+  "@basicDetailsButtonTitle": {
+    "description": "Button label for providing basic details",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["personal_loan_journey"]
+  },
+  "basicDetailsButtonDescription": "നിങ്ങളുടെ വ്യക്തിഗത വിവരങ്ങൾ, പേരു, പ്രായം, വിലാസം എന്നിവ നൽകുക.",
+  "@basicDetailsButtonDescription": {
+    "description": "Description for providing basic details",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["personal_loan_journey"]
+  },
+  "employmentDetailsImportance": "വായ്പ അപേക്ഷയിൽ തൊഴിൽ വിശദാംശങ്ങൾ നിർണായകമാണ്, കാരണം അത് വായ്പ ദാതാക്കൾക്ക് നിങ്ങളുടെ തിരിച്ചടവിന്റെ ശേഷി, ജോലിയിലെ സ്ഥിരത, സാമ്പത്തിക സ്ഥിതിവിവരക്കണക്കുകൾ എന്നിവ വിലയിരുത്താനുളള സഹായകരമാണ്. കമ്പനിയുടെ പേര്, തസ്തിക, ശമ്പളം തുടങ്ങിയ വിവരങ്ങൾ നിങ്ങളുടെ വരുമാനത്തിന്റെ സ്ഥിരതയേയും തിരിച്ചടവിന്റെ ശേഷിയേയും സംബന്ധിച്ച വിവരങ്ങൾ നൽകുന്നു.",
+  "@employmentDetailsImportance": {
+    "description": "Importance of providing employment details in a loan application",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["personal_loan_journey"]
+  },
+  "employmentDetailsButtonTitle": "തൊഴിൽ വിശദാംശങ്ങൾ",
+  "@employmentDetailsButtonTitle": {
+    "description": "Button label for providing employment details",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["personal_loan_journey"]
+  },
+  "employmentDetailsButtonDescription": "നിങ്ങളുടെ തൊഴിൽ വിശദാംശങ്ങൾ, കമ്പനിയുടെ പേര്, തസ്തിക, ശമ്പളം എന്നിവ നൽകുക.",
+  "@employmentDetailsButtonDescription": {
+    "description": "Description for providing employment details",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["personal_loan_journey"]
+  },
+  "creditInformationImportance": "ക്രെഡിറ്റ് വിവരങ്ങൾ വായ്പ അപേക്ഷയിൽ നിർണായകമാണ്, കാരണം ഇത് വായ്പ ദാതാക്കൾക്ക് നിങ്ങളുടെ വായ്പാ യോഗ്യത, തിരിച്ചടവിന്റെ ശേഷി, സാമ്പത്തിക സ്ഥിതിവിവരക്കണക്കുകൾ എന്നിവ വിലയിരുത്താനുളള സഹായകരമാണ്. ക്രെഡിറ്റ് സ്കോർ, ക്രെഡിറ്റ് ചരിത്രം, നിലവിലെ വായ്പകൾ തുടങ്ങിയ വിവരങ്ങൾ നിങ്ങളുടെ ക്രെഡിറ്റ് റിസ്‌ക്, തിരിച്ചടവിന്റെ ശേഷി എന്നിവയെക്കുറിച്ചുളള വിവരങ്ങൾ നൽകുന്നു. ശരിയായ ക്രെഡിറ്റ് വിവരങ്ങൾ നിയമപരമായും ക്രമാത്മകമായും പാലനം ഉറപ്പാക്കുന്നു.",
+  "@creditInformationImportance": {
+    "description": "Importance of providing credit information in a loan application",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["personal_loan_journey"]
+  },
+  "creditInformationButtonTitle": "ക്രെഡിറ്റ് വിവരങ്ങൾ",
+  "@creditInformationButtonTitle": {
+    "description": "Button label for providing credit information",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["personal_loan_journey"]
+  },
+  "creditInformationButtonDescription": "നിങ്ങളുടെ ക്രെഡിറ്റ് വിവരങ്ങൾ, ക്രെഡിറ്റ് സ്കോർ, ക്രെഡിറ്റ് ചരിത്രം, നിലവിലെ വായ്പകൾ എന്നിവ നൽകുക.",
+  "@creditInformationButtonDescription": {
+    "description": "Description for providing credit information",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["personal_loan_journey"]
+  },
+  "contactInformationImportance": "കാന്താക വിവരങ്ങൾ വായ്പ അപേക്ഷയിൽ നിർണായകമാണ്, കാരണം ഇത് വായ്പ ദാതാക്കൾക്ക് നിങ്ങളുടെ തിരിച്ചറിവ് സ്ഥിരീകരിക്കാൻ, നിങ്ങളുമായി ബന്ധപ്പെടാനും നിങ്ങളുടെ തിരിച്ചടവിന്റെ ശേഷി വിലയിരുത്താനും സഹായകരമാണ്. ഫോണിന്റെ നമ്പർ, ഇമെയിൽ, വിലാസം എന്നിവയുടെ വിവരങ്ങൾ നിങ്ങളുടെ ലഭ്യത, ആശയവിനിമയ ശേഷി എന്നിവയെക്കുറിച്ചുളള വിവരങ്ങൾ നൽകുന്നു.",
+  "@contactInformationImportance": {
+    "description": "Importance of providing contact information in a loan application",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["personal_loan_journey"]
+  },
+  "contactInformationButtonTitle": "സമ്പർക്ക വിവരങ്ങൾ",
+  "@contactInformationButtonTitle": {
+    "description": "Button label for providing contact information",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["personal_loan_journey"]
+  },
+  "contactInformationButtonDescription": "നിങ്ങളുടെ കോൺടാക്ട് വിവരങ്ങൾ, ഫോൺ നമ്പർ, ഇമെയിൽ, വിലാസം എന്നിവ നൽകുക.",
+  "@contactInformationButtonDescription": {
+    "description": "Description for providing contact information",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["personal_loan_journey"]
+  },
+  "loanFormImportance": "വായ്പ അപേക്ഷയിൽ വായ്പ ഫോമാണ് അവസാന ഘട്ടം. ഇത് നിങ്ങൾ വായ്പ നൽകുന്നവർക്കായി അംഗീകൃതമായി എല്ലാ ആവശ്യമായ വിവരങ്ങൾ, രേഖകൾ, വിവരങ്ങൾ നൽകുന്ന സ്ഥലമാണ്. വായ്പ അംഗീകരിച്ചെടുക്കാനുള്ള സാധ്യതകൾ മെച്ചപ്പെടുത്താൻ ഫോമിൽ കൃത്യമായി, പൂർണ്ണമായി രജിസ്റ്റർ ചെയ്യാൻ ശ്രദ്ധിക്കുക.",
+  "@loanFormImportance": {
+    "description": "Importance of filling out the loan form",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["personal_loan_journey"]
+  },
+  "loanFormButtonTitle": "വായ്പ ഫോം",
+    "@loanFormButtonTitle": {
+        "description": "Button label for filling out the loan form",
+        "type": "text",
+        "placeholders": {},
+        "tags": ["personal_loan_journey"]
+    },
+  "loanFormButtonDescription": "എല്ലാ ആവശ്യമായ വിവരങ്ങൾ ഉൾപ്പെടുന്ന വായ്പ ഫോം പൂരിപ്പിക്കുക.",
+    "@loanFormButtonDescription": {
+        "description": "Description for filling out the loan form",
+        "type": "text",
+        "placeholders": {},
+        "tags": ["personal_loan_journey"]
+    },
+  "reviewFormButton": "Review Form",
+  "@reviewFormButton": {
+    "description": "നിങ്ങളുടെ ഫോം അവലോകനം ചെയ്യുക",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["personal_loan_journey"]
+  },
+  "reviewFormButtonDescription": "ലോണ അപേക്ഷയുടെ അവസാന ഘട്ടം അപേക്ഷ അവലോകനം ചെയ്ത് സമർപ്പിക്കുകയാണ്. നിങ്ങൾ നൽകിയ എല്ലാ വിവരങ്ങളും ശരിയായി ഉറപ്പാക്കുക, കൂടാതെ നിങ്ങളുടെ അപേക്ഷ വായ്പദായകനോട് അംഗീകാരത്തിനായി സമർപ്പിക്കുക.",
+  "@reviewFormButtonDescription": {
+    "description": "Description for reviewing the loan form",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["personal_loan_journey"]
+  },
+
+
+
+
+
+
+
+
+  "itrDetailsTitle": "ഐടിആർ വിശദാംശങ്ങൾ",
+  "@itrDetailsTitle": {
+    "description": "Title for the ITR Details section",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["itr_form_personal_loan"]
+  },
+  "manualDeclarationText": "നിങ്ങളുടെ വാർഷിക വരുമാനം 2.5 ലക്ഷം രൂപയിലും കുറവാണെങ്കിൽ, നിങ്ങളുടെ സാമ്പത്തിക വിശദാംശങ്ങൾ പ്രഖ്യാപിക്കുക",
+  "@manualDeclarationText": {
+    "description": "Text for manual declaration option",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["itr_form_personal_loan"]
+  },
+  "itrMandatoryText_1": "ഫിനാൻഷ്യൽ വർഷത്തെ ഐടിആർ വിശദാംശങ്ങൾ",
+  "@itrMandatoryText_1": {
+    "description": "Text for the ITR Details section",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["itr_form_personal_loan"]
+  },
+  "itrMandatoryText_2": "ആവശ്യമുണ്ട്",
+  "@itrMandatoryText_2": {
+    "description": "Text for the ITR Details section",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["itr_form_personal_loan"]
+  },
+  "uploadITRText": "ഐടിആർ അപ്‌ലോഡ് ചെയ്യുക",
+  "@uploadITRText": {
+    "description": "Text for the toggle button for uploading ITR",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["itr_form_personal_loan"]
+  },
+  "manualDeclarationButton": "മാനുവൽ ഡിക്ലറേഷൻ",
+  "@manualDeclarationButton": {
+    "description": "Text for the toggle button for manual declaration",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["itr_form_personal_loan"]
+  },
+
+
+
+
+
+
+  "uploadITRTitle": "ഐടിആർ അപ്‌ലോഡ് ചെയ്യുക (PDF ഫോർമാറ്റ്)",
+  "@uploadITRTitle": {
+    "description": "Title for the upload ITR section",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["itr_form_upload_personal_loan"]
+  },
+  "fyLabel": "തിയ്യതി വർഷം",
+  "@fyLabel": {
+    "description": "Label for the financial year",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["itr_form_upload_personal_loan"]
+  },
+  "uploadButton": "ഫയൽ അപ്‌ലോഡ് ചെയ്യുക",
+  "@uploadButton": {
+    "description": "Label for the upload button",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["itr_form_upload_personal_loan"]
+  },
+  "instructionsTitle": "ഐടിആർ PDF ഫോർമാറ്റിൽ ഡൗൺലോഡ് ചെയ്യുന്നത് എങ്ങനെ",
+  "@instructionsTitle": {
+    "description": "Title for the instructions dialog",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["itr_form_upload_personal_loan"]
+  },
+  "instructionsContent": "1. മുകളിൽ വലതുവശത്തുള്ള 'ലോഗിൻ' ബട്ടൺ ക്ലിക്ക് ചെയ്യുക, നിങ്ങളുടെ ലോഗിൻ വിവരങ്ങൾ ഉപയോഗിച്ച് ലോഗിൻ ചെയ്യുക.\n\n2. മുകളിൽ കാണുന്ന നാവിഗേഷൻ ബാറിൽ നിന്ന് 'ഇ-ഫയൽ' ക്ലിക്ക് ചെയ്യുക.\n\n3. 'ഇ-ഫയൽ' ഡ്രോപ്പ്ഡൗൺ മെനുവിൽ നിന്ന് 'ഇൻകം ടാക്സ് റിട്ടേൺ' തിരഞ്ഞെടുക്കുക.\n\n4. 'ഇൻകം ടാക്സ് റിട്ടേൺ' ഡ്രോപ്പ്ഡൗൺ മെനുവിൽ നിന്ന് 'ഫയൽ ചെയ്ത റിട്ടേൺ കാണുക' തിരഞ്ഞെടുക്കുക.\n\n5. നിങ്ങൾ ഐടിആർ തരാം 1/2 ഫയൽ ചെയ്തിട്ടുണ്ടെങ്കിൽ, 'ഡൗൺലോഡ് ഫോർം' ക്ലിക്ക് ചെയ്യുക, ഇത് 'ആ.വ.'ക്കുള്ള PDF ഫയൽ ഡൗൺലോഡ് ചെയ്യും.\n\n6. ഡൗൺലോഡ് ചെയ്ത ഫയലുകൾ പ്ലാറ്റ്‌ഫോമിലേക്ക് അപ്‌ലോഡ് ചെയ്യുക.",
+  "@instructionsContent": {
+    "description": "Content for instructions on how to download ITR",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["itr_form_upload_personal_loan"]
+  },
+  "instructionsButton": "നിർദ്ദേശങ്ങൾ",
+  "@instructionsButton": {
+    "description": "Text for instructions button",
+    "type": "text",
+    "placeholders": {},
+    "tags": ["itr_form_upload_personal_loan"]
+  },
+
+
+
+
+
+
+
+
+  "@declareFinancialDetails": {
+    "description": "Title of the form to declare financial details.",
+    "type": "text",
+    "tags": ["itr_form_manual_personal_loan"]
+  },
+  "declareFinancialDetails": "നിങ്ങളുടെ ധനകാര്യ വിവരങ്ങൾ പ്രഖ്യാപിക്കുക",
+
+  "@firstName": {
+    "description": "Label for the first name input field.",
+    "type": "text",
+    "tags": ["itr_form_manual_personal_loan", "basic_details_personal_loan"]
+  },
+  "firstName": "മുന്നത്തെ പേര്*",
+
+  "@firstNameHint": {
+    "description": "Hint text for the first name input field.",
+    "type": "text",
+    "tags": ["itr_form_manual_personal_loan", "basic_details_personal_loan"]
+  },
+  "firstNameHint": "നിങ്ങളുടെ മുന്‍പത്തെ പേര് രേഖപ്പെടുത്തുക",
+
+  "@middleName": {
+    "description": "Label for the middle name input field.",
+    "type": "text",
+    "tags": ["itr_form_manual_personal_loan", "basic_details_personal_loan"]
+  },
+  "middleName": "നടവിലേക്ക് പേര്",
+
+  "@middleNameHint": {
+    "description": "Hint text for the middle name input field.",
+    "type": "text",
+    "tags": ["itr_form_manual_personal_loan", "basic_details_personal_loan"]
+  },
+  "middleNameHint": "നിങ്ങളുടെ നടവിലേക്ക് പേര് രേഖപ്പെടുത്തുക",
+
+  "@lastName": {
+    "description": "Label for the last name input field.",
+    "type": "text",
+    "tags": ["itr_form_manual_personal_loan", "basic_details_personal_loan"]
+  },
+  "lastName": "അവസാന പേര്*",
+
+  "@lastNameHint": {
+    "description": "Hint text for the last name input field.",
+    "type": "text",
+    "tags": ["itr_form_manual_personal_loan", "basic_details_personal_loan"]
+  },
+  "lastNameHint": "നിങ്ങളുടെ അവസാന പേര് രേഖപ്പെടുത്തുക",
+
+  "@dateOfBirth": {
+    "description": "Label for the date of birth input.",
+    "type": "text",
+    "tags": ["itr_form_manual_personal_loan", "basic_details_personal_loan"]
+  },
+  "dateOfBirth": "ജനന തീയതി*",
+
+  "@dateOfBirthHint": {
+    "description": "Placeholder text for the date of birth button.",
+    "type": "text",
+    "tags": ["itr_form_manual_personal_loan", "basic_details_personal_loan"]
+  },
+  "dateOfBirthHint": "ജനന തീയതി",
+
+  "@panNumber": {
+    "description": "Label for the PAN number input field.",
+    "type": "text",
+    "tags": ["itr_form_manual_personal_loan", "basic_details_personal_loan"]
+  },
+  "panNumber": "PAN നമ്പർ*",
+
+  "@panNumberHint": {
+    "description": "Hint text for the PAN number input field.",
+    "type": "text",
+    "tags": ["itr_form_manual_personal_loan", "basic_details_personal_loan"]
+  },
+  "panNumberHint": "നിങ്ങളുടെ PAN നമ്പർ രേഖപ്പെടുത്തുക",
+
+  "@mobileNumber": {
+    "description": "Label for the mobile number input field.",
+    "type": "text",
+    "tags": ["itr_form_manual_personal_loan", "basic_details_personal_loan"]
+  },
+  "mobileNumber": "മൊബൈൽ നമ്പർ*",
+
+  "@mobileNumberHint": {
+    "description": "Hint text for the mobile number input field.",
+    "type": "text",
+    "tags": ["itr_form_manual_personal_loan", "basic_details_personal_loan"]
+  },
+  "mobileNumberHint": "നിങ്ങളുടെ മൊബൈൽ നമ്പർ രേഖപ്പെടുത്തുക",
+
+  "@email": {
+    "description": "Label for the personal email input field.",
+    "type": "text",
+    "tags": ["itr_form_manual_personal_loan"]
+  },
+  "email": "ഇമെയിൽ (വ്യക്തിഗത)*",
+
+  "@emailHint": {
+    "description": "Hint text for the personal email input field.",
+    "type": "text",
+    "tags": ["itr_form_manual_personal_loan"]
+  },
+  "emailHint": "നിങ്ങളുടെ ഇമെയിൽ രേഖപ്പെടുത്തുക",
+
+  "@addressLine1": {
+    "description": "Label for the address line 1 input field.",
+    "type": "text",
+    "tags": ["itr_form_manual_personal_loan"]
+  },
+  "addressLine1": "വിലാസ രേഖ 1*",
+
+  "@addressLine1Hint": {
+    "description": "Hint text for the address line 1 input field.",
+    "type": "text",
+    "tags": ["itr_form_manual_personal_loan"]
+  },
+  "addressLine1Hint": "നിങ്ങളുടെ വിലാസം രേഖപ്പെടുത്തുക",
+
+  "@addressLine2": {
+    "description": "Label for the address line 2 input field.",
+    "type": "text",
+    "tags": ["itr_form_manual_personal_loan"]
+  },
+  "addressLine2": "വിലാസ രേഖ 2",
+
+  "@addressLine2Hint": {
+    "description": "Hint text for the address line 2 input field.",
+    "type": "text",
+    "tags": ["itr_form_manual_personal_loan"]
+  },
+  "addressLine2Hint": "നിങ്ങളുടെ വിലാസം രേഖപ്പെടുത്തുക",
+
+  "@landmark": {
+    "description": "Label for the landmark input field.",
+    "type": "text",
+    "tags": ["itr_form_manual_personal_loan", "stakeholder_business_loan"]
+  },
+  "landmark": "ലാൻഡ് മാർക്ക്",
+
+  "@landmarkHint": {
+    "description": "Hint text for the landmark input field.",
+    "type": "text",
+    "tags": ["itr_form_manual_personal_loan", "stakeholder_business_loan"]
+  },
+  "landmarkHint": "ലാൻഡ് മാർക്ക് രേഖപ്പെടുത്തുക",
+
+  "@country": {
+    "description": "Label for the country dropdown.",
+    "type": "text",
+    "tags": ["itr_form_manual_personal_loan", "stakeholder_business_loan"]
+  },
+  "country": "രാജ്യം*",
+
+  "@state": {
+    "description": "Label for the state dropdown.",
+    "type": "text",
+    "tags": ["itr_form_manual_personal_loan", "stakeholder_business_loan"]
+  },
+  "state": "രാജ്യം*",
+
+  "@city": {
+    "description": "Label for the city dropdown.",
+    "type": "text",
+    "tags": ["itr_form_manual_personal_loan", "stakeholder_business_loan"]
+  },
+  "city": "നഗരം*",
+
+  "@pinCode": {
+    "description": "Label for the pin code input field.",
+    "type": "text",
+    "tags": ["itr_form_manual_personal_loan", "stakeholder_business_loan"]
+  },
+  "pinCode": "പിൻ കോഡ്*",
+
+  "@pinCodeHint": {
+    "description": "Hint text for the pin code input field.",
+    "type": "text",
+    "tags": ["itr_form_manual_personal_loan", "stakeholder_business_loan"]
+  },
+  "pinCodeHint": "നിങ്ങളുടെ പിന് കോഡ് രേഖപ്പെടുത്തുക",
+
+  "@village": {
+    "description": "Label for the village input field.",
+    "type": "text",
+    "tags": ["itr_form_manual_personal_loan", "stakeholder_business_loan"]
+  },
+  "village": "ഗ്രാമം",
+
+  "@villageHint": {
+    "description": "Hint text for the village input field.",
+    "type": "text",
+    "tags": ["itr_form_manual_personal_loan", "stakeholder_business_loan"]
+  },
+  "villageHint": "നിങ്ങളുടെ ഗ്രാമം രേഖപ്പെടുത്തുക",
+
+  "@district": {
+    "description": "Label for the district input field.",
+    "type": "text",
+    "tags": ["itr_form_manual_personal_loan", "stakeholder_business_loan"]
+  },
+  "district": "ജില്ല*",
+
+  "@districtHint": {
+    "description": "Hint text for the district input field.",
+    "type": "text",
+    "tags": ["itr_form_manual_personal_loan", "stakeholder_business_loan"]
+  },
+  "districtHint": "നിങ്ങളുടെ ജില്ല രേഖപ്പെടുത്തുക",
+
+  "@subDistrict": {
+    "description": "Label for the sub-district input field.",
+    "type": "text",
+    "tags": ["itr_form_manual_personal_loan", "stakeholder_business_loan"]
+  },
+  "subDistrict": "ഉപജില്ല*",
+
+  "@subDistrictHint": {
+    "description": "Hint text for the sub-district input field.",
+    "type": "text",
+    "tags": ["itr_form_manual_personal_loan", "stakeholder_business_loan"]
+  },
+  "subDistrictHint": "നിങ്ങളുടെ ഉപജില്ല രേഖപ്പെടുത്തുക",
+
+  "@netAnnualIncome": {
+    "description": "Label for the net annual income input field.",
+    "type": "text",
+    "tags": ["itr_form_manual_personal_loan"]
+  },
+  "netAnnualIncome": "ശുദ്ധ വാർഷിക വരുമാനം*",
+
+  "@netAnnualIncomeHint": {
+    "description": "Hint text for the net annual income input field.",
+    "type": "text",
+    "tags": ["itr_form_manual_personal_loan"]
+  },
+  "netAnnualIncomeHint": "നിങ്ങളുടെ ശുദ്ധ വാർഷിക വരുമാനം രേഖപ്പെടുത്തുക",
+
+  "@annualIncome": {
+    "description": "Label for annual income input field.",
+    "type": "text",
+    "tags": ["itr_form_manual_personal_loan"]
+  },
+  "annualIncome": "വാർഷിക വരുമാനം*",
+
+  "@annualIncomeHint": {
+    "description": "Hint text for the annual income input field.",
+    "type": "text",
+    "tags": ["itr_form_manual_personal_loan"]
+  },
+  "annualIncomeHint": "നിങ്ങളുടെ വാർഷിക വരുമാനം രേഖപ്പെടുത്തുക",
+
+  "@submitButton": {
+    "description": "Label for the submit button.",
+    "type": "text",
+    "tags": ["itr_form_manual_personal_loan"]
+  },
+  "submitButton": "സമർപ്പിക്കുക",
+
+  "@proceedButton": {
+    "description": "Label for the proceed button.",
+    "type": "text",
+    "tags": ["itr_form_manual_personal_loan", "bank_details_personal_loan"]
+  },
+  "proceedButton": "മുന്നോട്ട് പോകുക",
+
+
+
+
+
+
+
+
+
+  "@bankDetails": {
+    "description": "Title for the bank details section.",
+    "type": "text",
+    "tags": ["bank_details_personal_loan"]
+  },
+  "bankDetails": "ബാങ്ക് വിശദാംശങ്ങള്‍",
+
+  "@addUpTo3Accounts": {
+    "description": "Message indicating how many bank accounts can be added.",
+    "type": "text",
+    "tags": ["bank_details_personal_loan"]
+  },
+  "addUpTo3Accounts": "നിങ്ങൾക്ക് 3 ബാങ്ക് അക്കൗണ്ടുകൾ വരെ ചേർക്കാം",
+
+  "@uploadBankStatement": {
+    "description": "Label for uploading bank statement.",
+    "type": "text",
+    "tags": ["bank_details_personal_loan"]
+  },
+  "uploadBankStatement": "ബാങ്ക് സ്റ്റേറ്റ്മെന്റ് അപ്ലോഡ് ചെയ്യുക (PDF)",
+
+  "@addAccount": {
+    "description": "Label for adding a new bank account button.",
+    "type": "text",
+    "tags": ["bank_details_personal_loan"]
+  },
+  "addAccount": "അക്കൗണ്ട് ചേർക്കുക",
+
+  "@bankName": {
+    "description": "Label for bank name field.",
+    "type": "text",
+    "tags": ["bank_details_personal_loan"]
+  },
+  "bankName": "ബാങ്ക് പേര്*",
+
+  "@enterBankName": {
+    "description": "Placeholder text for bank name input field.",
+    "type": "text",
+    "tags": ["bank_details_personal_loan"]
+  },
+  "enterBankName": "ബാങ്ക് പേര് നൽകുക",
+
+  "@accountSinceMonth": {
+    "description": "Label for account since month field.",
+    "type": "text",
+    "tags": ["bank_details_personal_loan"]
+  },
+  "accountSinceMonth": "മാസം മുതൽ അക്കൗണ്ട്*",
+
+  "@month": {
+    "description": "Placeholder text for selecting the month.",
+    "type": "text",
+    "tags": ["bank_details_personal_loan", "stakeholder_business_loan"]
+  },
+  "month": "മാസം",
+
+  "@accountSinceYear": {
+    "description": "Label for account since year field.",
+    "type": "text",
+    "tags": ["bank_details_personal_loan"]
+  },
+  "accountSinceYear": "വർഷം മുതൽ അക്കൗണ്ട്*",
+
+  "@yearButton": {
+    "description": "Placeholder text for selecting the year.",
+    "type": "text",
+    "tags": ["bank_details_personal_loan", "stakeholder_business_loan"]
+  },
+  "yearButton": "വർഷം",
+
+  "@isSalaryAccount": {
+    "description": "Question asking if the account is a salary account.",
+    "type": "text",
+    "tags": ["bank_details_personal_loan"]
+  },
+  "isSalaryAccount": "ഇത് ശമ്പള അക്കൗണ്ടാണോ?",
+
+  "@yesButton": {
+    "description": "Option for 'Yes' in response to a question.",
+    "type": "text",
+    "tags": ["bank_details_personal_loan"]
+  },
+  "yesButton": "അതെ",
+
+  "@noButton": {
+    "description": "Option for 'No' in response to a question.",
+    "type": "text",
+    "tags": ["bank_details_personal_loan"]
+  },
+  "noButton": "ഇല്ല",
+
+  "drag_file_here": "ഫയല്‍ ഇവിടെ എളിയുക",
+  "@drag_file_here": {
+    "description": "Text for dragging and dropping a file.",
+    "type": "text",
+    "tags": ["bank_details_personal_loan", "bank_details_business_loan"]
+  },
+
+
+
+
+
+
+
+
+
+  "@basicDetails": {
+    "description": "Title for the basic details section",
+    "type": "text",
+    "tags": ["basic_details_personal_loan"]
+  },
+  "basicDetails": "അടിസ്ഥാന വിവരങ്ങൾ",
+
+  "@salutation": {
+    "description": "Label for salutation dropdown",
+    "type": "text",
+    "tags": ["basic_details_personal_loan"]
+  },
+  "salutation": "സന്തോഷം*",
+
+  "@selectSalutation": {
+    "description": "Placeholder for selecting salutation",
+    "type": "text",
+    "tags": ["basic_details_personal_loan"]
+  },
+  "selectSalutation": "സന്തോഷം തിരഞ്ഞെടുക്കുക",
+
+  "@gender": {
+    "description": "Label for gender dropdown",
+    "type": "text",
+    "tags": ["basic_details_personal_loan"]
+  },
+  "gender": "ലിംഗം*",
+
+  "@selectGender": {
+    "description": "Placeholder for selecting gender",
+    "type": "text",
+    "tags": ["basic_details_personal_loan"]
+  },
+  "selectGender": "ലിംഗം തിരഞ്ഞെടുക്കുക",
+
+  "@category": {
+    "description": "Label for category dropdown",
+    "type": "text",
+    "tags": ["basic_details_personal_loan"]
+  },
+  "category": "വിഭാഗം*",
+
+  "@selectCategory": {
+    "description": "Placeholder for selecting category",
+    "type": "text",
+    "tags": ["basic_details_personal_loan"]
+  },
+  "selectCategory": "വിഭാഗം തിരഞ്ഞെടുക്കുക",
+
+  "@emailPersonal": {
+    "description": "Label for personal email input field",
+    "type": "text",
+    "tags": ["basic_details_personal_loan"]
+  },
+  "emailPersonal": "ഇമെയിൽ (വ്യക്തിഗത)*",
+
+  "@enterEmailPersonal": {
+    "description": "Placeholder for entering personal email",
+    "type": "text",
+    "tags": ["basic_details_personal_loan"]
+  },
+  "enterEmailPersonal": "വ്യക്തിഗത ഇമെയിൽ നൽകുക",
+
+  "@fatherName": {
+    "description": "Label for father's name input field",
+    "type": "text",
+    "tags": ["basic_details_personal_loan"]
+  },
+  "fatherName": "പിതാവിന്റെ പേര്",
+
+  "@enterFatherName": {
+    "description": "Placeholder for entering father's name",
+    "type": "text",
+    "tags": ["basic_details_personal_loan"]
+  },
+  "enterFatherName": "പിതാവിന്റെ പേര് നൽകുക",
+
+  "@educationQualification": {
+    "description": "Label for education qualification dropdown",
+    "type": "text",
+    "tags": ["basic_details_personal_loan"]
+  },
+  "educationQualification": "വിദ്യാഭ്യാസ യോഗ്യത*",
+
+  "@selectEducationQualification": {
+    "description": "Placeholder for selecting education qualification",
+    "type": "text",
+    "tags": ["basic_details_personal_loan"]
+  },
+  "selectEducationQualification": "വിദ്യാഭ്യാസ യോഗ്യത തിരഞ്ഞെടുക്കുക",
+
+  "@netWorth": {
+    "description": "Label for net worth input field",
+    "type": "text",
+    "tags": ["basic_details_personal_loan"]
+  },
+  "netWorth": "വിലമതിപ്പ്*",
+
+  "@enterNetWorth": {
+    "description": "Placeholder for entering net worth",
+    "type": "text",
+    "tags": ["basic_details_personal_loan"]
+  },
+  "enterNetWorth": "വിലമതിപ്പ് നൽകുക",
+
+  "@nationality": {
+    "description": "Label for nationality dropdown",
+    "type": "text",
+    "tags": ["basic_details_personal_loan"]
+  },
+  "nationality": "രാഷ്ട്രപതിത്വം*",
+
+  "@selectNationality": {
+    "description": "Placeholder for selecting nationality",
+    "type": "text",
+    "tags": ["basic_details_personal_loan"]
+  },
+  "selectNationality": "രാഷ്ട്രപതിത്വം തിരഞ്ഞെടുക്കുക",
+
+  "@dependents": {
+    "description": "Label for dependents dropdown",
+    "type": "text",
+    "tags": ["basic_details_personal_loan"]
+  },
+  "dependents": "അനുസരണങ്ങൾ*",
+
+  "@selectDependents": {
+    "description": "Placeholder for selecting dependents",
+    "type": "text",
+    "tags": ["basic_details_personal_loan"]
+  },
+  "selectDependents": "അനുസരണങ്ങൾ തിരഞ്ഞെടുക്കുക",
+
+  "@maritalStatus": {
+    "description": "Label for marital status dropdown",
+    "type": "text",
+    "tags": ["basic_details_personal_loan"]
+  },
+  "maritalStatus": "വിവാഹിതാവിനെ*",
+
+  "@selectMaritalStatus": {
+    "description": "Placeholder for selecting marital status",
+    "type": "text",
+    "tags": ["basic_details_personal_loan"]
+  },
+  "selectMaritalStatus": "വിവാഹിതാവിനെ തിരഞ്ഞെടുക്കുക",
+
+
+
+
+
+
+
+
+  "@employmentDetails": {
+    "description": "Label for the employment details page",
+    "type": "text",
+    "tags": ["employment_details_personal_loan"]
+  },
+  "employmentDetails": "ബധ്യവസ്ഥകൾ",
+
+  "@employmentStatus": {
+    "description": "Label for employment status dropdown",
+    "type": "text",
+    "tags": ["employment_details_personal_loan"]
+  },
+  "employmentStatus": "ബധ്യവസ്ഥ*",
+
+  "@selectEmploymentStatus": {
+    "description": "Placeholder for selecting employment status",
+    "type": "text",
+    "tags": ["employment_details_personal_loan"]
+  },
+  "selectEmploymentStatus": "ബധ്യവസ്ഥ തിരഞ്ഞെടുക്കുക",
+
+  "@designation": {
+    "description": "Label for designation dropdown",
+    "type": "text",
+    "tags": ["employment_details_personal_loan"]
+  },
+  "designation": "നാമവീക്ഷണം*",
+
+  "@selectDesignation": {
+    "description": "Placeholder for selecting designation",
+    "type": "text",
+    "tags": ["employment_details_personal_loan"]
+  },
+  "selectDesignation": "നാമവീക്ഷണം തിരഞ്ഞെടുക്കുക",
+
+  "@employmentType": {
+    "description": "Label for employment type dropdown",
+    "type": "text",
+    "tags": ["employment_details_personal_loan"]
+  },
+  "employmentType": "ബധ്യത്തരം*",
+
+  "@selectEmploymentType": {
+    "description": "Placeholder for selecting employment type",
+    "type": "text",
+    "tags": ["employment_details_personal_loan"]
+  },
+  "selectEmploymentType": "ബധ്യത്തരം തിരഞ്ഞെടുക്കുക",
+
+  "@modeOfSalary": {
+    "description": "Label for mode of salary dropdown",
+    "type": "text",
+    "tags": ["employment_details_personal_loan"]
+  },
+  "modeOfSalary": "ശമ്പളമോഡൽ*",
+
+  "@selectModeOfSalary": {
+    "description": "Placeholder for selecting mode of salary",
+    "type": "text",
+    "tags": ["employment_details_personal_loan"]
+  },
+  "selectModeOfSalary": "ശമ്പളമോഡൽ തിരഞ്ഞെടുക്കുക",
+
+  "@grossMonthlyIncome": {
+    "description": "Label for gross monthly income input field",
+    "type": "text",
+    "tags": ["employment_details_personal_loan"]
+  },
+  "grossMonthlyIncome": "ആകെ മാസിക വരുമാനം*",
+
+  "@enterGrossMonthlyIncome": {
+    "description": "Placeholder for entering gross monthly income",
+    "type": "text",
+    "tags": ["employment_details_personal_loan"]
+  },
+  "enterGrossMonthlyIncome": "താങ്കളുടെ ആകെ മാസിക വരുമാനം നൽകുക",
+
+  "@netMonthlyIncome": {
+    "description": "Label for net monthly income input field",
+    "type": "text",
+    "tags": ["employment_details_personal_loan"]
+  },
+  "netMonthlyIncome": "നിലവിലെ മാസിക വരുമാനം*",
+
+  "@enterNetMonthlyIncome": {
+    "description": "Placeholder for entering net monthly income",
+    "type": "text",
+    "tags": ["employment_details_personal_loan"]
+  },
+  "enterNetMonthlyIncome": "താങ്കളുടെ നിലവിലെ മാസിക വരുമാനം നൽകുക",
+
+
+
+
+
+
+
+
+
+
+
+
+  "@creditInformationTitle": {
+    "description": "Title of the Credit Information page",
+    "type": "text",
+    "tags": ["credit_info_personal_loan"]
+  },
+  "creditInformationTitle": "ക്രെഡിറ്റ് വിവരങ്ങൾ",
+
+  "@declareCreditInformation": {
+    "description": "Heading for declaring credit information",
+    "type": "text",
+    "tags": ["credit_info_personal_loan"]
+  },
+  "declareCreditInformation": "ക്രെഡിറ്റ് വിവരങ്ങൾ പ്രഖ്യാപിക്കുക",
+
+  "@loanTypeLabel": {
+    "description": "Label for loan type dropdown",
+    "type": "text",
+    "tags": ["credit_info_personal_loan"]
+  },
+  "loanTypeLabel": "കടൻ തരം*",
+
+  "@selectLoanType": {
+    "description": "Placeholder for selecting loan type",
+    "type": "text",
+    "tags": ["credit_info_personal_loan"]
+  },
+  "selectLoanType": "കടൻ തരം തിരഞ്ഞെടുക്കുക",
+
+  "@lenderLabel": {
+    "description": "Label for lender input field",
+    "type": "text",
+    "tags": ["credit_info_personal_loan"]
+  },
+  "lenderLabel": "ധനകാരൻ*",
+
+  "@enterLenderPlaceholder": {
+    "description": "Placeholder for entering lender name",
+    "type": "text",
+    "tags": ["credit_info_personal_loan"]
+  },
+  "enterLenderPlaceholder": "ധനകാരനെന്നെഴുതുക",
+
+  "@sanctionedAmountLabel": {
+    "description": "Label for sanctioned amount input field",
+    "type": "text",
+    "tags": ["credit_info_personal_loan"]
+  },
+  "sanctionedAmountLabel": "നിശ്ചിത തുക (₹)*",
+
+  "@enterSanctionedAmountPlaceholder": {
+    "description": "Placeholder for entering sanctioned amount",
+    "type": "text",
+    "tags": ["credit_info_personal_loan"]
+  },
+  "enterSanctionedAmountPlaceholder": "നിശ്ചിത തുക എഴുതി",
+
+  "@outstandingAmountLabel": {
+    "description": "Label for outstanding amount input field",
+    "type": "text",
+    "tags": ["credit_info_personal_loan"]
+  },
+  "outstandingAmountLabel": "ബാക്കി തുക (₹)*",
+
+  "@enterOutstandingAmountPlaceholder": {
+    "description": "Placeholder for entering outstanding amount",
+    "type": "text",
+    "tags": ["credit_info_personal_loan"]
+  },
+  "enterOutstandingAmountPlaceholder": "ബാക്കി തുക എഴുതുക",
+
+  "@emiAmountLabel": {
+    "description": "Label for EMI amount input field",
+    "type": "text",
+    "tags": ["credit_info_personal_loan"]
+  },
+  "emiAmountLabel": "EMI തുക (₹)*",
+
+  "@enterEmiAmountPlaceholder": {
+    "description": "Placeholder for entering EMI amount",
+    "type": "text",
+    "tags": ["credit_info_personal_loan"]
+  },
+  "enterEmiAmountPlaceholder": "EMI തുക എഴുതുക",
+
+  "@addExistingLoanButton": {
+    "description": "Label for the button to add an existing loan",
+    "type": "text",
+    "tags": ["credit_info_personal_loan"]
+  },
+  "addExistingLoanButton": "നിലവിലുള്ള വായ്പ ചേർക്കുക",
+
+
+
+
+
+
+
+
+
+
+
+
+  "@contactDetailsTitle": {
+    "description": "Title of the Contact Details page",
+    "type": "text",
+    "tags": ["contact_detail_personal_loan"]
+  },
+  "contactDetailsTitle": "സമ്പർക്ക വിവരങ്ങൾ",
+
+  "@addressLine1Label": {
+    "description": "Label for Address Line 1 input field",
+    "type": "text",
+    "tags": ["contact_detail_personal_loan"]
+  },
+  "addressLine1Label": "വിലാസം വരി 1*",
+
+  "@addressLine1Placeholder": {
+    "description": "Placeholder for Address Line 1 input field",
+    "type": "text",
+    "tags": ["contact_detail_personal_loan"]
+  },
+  "addressLine1Placeholder": "നിങ്ങളുടെ കെട്ടിട നമ്പർ നൽകുക",
+
+  "@addressLine2Label": {
+    "description": "Label for Address Line 2 input field",
+    "type": "text",
+    "tags": ["contact_detail_personal_loan"]
+  },
+  "addressLine2Label": "വിലാസം വരി 2",
+
+  "@addressLine2Placeholder": {
+    "description": "Placeholder for Address Line 2 input field",
+    "type": "text",
+    "tags": ["contact_detail_personal_loan"]
+  },
+  "addressLine2Placeholder": "നിങ്ങളുടെ സ്ട്രീറ്റ് പേര് നൽകുക",
+
+  "@landmarkLabel": {
+    "description": "Label for Landmark input field",
+    "type": "text",
+    "tags": ["contact_detail_personal_loan"]
+  },
+  "landmarkLabel": "ലാൻഡ്‌മാർക്ക്",
+
+  "@landmarkPlaceholder": {
+    "description": "Placeholder for Landmark input field",
+    "type": "text",
+    "tags": ["contact_detail_personal_loan"]
+  },
+  "landmarkPlaceholder": "നിങ്ങളുടെ ലാൻഡ്‌മാർക്ക് നൽകുക",
+
+  "@countryLabel": {
+    "description": "Label for Country dropdown",
+    "type": "text",
+    "tags": ["contact_detail_personal_loan"]
+  },
+  "countryLabel": "ദേശം*",
+
+  "@countryPlaceholder": {
+    "description": "Placeholder for Country dropdown",
+    "type": "text",
+    "tags": ["contact_detail_personal_loan"]
+  },
+  "countryPlaceholder": "നിങ്ങളുടെ രാജ്യത്തിനെ തിരഞ്ഞെടുക്കുക",
+
+  "@stateLabel": {
+    "description": "Label for State dropdown",
+    "type": "text",
+    "tags": ["contact_detail_personal_loan", "declare_business_gst_details_business_loan"]
+  },
+  "stateLabel": "സംസ്ഥാനം*",
+
+  "@statePlaceholder": {
+    "description": "Placeholder for State dropdown",
+    "type": "text",
+    "tags": ["contact_detail_personal_loan", "declare_business_gst_details_business_loan"]
+  },
+  "statePlaceholder": "നിങ്ങളുടെ സംസ്ഥാനം തിരഞ്ഞെടുക്കുക",
+
+  "@cityLabel": {
+    "description": "Label for City dropdown",
+    "type": "text",
+    "tags": ["contact_detail_personal_loan", "declare_business_gst_details_business_loan"]
+  },
+  "cityLabel": "നഗരം*",
+
+  "@cityPlaceholder": {
+    "description": "Placeholder for City dropdown",
+    "type": "text",
+    "tags": ["contact_detail_personal_loan", "declare_business_gst_details_business_loan"]
+  },
+  "cityPlaceholder": "നിങ്ങളുടെ നഗരം തിരഞ്ഞെടുക്കുക",
+
+  "@pinCodeLabel": {
+    "description": "Label for Pin Code input field",
+    "type": "text",
+    "tags": ["contact_detail_personal_loan"]
+  },
+  "pinCodeLabel": "പിൻ കോഡ്*",
+
+  "@pinCodePlaceholder": {
+    "description": "Placeholder for Pin Code input field",
+    "type": "text",
+    "tags": ["contact_detail_personal_loan"]
+  },
+  "pinCodePlaceholder": "നിങ്ങളുടെ പിൻ കോഡ് നൽകുക",
+
+  "@villageLabel": {
+    "description": "Label for Village/Town input field",
+    "type": "text",
+    "tags": ["contact_detail_personal_loan"]
+  },
+  "villageLabel": "ഗ്രാമം/നഗരം",
+
+  "@villagePlaceholder": {
+    "description": "Placeholder for Village/Town input field",
+    "type": "text",
+    "tags": ["contact_detail_personal_loan"]
+  },
+  "villagePlaceholder": "നിങ്ങളുടെ ഗ്രാമം/നഗരം നൽകുക",
+
+  "@districtLabel": {
+    "description": "Label for District input field",
+    "type": "text",
+    "tags": ["contact_detail_personal_loan"]
+  },
+  "districtLabel": "ജില്ല*",
+
+  "@districtPlaceholder": {
+    "description": "Placeholder for District input field",
+    "type": "text",
+    "tags": ["contact_detail_personal_loan"]
+  },
+  "districtPlaceholder": "നിങ്ങളുടെ ജില്ല നൽകുക",
+
+  "@subDistrictLabel": {
+    "description": "Label for Sub-District input field",
+    "type": "text",
+    "tags": ["contact_detail_personal_loan"]
+  },
+  "subDistrictLabel": "സബ്-ഡിസ്ട്രിക്ട്*",
+
+  "@subDistrictPlaceholder": {
+    "description": "Placeholder for Sub-District input field",
+    "type": "text",
+    "tags": ["contact_detail_personal_loan"]
+  },
+  "subDistrictPlaceholder": "നിങ്ങളുടെ സബ്-ഡിസ്ട്രിക്ട് നൽകുക",
+
+  "@residenceSinceMonthLabel": {
+    "description": "Label for Residence Since (Month) picker",
+    "type": "text",
+    "tags": ["contact_detail_personal_loan"]
+  },
+  "residenceSinceMonthLabel": "വാസം (മാസം മുതൽ)",
+
+  "@residenceSinceYearLabel": {
+    "description": "Label for Residence Since (Year) picker",
+    "type": "text",
+    "tags": ["contact_detail_personal_loan"]
+  },
+  "residenceSinceYearLabel": "വാസം (വർഷം മുതൽ)",
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  "@loanFormTitle": {
+    "description": "Title of the Loan Form",
+    "type": "text",
+    "tags": ["loan_form_personal_loan"]
+  },
+  "loanFormTitle": " വായ്പ ഫോമ് ",
+
+  "@loanDetailsTitle": {
+    "description": "Title for Loan Details section",
+    "type": "text",
+    "tags": ["loan_form_personal_loan"]
+  },
+  "loanDetailsTitle": " വായ്പ വിശദാംശങ്ങൾ ",
+
+  "@loanPurposeLabel": {
+    "description": "Label for Loan Purpose dropdown",
+    "type": "text",
+    "tags": ["loan_form_personal_loan"]
+  },
+  "loanPurposeLabel": "വായ്പയുടെ ഉദ്ദേശ്യം*",
+
+  "@loanPurposePlaceholder": {
+    "description": "Placeholder for Loan Purpose dropdown",
+    "type": "text",
+    "tags": ["loan_form_personal_loan"]
+  },
+  "loanPurposePlaceholder": "വായ്പയുടെ ഉദ്ദേശ്യം തിരഞ്ഞെടുക്കുക",
+
+  "@loanAmountLabel": {
+    "description": "Label for Loan Amount input field",
+    "type": "text",
+    "tags": ["loan_form_personal_loan"]
+  },
+  "loanAmountLabel": "ആവശ്യമായ വായ്പ തുക*",
+
+  "@loanAmountHint": {
+    "description": "Hint text for Loan Amount input field",
+    "type": "text",
+    "tags": ["loan_form_personal_loan"]
+  },
+  "loanAmountHint": "വായ്പ തുക നിക്ഷേപിക്കുക",
+
+  "@tenureLabel": {
+    "description": "Label for Tenure input field",
+    "type": "text",
+    "tags": ["loan_form_personal_loan"]
+  },
+  "tenureLabel": "കാലാവധി (വർഷം)*",
+
+  "@tenureHint": {
+    "description": "Hint text for Tenure input field",
+    "type": "text",
+    "tags": ["loan_form_personal_loan"]
+  },
+  "tenureHint": "കാലാവധി നൽകുക",
+
+  "@retirementAgeLabel": {
+    "description": "Label for Retirement Age input field",
+    "type": "text",
+    "tags": ["loan_form_personal_loan"]
+  },
+  "retirementAgeLabel": "ഇതികാലത്തിൻ്റെ പ്രായം (വർഷം)*",
+
+  "@retirementAgeHint": {
+    "description": "Hint text for Retirement Age input field",
+    "type": "text",
+    "tags": ["loan_form_personal_loan"]
+  },
+  "retirementAgeHint": "ഇതികാലത്തിൻ്റെ പ്രായം നൽകുക",
+
+  "@yourEmployerWillTitle": {
+    "description": "Title for Your Employer Will section",
+    "type": "text",
+    "tags": ["loan_form_personal_loan"]
+  },
+  "yourEmployerWillTitle": "നിങ്ങളുടെ തൊഴിലുടമ",
+
+  "@emiFromSalaryAccountText": {
+    "description": "Question about EMI payment from salary account",
+    "type": "text",
+    "tags": ["loan_form_personal_loan"]
+  },
+  "emiFromSalaryAccountText": "നിങ്ങളുടെ ശമ്പള അക്കൗണ്ടിൽ നിന്ന് EMI നേരിട്ട് പേയ്‌മെന്റ് ചെയ്യും吗?",
+
+  "@outstandingLoanTerminalPaymentsText": {
+    "description": "Question about paying outstanding loan amount from terminal payments",
+    "type": "text",
+    "tags": ["loan_form_personal_loan"]
+  },
+  "outstandingLoanTerminalPaymentsText": "നിങ്ങളുടെ തൊഴിലുടമയെ വിട്ടുകൊടുക്കുന്ന സമയത്ത് ടേർമിനൽ പേയ്‌മെന്റുകളിൽ നിന്ന് ബാക്കിയുള്ള വായ്പ തുക കൈമാറാൻ നിങ്ങൾ തയാറാണോ?",
+
+  "@salaryAccountConfirmationText": {
+    "description": "Question about paying salary only in salary account and getting NOC",
+    "type": "text",
+    "tags": ["loan_form_personal_loan"]
+  },
+  "salaryAccountConfirmationText": "നിങ്ങൾ മാത്രം ശമ്പള അക്കൗണ്ടിൽ ശമ്പളമെടുക്കും എന്നുപറയുന്നുവോ, അക്കൗണ്ടുകൾ മാറ്റുന്നതിന് മുമ്പ് ബാങ്കിൽ നിന്ന് സ്ഥിരീകരണം (NOC) നേടും?",
+
+  "@whetherYouWillTitle": {
+    "description": "Title for Whether you (Employer/Borrower) will section",
+    "type": "text",
+    "tags": ["loan_form_personal_loan"]
+  },
+  "whetherYouWillTitle": "നിങ്ങൾ (തൊഴിലുടമ/ഉഴിതിരിക്കുക) ചെയ്യും",
+
+  "@issueLetterOutstandingLoanText": {
+    "description": "Question about issuing letter to employer to pay outstanding loan",
+    "type": "text",
+    "tags": ["loan_form_personal_loan"]
+  },
+  "issueLetterOutstandingLoanText": "നിങ്ങളുടെ തൊഴിലുടമയ്ക്ക് ഒരു കത്ത് നൽകുമോ, അവർ ടേർമിനൽ പേയ്‌മെന്റുകളിൽ നിന്നുള്ള ബാക്കിയുള്ള വായ്പ നൽകും?",
+
+  "@issueLetterNotChangeAccountText": {
+    "description": "Question about issuing letter to employer to not change salary account",
+    "type": "text",
+    "tags": ["loan_form_personal_loan"]
+  },
+  "issueLetterNotChangeAccountText": "നിങ്ങളുടെ ശമ്പള അക്കൗണ്ടിനെ മാറ്റാൻ അനുവദിക്കാത്ത ഒരു കത്ത് നിങ്ങൾ നൽകുമോ, മാറ്റങ്ങൾ വരുമ്പോൾ ബാങ്കിൽ നിന്ന് സ്ഥിരീകരണം (NOC) വാങ്ങണോ?",
+
+  "@repaymentMethodLabel": {
+    "description": "Label for Repayment Method dropdown",
+    "type": "text",
+    "tags": ["loan_form_personal_loan"]
+  },
+  "repaymentMethodLabel": "പണയത്തിനുള്ള രീതി*",
+
+  "@repaymentMethodPlaceholder": {
+    "description": "Placeholder for Repayment Method dropdown",
+    "type": "text",
+    "tags": ["loan_form_personal_loan"]
+  },
+  "repaymentMethodPlaceholder": "പണയത്തിനുള്ള രീതി തിരഞ്ഞെടുക്കുക",
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  "@chooseBusinessProfile": {
+    "description": "Text for choosing a business profile",
+    "type": "text",
+    "tags": ["business_loan_journey"]
+  },
+  "chooseBusinessProfile": "നിങ്ങളുടെ ബിസിനസ്സ് പ്രൊഫൈൽ തിരഞ്ഞെടുക്കുക",
+
+  "@selectedProfileBusiness": {
+    "description": "Text showing the selected business profile",
+    "type": "text",
+    "tags": ["business_loan_journey"]
+  },
+  "selectedProfileBusiness": "തിരഞ്ഞെടുത്ത പ്രൊഫൈൽ: ABC പ്രൈവറ്റ് ലിമിറ്റഡ്",
+
+  "@selectProfileDescription": {
+    "description": "Instructions for selecting or creating a business profile",
+    "type": "text",
+    "tags": ["business_loan_journey"]
+  },
+  "selectProfileDescription": "ലിസ്റ്റിൽ നിന്നു നിങ്ങളുടെ ബിസിനസ്സ് പ്രൊഫൈൽ തിരഞ്ഞെടുക്കുക. നിങ്ങൾക്കു ഒരു പ്രൊഫൈൽ ഇല്ലെങ്കിൽ, ഒരു പുതിയ പ്രൊഫൈൽ കൂടി സൃഷ്ടിക്കാവുന്നതാണ്.",
+
+  "@itrFormDescription": {
+    "description": "Description of the importance of the Income Tax Return",
+    "type": "text",
+    "tags": ["business_loan_journey"]
+  },
+  "itrFormDescription": "നിങ്ങളുടെ ബിസിനസിന്റെ വരുമാന നികുതി റിട്ടേൺ (ITR) നൽകുന്നത് ആവശ്യമാണ്, കാരണം ഇത് നിങ്ങളുടെ കമ്പനി സാമ്പത്തിക ആരോഗ്യം மற்றும் സ്ഥിരത വ്യക്തമാക്കുന്നു.",
+
+  "@itrButtonTitleBusiness": {
+    "description": "Button title for submitting the Income Tax Return",
+    "type": "text",
+    "tags": ["business_loan_journey"]
+  },
+  "itrButtonTitleBusiness": "ആവശ്യമായ വരുമാന നികുതി",
+
+  "@itrButtonDescriptionBusiness": {
+    "description": "Instructions for providing the Income Tax Return",
+    "type": "text",
+    "tags": ["business_loan_journey"]
+  },
+  "itrButtonDescriptionBusiness": "നിങ്ങളുടെ ബിസിനസിന്റെ കഴിഞ്ഞ 3 വർഷത്തിലെ വരുമാന നികുതി റിട്ടേൺ നൽകുക.",
+
+  "@gstFormDescription": {
+    "description": "Description of the importance of GST details",
+    "type": "text",
+    "tags": ["business_loan_journey"]
+  },
+  "gstFormDescription": "നിങ്ങളുടെ GST റിട്ടേൺ നൽകുന്നത് നിങ്ങളുടെ ബിസിനസ്സ് നികുതി ചട്ടങ്ങളുമായി അനുസരിക്കുന്നതിനുള്ള ഉറപ്പാണ്, ഇത് കടം അനുമതി നേടുന്നതിൽ ഒരു പ്രധാന ഘടകമാണ്.",
+
+  "@gstButtonTitle": {
+    "description": "Button title for submitting GST details",
+    "type": "text",
+    "tags": ["business_loan_journey"]
+  },
+  "gstButtonTitle": "GST വിശദാംശങ്ങൾ",
+
+  "@gstButtonDescription": {
+    "description": "Instructions for providing GST details",
+    "type": "text",
+    "tags": ["business_loan_journey"]
+  },
+  "gstButtonDescription": "നിങ്ങളുടെ GST രജിസ്ട്രേഷൻ നമ്പറും റിട്ടേൺ വിശദാംശങ്ങളും നൽകുക.",
+
+  "@bankDetailsDescription": {
+    "description": "Description of the importance of submitting bank details",
+    "type": "text",
+    "tags": ["business_loan_journey"]
+  },
+  "bankDetailsDescription": "നിങ്ങളുടെ ബിസിനസ്സിന്റെ ബാങ്ക് വിശദാംശങ്ങൾ നൽകുന്നത് വായ്പയെടുത്തുന്നവൻ നിങ്ങളുടെ സാമ്പത്തിക ആരോഗ്യവും കാഷ് ഫ്ലോയും വിലയിരുത്താൻ സഹായിക്കുന്നു.",
+
+  "@bankButtonTitle": {
+    "description": "Button title for submitting bank details",
+    "type": "text",
+    "tags": ["business_loan_journey"]
+  },
+  "bankButtonTitle": "ബാങ്ക് വിശദാംശങ്ങൾ",
+
+  "@bankButtonDescription": {
+    "description": "Instructions for providing bank details",
+    "type": "text",
+    "tags": ["business_loan_journey"]
+  },
+  "bankButtonDescription": "നിങ്ങളുടെ ബിസിനസിന്റെ ബാങ്ക് വിശദാംശങ്ങളും ബാങ്ക് സ്റ്റേറ്റ്മെന്റുകളും നൽകുക.",
+
+  "@stakeholdersDescription": {
+    "description": "Description of the importance of providing stakeholder details",
+    "type": "text",
+    "tags": ["business_loan_journey"]
+  },
+  "stakeholdersDescription": "പ്രധാന പങ്കാളികളുടെ വിശദാംശങ്ങൾ നൽകുന്നതിലൂടെ വായ്പയെടുത്തുന്നവൻ ബിസിനസിന്റെ ഘടനയും ഉടമസ്ഥതയും മനസ്സിലാക്കാൻ സഹായിക്കുന്നു.",
+
+  "@stakeholdersButtonTitle": {
+    "description": "Button title for submitting stakeholder details",
+    "type": "text",
+    "tags": ["business_loan_journey"]
+  },
+  "stakeholdersButtonTitle": "പങ്കാളികൾ",
+
+  "@stakeholdersButtonDescription": {
+    "description": "Instructions for providing stakeholder details",
+    "type": "text",
+    "tags": ["business_loan_journey"]
+  },
+  "stakeholdersButtonDescription": "പ്രധാന പങ്കാളികളും അവരുടെ ബിസിനസ്സിൽ ഉള്ള പങ്കുകളും സംബന്ധിച്ച വിവരങ്ങൾ നൽകുക.",
+
+  "@loanFormDescription": {
+    "description": "Description of the final loan form step",
+    "type": "text",
+    "tags": ["business_loan_journey"]
+  },
+  "loanFormDescription": "വായ്പാ ഫോർം നിങ്ങളുടെ ബിസിനസ്സ് വായ്പാ അപേക്ഷയിലെ അവസാന ഘട്ടമാണ്. എല്ലാ വിശദാംശങ്ങളും ശരിയാണ് എന്ന് ഉറപ്പുവരുത്തുക.",
+
+  "@loanButtonTitle": {
+    "description": "Button title for submitting the loan form",
+    "type": "text",
+    "tags": ["business_loan_journey"]
+  },
+  "loanButtonTitle": "വായ്പാ ഫോം",
+
+  "@loanButtonDescription": {
+    "description": "Instructions for filling out the loan application form",
+    "type": "text",
+    "tags": ["business_loan_journey"]
+  },
+  "loanButtonDescription": "നിങ്ങളുടെ അഭ്യർത്ഥന പൂർത്തിയാക്കാൻ വായ്പാ അപേക്ഷ ഫോർം പൂരിപ്പിക്കുക.",
+
+
+
+
+
+
+
+
+
+
+
+  "@gstDetailsTitle": {
+    "description": "Title for the GST details section",
+    "type": "text",
+    "tags": ["gst_details_business_loan"]
+  },
+  "gstDetailsTitle": "ജിഎസ്‌ടി വിശദാംശങ്ങൾ",
+
+  "@toggleEnterGst": {
+    "description": "Label for the toggle switch to enter GST",
+    "type": "text",
+    "tags": ["gst_details_business_loan"]
+  },
+  "toggleEnterGst": "ജിഎസ്‌ടി നൽകുക",
+
+  "@toggleDeclareBusiness": {
+    "description": "Label for the toggle switch to declare business",
+    "type": "text",
+    "tags": ["gst_details_business_loan"]
+  },
+  "toggleDeclareBusiness": "ബിസിനസ് പ്രഖ്യാപിക്കുക",
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  "@businessButtonLabel": {
+    "description": "Label for business button indicating the business number",
+    "type": "text",
+    "tags": ["gst_details_business_loan"]
+  },
+  "businessButtonLabel": "ബിസിനസ് ",
+
+  "@addBusinessButtonLabel": {
+    "description": "Label for the button to add a new business",
+    "type": "text",
+    "tags": ["gst_details_business_loan"]
+  },
+  "addBusinessButtonLabel": "പുതിയ ബിസിനസ് ചേർക്കുക",
+
+  "@gstNumberLabel": {
+    "description": "Label for the GST number input field",
+    "type": "text",
+    "tags": ["gst_details_business_loan"]
+  },
+  "gstNumberLabel": "ജിഎസ്‌ടി നമ്പർ*",
+
+  "@gstNumberHint": {
+    "description": "Hint text for the GST number input field",
+    "type": "text",
+    "tags": ["gst_details_business_loan"]
+  },
+  "gstNumberHint": "ജിഎസ്‌ടി നമ്പർ നൽകുക",
+
+  "@gstUsernameLabel": {
+    "description": "Label for the GST username input field",
+    "type": "text",
+    "tags": ["gst_details_business_loan"]
+  },
+  "gstUsernameLabel": "ജിഎസ്‌ടി ഉപയോക്തൃനാമം*",
+
+  "@gstUsernameHint": {
+    "description": "Hint text for the GST username input field",
+    "type": "text",
+    "tags": ["gst_details_business_loan"]
+  },
+  "gstUsernameHint": "ജിഎസ്‌ടി ഉപയോക്തൃനാമം നൽകുക",
+
+  "@cityLabelGST": {
+    "description": "Label for the city input field",
+    "type": "text",
+    "tags": ["gst_details_business_loan"]
+  },
+  "cityLabelGST": "നഗരം*",
+
+  "@totalPurchaseLabel": {
+    "description": "Label for the total purchase input field",
+    "type": "text",
+    "tags": ["gst_details_business_loan"]
+  },
+  "totalPurchaseLabel": "മൊത്തം വാങ്ങൽ*",
+
+  "@totalPurchaseHint": {
+    "description": "Hint text for the total purchase input field",
+    "type": "text",
+    "tags": ["gst_details_business_loan"]
+  },
+  "totalPurchaseHint": "മൊത്തം വാങ്ങൽ നൽകുക",
+
+  "@totalSalesLabel": {
+    "description": "Label for the total sales input field",
+    "type": "text",
+    "tags": ["gst_details_business_loan"]
+  },
+  "totalSalesLabel": "മൊത്തം വിൽപ്പന*",
+
+  "@totalSalesHint": {
+    "description": "Hint text for the total sales input field",
+    "type": "text",
+    "tags": ["gst_details_business_loan"]
+  },
+  "totalSalesHint": "മൊത്തം വിൽപ്പന നൽകുക",
+
+  "@updateOnLabel": {
+    "description": "Label for the update date picker button",
+    "type": "text",
+    "tags": ["gst_details_business_loan"]
+  },
+  "updateOnLabel": "അപ്ഡേറ്റ് ചെയ്യുക*",
+
+  "@selectBusinessToEdit": {
+    "description": "Message to display when no business is selected for editing",
+    "type": "text",
+    "tags": ["gst_details_business_loan"]
+  },
+  "selectBusinessToEdit": "തിരുത്താൻ ഒരു ബിസിനസ് തിരഞ്ഞെടുക്കുക",
+
+  "@deleteButtonLabel": {
+    "description": "Label for the delete button",
+    "type": "text",
+    "tags": ["gst_details_business_loan"]
+  },
+  "deleteButtonLabel": "കുറച്ചു",
+
+
+
+
+
+
+
+
+
+
+
+
+
+  "@declareBusinessLabel": {
+    "description": "Title for declaring business details",
+    "type": "text",
+    "tags": ["declare_business_gst_details_business_loan"]
+  },
+  "declareBusinessLabel": "നിങ്ങളുടെ ബിസിനസിന്റെ വിശദാംശങ്ങൾ പ്രസ്താവിക്കുക",
+
+  "@businessNameLabel": {
+    "description": "Label for the business name input field",
+    "type": "text",
+    "tags": ["declare_business_gst_details_business_loan"]
+  },
+  "businessNameLabel": "ബിസിനസ്സ് നാമം*",
+
+  "@businessNameHint": {
+    "description": "Hint text for the business name input field",
+    "type": "text",
+    "tags": ["declare_business_gst_details_business_loan"]
+  },
+  "businessNameHint": "ബിസിനസ്സ് നാമം നൽകുക",
+
+  "@dateOfIncorporationLabel": {
+    "description": "Label for the date of incorporation button",
+    "type": "text",
+    "tags": ["declare_business_gst_details_business_loan"]
+  },
+  "dateOfIncorporationLabel": "സ്ഥാപന തീയതി",
+
+  "@constitutionLabel": {
+    "description": "Label for the constitution input field",
+    "type": "text",
+    "tags": ["declare_business_gst_details_business_loan"]
+  },
+  "constitutionLabel": "ഘടന*",
+
+  "@constitutionHint": {
+    "description": "Hint text for the constitution input field",
+    "type": "text",
+    "tags": ["declare_business_gst_details_business_loan"]
+  },
+  "constitutionHint": "നിങ്ങളുടെ ഘടന നൽകുക",
+
+  "@customersLabel": {
+    "description": "Label for the number of customers input field",
+    "type": "text",
+    "tags": ["declare_business_gst_details_business_loan"]
+  },
+  "customersLabel": "ഉപഭോക്താക്കളിന്റെ എണ്ണം*",
+
+  "@customersHint": {
+    "description": "Hint text for the number of customers input field",
+    "type": "text",
+    "tags": ["declare_business_gst_details_business_loan"]
+  },
+  "customersHint": "നിങ്ങളുടെ ഉപഭോക്താക്കളുടെ എണ്ണം നൽകുക",
+
+  "@panLabel": {
+    "description": "Label for the PAN input field",
+    "type": "text",
+    "tags": ["declare_business_gst_details_business_loan"]
+  },
+  "panLabel": "PAN*",
+
+  "@panHint": {
+    "description": "Hint text for the PAN input field",
+    "type": "text",
+    "tags": ["declare_business_gst_details_business_loan"]
+  },
+  "panHint": "നിങ്ങളുടെ PAN നൽകുക",
+
+  "@highestSaleLabel": {
+    "description": "Label for the highest sale input field",
+    "type": "text",
+    "tags": ["declare_business_gst_details_business_loan"]
+  },
+  "highestSaleLabel": "ആദ്യമൂന്നിൽ പരമാവധി വിറ്റുപോകുന്നു*",
+
+  "@highestSaleHint": {
+    "description": "Hint text for the highest sale input field",
+    "type": "text",
+    "tags": ["declare_business_gst_details_business_loan"]
+  },
+  "highestSaleHint": "നിങ്ങളുടെ പരമാവധി വിറ്റുപോകുന്നത് നൽകുക",
+
+  "@lastYearsSalesLabel": {
+    "description": "Header for last year's sales section",
+    "type": "text",
+    "tags": ["declare_business_gst_details_business_loan"]
+  },
+  "lastYearsSalesLabel": "കഴിഞ്ഞ വർഷം വിറ്റപണം",
+
+  "@januaryLabel": {
+    "description": "Label for January month",
+    "type": "text",
+    "tags": ["declare_business_gst_details_business_loan"]
+  },
+  "januaryLabel": "ജനുവരി",
+
+  "@februaryLabel": {
+    "description": "Label for February month",
+    "type": "text",
+    "tags": ["declare_business_gst_details_business_loan"]
+  },
+  "februaryLabel": "ഫെബ്രുവരി",
+
+  "@marchLabel": {
+    "description": "Label for March month",
+    "type": "text",
+    "tags": ["declare_business_gst_details_business_loan"]
+  },
+  "marchLabel": "മാർച്ച്",
+
+  "@aprilLabel": {
+    "description": "Label for April month",
+    "type": "text",
+    "tags": ["declare_business_gst_details_business_loan"]
+  },
+  "aprilLabel": "ഏപ്രിൽ",
+
+  "@mayLabel": {
+    "description": "Label for May month",
+    "type": "text",
+    "tags": ["declare_business_gst_details_business_loan"]
+  },
+  "mayLabel": "മെയ്",
+
+  "@juneLabel": {
+    "description": "Label for June month",
+    "type": "text",
+    "tags": ["declare_business_gst_details_business_loan"]
+  },
+  "juneLabel": "ജൂൺ",
+
+  "@julyLabel": {
+    "description": "Label for July month",
+    "type": "text",
+    "tags": ["declare_business_gst_details_business_loan"]
+  },
+  "julyLabel": "ജൂലൈ",
+
+  "@augustLabel": {
+    "description": "Label for August month",
+    "type": "text",
+    "tags": ["declare_business_gst_details_business_loan"]
+  },
+  "augustLabel": "ഓഗസ്റ്റ്",
+
+  "@septemberLabel": {
+    "description": "Label for September month",
+    "type": "text",
+    "tags": ["declare_business_gst_details_business_loan"]
+  },
+  "septemberLabel": "സെപ്റ്റംബർ",
+
+  "@octoberLabel": {
+    "description": "Label for October month",
+    "type": "text",
+    "tags": ["declare_business_gst_details_business_loan"]
+  },
+  "octoberLabel": "ഒക്ടോബർ",
+
+  "@novemberLabel": {
+    "description": "Label for November month",
+    "type": "text",
+    "tags": ["declare_business_gst_details_business_loan"]
+  },
+  "novemberLabel": "നവംബർ",
+
+  "@decemberLabel": {
+    "description": "Label for December month",
+    "type": "text",
+    "tags": ["declare_business_gst_details_business_loan"]
+  },
+  "decemberLabel": "ഡിസംബർ",
+
+  "@januarySalesLabel": {
+    "description": "Label for January sales input field",
+    "type": "text",
+    "tags": ["declare_business_gst_details_business_loan"]
+  },
+  "januarySalesLabel": "വിൽപ്പന (ജനുവരി)",
+
+  "@februarySalesLabel": {
+    "description": "Label for February sales input field",
+    "type": "text",
+    "tags": ["declare_business_gst_details_business_loan"]
+  },
+  "februarySalesLabel": "വിൽപ്പന (ഫെബ്രുവരി)",
+
+  "@marchSalesLabel": {
+    "description": "Label for March sales input field",
+    "type": "text",
+    "tags": ["declare_business_gst_details_business_loan"]
+  },
+  "marchSalesLabel": "വിൽപ്പന (മാർച്ച്)",
+
+  "@aprilSalesLabel": {
+    "description": "Label for April sales input field",
+    "type": "text",
+    "tags": ["declare_business_gst_details_business_loan"]
+  },
+  "aprilSalesLabel": "വിൽപ്പന (ഏപ്രിൽ)",
+
+  "@maySalesLabel": {
+    "description": "Label for May sales input field",
+    "type": "text",
+    "tags": ["declare_business_gst_details_business_loan"]
+  },
+  "maySalesLabel": "വിൽപ്പന (മെയ്)",
+
+  "@juneSalesLabel": {
+    "description": "Label for June sales input field",
+    "type": "text",
+    "tags": ["declare_business_gst_details_business_loan"]
+  },
+  "juneSalesLabel": "വിൽപ്പന (ജൂൺ)",
+
+  "@julySalesLabel": {
+    "description": "Label for July sales input field",
+    "type": "text",
+    "tags": ["declare_business_gst_details_business_loan"]
+  },
+  "julySalesLabel": "വിൽപ്പന (ജൂലൈ)",
+
+  "@augustSalesLabel": {
+    "description": "Label for August sales input field",
+    "type": "text",
+    "tags": ["declare_business_gst_details_business_loan"]
+  },
+  "augustSalesLabel": "വിൽപ്പന (ഓഗസ്റ്റ്)",
+
+  "@septemberSalesLabel": {
+    "description": "Label for September sales input field",
+    "type": "text",
+    "tags": ["declare_business_gst_details_business_loan"]
+  },
+  "septemberSalesLabel": "വിൽപ്പന (സെപ്റ്റംബർ)",
+
+  "@octoberSalesLabel": {
+    "description": "Label for October sales input field",
+    "type": "text",
+    "tags": ["declare_business_gst_details_business_loan"]
+  },
+  "octoberSalesLabel": "വിൽപ്പന (ഒക്ടോബർ)",
+
+  "@novemberSalesLabel": {
+    "description": "Label for November sales input field",
+    "type": "text",
+    "tags": ["declare_business_gst_details_business_loan"]
+  },
+  "novemberSalesLabel": "വിൽപ്പന (നവംബർ)",
+
+  "@decemberSalesLabel": {
+    "description": "Label for December sales input field",
+    "type": "text",
+    "tags": ["declare_business_gst_details_business_loan"]
+  },
+  "decemberSalesLabel": "വിൽപ്പന (ഡിസംബർ)",
+
+  "@nextButtonLabel": {
+    "description": "Label for the next button",
+    "type": "text",
+    "tags": ["declare_business_gst_details_business_loan"]
+  },
+  "nextButtonLabel": "അടുത്തതായി",
+
+  "@gobackButtonLabel": {
+    "description": "Label for the go back button",
+    "type": "text",
+    "tags": ["declare_business_gst_details_business_loan"]
+  },
+  "gobackButtonLabel": "തിരിച്ചു പോവ്",
+
+
+
+
+
+
+
+
+
+  "bank_details_title": "ബാങ്ക് വിശദാംശങ്ങൾ",
+  "@bank_details_title": {
+    "description": "Title for the bank details page",
+    "tags": ["bank_details_business_loan"]
+  },
+  "bank_details_subtitle": "നിങ്ങൾക്ക് 3 ബാങ്ക് അക്കൗണ്ടുകൾ വരെ ചേർക്കാൻ കഴിയും",
+  "@bank_details_subtitle": {
+    "description": "Subtitle indicating the number of bank accounts allowed",
+    "tags": ["bank_details_business_loan"]
+  },
+  "upload_bank_statement": "ബാങ്ക് സ്റ്റേറ്റ്മെന്റ് അപ്‌ലോഡ് ചെയ്യുക (PDF)",
+  "@upload_bank_statement": {
+    "description": "Label for uploading bank statements in PDF format",
+    "tags": ["bank_details_business_loan"]
+  },
+  "bank_account_button": "ബാങ്ക്",
+  "@bank_account_button": {
+    "description": "Button text for bank accounts",
+    "tags": ["bank_details_business_loan"]
+  },
+  "add_account_button": "അക്കൗണ്ട് ചേർക്കുക",
+  "@add_account_button": {
+    "description": "Button text for adding a new bank account",
+    "tags": ["bank_details_business_loan"]
+  },
+  "bank_name_label": "ബാങ്ക് പേര്*",
+  "@bank_name_label": {
+    "description": "Label for the bank name input field",
+    "tags": ["bank_details_business_loan"]
+  },
+  "bank_name_hint": "ബാങ്ക് പേര് നൽകുക",
+  "@bank_name_hint": {
+    "description": "Hint text for the bank name input field",
+    "tags": ["bank_details_business_loan"]
+  },
+  "account_since_month_label": "അക്കൗണ്ട് ആരംഭിച്ച കാലം (മാസം)*",
+  "@account_since_month_label": {
+    "description": "Label for the account since month input",
+    "tags": ["bank_details_business_loan"]
+  },
+  "account_since_year_label": "അക്കൗണ്ട് ആരംഭിച്ച കാലം (വർഷം)*",
+  "@account_since_year_label": {
+    "description": "Label for the account since year input",
+    "tags": ["bank_details_business_loan"]
+  },
+
+
+
+
+
+
+
+
+
+
+  "@@locale": "ml",
+  "@@tags": ["stakeholder_business_loan"],
+  "declare_business_stakeholders": "ബിസിനസ് ഓഹരുടമകളെ പ്രഖ്യാപിക്കുക",
+  "@declare_business_stakeholders": {
+    "description": "Title for the page where the user declares business stakeholders",
+    "tags": ["stakeholder_business_loan"],
+    "type": "text"
+  },
+  "business_details": "ബിസിനസ് വിവരങ്ങൾ",
+  "@business_details": {
+    "description": "Section heading for business details",
+    "tags": ["stakeholder_business_loan", "business_detail_loan_form_business_loan"],
+    "type": "text"
+  },
+  "address_line_1": "വിലാസം വരി 1*",
+  "@address_line_1": {
+    "description": "Label for the first address line input field",
+    "tags": ["stakeholder_business_loan"],
+    "type": "text"
+  },
+  "address_line_2": "വിലാസം വരി 2",
+  "@address_line_2": {
+    "description": "Label for the second address line input field",
+    "tags": ["stakeholder_business_loan"],
+    "type": "text"
+  },
+
+
+
+
+
+
+
+
+
+
+
+
+  "add_stakeholder": "സ്റ്റേക്ക്‌ഹോൾഡർ ചേർക്കുക",
+  "@add_stakeholder": {
+    "description": "Button label for adding a new stakeholder",
+    "tags": ["add_stakeholder_business_loan"],
+    "type": "text"
+  },
+  "select_stakeholder": "സ്റ്റേക്ക്‌ഹോൾഡർ തിരഞ്ഞെടുക്കുക",
+  "@select_stakeholder": {
+    "description": "Dropdown label for selecting a stakeholder",
+    "tags": ["add_stakeholder_business_loan"],
+    "type": "text"
+  },
+  "relationship_type": "ബന്ധം തരം",
+  "@relationship_type": {
+    "description": "Label for the relationship type field",
+    "tags": ["add_stakeholder_business_loan"],
+    "type": "text"
+  },
+  "relationship_type_hint": "ബന്ധത്തിന്റെ തരം നൽകുക",
+  "@relationship_type_hint": {
+    "description": "Hint text for the relationship type field",
+    "tags": ["add_stakeholder_business_loan"],
+    "type": "text"
+  },
+  "first_name": "ആദ്യനാമം",
+  "@first_name": {
+    "description": "Label for the first name field",
+    "tags": ["add_stakeholder_business_loan"],
+    "type": "text"
+  },
+  "middle_name": "മദ്ധ്യനാമം",
+  "@middle_name": {
+    "description": "Label for the middle name field",
+    "tags": ["add_stakeholder_business_loan"],
+    "type": "text"
+  },
+  "last_name": "അവസാനനാമം",
+  "@last_name": {
+    "description": "Label for the last name field",
+    "tags": ["add_stakeholder_business_loan"],
+    "type": "text"
+  },
+  "ownership_percentage": "ഓണർഷിപ്പ് %",
+  "@ownership_percentage": {
+    "description": "Label for the ownership percentage field",
+    "tags": ["add_stakeholder_business_loan"],
+    "type": "text"
+  },
+  "ownership_percentage_hint": "ഓണർഷിപ്പ് % നൽകുക",
+  "@ownership_percentage_hint": {
+    "description": "Hint text for the ownership percentage field",
+    "tags": ["add_stakeholder_business_loan"],
+    "type": "text"
+  },
+  "father_name": "അച്ഛന്റെ പേര്",
+  "@father_name": {
+    "description": "Label for the father name field",
+    "tags": ["add_stakeholder_business_loan"],
+    "type": "text"
+  },
+  "dob": "ജനനത്തിയതി",
+  "@dob": {
+    "description": "Label for the date of birth field",
+    "tags": ["add_stakeholder_business_loan"],
+    "type": "text"
+  },
+  "mobile_number": "മൊബൈൽ നമ്പർ",
+  "@mobile_number": {
+    "description": "Label for the mobile number field",
+    "tags": ["add_stakeholder_business_loan"],
+    "type": "text"
+  },
+  "residence_status": "നിവാസസ്ഥാനം",
+  "@residence_status": {
+    "description": "Label for the residence status field",
+    "tags": ["add_stakeholder_business_loan"],
+    "type": "text"
+  },
+  "residence_status_hint": "നിവാസസ്ഥാനം നൽകുക",
+  "@residence_status_hint": {
+    "description": "Hint text for the residence status field",
+    "tags": ["add_stakeholder_business_loan"],
+    "type": "text"
+  },
+  "pan": "PAN നൽകുക",
+  "@pan": {
+    "description": "Label for the PAN field",
+    "tags": ["add_stakeholder_business_loan"],
+    "type": "text"
+  },
+  "education_status": "വിദ്യാഭ്യാസ സ്ഥിതി",
+  "@education_status": {
+    "description": "Label for the education status field",
+    "tags": ["add_stakeholder_business_loan"],
+    "type": "text"
+  },
+  "education_status_hint": "വിദ്യാഭ്യാസ സ്ഥിതി നൽകുക",
+  "@education_status_hint": {
+    "description": "Hint text for the education status field",
+    "tags": ["add_stakeholder_business_loan"],
+    "type": "text"
+  },
+  "total_experience": "മൊത്തം പരിചയം (വർഷങ്ങൾ)",
+  "@total_experience": {
+    "description": "Label for the total experience field",
+    "tags": ["add_stakeholder_business_loan"],
+    "type": "text"
+  },
+  "total_experience_hint": "മൊത്തം പരിചയം നൽകുക",
+  "@total_experience_hint": {
+    "description": "Hint text for the total experience field",
+    "tags": ["add_stakeholder_business_loan"],
+    "type": "text"
+  },
+  "net_worth": "നികുതി (INR)",
+  "@net_worth": {
+    "description": "Label for the net worth field",
+    "tags": ["add_stakeholder_business_loan"],
+    "type": "text"
+  },
+  "net_worth_hint": "നികുതി നൽകുക",
+  "@net_worth_hint": {
+    "description": "Hint text for the net worth field",
+    "tags": ["add_stakeholder_business_loan"],
+    "type": "text"
+  },
+  "address_line_one": "ശ്രേണി ഒന്ന്*",
+  "@address_line_one": {
+    "description": "Label for the first line of address",
+    "tags": ["add_stakeholder_business_loan"],
+    "type": "text"
+  },
+  "address_line_two": "ശ്രേണി രണ്ടില്‍",
+  "@address_line_two": {
+    "description": "Label for the second line of address",
+    "tags": ["add_stakeholder_business_loan"],
+    "type": "text"
+  },
+  "phone": "ഫോൺ",
+  "@phone": {
+    "description": "Label for the phone field",
+    "tags": ["add_stakeholder_business_loan"],
+    "type": "text"
+  },
+
+  "@phone_hint": {
+    "description": "ഫോൺ ഇൻപുട്ടിന് ഹിന്റ് ടെക്സ്റ്റ്",
+    "type": "text"
+  },
+  "phone_hint": "ഫോൺ നൽകുക",
+
+  "visually_impaired": "ദൃശ്യരംഗത്തുള്ളവന്",
+  "@visually_impaired": {
+    "description": "Label for the visually impaired field",
+    "tags": ["add_stakeholder_business_loan"],
+    "type": "text"
+  },
+  "visually_impaired_hint": "നിലവാരം നൽകുക",
+  "@visually_impaired_hint": {
+    "description": "Hint text for the visually impaired field",
+    "tags": ["add_stakeholder_business_loan"],
+    "type": "text"
+  },
+  "is_guarantor": "ഇത് ഗാർന്റർ ആണോ?",
+  "@is_guarantor": {
+    "description": "Label for the guarantor status",
+    "tags": ["add_stakeholder_business_loan"],
+    "type": "text"
+  },
+  "save": "സംരക്ഷിക്കുക",
+  "@save": {
+    "description": "Button label for saving stakeholder details",
+    "tags": ["add_stakeholder_business_loan"],
+    "type": "text"
+  },
+  "delete": "കട്ടാൻ",
+  "@delete": {
+    "description": "Button label for deleting stakeholder",
+    "tags": ["add_stakeholder_business_loan"],
+    "type": "text"
+  },
+  "discard": "നിഷേധിക്കുക",
+  "@discard": {
+    "description": "Button label for discarding stakeholder changes",
+    "tags": ["add_stakeholder_business_loan"],
+    "type": "text"
+  },
+
+
+
+
+
+
+
+
+
+
+
+
+
+  "main_partner": "പ്രധാന പങ്കാളി",
+  "@main_partner": {
+    "description": "Title for the Main Partner page",
+    "tags": ["main_partner_business_loan"],
+    "type": "text"
+  },
+  "select_main_partner": "പ്രധാന പങ്കാളിയെ തിരഞ്ഞെടുക്കുക",
+  "@select_main_partner": {
+    "description": "Button label for selecting the main partner",
+    "tags": ["main_partner_business_loan"],
+    "type": "text"
+  },
+  "owning_a_house": "നിങ്ങൾക്ക് വീടുണ്ടോ?",
+  "@owning_a_house": {
+    "description": "Label for the owning a house question",
+    "tags": ["main_partner_business_loan"],
+    "type": "text"
+  },
+  "assessed_for_income_tax": "വരുത്തിയിട്ടുണ്ടോ?",
+  "@assessed_for_income_tax": {
+    "description": "Label for the income tax assessment question",
+    "tags": ["main_partner_business_loan"],
+    "type": "text"
+  },
+  "have_life_insurance": "ജീവിത ഇൻഷുറൻസുണ്ടോ?",
+  "@have_life_insurance": {
+    "description": "Label for the life insurance question",
+    "tags": ["main_partner_business_loan"],
+    "type": "text"
+  },
+  "marital_status": "വിവാഹസ്ഥിതി",
+  "@marital_status": {
+    "description": "Label for the marital status field",
+    "tags": ["main_partner_business_loan"],
+    "type": "text"
+  },
+  "marital_status_hint": "വിവാഹസ്ഥിതി രേഖപ്പെടുത്തുക",
+  "@marital_status_hint": {
+    "description": "Hint text for the marital status field",
+    "tags": ["main_partner_business_loan"],
+    "type": "text"
+  },
+  "spouse_name": "കുടുംബത്തിന്റെ പേര്",
+  "@spouse_name": {
+    "description": "Label for the spouse name field",
+    "tags": ["main_partner_business_loan"],
+    "type": "text"
+  },
+  "spouse_name_hint": "കുടുംബത്തിന്റെ പേര് രേഖപ്പെടുത്തുക",
+  "@spouse_name_hint": {
+    "description": "Hint text for the spouse name field",
+    "tags": ["main_partner_business_loan"],
+    "type": "text"
+  },
+  "no_of_children": "കുഞ്ഞുകളുടെ എണ്ണം",
+  "@no_of_children": {
+    "description": "Label for the number of children field",
+    "tags": ["main_partner_business_loan"],
+    "type": "text"
+  },
+  "no_of_children_hint": "കുഞ്ഞുകളുടെ എണ്ണം രേഖപ്പെടുത്തുക",
+  "@no_of_children_hint": {
+    "description": "Hint text for the number of children field",
+    "tags": ["main_partner_business_loan"],
+    "type": "text"
+  },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  "loan_form": "ലോൺ ഫോം",
+  "@loan_form": {
+    "description": "Title for the Loan Form page",
+    "tags": ["loan_form_business_loan"],
+    "type": "text"
+  },
+  "total_loan": "മൊത്തം ലോൺ",
+  "@total_loan": {
+    "description": "Label for the total loan section",
+    "tags": ["loan_form_business_loan"],
+    "type": "text"
+  },
+  "note": "അവലോകനം",
+  "@note": {
+    "description": "Label for the note section",
+    "tags": ["loan_form_business_loan"],
+    "type": "text"
+  },
+  "note_description": " : ബാങ്കർ അവരുടെ ബാങ്കിലേക്കുള്ള നിലവിലെ സൗകര്യങ്ങൾ/പരിമിതികൾ മാറ്റാനുള്ള ഓപ്ഷൻ ലഭിക്കും അല്ലെങ്കിൽ സമാന ചാർജുകൾ ആവശ്യപ്പെടാം.",
+  "@note_description": {
+    "description": "Description of the note regarding loan details",
+    "tags": ["loan_form_business_loan"],
+    "type": "text"
+  },
+  "existing_loans": "നിലവിലുള്ള വായ്പകൾ",
+  "@existing_loans": {
+    "description": "Label for the existing loans field",
+    "tags": ["loan_form_business_loan", "existing_loans_loan_form_business_loan"],
+    "type": "text"
+  },
+  "additional_loan_required": "അധിക വായ്പ ആവശ്യമാണ്",
+  "@additional_loan_required": {
+    "description": "Label for the additional loan required field",
+    "tags": ["loan_form_business_loan"],
+    "type": "text"
+  },
+  "total_loan_label": "മൊത്തം വായ്പ",
+  "@total_loan_label": {
+    "description": "Label for the total loan field",
+    "tags": ["loan_form_business_loan"],
+    "type": "text"
+  },
+  "submit": "സമർപ്പിക്കുക",
+  "@submit": {
+    "description": "Label for the submit button",
+    "tags": ["loan_form_business_loan"],
+    "type": "text"
+  },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  "industry": "തൊഴിൽ*",
+  "@industry": {
+    "description": "Label for the industry input field",
+    "tags": ["business_detail_loan_form_business_loan"],
+    "type": "text"
+  },
+  "industry_hint": "തൊഴിൽ നൽകുക",
+  "@industry_hint": {
+    "description": "Hint text for the industry input field",
+    "tags": ["business_detail_loan_form_business_loan"],
+    "type": "text"
+  },
+  "sector_name": "വിഭവശ്രേണി പേര്*",
+  "@sector_name": {
+    "description": "Label for the sector name input field",
+    "tags": ["business_detail_loan_form_business_loan"],
+    "type": "text"
+  },
+  "sector_name_hint": "വിഭവശ്രേണി പേര് നൽകുക",
+  "@sector_name_hint": {
+    "description": "Hint text for the sector name input field",
+    "tags": ["business_detail_loan_form_business_loan"],
+    "type": "text"
+  },
+  "sub_sector_name": "ഉപവിഭവശ്രേണി പേര്*",
+  "@sub_sector_name": {
+    "description": "Label for the sub sector name input field",
+    "tags": ["business_detail_loan_form_business_loan"],
+    "type": "text"
+  },
+  "sub_sector_name_hint": "ഉപവിഭവശ്രേണി പേര് നൽകുക",
+  "@sub_sector_name_hint": {
+    "description": "Hint text for the sub sector name input field",
+    "tags": ["business_detail_loan_form_business_loan"],
+    "type": "text"
+  },
+  "msme_registration_number": "MSME രജിസ്ട്രേഷൻ നമ്പർ*",
+  "@msme_registration_number": {
+    "description": "Label for the MSME registration number input field",
+    "tags": ["business_detail_loan_form_business_loan"],
+    "type": "text"
+  },
+  "msme_registration_number_hint": "MSME രജിസ്ട്രേഷൻ നമ്പർ നൽകുക",
+  "@msme_registration_number_hint": {
+    "description": "Hint text for the MSME registration number input field",
+    "tags": ["business_detail_loan_form_business_loan"],
+    "type": "text"
+  },
+  "udyog_aadhar_memorandum_no": "ഉദ്യോഗ ആദാർ മേമോറൻഡം നമ്പർ",
+  "@udyog_aadhar_memorandum_no": {
+    "description": "Label for the Udyog Aadhar Memorandum No. input field",
+    "tags": ["business_detail_loan_form_business_loan"],
+    "type": "text"
+  },
+  "udyog_aadhar_memorandum_no_hint": "ഉദ്യോഗ ആദാർ മേമോറൻഡം നമ്പർ നൽകുക",
+  "@udyog_aadhar_memorandum_no_hint": {
+    "description": "Hint text for the Udyog Aadhar Memorandum No. input field",
+    "tags": ["business_detail_loan_form_business_loan"],
+    "type": "text"
+  },
+  "product_service_description": "ഉൽപ്പന്നം/സേവന വിവരണം*",
+  "@product_service_description": {
+    "description": "Label for the product/service description input field",
+    "tags": ["business_detail_loan_form_business_loan"],
+    "type": "text"
+  },
+  "product_service_description_hint": "ഉൽപ്പന്നം/സേവന വിവരണം നൽകുക",
+  "@product_service_description_hint": {
+    "description": "Hint text for the product/service description input field",
+    "tags": ["business_detail_loan_form_business_loan"],
+    "type": "text"
+  },
+
+
+
+
+
+
+
+
+
+
+
+  "declare_collateral_security": "ഉപരിതല സുരക്ഷ പ്രഖ്യാപിക്കുക",
+  "@declare_collateral_security": {
+    "description": "ഉപരിതല സുരക്ഷാ പ്രഖ്യാപനത്തിന്റെ തലക്കെട്ട്",
+    "tags": ["declare_collateral_loan_form_business_loan"],
+    "type": "text"
+  },
+  "collateral_type": "ഉപരിതല തരം",
+  "@collateral_type": {
+    "description": "ഉപരിതല തരം ഇൻപുട്ട് ഫീൽഡിന്റെ ലേബൽ",
+    "tags": ["declare_collateral_loan_form_business_loan"],
+    "type": "text"
+  },
+  "collateral_type_hint": "ഉപരിതല തരം നൽകുക",
+  "@collateral_type_hint": {
+    "description": "ഉപരിതല തരം ഇൻപുട്ട് ഫീൽഡിന് വേണ്ടി സൂചനാ എഴുത്ത്",
+    "tags": ["declare_collateral_loan_form_business_loan"],
+    "type": "text"
+  },
+  "collateral_amount": "ഉപരിതല തുക (₹)",
+  "@collateral_amount": {
+    "description": "ഉപരിതല തുക ഇൻപുട്ട് ഫീൽഡിന്റെ ലേബൽ",
+    "tags": ["declare_collateral_loan_form_business_loan", "existing_loans_loan_form_business_loan"],
+    "type": "text"
+  },
+  "collateral_amount_hint": "ഉപരിതല തുക നൽകുക",
+  "@collateral_amount_hint": {
+    "description": "ഉപരിതല തുക ഇൻപുട്ട് ഫീൽഡിന് വേണ്ടി സൂചനാ എഴുത്ത്",
+    "tags": ["declare_collateral_loan_form_business_loan", "existing_loans_loan_form_business_loan"],
+    "type": "text"
+  },
+  "add_collateral": "ഉപരിതല ചേർക്കുക",
+  "@add_collateral": {
+    "description": "പുതിയ ഉപരിതല ചേർക്കുന്നതിന് ബട്ടണിന്റെ ലേബൽ",
+    "tags": ["declare_collateral_loan_form_business_loan"],
+    "type": "text"
+  },
+
+
+
+
+
+
+
+
+
+
+
+
+
+  "loan_detail": "ഋണത്തിന്റെ വിശദാംശങ്ങൾ",
+  "@loan_detail": {
+    "description": "Title for the loan details section",
+    "tags": ["loan_detail_loan_form_business_loan"],
+    "type": "text"
+  },
+  "loan_amount_required": "ഋണം ആവശ്യമാണ്*",
+  "@loan_amount_required": {
+    "description": "Label for the loan amount required input field",
+    "tags": ["loan_detail_loan_form_business_loan"],
+    "type": "text"
+  },
+  "loan_amount_hint": "ഋണത്തിന്റെ തുക നൽകുക",
+  "@loan_amount_hint": {
+    "description": "Hint text for the loan amount input field",
+    "tags": ["loan_detail_loan_form_business_loan"],
+    "type": "text"
+  },
+  "promoter_contribution": "പ്രോത്സാഹക സംഭാവന*",
+  "@promoter_contribution": {
+    "description": "Label for the promoter contribution input field",
+    "tags": ["loan_detail_loan_form_business_loan"],
+    "type": "text"
+  },
+  "promoter_contribution_hint": "പ്രോത്സാഹക സംഭാവന നൽകുക",
+  "@promoter_contribution_hint": {
+    "description": "Hint text for the promoter contribution input field",
+    "tags": ["loan_detail_loan_form_business_loan"],
+    "type": "text"
+  },
+  "purpose_of_loan": "ഋണത്തിന്റെ ഉദ്ദേശ്യം*",
+  "@purpose_of_loan": {
+    "description": "Label for the purpose of loan input field",
+    "tags": ["loan_detail_loan_form_business_loan"],
+    "type": "text"
+  },
+  "purpose_of_loan_hint": "ഋണത്തിന്റെ ഉദ്ദേശ്യം നൽകുക",
+  "@purpose_of_loan_hint": {
+    "description": "Hint text for the purpose of loan input field",
+    "tags": ["loan_detail_loan_form_business_loan"],
+    "type": "text"
+  },
+  "projected_sales": "ആശയമായ വിൽപ്പന സാമ്പത്തിക വർഷം",
+  "@projected_sales": {
+    "description": "Label for the projected sales input field",
+    "tags": ["loan_detail_loan_form_business_loan"],
+    "type": "text"
+  },
+  "projected_sales_hint": "ആശയമായ വിൽപ്പന നൽകുക",
+  "@projected_sales_hint": {
+    "description": "Hint text for the projected sales input field",
+    "tags": ["loan_detail_loan_form_business_loan"],
+    "type": "text"
+  },
+  "iso_certified": "നിങ്ങളുടെ ബിസിനസ് ISO സർട്ടിഫിക്കറ്റായിട്ടുണ്ടോ?",
+  "@iso_certified": {
+    "description": "Label for the ISO certification switch",
+    "tags": ["loan_detail_loan_form_business_loan"],
+    "type": "text"
+  },
+  "factory_premise": "ഫാക്ടറി സ്ഥലമ*",
+  "@factory_premise": {
+    "description": "Label for the factory premise input field",
+    "tags": ["loan_detail_loan_form_business_loan"],
+    "type": "text"
+  },
+  "factory_premise_hint": "ഫാക്ടറി സ്ഥലം നൽകുക",
+  "@factory_premise_hint": {
+    "description": "Hint text for the factory premise input field",
+    "tags": ["loan_detail_loan_form_business_loan"],
+    "type": "text"
+  },
+  "projected_know_how": "ആശയമായ അറിവ്*",
+  "@projected_know_how": {
+    "description": "Label for the projected know how input field",
+    "tags": ["loan_detail_loan_form_business_loan"],
+    "type": "text"
+  },
+  "projected_know_how_hint": "ആശയമായ അറിവ് നൽകുക",
+  "@projected_know_how_hint": {
+    "description": "Hint text for the projected know how input field",
+    "tags": ["loan_detail_loan_form_business_loan"],
+    "type": "text"
+  },
+  "competition": "പരീക്ഷണം*",
+  "@competition": {
+    "description": "Label for the competition input field",
+    "tags": ["loan_detail_loan_form_business_loan"],
+    "type": "text"
+  },
+  "competition_hint": "പരീക്ഷണം നൽകുക",
+  "@competition_hint": {
+    "description": "Hint text for the competition input field",
+    "tags": ["loan_detail_loan_form_business_loan"],
+    "type": "text"
+  },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  "name_of_lender": "വായ്പദായകന്റെ പേര്*",
+  "@name_of_lender": {
+    "description": "Label for the name of lender input field",
+    "tags": ["existing_loans_loan_form_business_loan"],
+    "type": "text"
+  },
+  "name_of_lender_hint": "വായ്പദായകന്റെ പേര് നൽകുക",
+  "@name_of_lender_hint": {
+    "description": "Hint text for the name of lender input field",
+    "tags": ["existing_loans_loan_form_business_loan"],
+    "type": "text"
+  },
+  "sanctioned_amount": "അനുമതിച്ച തുക (₹)*",
+  "@sanctioned_amount": {
+    "description": "Label for the sanctioned amount input field",
+    "tags": ["existing_loans_loan_form_business_loan"],
+    "type": "text"
+  },
+  "sanctioned_amount_hint": "അനുമതിച്ച തുക നൽകുക",
+  "@sanctioned_amount_hint": {
+    "description": "Hint text for the sanctioned amount input field",
+    "tags": ["existing_loans_loan_form_business_loan"],
+    "type": "text"
+  },
+  "outstanding_amount": "ബാക്കി തുക (₹)*",
+  "@outstanding_amount": {
+    "description": "Label for the outstanding amount input field",
+    "tags": ["existing_loans_loan_form_business_loan"],
+    "type": "text"
+  },
+  "outstanding_amount_hint": "ബാക്കി തുക നൽകുക",
+  "@outstanding_amount_hint": {
+    "description": "Hint text for the outstanding amount input field",
+    "tags": ["existing_loans_loan_form_business_loan"],
+    "type": "text"
+  },
+  "emi_amount": "ഇഎമ്മി തുക (₹)*",
+  "@emi_amount": {
+    "description": "Label for the EMI amount input field",
+    "tags": ["existing_loans_loan_form_business_loan"],
+    "type": "text"
+  },
+  "emi_amount_hint": "ഇഎമ്മി തുക നൽകുക",
+  "@emi_amount_hint": {
+    "description": "Hint text for the EMI amount input field",
+    "tags": ["existing_loans_loan_form_business_loan"],
+    "type": "text"
+  },
+  "loan_type": "വായ്പയുടെ തരങ്ങൾ*",
+  "@loan_type": {
+    "description": "Label for the loan type input field",
+    "tags": ["existing_loans_loan_form_business_loan"],
+    "type": "text"
+  },
+  "loan_type_hint": "വായ്പയുടെ തരങ്ങൾ നൽകുക",
+  "@loan_type_hint": {
+    "description": "Hint text for the loan type input field",
+    "tags": ["existing_loans_loan_form_business_loan"],
+    "type": "text"
+  },
+
+  "status": "സ്ഥിതി*",
+  "@status": {
+    "description": "Label for the status input field",
+    "tags": ["existing_loans_loan_form_business_loan"],
+    "type": "text"
+  },
+  "status_hint": "സ്ഥിതി നൽകുക",
+  "@status_hint": {
+    "description": "Hint text for the status input field",
+    "tags": ["existing_loans_loan_form_business_loan"],
+    "type": "text"
+  },
+  "add_existing_loan": "നിലവിലെ വായ്പ ചേർക്കുക",
+  "@add_existing_loan": {
+    "description": "Button text to add an existing loan",
+    "tags": ["existing_loans_loan_form_business_loan"],
+    "type": "text"
+  }
+}
+
+
+
+
+
+
+
+

@@ -1,4 +1,6 @@
 import 'package:aarthik_setu/constants/colors.dart';
+import 'package:aarthik_setu/bloc/l10n/l10n_bloc.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:go_router/go_router.dart';
@@ -212,15 +214,17 @@ class SelectProfile extends StatelessWidget {
                           shape: WidgetStateProperty.all(
                               const RoundedRectangleBorder(borderRadius: BorderRadius.all(Radius.circular(20)))),
                         ),
-                        child: const Text('Close', style: TextStyle(fontSize: 20, color: Colors.black)),
+                        child: Text(AppLocalizations.of(context)!.closeButton, style: TextStyle(fontSize: 20)),
                       ),
                     ),
-                  ],
-                ),
-              ],
+                  ),
+                ],
+              ),
             ),
           ),
         ),
+      );
+        },
       ),
     );
   }
