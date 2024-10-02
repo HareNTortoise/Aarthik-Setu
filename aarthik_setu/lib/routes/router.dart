@@ -12,9 +12,12 @@ import 'package:flutter/material.dart';
 import '../pages/desktop/forms/business_loans/bank_details.dart';
 import '../pages/desktop/forms/business_loans/itr_form.dart';
 import '../pages/desktop/forms/business_loans/loan_form.dart';
+import '../pages/desktop/forms/business_loans/review_form.dart';
 import '../pages/desktop/forms/business_loans/stakeholders.dart';
+import '../pages/desktop/forms/display_lenders.dart';
 import '../pages/desktop/forms/personal_loans/contact_details.dart';
 import '../pages/desktop/forms/personal_loans/employment_details.dart';
+import '../pages/desktop/forms/personal_loans/review_form.dart';
 import '../pages/desktop/loading.dart';
 
 final GoRouter router = GoRouter(
@@ -69,6 +72,10 @@ final GoRouter router = GoRouter(
           path: 'loan-form',
           pageBuilder: (context, state) => const MaterialPage(child: LoanFormPersonal()),
         ),
+        GoRoute(
+          path: 'review-form',
+          pageBuilder: (context, state) => const MaterialPage(child: ReviewFormPersonal()),
+        ),
       ],
     ),
     GoRoute(
@@ -104,7 +111,20 @@ final GoRouter router = GoRouter(
           path: 'loan-form',
           pageBuilder: (context, state) => const MaterialPage(child: LoanFormBusiness()),
         ),
+        GoRoute(path: 'review-form', pageBuilder: (context, state) {
+          return const MaterialPage(child: ReviewFormBusiness());
+        }),
       ],
+    ),
+    GoRoute(
+      path: '/display-lenders/:loanType',
+      pageBuilder: (context, state) {
+        // Fetch the loanType parameter from the path
+        final loanType = state.pathParameters['loanType'] ?? 'personal'; // Default to 'personal' if null
+        return MaterialPage(
+          child: DisplayLenders(loanType: loanType),
+        );
+      },
     ),
   ],
 );

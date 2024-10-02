@@ -64,7 +64,7 @@ class GovernmentSchemesRepository {
 
   Future<String> genAiResponse(String query) async {
     try {
-      final response = await _client.post('/chatbot', data: {'query': query});
+      final response = await _client.post('/schemes-info', data:FormData.fromMap({'query': query}));
       return response.data['answer'];
     } catch (e) {
       _logger.e('Error creating business profile: $e');
