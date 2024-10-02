@@ -27,8 +27,8 @@ class HomeBloc extends Bloc<HomeEvent, HomeState> {
         _logger.i('Fetched personal profiles: $personalProfiles');
 
         emit(HomeInitialized(
-          personalProfileIds: personalProfiles,
-          businessProfileIds: businessProfiles,
+          personalProfiles: personalProfiles,
+          businessProfiles: businessProfiles,
           currentPersonalProfile: personalProfiles.first,
           currentBusinessProfile: businessProfiles.first,
         ));
@@ -37,12 +37,26 @@ class HomeBloc extends Bloc<HomeEvent, HomeState> {
       }
     });
 
+
+
+    on<AddPersonalProfile>((event, emit) async {
+      final Map<String, dynamic> response = await personalProfileRepository.createProfile(event.personalProfile);
+      _logger.i('response: $response');
+      add(FetchProfiles(event.personalProfile.userId));
+    });
+
+    on<AddBusinessProfile>((event, emit) async {
+      final Map<String, dynamic> response = await businessProfileRepository.createProfile(event.businessProfile);
+      _logger.i('response: $response');
+      add(FetchProfiles(event.businessProfile.userId));
+    });
+
     on<ChangePersonalProfile>((event, emit) {
       emit(HomeInitialized(
-        personalProfileIds: (state as HomeInitialized).personalProfileIds,
-        businessProfileIds: (state as HomeInitialized).businessProfileIds,
+        personalProfiles: (state as HomeInitialized).personalProfiles,
+        businessProfiles: (state as HomeInitialized).businessProfiles,
         currentPersonalProfile: (state as HomeInitialized)
-            .personalProfileIds
+            .personalProfiles
             .firstWhere((element) => element.id == event.newPersonalProfileId),
         currentBusinessProfile: (state as HomeInitialized).currentBusinessProfile,
       ));
@@ -50,13 +64,25 @@ class HomeBloc extends Bloc<HomeEvent, HomeState> {
 
     on<ChangeBusinessProfile>((event, emit) {
       emit(HomeInitialized(
-        personalProfileIds: (state as HomeInitialized).personalProfileIds,
-        businessProfileIds: (state as HomeInitialized).businessProfileIds,
+        personalProfiles: (state as HomeInitialized).personalProfiles,
+        businessProfiles: (state as HomeInitialized).businessProfiles,
         currentPersonalProfile: (state as HomeInitialized).currentPersonalProfile,
         currentBusinessProfile: (state as HomeInitialized)
-            .businessProfileIds
+            .businessProfiles
             .firstWhere((element) => element.id == event.newBusinessProfileId),
       ));
+    });
+
+    on<DeletePersonalProfile>((event, emit) async {
+      final Map<String, dynamic> response = await personalProfileRepository.deleteProfile(event.personalProfileId);
+      _logger.i('response: $response');
+      add(FetchProfiles((state as HomeInitialized).currentPersonalProfile.userId));
+    });
+
+    on<DeleteBusinessProfile>((event, emit) async {
+      final Map<String, dynamic> response = await businessProfileRepository.deleteProfile(event.businessProfileId);
+      _logger.i('response: $response');
+      add(FetchProfiles((state as HomeInitialized).currentBusinessProfile.userId));
     });
   }
 }

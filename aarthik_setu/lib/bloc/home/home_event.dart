@@ -20,3 +20,27 @@ class FetchProfiles extends HomeEvent {
 
   FetchProfiles(this.userId);
 }
+
+class AddPersonalProfile extends HomeEvent {
+  final PersonalProfile personalProfile;
+
+  AddPersonalProfile(this.personalProfile);
+}
+
+class AddBusinessProfile extends HomeEvent {
+  final BusinessProfile businessProfile;
+
+  AddBusinessProfile(this.businessProfile);
+}
+
+class DeletePersonalProfile extends HomeEvent {
+  final String personalProfileId;
+
+  DeletePersonalProfile(this.personalProfileId);
+}
+
+class DeleteBusinessProfile extends HomeEvent {
+  final String businessProfileId;
+
+  DeleteBusinessProfile(this.businessProfileId);
+}

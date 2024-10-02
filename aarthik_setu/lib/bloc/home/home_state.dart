@@ -8,14 +8,14 @@ final class HomeInitial extends HomeState {}
 final class FetchingProfiles extends HomeState {}
 
 final class HomeInitialized extends HomeState {
-  final List<PersonalProfile> personalProfileIds;
-  final List<BusinessProfile> businessProfileIds;
+  final List<PersonalProfile> personalProfiles;
+  final List<BusinessProfile> businessProfiles;
   final PersonalProfile currentPersonalProfile;
   final BusinessProfile currentBusinessProfile;
 
   HomeInitialized({
-    required this.personalProfileIds,
-    required this.businessProfileIds,
+    required this.personalProfiles,
+    required this.businessProfiles,
     required this.currentPersonalProfile,
     required this.currentBusinessProfile,
   });
