@@ -1,4 +1,5 @@
 import 'package:aarthik_setu/bloc/l10n/l10n_bloc.dart';
+import 'package:aarthik_setu/global_components/chatbot.dart';
 import 'package:aarthik_setu/global_components/language_dropdown.dart';
 import 'package:aarthik_setu/pages/desktop/home/components/pending_applications.dart';
 import 'package:aarthik_setu/pages/desktop/home/components/personal_loan_options.dart';
@@ -11,7 +12,6 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:go_router/go_router.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:loading_indicator/loading_indicator.dart';
-import 'package:logger/logger.dart';
 import 'package:responsive_framework/responsive_framework.dart';
 import '../../../bloc/auth/auth_bloc.dart';
 import '../../../bloc/home/home_bloc.dart';
@@ -62,6 +62,23 @@ class _DashboardDesktopState extends State<DashboardDesktop> {
           child: BlocBuilder<L10nBloc, L10nState>(
             builder: (context, state) {
               return Scaffold(
+                floatingActionButton: Container(
+                  margin: const EdgeInsets.only(right: 20, bottom: 20),
+                  width: 180,
+                  height: 60,
+                  child: FloatingActionButton.extended(
+                    onPressed: () {
+                      showDialog(context: context, builder: (_) => const CommonChatbot());
+                    },
+                    label: const Row(
+                      children: [
+                        Text('Chatbot'),
+                        SizedBox(width: 10),
+                        Icon(Icons.chat),
+                      ],
+                    ),
+                  ),
+                ),
                 body: SingleChildScrollView(
                   controller: _scrollController,
                   child: Padding(
