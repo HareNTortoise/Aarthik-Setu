@@ -16,6 +16,8 @@ class BusinessLoanJourney extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final params = GoRouterState.of(context).pathParameters;
+    final loanType = params['loanType'];
     return Localizations.override(
       context: context,
       locale: (context.watch<L10nBloc>().state as L10n).locale,
@@ -116,7 +118,7 @@ class BusinessLoanJourney extends StatelessWidget {
                       child: LargeTileButton(
                         title: AppLocalizations.of(context)!.itrButtonTitleBusiness,
                         icon: const Icon(LineIcons.piggyBank, size: 150),
-                        onPressed: () => context.go('/business-loan-journey/business/itr'),
+                        onPressed: () => context.go('/business-loan-journey/$loanType/itr'),
                         description: AppLocalizations.of(context)!.itrButtonDescriptionBusiness,
                       ),
                     ),
@@ -156,7 +158,7 @@ class BusinessLoanJourney extends StatelessWidget {
                       child: LargeTileButton(
                         title: AppLocalizations.of(context)!.gstButtonTitle,
                         icon: const Icon(LineAwesome.file_invoice_solid, size: 150),
-                        onPressed: () => context.go('/business-loan-journey/business/gst-details'),
+                        onPressed: () => context.go('/business-loan-journey/$loanType/gst-details'),
                         description: AppLocalizations.of(context)!.gstButtonDescription,
                       ),
                     ),
@@ -205,16 +207,16 @@ class BusinessLoanJourney extends StatelessWidget {
                       style: GoogleFonts.poppins(fontSize: 26),
                     ),
                   ),
-                  endChild: Container(
-                    padding: const EdgeInsets.symmetric(horizontal: 70),
-                    child: AspectRatio(
-                      aspectRatio: 1,
-                      child: LargeTileButton(
-                        title: AppLocalizations.of(context)!.bankButtonTitle,
-                        icon: const Icon(LineIcons.university, size: 150),
-                        onPressed: () => context.go('/business-loan-journey/business/bank-details'),
-                        description: AppLocalizations.of(context)!.bankButtonDescription,
-                      ),
+                ),
+                endChild: Container(
+                  padding: const EdgeInsets.symmetric(horizontal: 70),
+                  child: AspectRatio(
+                    aspectRatio: 1,
+                    child: LargeTileButton(
+                      title: 'Bank Details',
+                      icon: const Icon(LineIcons.university, size: 150),
+                      onPressed: () => context.go('/business-loan-journey/$loanType/bank-details'),
+                      description: 'Provide your business’s bank details and bank statements.',
                     ),
                   ),
                   indicatorStyle: IndicatorStyle(
@@ -237,7 +239,6 @@ class BusinessLoanJourney extends StatelessWidget {
                 begin: 0.4,
                 end: 0.6,
               ),
-              // Stakeholders Step
               SizedBox(
                 height: 700,
                 child: TimelineTile(
@@ -252,7 +253,7 @@ class BusinessLoanJourney extends StatelessWidget {
                       child: LargeTileButton(
                         title: AppLocalizations.of(context)!.stakeholdersButtonTitle,
                         icon: const Icon(LineIcons.users, size: 150),
-                        onPressed: () => context.go('/business-loan-journey/business/stakeholders'),
+                        onPressed: () => context.go('/business-loan-journey/$loanType/stakeholders'),
                         description: AppLocalizations.of(context)!.stakeholdersButtonDescription,
                       ),
                     ),
@@ -285,7 +286,6 @@ class BusinessLoanJourney extends StatelessWidget {
                 begin: 0.4,
                 end: 0.6,
               ),
-              // Loan Form Step
               SizedBox(
                 height: 700,
                 child: TimelineTile(
@@ -308,7 +308,7 @@ class BusinessLoanJourney extends StatelessWidget {
                       child: LargeTileButton(
                         title: AppLocalizations.of(context)!.loanButtonTitle,
                         icon: const Icon(LineIcons.fileContract, size: 150),
-                        onPressed: () => context.go('/business-loan-journey/business/loan-form'),
+                        onPressed: () => context.go('/business-loan-journey/$loanType/loan-form'),
                         description: AppLocalizations.of(context)!.loanButtonDescription,
                       ),
                     ),

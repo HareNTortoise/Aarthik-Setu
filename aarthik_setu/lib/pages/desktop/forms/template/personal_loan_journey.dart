@@ -17,6 +17,9 @@ class PersonalLoanJourney extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+
+    final params = GoRouterState.of(context).pathParameters;
+    final loanType = params['loanType'];
     return Localizations.override(
       context: context,
       locale: (context.watch<L10nBloc>().state as L10n).locale,
@@ -112,17 +115,16 @@ class PersonalLoanJourney extends StatelessWidget {
                       style: GoogleFonts.poppins(fontSize: 26),
                     ),
                   ),
-                  endChild: Container(
-                    padding: const EdgeInsets.symmetric(horizontal: 70),
-                    child: AspectRatio(
-                      aspectRatio: 1,
-                      child: LargeTileButton(
-                        title: AppLocalizations.of(context)!.itrButtonTitle,
-                        icon: const Icon(LineAwesome.money_bill_alt, size: 150),
-                        onPressed: () => context.go('/personal-loan-journey/personal/itr'),
-                        description:
-                        AppLocalizations.of(context)!.itrButtonDescription,
-                      ),
+                ),
+                endChild: Container(
+                  padding: const EdgeInsets.symmetric(horizontal: 70),
+                  child: AspectRatio(
+                    aspectRatio: 1,
+                    child: LargeTileButton(
+                      title: AppLocalizations.of(context)!.itrButtonTitle,
+                      icon: const Icon(LineAwesome.money_bill_alt, size: 150),
+                      onPressed: () => context.go('/personal-loan-journey/$loanType/itr'),
+                      description: AppLocalizations.of(context)!.itrButtonDescription,
                     ),
                   ),
                   indicatorStyle: IndicatorStyle(
@@ -159,7 +161,7 @@ class PersonalLoanJourney extends StatelessWidget {
                       child: LargeTileButton(
                           title: AppLocalizations.of(context)!.bankDetailsButtonTitle,
                           icon: const Icon(LineAwesome.university_solid, size: 150),
-                          onPressed: () => context.go('/personal-loan-journey/personal/bank-details'),
+                          onPressed: () => context.go('/personal-loan-journey/$loanType/bank-details'),
                           description: AppLocalizations.of(context)!.bankDetailsButtonDescription),
                     ),
                   ),
@@ -213,7 +215,7 @@ class PersonalLoanJourney extends StatelessWidget {
                       child: LargeTileButton(
                         title: AppLocalizations.of(context)!.basicDetailsButtonTitle,
                         icon: const Icon(LineAwesome.user, size: 150),
-                        onPressed: () => context.go('/personal-loan-journey/personal/basic-details'),
+                        onPressed: () => context.go('/personal-loan-journey/$loanType/basic-details'),
                         description: AppLocalizations.of(context)!.basicDetailsButtonDescription,
                       ),
                     ),
@@ -252,7 +254,7 @@ class PersonalLoanJourney extends StatelessWidget {
                       child: LargeTileButton(
                         title: AppLocalizations.of(context)!.employmentDetailsButtonTitle,
                         icon: const Icon(LineAwesome.briefcase_solid, size: 150),
-                        onPressed: () => context.go('/personal-loan-journey/personal/employment-details'),
+                        onPressed: () => context.go('/personal-loan-journey/$loanType/employment-details'),
                         description: AppLocalizations.of(context)!.employmentDetailsButtonDescription,
                       ),
                     ),
@@ -307,7 +309,7 @@ class PersonalLoanJourney extends StatelessWidget {
                       child: LargeTileButton(
                         title: AppLocalizations.of(context)!.creditInformationButtonTitle,
                         icon: const Icon(LineAwesome.credit_card, size: 150),
-                        onPressed: () => context.go('/personal-loan-journey/personal/credit-info'),
+                        onPressed: () => context.go('/personal-loan-journey/$loanType/credit-info'),
                         description:
                         AppLocalizations.of(context)!.creditInformationButtonDescription,
                       ),
@@ -347,7 +349,7 @@ class PersonalLoanJourney extends StatelessWidget {
                       child: LargeTileButton(
                         title: AppLocalizations.of(context)!.contactInformationButtonTitle,
                         icon: const Icon(LineIcons.phone, size: 150),
-                        onPressed: () => context.go('/personal-loan-journey/personal/contact-details'),
+                        onPressed: () => context.go('/personal-loan-journey/$loanType/contact-details'),
                         description: AppLocalizations.of(context)!.contactInformationButtonDescription,
                       ),
                     ),
@@ -402,7 +404,7 @@ class PersonalLoanJourney extends StatelessWidget {
                       child: LargeTileButton(
                         title: AppLocalizations.of(context)!.loanFormButtonTitle,
                         icon: const Icon(LineAwesome.money_bill_alt, size: 150),
-                        onPressed: () => context.go('/personal-loan-journey/personal/loan-form'),
+                        onPressed: () => context.go('/personal-loan-journey/$loanType/loan-form'),
                         description: AppLocalizations.of(context)!.loanFormButtonDescription,
                       ),
                     ),
