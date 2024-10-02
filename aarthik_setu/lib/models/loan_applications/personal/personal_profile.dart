@@ -13,7 +13,7 @@ class PersonalProfile {
 
   factory PersonalProfile.fromJson(Map<String, dynamic> json) {
     return PersonalProfile(
-      id: json['_id'],
+      id: json['id'],
       userId: json['userId'],
       name: json['name'],
       pan: json['pan'],

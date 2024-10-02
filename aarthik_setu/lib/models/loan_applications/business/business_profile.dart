@@ -13,7 +13,7 @@ class BusinessProfile {
 
   factory BusinessProfile.fromJson(Map<String, dynamic> json) {
     return BusinessProfile(
-      id: json['_id'],
+      id: json['id'],
       userId: json['userId'],
       name: json['name'],
       pan: json['pan'],
