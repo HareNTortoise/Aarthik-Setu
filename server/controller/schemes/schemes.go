@@ -49,7 +49,7 @@ func embedQuery(query string) (map[string]interface{}, error) {
 func generateAnswer(ctx context.Context, query string, context string) (string, error) {
 	client := resty.New()
 
-	prompt := fmt.Sprintf("You are a financial advisor who has information from a document publically available, issued by the government of India. Give response in a professional manner and dont begin with the statements like \"as a financial advisor...\".:\n\nContext: %s\n\nQuestion: %s\nAnswer:", context, query)
+	prompt := fmt.Sprintf("You are a financial advisor who has information from a document publically available, issued by the government of India. Give response in a professional manner and dont begin with the statements like \"as a financial advisor....Make sure to give the response in simple text/string without any markdown formatting.\".:\n\nContext: %s\n\nQuestion: %s\nAnswer:", context, query)
 
 	requestBody := map[string]interface{}{
 		"contents": []map[string]interface{}{
