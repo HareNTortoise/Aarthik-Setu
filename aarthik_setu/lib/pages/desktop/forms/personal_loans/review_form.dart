@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 import '../../../../constants/dummy_data_personal.dart';
@@ -257,7 +258,8 @@ class ReviewFormPersonal extends StatelessWidget {
 
               ElevatedButton(
                 onPressed: () {
-                  // Handle form submission or other actions
+                  // Navigate to the display lenders page with the loanType
+                  context.go('/display-lenders/personal');
                 },
                 style: ElevatedButton.styleFrom(
                   padding: const EdgeInsets.symmetric(horizontal: 32.0, vertical: 16.0),

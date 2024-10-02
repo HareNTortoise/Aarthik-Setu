@@ -14,6 +14,7 @@ import '../pages/desktop/forms/business_loans/itr_form.dart';
 import '../pages/desktop/forms/business_loans/loan_form.dart';
 import '../pages/desktop/forms/business_loans/review_form.dart';
 import '../pages/desktop/forms/business_loans/stakeholders.dart';
+import '../pages/desktop/forms/display_lenders.dart';
 import '../pages/desktop/forms/personal_loans/contact_details.dart';
 import '../pages/desktop/forms/personal_loans/employment_details.dart';
 import '../pages/desktop/forms/personal_loans/review_form.dart';
@@ -115,6 +116,16 @@ final GoRouter router = GoRouter(
           return const MaterialPage(child: ReviewFormBusiness());
         }),
       ],
+    ),
+    GoRoute(
+      path: '/display-lenders/:loanType',
+      pageBuilder: (context, state) {
+        // Fetch the loanType parameter from the path
+        final loanType = state.pathParameters['loanType'] ?? 'personal'; // Default to 'personal' if null
+        return MaterialPage(
+          child: DisplayLenders(loanType: loanType),
+        );
+      },
     ),
   ],
 );
