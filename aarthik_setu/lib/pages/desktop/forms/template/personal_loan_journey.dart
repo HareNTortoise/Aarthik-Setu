@@ -4,7 +4,6 @@ import 'package:go_router/go_router.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:icons_plus/icons_plus.dart';
 import 'package:line_icons/line_icons.dart';
-import 'package:logger/logger.dart';
 import 'package:timeline_tile/timeline_tile.dart';
 import '../../../../constants/colors.dart';
 
