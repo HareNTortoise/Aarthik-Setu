@@ -75,6 +75,7 @@ func CreateBankDetails(c *gin.Context) {
 		c.JSON(http.StatusInternalServerError, gin.H{"error": "Failed to unmarshal JSON to map", "details": err.Error()})
 		return
 	}
+
 	formId, err := utils.GenerateRandomString(16)
 	// Add the bank details to Firestore
 	_, _, err = client.Collection("business_bank_details").Add(ctx, map[string]interface{}{
@@ -84,19 +85,26 @@ func CreateBankDetails(c *gin.Context) {
 		"formId":        formId,
 	})
 
-	err= utils.UpdateFirestoreDocument(ctx, "applications", applicationId, "bank_details_form_id",formId)
-	if err != nil {
-		c.JSON(http.StatusInternalServerError, gin.H{"error": "Failed to update application with formId", "details": err.Error()})
-		return
-	}
-	// Check for errors in Firestore operation
 	if err != nil {
 		c.JSON(http.StatusInternalServerError, gin.H{"error": "Failed to add bank details to Firestore", "details": err.Error()})
 		return
 	}
 
-	// Return success response
-	c.JSON(http.StatusCreated, gin.H{"message": "Bank details created successfully"})
+	// Update the application with the formId
+	err = utils.UpdateFirestoreDocument(ctx, "applications", applicationId, "bank_details_form_id", formId)
+	if err != nil {
+		c.JSON(http.StatusInternalServerError, gin.H{"error": "Failed to update application with formId", "details": err.Error()})
+		return
+	}
+
+	// Return success response with created bank details
+	c.JSON(http.StatusCreated, gin.H{
+		"message":       "Bank details created successfully",
+		"bank_details":  bankDetailsMap,
+		"profileId":     profileId,
+		"applicationId": applicationId,
+		"formId":        formId,
+	})
 }
 
 // GetBankDetails retrieves the bank details for a specific user from Firestore.
@@ -126,8 +134,7 @@ func GetBankDetails(c *gin.Context) {
 	formId := docs[0].Data()["formId"]
 
 	// Return the bank details in the response
-	c.JSON(http.StatusOK, gin.H{"bank_details": bankDetails,
-		"formId": formId})
+	c.JSON(http.StatusOK, gin.H{"bank_details": bankDetails, "formId": formId})
 }
 
 // UpdateBankDetails updates the bank details for a specific user.
@@ -185,7 +192,12 @@ func UpdateBankDetails(c *gin.Context) {
 		return
 	}
 
-	c.JSON(http.StatusOK, gin.H{"message": "Bank details updated successfully"})
+	c.JSON(http.StatusOK, gin.H{
+		"message":       "Bank details updated successfully",
+		"bank_details":  updatedBankDetails,
+		"profileId":     profileId,
+		"applicationId": applicationId,
+	})
 }
 
 // DeleteBankDetails deletes the bank details for a specific user.
