@@ -62,7 +62,7 @@ class CustomDropdown extends StatelessWidget {
                             overflow: TextOverflow.ellipsis,
                             style: GoogleFonts.poppins(color: Colors.black),
                             maxLines: 1,
-                            minFontSize: 15,
+                            minFontSize: 14,
                           ),
                         ),
                         const SizedBox(width: 10),
