@@ -10,6 +10,7 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:loading_indicator/loading_indicator.dart';
 import 'package:responsive_framework/responsive_framework.dart';
 import '../../../bloc/auth/auth_bloc.dart';
+import '../../../bloc/home/home_bloc.dart';
 import '../../../constants/app_constants.dart';
 import 'components/business_loan_options.dart';
 import 'components/government_schemes.dart';
@@ -26,6 +27,12 @@ class _DashboardDesktopState extends State<DashboardDesktop> {
 
   @override
   Widget build(BuildContext context) {
+    context.read<AuthBloc>().add(AuthCheck(
+      onSuccess: () {
+        final String userId = (context.read<AuthBloc>().state as AuthSuccess).id;
+        context.read<HomeBloc>().add(FetchProfiles(userId));
+      },
+    ));
     return BlocListener<AuthBloc, AuthState>(
       listener: (context, state) {
         if (state is AuthPending) {
@@ -148,7 +155,9 @@ class _DashboardDesktopState extends State<DashboardDesktop> {
                         width: 250,
                         child: FilledButton.tonal(
                           onPressed: () {
-                            showDialog(context: context, builder: (context) => SelectProfile());
+                            showDialog(
+                                context: context,
+                                builder: (context) => SelectProfile(isPersonal: _dashboardIndex == 2));
                           },
                           style: ButtonStyle(
                             padding: WidgetStateProperty.all(const EdgeInsets.symmetric(horizontal: 20, vertical: 10)),
