@@ -12,7 +12,11 @@ class OTPSignIn extends AuthEvent {
   OTPSignIn({required this.countryCode, required this.phoneNumber});
 }
 
-class AuthCheck extends AuthEvent {}
+class AuthCheck extends AuthEvent {
+  final Function()? onSuccess;
+
+  AuthCheck({this.onSuccess});
+}
 
 class SignOut extends AuthEvent {}
 

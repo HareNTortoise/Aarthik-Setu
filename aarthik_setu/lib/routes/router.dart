@@ -21,7 +21,6 @@ import '../pages/desktop/forms/personal_loans/review_form.dart';
 import '../pages/desktop/loading.dart';
 
 final GoRouter router = GoRouter(
-  initialLocation: '/dashboard',
   routes: [
     GoRoute(path: '/', pageBuilder: (context, state) => const MaterialPage(child: LoadingPage())),
     GoRoute(

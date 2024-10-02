@@ -7,6 +7,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:logger/logger.dart';
 
 part 'auth_event.dart';
+
 part 'auth_state.dart';
 
 class AuthBloc extends Bloc<AuthEvent, AuthState> {
@@ -41,7 +42,7 @@ class AuthBloc extends Bloc<AuthEvent, AuthState> {
         final userCompleter = Completer<User?>();
 
         googleAuthServices.getCurrentUser().listen((user) {
-          if (user != null) {
+          if (user != null && userCompleter.isCompleted == false) {
             userCompleter.complete(user);
           }
         });
@@ -50,11 +51,13 @@ class AuthBloc extends Bloc<AuthEvent, AuthState> {
 
         if (user != null) {
           emit(AuthSuccess(
-              id: user.uid,
-              displayName: user.displayName ?? '',
-              email: user.email ?? '',
-              photoUrl: user.photoURL,
-              message: 'User is logged in. ${user.displayName}'));
+            id: user.uid,
+            displayName: user.displayName ?? '',
+            email: user.email ?? '',
+            photoUrl: user.photoURL,
+            message: 'User is logged in. ${user.displayName}',
+          ));
+          event.onSuccess?.call();
         } else {
           emit(AuthPending());
         }

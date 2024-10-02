@@ -2,11 +2,15 @@ package main
 
 import (
 	"log"
+	chat "server/routes/chatbot"
 	business_forms "server/routes/forms/business_forms"
 	gen_ai "server/routes/forms/gen_ai"
 	personal_forms "server/routes/forms/personal_forms"
+	govt_schemes "server/routes/government_schemes"
 	info_extraction "server/routes/info_extraction"
 	profile_applications "server/routes/profile_applications"
+	schemes "server/routes/schemes"
+
 	"github.com/gin-contrib/cors"
 	"github.com/gin-gonic/gin"
 	"github.com/joho/godotenv"
@@ -24,7 +28,7 @@ func main() {
 
 	// Apply CORS middleware
 	router.Use(cors.New(cors.Config{
-		AllowOrigins:     []string{"http://localhost:3000"}, // Add your frontend's URL here
+		AllowOrigins:     []string{"*"}, // Add your frontend's URL here
 		AllowMethods:     []string{"GET", "POST", "PUT", "DELETE"},
 		AllowHeaders:     []string{"Origin", "Content-Type", "Authorization"},
 		AllowCredentials: true,
@@ -65,7 +69,13 @@ func main() {
 	// Register profile routes
 	profile_applications.RegisterPersonalProfileRoutes(router)
 	profile_applications.RegisterBusinessProfileRoutes(router)
-	profile_applications.RegisterApplicationsRoutes(router)
+	profile_applications.RegisterBusinessApplicationsRoutes(router)
+	profile_applications.RegisterPersonalApplicationsRoutes(router)
+
+	//govt schemes routes
+	govt_schemes.RegisterGovtSchemesRoutes(router)
+	schemes.RegisterPublicSchemesInfoRoutes(router)
+	chat.SetupRoutes(router)
 
 	// Start the HTTP server
 	log.Println("Starting server on :8080")
