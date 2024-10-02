@@ -1,3 +1,5 @@
 .vscode
 .idea
 *.env
+server/tmp
+server/config/firebase/firebase-service-account.json
