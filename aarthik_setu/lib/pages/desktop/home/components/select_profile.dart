@@ -214,17 +214,15 @@ class SelectProfile extends StatelessWidget {
                           shape: WidgetStateProperty.all(
                               const RoundedRectangleBorder(borderRadius: BorderRadius.all(Radius.circular(20)))),
                         ),
-                        child: Text(AppLocalizations.of(context)!.closeButton, style: TextStyle(fontSize: 20)),
+                        child: Text(AppLocalizations.of(context)!.closeButton, style: const TextStyle(fontSize: 20)),
                       ),
                     ),
-                  ),
-                ],
-              ),
+                  ],
+                ),
+              ],
             ),
           ),
         ),
-      );
-        },
       ),
     );
   }

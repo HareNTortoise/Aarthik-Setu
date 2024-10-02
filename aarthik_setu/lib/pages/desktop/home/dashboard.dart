@@ -57,8 +57,7 @@ class _DashboardDesktopState extends State<DashboardDesktop> {
                     children: [
                       Row(
                         children: [
-                          Text(AppLocalizations.of(context)!.dashboard,
-                              style: GoogleFonts.poppins(fontSize: 85)),
+                          Text(AppLocalizations.of(context)!.dashboard, style: GoogleFonts.poppins(fontSize: 85)),
                           const Spacer(),
                           const LanguageDropdown(),
                           const SizedBox(width: 20),
@@ -70,64 +69,20 @@ class _DashboardDesktopState extends State<DashboardDesktop> {
                                 context.read<AuthBloc>().add(SignOut());
                               },
                               style: ButtonStyle(
-                                  padding: WidgetStateProperty.all(
-                                      const EdgeInsets.symmetric(
-                                          horizontal: 20, vertical: 10)),
-                                  backgroundColor: WidgetStateProperty.all(
-                                      Colors.redAccent[100]),
-                                  textStyle: WidgetStateProperty.all(
-                                      const TextStyle(
-                                          fontSize: 20, color: Colors.white)),
-                                  shape: WidgetStateProperty.all(
-                                      const RoundedRectangleBorder(
-                                          borderRadius: BorderRadius.all(
-                                              Radius.circular(10))))),
-                              child: Text(AppLocalizations.of(context)!.logOut,
-                                  style: GoogleFonts.poppins(fontSize: 22)),
-                            ),
-                          ],
-                        ),
-                        styleBuilder: (i) => ToggleStyle(indicatorColor: Colors.grey[300]),
-                        selectedIconScale: 1,
-                        onChanged: (i) async {
-                          await Future.delayed(const Duration(milliseconds: 500));
-                          setState(() {
-                            _dashboardIndex = i;
-                          });
-                        },
-                        loadingIconBuilder: (i, _) => const LoadingIndicator(indicatorType: Indicator.orbit),
-                      ),
-                    ),
-                    const SizedBox(width: 50),
-                    if (_dashboardIndex != 0)
-                      SizedBox(
-                        height: 100,
-                        width: 250,
-                        child: FilledButton.tonal(
-                          onPressed: () {
-                            showDialog(
-                                context: context,
-                                builder: (context) => SelectProfile(isPersonal: _dashboardIndex == 2));
-                          },
-                          style: ButtonStyle(
-                            padding: WidgetStateProperty.all(const EdgeInsets.symmetric(horizontal: 20, vertical: 10)),
-                            backgroundColor: WidgetStateProperty.all(Colors.greenAccent[100]),
-                            textStyle: WidgetStateProperty.all(const TextStyle(fontSize: 20, color: Colors.white)),
-                            shape: WidgetStateProperty.all(
-                                const RoundedRectangleBorder(borderRadius: BorderRadius.all(Radius.circular(35)))),
-                          ),
-                          const SizedBox(width: 20),
-                          IconButton(
-                            onPressed: () {},
-                            icon: CircleAvatar(
-                              radius: 30,
-                              backgroundColor: Colors.grey[400],
-                              child: const Icon(Icons.person),
+                                  padding:
+                                      WidgetStateProperty.all(const EdgeInsets.symmetric(horizontal: 20, vertical: 10)),
+                                  backgroundColor: WidgetStateProperty.all(Colors.redAccent[100]),
+                                  textStyle:
+                                      WidgetStateProperty.all(const TextStyle(fontSize: 20, color: Colors.white)),
+                                  shape: WidgetStateProperty.all(const RoundedRectangleBorder(
+                                      borderRadius: BorderRadius.all(Radius.circular(10))))),
+                              child:
+                                  Text(AppLocalizations.of(context)!.logOut, style: GoogleFonts.poppins(fontSize: 22)),
                             ),
                           ),
                         ],
                       ),
-                      const SizedBox(height: 20),
+                      const SizedBox(height: 50),
                       Row(
                         mainAxisAlignment: MainAxisAlignment.start,
                         children: [
@@ -144,33 +99,27 @@ class _DashboardDesktopState extends State<DashboardDesktop> {
                                 switch (i) {
                                   case 2:
                                     return Padding(
-                                      padding: const EdgeInsets.symmetric(
-                                          horizontal: 10.0),
+                                      padding: const EdgeInsets.symmetric(horizontal: 10.0),
                                       child: AutoSizeText(AppLocalizations.of(context)!.personalLoans,
-                                          style:
-                                              GoogleFonts.poppins(fontSize: 22),
+                                          style: GoogleFonts.poppins(fontSize: 22),
                                           minFontSize: 16,
                                           maxFontSize: 24,
                                           maxLines: 1),
                                     );
                                   case 1:
                                     return Padding(
-                                      padding: const EdgeInsets.symmetric(
-                                          horizontal: 10.0),
+                                      padding: const EdgeInsets.symmetric(horizontal: 10.0),
                                       child: AutoSizeText(AppLocalizations.of(context)!.businessLoans,
-                                          style:
-                                              GoogleFonts.poppins(fontSize: 22),
+                                          style: GoogleFonts.poppins(fontSize: 22),
                                           minFontSize: 16,
                                           maxFontSize: 24,
                                           maxLines: 1),
                                     );
                                   case 0:
                                     return Padding(
-                                      padding: const EdgeInsets.symmetric(
-                                          horizontal: 10.0),
+                                      padding: const EdgeInsets.symmetric(horizontal: 10.0),
                                       child: AutoSizeText(AppLocalizations.of(context)!.governmentSchemes,
-                                          style:
-                                              GoogleFonts.poppins(fontSize: 22),
+                                          style: GoogleFonts.poppins(fontSize: 22),
                                           minFontSize: 16,
                                           maxFontSize: 24,
                                           maxLines: 1),
@@ -193,19 +142,15 @@ class _DashboardDesktopState extends State<DashboardDesktop> {
                                   ),
                                 ],
                               ),
-                              styleBuilder: (i) =>
-                                  ToggleStyle(indicatorColor: Colors.grey[300]),
+                              styleBuilder: (i) => ToggleStyle(indicatorColor: Colors.grey[300]),
                               selectedIconScale: 1,
                               onChanged: (i) async {
-                                await Future.delayed(
-                                    const Duration(milliseconds: 500));
+                                await Future.delayed(const Duration(milliseconds: 500));
                                 setState(() {
                                   _dashboardIndex = i;
                                 });
                               },
-                              loadingIconBuilder: (i, _) =>
-                                  const LoadingIndicator(
-                                      indicatorType: Indicator.orbit),
+                              loadingIconBuilder: (i, _) => const LoadingIndicator(indicatorType: Indicator.orbit),
                             ),
                           ),
                           const SizedBox(width: 50),
@@ -217,21 +162,16 @@ class _DashboardDesktopState extends State<DashboardDesktop> {
                                 onPressed: () {
                                   showDialog(
                                       context: context,
-                                      builder: (context) => const SelectProfile());
+                                      builder: (context) => SelectProfile(isPersonal: _dashboardIndex == 2));
                                 },
                                 style: ButtonStyle(
-                                  padding: WidgetStateProperty.all(
-                                      const EdgeInsets.symmetric(
-                                          horizontal: 20, vertical: 10)),
-                                  backgroundColor: WidgetStateProperty.all(
-                                      Colors.greenAccent[100]),
-                                  textStyle: WidgetStateProperty.all(
-                                      const TextStyle(
-                                          fontSize: 20, color: Colors.white)),
-                                  shape: WidgetStateProperty.all(
-                                      const RoundedRectangleBorder(
-                                          borderRadius: BorderRadius.all(
-                                              Radius.circular(35)))),
+                                  padding:
+                                      WidgetStateProperty.all(const EdgeInsets.symmetric(horizontal: 20, vertical: 10)),
+                                  backgroundColor: WidgetStateProperty.all(Colors.greenAccent[100]),
+                                  textStyle:
+                                      WidgetStateProperty.all(const TextStyle(fontSize: 20, color: Colors.white)),
+                                  shape: WidgetStateProperty.all(const RoundedRectangleBorder(
+                                      borderRadius: BorderRadius.all(Radius.circular(35)))),
                                 ),
                                 child: AutoSizeText(
                                   AppLocalizations.of(context)!.profile,
@@ -247,24 +187,16 @@ class _DashboardDesktopState extends State<DashboardDesktop> {
                               width: 350,
                               child: FilledButton.tonal(
                                 onPressed: () {
-                                  showDialog(
-                                      context: context,
-                                      builder: (context) =>
-                                          const PendingApplications());
+                                  showDialog(context: context, builder: (context) => const PendingApplications());
                                 },
                                 style: ButtonStyle(
-                                  padding: WidgetStateProperty.all(
-                                      const EdgeInsets.symmetric(
-                                          horizontal: 20, vertical: 10)),
-                                  backgroundColor:
-                                      WidgetStateProperty.all(Colors.blue[100]),
-                                  textStyle: WidgetStateProperty.all(
-                                      const TextStyle(
-                                          fontSize: 20, color: Colors.white)),
-                                  shape: WidgetStateProperty.all(
-                                      const RoundedRectangleBorder(
-                                          borderRadius: BorderRadius.all(
-                                              Radius.circular(35)))),
+                                  padding:
+                                      WidgetStateProperty.all(const EdgeInsets.symmetric(horizontal: 20, vertical: 10)),
+                                  backgroundColor: WidgetStateProperty.all(Colors.blue[100]),
+                                  textStyle:
+                                      WidgetStateProperty.all(const TextStyle(fontSize: 20, color: Colors.white)),
+                                  shape: WidgetStateProperty.all(const RoundedRectangleBorder(
+                                      borderRadius: BorderRadius.all(Radius.circular(35)))),
                                 ),
                                 child: AutoSizeText(
                                   AppLocalizations.of(context)!.pendingApplications,

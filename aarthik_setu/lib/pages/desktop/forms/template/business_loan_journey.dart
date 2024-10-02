@@ -23,314 +23,315 @@ class BusinessLoanJourney extends StatelessWidget {
       locale: (context.watch<L10nBloc>().state as L10n).locale,
       child: BlocBuilder<L10nBloc, L10nState>(
         builder: (context, state) {
-      return Container(
-        padding: const EdgeInsets.symmetric(vertical: 20, horizontal: 100),
-        child: SingleChildScrollView(
-          child: Column(
-            children: [
-              const LanguageDropdown(),
-              SizedBox(
-                height: 400,
-                child: TimelineTile(
-                  alignment: TimelineAlign.manual,
-                  lineXY: 0.4,
-                  isFirst: true,
-                  isLast: false,
-                  startChild: Container(
-                    padding: const EdgeInsets.symmetric(horizontal: 50),
-                    height: 150,
-                    child: FilledButton.tonal(
-                      style: ButtonStyle(
-                        backgroundColor: WidgetStateProperty.all(
-                          AppColors.primaryColorTwo.withOpacity(0.6),
-                        ),
-                        shape: WidgetStateProperty.all(
-                          RoundedRectangleBorder(
-                            borderRadius: BorderRadius.circular(100),
+          return Container(
+            padding: const EdgeInsets.symmetric(vertical: 20, horizontal: 100),
+            child: SingleChildScrollView(
+              child: Column(
+                children: [
+                  const LanguageDropdown(),
+                  SizedBox(
+                    height: 400,
+                    child: TimelineTile(
+                      alignment: TimelineAlign.manual,
+                      lineXY: 0.4,
+                      isFirst: true,
+                      isLast: false,
+                      startChild: Container(
+                        padding: const EdgeInsets.symmetric(horizontal: 50),
+                        height: 150,
+                        child: FilledButton.tonal(
+                          style: ButtonStyle(
+                            backgroundColor: WidgetStateProperty.all(
+                              AppColors.primaryColorTwo.withOpacity(0.6),
+                            ),
+                            shape: WidgetStateProperty.all(
+                              RoundedRectangleBorder(
+                                borderRadius: BorderRadius.circular(100),
+                              ),
+                            ),
+                          ),
+                          onPressed: () {},
+                          child: Column(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: [
+                              Text(
+                                AppLocalizations.of(context)!.chooseBusinessProfile,
+                                style: GoogleFonts.poppins(fontSize: 26),
+                              ),
+                              const SizedBox(height: 10),
+                              Text(
+                                AppLocalizations.of(context)!.selectedProfileBusiness,
+                                style: GoogleFonts.poppins(fontSize: 18),
+                              ),
+                            ],
                           ),
                         ),
                       ),
-                      onPressed: () {},
-                      child: Column(
-                        mainAxisAlignment: MainAxisAlignment.center,
-                        children: [
-                          Text(
-                            AppLocalizations.of(context)!.chooseBusinessProfile,
-                            style: GoogleFonts.poppins(fontSize: 26),
+                      endChild: Container(
+                        padding: const EdgeInsets.symmetric(horizontal: 50),
+                        child: Text(
+                          AppLocalizations.of(context)!.selectProfileDescription,
+                          textAlign: TextAlign.center,
+                          style: GoogleFonts.poppins(fontSize: 26),
+                        ),
+                      ),
+                      indicatorStyle: IndicatorStyle(
+                        width: 50,
+                        color: Colors.blueAccent,
+                        iconStyle: IconStyle(
+                          iconData: Icons.check,
+                          color: Colors.white,
+                        ),
+                      ),
+                      beforeLineStyle: const LineStyle(
+                        color: Colors.blueAccent,
+                        thickness: 8,
+                      ),
+                    ),
+                  ),
+                  const TimelineDivider(
+                    color: Colors.blueAccent,
+                    thickness: 8,
+                    begin: 0.4,
+                    end: 0.6,
+                  ),
+                  // ITR Form Step
+                  SizedBox(
+                    height: 700,
+                    child: TimelineTile(
+                      alignment: TimelineAlign.manual,
+                      lineXY: 0.6,
+                      isFirst: false,
+                      isLast: false,
+                      startChild: Container(
+                        padding: const EdgeInsets.symmetric(horizontal: 50),
+                        child: Text(
+                          AppLocalizations.of(context)!.itrFormDescription,
+                          textAlign: TextAlign.center,
+                          style: GoogleFonts.poppins(fontSize: 26),
+                        ),
+                      ),
+                      endChild: Container(
+                        padding: const EdgeInsets.symmetric(horizontal: 70),
+                        child: AspectRatio(
+                          aspectRatio: 1,
+                          child: LargeTileButton(
+                            title: AppLocalizations.of(context)!.itrButtonTitleBusiness,
+                            icon: const Icon(LineIcons.piggyBank, size: 150),
+                            onPressed: () => context.go('/business-loan-journey/$loanType/itr'),
+                            description: AppLocalizations.of(context)!.itrButtonDescriptionBusiness,
                           ),
-                          const SizedBox(height: 10),
-                          Text(
-                            AppLocalizations.of(context)!.selectedProfileBusiness,
-                            style: GoogleFonts.poppins(fontSize: 18),
+                        ),
+                      ),
+                      indicatorStyle: IndicatorStyle(
+                        width: 50,
+                        color: Colors.blueAccent,
+                        iconStyle: IconStyle(
+                          iconData: Icons.check,
+                          color: Colors.white,
+                        ),
+                      ),
+                      beforeLineStyle: const LineStyle(
+                        color: Colors.blueAccent,
+                        thickness: 8,
+                      ),
+                    ),
+                  ),
+                  const TimelineDivider(
+                    color: Colors.blueAccent,
+                    thickness: 8,
+                    begin: 0.4,
+                    end: 0.6,
+                  ),
+                  // GST Form Step
+                  SizedBox(
+                    height: 700,
+                    child: TimelineTile(
+                      alignment: TimelineAlign.manual,
+                      lineXY: 0.4,
+                      isFirst: false,
+                      isLast: false,
+                      startChild: Container(
+                        padding: const EdgeInsets.symmetric(horizontal: 50),
+                        child: AspectRatio(
+                          aspectRatio: 1,
+                          child: LargeTileButton(
+                            title: AppLocalizations.of(context)!.gstButtonTitle,
+                            icon: const Icon(LineAwesome.file_invoice_solid, size: 150),
+                            onPressed: () => context.go('/business-loan-journey/$loanType/gst-details'),
+                            description: AppLocalizations.of(context)!.gstButtonDescription,
                           ),
-                        ],
+                        ),
+                      ),
+                      endChild: Container(
+                        padding: const EdgeInsets.symmetric(horizontal: 50),
+                        child: Text(
+                          AppLocalizations.of(context)!.gstFormDescription,
+                          textAlign: TextAlign.center,
+                          style: GoogleFonts.poppins(fontSize: 26),
+                        ),
+                      ),
+                      indicatorStyle: IndicatorStyle(
+                        width: 50,
+                        color: Colors.blueAccent,
+                        iconStyle: IconStyle(
+                          iconData: Icons.check,
+                          color: Colors.white,
+                        ),
+                      ),
+                      beforeLineStyle: const LineStyle(
+                        color: Colors.blueAccent,
+                        thickness: 8,
                       ),
                     ),
                   ),
-                  endChild: Container(
-                    padding: const EdgeInsets.symmetric(horizontal: 50),
-                    child: Text(
-                      AppLocalizations.of(context)!.selectProfileDescription,
-                      textAlign: TextAlign.center,
-                      style: GoogleFonts.poppins(fontSize: 26),
-                    ),
-                  ),
-                  indicatorStyle: IndicatorStyle(
-                    width: 50,
-                    color: Colors.blueAccent,
-                    iconStyle: IconStyle(
-                      iconData: Icons.check,
-                      color: Colors.white,
-                    ),
-                  ),
-                  beforeLineStyle: const LineStyle(
+                  const TimelineDivider(
                     color: Colors.blueAccent,
                     thickness: 8,
+                    begin: 0.4,
+                    end: 0.6,
                   ),
-                ),
-              ),
-              const TimelineDivider(
-                color: Colors.blueAccent,
-                thickness: 8,
-                begin: 0.4,
-                end: 0.6,
-              ),
-              // ITR Form Step
-              SizedBox(
-                height: 700,
-                child: TimelineTile(
-                  alignment: TimelineAlign.manual,
-                  lineXY: 0.6,
-                  isFirst: false,
-                  isLast: false,
-                  startChild: Container(
-                    padding: const EdgeInsets.symmetric(horizontal: 50),
-                    child: Text(
-                      AppLocalizations.of(context)!.itrFormDescription,
-                      textAlign: TextAlign.center,
-                      style: GoogleFonts.poppins(fontSize: 26),
-                    ),
-                  ),
-                  endChild: Container(
-                    padding: const EdgeInsets.symmetric(horizontal: 70),
-                    child: AspectRatio(
-                      aspectRatio: 1,
-                      child: LargeTileButton(
-                        title: AppLocalizations.of(context)!.itrButtonTitleBusiness,
-                        icon: const Icon(LineIcons.piggyBank, size: 150),
-                        onPressed: () => context.go('/business-loan-journey/$loanType/itr'),
-                        description: AppLocalizations.of(context)!.itrButtonDescriptionBusiness,
+                  // Bank Details Step
+                  SizedBox(
+                    height: 700,
+                    child: TimelineTile(
+                      alignment: TimelineAlign.manual,
+                      lineXY: 0.6,
+                      isFirst: false,
+                      isLast: false,
+                      startChild: Container(
+                        padding: const EdgeInsets.symmetric(horizontal: 50),
+                        child: Text(
+                          AppLocalizations.of(context)!.bankDetailsDescription,
+                          textAlign: TextAlign.center,
+                          style: GoogleFonts.poppins(fontSize: 26),
+                        ),
+                      ),
+                      endChild: Container(
+                        padding: const EdgeInsets.symmetric(horizontal: 70),
+                        child: AspectRatio(
+                          aspectRatio: 1,
+                          child: LargeTileButton(
+                            title: 'Bank Details',
+                            icon: const Icon(LineIcons.university, size: 150),
+                            onPressed: () => context.go('/business-loan-journey/$loanType/bank-details'),
+                            description: 'Provide your business’s bank details and bank statements.',
+                          ),
+                        ),
+                      ),
+                      indicatorStyle: IndicatorStyle(
+                        width: 50,
+                        color: Colors.blueAccent,
+                        iconStyle: IconStyle(
+                          iconData: Icons.check,
+                          color: Colors.white,
+                        ),
+                      ),
+                      beforeLineStyle: const LineStyle(
+                        color: Colors.blueAccent,
+                        thickness: 8,
                       ),
                     ),
                   ),
-                  indicatorStyle: IndicatorStyle(
-                    width: 50,
-                    color: Colors.blueAccent,
-                    iconStyle: IconStyle(
-                      iconData: Icons.check,
-                      color: Colors.white,
-                    ),
-                  ),
-                  beforeLineStyle: const LineStyle(
+
+                  const TimelineDivider(
                     color: Colors.blueAccent,
                     thickness: 8,
+                    begin: 0.4,
+                    end: 0.6,
                   ),
-                ),
-              ),
-              const TimelineDivider(
-                color: Colors.blueAccent,
-                thickness: 8,
-                begin: 0.4,
-                end: 0.6,
-              ),
-              // GST Form Step
-              SizedBox(
-                height: 700,
-                child: TimelineTile(
-                  alignment: TimelineAlign.manual,
-                  lineXY: 0.4,
-                  isFirst: false,
-                  isLast: false,
-                  startChild: Container(
-                    padding: const EdgeInsets.symmetric(horizontal: 50),
-                    child: AspectRatio(
-                      aspectRatio: 1,
-                      child: LargeTileButton(
-                        title: AppLocalizations.of(context)!.gstButtonTitle,
-                        icon: const Icon(LineAwesome.file_invoice_solid, size: 150),
-                        onPressed: () => context.go('/business-loan-journey/$loanType/gst-details'),
-                        description: AppLocalizations.of(context)!.gstButtonDescription,
+                  SizedBox(
+                    height: 700,
+                    child: TimelineTile(
+                      alignment: TimelineAlign.manual,
+                      lineXY: 0.4,
+                      isFirst: false,
+                      isLast: false,
+                      startChild: Container(
+                        padding: const EdgeInsets.symmetric(horizontal: 50),
+                        child: AspectRatio(
+                          aspectRatio: 1,
+                          child: LargeTileButton(
+                            title: AppLocalizations.of(context)!.stakeholdersButtonTitle,
+                            icon: const Icon(LineIcons.users, size: 150),
+                            onPressed: () => context.go('/business-loan-journey/$loanType/stakeholders'),
+                            description: AppLocalizations.of(context)!.stakeholdersButtonDescription,
+                          ),
+                        ),
+                      ),
+                      endChild: Container(
+                        padding: const EdgeInsets.symmetric(horizontal: 50),
+                        child: Text(
+                          AppLocalizations.of(context)!.stakeholdersDescription,
+                          textAlign: TextAlign.center,
+                          style: GoogleFonts.poppins(fontSize: 26),
+                        ),
+                      ),
+                      indicatorStyle: IndicatorStyle(
+                        width: 50,
+                        color: Colors.blueAccent,
+                        iconStyle: IconStyle(
+                          iconData: Icons.check,
+                          color: Colors.white,
+                        ),
+                      ),
+                      beforeLineStyle: const LineStyle(
+                        color: Colors.blueAccent,
+                        thickness: 8,
                       ),
                     ),
                   ),
-                  endChild: Container(
-                    padding: const EdgeInsets.symmetric(horizontal: 50),
-                    child: Text(
-                      AppLocalizations.of(context)!.gstFormDescription,
-                      textAlign: TextAlign.center,
-                      style: GoogleFonts.poppins(fontSize: 26),
-                    ),
-                  ),
-                  indicatorStyle: IndicatorStyle(
-                    width: 50,
-                    color: Colors.blueAccent,
-                    iconStyle: IconStyle(
-                      iconData: Icons.check,
-                      color: Colors.white,
-                    ),
-                  ),
-                  beforeLineStyle: const LineStyle(
+                  const TimelineDivider(
                     color: Colors.blueAccent,
                     thickness: 8,
+                    begin: 0.4,
+                    end: 0.6,
                   ),
-                ),
-              ),
-              const TimelineDivider(
-                color: Colors.blueAccent,
-                thickness: 8,
-                begin: 0.4,
-                end: 0.6,
-              ),
-              // Bank Details Step
-              SizedBox(
-                height: 700,
-                child: TimelineTile(
-                  alignment: TimelineAlign.manual,
-                  lineXY: 0.6,
-                  isFirst: false,
-                  isLast: false,
-                  startChild: Container(
-                    padding: const EdgeInsets.symmetric(horizontal: 50),
-                    child: Text(
-                      AppLocalizations.of(context)!.bankDetailsDescription,
-                      textAlign: TextAlign.center,
-                      style: GoogleFonts.poppins(fontSize: 26),
-                    ),
-                  ),
-                ),
-                endChild: Container(
-                  padding: const EdgeInsets.symmetric(horizontal: 70),
-                  child: AspectRatio(
-                    aspectRatio: 1,
-                    child: LargeTileButton(
-                      title: 'Bank Details',
-                      icon: const Icon(LineIcons.university, size: 150),
-                      onPressed: () => context.go('/business-loan-journey/$loanType/bank-details'),
-                      description: 'Provide your business’s bank details and bank statements.',
-                    ),
-                  ),
-                  indicatorStyle: IndicatorStyle(
-                    width: 50,
-                    color: Colors.blueAccent,
-                    iconStyle: IconStyle(
-                      iconData: Icons.check,
-                      color: Colors.white,
-                    ),
-                  ),
-                  beforeLineStyle: const LineStyle(
-                    color: Colors.blueAccent,
-                    thickness: 8,
-                  ),
-                ),
-              ),
-              const TimelineDivider(
-                color: Colors.blueAccent,
-                thickness: 8,
-                begin: 0.4,
-                end: 0.6,
-              ),
-              SizedBox(
-                height: 700,
-                child: TimelineTile(
-                  alignment: TimelineAlign.manual,
-                  lineXY: 0.4,
-                  isFirst: false,
-                  isLast: false,
-                  startChild: Container(
-                    padding: const EdgeInsets.symmetric(horizontal: 50),
-                    child: AspectRatio(
-                      aspectRatio: 1,
-                      child: LargeTileButton(
-                        title: AppLocalizations.of(context)!.stakeholdersButtonTitle,
-                        icon: const Icon(LineIcons.users, size: 150),
-                        onPressed: () => context.go('/business-loan-journey/$loanType/stakeholders'),
-                        description: AppLocalizations.of(context)!.stakeholdersButtonDescription,
+                  SizedBox(
+                    height: 700,
+                    child: TimelineTile(
+                      alignment: TimelineAlign.manual,
+                      lineXY: 0.6,
+                      isFirst: false,
+                      isLast: true,
+                      startChild: Container(
+                        padding: const EdgeInsets.symmetric(horizontal: 50),
+                        child: Text(
+                          AppLocalizations.of(context)!.loanFormDescription,
+                          textAlign: TextAlign.center,
+                          style: GoogleFonts.poppins(fontSize: 26),
+                        ),
+                      ),
+                      endChild: Container(
+                        padding: const EdgeInsets.symmetric(horizontal: 70),
+                        child: AspectRatio(
+                          aspectRatio: 1,
+                          child: LargeTileButton(
+                            title: AppLocalizations.of(context)!.loanButtonTitle,
+                            icon: const Icon(LineIcons.fileContract, size: 150),
+                            onPressed: () => context.go('/business-loan-journey/$loanType/loan-form'),
+                            description: AppLocalizations.of(context)!.loanButtonDescription,
+                          ),
+                        ),
+                      ),
+                      indicatorStyle: IndicatorStyle(
+                        width: 50,
+                        color: Colors.blueAccent,
+                        iconStyle: IconStyle(
+                          iconData: Icons.check,
+                          color: Colors.white,
+                        ),
+                      ),
+                      beforeLineStyle: const LineStyle(
+                        color: Colors.blueAccent,
+                        thickness: 8,
                       ),
                     ),
                   ),
-                  endChild: Container(
-                    padding: const EdgeInsets.symmetric(horizontal: 50),
-                    child: Text(
-                      AppLocalizations.of(context)!.stakeholdersDescription,
-                      textAlign: TextAlign.center,
-                      style: GoogleFonts.poppins(fontSize: 26),
-                    ),
-                  ),
-                  indicatorStyle: IndicatorStyle(
-                    width: 50,
-                    color: Colors.blueAccent,
-                    iconStyle: IconStyle(
-                      iconData: Icons.check,
-                      color: Colors.white,
-                    ),
-                  ),
-                  beforeLineStyle: const LineStyle(
-                    color: Colors.blueAccent,
-                    thickness: 8,
-                  ),
-                ),
+                ],
               ),
-              const TimelineDivider(
-                color: Colors.blueAccent,
-                thickness: 8,
-                begin: 0.4,
-                end: 0.6,
-              ),
-              SizedBox(
-                height: 700,
-                child: TimelineTile(
-                  alignment: TimelineAlign.manual,
-                  lineXY: 0.6,
-                  isFirst: false,
-                  isLast: true,
-                  startChild: Container(
-                    padding: const EdgeInsets.symmetric(horizontal: 50),
-                    child: Text(
-                      AppLocalizations.of(context)!.loanFormDescription,
-                      textAlign: TextAlign.center,
-                      style: GoogleFonts.poppins(fontSize: 26),
-                    ),
-                  ),
-                  endChild: Container(
-                    padding: const EdgeInsets.symmetric(horizontal: 70),
-                    child: AspectRatio(
-                      aspectRatio: 1,
-                      child: LargeTileButton(
-                        title: AppLocalizations.of(context)!.loanButtonTitle,
-                        icon: const Icon(LineIcons.fileContract, size: 150),
-                        onPressed: () => context.go('/business-loan-journey/$loanType/loan-form'),
-                        description: AppLocalizations.of(context)!.loanButtonDescription,
-                      ),
-                    ),
-                  ),
-                  indicatorStyle: IndicatorStyle(
-                    width: 50,
-                    color: Colors.blueAccent,
-                    iconStyle: IconStyle(
-                      iconData: Icons.check,
-                      color: Colors.white,
-                    ),
-                  ),
-                  beforeLineStyle: const LineStyle(
-                    color: Colors.blueAccent,
-                    thickness: 8,
-                  ),
-                ),
-              ),
-            ],
-          ),
-        ),
-      );
+            ),
+          );
         },
       ),
     );
