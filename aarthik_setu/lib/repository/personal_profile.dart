@@ -1,4 +1,5 @@
 import 'package:aarthik_setu/constants/app_constants.dart';
+import 'package:aarthik_setu/models/loan_applications/personal/personal_profile.dart';
 import 'package:dio/dio.dart';
 import 'package:logger/logger.dart';
 
@@ -22,13 +23,17 @@ class PersonalProfileRepository {
     }
   }
   
-  Future<Map<String,dynamic>> getProfile(String profileId) async {
+  Future<List<PersonalProfile>> getProfile(String userId) async {
     try {
-      final response = await _client.get('/profile/$profileId');
-      return response.data;
+      final response = await _client.get('/personal/profile/$userId');
+      final List<PersonalProfile> profiles = [];
+      for (final profile in response.data) {
+        profiles.add(PersonalProfile.fromJson(profile as Map<String, dynamic>));
+      }
+      return profiles;
     } catch (e) {
       _logger.e('Error fetching profile: $e');
-      return {};
+      return [];
     }
   }
 
