@@ -1,10 +1,10 @@
 {
 	"info": {
-		"_postman_id": "3b9ece94-798b-41bb-a829-25ee3c0af06e",
+		"_postman_id": "0fb9fd53-8476-462d-95ef-2ca18ac6e03b",
 		"name": "AarthikSetu",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
 		"_exporter_id": "22368846",
-		"_collection_link": "https://shubhams-team-1428.postman.co/workspace/Aarthik-Setu~11961d72-f688-46ee-8581-9263c046918e/collection/22368846-3b9ece94-798b-41bb-a829-25ee3c0af06e?action=share&source=collection_link&creator=22368846"
+		"_collection_link": "https://shubhams-team-1428.postman.co/workspace/Aarthik-Setu~11961d72-f688-46ee-8581-9263c046918e/collection/22368846-0fb9fd53-8476-462d-95ef-2ca18ac6e03b?action=share&source=collection_link&creator=22368846"
 	},
 	"item": [
 		{
@@ -1627,15 +1627,26 @@
 									]
 								},
 								"url": {
-									"raw": "localhost:8080/personal/bank_details/mhtwaakyay",
+									"raw": "localhost:8080/business/bank_details/:profileId/:applicationId",
 									"host": [
 										"localhost"
 									],
 									"port": "8080",
 									"path": [
-										"personal",
+										"business",
 										"bank_details",
-										"mhtwaakyay"
+										":profileId",
+										":applicationId"
+									],
+									"variable": [
+										{
+											"key": "profileId",
+											"value": "6d82be701c036191"
+										},
+										{
+											"key": "applicationId",
+											"value": "99e725ffb5a35bf2"
+										}
 									]
 								}
 							},
@@ -1701,7 +1712,60 @@
 							"name": "POST_GST_DETAILS",
 							"request": {
 								"method": "POST",
-								"header": []
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "business_id",
+											"value": "789",
+											"type": "text"
+										},
+										{
+											"key": "gst_number",
+											"value": "123456789",
+											"type": "text"
+										},
+										{
+											"key": "user_name",
+											"value": "JohnDoe",
+											"type": "text"
+										},
+										{
+											"key": "gst_number",
+											"value": "56789012",
+											"type": "text"
+										},
+										{
+											"key": "user_name",
+											"value": "MikeJonhson",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "localhost:8080/business/gst_details/:profileId/:applicationId",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"business",
+										"gst_details",
+										":profileId",
+										":applicationId"
+									],
+									"variable": [
+										{
+											"key": "profileId",
+											"value": "abc"
+										},
+										{
+											"key": "applicationId",
+											"value": "123"
+										}
+									]
+								}
 							},
 							"response": []
 						},
@@ -1785,7 +1849,10 @@
 							"name": "DEL_GST_DETAILS",
 							"request": {
 								"method": "DELETE",
-								"header": []
+								"header": [],
+								"url": {
+									"raw": ""
+								}
 							},
 							"response": []
 						}
@@ -1798,7 +1865,10 @@
 							"name": "GET_BUSINESS_DETAILS",
 							"request": {
 								"method": "GET",
-								"header": []
+								"header": [],
+								"url": {
+									"raw": ""
+								}
 							},
 							"response": []
 						},
@@ -1806,7 +1876,10 @@
 							"name": "POST_BUSINESS_DETAILS",
 							"request": {
 								"method": "POST",
-								"header": []
+								"header": [],
+								"url": {
+									"raw": ""
+								}
 							},
 							"response": []
 						},
@@ -1936,22 +2009,6 @@
 							"name": "GET_STAKEHOLDERS_DETAILS",
 							"request": {
 								"method": "GET",
-								"header": []
-							},
-							"response": []
-						},
-						{
-							"name": "POST_STAKEHOLDERS_DETAILS",
-							"request": {
-								"method": "POST",
-								"header": []
-							},
-							"response": []
-						},
-						{
-							"name": "PUT_STAKEHOLDERS_DETAILS",
-							"request": {
-								"method": "PUT",
 								"header": [],
 								"url": {
 									"raw": "localhost:8080/business/stakeholders_details/:profileId/:applicationId",
@@ -1968,11 +2025,103 @@
 									"variable": [
 										{
 											"key": "profileId",
-											"value": ""
+											"value": "abc"
 										},
 										{
 											"key": "applicationId",
-											"value": ""
+											"value": "123"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "POST_STAKEHOLDERS_DETAILS",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "business_details",
+											"value": "{\n    \"address\": {\n    \"building_no\": \"1234\",\n    \"street_name\": \"Tech Park Blvd\",\n    \"landmark\": \"Near City Mall\",\n    \"pincode\": \"123456\",\n    \"country\": \"USA\",\n    \"state\": \"California\",\n    \"city\": \"San Francisco\",\n    \"district\": \"San Francisco County\",\n    \"sub_district\": \"North\",\n    \"village\": \"\",\n    \"phone\": \"+1-234-567-8900\"\n  }\n}\n",
+											"type": "text"
+										},
+										{
+											"key": "stakeholders",
+											"value": "[\n  {\n    \"salutation\": \"Mr.\",\n    \"relationship_type\": \"Owner\",\n    \"first_name\": \"John\",\n    \"middle_name\": \"\",\n    \"last_name\": \"Doe\",\n    \"ownership_percent\": 70.5,\n    \"gender\": \"Male\",\n    \"father_name\": \"Michael Doe\",\n    \"date_of_birth\": \"1985-10-15T00:00:00Z\",\n    \"mobile_number\": \"+1-555-123-4567\",\n    \"residence_status\": \"Permanent\",\n    \"pan\": \"ABCDE1234F\",\n    \"education_status\": \"Graduate\",\n    \"total_experience\": 15,\n    \"net_worth\": 5000000,\n    \"address\": {\n      \"building_no\": \"5678\",\n      \"street_name\": \"Innovation Drive\",\n      \"landmark\": \"\",\n      \"pincode\": \"654321\",\n      \"country\": \"USA\",\n      \"state\": \"California\",\n      \"city\": \"San Francisco\",\n      \"district\": \"San Francisco County\",\n      \"sub_district\": \"\",\n      \"village\": \"\",\n      \"phone\": \"+1-555-987-6543\"\n    },\n    \"is_guarantor\": true,\n    \"visually_impaired_level\": 0\n  },\n  {\n    \"salutation\": \"Ms.\",\n    \"relationship_type\": \"Partner\",\n    \"first_name\": \"Jane\",\n    \"middle_name\": \"\",\n    \"last_name\": \"Smith\",\n    \"ownership_percent\": 29.5,\n    \"gender\": \"Female\",\n    \"father_name\": \"Richard Smith\",\n    \"date_of_birth\": \"1990-03-20T00:00:00Z\",\n    \"mobile_number\": \"+1-555-987-1234\",\n    \"residence_status\": \"Permanent\",\n    \"pan\": \"EFGH5678J\",\n    \"education_status\": \"Post-Graduate\",\n    \"total_experience\": 10,\n    \"net_worth\": 3000000,\n    \"address\": {\n      \"building_no\": \"7890\",\n      \"street_name\": \"Enterprise Ave\",\n      \"landmark\": \"\",\n      \"pincode\": \"789456\",\n      \"country\": \"USA\",\n      \"state\": \"California\",\n      \"city\": \"San Francisco\",\n      \"district\": \"San Francisco County\",\n      \"sub_district\": \"\",\n      \"village\": \"\",\n      \"phone\": \"+1-555-765-4321\"\n    },\n    \"is_guarantor\": false,\n    \"visually_impaired_level\": 0\n  }\n]\n",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "localhost:8080/business/stakeholders_details/:profileId/:applicationId",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"business",
+										"stakeholders_details",
+										":profileId",
+										":applicationId"
+									],
+									"variable": [
+										{
+											"key": "profileId",
+											"value": "abc"
+										},
+										{
+											"key": "applicationId",
+											"value": "123"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "PUT_STAKEHOLDERS_DETAILS",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "business_details",
+											"value": "{\n    \"address\": {\n    \"building_no\": \"1234\",\n    \"street_name\": \"Tech Park Blvd\",\n    \"landmark\": \"Near City Mall\",\n    \"pincode\": \"123456\",\n    \"country\": \"USA\",\n    \"state\": \"California\",\n    \"city\": \"San Francisco\",\n    \"district\": \"San Francisco County\",\n    \"sub_district\": \"North\",\n    \"village\": \"ABCD\",\n    \"phone\": \"+1-234-567-8900\"\n  }\n}\n",
+											"type": "text"
+										},
+										{
+											"key": "stakeholders",
+											"value": "[\n  {\n    \"salutation\": \"Mr.\",\n    \"relationship_type\": \"Owner\",\n    \"first_name\": \"John\",\n    \"middle_name\": \"\",\n    \"last_name\": \"Doe\",\n    \"ownership_percent\": 70.5,\n    \"gender\": \"Male\",\n    \"father_name\": \"Michael Doe\",\n    \"date_of_birth\": \"1985-10-15T00:00:00Z\",\n    \"mobile_number\": \"+1-555-123-4567\",\n    \"residence_status\": \"Permanent\",\n    \"pan\": \"ABCDE1234F\",\n    \"education_status\": \"Graduate\",\n    \"total_experience\": 15,\n    \"net_worth\": 5000000,\n    \"address\": {\n      \"building_no\": \"5678\",\n      \"street_name\": \"Innovation Drive\",\n      \"landmark\": \"\",\n      \"pincode\": \"654321\",\n      \"country\": \"USA\",\n      \"state\": \"California\",\n      \"city\": \"San Francisco\",\n      \"district\": \"San Francisco County\",\n      \"sub_district\": \"\",\n      \"village\": \"\",\n      \"phone\": \"+1-555-987-6543\"\n    },\n    \"is_guarantor\": true,\n    \"visually_impaired_level\": 0\n  }\n]\n",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "localhost:8080/business/stakeholders_details/:profileId/:applicationId",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"business",
+										"stakeholders_details",
+										":profileId",
+										":applicationId"
+									],
+									"variable": [
+										{
+											"key": "profileId",
+											"value": "abc"
+										},
+										{
+											"key": "applicationId",
+											"value": "123"
 										}
 									]
 								}
@@ -2050,6 +2199,14 @@
 						}
 					},
 					"response": []
+				},
+				{
+					"name": "Schemes",
+					"request": {
+						"method": "POST",
+						"header": []
+					},
+					"response": []
 				}
 			]
 		},
@@ -2061,6 +2218,16 @@
 					"request": {
 						"method": "POST",
 						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "file",
+									"type": "file",
+									"src": "postman-cloud:///1ef7e318-bf98-4ea0-8259-d7c03999029e"
+								}
+							]
+						},
 						"url": {
 							"raw": "localhost:8080/gen_ai/get-bank-statement-details",
 							"host": [
@@ -2084,7 +2251,24 @@
 					"name": "READ",
 					"request": {
 						"method": "GET",
-						"header": []
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/business_application/:profileId",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"business_application",
+								":profileId"
+							],
+							"variable": [
+								{
+									"key": "profileId",
+									"value": "1"
+								}
+							]
+						}
 					},
 					"response": []
 				},
@@ -2092,7 +2276,34 @@
 					"name": "CREATE",
 					"request": {
 						"method": "POST",
-						"header": []
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "loanType",
+									"value": "small_business",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:8080/business_application/:profileId",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"business_application",
+								":profileId"
+							],
+							"variable": [
+								{
+									"key": "profileId",
+									"value": "1"
+								}
+							]
+						}
 					},
 					"response": []
 				},
@@ -2100,7 +2311,34 @@
 					"name": "UPDATE",
 					"request": {
 						"method": "PATCH",
-						"header": []
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "loanType",
+									"value": "Updated loan type",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:8080/business_application/:id",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"business_application",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "110b85aea5e9f24a"
+								}
+							]
+						}
 					},
 					"response": []
 				},
@@ -2108,7 +2346,24 @@
 					"name": "DELETE",
 					"request": {
 						"method": "DELETE",
-						"header": []
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/business_application/:id",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"business_application",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "40022f69f37688ce"
+								}
+							]
+						}
 					},
 					"response": []
 				}
@@ -2121,7 +2376,24 @@
 					"name": "READ",
 					"request": {
 						"method": "GET",
-						"header": []
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/personal_application/:profileId",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"personal_application",
+								":profileId"
+							],
+							"variable": [
+								{
+									"key": "profileId",
+									"value": "1"
+								}
+							]
+						}
 					},
 					"response": []
 				},
@@ -2129,7 +2401,34 @@
 					"name": "CREATE",
 					"request": {
 						"method": "POST",
-						"header": []
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "loanType",
+									"value": "home loan",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:8080/personal_application/:profileId",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"personal_application",
+								":profileId"
+							],
+							"variable": [
+								{
+									"key": "profileId",
+									"value": "1"
+								}
+							]
+						}
 					},
 					"response": []
 				},
@@ -2137,7 +2436,34 @@
 					"name": "UPDATE",
 					"request": {
 						"method": "PATCH",
-						"header": []
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "loanType",
+									"value": "car loan",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:8080/personal_application/:id",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"personal_application",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "cd24931febdba9fc"
+								}
+							]
+						}
 					},
 					"response": []
 				},
@@ -2145,7 +2471,24 @@
 					"name": "DELETE",
 					"request": {
 						"method": "DELETE",
-						"header": []
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/personal_application/:id",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"personal_application",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "1974510a672c4a9f"
+								}
+							]
+						}
 					},
 					"response": []
 				}
@@ -2158,7 +2501,25 @@
 					"name": "READ",
 					"request": {
 						"method": "GET",
-						"header": []
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/personal/profile/:userId",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"personal",
+								"profile",
+								":userId"
+							],
+							"variable": [
+								{
+									"key": "userId",
+									"value": "1234"
+								}
+							]
+						}
 					},
 					"response": []
 				},
@@ -2167,20 +2528,36 @@
 					"request": {
 						"method": "POST",
 						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "John Doe",
+									"type": "text"
+								},
+								{
+									"key": "pan",
+									"value": "ABCDE1234F",
+									"type": "text"
+								}
+							]
+						},
 						"url": {
-							"raw": "localhost:8080/profiles/:userId",
+							"raw": "localhost:8080/personal/profile/:userId",
 							"host": [
 								"localhost"
 							],
 							"port": "8080",
 							"path": [
-								"profiles",
+								"personal",
+								"profile",
 								":userId"
 							],
 							"variable": [
 								{
 									"key": "userId",
-									"value": "123"
+									"value": "1234"
 								}
 							]
 						}
@@ -2192,20 +2569,36 @@
 					"request": {
 						"method": "PATCH",
 						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "john",
+									"type": "text"
+								}
+							]
+						},
 						"url": {
-							"raw": "localhost:8080/profiles/:userId",
+							"raw": "localhost:8080/personal/profile/:userId/:profileId",
 							"host": [
 								"localhost"
 							],
 							"port": "8080",
 							"path": [
-								"profiles",
-								":userId"
+								"personal",
+								"profile",
+								":userId",
+								":profileId"
 							],
 							"variable": [
 								{
 									"key": "userId",
-									"value": ""
+									"value": "1234"
+								},
+								{
+									"key": "profileId",
+									"value": "c994401f16cdb894"
 								}
 							]
 						}
@@ -2218,19 +2611,25 @@
 						"method": "DELETE",
 						"header": [],
 						"url": {
-							"raw": "localhost:8080/profiles/:userId",
+							"raw": "localhost:8080/personal/profile/:userId/:profileId",
 							"host": [
 								"localhost"
 							],
 							"port": "8080",
 							"path": [
-								"profiles",
-								":userId"
+								"personal",
+								"profile",
+								":userId",
+								":profileId"
 							],
 							"variable": [
 								{
 									"key": "userId",
-									"value": "123"
+									"value": "1234"
+								},
+								{
+									"key": "profileId",
+									"value": "1ad5d68d88fc9d30"
 								}
 							]
 						}
@@ -2246,7 +2645,25 @@
 					"name": "READ",
 					"request": {
 						"method": "GET",
-						"header": []
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/business/profile/:userId",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"business",
+								"profile",
+								":userId"
+							],
+							"variable": [
+								{
+									"key": "userId",
+									"value": "123"
+								}
+							]
+						}
 					},
 					"response": []
 				},
@@ -2255,14 +2672,30 @@
 					"request": {
 						"method": "POST",
 						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "Shubham Enterprises",
+									"type": "text"
+								},
+								{
+									"key": "pan",
+									"value": "ABCDE1234F",
+									"type": "text"
+								}
+							]
+						},
 						"url": {
-							"raw": "localhost:8080/profiles/:userId",
+							"raw": "localhost:8080/business/profile/:userId",
 							"host": [
 								"localhost"
 							],
 							"port": "8080",
 							"path": [
-								"profiles",
+								"business",
+								"profile",
 								":userId"
 							],
 							"variable": [
@@ -2280,20 +2713,41 @@
 					"request": {
 						"method": "PATCH",
 						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "Shubham Finance",
+									"type": "text"
+								},
+								{
+									"key": "pan",
+									"value": "ABCDE1234F45",
+									"type": "text"
+								}
+							]
+						},
 						"url": {
-							"raw": "localhost:8080/profiles/:userId",
+							"raw": "localhost:8080/business/profile/:userId/:profileId",
 							"host": [
 								"localhost"
 							],
 							"port": "8080",
 							"path": [
-								"profiles",
-								":userId"
+								"business",
+								"profile",
+								":userId",
+								":profileId"
 							],
 							"variable": [
 								{
 									"key": "userId",
-									"value": ""
+									"value": "123"
+								},
+								{
+									"key": "profileId",
+									"value": "398568994b55e6b0"
 								}
 							]
 						}
@@ -2306,20 +2760,49 @@
 						"method": "DELETE",
 						"header": [],
 						"url": {
-							"raw": "localhost:8080/profiles/:userId",
+							"raw": "localhost:8080/business/profile/:userId/:profileId",
 							"host": [
 								"localhost"
 							],
 							"port": "8080",
 							"path": [
-								"profiles",
-								":userId"
+								"business",
+								"profile",
+								":userId",
+								":profileId"
 							],
 							"variable": [
 								{
 									"key": "userId",
 									"value": "123"
+								},
+								{
+									"key": "profileId",
+									"value": "3b6fa323079a0ea7"
 								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Government_schemes",
+			"item": [
+				{
+					"name": "GET",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/govt_schemes",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"govt_schemes"
 							]
 						}
 					},
