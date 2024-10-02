@@ -1,12 +1,12 @@
 class PersonalProfile {
   final String? id;
-  final String? userId;
+  final String userId;
   final String name;
   final String pan;
 
   PersonalProfile({
     this.id,
-    this.userId,
+    required this.userId,
     required this.name,
     required this.pan,
   });
