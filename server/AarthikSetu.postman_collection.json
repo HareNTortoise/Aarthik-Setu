@@ -1,17 +1,325 @@
 {
 	"info": {
-		"_postman_id": "df9688b9-b10a-408c-b39e-3fe1972a7ca0",
+		"_postman_id": "0fb9fd53-8476-462d-95ef-2ca18ac6e03b",
 		"name": "AarthikSetu",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
-		"_exporter_id": "26603098"
+		"_exporter_id": "22368846",
+		"_collection_link": "https://shubhams-team-1428.postman.co/workspace/Aarthik-Setu~11961d72-f688-46ee-8581-9263c046918e/collection/22368846-0fb9fd53-8476-462d-95ef-2ca18ac6e03b?action=share&source=collection_link&creator=22368846"
 	},
 	"item": [
 		{
-			"name": "BUSINESS_FORMS",
+			"name": "PERSONAL FORMS",
 			"item": [
 				{
-					"name": "ITR_FORMS",
+					"name": "ITR_FROMS",
 					"item": [
+						{
+							"name": "Manual",
+							"item": [
+								{
+									"name": "POST_MANUAL_ITR_DETAILS",
+									"request": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "formdata",
+											"formdata": [
+												{
+													"key": "firstName",
+													"value": "Varun",
+													"type": "text"
+												},
+												{
+													"key": "middleName",
+													"value": "Vilva",
+													"type": "text"
+												},
+												{
+													"key": "lastName",
+													"value": "NA",
+													"type": "text"
+												},
+												{
+													"key": "dob",
+													"value": "1990-05-20",
+													"type": "text"
+												},
+												{
+													"key": "pan",
+													"value": "ABCDE1234F",
+													"type": "text"
+												},
+												{
+													"key": "mobile",
+													"value": "9876543210",
+													"type": "text"
+												},
+												{
+													"key": "email",
+													"value": "john.doe@example.com",
+													"type": "text"
+												},
+												{
+													"key": "addressLine1",
+													"value": "123 Main St",
+													"type": "text"
+												},
+												{
+													"key": "addressLine2",
+													"value": "Apt 4B",
+													"type": "text"
+												},
+												{
+													"key": "landmark",
+													"value": "Near City Park",
+													"type": "text"
+												},
+												{
+													"key": "country",
+													"value": "India",
+													"type": "text"
+												},
+												{
+													"key": "pinCode",
+													"value": "110001",
+													"type": "text"
+												},
+												{
+													"key": "state",
+													"value": "state",
+													"type": "text"
+												},
+												{
+													"key": "city",
+													"value": "city",
+													"type": "text"
+												},
+												{
+													"key": "village",
+													"value": "village",
+													"type": "text"
+												},
+												{
+													"key": "district",
+													"value": "district",
+													"type": "text"
+												},
+												{
+													"key": "subDistrict",
+													"value": "subdistrict",
+													"type": "text"
+												},
+												{
+													"key": "income_keys",
+													"value": "2020-2021",
+													"type": "text"
+												},
+												{
+													"key": "income_2020-2021",
+													"value": "500000",
+													"type": "text"
+												},
+												{
+													"key": "income_keys",
+													"value": "2021-2022",
+													"type": "text"
+												},
+												{
+													"key": "income_2021-2022",
+													"value": "550000",
+													"type": "text"
+												},
+												{
+													"key": "userId",
+													"value": "mhtwaakyay",
+													"type": "text"
+												}
+											]
+										},
+										"url": {
+											"raw": "localhost:8080/personal/itr",
+											"host": [
+												"localhost"
+											],
+											"port": "8080",
+											"path": [
+												"personal",
+												"itr"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "PATCH_MANUAL_ITR_DETAILS",
+									"request": {
+										"method": "PATCH",
+										"header": [],
+										"body": {
+											"mode": "formdata",
+											"formdata": [
+												{
+													"key": "firstName",
+													"value": "varun",
+													"type": "text"
+												},
+												{
+													"key": "middleName",
+													"value": "Vilva",
+													"type": "text"
+												},
+												{
+													"key": "lastName",
+													"value": "NA",
+													"type": "text"
+												},
+												{
+													"key": "dob",
+													"value": "1990-05-20",
+													"type": "text"
+												},
+												{
+													"key": "pan",
+													"value": "ABCDE1234F",
+													"type": "text"
+												},
+												{
+													"key": "mobile",
+													"value": "9876543210",
+													"type": "text"
+												},
+												{
+													"key": "email",
+													"value": "john.doe@example.com",
+													"type": "text"
+												},
+												{
+													"key": "addressLine1",
+													"value": "123 Main St",
+													"type": "text"
+												},
+												{
+													"key": "addressLine2",
+													"value": "Apt 4B",
+													"type": "text"
+												},
+												{
+													"key": "landmark",
+													"value": "Near City Park",
+													"type": "text"
+												},
+												{
+													"key": "country",
+													"value": "India",
+													"type": "text"
+												},
+												{
+													"key": "pinCode",
+													"value": "110001",
+													"type": "text"
+												},
+												{
+													"key": "state",
+													"value": "state",
+													"type": "text"
+												},
+												{
+													"key": "city",
+													"value": "city",
+													"type": "text"
+												},
+												{
+													"key": "village",
+													"value": "village",
+													"type": "text"
+												},
+												{
+													"key": "district",
+													"value": "district",
+													"type": "text"
+												},
+												{
+													"key": "subDistrict",
+													"value": "subdistrict",
+													"type": "text"
+												},
+												{
+													"key": "income_keys",
+													"value": "2020-2021",
+													"type": "text"
+												},
+												{
+													"key": "income_2020-2021",
+													"value": "500000",
+													"type": "text"
+												},
+												{
+													"key": "income_keys",
+													"value": "2021-2022",
+													"type": "text"
+												},
+												{
+													"key": "income_2021-2022",
+													"value": "550000",
+													"type": "text"
+												},
+												{
+													"key": "userId",
+													"value": "mhtwaakyay",
+													"type": "text",
+													"disabled": true
+												}
+											]
+										},
+										"url": {
+											"raw": "localhost:8080/personal/itr/mhtwaakyay",
+											"host": [
+												"localhost"
+											],
+											"port": "8080",
+											"path": [
+												"personal",
+												"itr",
+												"mhtwaakyay"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "GET_MANUAL_ITR_DETAILS",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"method": "GET",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "",
+											"options": {
+												"raw": {
+													"language": "text"
+												}
+											}
+										},
+										"url": {
+											"raw": "localhost:8080/personal/itr/mhtwaakyay",
+											"host": [
+												"localhost"
+											],
+											"port": "8080",
+											"path": [
+												"personal",
+												"itr",
+												"mhtwaakyay"
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						},
 						{
 							"name": "PDF_UPLOAD",
 							"item": [
@@ -27,20 +335,25 @@
 													"key": "itr_documents",
 													"type": "file",
 													"src": [
-														"C:\\Users\\Varun\\Downloads\\10000927-Resume-Master-22F1000553-2024-08-10-2.pdf",
+														"C:\\Users\\Varun\\Downloads\\CS461_202151195_VarunVivadrinath_lab2.pdf",
 														"C:\\Users\\Varun\\Downloads\\1_merged.pdf"
 													]
+												},
+												{
+													"key": "file_2022",
+													"value": "",
+													"type": "file"
 												}
 											]
 										},
 										"url": {
-											"raw": "localhost:8080/business/upload-itr-document/mhtwaakyay",
+											"raw": "localhost:8080/personal/upload-itr-document/mhtwaakyay",
 											"host": [
 												"localhost"
 											],
 											"port": "8080",
 											"path": [
-												"business",
+												"personal",
 												"upload-itr-document",
 												"mhtwaakyay"
 											]
@@ -261,6 +574,1107 @@
 					]
 				},
 				{
+					"name": "BASIC DETAILS",
+					"item": [
+						{
+							"name": "BASIC_DETAILS",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "salutation",
+											"value": "Mr.",
+											"type": "text"
+										},
+										{
+											"key": "firstName",
+											"value": "John",
+											"type": "text"
+										},
+										{
+											"key": "middleName",
+											"value": "",
+											"type": "text"
+										},
+										{
+											"key": "lastName",
+											"value": "Doe",
+											"type": "text"
+										},
+										{
+											"key": "dob",
+											"value": "2003-02-01",
+											"type": "text"
+										},
+										{
+											"key": "pan",
+											"value": "ABCD1234E",
+											"type": "text"
+										},
+										{
+											"key": "gender",
+											"value": "Male",
+											"type": "text"
+										},
+										{
+											"key": "category",
+											"value": "General",
+											"type": "text"
+										},
+										{
+											"key": "mobile",
+											"value": "1234567890",
+											"type": "text"
+										},
+										{
+											"key": "telephone",
+											"value": "0987654321",
+											"type": "text"
+										},
+										{
+											"key": "emailPersonal",
+											"value": "john.doe@example.com",
+											"type": "text"
+										},
+										{
+											"key": "fatherName",
+											"value": "Richard Doe",
+											"type": "text"
+										},
+										{
+											"key": "educationQualification",
+											"value": "Bachelors",
+											"type": "text"
+										},
+										{
+											"key": "netWorth",
+											"value": "100000.00",
+											"type": "text"
+										},
+										{
+											"key": "nationality",
+											"value": "American",
+											"type": "text"
+										},
+										{
+											"key": "dependent",
+											"value": "None",
+											"type": "text"
+										},
+										{
+											"key": "maritalStatus",
+											"value": "Single",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "localhost:8080/personal/basic_details/mhtwaakyay",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"personal",
+										"basic_details",
+										"mhtwaakyay"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "BASIC_DETAILS",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "salutation",
+											"value": "Mr.",
+											"type": "text"
+										},
+										{
+											"key": "firstName",
+											"value": "John",
+											"type": "text"
+										},
+										{
+											"key": "middleName",
+											"value": "",
+											"type": "text"
+										},
+										{
+											"key": "lastName",
+											"value": "Doe",
+											"type": "text"
+										},
+										{
+											"key": "dob",
+											"value": "2003-02-01",
+											"type": "text"
+										},
+										{
+											"key": "pan",
+											"value": "ABCD1234E",
+											"type": "text"
+										},
+										{
+											"key": "gender",
+											"value": "Male",
+											"type": "text"
+										},
+										{
+											"key": "category",
+											"value": "General",
+											"type": "text"
+										},
+										{
+											"key": "mobile",
+											"value": "1234567890",
+											"type": "text"
+										},
+										{
+											"key": "telephone",
+											"value": "0987654321",
+											"type": "text"
+										},
+										{
+											"key": "emailPersonal",
+											"value": "john.doe@example.com",
+											"type": "text"
+										},
+										{
+											"key": "fatherName",
+											"value": "Richard Doe",
+											"type": "text"
+										},
+										{
+											"key": "educationQualification",
+											"value": "Bachelors",
+											"type": "text"
+										},
+										{
+											"key": "netWorth",
+											"value": "100000.00",
+											"type": "text"
+										},
+										{
+											"key": "nationality",
+											"value": "American",
+											"type": "text"
+										},
+										{
+											"key": "dependent",
+											"value": "None",
+											"type": "text"
+										},
+										{
+											"key": "maritalStatus",
+											"value": "Single",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "localhost:8080/personal/basic_details/mhtwaakyay",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"personal",
+										"basic_details",
+										"mhtwaakyay"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "BASIC_DETAILS",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8080/personal/basic_details/mhtwaakyay",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"personal",
+										"basic_details",
+										"mhtwaakyay"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "BASIC_DETAILS",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "localhost:8080/personal/basic_details/mhtwaakyay",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"personal",
+										"basic_details",
+										"mhtwaakyay"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "EMPLOYMENT DETAILS",
+					"item": [
+						{
+							"name": "EMPLOYMENT_DETAILS",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "employmentType",
+											"value": "service",
+											"type": "text"
+										},
+										{
+											"key": "employerStatus",
+											"value": "None",
+											"type": "text"
+										},
+										{
+											"key": "designation",
+											"value": "manager",
+											"type": "text"
+										},
+										{
+											"key": "modeOfSalary",
+											"value": "direct",
+											"type": "text"
+										},
+										{
+											"key": "grossMonthlyIncome",
+											"value": "80000",
+											"type": "text"
+										},
+										{
+											"key": "netMonthlyIncome",
+											"value": "80000",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "localhost:8080/personal/employment_details/mhtwaakyay",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"personal",
+										"employment_details",
+										"mhtwaakyay"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "EMPLOYMENT_DETAILS",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "employmentType",
+											"value": "service",
+											"type": "text"
+										},
+										{
+											"key": "employerStatus",
+											"value": "None",
+											"type": "text"
+										},
+										{
+											"key": "designation",
+											"value": "manager",
+											"type": "text"
+										},
+										{
+											"key": "modeOfSalary",
+											"value": "direct",
+											"type": "text"
+										},
+										{
+											"key": "grossMonthlyIncome",
+											"value": "80000",
+											"type": "text"
+										},
+										{
+											"key": "netMonthlyIncome",
+											"value": "80000",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "localhost:8080/personal/employment_details/mhtwaakyay",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"personal",
+										"employment_details",
+										"mhtwaakyay"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "EMPLOYMENT_DETAILS",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "localhost:8080/personal/employment_details/mhtwaakyay",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"personal",
+										"employment_details",
+										"mhtwaakyay"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "EMPLOYMENT_DETAILS",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8080/personal/employment_details/mhtwaakyay",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"personal",
+										"employment_details",
+										"mhtwaakyay"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "CONTACT_DETAILS",
+					"item": [
+						{
+							"name": "CONTACT_DETAILS",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "premisesName",
+											"value": "Greenwood Apartments",
+											"type": "text"
+										},
+										{
+											"key": "streetName",
+											"value": "Baker Street",
+											"type": "text"
+										},
+										{
+											"key": "landmark",
+											"value": "Near Central Park",
+											"type": "text"
+										},
+										{
+											"key": "country",
+											"value": "USA",
+											"type": "text"
+										},
+										{
+											"key": "state",
+											"value": "California",
+											"type": "text"
+										},
+										{
+											"key": "city",
+											"value": "Los Angeles",
+											"type": "text"
+										},
+										{
+											"key": "pinCode",
+											"value": "90001",
+											"type": "text"
+										},
+										{
+											"key": "village",
+											"value": "N/A",
+											"type": "text"
+										},
+										{
+											"key": "district",
+											"value": "Los Angeles County",
+											"type": "text"
+										},
+										{
+											"key": "subDistrict",
+											"value": "West Los Angeles",
+											"type": "text"
+										},
+										{
+											"key": "typeOfResidence",
+											"value": "Apartment",
+											"type": "text"
+										},
+										{
+											"key": "residenceSince",
+											"value": "2020-01-15",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "localhost:8080/personal/contact_details/mhtwaakyay",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"personal",
+										"contact_details",
+										"mhtwaakyay"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "CONTACT_DETAILS",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "premisesName",
+											"value": "Greenwood Apartments CHS",
+											"type": "text"
+										},
+										{
+											"key": "streetName",
+											"value": "Baker Street",
+											"type": "text"
+										},
+										{
+											"key": "landmark",
+											"value": "Near Central Park",
+											"type": "text"
+										},
+										{
+											"key": "country",
+											"value": "USA",
+											"type": "text"
+										},
+										{
+											"key": "state",
+											"value": "California",
+											"type": "text"
+										},
+										{
+											"key": "city",
+											"value": "Los Angeles",
+											"type": "text"
+										},
+										{
+											"key": "pinCode",
+											"value": "90001",
+											"type": "text"
+										},
+										{
+											"key": "village",
+											"value": "N/A",
+											"type": "text"
+										},
+										{
+											"key": "district",
+											"value": "Los Angeles County",
+											"type": "text"
+										},
+										{
+											"key": "subDistrict",
+											"value": "West Los Angeles",
+											"type": "text"
+										},
+										{
+											"key": "typeOfResidence",
+											"value": "Apartment",
+											"type": "text"
+										},
+										{
+											"key": "residenceSince",
+											"value": "2020-01-15",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "localhost:8080/personal/contact_details/mhtwaakyay",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"personal",
+										"contact_details",
+										"mhtwaakyay"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "CONTACT_DETAILS",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "localhost:8080/personal/contact_details/mhtwaakyay",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"personal",
+										"contact_details",
+										"mhtwaakyay"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "CONTACT_DETAILS",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8080/personal/contact_details/mhtwaakyay",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"personal",
+										"contact_details",
+										"mhtwaakyay"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "CREDIT_INFO",
+					"item": [
+						{
+							"name": "CREDIT_INFO",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "loanType",
+											"value": "Small",
+											"type": "text"
+										},
+										{
+											"key": "lender",
+											"value": "ICICI",
+											"type": "text"
+										},
+										{
+											"key": "sanctionedAmount",
+											"value": "3000",
+											"type": "text"
+										},
+										{
+											"key": "outstandingAmount",
+											"value": "2000",
+											"type": "text"
+										},
+										{
+											"key": "emiAmount",
+											"value": "2",
+											"type": "text"
+										},
+										{
+											"key": "loanType",
+											"value": "Small",
+											"type": "text"
+										},
+										{
+											"key": "lender",
+											"value": "IDBI",
+											"type": "text"
+										},
+										{
+											"key": "sanctionedAmount",
+											"value": "40000",
+											"type": "text"
+										},
+										{
+											"key": "outstandingAmount",
+											"value": "2000",
+											"type": "text"
+										},
+										{
+											"key": "emiAmount",
+											"value": "1000",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "localhost:8080/personal/credit_info/mhtwaakyay",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"personal",
+										"credit_info",
+										"mhtwaakyay"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "CREDIT_INFO",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "loanType",
+											"value": "small",
+											"type": "text"
+										},
+										{
+											"key": "lender",
+											"value": "ICICI",
+											"type": "text"
+										},
+										{
+											"key": "sanctionedAmount",
+											"value": "3000",
+											"type": "text"
+										},
+										{
+											"key": "outstandingAmount",
+											"value": "2000",
+											"type": "text"
+										},
+										{
+											"key": "emiAmount",
+											"value": "2",
+											"type": "text"
+										},
+										{
+											"key": "loanType",
+											"value": "Small",
+											"type": "text"
+										},
+										{
+											"key": "lender",
+											"value": "IDBI",
+											"type": "text"
+										},
+										{
+											"key": "sanctionedAmount",
+											"value": "40000",
+											"type": "text"
+										},
+										{
+											"key": "outstandingAmount",
+											"value": "2000",
+											"type": "text"
+										},
+										{
+											"key": "emiAmount",
+											"value": "1000",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "localhost:8080/personal/credit_info/mhtwaakyay",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"personal",
+										"credit_info",
+										"mhtwaakyay"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "CREDIT_INFO",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": []
+								},
+								"url": {
+									"raw": "localhost:8080/personal/credit_info/mhtwaakyay",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"personal",
+										"credit_info",
+										"mhtwaakyay"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "CREDIT_INFO",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8080/personal/credit_info/mhtwaakyay",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"personal",
+										"credit_info",
+										"mhtwaakyay"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "BUSINESS FORMS",
+			"item": [
+				{
+					"name": "ITR_FORMS",
+					"item": [
+						{
+							"name": "PDF_UPLOAD",
+							"item": [
+								{
+									"name": "POST_UPLOAD_ITR_DOCUMENT",
+									"request": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "formdata",
+											"formdata": [
+												{
+													"key": "itr_documents",
+													"type": "file",
+													"src": [
+														"C:\\Users\\Varun\\Downloads\\10000927-Resume-Master-22F1000553-2024-08-10-2.pdf",
+														"C:\\Users\\Varun\\Downloads\\1_merged.pdf"
+													]
+												}
+											]
+										},
+										"url": {
+											"raw": "localhost:8080/business/upload-itr-document/mhtwaakyay",
+											"host": [
+												"localhost"
+											],
+											"port": "8080",
+											"path": [
+												"business",
+												"upload-itr-document",
+												"mhtwaakyay"
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "BANK_DETAILS",
+					"item": [
+						{
+							"name": "BANK_DETAILS",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "bank_name",
+											"value": "HDFC",
+											"type": "text"
+										},
+										{
+											"key": "joining_month",
+											"value": "May",
+											"type": "text"
+										},
+										{
+											"key": "joining_year",
+											"value": "2024",
+											"type": "text"
+										},
+										{
+											"key": "bank_name",
+											"value": "ICICI",
+											"type": "text"
+										},
+										{
+											"key": "joining_month",
+											"value": "April",
+											"type": "text"
+										},
+										{
+											"key": "joining_year",
+											"value": "2013",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "localhost:8080/personal/bank_details/mhtwaakyay",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"personal",
+										"bank_details",
+										"mhtwaakyay"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "BANK_DETAILS",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "bank_name",
+											"value": "HDFC",
+											"type": "text"
+										},
+										{
+											"key": "joining_month",
+											"value": "May",
+											"type": "text"
+										},
+										{
+											"key": "joining_year",
+											"value": "2024",
+											"type": "text"
+										},
+										{
+											"key": "bank_name",
+											"value": "ICICI",
+											"type": "text"
+										},
+										{
+											"key": "joining_month",
+											"value": "April",
+											"type": "text"
+										},
+										{
+											"key": "joining_year",
+											"value": "2012",
+											"type": "text"
+										},
+										{
+											"key": "bank_name",
+											"value": "Bank of Maharashtra",
+											"type": "text"
+										},
+										{
+											"key": "joining_month",
+											"value": "June",
+											"type": "text"
+										},
+										{
+											"key": "joining_year",
+											"value": "2010",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "localhost:8080/personal/bank_details/mhtwaakyay",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"personal",
+										"bank_details",
+										"mhtwaakyay"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "BANK_DETAILS",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "bank_name",
+											"value": "HDFC",
+											"type": "text"
+										},
+										{
+											"key": "joining_month",
+											"value": "May",
+											"type": "text"
+										},
+										{
+											"key": "joining_year",
+											"value": "2024",
+											"type": "text"
+										},
+										{
+											"key": "bank_name",
+											"value": "ICICI",
+											"type": "text"
+										},
+										{
+											"key": "joining_month",
+											"value": "April",
+											"type": "text"
+										},
+										{
+											"key": "joining_year",
+											"value": "2013",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "localhost:8080/business/bank_details/:profileId/:applicationId",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"business",
+										"bank_details",
+										":profileId",
+										":applicationId"
+									],
+									"variable": [
+										{
+											"key": "profileId",
+											"value": "6d82be701c036191"
+										},
+										{
+											"key": "applicationId",
+											"value": "99e725ffb5a35bf2"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "BANK_DETAILS",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "localhost:8080/personal/bank_details/mhtwaakyay",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"personal",
+										"bank_details",
+										"mhtwaakyay"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
 					"name": "GST_DETAILS",
 					"item": [
 						{
@@ -299,8 +1713,58 @@
 							"request": {
 								"method": "POST",
 								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "business_id",
+											"value": "789",
+											"type": "text"
+										},
+										{
+											"key": "gst_number",
+											"value": "123456789",
+											"type": "text"
+										},
+										{
+											"key": "user_name",
+											"value": "JohnDoe",
+											"type": "text"
+										},
+										{
+											"key": "gst_number",
+											"value": "56789012",
+											"type": "text"
+										},
+										{
+											"key": "user_name",
+											"value": "MikeJonhson",
+											"type": "text"
+										}
+									]
+								},
 								"url": {
-									"raw": ""
+									"raw": "localhost:8080/business/gst_details/:profileId/:applicationId",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"business",
+										"gst_details",
+										":profileId",
+										":applicationId"
+									],
+									"variable": [
+										{
+											"key": "profileId",
+											"value": "abc"
+										},
+										{
+											"key": "applicationId",
+											"value": "123"
+										}
+									]
 								}
 							},
 							"response": []
@@ -547,7 +2011,27 @@
 								"method": "GET",
 								"header": [],
 								"url": {
-									"raw": ""
+									"raw": "localhost:8080/business/stakeholders_details/:profileId/:applicationId",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"business",
+										"stakeholders_details",
+										":profileId",
+										":applicationId"
+									],
+									"variable": [
+										{
+											"key": "profileId",
+											"value": "abc"
+										},
+										{
+											"key": "applicationId",
+											"value": "123"
+										}
+									]
 								}
 							},
 							"response": []
@@ -557,17 +2041,21 @@
 							"request": {
 								"method": "POST",
 								"header": [],
-								"url": {
-									"raw": ""
-								}
-							},
-							"response": []
-						},
-						{
-							"name": "PUT_STAKEHOLDERS_DETAILS",
-							"request": {
-								"method": "PUT",
-								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "business_details",
+											"value": "{\n    \"address\": {\n    \"building_no\": \"1234\",\n    \"street_name\": \"Tech Park Blvd\",\n    \"landmark\": \"Near City Mall\",\n    \"pincode\": \"123456\",\n    \"country\": \"USA\",\n    \"state\": \"California\",\n    \"city\": \"San Francisco\",\n    \"district\": \"San Francisco County\",\n    \"sub_district\": \"North\",\n    \"village\": \"\",\n    \"phone\": \"+1-234-567-8900\"\n  }\n}\n",
+											"type": "text"
+										},
+										{
+											"key": "stakeholders",
+											"value": "[\n  {\n    \"salutation\": \"Mr.\",\n    \"relationship_type\": \"Owner\",\n    \"first_name\": \"John\",\n    \"middle_name\": \"\",\n    \"last_name\": \"Doe\",\n    \"ownership_percent\": 70.5,\n    \"gender\": \"Male\",\n    \"father_name\": \"Michael Doe\",\n    \"date_of_birth\": \"1985-10-15T00:00:00Z\",\n    \"mobile_number\": \"+1-555-123-4567\",\n    \"residence_status\": \"Permanent\",\n    \"pan\": \"ABCDE1234F\",\n    \"education_status\": \"Graduate\",\n    \"total_experience\": 15,\n    \"net_worth\": 5000000,\n    \"address\": {\n      \"building_no\": \"5678\",\n      \"street_name\": \"Innovation Drive\",\n      \"landmark\": \"\",\n      \"pincode\": \"654321\",\n      \"country\": \"USA\",\n      \"state\": \"California\",\n      \"city\": \"San Francisco\",\n      \"district\": \"San Francisco County\",\n      \"sub_district\": \"\",\n      \"village\": \"\",\n      \"phone\": \"+1-555-987-6543\"\n    },\n    \"is_guarantor\": true,\n    \"visually_impaired_level\": 0\n  },\n  {\n    \"salutation\": \"Ms.\",\n    \"relationship_type\": \"Partner\",\n    \"first_name\": \"Jane\",\n    \"middle_name\": \"\",\n    \"last_name\": \"Smith\",\n    \"ownership_percent\": 29.5,\n    \"gender\": \"Female\",\n    \"father_name\": \"Richard Smith\",\n    \"date_of_birth\": \"1990-03-20T00:00:00Z\",\n    \"mobile_number\": \"+1-555-987-1234\",\n    \"residence_status\": \"Permanent\",\n    \"pan\": \"EFGH5678J\",\n    \"education_status\": \"Post-Graduate\",\n    \"total_experience\": 10,\n    \"net_worth\": 3000000,\n    \"address\": {\n      \"building_no\": \"7890\",\n      \"street_name\": \"Enterprise Ave\",\n      \"landmark\": \"\",\n      \"pincode\": \"789456\",\n      \"country\": \"USA\",\n      \"state\": \"California\",\n      \"city\": \"San Francisco\",\n      \"district\": \"San Francisco County\",\n      \"sub_district\": \"\",\n      \"village\": \"\",\n      \"phone\": \"+1-555-765-4321\"\n    },\n    \"is_guarantor\": false,\n    \"visually_impaired_level\": 0\n  }\n]\n",
+											"type": "text"
+										}
+									]
+								},
 								"url": {
 									"raw": "localhost:8080/business/stakeholders_details/:profileId/:applicationId",
 									"host": [
@@ -583,11 +2071,57 @@
 									"variable": [
 										{
 											"key": "profileId",
-											"value": ""
+											"value": "abc"
 										},
 										{
 											"key": "applicationId",
-											"value": ""
+											"value": "123"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "PUT_STAKEHOLDERS_DETAILS",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "business_details",
+											"value": "{\n    \"address\": {\n    \"building_no\": \"1234\",\n    \"street_name\": \"Tech Park Blvd\",\n    \"landmark\": \"Near City Mall\",\n    \"pincode\": \"123456\",\n    \"country\": \"USA\",\n    \"state\": \"California\",\n    \"city\": \"San Francisco\",\n    \"district\": \"San Francisco County\",\n    \"sub_district\": \"North\",\n    \"village\": \"ABCD\",\n    \"phone\": \"+1-234-567-8900\"\n  }\n}\n",
+											"type": "text"
+										},
+										{
+											"key": "stakeholders",
+											"value": "[\n  {\n    \"salutation\": \"Mr.\",\n    \"relationship_type\": \"Owner\",\n    \"first_name\": \"John\",\n    \"middle_name\": \"\",\n    \"last_name\": \"Doe\",\n    \"ownership_percent\": 70.5,\n    \"gender\": \"Male\",\n    \"father_name\": \"Michael Doe\",\n    \"date_of_birth\": \"1985-10-15T00:00:00Z\",\n    \"mobile_number\": \"+1-555-123-4567\",\n    \"residence_status\": \"Permanent\",\n    \"pan\": \"ABCDE1234F\",\n    \"education_status\": \"Graduate\",\n    \"total_experience\": 15,\n    \"net_worth\": 5000000,\n    \"address\": {\n      \"building_no\": \"5678\",\n      \"street_name\": \"Innovation Drive\",\n      \"landmark\": \"\",\n      \"pincode\": \"654321\",\n      \"country\": \"USA\",\n      \"state\": \"California\",\n      \"city\": \"San Francisco\",\n      \"district\": \"San Francisco County\",\n      \"sub_district\": \"\",\n      \"village\": \"\",\n      \"phone\": \"+1-555-987-6543\"\n    },\n    \"is_guarantor\": true,\n    \"visually_impaired_level\": 0\n  }\n]\n",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "localhost:8080/business/stakeholders_details/:profileId/:applicationId",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"business",
+										"stakeholders_details",
+										":profileId",
+										":applicationId"
+									],
+									"variable": [
+										{
+											"key": "profileId",
+											"value": "abc"
+										},
+										{
+											"key": "applicationId",
+											"value": "123"
 										}
 									]
 								}
@@ -630,27 +2164,24 @@
 			]
 		},
 		{
-			"name": "GEN-AI",
+			"name": "Gen-AI",
 			"item": [
 				{
-					"name": "AUDIO_FORM_FILL",
+					"name": "formfilling",
 					"request": {
-						"auth": {
-							"type": "inherit"
-						},
 						"method": "POST",
 						"header": [],
 						"body": {
 							"mode": "formdata",
 							"formdata": [
 								{
-									"key": "audioFile",
+									"key": "audioFile ",
 									"type": "file",
-									"src": "/home/varunvilva/Downloads/test.mp3"
+									"src": "postman-cloud:///1ef7db9c-5d97-47c0-a09f-642ce4f96f6c"
 								},
 								{
 									"key": "formFields",
-									"value": "[\"name\", \"age\", \"email\"]",
+									"value": "{\n  \"name\": \"Shubham\",\n  \"age\": 20,\n  \"email\": \"john@example.com\"\n}\n",
 									"type": "text"
 								}
 							]
@@ -668,14 +2199,22 @@
 						}
 					},
 					"response": []
+				},
+				{
+					"name": "Schemes",
+					"request": {
+						"method": "POST",
+						"header": []
+					},
+					"response": []
 				}
 			]
 		},
 		{
-			"name": "INFO_EXTRACTION",
+			"name": "info_extraction",
 			"item": [
 				{
-					"name": "BANK_STATEMENT",
+					"name": "Bank statement",
 					"request": {
 						"method": "POST",
 						"header": [],
@@ -685,79 +2224,19 @@
 								{
 									"key": "file",
 									"type": "file",
-									"src": "C:\\Users\\Varun\\Downloads\\BANK STATEMENT SHREE SHYAM DEVELOPERS.pdf"
+									"src": "postman-cloud:///1ef7e318-bf98-4ea0-8259-d7c03999029e"
 								}
 							]
 						},
 						"url": {
-							"raw": "localhost:8080/gen_ai/get-bank-statement-details/abcdefghi/abcdefghi",
+							"raw": "localhost:8080/gen_ai/get-bank-statement-details",
 							"host": [
 								"localhost"
 							],
 							"port": "8080",
 							"path": [
 								"gen_ai",
-								"get-bank-statement-details",
-								"abcdefghi",
-								"abcdefghi"
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "ITR_DETAIL_EXTRACTION",
-					"request": {
-						"method": "POST",
-						"header": [],
-						"body": {
-							"mode": "formdata",
-							"formdata": [
-								{
-									"key": "file",
-									"type": "file",
-									"src": "C:\\Users\\Varun\\Downloads\\itr ba fab.pdf"
-								},
-								{
-									"key": "formFields",
-									"value": "[\"name\", \"age\", \"email\"]",
-									"type": "text",
-									"disabled": true
-								}
-							]
-						},
-						"url": {
-							"raw": "localhost:8080/gen_ai/get-itr-detils/abcdefghi/abcdefghi",
-							"host": [
-								"localhost"
-							],
-							"port": "8080",
-							"path": [
-								"gen_ai",
-								"get-itr-detils",
-								"abcdefghi",
-								"abcdefghi"
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "SUGGEST_LENDER",
-					"request": {
-						"method": "POST",
-						"header": [],
-						"url": {
-							"raw": "localhost:8080/gen_ai/suggest-lenders/abcdefghi/abcdefghi",
-							"host": [
-								"localhost"
-							],
-							"port": "8080",
-							"path": [
-								"gen_ai",
-								"suggest-lenders",
-								"abcdefghi",
-								"abcdefghi"
+								"get-bank-statement-details"
 							]
 						}
 					},
@@ -766,10 +2245,35 @@
 			]
 		},
 		{
-			"name": "PROFILE_&_APPLICATION",
+			"name": "BUSINESS APPLICATIONS",
 			"item": [
 				{
-					"name": "BUSINESS_CREATE_PROFILE",
+					"name": "READ",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/business_application/:profileId",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"business_application",
+								":profileId"
+							],
+							"variable": [
+								{
+									"key": "profileId",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CREATE",
 					"request": {
 						"method": "POST",
 						"header": [],
@@ -777,69 +2281,34 @@
 							"mode": "formdata",
 							"formdata": [
 								{
-									"key": "name",
-									"value": "p2",
-									"type": "text"
-								},
-								{
-									"key": "pan",
-									"value": "ABACGSGVBDG121",
+									"key": "loanType",
+									"value": "small_business",
 									"type": "text"
 								}
 							]
 						},
 						"url": {
-							"raw": "localhost:8080/business/profile/abcdefghi",
+							"raw": "localhost:8080/business_application/:profileId",
 							"host": [
 								"localhost"
 							],
 							"port": "8080",
 							"path": [
-								"business",
-								"profile",
-								"abcdefghi"
+								"business_application",
+								":profileId"
+							],
+							"variable": [
+								{
+									"key": "profileId",
+									"value": "1"
+								}
 							]
 						}
 					},
 					"response": []
 				},
 				{
-					"name": "PERSONAL_CREATE_PROFILE",
-					"request": {
-						"method": "POST",
-						"header": [],
-						"body": {
-							"mode": "formdata",
-							"formdata": [
-								{
-									"key": "name",
-									"value": "p2",
-									"type": "text"
-								},
-								{
-									"key": "pan",
-									"value": "ABACGSGVBDG121",
-									"type": "text"
-								}
-							]
-						},
-						"url": {
-							"raw": "localhost:8080/personal/profile/abcdefghi",
-							"host": [
-								"localhost"
-							],
-							"port": "8080",
-							"path": [
-								"personal",
-								"profile",
-								"abcdefghi"
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "BUSINESS_PATCH_PROFILE",
+					"name": "UPDATE",
 					"request": {
 						"method": "PATCH",
 						"header": [],
@@ -847,203 +2316,52 @@
 							"mode": "formdata",
 							"formdata": [
 								{
-									"key": "name",
-									"value": "Varun Vilvadrinath",
-									"type": "text"
-								},
-								{
-									"key": "pan",
-									"value": "ABACGSGVBDG12",
+									"key": "loanType",
+									"value": "Updated loan type",
 									"type": "text"
 								}
 							]
 						},
 						"url": {
-							"raw": "localhost:8080/business/profile/abcdefghi/912a7a7c79896481",
+							"raw": "localhost:8080/business_application/:id",
 							"host": [
 								"localhost"
 							],
 							"port": "8080",
 							"path": [
-								"business",
-								"profile",
-								"abcdefghi",
-								"912a7a7c79896481"
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "PERSONAL_PATCH_PROFILE",
-					"request": {
-						"method": "PATCH",
-						"header": [],
-						"body": {
-							"mode": "formdata",
-							"formdata": [
+								"business_application",
+								":id"
+							],
+							"variable": [
 								{
-									"key": "name",
-									"value": "Varun Vilvadrinath",
-									"type": "text"
-								},
-								{
-									"key": "pan",
-									"value": "ABACGSGVBDG12",
-									"type": "text"
+									"key": "id",
+									"value": "110b85aea5e9f24a"
 								}
 							]
-						},
-						"url": {
-							"raw": "localhost:8080/personal/profile/abcdefghi/912a7a7c79896481",
-							"host": [
-								"localhost"
-							],
-							"port": "8080",
-							"path": [
-								"personal",
-								"profile",
-								"abcdefghi",
-								"912a7a7c79896481"
-							]
 						}
 					},
 					"response": []
 				},
 				{
-					"name": "BUSINESS_GET_PROFILES",
-					"request": {
-						"method": "GET",
-						"header": [],
-						"url": {
-							"raw": "localhost:8080/business/profile/abcdefghi",
-							"host": [
-								"localhost"
-							],
-							"port": "8080",
-							"path": [
-								"business",
-								"profile",
-								"abcdefghi"
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "PERSONAL_GET_PROFILES",
-					"request": {
-						"method": "GET",
-						"header": [],
-						"url": {
-							"raw": "localhost:8080/personalprofile/abcdefghi",
-							"host": [
-								"localhost"
-							],
-							"port": "8080",
-							"path": [
-								"personalprofile",
-								"abcdefghi"
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "BUSINESS_DEL_PROFILE",
+					"name": "DELETE",
 					"request": {
 						"method": "DELETE",
 						"header": [],
 						"url": {
-							"raw": "localhost:8080/business/profile/abcdefghi/85c4d33b50f37aba",
+							"raw": "localhost:8080/business_application/:id",
 							"host": [
 								"localhost"
 							],
 							"port": "8080",
 							"path": [
-								"business",
-								"profile",
-								"abcdefghi",
-								"85c4d33b50f37aba"
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "PERSONAL_DEL_PROFILE",
-					"request": {
-						"method": "DELETE",
-						"header": [],
-						"url": {
-							"raw": "localhost:8080/personal/profile/abcdefghi/85c4d33b50f37aba",
-							"host": [
-								"localhost"
+								"business_application",
+								":id"
 							],
-							"port": "8080",
-							"path": [
-								"personal",
-								"profile",
-								"abcdefghi",
-								"85c4d33b50f37aba"
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "CREATE_APPLICATIONS",
-					"request": {
-						"method": "POST",
-						"header": [],
-						"url": {
-							"raw": "localhost:8080/application/d0e9357153c567b6",
-							"host": [
-								"localhost"
-							],
-							"port": "8080",
-							"path": [
-								"application",
-								"d0e9357153c567b6"
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "GET_APPLICATIONS",
-					"request": {
-						"method": "GET",
-						"header": [],
-						"url": {
-							"raw": "localhost:8080/application/d0e9357153c567b6",
-							"host": [
-								"localhost"
-							],
-							"port": "8080",
-							"path": [
-								"application",
-								"d0e9357153c567b6"
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "DEL_APPLICATIONS",
-					"request": {
-						"method": "DELETE",
-						"header": [],
-						"url": {
-							"raw": "localhost:8080/application/d0e9357153c567b6/5c9522c6084bc87c",
-							"host": [
-								"localhost"
-							],
-							"port": "8080",
-							"path": [
-								"application",
-								"d0e9357153c567b6",
-								"5c9522c6084bc87c"
+							"variable": [
+								{
+									"key": "id",
+									"value": "40022f69f37688ce"
+								}
 							]
 						}
 					},
@@ -1052,1628 +2370,443 @@
 			]
 		},
 		{
-			"name": "PERSONAL_FORMS",
+			"name": "PERSONAL APPLICATIONS",
 			"item": [
 				{
-					"name": "ITR_FROMS",
-					"item": [
-						{
-							"name": "Manual",
-							"item": [
+					"name": "READ",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/personal_application/:profileId",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"personal_application",
+								":profileId"
+							],
+							"variable": [
 								{
-									"name": "POST_MANUAL_ITR_DETAILS",
-									"request": {
-										"method": "POST",
-										"header": [],
-										"body": {
-											"mode": "formdata",
-											"formdata": [
-												{
-													"key": "firstName",
-													"value": "Varun",
-													"type": "text"
-												},
-												{
-													"key": "middleName",
-													"value": "Vilva",
-													"type": "text"
-												},
-												{
-													"key": "lastName",
-													"value": "NA",
-													"type": "text"
-												},
-												{
-													"key": "dob",
-													"value": "1990-05-20",
-													"type": "text"
-												},
-												{
-													"key": "pan",
-													"value": "ABCDE1234F",
-													"type": "text"
-												},
-												{
-													"key": "mobile",
-													"value": "9876543210",
-													"type": "text"
-												},
-												{
-													"key": "email",
-													"value": "john.doe@example.com",
-													"type": "text"
-												},
-												{
-													"key": "addressLine1",
-													"value": "123 Main St",
-													"type": "text"
-												},
-												{
-													"key": "addressLine2",
-													"value": "Apt 4B",
-													"type": "text"
-												},
-												{
-													"key": "landmark",
-													"value": "Near City Park",
-													"type": "text"
-												},
-												{
-													"key": "country",
-													"value": "India",
-													"type": "text"
-												},
-												{
-													"key": "pinCode",
-													"value": "110001",
-													"type": "text"
-												},
-												{
-													"key": "state",
-													"value": "state",
-													"type": "text"
-												},
-												{
-													"key": "city",
-													"value": "city",
-													"type": "text"
-												},
-												{
-													"key": "village",
-													"value": "village",
-													"type": "text"
-												},
-												{
-													"key": "district",
-													"value": "district",
-													"type": "text"
-												},
-												{
-													"key": "subDistrict",
-													"value": "subdistrict",
-													"type": "text"
-												},
-												{
-													"key": "income_keys",
-													"value": "2020-2021",
-													"type": "text"
-												},
-												{
-													"key": "income_2020-2021",
-													"value": "500000",
-													"type": "text"
-												},
-												{
-													"key": "income_keys",
-													"value": "2021-2022",
-													"type": "text"
-												},
-												{
-													"key": "income_2021-2022",
-													"value": "550000",
-													"type": "text"
-												},
-												{
-													"key": "userId",
-													"value": "mhtwaakyay",
-													"type": "text"
-												}
-											]
-										},
-										"url": {
-											"raw": "localhost:8080/personal/itr/d0e9357153c567b6/cda1180c6e4d793d",
-											"host": [
-												"localhost"
-											],
-											"port": "8080",
-											"path": [
-												"personal",
-												"itr",
-												"d0e9357153c567b6",
-												"cda1180c6e4d793d"
-											]
-										}
-									},
-									"response": []
-								},
-								{
-									"name": "PATCH_MANUAL_ITR_DETAILS",
-									"request": {
-										"method": "PATCH",
-										"header": [],
-										"body": {
-											"mode": "formdata",
-											"formdata": [
-												{
-													"key": "firstName",
-													"value": "varunnn",
-													"type": "text"
-												},
-												{
-													"key": "middleName",
-													"value": "Vilva",
-													"type": "text"
-												},
-												{
-													"key": "lastName",
-													"value": "NA",
-													"type": "text"
-												},
-												{
-													"key": "dob",
-													"value": "1990-05-20",
-													"type": "text"
-												},
-												{
-													"key": "pan",
-													"value": "ABCDE1234F",
-													"type": "text"
-												},
-												{
-													"key": "mobile",
-													"value": "9876543210",
-													"type": "text"
-												},
-												{
-													"key": "email",
-													"value": "john.doe@example.com",
-													"type": "text"
-												},
-												{
-													"key": "addressLine1",
-													"value": "123 Main St",
-													"type": "text"
-												},
-												{
-													"key": "addressLine2",
-													"value": "Apt 4B",
-													"type": "text"
-												},
-												{
-													"key": "landmark",
-													"value": "Near City Park",
-													"type": "text"
-												},
-												{
-													"key": "country",
-													"value": "India",
-													"type": "text"
-												},
-												{
-													"key": "pinCode",
-													"value": "110001",
-													"type": "text"
-												},
-												{
-													"key": "state",
-													"value": "state",
-													"type": "text"
-												},
-												{
-													"key": "city",
-													"value": "city",
-													"type": "text"
-												},
-												{
-													"key": "village",
-													"value": "village",
-													"type": "text"
-												},
-												{
-													"key": "district",
-													"value": "district",
-													"type": "text"
-												},
-												{
-													"key": "subDistrict",
-													"value": "subdistrict",
-													"type": "text"
-												},
-												{
-													"key": "income_keys",
-													"value": "2020-2021",
-													"type": "text"
-												},
-												{
-													"key": "income_2020-2021",
-													"value": "500000",
-													"type": "text"
-												},
-												{
-													"key": "income_keys",
-													"value": "2021-2022",
-													"type": "text"
-												},
-												{
-													"key": "income_2021-2022",
-													"value": "550000",
-													"type": "text"
-												},
-												{
-													"key": "userId",
-													"value": "mhtwaakyay",
-													"type": "text",
-													"disabled": true
-												}
-											]
-										},
-										"url": {
-											"raw": "localhost:8080/personal/itr/abcdefghi/abcdefghi",
-											"host": [
-												"localhost"
-											],
-											"port": "8080",
-											"path": [
-												"personal",
-												"itr",
-												"abcdefghi",
-												"abcdefghi"
-											]
-										}
-									},
-									"response": []
-								},
-								{
-									"name": "GET_MANUAL_ITR_DETAILS",
-									"protocolProfileBehavior": {
-										"disableBodyPruning": true
-									},
-									"request": {
-										"method": "GET",
-										"header": [],
-										"body": {
-											"mode": "raw",
-											"raw": "",
-											"options": {
-												"raw": {
-													"language": "text"
-												}
-											}
-										},
-										"url": {
-											"raw": "localhost:8080/personal/itr/abcdefghi/abcdefghi",
-											"host": [
-												"localhost"
-											],
-											"port": "8080",
-											"path": [
-												"personal",
-												"itr",
-												"abcdefghi",
-												"abcdefghi"
-											]
-										}
-									},
-									"response": []
-								}
-							]
-						},
-						{
-							"name": "PDF_UPLOAD",
-							"item": [
-								{
-									"name": "POST_UPLOAD_ITR_DOCUMENT",
-									"request": {
-										"method": "POST",
-										"header": [],
-										"body": {
-											"mode": "formdata",
-											"formdata": [
-												{
-													"key": "itr_documents",
-													"type": "file",
-													"src": [
-														"C:\\Users\\Varun\\Downloads\\CS461_202151195_VarunVivadrinath_lab2.pdf",
-														"C:\\Users\\Varun\\Downloads\\1_merged.pdf"
-													]
-												},
-												{
-													"key": "file_2022",
-													"value": "",
-													"type": "file"
-												}
-											]
-										},
-										"url": {
-											"raw": "localhost:8080/personal/upload-itr-document/abcdefghi/abcdefghi",
-											"host": [
-												"localhost"
-											],
-											"port": "8080",
-											"path": [
-												"personal",
-												"upload-itr-document",
-												"abcdefghi",
-												"abcdefghi"
-											]
-										}
-									},
-									"response": []
+									"key": "profileId",
+									"value": "1"
 								}
 							]
 						}
-					]
+					},
+					"response": []
 				},
 				{
-					"name": "BANK_DETAILS",
-					"item": [
-						{
-							"name": "BANK_DETAILS",
-							"request": {
-								"method": "POST",
-								"header": [],
-								"body": {
-									"mode": "formdata",
-									"formdata": [
-										{
-											"key": "bank_name",
-											"value": "HDFC",
-											"type": "text"
-										},
-										{
-											"key": "joining_month",
-											"value": "May",
-											"type": "text"
-										},
-										{
-											"key": "joining_year",
-											"value": "2024",
-											"type": "text"
-										},
-										{
-											"key": "bank_name",
-											"value": "ICICI",
-											"type": "text"
-										},
-										{
-											"key": "joining_month",
-											"value": "April",
-											"type": "text"
-										},
-										{
-											"key": "joining_year",
-											"value": "2013",
-											"type": "text"
-										}
-									]
-								},
-								"url": {
-									"raw": "localhost:8080/personal/bank_details/abcdefghi/abcdefghi",
-									"host": [
-										"localhost"
-									],
-									"port": "8080",
-									"path": [
-										"personal",
-										"bank_details",
-										"abcdefghi",
-										"abcdefghi"
-									]
+					"name": "CREATE",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "loanType",
+									"value": "home loan",
+									"type": "text"
 								}
-							},
-							"response": []
+							]
 						},
-						{
-							"name": "BANK_DETAILS",
-							"request": {
-								"method": "PUT",
-								"header": [],
-								"body": {
-									"mode": "formdata",
-									"formdata": [
-										{
-											"key": "bank_name",
-											"value": "HDFC",
-											"type": "text"
-										},
-										{
-											"key": "joining_month",
-											"value": "May",
-											"type": "text"
-										},
-										{
-											"key": "joining_year",
-											"value": "2024",
-											"type": "text"
-										},
-										{
-											"key": "bank_name",
-											"value": "ICICI",
-											"type": "text"
-										},
-										{
-											"key": "joining_month",
-											"value": "April",
-											"type": "text"
-										},
-										{
-											"key": "joining_year",
-											"value": "2012",
-											"type": "text"
-										},
-										{
-											"key": "bank_name",
-											"value": "Bank of Maharashtra",
-											"type": "text"
-										},
-										{
-											"key": "joining_month",
-											"value": "June",
-											"type": "text"
-										},
-										{
-											"key": "joining_year",
-											"value": "2010",
-											"type": "text"
-										}
-									]
-								},
-								"url": {
-									"raw": "localhost:8080/personal/bank_details/abcdefghi/abcdefghi",
-									"host": [
-										"localhost"
-									],
-									"port": "8080",
-									"path": [
-										"personal",
-										"bank_details",
-										"abcdefghi",
-										"abcdefghi"
-									]
+						"url": {
+							"raw": "localhost:8080/personal_application/:profileId",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"personal_application",
+								":profileId"
+							],
+							"variable": [
+								{
+									"key": "profileId",
+									"value": "1"
 								}
-							},
-							"response": []
-						},
-						{
-							"name": "BANK_DETAILS",
-							"protocolProfileBehavior": {
-								"disableBodyPruning": true
-							},
-							"request": {
-								"method": "GET",
-								"header": [],
-								"body": {
-									"mode": "formdata",
-									"formdata": [
-										{
-											"key": "bank_name",
-											"value": "HDFC",
-											"type": "text"
-										},
-										{
-											"key": "joining_month",
-											"value": "May",
-											"type": "text"
-										},
-										{
-											"key": "joining_year",
-											"value": "2024",
-											"type": "text"
-										},
-										{
-											"key": "bank_name",
-											"value": "ICICI",
-											"type": "text"
-										},
-										{
-											"key": "joining_month",
-											"value": "April",
-											"type": "text"
-										},
-										{
-											"key": "joining_year",
-											"value": "2013",
-											"type": "text"
-										}
-									]
-								},
-								"url": {
-									"raw": "localhost:8080/personal/bank_details/abcdefghi/abcdefghi",
-									"host": [
-										"localhost"
-									],
-									"port": "8080",
-									"path": [
-										"personal",
-										"bank_details",
-										"abcdefghi",
-										"abcdefghi"
-									]
-								}
-							},
-							"response": []
-						},
-						{
-							"name": "BANK_DETAILS",
-							"request": {
-								"method": "DELETE",
-								"header": [],
-								"url": {
-									"raw": "localhost:8080/personal/bank_details/abcdefghi/abcdefghi",
-									"host": [
-										"localhost"
-									],
-									"port": "8080",
-									"path": [
-										"personal",
-										"bank_details",
-										"abcdefghi",
-										"abcdefghi"
-									]
-								}
-							},
-							"response": []
+							]
 						}
-					]
+					},
+					"response": []
 				},
 				{
-					"name": "BASIC DETAILS",
-					"item": [
-						{
-							"name": "BASIC_DETAILS",
-							"request": {
-								"method": "POST",
-								"header": [],
-								"body": {
-									"mode": "formdata",
-									"formdata": [
-										{
-											"key": "salutation",
-											"value": "Mr.",
-											"type": "text"
-										},
-										{
-											"key": "firstName",
-											"value": "John",
-											"type": "text"
-										},
-										{
-											"key": "middleName",
-											"value": "",
-											"type": "text"
-										},
-										{
-											"key": "lastName",
-											"value": "Doe",
-											"type": "text"
-										},
-										{
-											"key": "dob",
-											"value": "2003-02-01",
-											"type": "text"
-										},
-										{
-											"key": "pan",
-											"value": "ABCD1234E",
-											"type": "text"
-										},
-										{
-											"key": "gender",
-											"value": "Male",
-											"type": "text"
-										},
-										{
-											"key": "category",
-											"value": "General",
-											"type": "text"
-										},
-										{
-											"key": "mobile",
-											"value": "1234567890",
-											"type": "text"
-										},
-										{
-											"key": "telephone",
-											"value": "0987654321",
-											"type": "text"
-										},
-										{
-											"key": "emailPersonal",
-											"value": "john.doe@example.com",
-											"type": "text"
-										},
-										{
-											"key": "fatherName",
-											"value": "Richard Doe",
-											"type": "text"
-										},
-										{
-											"key": "educationQualification",
-											"value": "Bachelors",
-											"type": "text"
-										},
-										{
-											"key": "netWorth",
-											"value": "100000.00",
-											"type": "text"
-										},
-										{
-											"key": "nationality",
-											"value": "American",
-											"type": "text"
-										},
-										{
-											"key": "dependent",
-											"value": "None",
-											"type": "text"
-										},
-										{
-											"key": "maritalStatus",
-											"value": "Single",
-											"type": "text"
-										}
-									]
-								},
-								"url": {
-									"raw": "localhost:8080/personal/basic_details/abcdegfhi/abcdefghi",
-									"host": [
-										"localhost"
-									],
-									"port": "8080",
-									"path": [
-										"personal",
-										"basic_details",
-										"abcdegfhi",
-										"abcdefghi"
-									]
+					"name": "UPDATE",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "loanType",
+									"value": "car loan",
+									"type": "text"
 								}
-							},
-							"response": []
+							]
 						},
-						{
-							"name": "BASIC_DETAILS",
-							"request": {
-								"method": "PUT",
-								"header": [],
-								"body": {
-									"mode": "formdata",
-									"formdata": [
-										{
-											"key": "salutation",
-											"value": "Mr.",
-											"type": "text"
-										},
-										{
-											"key": "firstName",
-											"value": "John",
-											"type": "text"
-										},
-										{
-											"key": "middleName",
-											"value": "",
-											"type": "text"
-										},
-										{
-											"key": "lastName",
-											"value": "Doe",
-											"type": "text"
-										},
-										{
-											"key": "dob",
-											"value": "2003-02-01",
-											"type": "text"
-										},
-										{
-											"key": "pan",
-											"value": "ABCD1234E",
-											"type": "text"
-										},
-										{
-											"key": "gender",
-											"value": "Male",
-											"type": "text"
-										},
-										{
-											"key": "category",
-											"value": "General",
-											"type": "text"
-										},
-										{
-											"key": "mobile",
-											"value": "1234567890",
-											"type": "text"
-										},
-										{
-											"key": "telephone",
-											"value": "0987654321",
-											"type": "text"
-										},
-										{
-											"key": "emailPersonal",
-											"value": "john.doe@example.com",
-											"type": "text"
-										},
-										{
-											"key": "fatherName",
-											"value": "Richard Doe",
-											"type": "text"
-										},
-										{
-											"key": "educationQualification",
-											"value": "Bachelors",
-											"type": "text"
-										},
-										{
-											"key": "netWorth",
-											"value": "100000.00",
-											"type": "text"
-										},
-										{
-											"key": "nationality",
-											"value": "American",
-											"type": "text"
-										},
-										{
-											"key": "dependent",
-											"value": "None",
-											"type": "text"
-										},
-										{
-											"key": "maritalStatus",
-											"value": "Single",
-											"type": "text"
-										}
-									]
-								},
-								"url": {
-									"raw": "localhost:8080/personal/basic_details/abcdegfhi/abcdefghi",
-									"host": [
-										"localhost"
-									],
-									"port": "8080",
-									"path": [
-										"personal",
-										"basic_details",
-										"abcdegfhi",
-										"abcdefghi"
-									]
+						"url": {
+							"raw": "localhost:8080/personal_application/:id",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"personal_application",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "cd24931febdba9fc"
 								}
-							},
-							"response": []
-						},
-						{
-							"name": "BASIC_DETAILS",
-							"request": {
-								"method": "GET",
-								"header": [],
-								"url": {
-									"raw": "localhost:8080/personal/basic_details/abcdegfhi/abcdefghi",
-									"host": [
-										"localhost"
-									],
-									"port": "8080",
-									"path": [
-										"personal",
-										"basic_details",
-										"abcdegfhi",
-										"abcdefghi"
-									]
-								}
-							},
-							"response": []
-						},
-						{
-							"name": "BASIC_DETAILS",
-							"request": {
-								"method": "DELETE",
-								"header": [],
-								"url": {
-									"raw": "localhost:8080/personal/basic_details/abcdegfhi/abcdefghi",
-									"host": [
-										"localhost"
-									],
-									"port": "8080",
-									"path": [
-										"personal",
-										"basic_details",
-										"abcdegfhi",
-										"abcdefghi"
-									]
-								}
-							},
-							"response": []
+							]
 						}
-					]
+					},
+					"response": []
 				},
 				{
-					"name": "EMPLOYMENT DETAILS",
-					"item": [
-						{
-							"name": "EMPLOYMENT_DETAILS",
-							"request": {
-								"method": "POST",
-								"header": [],
-								"body": {
-									"mode": "formdata",
-									"formdata": [
-										{
-											"key": "employmentType",
-											"value": "service",
-											"type": "text"
-										},
-										{
-											"key": "employerStatus",
-											"value": "None",
-											"type": "text"
-										},
-										{
-											"key": "designation",
-											"value": "manager",
-											"type": "text"
-										},
-										{
-											"key": "modeOfSalary",
-											"value": "direct",
-											"type": "text"
-										},
-										{
-											"key": "grossMonthlyIncome",
-											"value": "80000",
-											"type": "text"
-										},
-										{
-											"key": "netMonthlyIncome",
-											"value": "80000",
-											"type": "text"
-										}
-									]
-								},
-								"url": {
-									"raw": "localhost:8080/personal/employment_details/abcdefghi/abcdefghi",
-									"host": [
-										"localhost"
-									],
-									"port": "8080",
-									"path": [
-										"personal",
-										"employment_details",
-										"abcdefghi",
-										"abcdefghi"
-									]
+					"name": "DELETE",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/personal_application/:id",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"personal_application",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "1974510a672c4a9f"
 								}
-							},
-							"response": []
-						},
-						{
-							"name": "EMPLOYMENT_DETAILS",
-							"request": {
-								"method": "PUT",
-								"header": [],
-								"body": {
-									"mode": "formdata",
-									"formdata": [
-										{
-											"key": "employmentType",
-											"value": "service",
-											"type": "text"
-										},
-										{
-											"key": "employerStatus",
-											"value": "None",
-											"type": "text"
-										},
-										{
-											"key": "designation",
-											"value": "manager",
-											"type": "text"
-										},
-										{
-											"key": "modeOfSalary",
-											"value": "direct",
-											"type": "text"
-										},
-										{
-											"key": "grossMonthlyIncome",
-											"value": "80000",
-											"type": "text"
-										},
-										{
-											"key": "netMonthlyIncome",
-											"value": "80000",
-											"type": "text"
-										}
-									]
-								},
-								"url": {
-									"raw": "localhost:8080/personal/employment_details/abcdefghi/abcdefghi",
-									"host": [
-										"localhost"
-									],
-									"port": "8080",
-									"path": [
-										"personal",
-										"employment_details",
-										"abcdefghi",
-										"abcdefghi"
-									]
-								}
-							},
-							"response": []
-						},
-						{
-							"name": "EMPLOYMENT_DETAILS",
-							"request": {
-								"method": "DELETE",
-								"header": [],
-								"url": {
-									"raw": "localhost:8080/personal/employment_details/abcdefghi/abcdefghi",
-									"host": [
-										"localhost"
-									],
-									"port": "8080",
-									"path": [
-										"personal",
-										"employment_details",
-										"abcdefghi",
-										"abcdefghi"
-									]
-								}
-							},
-							"response": []
-						},
-						{
-							"name": "EMPLOYMENT_DETAILS",
-							"request": {
-								"method": "GET",
-								"header": [],
-								"url": {
-									"raw": "localhost:8080/personal/employment_details/abcdefghi/abcdefghi",
-									"host": [
-										"localhost"
-									],
-									"port": "8080",
-									"path": [
-										"personal",
-										"employment_details",
-										"abcdefghi",
-										"abcdefghi"
-									]
-								}
-							},
-							"response": []
+							]
 						}
-					]
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "PERSONAL PROFILE",
+			"item": [
+				{
+					"name": "READ",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/personal/profile/:userId",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"personal",
+								"profile",
+								":userId"
+							],
+							"variable": [
+								{
+									"key": "userId",
+									"value": "1234"
+								}
+							]
+						}
+					},
+					"response": []
 				},
 				{
-					"name": "CONTACT_DETAILS",
-					"item": [
-						{
-							"name": "CONTACT_DETAILS",
-							"request": {
-								"method": "POST",
-								"header": [],
-								"body": {
-									"mode": "formdata",
-									"formdata": [
-										{
-											"key": "premisesName",
-											"value": "Greenwood Apartments",
-											"type": "text"
-										},
-										{
-											"key": "streetName",
-											"value": "Baker Street",
-											"type": "text"
-										},
-										{
-											"key": "landmark",
-											"value": "Near Central Park",
-											"type": "text"
-										},
-										{
-											"key": "country",
-											"value": "USA",
-											"type": "text"
-										},
-										{
-											"key": "state",
-											"value": "California",
-											"type": "text"
-										},
-										{
-											"key": "city",
-											"value": "Los Angeles",
-											"type": "text"
-										},
-										{
-											"key": "pinCode",
-											"value": "90001",
-											"type": "text"
-										},
-										{
-											"key": "village",
-											"value": "N/A",
-											"type": "text"
-										},
-										{
-											"key": "district",
-											"value": "Los Angeles County",
-											"type": "text"
-										},
-										{
-											"key": "subDistrict",
-											"value": "West Los Angeles",
-											"type": "text"
-										},
-										{
-											"key": "typeOfResidence",
-											"value": "Apartment",
-											"type": "text"
-										},
-										{
-											"key": "residenceSince",
-											"value": "2020-01-15",
-											"type": "text"
-										}
-									]
+					"name": "CREATE",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "John Doe",
+									"type": "text"
 								},
-								"url": {
-									"raw": "localhost:8080/personal/contact_details/abcdefghi/abcdefghi",
-									"host": [
-										"localhost"
-									],
-									"port": "8080",
-									"path": [
-										"personal",
-										"contact_details",
-										"abcdefghi",
-										"abcdefghi"
-									]
+								{
+									"key": "pan",
+									"value": "ABCDE1234F",
+									"type": "text"
 								}
-							},
-							"response": []
+							]
 						},
-						{
-							"name": "CONTACT_DETAILS",
-							"request": {
-								"method": "PUT",
-								"header": [],
-								"body": {
-									"mode": "formdata",
-									"formdata": [
-										{
-											"key": "premisesName",
-											"value": "Greenwood Apartments CHS",
-											"type": "text"
-										},
-										{
-											"key": "streetName",
-											"value": "Baker Street",
-											"type": "text"
-										},
-										{
-											"key": "landmark",
-											"value": "Near Central Park",
-											"type": "text"
-										},
-										{
-											"key": "country",
-											"value": "USA",
-											"type": "text"
-										},
-										{
-											"key": "state",
-											"value": "California",
-											"type": "text"
-										},
-										{
-											"key": "city",
-											"value": "Los Angeles",
-											"type": "text"
-										},
-										{
-											"key": "pinCode",
-											"value": "90001",
-											"type": "text"
-										},
-										{
-											"key": "village",
-											"value": "N/A",
-											"type": "text"
-										},
-										{
-											"key": "district",
-											"value": "Los Angeles County",
-											"type": "text"
-										},
-										{
-											"key": "subDistrict",
-											"value": "West Los Angeles",
-											"type": "text"
-										},
-										{
-											"key": "typeOfResidence",
-											"value": "Apartment",
-											"type": "text"
-										},
-										{
-											"key": "residenceSince",
-											"value": "2020-01-15",
-											"type": "text"
-										}
-									]
-								},
-								"url": {
-									"raw": "localhost:8080/personal/contact_details/abcdefghi/abcdefghi",
-									"host": [
-										"localhost"
-									],
-									"port": "8080",
-									"path": [
-										"personal",
-										"contact_details",
-										"abcdefghi",
-										"abcdefghi"
-									]
+						"url": {
+							"raw": "localhost:8080/personal/profile/:userId",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"personal",
+								"profile",
+								":userId"
+							],
+							"variable": [
+								{
+									"key": "userId",
+									"value": "1234"
 								}
-							},
-							"response": []
-						},
-						{
-							"name": "CONTACT_DETAILS",
-							"request": {
-								"method": "DELETE",
-								"header": [],
-								"url": {
-									"raw": "localhost:8080/personal/contact_details/abcdefghi/abcdefghi",
-									"host": [
-										"localhost"
-									],
-									"port": "8080",
-									"path": [
-										"personal",
-										"contact_details",
-										"abcdefghi",
-										"abcdefghi"
-									]
-								}
-							},
-							"response": []
-						},
-						{
-							"name": "CONTACT_DETAILS",
-							"request": {
-								"method": "GET",
-								"header": [],
-								"url": {
-									"raw": "localhost:8080/personal/contact_details/abcdefghi/abcdefghi",
-									"host": [
-										"localhost"
-									],
-									"port": "8080",
-									"path": [
-										"personal",
-										"contact_details",
-										"abcdefghi",
-										"abcdefghi"
-									]
-								}
-							},
-							"response": []
+							]
 						}
-					]
+					},
+					"response": []
 				},
 				{
-					"name": "CREDIT_INFO",
-					"item": [
-						{
-							"name": "CREDIT_INFO",
-							"request": {
-								"method": "POST",
-								"header": [],
-								"body": {
-									"mode": "formdata",
-									"formdata": [
-										{
-											"key": "loanType",
-											"value": "Small",
-											"type": "text"
-										},
-										{
-											"key": "lender",
-											"value": "ICICI",
-											"type": "text"
-										},
-										{
-											"key": "sanctionedAmount",
-											"value": "3000",
-											"type": "text"
-										},
-										{
-											"key": "outstandingAmount",
-											"value": "2000",
-											"type": "text"
-										},
-										{
-											"key": "emiAmount",
-											"value": "2",
-											"type": "text"
-										},
-										{
-											"key": "loanType",
-											"value": "Small",
-											"type": "text"
-										},
-										{
-											"key": "lender",
-											"value": "IDBI",
-											"type": "text"
-										},
-										{
-											"key": "sanctionedAmount",
-											"value": "40000",
-											"type": "text"
-										},
-										{
-											"key": "outstandingAmount",
-											"value": "2000",
-											"type": "text"
-										},
-										{
-											"key": "emiAmount",
-											"value": "1000",
-											"type": "text"
-										}
-									]
-								},
-								"url": {
-									"raw": "localhost:8080/personal/credit_info/abcdefghi/abcdefghi",
-									"host": [
-										"localhost"
-									],
-									"port": "8080",
-									"path": [
-										"personal",
-										"credit_info",
-										"abcdefghi",
-										"abcdefghi"
-									]
+					"name": "UPDATE",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "john",
+									"type": "text"
 								}
-							},
-							"response": []
+							]
 						},
-						{
-							"name": "CREDIT_INFO",
-							"request": {
-								"method": "PUT",
-								"header": [],
-								"body": {
-									"mode": "formdata",
-									"formdata": [
-										{
-											"key": "loanType",
-											"value": "small",
-											"type": "text"
-										},
-										{
-											"key": "lender",
-											"value": "ICICI",
-											"type": "text"
-										},
-										{
-											"key": "sanctionedAmount",
-											"value": "3000",
-											"type": "text"
-										},
-										{
-											"key": "outstandingAmount",
-											"value": "2000",
-											"type": "text"
-										},
-										{
-											"key": "emiAmount",
-											"value": "2",
-											"type": "text"
-										},
-										{
-											"key": "loanType",
-											"value": "Small",
-											"type": "text"
-										},
-										{
-											"key": "lender",
-											"value": "IDBI",
-											"type": "text"
-										},
-										{
-											"key": "sanctionedAmount",
-											"value": "40000",
-											"type": "text"
-										},
-										{
-											"key": "outstandingAmount",
-											"value": "2000",
-											"type": "text"
-										},
-										{
-											"key": "emiAmount",
-											"value": "1000",
-											"type": "text"
-										}
-									]
+						"url": {
+							"raw": "localhost:8080/personal/profile/:userId/:profileId",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"personal",
+								"profile",
+								":userId",
+								":profileId"
+							],
+							"variable": [
+								{
+									"key": "userId",
+									"value": "1234"
 								},
-								"url": {
-									"raw": "localhost:8080/personal/credit_info/abcdefghi/abcdefghi",
-									"host": [
-										"localhost"
-									],
-									"port": "8080",
-									"path": [
-										"personal",
-										"credit_info",
-										"abcdefghi",
-										"abcdefghi"
-									]
+								{
+									"key": "profileId",
+									"value": "c994401f16cdb894"
 								}
-							},
-							"response": []
-						},
-						{
-							"name": "CREDIT_INFO",
-							"request": {
-								"method": "DELETE",
-								"header": [],
-								"body": {
-									"mode": "formdata",
-									"formdata": []
-								},
-								"url": {
-									"raw": "localhost:8080/personal/credit_info/abcdefghi/abcdefghi",
-									"host": [
-										"localhost"
-									],
-									"port": "8080",
-									"path": [
-										"personal",
-										"credit_info",
-										"abcdefghi",
-										"abcdefghi"
-									]
-								}
-							},
-							"response": []
-						},
-						{
-							"name": "CREDIT_INFO",
-							"request": {
-								"method": "GET",
-								"header": [],
-								"url": {
-									"raw": "localhost:8080/personal/credit_info/abcdefghi/abcdefghi",
-									"host": [
-										"localhost"
-									],
-									"port": "8080",
-									"path": [
-										"personal",
-										"credit_info",
-										"abcdefghi",
-										"abcdefghi"
-									]
-								}
-							},
-							"response": []
+							]
 						}
-					]
+					},
+					"response": []
 				},
 				{
-					"name": "LOAN_FORMS",
-					"item": [
-						{
-							"name": "LOAN_FORMS",
-							"request": {
-								"method": "POST",
-								"header": [],
-								"body": {
-									"mode": "formdata",
-									"formdata": [
-										{
-											"key": "loanPurpose",
-											"value": "hello",
-											"type": "text"
-										},
-										{
-											"key": "loanAmountRequired",
-											"value": "80000",
-											"type": "text"
-										},
-										{
-											"key": "tenure",
-											"value": "3",
-											"type": "text"
-										},
-										{
-											"key": "retirementAge",
-											"value": "2",
-											"type": "text"
-										},
-										{
-											"key": "emiBySalaryAccount",
-											"value": "10000",
-											"type": "text"
-										},
-										{
-											"key": "payOutstandingByTerminalPayments",
-											"value": "10000",
-											"type": "text"
-										},
-										{
-											"key": "paySalaryInSalaryAccount",
-											"value": "10000",
-											"type": "text"
-										},
-										{
-											"key": "issueLetterToYourEmployerToPayOutstandingLoan",
-											"value": "10000",
-											"type": "text"
-										},
-										{
-											"key": "issueLetterToYourEmployerToNotChangeSalaryAccount",
-											"value": "10000",
-											"type": "text"
-										},
-										{
-											"key": "repaymentMethod",
-											"value": "credit",
-											"type": "text"
-										}
-									]
+					"name": "DELETE",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/personal/profile/:userId/:profileId",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"personal",
+								"profile",
+								":userId",
+								":profileId"
+							],
+							"variable": [
+								{
+									"key": "userId",
+									"value": "1234"
 								},
-								"url": {
-									"raw": "localhost:8080/personal/loan_form/abcdefghi/abcdefghi",
-									"host": [
-										"localhost"
-									],
-									"port": "8080",
-									"path": [
-										"personal",
-										"loan_form",
-										"abcdefghi",
-										"abcdefghi"
-									]
+								{
+									"key": "profileId",
+									"value": "1ad5d68d88fc9d30"
 								}
-							},
-							"response": []
-						},
-						{
-							"name": "LOAN_FORMS",
-							"request": {
-								"method": "PUT",
-								"header": [],
-								"body": {
-									"mode": "formdata",
-									"formdata": [
-										{
-											"key": "loanPurpose",
-											"value": "helloii",
-											"type": "text"
-										},
-										{
-											"key": "loanAmountRequired",
-											"value": "80000",
-											"type": "text"
-										},
-										{
-											"key": "tenure",
-											"value": "3",
-											"type": "text"
-										},
-										{
-											"key": "retirementAge",
-											"value": "2",
-											"type": "text"
-										},
-										{
-											"key": "emiBySalaryAccount",
-											"value": "10000",
-											"type": "text"
-										},
-										{
-											"key": "payOutstandingByTerminalPayments",
-											"value": "10000",
-											"type": "text"
-										},
-										{
-											"key": "paySalaryInSalaryAccount",
-											"value": "10000",
-											"type": "text"
-										},
-										{
-											"key": "issueLetterToYourEmployerToPayOutstandingLoan",
-											"value": "10000",
-											"type": "text"
-										},
-										{
-											"key": "issueLetterToYourEmployerToNotChangeSalaryAccount",
-											"value": "10000",
-											"type": "text"
-										},
-										{
-											"key": "repaymentMethod",
-											"value": "credit",
-											"type": "text"
-										}
-									]
-								},
-								"url": {
-									"raw": "localhost:8080/personal/loan_form/abcdefghi/abcdefghi",
-									"host": [
-										"localhost"
-									],
-									"port": "8080",
-									"path": [
-										"personal",
-										"loan_form",
-										"abcdefghi",
-										"abcdefghi"
-									]
-								}
-							},
-							"response": []
-						},
-						{
-							"name": "LOAN_FORMS",
-							"request": {
-								"method": "GET",
-								"header": [],
-								"url": {
-									"raw": "localhost:8080/personal/loan_form/abcdefghi/abcdefghi",
-									"host": [
-										"localhost"
-									],
-									"port": "8080",
-									"path": [
-										"personal",
-										"loan_form",
-										"abcdefghi",
-										"abcdefghi"
-									]
-								}
-							},
-							"response": []
-						},
-						{
-							"name": "LOAN_FORMS",
-							"request": {
-								"method": "DELETE",
-								"header": [],
-								"url": {
-									"raw": "localhost:8080/personal/loan_form/abcdefghi/abcdefghi",
-									"host": [
-										"localhost"
-									],
-									"port": "8080",
-									"path": [
-										"personal",
-										"loan_form",
-										"abcdefghi",
-										"abcdefghi"
-									]
-								}
-							},
-							"response": []
+							]
 						}
-					]
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "BUSINESS PROFILE",
+			"item": [
+				{
+					"name": "READ",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/business/profile/:userId",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"business",
+								"profile",
+								":userId"
+							],
+							"variable": [
+								{
+									"key": "userId",
+									"value": "123"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CREATE",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "Shubham Enterprises",
+									"type": "text"
+								},
+								{
+									"key": "pan",
+									"value": "ABCDE1234F",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:8080/business/profile/:userId",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"business",
+								"profile",
+								":userId"
+							],
+							"variable": [
+								{
+									"key": "userId",
+									"value": "123"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UPDATE",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "Shubham Finance",
+									"type": "text"
+								},
+								{
+									"key": "pan",
+									"value": "ABCDE1234F45",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:8080/business/profile/:userId/:profileId",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"business",
+								"profile",
+								":userId",
+								":profileId"
+							],
+							"variable": [
+								{
+									"key": "userId",
+									"value": "123"
+								},
+								{
+									"key": "profileId",
+									"value": "398568994b55e6b0"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/business/profile/:userId/:profileId",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"business",
+								"profile",
+								":userId",
+								":profileId"
+							],
+							"variable": [
+								{
+									"key": "userId",
+									"value": "123"
+								},
+								{
+									"key": "profileId",
+									"value": "3b6fa323079a0ea7"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Government_schemes",
+			"item": [
+				{
+					"name": "GET",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/govt_schemes",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"govt_schemes"
+							]
+						}
+					},
+					"response": []
 				}
 			]
 		}
