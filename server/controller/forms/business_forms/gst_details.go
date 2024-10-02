@@ -79,7 +79,7 @@ func CreateGSTDetails(c *gin.Context) {
 		"applicationId": applicationId,
 		"formId":        formId,
 	})
-	err= utils.UpdateFirestoreDocument(ctx, "applications", applicationId, "business_gst_form_id",formId)
+	err = utils.UpdateFirestoreDocument(ctx, "applications", applicationId, "business_gst_form_id", formId)
 	if err != nil {
 		c.JSON(http.StatusInternalServerError, gin.H{"error": "Failed to update application with formId", "details": err.Error()})
 		return
@@ -91,7 +91,7 @@ func CreateGSTDetails(c *gin.Context) {
 	}
 
 	// Return success response
-	c.JSON(http.StatusCreated, gin.H{"message": "GST details created successfully"})
+	c.JSON(http.StatusCreated, gin.H{"gst_details": gstDetail, "message": "GST details created successfully"})
 }
 
 // GetGSTDetails retrieves the GST details for a specific business from Firestore.
@@ -169,7 +169,7 @@ func UpdateGSTDetails(c *gin.Context) {
 		return
 	}
 
-	c.JSON(http.StatusOK, gin.H{"message": "GST details updated successfully"})
+	c.JSON(http.StatusOK, gin.H{"gst_details": updatedGSTDetail, "message": "GST details updated successfully"})
 }
 
 // DeleteGSTDetails deletes the GST details for a specific business.

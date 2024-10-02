@@ -11,8 +11,6 @@ import (
 	"github.com/gin-gonic/gin"
 )
 
-var client *firestore.Client
-
 func init() {
 	client = utils.InitFirestore() // Initialize Firestore client
 }
