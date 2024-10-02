@@ -1,6 +1,7 @@
 import 'package:aarthik_setu/bloc/auth/auth_bloc.dart';
 import 'package:aarthik_setu/constants/colors.dart';
 import 'package:aarthik_setu/repository/business_profile.dart';
+import 'package:aarthik_setu/repository/govt_schemes.dart';
 import 'package:aarthik_setu/repository/personal_profile.dart';
 import 'package:aarthik_setu/routes/router.dart';
 import 'package:aarthik_setu/services/auth/google.dart';
@@ -37,6 +38,7 @@ class AarthikSetu extends StatelessWidget {
         RepositoryProvider(create: (context) => PhoneAuth()),
         RepositoryProvider(create: (context) => PersonalProfileRepository()),
         RepositoryProvider(create: (context) => BusinessProfileRepository()),
+        RepositoryProvider(create: (context) => GovernmentSchemesRepository()),
       ],
       child: MultiBlocProvider(
         providers: [
@@ -48,10 +50,11 @@ class AarthikSetu extends StatelessWidget {
           BlocProvider(create: (context) => PhoneFormCubit()),
           BlocProvider(create: (context) => L10nBloc()),
           BlocProvider(
-              create: (context) => HomeBloc(
-                    personalProfileRepository: RepositoryProvider.of<PersonalProfileRepository>(context),
-                    businessProfileRepository: RepositoryProvider.of<BusinessProfileRepository>(context),
-                  ))
+            create: (context) => HomeBloc(
+              personalProfileRepository: RepositoryProvider.of<PersonalProfileRepository>(context),
+              businessProfileRepository: RepositoryProvider.of<BusinessProfileRepository>(context),
+            ),
+          )
         ],
         child: MaterialApp.router(
           title: AppConstants.appName,
