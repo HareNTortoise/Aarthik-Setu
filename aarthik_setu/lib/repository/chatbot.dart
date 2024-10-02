@@ -13,7 +13,7 @@ class ChatBotRepository {
 
   Future<String> genAiResponse(String query) async {
     try {
-      final response = await _client.post('/chat', data: {'message': query});
+      final response = await _client.post('/chat', data: FormData.fromMap({'message': query}));
       return response.data['response'];
     } catch (e) {
       _logger.e('Error getGenAiResponse $e');
