@@ -2175,13 +2175,13 @@
 							"mode": "formdata",
 							"formdata": [
 								{
-									"key": "audioFile ",
+									"key": "audioFile",
 									"type": "file",
-									"src": "postman-cloud:///1ef7db9c-5d97-47c0-a09f-642ce4f96f6c"
+									"src": "postman-cloud:///1ef80c53-6d0c-4920-9191-c8fe41739302"
 								},
 								{
 									"key": "formFields",
-									"value": "{\n  \"name\": \"Shubham\",\n  \"age\": 20,\n  \"email\": \"john@example.com\"\n}\n",
+									"value": "[\"name\", \"age\", \"email\"]",
 									"type": "text"
 								}
 							]
@@ -2857,13 +2857,14 @@
 						"method": "POST",
 						"header": [],
 						"body": {
-							"mode": "raw",
-							"raw": "{\r\n    \"message\": \"Can you help me with budgeting tips?\"\r\n}\r\n",
-							"options": {
-								"raw": {
-									"language": "json"
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "message",
+									"value": "Can you help me with MSME Schemes ? without markdown",
+									"type": "text"
 								}
-							}
+							]
 						},
 						"url": {
 							"raw": "localhost:8080/chat",
