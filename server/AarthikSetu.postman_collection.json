@@ -1,7 +1,7 @@
 {
 	"info": {
 		"_postman_id": "0fb9fd53-8476-462d-95ef-2ca18ac6e03b",
-		"name": "AarthikSetu Copy",
+		"name": "AarthikSetu",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
 		"_exporter_id": "22368846",
 		"_collection_link": "https://shubhams-team-1428.postman.co/workspace/Aarthik-Setu~11961d72-f688-46ee-8581-9263c046918e/collection/22368846-0fb9fd53-8476-462d-95ef-2ca18ac6e03b?action=share&source=collection_link&creator=22368846"
@@ -1627,15 +1627,26 @@
 									]
 								},
 								"url": {
-									"raw": "localhost:8080/personal/bank_details/mhtwaakyay",
+									"raw": "localhost:8080/business/bank_details/:profileId/:applicationId",
 									"host": [
 										"localhost"
 									],
 									"port": "8080",
 									"path": [
-										"personal",
+										"business",
 										"bank_details",
-										"mhtwaakyay"
+										":profileId",
+										":applicationId"
+									],
+									"variable": [
+										{
+											"key": "profileId",
+											"value": "6d82be701c036191"
+										},
+										{
+											"key": "applicationId",
+											"value": "99e725ffb5a35bf2"
+										}
 									]
 								}
 							},
@@ -2186,6 +2197,14 @@
 								"audio-fill"
 							]
 						}
+					},
+					"response": []
+				},
+				{
+					"name": "Schemes",
+					"request": {
+						"method": "POST",
+						"header": []
 					},
 					"response": []
 				}
