@@ -23,8 +23,8 @@ class HomeBloc extends Bloc<HomeEvent, HomeState> {
         final List<PersonalProfile> personalProfiles = await personalProfileRepository.getProfile(event.userId);
         final List<BusinessProfile> businessProfiles = await businessProfileRepository.getProfile(event.userId);
 
-        _logger.i('Fetched business profiles: $businessProfiles');
-        _logger.i('Fetched personal profiles: $personalProfiles');
+        // _logger.i('Fetched business profiles: $businessProfiles');
+        // _logger.i('Fetched personal profiles: $personalProfiles');
 
         emit(HomeInitialized(
           personalProfiles: personalProfiles,
@@ -36,8 +36,6 @@ class HomeBloc extends Bloc<HomeEvent, HomeState> {
         emit(FetchingProfileFailed(e.toString()));
       }
     });
-
-
 
     on<AddPersonalProfile>((event, emit) async {
       final Map<String, dynamic> response = await personalProfileRepository.createProfile(event.personalProfile);
@@ -74,13 +72,15 @@ class HomeBloc extends Bloc<HomeEvent, HomeState> {
     });
 
     on<DeletePersonalProfile>((event, emit) async {
-      final Map<String, dynamic> response = await personalProfileRepository.deleteProfile(event.personalProfileId);
+      final Map<String, dynamic> response =
+          await personalProfileRepository.deleteProfile(event.userId, event.personalProfileId);
       _logger.i('response: $response');
       add(FetchProfiles((state as HomeInitialized).currentPersonalProfile.userId));
     });
 
     on<DeleteBusinessProfile>((event, emit) async {
-      final Map<String, dynamic> response = await businessProfileRepository.deleteProfile(event.businessProfileId);
+      final Map<String, dynamic> response =
+          await businessProfileRepository.deleteProfile(event.userId, event.businessProfileId);
       _logger.i('response: $response');
       add(FetchProfiles((state as HomeInitialized).currentBusinessProfile.userId));
     });

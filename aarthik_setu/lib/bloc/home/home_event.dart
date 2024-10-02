@@ -34,13 +34,15 @@ class AddBusinessProfile extends HomeEvent {
 }
 
 class DeletePersonalProfile extends HomeEvent {
+  final String userId;
   final String personalProfileId;
 
-  DeletePersonalProfile(this.personalProfileId);
+  DeletePersonalProfile({required this.personalProfileId, required this.userId});
 }
 
 class DeleteBusinessProfile extends HomeEvent {
+  final String userId;
   final String businessProfileId;
 
-  DeleteBusinessProfile(this.businessProfileId);
+  DeleteBusinessProfile({required this.businessProfileId, required this.userId});
 }
