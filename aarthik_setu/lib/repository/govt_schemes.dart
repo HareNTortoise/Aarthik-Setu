@@ -17,7 +17,6 @@ class GovernmentScheme {
     required this.howToApply,
   });
 
-  // FACTORY JSON METHODS, JSON ATTRIBUTES IN CAMEL CASE
 
   factory GovernmentScheme.fromJson(Map<String, dynamic> json) {
     return GovernmentScheme(
