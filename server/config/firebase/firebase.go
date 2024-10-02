@@ -47,8 +47,6 @@ func InitFirestore() *firestore.Client {
 	client, err := firestore.NewClient(ctx, os.Getenv("FIREBASE_PROJECT_ID"), creds)
 	if err != nil {
 		log.Fatalf("Failed to initialize Firestore: %v", err)
-	} else {
-		log.Println("Firestore initialized")
 	}
 	return client
 }
@@ -69,8 +67,6 @@ func InitStorage() *storage.Client {
 	client, err := storage.NewClient(ctx, creds)
 	if err != nil {
 		log.Fatalf("Failed to initialize Cloud Storage: %v", err)
-	} else {
-		log.Println("Cloud Storage initialized")
 	}
 	return client
 }
