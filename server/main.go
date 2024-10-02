@@ -2,6 +2,7 @@ package main
 
 import (
 	"log"
+	chat "server/routes/chatbot"
 	business_forms "server/routes/forms/business_forms"
 	gen_ai "server/routes/forms/gen_ai"
 	personal_forms "server/routes/forms/personal_forms"
@@ -72,8 +73,13 @@ func main() {
   
   //govt schemes routes
 	govt_schemes.RegisterGovtSchemesRoutes(router)
+<<<<<<< Updated upstream
 	schemes.RegisterPublicSchemesInfoRoutes(router)
   
+=======
+
+	chat.SetupRoutes(router)
+>>>>>>> Stashed changes
 	// Start the HTTP server
 	log.Println("Starting server on :8080")
 	if err := router.Run(":8080"); err != nil {
