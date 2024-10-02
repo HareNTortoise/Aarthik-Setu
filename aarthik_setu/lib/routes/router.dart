@@ -16,6 +16,7 @@ import '../pages/desktop/forms/business_loans/review_form.dart';
 import '../pages/desktop/forms/business_loans/stakeholders.dart';
 import '../pages/desktop/forms/personal_loans/contact_details.dart';
 import '../pages/desktop/forms/personal_loans/employment_details.dart';
+import '../pages/desktop/forms/personal_loans/review_form.dart';
 import '../pages/desktop/loading.dart';
 
 final GoRouter router = GoRouter(
@@ -70,6 +71,10 @@ final GoRouter router = GoRouter(
         GoRoute(
           path: 'loan-form',
           pageBuilder: (context, state) => const MaterialPage(child: LoanFormPersonal()),
+        ),
+        GoRoute(
+          path: 'review-form',
+          pageBuilder: (context, state) => const MaterialPage(child: ReviewFormPersonal()),
         ),
       ],
     ),
