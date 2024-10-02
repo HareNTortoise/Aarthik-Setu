@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-import '../../../../constants/dummy_data.dart';
+import '../../../../constants/dummy_data_business.dart';
 
 
 class ReviewFormBusiness extends StatelessWidget {
@@ -216,8 +216,18 @@ class ReviewFormBusiness extends StatelessWidget {
                 onPressed: () {
                   // Handle form submission or other actions
                 },
+                style: ElevatedButton.styleFrom(
+                  padding: const EdgeInsets.symmetric(horizontal: 32.0, vertical: 16.0),
+                  textStyle: GoogleFonts.poppins(
+                    fontSize: 18,
+                    fontWeight: FontWeight.bold,
+                  ),
+                  backgroundColor: Colors.lightGreen,
+                ),
                 child: const Text("Submit Review"),
+
               ),
+              const SizedBox(height: 16.0),
             ],
           ),
         ),
