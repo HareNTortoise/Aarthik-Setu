@@ -39,13 +39,13 @@ class HomeBloc extends Bloc<HomeEvent, HomeState> {
 
     on<AddPersonalProfile>((event, emit) async {
       final Map<String, dynamic> response = await personalProfileRepository.createProfile(event.personalProfile);
-      _logger.i('response: $response');
+      // _logger.i('response: $response');
       add(FetchProfiles(event.personalProfile.userId));
     });
 
     on<AddBusinessProfile>((event, emit) async {
       final Map<String, dynamic> response = await businessProfileRepository.createProfile(event.businessProfile);
-      _logger.i('response: $response');
+      // _logger.i('response: $response');
       add(FetchProfiles(event.businessProfile.userId));
     });
 
@@ -74,14 +74,14 @@ class HomeBloc extends Bloc<HomeEvent, HomeState> {
     on<DeletePersonalProfile>((event, emit) async {
       final Map<String, dynamic> response =
           await personalProfileRepository.deleteProfile(event.userId, event.personalProfileId);
-      _logger.i('response: $response');
+      // _logger.i('response: $response');
       add(FetchProfiles((state as HomeInitialized).currentPersonalProfile.userId));
     });
 
     on<DeleteBusinessProfile>((event, emit) async {
       final Map<String, dynamic> response =
           await businessProfileRepository.deleteProfile(event.userId, event.businessProfileId);
-      _logger.i('response: $response');
+      // _logger.i('response: $response');
       add(FetchProfiles((state as HomeInitialized).currentBusinessProfile.userId));
     });
   }
