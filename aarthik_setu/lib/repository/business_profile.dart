@@ -47,9 +47,9 @@ class BusinessProfileRepository {
     }
   }
 
-  Future<Map<String, dynamic>> deleteProfile(String profileId) async {
+  Future<Map<String, dynamic>> deleteProfile(String userId, String profileId) async {
     try {
-      final response = await _client.delete('/business/profile/$profileId');
+      final response = await _client.delete('/business/profile/$userId/$profileId');
       return response.data;
     } catch (e) {
       _logger.e('Error deleting business profile: $e');

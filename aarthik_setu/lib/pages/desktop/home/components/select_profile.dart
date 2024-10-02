@@ -86,9 +86,14 @@ class ProfileTile extends StatelessWidget {
             const SizedBox(width: 10),
             IconButton(
               onPressed: () {
+                final String userId = (context.read<AuthBloc>().state as AuthSuccess).id;
                 isPersonal
-                    ? context.read<HomeBloc>().add(DeletePersonalProfile(personalProfile!.id!))
-                    : context.read<HomeBloc>().add(DeleteBusinessProfile(businessProfile!.id!));
+                    ? context
+                        .read<HomeBloc>()
+                        .add(DeletePersonalProfile(userId: userId, personalProfileId: personalProfile!.id!))
+                    : context
+                        .read<HomeBloc>()
+                        .add(DeleteBusinessProfile(userId: userId, businessProfileId: businessProfile!.id!));
               },
               icon: const Icon(Icons.delete, size: 30),
             ),
