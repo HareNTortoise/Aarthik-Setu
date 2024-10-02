@@ -4,6 +4,7 @@ import 'package:go_router/go_router.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:icons_plus/icons_plus.dart';
 import 'package:line_icons/line_icons.dart';
+import 'package:logger/logger.dart';
 import 'package:timeline_tile/timeline_tile.dart';
 import '../../../../constants/colors.dart';
 
@@ -12,6 +13,8 @@ class PersonalLoanJourney extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final params = GoRouterState.of(context).pathParameters;
+    final loanType = params['loanType'];
     return Container(
       padding: const EdgeInsets.symmetric(vertical: 20, horizontal: 100),
       child: SingleChildScrollView(
@@ -103,7 +106,7 @@ class PersonalLoanJourney extends StatelessWidget {
                     child: LargeTileButton(
                       title: 'Income Tax Return',
                       icon: const Icon(LineAwesome.money_bill_alt, size: 150),
-                      onPressed: () => context.go('/personal-loan-journey/personal/itr'),
+                      onPressed: () => context.go('/personal-loan-journey/$loanType/itr'),
                       description:
                           'Provide you income tax return form for up to the last 3 years or declare your income.',
                     ),
@@ -143,7 +146,7 @@ class PersonalLoanJourney extends StatelessWidget {
                     child: LargeTileButton(
                         title: 'Bank Details',
                         icon: const Icon(LineAwesome.university_solid, size: 150),
-                        onPressed: () => context.go('/personal-loan-journey/personal/bank-details'),
+                        onPressed: () => context.go('/personal-loan-journey/$loanType/bank-details'),
                         description: 'Declare your bank details and provide bank statements for the last 6 months.'),
                   ),
                 ),
@@ -197,7 +200,7 @@ class PersonalLoanJourney extends StatelessWidget {
                     child: LargeTileButton(
                       title: 'Basic Details',
                       icon: const Icon(LineAwesome.user, size: 150),
-                      onPressed: () => context.go('/personal-loan-journey/personal/basic-details'),
+                      onPressed: () => context.go('/personal-loan-journey/$loanType/basic-details'),
                       description: 'Provide your personal information like name, age, and address.',
                     ),
                   ),
@@ -236,7 +239,7 @@ class PersonalLoanJourney extends StatelessWidget {
                     child: LargeTileButton(
                       title: 'Employment Details',
                       icon: const Icon(LineAwesome.briefcase_solid, size: 150),
-                      onPressed: () => context.go('/personal-loan-journey/personal/employment-details'),
+                      onPressed: () => context.go('/personal-loan-journey/$loanType/employment-details'),
                       description: 'Provide your employment details like company name, designation, and salary.',
                     ),
                   ),
@@ -291,7 +294,7 @@ class PersonalLoanJourney extends StatelessWidget {
                     child: LargeTileButton(
                       title: 'Credit Information',
                       icon: const Icon(LineAwesome.credit_card, size: 150),
-                      onPressed: () => context.go('/personal-loan-journey/personal/credit-info'),
+                      onPressed: () => context.go('/personal-loan-journey/$loanType/credit-info'),
                       description:
                           'Provide your credit information like credit score, credit history, and existing loans.',
                     ),
@@ -331,7 +334,7 @@ class PersonalLoanJourney extends StatelessWidget {
                     child: LargeTileButton(
                       title: 'Contact Information',
                       icon: const Icon(LineIcons.phone, size: 150),
-                      onPressed: () => context.go('/personal-loan-journey/personal/contact-details'),
+                      onPressed: () => context.go('/personal-loan-journey/$loanType/contact-details'),
                       description: 'Provide your contact information like phone number, email, and address.',
                     ),
                   ),
@@ -386,7 +389,7 @@ class PersonalLoanJourney extends StatelessWidget {
                     child: LargeTileButton(
                       title: 'Loan Form',
                       icon: const Icon(LineAwesome.money_bill_alt, size: 150),
-                      onPressed: () => context.go('/personal-loan-journey/personal/loan-form'),
+                      onPressed: () => context.go('/personal-loan-journey/$loanType/loan-form'),
                       description: 'Fill out the loan form with all the required information.',
                     ),
                   ),

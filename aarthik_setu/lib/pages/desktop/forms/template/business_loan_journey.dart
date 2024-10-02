@@ -12,6 +12,8 @@ class BusinessLoanJourney extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final params = GoRouterState.of(context).pathParameters;
+    final loanType = params['loanType'];
     return Container(
       padding: const EdgeInsets.symmetric(vertical: 20, horizontal: 100),
       child: SingleChildScrollView(
@@ -106,7 +108,7 @@ class BusinessLoanJourney extends StatelessWidget {
                     child: LargeTileButton(
                       title: 'Income Tax Return',
                       icon: const Icon(LineIcons.piggyBank, size: 150),
-                      onPressed: () => context.go('/business-loan-journey/business/itr'),
+                      onPressed: () => context.go('/business-loan-journey/$loanType/itr'),
                       description: 'Provide your business’s income tax return for the last 3 years.',
                     ),
                   ),
@@ -146,7 +148,7 @@ class BusinessLoanJourney extends StatelessWidget {
                     child: LargeTileButton(
                       title: 'GST Details',
                       icon: const Icon(LineAwesome.file_invoice_solid, size: 150),
-                      onPressed: () => context.go('/business-loan-journey/business/gst-details'),
+                      onPressed: () => context.go('/business-loan-journey/$loanType/gst-details'),
                       description: 'Provide your GST registration number and return details.',
                     ),
                   ),
@@ -202,7 +204,7 @@ class BusinessLoanJourney extends StatelessWidget {
                     child: LargeTileButton(
                       title: 'Bank Details',
                       icon: const Icon(LineIcons.university, size: 150),
-                      onPressed: () => context.go('/business-loan-journey/business/bank-details'),
+                      onPressed: () => context.go('/business-loan-journey/$loanType/bank-details'),
                       description: 'Provide your business’s bank details and bank statements.',
                     ),
                   ),
@@ -242,7 +244,7 @@ class BusinessLoanJourney extends StatelessWidget {
                     child: LargeTileButton(
                       title: 'Stakeholders',
                       icon: const Icon(LineIcons.users, size: 150),
-                      onPressed: () => context.go('/business-loan-journey/business/stakeholders'),
+                      onPressed: () => context.go('/business-loan-journey/$loanType/stakeholders'),
                       description: 'Provide details about key stakeholders and their shares in the business.',
                     ),
                   ),
@@ -298,7 +300,7 @@ class BusinessLoanJourney extends StatelessWidget {
                     child: LargeTileButton(
                       title: 'Loan Form',
                       icon: const Icon(LineIcons.fileContract, size: 150),
-                      onPressed: () => context.go('/business-loan-journey/business/loan-form'),
+                      onPressed: () => context.go('/business-loan-journey/$loanType/loan-form'),
                       description: 'Fill in the loan application form to finalize your request.',
                     ),
                   ),
