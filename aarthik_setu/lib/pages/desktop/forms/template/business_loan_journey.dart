@@ -330,8 +330,65 @@ class BusinessLoanJourney extends StatelessWidget {
                   ),
                 ],
               ),
-            ),
-          );
+              const TimelineDivider(
+                color: Colors.blueAccent,
+                thickness: 8,
+                begin: 0.4,
+                end: 0.6,
+              ),
+              SizedBox(
+                height: 800,
+                child: TimelineTile(
+                  alignment: TimelineAlign.manual,
+                  lineXY: 0.4,
+                  isFirst: false,
+                  isLast: true,
+                  startChild: Container(
+                    padding: const EdgeInsets.symmetric(horizontal: 50),
+                    height: 150,
+                    child: FilledButton.tonal(
+                      style: ButtonStyle(
+                        backgroundColor: WidgetStateProperty.all(AppColors.primaryColorTwo.withOpacity(0.6)),
+                        shape: WidgetStateProperty.all(
+                          RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(100),
+                          ),
+                        ),
+                      ),
+                      onPressed: () => context.go('/business-loan-journey/business/review-form'),
+                      child: Text(
+                        AppLocalizations.of(context)!.reviewFormButton,
+                        style: GoogleFonts.poppins(fontSize: 26),
+                      ),
+                    ),
+                  ),
+                  endChild: Container(
+                    padding: const EdgeInsets.symmetric(horizontal: 50),
+                    child: Text(
+                      AppLocalizations.of(context)!.reviewFormButtonDescription,
+                      textAlign: TextAlign.center,
+                      style: GoogleFonts.poppins(fontSize: 26),
+                    ),
+                  ),
+                  indicatorStyle: IndicatorStyle(
+                    width: 50,
+                    color: Colors.blueAccent,
+                    iconStyle: IconStyle(
+                      iconData: Icons.check,
+                      color: Colors.white,
+                    ),
+                  ),
+                  beforeLineStyle: const LineStyle(
+                    color: Colors.blueAccent,
+                    thickness: 8,
+                  ),
+                ),
+              ),
+            ],
+
+          ),
+        ),
+      );
         },
       ),
     );

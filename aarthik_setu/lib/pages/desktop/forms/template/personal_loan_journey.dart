@@ -444,10 +444,10 @@ class PersonalLoanJourney extends StatelessWidget {
                               ),
                             ),
                           ),
-                          onPressed: () {},
-                          child: Text(
-                            AppLocalizations.of(context)!.reviewFormButton,
-                            style: GoogleFonts.poppins(fontSize: 26),
+                      onPressed: () => context.go('/personal-loan-journey/personal/review-form'),
+                      child: Text(
+                        AppLocalizations.of(context)!.reviewFormButton,
+                        style: GoogleFonts.poppins(fontSize: 26),
                           ),
                         ),
                       ),
