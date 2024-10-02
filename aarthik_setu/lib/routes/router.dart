@@ -12,13 +12,14 @@ import 'package:flutter/material.dart';
 import '../pages/desktop/forms/business_loans/bank_details.dart';
 import '../pages/desktop/forms/business_loans/itr_form.dart';
 import '../pages/desktop/forms/business_loans/loan_form.dart';
+import '../pages/desktop/forms/business_loans/review_form.dart';
 import '../pages/desktop/forms/business_loans/stakeholders.dart';
 import '../pages/desktop/forms/personal_loans/contact_details.dart';
 import '../pages/desktop/forms/personal_loans/employment_details.dart';
 import '../pages/desktop/loading.dart';
 
 final GoRouter router = GoRouter(
-  initialLocation: '/business-loan-journey/abc/gst-details',
+  initialLocation: '/dashboard',
   routes: [
     GoRoute(path: '/', pageBuilder: (context, state) => const MaterialPage(child: LoadingPage())),
     GoRoute(
@@ -105,6 +106,9 @@ final GoRouter router = GoRouter(
           path: 'loan-form',
           pageBuilder: (context, state) => const MaterialPage(child: LoanFormBusiness()),
         ),
+        GoRoute(path: 'review-form', pageBuilder: (context, state) {
+          return const MaterialPage(child: ReviewFormBusiness());
+        }),
       ],
     ),
   ],
