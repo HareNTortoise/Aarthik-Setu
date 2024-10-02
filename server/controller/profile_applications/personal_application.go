@@ -40,7 +40,7 @@ func CreatePersonalApplication(c *gin.Context) {
 		return
 	}
 	if len(existingDocs) > 0 {
-		c.JSON(http.StatusConflict, gin.H{"error": "Application already exist"})
+		c.JSON(http.StatusConflict, gin.H{"error": "Application already exists"})
 		return
 	}
 
@@ -51,12 +51,12 @@ func CreatePersonalApplication(c *gin.Context) {
 	}
 
 	_, err = client.Collection("personal_applications").Doc(id).Set(ctx, dataMap)
-
 	if err != nil {
 		c.JSON(http.StatusInternalServerError, gin.H{"error": "Failed to create application", "details": err.Error()})
 		return
 	}
-	c.JSON(http.StatusCreated, gin.H{"message": "Application created successfully"})
+
+	c.JSON(http.StatusCreated, gin.H{"message": "Application created successfully", "application": dataMap})
 }
 
 func GetPersonalApplications(c *gin.Context) {
@@ -88,7 +88,7 @@ func UpdatePersonalApplication(c *gin.Context) {
 	ctx := context.Background()
 
 	var updateData map[string]interface{}
-	if err := c.BindJSON(&updateData); err != nil {
+	if err := c.ShouldBind(&updateData); err != nil {
 		c.JSON(http.StatusBadRequest, gin.H{"error": "Invalid request data", "details": err.Error()})
 		return
 	}
@@ -111,7 +111,14 @@ func UpdatePersonalApplication(c *gin.Context) {
 		return
 	}
 
-	c.JSON(http.StatusOK, gin.H{"message": "Application updated successfully"})
+	// Fetch the updated application data
+	updatedDocData, err := doc.Get(ctx)
+	if err != nil {
+		c.JSON(http.StatusInternalServerError, gin.H{"error": "Failed to retrieve updated application", "details": err.Error()})
+		return
+	}
+
+	c.JSON(http.StatusOK, gin.H{"message": "Application updated successfully", "application": updatedDocData.Data()})
 }
 
 func DeletePersonalApplication(c *gin.Context) {

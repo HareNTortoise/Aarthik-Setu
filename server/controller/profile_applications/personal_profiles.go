@@ -2,6 +2,7 @@ package profile_applications
 
 import (
 	"context"
+	"fmt"
 	"net/http"
 	utils "server/config/firebase"
 	"time"
@@ -10,14 +11,11 @@ import (
 	"github.com/gin-gonic/gin"
 )
 
-var client *firestore.Client
-
 func init() {
 	client = utils.InitFirestore() // Initialize Firestore client
 }
 
-//Create new Profile
-
+// Create new Profile
 func CreatePersonalProfile(c *gin.Context) {
 	userId := c.Param("userId")
 	name := c.PostForm("name")
@@ -37,7 +35,7 @@ func CreatePersonalProfile(c *gin.Context) {
 	}
 	if len(existingDocs) > 0 {
 		// If details are already present, return an error
-		c.JSON(http.StatusConflict, gin.H{"error": "Profile already exist"})
+		c.JSON(http.StatusConflict, gin.H{"error": "Profile already exists"})
 		return
 	}
 	createdAt := time.Now()
@@ -53,7 +51,15 @@ func CreatePersonalProfile(c *gin.Context) {
 		c.JSON(http.StatusInternalServerError, gin.H{"error": "Failed to create profile", "details": err.Error()})
 		return
 	}
-	c.JSON(http.StatusCreated, gin.H{"message": "Profile created successfully"})
+	c.JSON(http.StatusCreated, gin.H{
+		"message": "Profile created successfully",
+		"data": map[string]interface{}{"userId": userId,
+			"id":        id,
+			"name":      name,
+			"pan":       pan,
+			"createdAt": createdAt,
+			"updatedAt": createdAt},
+	})
 }
 
 func GetPersonalProfiles(c *gin.Context) {
@@ -84,10 +90,13 @@ func GetPersonalProfiles(c *gin.Context) {
 
 func UpdatePersonalProfile(c *gin.Context) {
 	userId := c.Param("userId")
-	id := c.Param("id")
+	id := c.Param("profileId")
 	name := c.PostForm("name")
 	pan := c.PostForm("pan")
 	ctx := context.Background()
+
+	// Log the userId and profileId for debugging
+	fmt.Println("UserId:", userId, "ProfileId:", id)
 
 	// Check if the profile exists
 	docRef := client.Collection("personal_profiles").Doc(id)
@@ -115,12 +124,15 @@ func UpdatePersonalProfile(c *gin.Context) {
 		return
 	}
 
-	c.JSON(http.StatusOK, gin.H{"message": "Profile updated successfully"})
+	c.JSON(http.StatusOK, gin.H{
+		"message": "Profile updated successfully",
+		"data":    map[string]interface{}{"id": id, "name": name, "pan": pan, "updatedAt": updatedAt},
+	})
 }
 
 func DeletePersonalProfile(c *gin.Context) {
 	userId := c.Param("userId")
-	id := c.Param("id")
+	id := c.Param("profileId")
 	ctx := context.Background()
 
 	// Get the document reference
