@@ -2204,7 +2204,27 @@
 					"name": "Schemes",
 					"request": {
 						"method": "POST",
-						"header": []
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "query",
+									"value": "Suggest best schemes",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:8080/schemes-info",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"schemes-info"
+							]
+						}
 					},
 					"response": []
 				}
@@ -2803,6 +2823,56 @@
 							"port": "8080",
 							"path": [
 								"govt_schemes"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Chatbot",
+			"item": [
+				{
+					"name": "New Request",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/chat",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"chat"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "New Request Copy",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"message\": \"Can you help me with budgeting tips?\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/chat",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"chat"
 							]
 						}
 					},
