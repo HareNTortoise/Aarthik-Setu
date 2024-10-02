@@ -18,100 +18,106 @@ import (
 
 )
 
-// db_client *firestore.Client
+// var db_client *firestore.Client
 
 func init(){
 	db_client = utils.InitFirestore()
 }
 
-func SuggestLenders(c *gin.Context){
+func SuggestLenders(c *gin.Context) {
 	applicationId := c.Param("applicationId")
 	profileId := c.Param("profileId")
-	
+
 	ctx := context.Background()
-	// profile_type := "None"
+
+	// Retrieving bank details
 	bankDetailsDoc, err := db_client.Collection("BankDetailsExtracted").Where("profileId", "==", profileId).Where("applicationId", "==", applicationId).Documents(ctx).GetAll()
 	if err != nil {
 		c.JSON(http.StatusInternalServerError, gin.H{"error": "Error retrieving bank details"})
 		return
 	}
 
-	itrInfoDoc,err := db_client.Collection("ITRInfoExtracted").Where("profileId", "==", profileId).Where("applicationId", "==", applicationId).Documents(ctx).GetAll()
+	// Retrieving ITR info
+	itrInfoDoc, err := db_client.Collection("ITRDetailsExtracted").Where("profileId", "==", profileId).Where("applicationId", "==", applicationId).Documents(ctx).GetAll()
 	if err != nil {
 		c.JSON(http.StatusInternalServerError, gin.H{"error": "Error retrieving ITR info"})
 		return
 	}
 
+	// Retrieving loan application
 	var loanApplication map[string]interface{}
-	loanAppDoc,_ := db_client.Collection("personal_loan_applications").Where("profileId", "==", profileId).Where("applicationId", "==", applicationId).Limit(1).Documents(ctx).GetAll()
-	if err != nil { // If personal loan doesn't exist, check for business loan application
-		loanAppDoc,_= db_client.Collection("business_loan_applications").Where("profileId", "==", profileId).Where("applicationId", "==", applicationId).Limit(1).Documents(ctx).GetAll()
+	loanAppDoc, err := db_client.Collection("personal_loan_applications").Where("profileId", "==", profileId).Where("applicationId", "==", applicationId).Limit(1).Documents(ctx).GetAll()
+	if err != nil {
+		loanAppDoc, err = db_client.Collection("business_loan_applications").Where("profileId", "==", profileId).Where("applicationId", "==", applicationId).Limit(1).Documents(ctx).GetAll()
 		if err != nil {
 			c.JSON(http.StatusInternalServerError, gin.H{"error": "Error retrieving loan application"})
 			return
-		}else{
-			// profile_type = "business"
 		}
-	}else{
-		// profile_type = "personal"
 	}
-	loanAppDoc[0].DataTo(&loanApplication)
+	if len(loanAppDoc) != 0 {
+		loanAppDoc[0].DataTo(&loanApplication)
+	} else {
+		c.JSON(http.StatusNotFound, gin.H{"error": "No matching loan application found"})
+		return
+	}
 
+	// Retrieving lenders list
 	lendersListDocs, err := db_client.Collection("LendersList").Documents(ctx).GetAll()
 	if err != nil {
 		c.JSON(http.StatusInternalServerError, gin.H{"error": "Error retrieving lenders list"})
 		return
 	}
 
-	tempFilePath := "lenders_temp.json"
+	// Collect lenders list data as a string
 	var lendersList []map[string]interface{}
-
-	// Collect all lender data into a list
 	for _, doc := range lendersListDocs {
 		lendersList = append(lendersList, doc.Data())
 	}
-
-	// Write the lenders list to a temporary JSON file
-	lendersFile, err := os.Create(tempFilePath)
+	// Convert lenders list to a readable string format for text file
+	lendersDataString, err := json.MarshalIndent(lendersList, "", "  ")
 	if err != nil {
-		c.JSON(http.StatusInternalServerError, gin.H{"error": "Could not create lenders temp file"})
-		return
-	}
-	defer lendersFile.Close()
-	defer os.Remove(tempFilePath)
-
-	lendersData, err := json.Marshal(lendersList)
-	if err != nil {
-		c.JSON(http.StatusInternalServerError, gin.H{"error": "Error converting lenders list to JSON"})
+		c.JSON(http.StatusInternalServerError, gin.H{"error": "Error converting lenders list to string"})
 		return
 	}
 
-	if _, err := lendersFile.Write(lendersData); err != nil {
+	// Save lenders data as a text file
+	tempFilePath := "lenders_temp.txt"
+	if err := os.WriteFile(tempFilePath, lendersDataString, 0644); err != nil {
 		c.JSON(http.StatusInternalServerError, gin.H{"error": "Error writing lenders data to temp file"})
 		return
 	}
+	defer os.Remove(tempFilePath)
 
+	// Read the lenders text file into memory
+	lendersFileBytes, err := os.ReadFile(tempFilePath)
+	if err != nil {
+		c.JSON(http.StatusInternalServerError, gin.H{"error": "Could not read lenders file"})
+		return
+	}
+
+	// Prepare data for Gemini API
 	var bankDetails map[string]interface{}
 	if len(bankDetailsDoc) > 0 {
-		bankDetails = bankDetailsDoc[0].Data() // Access the first document
+		bankDetails = bankDetailsDoc[0].Data()
 	} else {
 		c.JSON(http.StatusNotFound, gin.H{"error": "No matching bank details found"})
 		return
 	}
 	var itrInfo map[string]interface{}
 	if len(itrInfoDoc) > 0 {
-		itrInfo =itrInfoDoc[0].Data() // Access the first document
+		itrInfo = itrInfoDoc[0].Data()
 	} else {
-		c.JSON(http.StatusNotFound, gin.H{"error": "No matching bank details found"})
+		c.JSON(http.StatusNotFound, gin.H{"error": "No matching ITR info found"})
 		return
 	}
 
-	// Combine the data into a single prompt for Gemini
+	// Create the prompt
 	promptTemplate := fmt.Sprintf(`Based on the following information:
 	- Bank Details: %v
 	- ITR Info: %v
 	- Loan Application: %v
-	Analyze and suggest the top 10 most suitable loan lenders for the seeker from the lenders listed in this JSON file.Give the list of lenders in json format`, bankDetails, itrInfo, loanApplication)
+	Analyze and suggest the top 10 most suitable loan lenders for the seeker from the lenders listed in this text file. Provide the list of lenders in JSON format. Dont give any text in the form of explanation along with the json`, bankDetails, itrInfo, loanApplication)
+
 	client, err := genai.NewClient(ctx, option.WithAPIKey(os.Getenv("GEMINI_API_KEY")))
 	if err != nil {
 		c.JSON(http.StatusInternalServerError, gin.H{"error": "Error creating Gemini client"})
@@ -120,35 +126,35 @@ func SuggestLenders(c *gin.Context){
 
 	model := client.GenerativeModel("gemini-1.5-flash")
 
-	// Step 5: Send prompt and lenders JSON file to Gemini
+	// Send prompt and lenders text file to Gemini as text/plain
 	extractionPrompt := []genai.Part{
 		genai.Text(promptTemplate),
-		genai.Blob{MIMEType: "application/json", Data: lendersData}, // Send lenders JSON to Gemini
+		genai.Blob{MIMEType: "text/plain", Data: lendersFileBytes}, // Send lenders text as plain text
 	}
 	geminiResp, err := model.GenerateContent(ctx, extractionPrompt...)
 	if err != nil {
-		c.JSON(http.StatusInternalServerError, gin.H{"error": "Error generating lender suggestions"})
+		c.JSON(http.StatusInternalServerError, gin.H{"error": "Error generating lender suggestions", "details": err.Error(),})
 		return
 	}
 
-	// Step 6: Parse Gemini response and return suggestions
+	// Process the Gemini response
 	for _, ct := range geminiResp.Candidates {
 		var output genai.Text
 		for _, part := range ct.Content.Parts {
 			output += part.(genai.Text)
 		}
-		outputString := fmt.Sprintf("%v", output)
-		outputString = strings.TrimPrefix(outputString, "```json\n")
+		outputString := strings.TrimPrefix(fmt.Sprintf("%v", output), "```json\n")
 		outputString = strings.TrimSuffix(outputString, "\n```")
-
-		var extractedData map[string]interface{}
-		if err := json.Unmarshal([]byte(outputString), &extractedData); err != nil {
-			c.JSON(http.StatusInternalServerError, gin.H{"error": "Error parsing extracted JSON"})
+		fmt.Println(outputString)
+		var rawData json.RawMessage
+		if err := json.Unmarshal([]byte(outputString), &rawData); err != nil {
+			fmt.Println("Failed to unmarshal JSON:", outputString)
+			c.JSON(http.StatusInternalServerError, gin.H{"error": "Error parsing extracted JSON", "details": err.Error()})
 			return
 		}
-		c.JSON(http.StatusOK, extractedData)
+		c.JSON(http.StatusOK, rawData)
 		return
 	}
-	c.JSON(http.StatusOK, gin.H{"message": "No lender suggestions found"})
 
+	c.JSON(http.StatusOK, gin.H{"message": "No lender suggestions found"})
 }
