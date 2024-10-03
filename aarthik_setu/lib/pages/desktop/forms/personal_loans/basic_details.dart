@@ -10,6 +10,7 @@ import 'package:responsive_framework/responsive_framework.dart';
 import '../../../../bloc/l10n/l10n_bloc.dart';
 import '../../../../constants/app_constants.dart';
 import '../../../../constants/colors.dart';
+import '../../../../global_components/audio_recorder.dart';
 import '../../../../global_components/labelled_text_field.dart';
 import '../../../../global_components/language_dropdown.dart';
 import '../../../../global_components/procees_button.dart';
@@ -66,9 +67,16 @@ class _BasicDetailsFormState extends State<BasicDetailsForm> {
                     const SizedBox(height: 30),
                     const LanguageDropdown(),
                     const SizedBox(height: 60),
-                    Text(
-                      AppLocalizations.of(context)!.basicDetails,
-                      style: GoogleFonts.poppins(fontSize: 80),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        Text(
+                          AppLocalizations.of(context)!.basicDetails,
+                          style: GoogleFonts.poppins(fontSize: 80),
+                        ),
+                        const SizedBox(width: 20),
+                        const AudioRecordingWidget(),
+                      ],
                     ),
                     const SizedBox(height: 40),
                     IntrinsicHeight(
