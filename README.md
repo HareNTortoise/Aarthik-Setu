@@ -1,5 +1,5 @@
 <div align="center">
-<img src="https://github.com/HareNTortoise/Aarthik-Setu/blob/main/AAsetu.svg" alt="Aarthik Setu Logo" width="150" height="150">
+<img src="https://github.com/HareNTortoise/Aarthik-Setu/blob/main/AAsetu_256-x-256-px_.png" alt="Aarthik Setu Logo" width="300" height="300" style="background: transparent;">
 <h1>₹ Aarthik Setu ₹</h1>
   <h3>Empowering MSMEs Through Smarter Credit Access</h3>
 
