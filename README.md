@@ -85,7 +85,7 @@ Explore the **Aarthik Setu** live demo: [Click here](https://aarthik-setu.web.ap
 Or scan the QR code for the mobile version:
 
 <p align="center">
-  <img src="https://github.com/HareNTortoise/Aarthik-Setu/raw/main/AarthikSetu.png" alt="QR Code" width="200" height="200">
+  <img src="https://github.com/shubhusion/Aarthik-Setu/blob/main/assets/AarthikSetu.png" alt="QR Code" width="200" height="200">
 </p>
 
 ## 🛠️ Setup & Installation
