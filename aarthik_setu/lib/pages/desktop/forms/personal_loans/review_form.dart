@@ -458,29 +458,6 @@ class ReviewFormPersonal extends StatelessWidget {
                             ),
                           ),
                           const SizedBox(height: 20),
-                          Row(
-                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                            crossAxisAlignment: CrossAxisAlignment.end,
-                            children: [
-                              ShowcaseTextFieldContainer(
-                                label: "Profile ID",
-                                value: creditInfo.profileId,
-                              ),
-                              ShowcaseTextFieldContainer(
-                                label: "Timestamp",
-                                value: "${creditInfo.timestamp}",
-                              ),
-                              ShowcaseTextFieldContainer(
-                                label: "Application ID",
-                                value: creditInfo.applicationId,
-                              ),
-                            ],
-                          ),
-                          const SizedBox(height: 20),
-                          const Text("Credit Info Units",
-                            style: TextStyle(fontSize: 25),
-                          ),
-                          const SizedBox(height: 20),
                           for (var unit in creditInfo.creditInfoUnits) ...[
                             const Text("Credit info:",
                                 style: TextStyle(fontSize: 15),
