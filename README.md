@@ -2,7 +2,7 @@
 <h1>₹ Aarthik Setu ₹</h1>
   <h3>Empowering MSMEs Through Smarter Credit Access</h3>
 
-![Aarthik Setu Banner](https://aarthik-setu.web.app/images/banner.png)
+![Aarthik Setu Banner](https://github.com/HareNTortoise/Aarthik-Setu/blob/main/web%20banner.png)
 
 [![Build Status](https://img.shields.io/travis/username/aarthik-setu.svg)](https://travis-ci.org/username/aarthik-setu)
 [![License](https://img.shields.io/badge/license-Apache%202.0-blue.svg)](https://github.com/HareNTortoise/Aarthik-Setu/blob/main/LICENSE)
