@@ -8,6 +8,16 @@
 [![Build Status](https://img.shields.io/travis/username/aarthik-setu.svg)](https://travis-ci.org/username/aarthik-setu)
 [![License](https://img.shields.io/badge/license-Apache%202.0-blue.svg)](https://github.com/HareNTortoise/Aarthik-Setu/blob/main/LICENSE)
 [![Version](https://img.shields.io/badge/version-1.0.0-green.svg)](https://github.com/username/aarthik-setu/releases)
+![Flutter](https://img.shields.io/badge/Flutter-02569B?logo=flutter&logoColor=white&style=flat-square)
+![Firebase Authentication](https://img.shields.io/badge/Firebase%20Authentication-FFCA28?logo=firebase&logoColor=black&style=flat-square)
+![Golang](https://img.shields.io/badge/Golang-00ADD8?logo=go&logoColor=white&style=flat-square)
+![Firebase Firestore](https://img.shields.io/badge/Firebase%20Firestore-FFCA28?logo=firebase&logoColor=black&style=flat-square)
+![Redis](https://img.shields.io/badge/Redis-DC382D?logo=redis&logoColor=white&style=flat-square)
+![Google Vector Search](https://img.shields.io/badge/Google%20Vector%20Search-4285F4?logo=google&logoColor=white&style=flat-square)
+![Google Cloud Platform](https://img.shields.io/badge/Google%20Cloud%20Platform-4285F4?logo=google-cloud&logoColor=white&style=flat-square)
+![Docker](https://img.shields.io/badge/Docker-2496ED?logo=docker&logoColor=white&style=flat-square)
+![Kubernetes](https://img.shields.io/badge/Kubernetes-326CE5?logo=kubernetes&logoColor=white&style=flat-square)
+
 </div>
 
 ## 🏆 Project Overview
