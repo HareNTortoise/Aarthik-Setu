@@ -1,5 +1,6 @@
 import 'dart:async';
 import 'package:aarthik_setu/global_components/country_code_dropdown.dart';
+import 'package:aarthik_setu/pages/desktop/auth/components/otp_unavailable.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
@@ -129,9 +130,10 @@ class _PhoneNumberFormDesktopState extends State<PhoneNumberFormDesktop> {
                     FilledButton.tonal(
                       onPressed: () {
                         if (_formKey.currentState!.validate()) {
-                          context.read<PhoneFormCubit>().toggleOTPSent();
-                          _timer?.cancel();
-                          startOtpTimer();
+                          showDialog(context: context, builder: (context) => const OTPUnavailable());
+                          // context.read<PhoneFormCubit>().toggleOTPSent();
+                          // _timer?.cancel();
+                          // startOtpTimer();
                         }
                       },
                       style: ButtonStyle(
