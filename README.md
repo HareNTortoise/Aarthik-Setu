@@ -1,9 +1,9 @@
 <div align="center">
-<img src="https://github.com/HareNTortoise/Aarthik-Setu/blob/main/AAsetu_256-x-256-px_.png" alt="Aarthik Setu Logo" width="300" height="300" style="background: transparent;">
+<img src="https://github.com/HareNTortoise/Aarthik-Setu/blob/main/assets/logos/AAsetu_256-x-256-px_.png" alt="Aarthik Setu Logo" width="300" height="300" style="background: transparent;">
 <h1>₹ Aarthik Setu ₹</h1>
   <h3>Empowering MSMEs Through Smarter Credit Access</h3>
 
-![Aarthik Setu Banner](https://github.com/HareNTortoise/Aarthik-Setu/blob/main/web%20banner.png)
+![Aarthik Setu Banner](https://github.com/HareNTortoise/Aarthik-Setu/blob/main/assets/web%20banner.png)
 
 [![Build Status](https://img.shields.io/travis/username/aarthik-setu.svg)](https://travis-ci.org/username/aarthik-setu)
 [![License](https://img.shields.io/badge/license-Apache%202.0-blue.svg)](https://github.com/HareNTortoise/Aarthik-Setu/blob/main/LICENSE)
@@ -43,7 +43,7 @@
 
 ### Architecture Diagram:
 
-![Architecture Diagram](https://github.com/HareNTortoise/Aarthik-Setu/blob/main/AarthikSetu_Architecture_Diagram.png)
+![Architecture Diagram](https://github.com/HareNTortoise/Aarthik-Setu/blob/main/assets/AarthikSetu_Architecture_Diagram.png)
 
 ## 💡 Originality
 
