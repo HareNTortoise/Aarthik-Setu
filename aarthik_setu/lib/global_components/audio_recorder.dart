@@ -2,7 +2,7 @@ import 'dart:typed_data';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:permission_handler/permission_handler.dart';
+// import 'package:permission_handler/permission_handler.dart';
 import '../bloc/audio_filler/audio_filler_bloc.dart';
 
 
@@ -10,7 +10,7 @@ class AudioRecordingWidget extends StatelessWidget {
   const AudioRecordingWidget({super.key});
 
   void _toggleListening(BuildContext context) async {
-    if (await Permission.microphone.request().isGranted) {
+    if (true) {
       final bloc = BlocProvider.of<AudioFillerBloc>(context);
       final state = bloc.state;
 
