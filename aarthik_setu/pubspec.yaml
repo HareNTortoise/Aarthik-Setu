@@ -65,6 +65,7 @@ dependencies:
   infinite_scroll_pagination: ^4.0.0
   flutter_sound: ^9.16.2
   image_picker: ^1.1.2
+  permission_handler: ^11.3.1
 
 dev_dependencies:
   flutter_test:
