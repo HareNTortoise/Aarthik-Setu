@@ -42,7 +42,7 @@
 
 ### Architecture Diagram:
 
-![Architecture Diagram](https://aarthik-setu.web.app/images/architecture.png)
+![Architecture Diagram](https://github.com/HareNTortoise/Aarthik-Setu/blob/main/AarthikSetu_Architecture_Diagram.png)
 
 ## 💡 Originality
 
