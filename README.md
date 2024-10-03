@@ -37,9 +37,20 @@
 
 ### Tech Stack:
 
-- **Frontend:** Flutter (Web, Android, iOS), Firebase Authentication
-- **Backend:** Golang (Gin Framework), Firestore Database
-- **AI & LLMs:** Open Source Large Language Models, AI-driven cash flow modeling
+- **Frontend:**
+  - Framework: Flutter (Supports Web, Android, iOS)
+  - Authentication: Firebase Authentication (OTP-based)
+
+- **Backend:**
+  - Language: Golang (using Gin Framework for building REST APIs)
+  - Database: Firebase Firestore (NoSQL database for structured data)
+  - Caching: Redis (In-memory caching for faster data retrieval)
+
+- **AI & LLMs:**
+  - AI Model: Open Source Large Language Models (for conversational AI and other tasks)
+  - GenAI Features: AI-driven cash flow modeling
+  - Vector Search: Google Vector Search (for embedding and efficient information retrieval)
+
 
 ### Architecture Diagram:
 
