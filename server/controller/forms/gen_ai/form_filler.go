@@ -73,7 +73,7 @@ func AudioFormFiller(c *gin.Context) {
 
 	fields := c.PostForm("formFields")
 
-	promptTemplate := fmt.Sprintf("Extract the following information from the audio file:\n%s\n\nPlease analyze the audio and provide the details in json in name:value format only where the 'name' attribute is exactly the name of the form field provided in above json in camelcase. The extracted information should be in English Only, regardless of the language spoken in the audio. Do not add anything from your side, just extract the information as it is from the audio only.",
+	promptTemplate := fmt.Sprintf("Extract the following information from the audio file:\n%s\n\nPlease analyze the audio and provide the details in json in name:value format only where the 'name' attribute is exactly the name of the form field provided in above json in camelcase. The extracted 'value' attribute should be in English Only, regardless of the language spoken in the audio. Return empty json if audio is not given or the audio does not contain related information.",
 		fields)
 
 	mimeType := getMimeType(audioFile.Filename)

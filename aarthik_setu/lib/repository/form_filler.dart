@@ -16,7 +16,7 @@ class FormFillerRepository {
     try {
       final formData = FormData.fromMap({
         'audioFile': MultipartFile.fromBytes(audioFile.bytes!, filename: 'audio.mp3'),
-        'formFields': formFields,
+        'formFields': "$formFields",
       });
 
       final response = await _client.post('/gen_ai/audio-fill', data: formData);
