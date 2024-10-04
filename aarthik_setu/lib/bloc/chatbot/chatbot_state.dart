@@ -5,12 +5,16 @@ abstract class ChatBotState {}
 
 class ChatInitialState extends ChatBotState {}
 
-class ChatLoadingState extends ChatBotState {}
+class ChatLoadingState extends ChatBotState {
+  final List<String> currentMessages;
 
-class ChatMessageReceivedState extends ChatBotState {
+  ChatLoadingState({required this.currentMessages});
+}
+
+class ChatLoadedState extends ChatBotState {
   final List<String> messages;
 
-  ChatMessageReceivedState({required this.messages});
+  ChatLoadedState({required this.messages});
 }
 
 class ChatErrorState extends ChatBotState {

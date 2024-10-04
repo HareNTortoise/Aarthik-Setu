@@ -4,23 +4,22 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:logger/logger.dart';
 
 part 'chatbot_event.dart';
+
 part 'chatbot_state.dart';
 
 class ChatBotBloc extends Bloc<ChatBotEvent, ChatBotState> {
   final ChatBotRepository chatBotRepository;
-final Logger _logger = Logger();
-  ChatBotBloc({required this.chatBotRepository}) : super(ChatInitialState()) {
+  final Logger _logger = Logger();
+
+  ChatBotBloc({required this.chatBotRepository}) : super(ChatLoadedState(messages: ["Hello I'm Setu AI, how can I help you?"])) {
     on<SendMessageEvent>((event, emit) async {
+      emit(ChatLoadingState(currentMessages:(state as ChatLoadedState).messages ));
       if (event.isUserMessage) {
-        emit(ChatMessageReceivedState(messages: [...(state as ChatMessageReceivedState).messages, event.message]));
+        emit(ChatLoadedState(messages: [...(state as ChatLoadingState).currentMessages, event.message]));
       } else {
         final String response = await chatBotRepository.genAiResponse(event.message);
-        emit(ChatMessageReceivedState(messages: [...((state as ChatMessageReceivedState).messages), response]));
+        emit(ChatLoadedState(messages: [...(state as ChatLoadingState).currentMessages, response]));
       }
-    });
-
-    on<SendInitialHelloMessage>((event, emit) async {
-      emit(ChatMessageReceivedState(messages: const ["Hello I'm Setu AI, how can I help you?"]));
     });
   }
 }
