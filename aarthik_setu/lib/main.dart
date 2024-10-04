@@ -3,6 +3,7 @@ import 'package:aarthik_setu/bloc/chatbot/chatbot_bloc.dart';
 import 'package:aarthik_setu/constants/colors.dart';
 import 'package:aarthik_setu/repository/business_profile.dart';
 import 'package:aarthik_setu/repository/chatbot.dart';
+import 'package:aarthik_setu/repository/form_filler.dart';
 import 'package:aarthik_setu/repository/govt_schemes.dart';
 import 'package:aarthik_setu/repository/personal_profile.dart';
 import 'package:aarthik_setu/routes/router.dart';
@@ -43,6 +44,7 @@ class AarthikSetu extends StatelessWidget {
         RepositoryProvider(create: (context) => BusinessProfileRepository()),
         RepositoryProvider(create: (context) => GovernmentSchemesRepository()),
         RepositoryProvider(create: (context) => ChatBotRepository()),
+        RepositoryProvider(create: (context) => FormFillerRepository()),
       ],
       child: MultiBlocProvider(
         providers: [
