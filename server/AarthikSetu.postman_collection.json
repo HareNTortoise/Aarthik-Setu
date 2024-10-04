@@ -1499,15 +1499,26 @@
 									]
 								},
 								"url": {
-									"raw": "localhost:8080/personal/bank_details/mhtwaakyay",
+									"raw": "localhost:8080/business/bank_details/:profileId/:applicationId",
 									"host": [
 										"localhost"
 									],
 									"port": "8080",
 									"path": [
-										"personal",
+										"business",
 										"bank_details",
-										"mhtwaakyay"
+										":profileId",
+										":applicationId"
+									],
+									"variable": [
+										{
+											"key": "profileId",
+											"value": "6d82be701c036191"
+										},
+										{
+											"key": "applicationId",
+											"value": "99e725ffb5a35bf2"
+										}
 									]
 								}
 							},
@@ -1569,15 +1580,26 @@
 									]
 								},
 								"url": {
-									"raw": "localhost:8080/personal/bank_details/mhtwaakyay",
+									"raw": "localhost:8080/business/bank_details/:profileId/:applicationId",
 									"host": [
 										"localhost"
 									],
 									"port": "8080",
 									"path": [
-										"personal",
+										"business",
 										"bank_details",
-										"mhtwaakyay"
+										":profileId",
+										":applicationId"
+									],
+									"variable": [
+										{
+											"key": "profileId",
+											"value": "6d82be701c036191"
+										},
+										{
+											"key": "applicationId",
+											"value": "99e725ffb5a35bf2"
+										}
 									]
 								}
 							},
@@ -2261,6 +2283,47 @@
 						}
 					},
 					"response": []
+				},
+				{
+					"name": "ITR",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "file",
+									"type": "file",
+									"src": "/E:/Downloads/itr ba fab.pdf"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:8080/gen_ai/get-itr-detils/:profileId/:applicationId",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"gen_ai",
+								"get-itr-detils",
+								":profileId",
+								":applicationId"
+							],
+							"variable": [
+								{
+									"key": "profileId",
+									"value": "6d82be701c036191"
+								},
+								{
+									"key": "applicationId",
+									"value": "99e725ffb5a35bf2"
+								}
+							]
+						}
+					},
+					"response": []
 				}
 			]
 		},
@@ -2285,7 +2348,7 @@
 							"variable": [
 								{
 									"key": "profileId",
-									"value": "1"
+									"value": "6d82be701c036191"
 								}
 							]
 						}
@@ -2320,7 +2383,7 @@
 							"variable": [
 								{
 									"key": "profileId",
-									"value": "1"
+									"value": "6d82be701c036191"
 								}
 							]
 						}
@@ -2816,13 +2879,23 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "localhost:8080/govt_schemes",
+							"raw": "localhost:8080/govt_schemes?limit=2&offset=0",
 							"host": [
 								"localhost"
 							],
 							"port": "8080",
 							"path": [
 								"govt_schemes"
+							],
+							"query": [
+								{
+									"key": "limit",
+									"value": "2"
+								},
+								{
+									"key": "offset",
+									"value": "0"
+								}
 							]
 						}
 					},
