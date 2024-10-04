@@ -30,10 +30,10 @@ class BasicDetailsFormFields {
     FormField(name: "middleName", type: "Text"),
     FormField(name: "lastName", type: "Text"),
     FormField(name: "dateOfBirth", type: "Date"),
-    FormField(name: "pan", type: "Text"),
+    FormField(name: "panNumber", type: "Text"),
     FormField(name: "gender", type: "Dropdown", options: Genders.getGenders()),
     FormField(name: "category", type: "Dropdown", options: Categories.getCategories()),
-    FormField(name: "mobile", type: "Text"),
+    FormField(name: "mobileNumber", type: "Text"),
     FormField(name: "email", type: "Text"),
     FormField(name: "fathersName", type: "Text"),
     FormField(
