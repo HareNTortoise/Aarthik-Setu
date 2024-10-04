@@ -10,22 +10,28 @@ part 'audio_filler_event.dart';
 part 'audio_filler_state.dart';
 
 class AudioFillerBloc extends Bloc<AudioFillerEvent, AudioFillerState> {
-  final FlutterSoundRecorder _myRecorder = FlutterSoundRecorder();
-  final FlutterSoundPlayer _myPlayer = FlutterSoundPlayer();
+  final FlutterSoundRecorder _myRecorder = FlutterSoundRecorder(logLevel: Level.off);
+  final FlutterSoundPlayer _myPlayer = FlutterSoundPlayer(logLevel: Level.off);
   final Logger _logger = Logger();
-  Uint8List? _audioData;
-
 
   AudioFillerBloc() : super(AudioFillerInitial()) {
+    on<InitializeAudioFiller>(_onInitializeAudioFiller);
     on<StartRecording>(_onStartRecording);
     on<StopRecording>(_onStopRecording);
     on<StartPlaying>(_onStartPlaying);
     on<StopPlaying>(_onStopPlaying);
+    on<ResetAudioFiller>(_onResetAudioFiller);
+  }
+
+  Future<void> _onInitializeAudioFiller(InitializeAudioFiller event, Emitter<AudioFillerState> emit) async {
+    emit(AudioFillerLoading());
+    _myRecorder.openRecorder();
+    _myPlayer.openPlayer();
+    emit(AudioFillerInitial());
   }
 
   Future<void> _onStartRecording(StartRecording event, Emitter<AudioFillerState> emit) async {
     try {
-      await _myRecorder.openRecorder();
       await _myRecorder.startRecorder(codec: Codec.defaultCodec, toFile: 'voice');
       emit(AudioFillerRecording());
     } catch (e) {
@@ -36,17 +42,20 @@ class AudioFillerBloc extends Bloc<AudioFillerEvent, AudioFillerState> {
 
   Future<void> _onStopRecording(StopRecording event, Emitter<AudioFillerState> emit) async {
     try {
-      String? path = await _myRecorder.stopRecorder();
-      XFile file;
+      XFile? file;
       PlatformFile? audioFile;
-      _myRecorder.getRecordURL(path: 'voice').then((value) async {
-        file = XFile(value!);
-         audioFile = PlatformFile(
-            path: value, name: "Recorded_Audio.mp3", size: await file.length(), bytes: await file.readAsBytes());
-
-        emit(AudioFillerStoppedRecording(audioData: _audioData!, audioFile: audioFile!));
-      });
-
+      Uint8List? audioData;
+      await _myRecorder.stopRecorder();
+      final value = await _myRecorder.getRecordURL(path: 'voice');
+      file = XFile(value!);
+      audioData = await file.readAsBytes();
+      audioFile = PlatformFile(
+        path: value,
+        name: "audio.mp3",
+        size: await file.length(),
+        bytes: audioData,
+      );
+      emit(AudioFillerStoppedRecording(audioData: audioData, audioFile: audioFile));
     } catch (e) {
       _logger.e('Error stopping recorder: $e');
       emit(AudioFillerError('Failed to stop recording'));
@@ -54,25 +63,36 @@ class AudioFillerBloc extends Bloc<AudioFillerEvent, AudioFillerState> {
   }
 
   Future<void> _onStartPlaying(StartPlaying event, Emitter<AudioFillerState> emit) async {
-    if (_audioData != null) {
-      try {
-        await _myPlayer.startPlayer(
-          fromDataBuffer: _audioData!,
-          codec: Codec.defaultCodec,
-          whenFinished: () {
-            add(StopPlaying());
-          },
-        );
-        emit(AudioFillerPlaying());
-      } catch (e) {
-        _logger.e('Error starting player: $e');
-        emit(AudioFillerError('Failed to play audio'));
-      }
+    try {
+      await _myPlayer.startPlayer(
+        fromDataBuffer: (state as AudioFillerStoppedRecording).audioData,
+        codec: Codec.defaultCodec,
+        whenFinished: () {
+          add(StopPlaying());
+        },
+      );
+      emit(AudioFillerPlaying(
+        audioData: (state as AudioFillerStoppedRecording).audioData,
+        audioFile: (state as AudioFillerStoppedRecording).audioFile,
+      ));
+    } catch (e) {
+      _logger.e('Error starting player: $e');
+      emit(AudioFillerError('Failed to play audio'));
     }
   }
 
   Future<void> _onStopPlaying(StopPlaying event, Emitter<AudioFillerState> emit) async {
     await _myPlayer.stopPlayer();
-    emit(AudioFillerStoppedPlaying());
+    emit(AudioFillerStoppedRecording(
+      audioData: (state as AudioFillerPlaying).audioData,
+      audioFile: (state as AudioFillerPlaying).audioFile,
+    ));
+  }
+
+  Future<void> _onResetAudioFiller(ResetAudioFiller event, Emitter<AudioFillerState> emit) async {
+    emit(AudioFillerLoading());
+    await _myRecorder.closeRecorder();
+    await _myRecorder.openRecorder();
+    emit(AudioFillerInitial());
   }
 }
