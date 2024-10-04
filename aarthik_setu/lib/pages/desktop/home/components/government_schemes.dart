@@ -1,4 +1,5 @@
 import 'package:aarthik_setu/constants/colors.dart';
+import 'package:aarthik_setu/pages/desktop/home/components/scheme_info_popup.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_svg/svg.dart';
@@ -23,17 +24,14 @@ class _GovernmentSchemesFinderState extends State<GovernmentSchemesFinder> {
 
   bool _isUsingGenAI = false;
   bool _isTransitioning = false;
+  bool _isGettingGenAIResponse = false;
 
   @override
   void initState() {
     super.initState();
-
-    // Add listener to the paging controller to handle page requests
     _pagingController.addPageRequestListener((pageKey) {
       _fetchPage(pageKey, RepositoryProvider.of<GovernmentSchemesRepository>(context));
     });
-
-    // Add listener to the search controller to trigger refresh on search query change
     _schemesSearchController.addListener(_onSearchChanged);
   }
 
@@ -45,12 +43,11 @@ class _GovernmentSchemesFinderState extends State<GovernmentSchemesFinder> {
     super.dispose();
   }
 
-  // Trigger paging controller refresh on search query change
   void _onSearchChanged() {
     _pagingController.refresh();
+    return;
   }
 
-  // Fetch page function with filtering based on search query
   Future<void> _fetchPage(int pageKey, GovernmentSchemesRepository governmentSchemesRepository) async {
     try {
       final newItems = await governmentSchemesRepository.getSchemes(page: pageKey, limit: _pageSize);
@@ -129,6 +126,7 @@ class _GovernmentSchemesFinderState extends State<GovernmentSchemesFinder> {
                                       child: IconButton(
                                         onPressed: () {
                                           setState(() {
+                                            _schemesSearchController.clear();
                                             _isUsingGenAI = false;
                                             _isTransitioning = true;
                                           });
@@ -146,10 +144,16 @@ class _GovernmentSchemesFinderState extends State<GovernmentSchemesFinder> {
                                       height: 50,
                                       child: FilledButton.tonal(
                                         onPressed: () async {
+                                          setState(() {
+                                            _isGettingGenAIResponse = true;
+                                          });
                                           final GovernmentSchemesRepository governmentSchemesRepository =
                                               RepositoryProvider.of<GovernmentSchemesRepository>(context);
                                           final String response =
                                               await governmentSchemesRepository.genAiResponse(_genAIController.text);
+                                          setState(() {
+                                            _isGettingGenAIResponse = false;
+                                          });
                                           if (context.mounted) {
                                             showDialog(
                                                 context: context,
@@ -187,9 +191,24 @@ class _GovernmentSchemesFinderState extends State<GovernmentSchemesFinder> {
                                           backgroundColor:
                                               WidgetStateProperty.all(AppColors.primaryColorOne.withOpacity(0.8)),
                                         ),
-                                        child: Text(
-                                          'Search',
-                                          style: GoogleFonts.poppins(fontSize: 20, color: Colors.white),
+                                        child: Row(
+                                          children: [
+                                            Text(
+                                              'Search',
+                                              style: GoogleFonts.poppins(fontSize: 20, color: Colors.white),
+                                            ),
+                                            if (_isGettingGenAIResponse) ...[
+                                              SizedBox(width: 10),
+                                              SizedBox(
+                                                height: 20,
+                                                width: 20,
+                                                child: CircularProgressIndicator(
+                                                  strokeWidth: 2,
+                                                  valueColor: AlwaysStoppedAnimation<Color>(Colors.white),
+                                                ),
+                                              ),
+                                            ]
+                                          ],
                                         ),
                                       ),
                                     ),
@@ -212,6 +231,7 @@ class _GovernmentSchemesFinderState extends State<GovernmentSchemesFinder> {
                         RawMaterialButton(
                           onPressed: () {
                             setState(() {
+                              _genAIController.clear();
                               _isUsingGenAI = true;
                               _isTransitioning = true;
                             });
@@ -263,7 +283,9 @@ class _GovernmentSchemesFinderState extends State<GovernmentSchemesFinder> {
               itemBuilder: (context, item, index) => Container(
                 margin: const EdgeInsets.all(30),
                 child: FilledButton.tonal(
-                  onPressed: () {},
+                  onPressed: () {
+                    showDialog(context: context, builder: (context) => SchemeInfoPopup(governmentScheme: item));
+                  },
                   style: ButtonStyle(
                     backgroundColor: WidgetStateProperty.all(AppColors.primaryColorTwo.withOpacity(0.3)),
                     shape: WidgetStateProperty.all<RoundedRectangleBorder>(
