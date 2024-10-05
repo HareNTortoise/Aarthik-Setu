@@ -2,6 +2,7 @@ import 'package:aarthik_setu/pages/mobile/auth/components/phone_number_form.dart
 import 'package:aarthik_setu/pages/mobile/auth/components/sign_in_options.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:flutter_svg/svg.dart';
 import 'package:go_router/go_router.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:responsive_framework/responsive_framework.dart';
@@ -17,7 +18,6 @@ class SignInMobile extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final localizations = AppLocalizations.of(context);
     return ResponsiveScaledBox(
       width: AppConstants.mobileScaleWidth,
       child: BlocListener<AuthBloc, AuthState>(
@@ -44,13 +44,18 @@ class SignInMobile extends StatelessWidget {
                           alignment: Alignment.centerLeft,
                           child: const LanguageDropdown(),
                         ),
-                        const SizedBox(height: 120),
+                        const SizedBox(height: 80),
+                        SvgPicture.asset(
+                          'lib/assets/logo.svg',
+                          width: 100,
+                          height: 100,
+                        ),
                         Text(
                           AppLocalizations.of(context)!.appTitle,
                           style: GoogleFonts.poppins(fontSize: 55),
                           textAlign: TextAlign.center,
                         ),
-                        const SizedBox(height: 80),
+                        const SizedBox(height: 50),
                         BlocBuilder<PhoneFormCubit, PhoneFormState>(
                           builder: (context, state) {
                             return Container(

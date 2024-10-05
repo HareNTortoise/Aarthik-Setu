@@ -124,4 +124,6 @@ flutter:
     - lib/assets/google.svg
     - lib/assets/phone_sms.svg
     - lib/assets/gemini.svg
+    - lib/assets/logo.svg
+    - lib/assets/web banner.png
 

@@ -6,6 +6,7 @@ import 'package:aarthik_setu/pages/desktop/auth/components/phone_number_form.dar
 import 'package:aarthik_setu/pages/desktop/auth/components/sign_in_options.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:flutter_svg/svg.dart';
 import 'package:go_router/go_router.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:responsive_framework/responsive_framework.dart';
@@ -36,16 +37,24 @@ class SignInDesktop extends StatelessWidget {
                   children: [
                     Expanded(
                       flex: 1,
-                      child: Center(
-                        child: Builder(
-                          builder: (context) {
-                            return Text(
-                              AppLocalizations.of(context)!.appTitle,
-                              style: GoogleFonts.jost(fontSize: 120, fontWeight: FontWeight.w400),
-                              textAlign: TextAlign.center,
-                            );
-                          }
-                        ),
+                      child: Builder(
+                        builder: (context) {
+                          return Column(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: [
+                              SvgPicture.asset(
+                                'lib/assets/logo.svg',
+                                width: 220,
+                                height: 220,
+                              ),
+                              Text(
+                                AppLocalizations.of(context)!.appTitle,
+                                style: GoogleFonts.jost(fontSize: 145, fontWeight: FontWeight.w400),
+                                textAlign: TextAlign.center,
+                              ),
+                            ],
+                          );
+                        }
                       ),
                     ),
                     Expanded(
