@@ -52,7 +52,7 @@ func GetBankStatementDetails(c *gin.Context) {
 
 	model := client.GenerativeModel("gemini-1.5-flash")
 
-	promptTemplate := prompts.GetBankStatementPrompt
+	promptTemplate := prompts.GenerateBankStatementPrompt()
 
 	extractionPrompt := []genai.Part{
 		genai.Blob{MIMEType: "application/pdf", Data: bytes},

@@ -64,7 +64,8 @@ func ChatbotResponse(userInput string) (string, error) {
 	}
 
 	// Construct the full prompt
-	fullPrompt := prompts.ChatbotPrePrompt + "\n\nUser: " + userInput
+	prePrompt := prompts.GenerateChatbotPrompt()
+	fullPrompt := prePrompt + "\n\nUser: " + userInput
 	log.Printf("DEBUG: Full prompt constructed: %s", fullPrompt)
 
 	// Generate content
