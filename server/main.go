@@ -2,6 +2,7 @@ package main
 
 import (
 	"log"
+	"os"
 	chat "server/routes/chatbot"
 	business_forms "server/routes/forms/business_forms"
 	gen_ai "server/routes/forms/gen_ai"
@@ -9,6 +10,7 @@ import (
 	info_extraction "server/routes/info_extraction"
 	profile_applications "server/routes/profile_applications"
 	schemes "server/routes/schemes"
+
 	"github.com/gin-contrib/cors"
 	"github.com/gin-gonic/gin"
 	"github.com/joho/godotenv"
@@ -20,6 +22,13 @@ func main() {
 	if err != nil {
 		log.Fatal("Error loading .env file")
 	}
+
+	// Set Gin mode based on environment variable
+	mode := os.Getenv("GIN_MODE")
+	if mode == "" {
+		mode = gin.DebugMode // Default to debug mode if GIN_MODE is not set
+	}
+	gin.SetMode(mode)
 
 	// Create a new router instance
 	router := gin.Default()
@@ -76,8 +85,9 @@ func main() {
 	chat.SetupRoutes(router)
 
 	// Start the HTTP server
-	log.Println("Starting server on :8080")
-	if err := router.Run(":8080"); err != nil {
+	port := ":8080"
+	log.Printf("Starting server on %s", port)
+	if err := router.Run(port); err != nil {
 		log.Fatalf("Failed to start server: %v", err)
 	}
 }
