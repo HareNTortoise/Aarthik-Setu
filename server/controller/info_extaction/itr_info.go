@@ -13,6 +13,7 @@ import (
 	"google.golang.org/api/option"
 	utils "server/config/firebase"
 	"cloud.google.com/go/firestore"
+	prompts "server/prompts"
 )
 var db_client *firestore.Client
 func init(){
@@ -50,16 +51,7 @@ func GetITRDetails(c *gin.Context) {
 
 	model := client.GenerativeModel("gemini-1.5-flash")
 
-	promptTemplate := fmt.Sprintf(`Extract below metrics from the Income Tax Return in Json format (json):
-						- Revenue (Turnover)
-						- Profit before tax
-						- Profit after tax
-						- Total Current liabilities
-						- Total Cash and cash equivalents
-						- Total Long term borrowings
-						- Total Trade receivables
-						- Total Inventories
-						- Tax Paid/Deferred Tax`)
+	promptTemplate := prompts.GetITRInfoPrompt
 
 	extractionPrompt := []genai.Part{
 		genai.Blob{MIMEType: "application/pdf", Data: bytes},

@@ -3,7 +3,7 @@ package chatbot
 import (
 	"github.com/gin-gonic/gin"
 
-	chatbot "server/controller"
+	chatbot "server/controller/chatbot"
 )
 
 func SetupRoutes(r *gin.Engine) {

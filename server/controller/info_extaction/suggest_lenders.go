@@ -12,6 +12,7 @@ import (
 	"github.com/google/generative-ai-go/genai"
 	"google.golang.org/api/option"
 	utils "server/config/firebase"
+	prompts "server/prompts"
 	// "cloud.google.com/go/firestore"
 	// "strings"
 	// "time"
@@ -112,11 +113,13 @@ func SuggestLenders(c *gin.Context) {
 	}
 
 	// Create the prompt
-	promptTemplate := fmt.Sprintf(`Based on the following information:
-	- Bank Details: %v
-	- ITR Info: %v
-	- Loan Application: %v
-	Analyze and suggest the top 10 most suitable loan lenders for the seeker from the lenders listed in this text file. Provide the list of lenders in JSON format. Dont give any text in the form of explanation along with the json`, bankDetails, itrInfo, loanApplication)
+	// promptTemplate := fmt.Sprintf(`Based on the following information:
+	// - Bank Details: %v
+	// - ITR Info: %v
+	// - Loan Application: %v
+	// Analyze and suggest the top 10 most suitable loan lenders for the seeker from the lenders listed in this text file. Provide the list of lenders in JSON format. Dont give any text in the form of explanation along with the json`, bankDetails, itrInfo, loanApplication)
+
+	promptTemplate := prompts.GenerateLenderPrompt(bankDetails, itrInfo, loanApplication)
 
 	client, err := genai.NewClient(ctx, option.WithAPIKey(os.Getenv("GEMINI_API_KEY")))
 	if err != nil {

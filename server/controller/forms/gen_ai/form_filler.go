@@ -8,10 +8,10 @@ import (
 	"os"
 	"regexp"
 	"strings"
-
 	"github.com/gin-gonic/gin"
 	"github.com/google/generative-ai-go/genai"
 	"google.golang.org/api/option"
+	prompts "server/prompts"
 )
 
 func getMimeType(fileName string) string {
@@ -73,8 +73,7 @@ func AudioFormFiller(c *gin.Context) {
 
 	fields := c.PostForm("formFields")
 
-	promptTemplate := fmt.Sprintf("Extract the following information from the audio file:\n%s\n\nPlease analyze the audio and provide the details in json in name:value format only where the 'name' attribute is exactly the name of the form field provided in above json in camelcase. The extracted 'value' attribute should be in English Only, regardless of the language spoken in the audio. Return empty json if audio is not given or the audio does not contain related information.",
-		fields)
+	promptTemplate := prompts.GenerateAudioPrompt(fields)
 
 	mimeType := getMimeType(audioFile.Filename)
 	extractionPrompt := []genai.Part{

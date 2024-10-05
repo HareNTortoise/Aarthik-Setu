@@ -1,23 +1,10 @@
-package model
+package prompts
 
-import (
-	"context"
-	"encoding/json"
-	"errors"
-	"log"
-	"os"
-
-	"github.com/google/generative-ai-go/genai"
-	"github.com/joho/godotenv"
-	"google.golang.org/api/option"
+import(
+	"fmt"
 )
 
-var (
-	client *genai.Client
-	model  *genai.GenerativeModel
-)
-
-const preprompt = `
+var ChatbotPrePrompt = `
 You are an AI assistant for AarthikSetu, a GenAI-powered financial literacy and credit access platform. AarthikSetu is focused on revolutionizing credit access for underserved Micro, Small, and Medium Enterprises (MSMEs). Your role is to empower users by providing helpful information about credit options, personal finance, financial literacy, budgeting, and other financial topics. You are also here to guide users in understanding government schemes and accessing tools for financial management. Always provide insightful, easy-to-understand, and responsible guidance while encouraging sound financial practices.
 
 Role Summary:
@@ -86,103 +73,80 @@ Phrasing Examples:
 
 Use phrases like:
 "As an MSME owner, you can use AarthikSetu to compare loan offers, apply for credit, and get AI-powered suggestions to enhance creditworthiness."
-"AarthikSetu’s AI tools provide general credit assessments based on your financial data. It is advisable to consult a certified advisor for more specific recommendations."
+"AarthikSetu's AI tools provide general credit assessments based on your financial data. It is advisable to consult a certified advisor for more specific recommendations."
 "Our platform supports you in understanding various financing opportunities and improving financial literacy, which is crucial for making informed business decisions."
 End Goal: Your goal is to facilitate financial inclusion by making credit more accessible to underserved MSMEs. You serve as a bridge ("Setu") between small businesses and the financial ecosystem, helping users understand and leverage available financial tools and resources, empowering them to manage and grow their businesses effectively.
 
 
 `
 
-// InitializeModel initializes the AI model with the API key from environment variables
-func InitializeModel() error {
-	// Load environment variables from .env file
-	err := godotenv.Load()
-	if err != nil {
-		log.Println("DEBUG: Error loading .env file")
-		return errors.New("error loading .env file")
-	}
 
-	// Fetch API key from environment variable
-	apiKey := os.Getenv("GEMINI_API_KEY")
-	if apiKey == "" {
-		log.Println("DEBUG: GEMINI_API_KEY is not set")
-		return errors.New("GEMINI_API_KEY environment variable is not set")
-	}
-	log.Println("DEBUG: GEMINI_API_KEY successfully retrieved")
+func GenerateAudioPrompt(fields string) string {
+	return fmt.Sprintf(`Extract the following information from the audio file:
+%s
 
-	// Initialize the AI client
-	client, err = genai.NewClient(context.Background(), option.WithAPIKey(apiKey))
-	if err != nil {
-		log.Printf("DEBUG: Error creating genai client: %s", err.Error())
-		return errors.New("failed to create genai client: " + err.Error())
-	}
-	log.Println("DEBUG: Genai client initialized")
-
-	// Set up the generative model
-	model = client.GenerativeModel("gemini-pro")
-	if model == nil {
-		log.Println("DEBUG: Generative model initialization failed: model is nil")
-		return errors.New("failed to initialize generative model: model is nil")
-	}
-	log.Println("DEBUG: Generative model initialized successfully")
-
-	return nil
+Please analyze the audio and provide the details in json in name:value format only where the 'name' attribute is exactly the name of the form field provided in above json in camelcase. The extracted 'value' attribute should be in English Only, regardless of the language spoken in the audio. Return empty json if audio is not given or the audio does not contain related information.`,
+		fields)
 }
 
-// ChatbotResponse generates a chatbot response for the user's input and returns it as a JSON string
-func ChatbotResponse(userInput string) (string, error) {
-	if model == nil {
-		log.Println("DEBUG: Model not initialized")
-		return "", errors.New("model not initialized")
-	}
 
-	// Construct the full prompt
-	fullPrompt := preprompt + "\n\nUser: " + userInput
-	log.Printf("DEBUG: Full prompt constructed: %s", fullPrompt)
+var GetITRInfoPrompt = fmt.Sprintf(`Extract below metrics from the Income Tax Return in Json format (json):
+						- Revenue (Turnover)
+						- Profit before tax
+						- Profit after tax
+						- Total Current liabilities
+						- Total Cash and cash equivalents
+						- Total Long term borrowings
+						- Total Trade receivables
+						- Total Inventories
+						- Tax Paid/Deferred Tax`)
 
-	// Generate content
-	resp, err := model.GenerateContent(context.Background(), genai.Text(fullPrompt))
-	if err != nil {
-		log.Printf("DEBUG: Failed to generate content: %s", err.Error())
-		return "", errors.New("failed to generate content: " + err.Error())
-	}
-	log.Println("DEBUG: Content generation successful")
+var GetBankStatementPrompt =fmt.Sprintf(`Analyze the given bank statement and rate it based on the following factors: 
+								1. Average Balance 
+								2. Deposit Frequency 
+								3. Deposit Amount 
+								4. Withdrawal Amount 
+								5. Withdrawal Frequency 
+								6. Closing Balance 
 
-	if len(resp.Candidates) == 0 {
-		log.Println("DEBUG: No response candidates generated")
-		return "", errors.New("no response generated")
-	}
+								For each factor, provide:
+								- A rating from 1 to 5 (1 being the lowest and 5 being the highest)
+								- A justification for the rating
 
-	candidate := resp.Candidates[0]
-	if candidate.Content == nil {
-		log.Println("DEBUG: Response content is nil")
-		return "", errors.New("response content is nil")
-	}
-	log.Println("DEBUG: Response content received")
+								Return the result in JSON format where each justification is tied to the respective factor, like so:
+								{
+								"Average Balance": {
+									"Rating": <rating>,
+									"Justification": "<justification>"
+								},
+								"Deposit Frequency": {
+									"Rating": <rating>,
+									"Justification": "<justification>"
+								},
+								"Deposit Amount": {
+									"Rating": <rating>,
+									"Justification": "<justification>"
+								},
+								...
+								}`)
 
-	// Collect the response text from the model's output
-	var responseText string
-	for _, part := range candidate.Content.Parts {
-		if textPart, ok := part.(genai.Text); ok {
-			responseText += string(textPart)
-		}
-	}
-	log.Printf("DEBUG: Generated response text: %s", responseText)
 
-	if responseText == "" {
-		log.Println("DEBUG: No text content in response")
-		return "", errors.New("no text content in response")
-	}
+func GenerateLenderPrompt(bankDetails, itrInfo, loanApplication map[string]interface{}) string {
+	return fmt.Sprintf(`Based on the following information:
+	- Bank Details: %v
+	- ITR Info: %v
+	- Loan Application: %v
+	Analyze and suggest the top 10 most suitable loan lenders for the seeker from the lenders listed in this text file. Provide the list of lenders in JSON format. Dont give any text in the form of explanation along with the json`, bankDetails, itrInfo, loanApplication)
+}
 
-	// Prepare response as JSON
-	responseJSON, err := json.Marshal(map[string]string{
-		"response": responseText,
-	})
-	if err != nil {
-		log.Printf("DEBUG: Failed to marshal response to JSON: %s", err.Error())
-		return "", errors.New("failed to marshal response to JSON: " + err.Error())
-	}
+func GenerateFinancialAdvisorPrompt(query, context string) string {
+	return fmt.Sprintf(`You are a financial advisor who has information from a document publically available, issued by the government of India. 
+	Give response in a professional manner and don't begin with the statements like "as a financial advisor...". Make sure to give the response in simple text/string 
+	without any markdown formatting.
 
-	log.Println("DEBUG: Response JSON marshaled successfully")
-	return string(responseJSON), nil
+	Context: %s
+
+	Question: %s
+
+	Answer:`, context, query)
 }

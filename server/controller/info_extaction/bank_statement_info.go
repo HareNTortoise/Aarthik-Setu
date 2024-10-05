@@ -13,7 +13,7 @@ import (
 	"google.golang.org/api/option"
 	utils "server/config/firebase"
 	"time"
-	// "regexp"
+	prompts "server/prompts"
 )
 
 // var db_client *firestore.Client
@@ -52,34 +52,7 @@ func GetBankStatementDetails(c *gin.Context) {
 
 	model := client.GenerativeModel("gemini-1.5-flash")
 
-	promptTemplate := fmt.Sprintf(`Analyze the given bank statement and rate it based on the following factors: 
-1. Average Balance 
-2. Deposit Frequency 
-3. Deposit Amount 
-4. Withdrawal Amount 
-5. Withdrawal Frequency 
-6. Closing Balance 
-
-For each factor, provide:
-- A rating from 1 to 5 (1 being the lowest and 5 being the highest)
-- A justification for the rating
-
-Return the result in JSON format where each justification is tied to the respective factor, like so:
-{
-  "Average Balance": {
-    "Rating": <rating>,
-    "Justification": "<justification>"
-  },
-  "Deposit Frequency": {
-    "Rating": <rating>,
-    "Justification": "<justification>"
-  },
-  "Deposit Amount": {
-    "Rating": <rating>,
-    "Justification": "<justification>"
-  },
-  ...
-}`)
+	promptTemplate := prompts.GetBankStatementPrompt
 
 	extractionPrompt := []genai.Part{
 		genai.Blob{MIMEType: "application/pdf", Data: bytes},
