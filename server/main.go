@@ -1,8 +1,11 @@
 package main
 
 import (
+	"context"
 	"log"
+	"net/http"
 	"os"
+	"os/signal"
 	chat "server/routes/chatbot"
 	business_forms "server/routes/forms/business_forms"
 	gen_ai "server/routes/forms/gen_ai"
@@ -10,17 +13,21 @@ import (
 	info_extraction "server/routes/info_extraction"
 	profile_applications "server/routes/profile_applications"
 	schemes "server/routes/schemes"
+	"time"
 
 	"github.com/gin-contrib/cors"
 	"github.com/gin-gonic/gin"
 	"github.com/joho/godotenv"
 )
 
+const (
+	StatusOK = 200
+)
+
 func main() {
 	// Load .env file
-	err := godotenv.Load()
-	if err != nil {
-		log.Fatal("Error loading .env file")
+	if err := godotenv.Load(); err != nil {
+		log.Fatalf("Error loading .env file: %v", err)
 	}
 
 	// Set Gin mode based on environment variable
@@ -33,23 +40,55 @@ func main() {
 	// Create a new router instance
 	router := gin.Default()
 
-	// Apply CORS middleware
+	// Apply middlewares
+	applyMiddlewares(router)
+
+	// Register routes
+	registerRoutes(router)
+
+	// Start the HTTP server with graceful shutdown
+	startServer(router)
+}
+
+// Apply middlewares to the router
+func applyMiddlewares(router *gin.Engine) {
+	// Apply CORS middleware with origins from environment variable
+	corsOrigins := os.Getenv("CORS_ORIGINS")
+	if corsOrigins == "" {
+		corsOrigins = "*" // Default to allow all origins
+	}
 	router.Use(cors.New(cors.Config{
-		AllowOrigins:     []string{"*"}, // Add your frontend's URL here
+		AllowOrigins:     []string{corsOrigins},
 		AllowMethods:     []string{"GET", "POST", "PUT", "DELETE"},
 		AllowHeaders:     []string{"Origin", "Content-Type", "Authorization"},
 		AllowCredentials: true,
 	}))
 
-	// Register personal form routes
+	// Apply request logging middleware
+	router.Use(gin.Logger())
+}
+
+// Register all routes to the router
+func registerRoutes(router *gin.Engine) {
+	// Health check endpoint
 	router.GET("/ping", func(c *gin.Context) {
-		// Respond with "pong"
-		c.JSON(200, gin.H{
+		c.JSON(StatusOK, gin.H{
 			"message": "pong",
 		})
 	})
 
-	// Register ITR form routes
+	// Register route groups
+	registerPersonalRoutes(router)
+	registerBusinessRoutes(router)
+	registerProfileRoutes(router)
+	registerGenAIRoutes(router)
+	registerInfoExtractionRoutes(router)
+	registerSchemesRoutes(router)
+	registerChatRoutes(router)
+}
+
+// Register personal form routes
+func registerPersonalRoutes(router *gin.Engine) {
 	personal_forms.RegisterPersonalITRRoutes(router)
 	personal_forms.RegisterPersonalITRPDFRoutes(router)
 	personal_forms.RegisterPersonalBankDetails(router)
@@ -58,36 +97,82 @@ func main() {
 	personal_forms.RegisterPersonalContactDetails(router)
 	personal_forms.RegisterPersonalCreditInfo(router)
 	personal_forms.RegisterPersonalLoanForm(router)
+}
 
-	// Register business form routes
+// Register business form routes
+func registerBusinessRoutes(router *gin.Engine) {
 	business_forms.RegisterBusinessITRPDFRoutes(router)
 	business_forms.RegisterBusinessBankDetails(router)
 	business_forms.RegisterBusinessLoanForm(router)
 	business_forms.RegisterGSTDetails(router)
 	business_forms.RegisterGSTBusinessDetails(router)
 	business_forms.RegisterStakeholdersDetails(router)
+}
 
-	//Registed GenAI routes
-	gen_ai.GenAIFormRoutes(router)
-	info_extraction.RegisterITRInfoExtractionRoutes(router)
-	info_extraction.RegisterBankStatementInfoExtractionRoutes(router)
-	info_extraction.RegisterSuggestLenders(router)
-
-	// Register profile routes
+// Register profile application routes
+func registerProfileRoutes(router *gin.Engine) {
 	profile_applications.RegisterPersonalProfileRoutes(router)
 	profile_applications.RegisterBusinessProfileRoutes(router)
 	profile_applications.RegisterBusinessApplicationsRoutes(router)
 	profile_applications.RegisterPersonalApplicationsRoutes(router)
+}
 
-	//govt schemes routes
-	// govt_schemes.RegisterGovtSchemesRoutes(router)
+// Register GenAI routes
+func registerGenAIRoutes(router *gin.Engine) {
+	gen_ai.GenAIFormRoutes(router)
+}
+
+// Register information extraction routes
+func registerInfoExtractionRoutes(router *gin.Engine) {
+	info_extraction.RegisterITRInfoExtractionRoutes(router)
+	info_extraction.RegisterBankStatementInfoExtractionRoutes(router)
+	info_extraction.RegisterSuggestLenders(router)
+}
+
+// Register government schemes routes
+func registerSchemesRoutes(router *gin.Engine) {
 	schemes.RegisterPublicSchemesInfoRoutes(router)
-	chat.SetupRoutes(router)
+}
 
-	// Start the HTTP server
-	port := ":8080"
-	log.Printf("Starting server on %s", port)
-	if err := router.Run(port); err != nil {
-		log.Fatalf("Failed to start server: %v", err)
+// Register chat routes
+func registerChatRoutes(router *gin.Engine) {
+	chat.SetupRoutes(router)
+}
+
+// Start the HTTP server with graceful shutdown
+func startServer(router *gin.Engine) {
+	port := os.Getenv("PORT")
+	if port == "" {
+		port = "8080" // Default to 8080 if not specified
 	}
+
+	server := &http.Server{
+		Addr:    ":" + port,
+		Handler: router,
+	}
+
+	// Start server in a goroutine
+	go func() {
+		log.Printf("Starting server on port %s", port)
+		if err := server.ListenAndServe(); err != nil && err != http.ErrServerClosed {
+			log.Fatalf("Failed to start server: %v", err)
+		}
+	}()
+
+	// Wait for interrupt signal to gracefully shut down the server
+	quit := make(chan os.Signal, 1)
+	signal.Notify(quit, os.Interrupt)
+
+	<-quit
+	log.Println("Shutting down server...")
+
+	// Gracefully shutdown the server, waiting for ongoing processes to complete
+	ctx, cancel := context.WithTimeout(context.Background(), 5*time.Second)
+	defer cancel()
+
+	if err := server.Shutdown(ctx); err != nil {
+		log.Fatalf("Server forced to shutdown: %v", err)
+	}
+
+	log.Println("Server exiting")
 }
