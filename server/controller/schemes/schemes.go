@@ -7,20 +7,25 @@ import (
 	"log"
 	"net/http"
 	"os"
-	"strings"
 	"path/filepath"
+	"strconv"
+	"strings"
+
+	schemes_model "server/models/schemes"
+	prompts "server/prompts"
+
 	"github.com/gin-gonic/gin"
 	"github.com/go-resty/resty/v2"
 	"github.com/pinecone-io/go-pinecone/pinecone"
-	"strconv"
-	schemes_model "server/models/schemes"
-	prompts "server/prompts"
 )
 
-
-
+// EmbedQuery embeds the given query using the Gemini API
 func embedQuery(query string) (map[string]interface{}, error) {
 	GEMINI_API_KEY := os.Getenv("GEMINI_API_KEY")
+	if GEMINI_API_KEY == "" {
+		return nil, fmt.Errorf("GEMINI_API_KEY environment variable not set")
+	}
+
 	client := resty.New()
 	requestBody := map[string]interface{}{
 		"model": "models/embedding-001",
@@ -42,16 +47,26 @@ func embedQuery(query string) (map[string]interface{}, error) {
 	}
 
 	// Check for successful response
-	if res.StatusCode() != 200 {
+	if res.StatusCode() != http.StatusOK {
 		return nil, fmt.Errorf("failed to embed query: %s", res.String())
 	}
 
 	var result map[string]interface{}
 	err = json.Unmarshal(res.Body(), &result)
-	return result, err
+	if err != nil {
+		return nil, fmt.Errorf("failed to parse embedding response: %v", err)
+	}
+
+	return result, nil
 }
 
-func generateAnswer(query string, context string) (string, error) {
+// GenerateAnswer generates an answer using the Gemini API
+func generateAnswer(query, context string) (string, error) {
+	GEMINI_API_KEY := os.Getenv("GEMINI_API_KEY")
+	if GEMINI_API_KEY == "" {
+		return "", fmt.Errorf("GEMINI_API_KEY environment variable not set")
+	}
+
 	client := resty.New()
 	prompt := prompts.GenerateFinancialAdvisorPrompt(query, context)
 	requestBody := map[string]interface{}{
@@ -63,7 +78,7 @@ func generateAnswer(query string, context string) (string, error) {
 			},
 		},
 	}
-	GEMINI_API_KEY := os.Getenv("GEMINI_API_KEY")
+
 	res, err := client.R().
 		SetQueryParam("key", GEMINI_API_KEY).
 		SetHeader("Content-Type", "application/json").
@@ -74,14 +89,14 @@ func generateAnswer(query string, context string) (string, error) {
 		return "", err
 	}
 
-	if res.StatusCode() != 200 {
+	if res.StatusCode() != http.StatusOK {
 		return "", fmt.Errorf("failed to generate answer: %s", res.String())
 	}
 
 	var result map[string]interface{}
 	err = json.Unmarshal(res.Body(), &result)
 	if err != nil {
-		return "", err
+		return "", fmt.Errorf("failed to parse generation response: %v", err)
 	}
 
 	candidates, ok := result["candidates"].([]interface{})
@@ -107,10 +122,12 @@ func generateAnswer(query string, context string) (string, error) {
 	return text, nil
 }
 
+// QueryRequest structure for holding the query from form data
 type QueryRequest struct {
-	Query string `json:"query"` // Field to hold the query from the JSON body
+	Query string `form:"query" binding:"required"`
 }
 
+// ProvideSchemeInfo handles scheme information queries
 func ProvideSchemeInfo(c *gin.Context) {
 	var reqBody QueryRequest
 
@@ -119,44 +136,55 @@ func ProvideSchemeInfo(c *gin.Context) {
 		c.JSON(http.StatusBadRequest, gin.H{"error": "Invalid form data"})
 		return
 	}
-
-	// Alternatively, if you are manually handling form data, you can do:
-	query := c.PostForm("query")
+	query := reqBody.Query
 
 	// Fetching environment variables
 	PINECONE_API_KEY := os.Getenv("PINECONE_API_KEY")
 	INDEX_NAME := os.Getenv("INDEX_NAME")
-	clientParams := pinecone.NewClientParams{
-		ApiKey: PINECONE_API_KEY,
+	if PINECONE_API_KEY == "" || INDEX_NAME == "" {
+		c.JSON(http.StatusInternalServerError, gin.H{"error": "Missing required environment variables"})
+		return
 	}
 
 	// Creating Pinecone client
+	clientParams := pinecone.NewClientParams{ApiKey: PINECONE_API_KEY}
 	pc, err := pinecone.NewClient(clientParams)
 	if err != nil {
-		log.Fatalf("Failed to create Client: %v", err)
+		log.Printf("Failed to create Pinecone client: %v", err)
+		c.JSON(http.StatusInternalServerError, gin.H{"error": "Internal server error"})
+		return
 	}
+
 	ctx := context.Background()
 
 	// Describe the index
 	idx, err := pc.DescribeIndex(ctx, INDEX_NAME)
 	if err != nil {
-		log.Fatalf("Failed to describe index \"%v\": %v", INDEX_NAME, err)
+		log.Printf("Failed to describe index \"%v\": %v", INDEX_NAME, err)
+		c.JSON(http.StatusInternalServerError, gin.H{"error": "Internal server error"})
+		return
 	}
 
 	// Embed the query
 	queryVector, err := embedQuery(query)
 	if err != nil {
-		log.Fatalf("Failed to embed query: %v", err)
+		log.Printf("Failed to embed query: %v", err)
+		c.JSON(http.StatusInternalServerError, gin.H{"error": "Failed to embed query"})
+		return
 	}
 	embeddingMap, ok := queryVector["embedding"].(map[string]interface{})
 	if !ok {
-		log.Fatalf("Failed to extract embedding from response")
+		log.Printf("Failed to extract embedding from response")
+		c.JSON(http.StatusInternalServerError, gin.H{"error": "Failed to extract embedding"})
+		return
 	}
 
 	// Extract the values from the embedding
 	values, ok := embeddingMap["values"].([]interface{})
 	if !ok {
-		log.Fatalf("Failed to extract values from embedding")
+		log.Printf("Failed to extract values from embedding")
+		c.JSON(http.StatusInternalServerError, gin.H{"error": "Failed to extract embedding values"})
+		return
 	}
 
 	// Convert values to a slice of float32
@@ -165,24 +193,30 @@ func ProvideSchemeInfo(c *gin.Context) {
 		if floatVal, ok := v.(float64); ok {
 			queryEmbedding = append(queryEmbedding, float32(floatVal))
 		} else {
-			log.Fatalf("Unexpected type for embedding value: %T", v)
+			log.Printf("Unexpected type for embedding value: %T", v)
+			c.JSON(http.StatusInternalServerError, gin.H{"error": "Invalid embedding value type"})
+			return
 		}
 	}
 
 	// Create an IndexConnection
 	idxConnection, err := pc.Index(pinecone.NewIndexConnParams{Host: idx.Host, Namespace: ""})
 	if err != nil {
-		log.Fatalf("Failed to create IndexConnection for Host %v: %v", idx.Host, err)
+		log.Printf("Failed to create IndexConnection for Host %v: %v", idx.Host, err)
+		c.JSON(http.StatusInternalServerError, gin.H{"error": "Internal server error"})
+		return
 	}
 
 	// Query by vector values
 	res, err := idxConnection.QueryByVectorValues(ctx, &pinecone.QueryByVectorValuesRequest{
-		Vector:        queryEmbedding, // Pass the actual embedding values here
+		Vector:        queryEmbedding,
 		TopK:          3,
 		IncludeValues: true,
 	})
 	if err != nil {
-		log.Fatalf("Error encountered when querying by vector: %v", err)
+		log.Printf("Error encountered when querying by vector: %v", err)
+		c.JSON(http.StatusInternalServerError, gin.H{"error": "Failed to query index"})
+		return
 	}
 
 	// Fetch and compile context texts
@@ -204,13 +238,14 @@ func ProvideSchemeInfo(c *gin.Context) {
 	// Generate the answer using the query and context
 	answer, err := generateAnswer(query, context)
 	if err != nil {
-		log.Fatalf("Failed to generate answer: %v", err)
+		log.Printf("Failed to generate answer: %v", err)
+		c.JSON(http.StatusInternalServerError, gin.H{"error": "Failed to generate answer"})
+		return
 	}
 
 	// Return the response as JSON
-	c.JSON(200, gin.H{"query": query, "answer": answer})
+	c.JSON(http.StatusOK, gin.H{"query": query, "answer": answer})
 }
-
 
 // LoadSchemes loads the schemes from the JSON file
 func LoadSchemes(filename string) ([]schemes_model.Scheme, error) {
@@ -218,19 +253,16 @@ func LoadSchemes(filename string) ([]schemes_model.Scheme, error) {
 
 	jsonData, err := os.ReadFile(filename)
 	if err != nil {
-		log.Printf("Failed to read file %s: %v", filename, err)
-		return nil, err
+		return nil, fmt.Errorf("failed to read file %s: %v", filename, err)
 	}
-	log.Printf("Successfully read data from %s", filename)
 
 	var schemes []schemes_model.Scheme
 	err = json.Unmarshal(jsonData, &schemes)
 	if err != nil {
-		log.Printf("Failed to unmarshal JSON data: %v", err)
-		return nil, err
+		return nil, fmt.Errorf("failed to unmarshal JSON data: %v", err)
 	}
-	log.Printf("Successfully loaded %d schemes", len(schemes))
 
+	log.Printf("Loaded %d schemes from file", len(schemes))
 	return schemes, nil
 }
 
