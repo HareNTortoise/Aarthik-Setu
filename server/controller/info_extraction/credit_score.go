@@ -6,6 +6,8 @@ import (
 	"fmt"
 	"net/http"
 	"os"
+	"strconv"
+	"strings"
 
 	models "server/models/credit_score" // Adjust with your actual module path
 
@@ -123,11 +125,8 @@ func calculateCreditScore(profileId, applicationId string, request models.Credit
 	}
 	fmt.Printf("Calculated Bank Statement Score: %.2f\n", bankScore) // Debugging statement
 
-	taxScore := calculateTaxComplianceScore(itrInfo)
-	fmt.Printf("Calculated Tax Compliance Score: %.2f\n", taxScore) // Debugging statement
-
 	// Final credit score
-	finalCreditScore := itrScore + bankScore + taxScore
+	finalCreditScore := itrScore + bankScore
 	fmt.Printf("Final Credit Score: %.2f\n", finalCreditScore) // Debugging statement
 
 	// Prepare data for Gemini
@@ -179,43 +178,156 @@ func calculateCreditScore(profileId, applicationId string, request models.Credit
 	return finalCreditScore, recommendations, nil
 }
 
-// calculateITRScore calculates the score based on ITR information.
 func calculateITRScore(itrInfo map[string]interface{}) (float64, error) {
-	// Extract values from ITR JSON
-	revenue, ok := itrInfo["Revenue (Turnover)"].(float64)
+	// Debugging: Print the ITR Info map
+	fmt.Printf("ITR Info map: %+v\n", itrInfo["data"])
+
+	// Access the nested "data" map from itrInfo
+	data, ok := itrInfo["data"].(map[string]interface{})
 	if !ok {
+		return 0, fmt.Errorf("missing or invalid 'data' in ITR info")
+	}
+
+	// Helper function to remove commas and convert string to float
+	parseFloatWithCommas := func(s string) (float64, error) {
+		// Remove commas
+		s = strings.ReplaceAll(s, ",", "")
+		return strconv.ParseFloat(s, 64)
+	}
+
+	// Initialize variables to store extracted values
+	var revenue, pbt, pat, currentLiabilities, cashEquivalents, longTermBorrowings, tradeReceivables, inventory, taxPaid float64
+	var err error
+
+	// Extract "Turnover" from the nested "data" map
+	switch v := data["Turnover"].(type) {
+	case float64:
+		revenue = v
+	case string:
+		revenue, err = parseFloatWithCommas(v)
+		if err != nil {
+			return 0, fmt.Errorf("unable to parse Turnover: %v", err)
+		}
+	default:
 		return 0, fmt.Errorf("missing or invalid Revenue (Turnover)")
 	}
-	pbt, ok := itrInfo["Profit before tax"].(float64)
-	if !ok {
+
+	// Extract "Profit before tax"
+	switch v := data["Profit before tax"].(type) {
+	case float64:
+		pbt = v
+	case string:
+		pbt, err = parseFloatWithCommas(v)
+		if err != nil {
+			return 0, fmt.Errorf("unable to parse Profit before tax: %v", err)
+		}
+	case nil:
+		pbt = 0 // Handle nil value
+	default:
 		return 0, fmt.Errorf("missing or invalid Profit before tax")
 	}
-	pat, ok := itrInfo["Profit after tax"].(float64)
-	if !ok {
+
+	// Extract "Profit after tax"
+	switch v := data["Profit after tax"].(type) {
+	case float64:
+		pat = v
+	case string:
+		pat, err = parseFloatWithCommas(v)
+		if err != nil {
+			return 0, fmt.Errorf("unable to parse Profit after tax: %v", err)
+		}
+	case nil:
+		pat = 0 // Handle nil value
+	default:
 		return 0, fmt.Errorf("missing or invalid Profit after tax")
 	}
-	currentLiabilities, ok := itrInfo["Total Current liabilities"].(float64)
-	if !ok {
+
+	// Extract "Total Current liabilities"
+	switch v := data["Total Current liabilities"].(type) {
+	case float64:
+		currentLiabilities = v
+	case string:
+		currentLiabilities, err = parseFloatWithCommas(v)
+		if err != nil {
+			return 0, fmt.Errorf("unable to parse Total Current liabilities: %v", err)
+		}
+	case nil:
+		currentLiabilities = 0 // Handle nil value
+	default:
 		return 0, fmt.Errorf("missing or invalid Total Current liabilities")
 	}
-	cashEquivalents, ok := itrInfo["Total Cash and cash equivalents"].(float64)
-	if !ok {
+
+	// Extract "Total Cash and cash equivalents"
+	switch v := data["Total Cash and cash equivalents"].(type) {
+	case float64:
+		cashEquivalents = v
+	case string:
+		cashEquivalents, err = parseFloatWithCommas(v)
+		if err != nil {
+			return 0, fmt.Errorf("unable to parse Total Cash and cash equivalents: %v", err)
+		}
+	case nil:
+		cashEquivalents = 0 // Handle nil value
+	default:
 		return 0, fmt.Errorf("missing or invalid Total Cash and cash equivalents")
 	}
-	longTermBorrowings, ok := itrInfo["Total Long term borrowings"].(float64)
-	if !ok {
+
+	// Extract "Total Long term borrowings"
+	switch v := data["Total Long term borrowings"].(type) {
+	case float64:
+		longTermBorrowings = v
+	case string:
+		longTermBorrowings, err = parseFloatWithCommas(v)
+		if err != nil {
+			return 0, fmt.Errorf("unable to parse Total Long term borrowings: %v", err)
+		}
+	case nil:
+		longTermBorrowings = 0 // Handle nil value
+	default:
 		return 0, fmt.Errorf("missing or invalid Total Long term borrowings")
 	}
-	tradeReceivables, ok := itrInfo["Total Trade receivables"].(float64)
-	if !ok {
+
+	// Extract "Total Trade receivables"
+	switch v := data["Total Trade receivables"].(type) {
+	case float64:
+		tradeReceivables = v
+	case string:
+		tradeReceivables, err = parseFloatWithCommas(v)
+		if err != nil {
+			return 0, fmt.Errorf("unable to parse Total Trade receivables: %v", err)
+		}
+	case nil:
+		tradeReceivables = 0 // Handle nil value
+	default:
 		return 0, fmt.Errorf("missing or invalid Total Trade receivables")
 	}
-	inventory, ok := itrInfo["Total Inventories"].(float64)
-	if !ok {
+
+	// Extract "Total Inventories"
+	switch v := data["Total Inventories"].(type) {
+	case float64:
+		inventory = v
+	case string:
+		inventory, err = parseFloatWithCommas(v)
+		if err != nil {
+			return 0, fmt.Errorf("unable to parse Total Inventories: %v", err)
+		}
+	case nil:
+		inventory = 0 // Handle nil value
+	default:
 		return 0, fmt.Errorf("missing or invalid Total Inventories")
 	}
-	taxPaid, ok := itrInfo["Tax Paid/Deferred Tax"].(map[string]interface{})["Tax Paid"].(float64)
-	if !ok {
+
+	switch v := data["Tax Paid"].(type) {
+	case float64:
+		taxPaid = v
+	case string:
+		taxPaid, err = parseFloatWithCommas(v)
+		if err != nil {
+			return 0, fmt.Errorf("unable to parse Tax Paid: %v", err)
+		}
+	case nil:
+		taxPaid = 0 // Handle nil value
+	default:
 		return 0, fmt.Errorf("missing or invalid Tax Paid")
 	}
 
@@ -228,37 +340,56 @@ func calculateITRScore(itrInfo map[string]interface{}) (float64, error) {
 	return itrScore, nil
 }
 
-// calculateBankStatementScore calculates the score based on bank statement data.
+// calculateBankStatementScore calculates the score based on bank statement details.
 func calculateBankStatementScore(bankDetails map[string]interface{}) (float64, error) {
-	// Extract necessary values from bank details JSON
-	balance, ok := bankDetails["Balance"].(float64)
+	// Debugging: Print the structure of the bankDetails map
+	fmt.Printf("Bank Details map: %+v\n", bankDetails)
+
+	// Access the "data" map from bankDetails
+	data, ok := bankDetails["data"].(map[string]interface{})
 	if !ok {
-		return 0, fmt.Errorf("missing or invalid Balance")
-	}
-	income, ok := bankDetails["Income"].(float64)
-	if !ok {
-		return 0, fmt.Errorf("missing or invalid Income")
-	}
-	expenses, ok := bankDetails["Expenses"].(float64)
-	if !ok {
-		return 0, fmt.Errorf("missing or invalid Expenses")
+		return 0, fmt.Errorf("missing or invalid 'data' in Bank Details")
 	}
 
-	// Calculate bank statement score
-	bankScore := (balance*0.50 + income*0.25 - expenses*0.25) * 0.45
+	// Helper function to extract ratings from nested maps
+	getRating := func(item map[string]interface{}) (float64, error) {
+		rating, ok := item["Rating"].(float64)
+		if !ok {
+			return 0, fmt.Errorf("missing or invalid Rating")
+		}
+		return rating, nil
+	}
+
+	// Extract ratings for each field
+	averageBalanceMap, ok := data["Average Balance"].(map[string]interface{})
+	if !ok {
+		return 0, fmt.Errorf("missing or invalid 'Average Balance' data")
+	}
+	averageBalance, err := getRating(averageBalanceMap)
+	if err != nil {
+		return 0, err
+	}
+
+	incomeMap, ok := data["Deposit Amount"].(map[string]interface{})
+	if !ok {
+		return 0, fmt.Errorf("missing or invalid 'Deposit Amount' data")
+	}
+	income, err := getRating(incomeMap)
+	if err != nil {
+		return 0, err
+	}
+
+	expensesMap, ok := data["Withdrawal Amount"].(map[string]interface{})
+	if !ok {
+		return 0, fmt.Errorf("missing or invalid 'Withdrawal Amount' data")
+	}
+	expenses, err := getRating(expensesMap)
+	if err != nil {
+		return 0, err
+	}
+
+	// Calculate the bank statement score
+	bankScore := (averageBalance*0.50 + income*0.25 - expenses*0.25) * 0.45
 	fmt.Printf("Calculated Bank Statement Score: %.2f\n", bankScore) // Debugging statement
 	return bankScore, nil
-}
-
-// calculateTaxComplianceScore calculates the tax compliance score.
-func calculateTaxComplianceScore(itrInfo map[string]interface{}) float64 {
-	// Assume a basic calculation based on provided ITR info
-	taxComplianceScore := 0.0
-	if itrInfo["Tax Compliance"].(bool) {
-		taxComplianceScore = 100.0 // Full score for compliance
-	} else {
-		taxComplianceScore = 50.0 // Partial score for non-compliance
-	}
-	fmt.Printf("Calculated Tax Compliance Score: %.2f\n", taxComplianceScore) // Debugging statement
-	return taxComplianceScore
 }
