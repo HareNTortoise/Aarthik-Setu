@@ -334,7 +334,7 @@ func calculateITRScore(itrInfo map[string]interface{}) (float64, error) {
 	// Calculate the ITR score
 	itrScore := (revenue*0.20 + pbt*0.15 + pat*0.10 + currentLiabilities*0.10 +
 		cashEquivalents*0.05 + longTermBorrowings*0.10 + tradeReceivables*0.05 +
-		inventory*0.05 + taxPaid*0.05) * 0.55
+		inventory*0.05 + taxPaid*0.05)
 
 	fmt.Printf("Calculated ITR Score: %.2f\n", itrScore) // Debugging statement
 	return itrScore, nil
