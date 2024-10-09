@@ -64,9 +64,6 @@ func applyMiddlewares(router *gin.Engine) {
 		AllowHeaders:     []string{"Origin", "Content-Type", "Authorization"},
 		AllowCredentials: true,
 	}))
-
-	// Apply request logging middleware
-	router.Use(gin.Logger())
 }
 
 // Register all routes to the router
