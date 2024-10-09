@@ -2326,11 +2326,11 @@
 							"variable": [
 								{
 									"key": "profileId",
-									"value": "6d82be701c036191"
+									"value": "abcdefghi"
 								},
 								{
 									"key": "applicationId",
-									"value": "99e725ffb5a35bf2"
+									"value": "abcdefghi"
 								}
 							]
 						}
@@ -3035,6 +3035,39 @@
 							"port": "8080",
 							"path": [
 								"chat"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "lenders",
+			"item": [
+				{
+					"name": "Get lenders",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/lenders?page=1&limit=5",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"lenders"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "1"
+								},
+								{
+									"key": "limit",
+									"value": "5"
+								}
 							]
 						}
 					},
