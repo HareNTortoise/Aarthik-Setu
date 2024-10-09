@@ -2232,7 +2232,7 @@
 							"formdata": [
 								{
 									"key": "query",
-									"value": "Suggest best schemes",
+									"value": "Suggest best schemes for farmers",
 									"type": "text"
 								}
 							]
@@ -2271,14 +2271,26 @@
 							]
 						},
 						"url": {
-							"raw": "localhost:8080/gen_ai/get-bank-statement-details",
+							"raw": "localhost:8080/gen_ai/get-bank-statement-details/:profileId/:applicationId",
 							"host": [
 								"localhost"
 							],
 							"port": "8080",
 							"path": [
 								"gen_ai",
-								"get-bank-statement-details"
+								"get-bank-statement-details",
+								":profileId",
+								":applicationId"
+							],
+							"variable": [
+								{
+									"key": "profileId",
+									"value": "123"
+								},
+								{
+									"key": "applicationId",
+									"value": "abc"
+								}
 							]
 						}
 					},
@@ -2295,7 +2307,7 @@
 								{
 									"key": "file",
 									"type": "file",
-									"src": "/E:/Downloads/itr ba fab.pdf"
+									"src": "postman-cloud:///1ef85fc7-4e06-4310-b9d0-f412fec6ab50"
 								}
 							]
 						},
@@ -2319,6 +2331,82 @@
 								{
 									"key": "applicationId",
 									"value": "99e725ffb5a35bf2"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "credit score",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "profileId",
+									"value": "abcdefghi",
+									"type": "text"
+								},
+								{
+									"key": "applicationId",
+									"value": "abcdefghi",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:8080/calculate-credit-score/:profileId/:applicationId",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"calculate-credit-score",
+								":profileId",
+								":applicationId"
+							],
+							"variable": [
+								{
+									"key": "profileId",
+									"value": "abcdefghi"
+								},
+								{
+									"key": "applicationId",
+									"value": "abcdefghi"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "suggest lenders",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/gen_ai/suggest-lenders/:profileId/:applicationId",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"gen_ai",
+								"suggest-lenders",
+								":profileId",
+								":applicationId"
+							],
+							"variable": [
+								{
+									"key": "profileId",
+									"value": "abcdefghi"
+								},
+								{
+									"key": "applicationId",
+									"value": "abcdefghi"
 								}
 							]
 						}
@@ -2879,7 +2967,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "localhost:8080/govt_schemes?limit=2&offset=0",
+							"raw": "localhost:8080/govt_schemes?limit=2&offset=2",
 							"host": [
 								"localhost"
 							],
@@ -2894,7 +2982,7 @@
 								},
 								{
 									"key": "offset",
-									"value": "0"
+									"value": "2"
 								}
 							]
 						}
@@ -2934,7 +3022,7 @@
 							"formdata": [
 								{
 									"key": "message",
-									"value": "Can you help me with MSME Schemes ? without markdown",
+									"value": "type of business loans ?",
 									"type": "text"
 								}
 							]

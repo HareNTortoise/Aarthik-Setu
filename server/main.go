@@ -127,6 +127,7 @@ func registerInfoExtractionRoutes(router *gin.Engine) {
 	info_extraction.RegisterITRInfoExtractionRoutes(router)
 	info_extraction.RegisterBankStatementInfoExtractionRoutes(router)
 	info_extraction.RegisterSuggestLenders(router)
+	info_extraction.GetCreditScore(router)
 }
 
 // Register government schemes routes

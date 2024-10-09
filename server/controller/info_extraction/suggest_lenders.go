@@ -7,21 +7,22 @@ import (
 	"net/http"
 	"os"
 	"strings"
+
 	// "time"
+	utils "server/config/firebase"
+	prompts "server/prompts"
+
 	"github.com/gin-gonic/gin"
 	"github.com/google/generative-ai-go/genai"
 	"google.golang.org/api/option"
-	utils "server/config/firebase"
-	prompts "server/prompts"
 	// "cloud.google.com/go/firestore"
 	// "strings"
 	// "time"
-
 )
 
 // var db_client *firestore.Client
 
-func init(){
+func init() {
 	db_client = utils.InitFirestore()
 }
 
@@ -136,7 +137,7 @@ func SuggestLenders(c *gin.Context) {
 	}
 	geminiResp, err := model.GenerateContent(ctx, extractionPrompt...)
 	if err != nil {
-		c.JSON(http.StatusInternalServerError, gin.H{"error": "Error generating lender suggestions", "details": err.Error(),})
+		c.JSON(http.StatusInternalServerError, gin.H{"error": "Error generating lender suggestions", "details": err.Error()})
 		return
 	}
 

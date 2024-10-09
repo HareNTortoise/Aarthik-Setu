@@ -1,7 +1,8 @@
 package info_extraction
 
 import (
-	itr_info "server/controller/info_extaction"
+	itr_info "server/controller/info_extraction"
+
 	"github.com/gin-gonic/gin"
 )
 
