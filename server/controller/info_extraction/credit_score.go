@@ -125,8 +125,32 @@ func calculateCreditScore(profileId, applicationId string, request models.Credit
 	}
 	fmt.Printf("Calculated Bank Statement Score: %.2f\n", bankScore) // Debugging statement
 
-	// Final credit score
-	finalCreditScore := itrScore + bankScore
+	// Optimized Credit Score Calculation (Similar to CIBIL Score):
+	//
+	// 1. Normalize ITR and Bank Scores:
+	//    - Normalize the ITR score to range between 0 and 500 (using min-max scaling).
+	//    - Normalize the Bank score to range between 0 and 500.
+	// 2. Combine Normalized Scores:
+	//    - Multiply the normalized ITR score by a weight (e.g., 0.6) to give it higher importance.
+	//    - Multiply the normalized Bank score by a weight (e.g., 0.4).
+	//    - Add the weighted scores to get the final credit score.
+	// 3. Scale the Final Score:
+	//    - Multiply the final credit score by 2 to scale it to a range of 0 - 1000.
+	//    - Shift the final score by 100 to make it range from 100 - 1000.
+
+	// Normalize ITR Score:
+	// Normalize the ITR Score to a range of 0 to 1
+	normalizedITRScore := itrScore / maxITRScore
+
+	// Normalize Bank Statement Score:
+	normalizedBankScore := (bankScore - minBankScore) / (maxBankScore - minBankScore)
+
+	// Combine Normalized Scores with Weights:
+	finalScore := (normalizedITRScore * 0.6) + (normalizedBankScore * 0.4)
+
+	// Scale the Final Score:
+	finalCreditScore := finalScore * 850 // Scale the score to a range of 0 - 850
+
 	fmt.Printf("Final Credit Score: %.2f\n", finalCreditScore) // Debugging statement
 
 	// Prepare data for Gemini
@@ -334,7 +358,7 @@ func calculateITRScore(itrInfo map[string]interface{}) (float64, error) {
 	// Calculate the ITR score
 	itrScore := (revenue*0.20 + pbt*0.15 + pat*0.10 + currentLiabilities*0.10 +
 		cashEquivalents*0.05 + longTermBorrowings*0.10 + tradeReceivables*0.05 +
-		inventory*0.05 + taxPaid*0.05)
+		inventory*0.05 + taxPaid*0.05) / 1000000 * 5 * 5
 
 	fmt.Printf("Calculated ITR Score: %.2f\n", itrScore) // Debugging statement
 	return itrScore, nil
@@ -393,3 +417,11 @@ func calculateBankStatementScore(bankDetails map[string]interface{}) (float64, e
 	fmt.Printf("Calculated Bank Statement Score: %.2f\n", bankScore) // Debugging statement
 	return bankScore, nil
 }
+
+// Define minimum and maximum possible scores for normalization
+const (
+	minITRScore  = 0
+	maxITRScore  = 1000
+	minBankScore = 0
+	maxBankScore = 1000
+)
