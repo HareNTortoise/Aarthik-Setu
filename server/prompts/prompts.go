@@ -90,17 +90,18 @@ Please analyze the audio and provide the details in json in name:value format on
 }
 
 func GenerateITRPrompt() string {
-	var GetITRInfoPrompt = fmt.Sprintf(`Extract below metrics from the Income Tax Return in Json(json) format and all values should be in numeric format wherever numbers are expected without commas:
-							- Turnover
-							- Profit before tax
-							- Profit after tax
-							- Total Current liabilities
-							- Total Cash and cash equivalents
-							- Total Long term borrowings
-							- Total Trade receivables
-							- Total Inventories
-							- Tax Paid
-							- Year`)
+	var GetITRInfoPrompt = fmt.Sprintf(`Extract below metrics from the Income Tax Return in Json(json):
+							- turnover(Numeric)
+							- profit_before_tax(Numeric)
+							- profit_after_tax(Numeric)
+							- total_current_liabilities(Numeric)
+							- total_cash_and_cash_equivalents(Numeric)
+							- total_long_term_borrowings(Numeric)
+							- total_trade_receivables(Numeric)
+							- total_inventories(Numeric)
+							- tax_paid(Numeric)
+							- year(Numeric)
+	Keep minimum Halucination as possible.`)
 	return GetITRInfoPrompt
 }
 
