@@ -66,7 +66,6 @@ func ChatbotResponse(userInput string) (string, error) {
 	// Construct the full prompt
 	prePrompt := prompts.GenerateChatbotPrompt()
 	fullPrompt := prePrompt + "\n\nUser: " + userInput
-	log.Printf("DEBUG: Full prompt constructed: %s", fullPrompt)
 
 	// Generate content
 	resp, err := model.GenerateContent(context.Background(), genai.Text(fullPrompt))
@@ -95,7 +94,6 @@ func ChatbotResponse(userInput string) (string, error) {
 			responseText += string(textPart)
 		}
 	}
-	log.Printf("DEBUG: Generated response text: %s", responseText)
 
 	if responseText == "" {
 		log.Println("DEBUG: No text content in response")
@@ -132,8 +130,6 @@ func HandleChat(c *gin.Context) {
 		c.JSON(http.StatusBadRequest, gin.H{"error": "Message is required"})
 		return
 	}
-
-	message += " Write without markdown."
 
 	// Call the ChatbotResponse function from the model
 	response, err := ChatbotResponse(message)

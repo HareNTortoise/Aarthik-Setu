@@ -110,8 +110,6 @@ func GetDeclareGSTBusinessDetails(c *gin.Context) {
 	applicationId := c.Param("applicationId")
 	ctx := context.Background()
 
-	log.Printf("Fetching business details for profileId: %s, applicationId: %s", profileId, applicationId)
-
 	// Query Firestore for the business details
 	iter := client.Collection("declare_business_details").
 		Where("profileId", "==", profileId).
