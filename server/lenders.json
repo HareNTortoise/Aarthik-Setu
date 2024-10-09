@@ -614,16 +614,5 @@
       "application_status": "Open",
       "applicant_count": 65,
       "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Indian_Bank_logo.svg/2560px-Indian_Bank_logo.svg.png"
-    },
-    {
-      "lender_name": "Bank of Rajasthan",
-      "lender_type": "Bank",
-      "position": "Loan Executive",
-      "location": "Chandigarh",
-      "loan_type": "Loan Against Property",
-      "loan_amount_range": "₹1 lakh - ₹1 crore",
-      "interest_rate": "11% - 14%",
-      "loan_term": "5 years - 15 years",
-      "eligibility_criteria": "MSME registered with the government, minimum turnover of ₹5 lakhs, property as collateral",
-      "collateral_required": true,
-      "application_deadline": "2025-03
+    }
+  ]
