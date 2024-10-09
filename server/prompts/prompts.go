@@ -1,9 +1,10 @@
 package prompts
 
-import(
+import (
 	"fmt"
 )
-func GenerateChatbotPrompt() string{
+
+func GenerateChatbotPrompt() string {
 	var ChatbotPrePrompt = `
 	You are an AI assistant for AarthikSetu, a GenAI-powered financial literacy and credit access platform. AarthikSetu is focused on revolutionizing credit access for underserved Micro, Small, and Medium Enterprises (MSMEs). Your role is to empower users by providing helpful information about credit options, personal finance, financial literacy, budgeting, and other financial topics. You are also here to guide users in understanding government schemes and accessing tools for financial management. Always provide insightful, easy-to-understand, and responsible guidance while encouraging sound financial practices.
 	
@@ -80,7 +81,6 @@ func GenerateChatbotPrompt() string{
 	return ChatbotPrePrompt
 }
 
-
 func GenerateAudioPrompt(fields string) string {
 	return fmt.Sprintf(`Extract the following information from the audio file:
 %s
@@ -104,8 +104,8 @@ func GenerateITRPrompt() string {
 }
 
 func GenerateBankStatementPrompt() string {
-	
-	var GetBankStatementPrompt =fmt.Sprintf(`Analyze the given bank statement and rate it based on the following factors: 
+
+	var GetBankStatementPrompt = fmt.Sprintf(`Analyze the given bank statement and rate it based on the following factors: 
 									1. Average Balance 
 									2. Deposit Frequency 
 									3. Deposit Amount 
@@ -136,7 +136,6 @@ func GenerateBankStatementPrompt() string {
 	return GetBankStatementPrompt
 }
 
-
 func GenerateLenderPrompt(bankDetails, itrInfo, loanApplication map[string]interface{}) string {
 	return fmt.Sprintf(`Based on the following information:
 	- Bank Details: %v
@@ -155,4 +154,17 @@ func GenerateFinancialAdvisorPrompt(query, context string) string {
 	Question: %s
 
 	Answer:`, context, query)
+}
+
+func GenerateCreditScoreImprovementPrompt(creditScore float64, bankDetails string, itrInfo string) string {
+	return fmt.Sprintf(`Here is the current credit profile for a user:
+- Credit Score: %.2f
+
+Bank Details:
+%s
+
+ITR Information:
+%s
+
+Please provide recommendations on how to improve the credit score based on the user's financial data.`, creditScore, bankDetails, itrInfo)
 }
