@@ -11,6 +11,7 @@ import (
 	gen_ai "server/routes/forms/gen_ai"
 	personal_forms "server/routes/forms/personal_forms"
 	info_extraction "server/routes/info_extraction"
+	lender "server/routes/lenders"
 	profile_applications "server/routes/profile_applications"
 	schemes "server/routes/schemes"
 	"time"
@@ -85,6 +86,7 @@ func registerRoutes(router *gin.Engine) {
 	registerInfoExtractionRoutes(router)
 	registerSchemesRoutes(router)
 	registerChatRoutes(router)
+	registerlendersRoutes(router)
 }
 
 // Register personal form routes
@@ -138,6 +140,11 @@ func registerSchemesRoutes(router *gin.Engine) {
 // Register chat routes
 func registerChatRoutes(router *gin.Engine) {
 	chat.SetupRoutes(router)
+}
+
+// Register chat routes
+func registerlendersRoutes(router *gin.Engine) {
+	lender.SetuplendersRoutes(router)
 }
 
 // Start the HTTP server with graceful shutdown
