@@ -64,6 +64,7 @@ func applyMiddlewares(router *gin.Engine) {
 		AllowHeaders:     []string{"Origin", "Content-Type", "Authorization"},
 		AllowCredentials: true,
 	}))
+
 }
 
 // Register all routes to the router
