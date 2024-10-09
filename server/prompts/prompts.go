@@ -101,7 +101,8 @@ func GenerateITRPrompt() string {
 							- total_inventories(Numeric)
 							- tax_paid(Numeric)
 							- year(Numeric)
-	Keep minimum Halucination as possible.`)
+	Keep minimum Halucination as possible.
+	Return all Values as Long Data Type instead of String Datatype`)
 	return GetITRInfoPrompt
 }
 
