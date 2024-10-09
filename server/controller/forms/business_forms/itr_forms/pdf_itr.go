@@ -27,7 +27,6 @@ func UploadITRDocuments(c *gin.Context) {
 		c.JSON(http.StatusBadRequest, gin.H{"error": "Failed to parse form data : " + err.Error()})
 		return
 	}
-	log.Println("Form data parsed successfully")
 
 	files := form.File["itr_documents"]
 
@@ -56,7 +55,6 @@ func UploadITRDocuments(c *gin.Context) {
 		// Check if the file is a PDF
 		if !strings.HasSuffix(strings.ToLower(file.Filename), ".pdf") {
 			c.JSON(http.StatusBadRequest, gin.H{"error": fmt.Sprintf("File %s is not a PDF", file.Filename)})
-			log.Printf("Error: File %s is not a PDF\n", file.Filename)
 			return
 		}
 
@@ -64,7 +62,6 @@ func UploadITRDocuments(c *gin.Context) {
 		src, err := file.Open()
 		if err != nil {
 			c.JSON(http.StatusInternalServerError, gin.H{"error": fmt.Sprintf("Unable to open file %s", file.Filename)})
-			log.Printf("Error opening file %s: %v\n", file.Filename, err)
 			return
 		}
 		defer src.Close()
@@ -74,12 +71,10 @@ func UploadITRDocuments(c *gin.Context) {
 			c.JSON(http.StatusInternalServerError, gin.H{"error": fmt.Sprintf("Failed to upload file %s: %v", file.Filename, err)})
 			return
 		}
-		log.Printf("File %s uploaded successfully\n", file.Filename)
 
 		// Construct the file URL
 		fileURL := fmt.Sprintf("https://storage.googleapis.com/%s/%s", bucketName, objectName)
 		uploadedFiles = append(uploadedFiles, fileURL)
-		log.Printf("File %s is accessible at: %s\n", file.Filename, fileURL)
 	}
 
 	c.JSON(http.StatusOK, gin.H{
@@ -93,7 +88,6 @@ func UploadITRDocuments(c *gin.Context) {
 		"userType": "business",
 	})
 	if err != nil {
-		log.Printf("Error writing file info to Firestore: %v\n", err)
 		c.JSON(http.StatusInternalServerError, gin.H{"error": "Failed to write file info to Firestore"})
 		return
 	}

@@ -66,7 +66,7 @@ func applyMiddlewares(router *gin.Engine) {
 	}))
 
 	// Apply request logging middleware
-	router.Use(gin.Logger())
+	// router.Use(gin.Logger())
 }
 
 // Register all routes to the router

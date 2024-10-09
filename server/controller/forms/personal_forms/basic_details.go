@@ -9,7 +9,6 @@ import (
 	"strconv"
 	"cloud.google.com/go/firestore"
 	"github.com/gin-gonic/gin"
-	"log"
 )
 
 // var client *firestore.Client
@@ -56,8 +55,6 @@ func convertUserDetailToMap(userDetail model.UserDetail) map[string]interface{} 
 func CreateUserDetail(c *gin.Context) {
 	profileId := c.Param("profileId")
 	applicationId := c.Param("applicationId")
-	log.Println("profileId", profileId)
-	log.Println("applicationId", applicationId)
 	// Create a UserDetail instance
 	var userDetail model.UserDetail
 
