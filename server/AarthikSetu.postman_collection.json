@@ -1,10 +1,9 @@
 {
 	"info": {
-		"_postman_id": "0fb9fd53-8476-462d-95ef-2ca18ac6e03b",
+		"_postman_id": "e9d91408-6991-47eb-a18b-fdd2a69104f6",
 		"name": "AarthikSetu",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
-		"_exporter_id": "22368846",
-		"_collection_link": "https://shubhams-team-1428.postman.co/workspace/Aarthik-Setu~11961d72-f688-46ee-8581-9263c046918e/collection/22368846-0fb9fd53-8476-462d-95ef-2ca18ac6e03b?action=share&source=collection_link&creator=22368846"
+		"_exporter_id": "26603098"
 	},
 	"item": [
 		{
@@ -2186,7 +2185,7 @@
 			]
 		},
 		{
-			"name": "Gen-AI",
+			"name": "GEN-AI",
 			"item": [
 				{
 					"name": "formfilling",
@@ -2253,10 +2252,10 @@
 			]
 		},
 		{
-			"name": "info_extraction",
+			"name": "INFO_EXTRACTION",
 			"item": [
 				{
-					"name": "Bank statement",
+					"name": "BANK_STATEMENT",
 					"request": {
 						"method": "POST",
 						"header": [],
@@ -2338,7 +2337,7 @@
 					"response": []
 				},
 				{
-					"name": "credit score",
+					"name": "CREDIT_SCORE",
 					"request": {
 						"method": "POST",
 						"header": [],
@@ -2383,7 +2382,7 @@
 					"response": []
 				},
 				{
-					"name": "suggest lenders",
+					"name": "SUGGEST_LENDERS",
 					"request": {
 						"method": "POST",
 						"header": [],
@@ -2959,7 +2958,7 @@
 			]
 		},
 		{
-			"name": "Government_schemes",
+			"name": "GOVERNMENT_SCHEMES",
 			"item": [
 				{
 					"name": "GET",
@@ -2992,28 +2991,10 @@
 			]
 		},
 		{
-			"name": "Chatbot",
+			"name": "CHATBOT",
 			"item": [
 				{
-					"name": "New Request",
-					"request": {
-						"method": "GET",
-						"header": [],
-						"url": {
-							"raw": "localhost:8080/chat",
-							"host": [
-								"localhost"
-							],
-							"port": "8080",
-							"path": [
-								"chat"
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "New Request Copy",
+					"name": "CHAT",
 					"request": {
 						"method": "POST",
 						"header": [],
@@ -3043,10 +3024,10 @@
 			]
 		},
 		{
-			"name": "lenders",
+			"name": "LENDERS",
 			"item": [
 				{
-					"name": "Get lenders",
+					"name": "GET_LENDERS",
 					"request": {
 						"method": "GET",
 						"header": [],
