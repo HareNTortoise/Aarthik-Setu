@@ -90,7 +90,7 @@ Please analyze the audio and provide the details in json in name:value format on
 }
 
 func GenerateITRPrompt() string {
-	var GetITRInfoPrompt = fmt.Sprintf(`Extract below metrics from the Income Tax Return in Json format (json):
+	var GetITRInfoPrompt = fmt.Sprintf(`Extract below metrics from the Income Tax Return in Json format and all values should be in numeric format and not string (json):
 							- Turnover
 							- Profit before tax
 							- Profit after tax
@@ -99,7 +99,8 @@ func GenerateITRPrompt() string {
 							- Total Long term borrowings
 							- Total Trade receivables
 							- Total Inventories
-							- Tax Paid`)
+							- Tax Paid
+							- Year`)
 	return GetITRInfoPrompt
 }
 
