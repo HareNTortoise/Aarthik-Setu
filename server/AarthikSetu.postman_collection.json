@@ -1,9 +1,10 @@
 {
 	"info": {
-		"_postman_id": "e9d91408-6991-47eb-a18b-fdd2a69104f6",
+		"_postman_id": "f9d779a6-80aa-4e0a-8694-14df66785e4b",
 		"name": "AarthikSetu",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
-		"_exporter_id": "26603098"
+		"_exporter_id": "22368846",
+		"_collection_link": "https://shubhams-team-1428.postman.co/workspace/Aarthik-Setu~11961d72-f688-46ee-8581-9263c046918e/collection/22368846-f9d779a6-80aa-4e0a-8694-14df66785e4b?action=share&source=collection_link&creator=22368846"
 	},
 	"item": [
 		{
@@ -3048,6 +3049,46 @@
 								{
 									"key": "limit",
 									"value": "5"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "LOAN_RETURN_DETAILS",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n      \"lender_name\": \"State Bank of India\",\r\n      \"lender_type\": \"Bank\",\r\n      \"position\": \"Loan Officer\",\r\n      \"location\": \"Mumbai\",\r\n      \"loan_type\": \"Working Capital Loan\",\r\n      \"loan_amount_range\": \"₹50,000 - ₹50 lakhs\",\r\n      \"interest_rate\": \"10.5% - 12.5%\",\r\n      \"loan_term\": \"1 year - 5 years\",\r\n      \"eligibility_criteria\": \"MSME registered with the government, minimum turnover of ₹10 lakhs\",\r\n      \"collateral_required\": true,\r\n      \"application_deadline\": \"2024-03-31\",\r\n      \"remote\": true,\r\n      \"seniority\": \"Experienced Borrower\",\r\n      \"experience_level\": 50,\r\n      \"skills_required\": 60,\r\n      \"industry_experience\": 40,\r\n      \"fair_match_score\": 70,\r\n      \"h1b_sponsor\": false,\r\n      \"benefits\": [\r\n        \"Low interest rates\",\r\n        \"Flexible repayment options\"\r\n      ],\r\n      \"loan_description\": \"Working capital loan for businesses to meet day-to-day operational expenses.\",\r\n      \"application_status\": \"Open\",\r\n      \"applicant_count\": 120,\r\n      \"image_url\": \"https://github.com/HareNTortoise/Aarthik-Setu/blob/main/assets/lenders/sbi.png\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/loan/:profileId/:applicationId/lender",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"loan",
+								":profileId",
+								":applicationId",
+								"lender"
+							],
+							"variable": [
+								{
+									"key": "profileId",
+									"value": "abcdefghi"
+								},
+								{
+									"key": "applicationId",
+									"value": "abcdefghi"
 								}
 							]
 						}

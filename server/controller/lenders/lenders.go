@@ -1,4 +1,4 @@
-package controllers
+package lenders
 
 import (
 	"encoding/json"
