@@ -1,4 +1,4 @@
-package models
+package lenders
 
 type Lender struct {
 	LenderName          string   `json:"lender_name"`
