@@ -95,7 +95,12 @@ Built on Google Cloud and Firestore, capable of handling millions of MSMEs acros
 - User-Friendly Dashboard
 - Modern Design Language
 
-![User Interface Preview](https://aarthik-setu.web.app/images/ui-preview.png)
+
+### UI Preview:
+<p align="center" style="border: 2px solid red;">
+  <kbd><img src="https://github.com/HareNTortoise/Aarthik-Setu/blob/main/assets/setu_preview.gif" alt="User Interface Preview" width="70%" height="70%"/></kbd>
+</p>
+
 
 ## 🤯 Wow Factor
 
