@@ -66,7 +66,9 @@
 
 ### Architecture Diagram:
 
-![Architecture Diagram](https://github.com/HareNTortoise/Aarthik-Setu/blob/main/assets/AarthikSetu_Architecture_Diagram.png)
+<p align="center">
+  <img src="https://github.com/HareNTortoise/Aarthik-Setu/blob/main/assets/AarthikSetu_Architecture_Diagram.png" alt="Architecture Diagram" width="70%" height="70%">
+</p>
 
 ## 💡 Originality
 
