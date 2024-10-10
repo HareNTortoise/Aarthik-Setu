@@ -277,7 +277,7 @@
       "loan_description": "General-purpose loan for businesses to fund various needs, such as working capital, expansion, or debt consolidation.",
       "application_status": "Open",
       "applicant_count": 75,
-      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Bank_of_India_Logo.svg/2560px-Bank_of_India_Logo.svg.png"
+      "image_url": "https://github.com/HareNTortoise/Aarthik-Setu/blob/main/assets/lenders/BOI.png"
     },
     {
       "lender_name": "Union Bank of India",
@@ -305,7 +305,7 @@
       "loan_description": "Loan secured against a property for businesses requiring substantial funding.",
       "application_status": "Open",
       "applicant_count": 95,
-      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Union_Bank_of_India_logo.svg/2560px-Union_Bank_of_India_logo.svg.png"
+      "image_url": "https://github.com/HareNTortoise/Aarthik-Setu/blob/main/assets/lenders/UNI.png"
     },
     {
       "lender_name": "IDBI Bank",
@@ -333,7 +333,7 @@
       "loan_description": "Loan specifically designed for small and medium enterprises.",
       "application_status": "Open",
       "applicant_count": 85,
-      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/IDBI_Bank_Logo.svg/2560px-IDBI_Bank_Logo.svg.png"
+      "image_url": "https://github.com/HareNTortoise/Aarthik-Setu/blob/main/assets/lenders/IDBI_Logo.jpg"
     },
     {
       "lender_name": "Corporation Bank",
@@ -389,7 +389,7 @@
       "loan_description": "Term loan for businesses to invest in growth opportunities, purchase assets, or expand operations.",
       "application_status": "Open",
       "applicant_count": 80,
-      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Central_Bank_of_India_Logo.svg/2560px-Central_Bank_of_India_Logo.svg.png"
+      "image_url": "https://github.com/HareNTortoise/Aarthik-Setu/blob/main/assets/lenders/cbi-logo.jpg"
     },
     {
       "lender_name": "Indian Overseas Bank",
