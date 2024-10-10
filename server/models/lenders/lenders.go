@@ -23,4 +23,5 @@ type Lender struct {
 	LoanDescription     string   `json:"loan_description"`
 	ApplicationStatus   string   `json:"application_status"`
 	ApplicantCount      int      `json:"applicant_count"`
+	ImageURL            string   `json:"image_url"` // New field added
 }
