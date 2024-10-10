@@ -1,10 +1,10 @@
 {
 	"info": {
-		"_postman_id": "0fb9fd53-8476-462d-95ef-2ca18ac6e03b",
+		"_postman_id": "f9d779a6-80aa-4e0a-8694-14df66785e4b",
 		"name": "AarthikSetu",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
 		"_exporter_id": "22368846",
-		"_collection_link": "https://shubhams-team-1428.postman.co/workspace/Aarthik-Setu~11961d72-f688-46ee-8581-9263c046918e/collection/22368846-0fb9fd53-8476-462d-95ef-2ca18ac6e03b?action=share&source=collection_link&creator=22368846"
+		"_collection_link": "https://shubhams-team-1428.postman.co/workspace/Aarthik-Setu~11961d72-f688-46ee-8581-9263c046918e/collection/22368846-f9d779a6-80aa-4e0a-8694-14df66785e4b?action=share&source=collection_link&creator=22368846"
 	},
 	"item": [
 		{
@@ -2186,7 +2186,7 @@
 			]
 		},
 		{
-			"name": "Gen-AI",
+			"name": "GEN-AI",
 			"item": [
 				{
 					"name": "formfilling",
@@ -2253,10 +2253,10 @@
 			]
 		},
 		{
-			"name": "info_extraction",
+			"name": "INFO_EXTRACTION",
 			"item": [
 				{
-					"name": "Bank statement",
+					"name": "BANK_STATEMENT",
 					"request": {
 						"method": "POST",
 						"header": [],
@@ -2307,7 +2307,7 @@
 								{
 									"key": "file",
 									"type": "file",
-									"src": "/C:/Users/SHUBHAM/Desktop/itr ba fab_compressed.pdf"
+									"src": "postman-cloud:///1ef85fc7-4e06-4310-b9d0-f412fec6ab50"
 								}
 							]
 						},
@@ -2338,7 +2338,7 @@
 					"response": []
 				},
 				{
-					"name": "credit score",
+					"name": "CREDIT_SCORE",
 					"request": {
 						"method": "POST",
 						"header": [],
@@ -2383,7 +2383,7 @@
 					"response": []
 				},
 				{
-					"name": "suggest lenders",
+					"name": "SUGGEST_LENDERS",
 					"request": {
 						"method": "POST",
 						"header": [],
@@ -2959,7 +2959,7 @@
 			]
 		},
 		{
-			"name": "Government_schemes",
+			"name": "GOVERNMENT_SCHEMES",
 			"item": [
 				{
 					"name": "GET",
@@ -2992,28 +2992,10 @@
 			]
 		},
 		{
-			"name": "Chatbot",
+			"name": "CHATBOT",
 			"item": [
 				{
-					"name": "New Request",
-					"request": {
-						"method": "GET",
-						"header": [],
-						"url": {
-							"raw": "localhost:8080/chat",
-							"host": [
-								"localhost"
-							],
-							"port": "8080",
-							"path": [
-								"chat"
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "New Request Copy",
+					"name": "CHAT",
 					"request": {
 						"method": "POST",
 						"header": [],
@@ -3043,10 +3025,10 @@
 			]
 		},
 		{
-			"name": "lenders",
+			"name": "LENDERS",
 			"item": [
 				{
-					"name": "Get lenders",
+					"name": "GET_LENDERS",
 					"request": {
 						"method": "GET",
 						"header": [],
@@ -3074,7 +3056,7 @@
 					"response": []
 				},
 				{
-					"name": "loan return Details",
+					"name": "LOAN_RETURN_DETAILS",
 					"request": {
 						"method": "POST",
 						"header": [],
