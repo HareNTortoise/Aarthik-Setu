@@ -1,8 +1,9 @@
 package schemes
 
-import(
-	"github.com/gin-gonic/gin"
+import (
 	controller "server/controller/schemes"
+
+	"github.com/gin-gonic/gin"
 )
 
 func RegisterPublicSchemesInfoRoutes(router *gin.Engine) {
