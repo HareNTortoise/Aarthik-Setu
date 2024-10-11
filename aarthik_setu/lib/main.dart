@@ -1,11 +1,15 @@
 import 'package:aarthik_setu/bloc/auth/auth_bloc.dart';
 import 'package:aarthik_setu/bloc/chatbot/chatbot_bloc.dart';
+import 'package:aarthik_setu/bloc/lenders/lenders_bloc.dart';
 import 'package:aarthik_setu/constants/colors.dart';
 import 'package:aarthik_setu/repository/business_profile.dart';
 import 'package:aarthik_setu/repository/chatbot.dart';
 import 'package:aarthik_setu/repository/form_filler.dart';
 import 'package:aarthik_setu/repository/govt_schemes.dart';
+import 'package:aarthik_setu/repository/lenders.dart';
+import 'package:aarthik_setu/repository/loan_details.dart';
 import 'package:aarthik_setu/repository/personal_profile.dart';
+import 'package:aarthik_setu/repository/scheme_suggestions.dart';
 import 'package:aarthik_setu/routes/router.dart';
 import 'package:aarthik_setu/services/auth/google.dart';
 import 'package:aarthik_setu/services/auth/phone.dart';
@@ -17,11 +21,14 @@ import 'package:responsive_framework/responsive_framework.dart';
 import 'bloc/audio_filler/audio_filler_bloc.dart';
 import 'bloc/home/home_bloc.dart';
 import 'bloc/l10n/l10n_bloc.dart';
+import 'bloc/loan_deatils/loan_details_bloc.dart';
+import 'bloc/scheme_suggestions/scheme_suggestions_bloc.dart';
 import 'constants/app_constants.dart';
 import 'cubit/phone_form_cubit.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'firebase_options.dart';
 import 'l10n/l10n.dart';
+import 'models/loan_details.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -45,6 +52,9 @@ class AarthikSetu extends StatelessWidget {
         RepositoryProvider(create: (context) => GovernmentSchemesRepository()),
         RepositoryProvider(create: (context) => ChatBotRepository()),
         RepositoryProvider(create: (context) => FormFillerRepository()),
+        RepositoryProvider(create: (context) => LendersRepository()),
+        RepositoryProvider(create: (context) => LoanDetailsRepository()),
+        RepositoryProvider(create: (context) => SchemeSuggestionsRepository()),
       ],
       child: MultiBlocProvider(
         providers: [
@@ -67,6 +77,21 @@ class AarthikSetu extends StatelessWidget {
           BlocProvider(
             create: (context) => ChatBotBloc(
               chatBotRepository: RepositoryProvider.of<ChatBotRepository>(context),
+            ),
+          ),
+          BlocProvider(
+            create: (context) => LendersBloc(
+              lendersRepository: RepositoryProvider.of<LendersRepository>(context),
+            ),
+          ),
+          BlocProvider(
+            create: (context) => LoanDetailsBloc(
+              loanDetailsRepository: RepositoryProvider.of<LoanDetailsRepository>(context),
+            ),
+          ),
+          BlocProvider(
+            create: (context) => SchemeSuggestionsBloc(
+              schemeSuggestionsRepository: RepositoryProvider.of<SchemeSuggestionsRepository>(context),
             ),
           ),
         ],

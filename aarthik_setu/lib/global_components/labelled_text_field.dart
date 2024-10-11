@@ -48,7 +48,7 @@ class LabelledTextField extends StatelessWidget {
                 borderRadius: BorderRadius.all(Radius.circular(15)),
               ),
             ),
-            validator: validator, // Added validator property to TextFormField
+            validator: validator,
           ),
         ),
       ],
