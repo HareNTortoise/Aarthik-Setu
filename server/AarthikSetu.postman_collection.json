@@ -2988,6 +2988,36 @@
 						}
 					},
 					"response": []
+				},
+				{
+					"name": "SUGGEST",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/suggest_schemes/:profileId/:applicationId",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"suggest_schemes",
+								":profileId",
+								":applicationId"
+							],
+							"variable": [
+								{
+									"key": "profileId",
+									"value": "abcdefghi"
+								},
+								{
+									"key": "applicationId",
+									"value": "abcdefghi"
+								}
+							]
+						}
+					},
+					"response": []
 				}
 			]
 		},
