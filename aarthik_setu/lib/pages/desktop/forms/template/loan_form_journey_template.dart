@@ -1,6 +1,7 @@
 import 'package:aarthik_setu/pages/desktop/forms/template/business_loan_journey.dart';
 import 'package:aarthik_setu/pages/desktop/forms/template/personal_loan_journey.dart';
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:responsive_framework/responsive_framework.dart';
 import '../../../../constants/app_constants.dart';
@@ -18,29 +19,34 @@ class LoanFormJourneyTemplate extends StatelessWidget {
     List<String> businessLoanTypes = ['msme', 'term', 'mudra'];
     return ResponsiveScaledBox(
       width: AppConstants.desktopScaleWidth,
-      child: Scaffold(
-        body: Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 0),
-          child: SingleChildScrollView(
-            child: SizedBox(
-              width: double.infinity,
-              child: Column(
-                mainAxisSize: MainAxisSize.min,
-                children: [
-                  const SizedBox(height: 60),
-                  Text(
-                    formTitle,  //TODO: Add localization
-                    style: GoogleFonts.poppins(
-                      fontSize: 80,
+      child: PopScope(
+        onPopInvokedWithResult: (bool didPop, Object? result) async {
+          context.go('/dashboard');
+        },
+        child: Scaffold(
+          body: Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 0),
+            child: SingleChildScrollView(
+              child: SizedBox(
+                width: double.infinity,
+                child: Column(
+                  mainAxisSize: MainAxisSize.min,
+                  children: [
+                    const SizedBox(height: 60),
+                    Text(
+                      formTitle,
+                      style: GoogleFonts.poppins(
+                        fontSize: 80,
+                      ),
                     ),
-                  ),
-                  const SizedBox(height: 40),
-                  if (personalLoanTypes.contains(loanType))
-                    const SizedBox(child: PersonalLoanJourney())
-                  else if (businessLoanTypes.contains(loanType))
-                    const SizedBox(child: BusinessLoanJourney()),
-                  const SizedBox(height: 100),
-                ],
+                    const SizedBox(height: 40),
+                    if (personalLoanTypes.contains(loanType))
+                      const SizedBox(child: PersonalLoanJourney())
+                    else if (businessLoanTypes.contains(loanType))
+                      const SizedBox(child: BusinessLoanJourney()),
+                    const SizedBox(height: 100),
+                  ],
+                ),
               ),
             ),
           ),
