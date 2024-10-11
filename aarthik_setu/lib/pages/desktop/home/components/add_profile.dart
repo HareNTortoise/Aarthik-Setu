@@ -1,4 +1,5 @@
 import 'package:aarthik_setu/constants/app_constants.dart';
+import 'package:aarthik_setu/constants/validators.dart';
 import 'package:aarthik_setu/global_components/labelled_text_field.dart';
 import 'package:aarthik_setu/models/loan_applications/personal/personal_profile.dart';
 import 'package:flutter/material.dart';
@@ -16,6 +17,7 @@ class AddProfile extends StatelessWidget {
   final TextEditingController profileNameController = TextEditingController();
   final TextEditingController panNumberController = TextEditingController();
   final bool isPersonal;
+  final GlobalKey<FormState> formKey = GlobalKey<FormState>();
 
   @override
   Widget build(BuildContext context) {
@@ -26,70 +28,77 @@ class AddProfile extends StatelessWidget {
           child: IntrinsicWidth(
             child: Padding(
               padding: const EdgeInsets.all(28),
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  Text('Add Profile', style: GoogleFonts.poppins(fontSize: 36)),
-                  const SizedBox(height: 20),
-                  LabelledTextField(
-                    width: 400,
-                    label: 'Profile Name',
-                    hintText: 'Enter profile name',
-                    controller: profileNameController,
-                  ),
-                  const SizedBox(height: 20),
-                  LabelledTextField(
-                    width: 400,
-                    label: 'PAN Number',
-                    hintText: 'Enter PAN number',
-                    controller: panNumberController,
-                  ),
-                  const SizedBox(height: 30),
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: [
-                      FilledButton.tonal(
-                        onPressed: () {
-                          Navigator.of(context).pop();
-                        },
-                        child: Text(
-                          'Cancel',
-                          style: GoogleFonts.poppins(fontSize: 16),
+              child: Form(
+                key: formKey,
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text('Add Profile', style: GoogleFonts.poppins(fontSize: 36)),
+                    const SizedBox(height: 20),
+                    LabelledTextField(
+                      width: 400,
+                      label: 'Profile Name',
+                      hintText: 'Enter profile name',
+                      controller: profileNameController,
+                    ),
+                    const SizedBox(height: 20),
+                    LabelledTextField(
+                      width: 400,
+                      label: 'PAN Number',
+                      hintText: 'Enter PAN number',
+                      controller: panNumberController,
+                      validator: (value) => Validators.panValidator(value),
+                    ),
+                    const SizedBox(height: 30),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        FilledButton.tonal(
+                          onPressed: () {
+                            Navigator.of(context).pop();
+                          },
+                          child: Text(
+                            'Cancel',
+                            style: GoogleFonts.poppins(fontSize: 16),
+                          ),
                         ),
-                      ),
-                      ElevatedButton(
-                        onPressed: () {
-                          final String userId = (context.read<AuthBloc>().state as AuthSuccess).id;
-                          if (isPersonal) {
-                            context.read<HomeBloc>().add(
-                                  AddPersonalProfile(
-                                    PersonalProfile(
-                                      userId: userId,
-                                      name: profileNameController.text,
-                                      pan: panNumberController.text,
-                                    ),
-                                  ),
-                                );
-                          } else {
-                            context.read<HomeBloc>().add(
-                                  AddBusinessProfile(
-                                    BusinessProfile(
-                                      userId: userId,
-                                      name: profileNameController.text,
-                                      pan: panNumberController.text,
-                                    ),
-                                  ),
-                                );
-                          }
-                        },
-                        child: Text(
-                          'Add Profile',
-                          style: GoogleFonts.poppins(fontSize: 16),
+                        ElevatedButton(
+                          onPressed: () {
+
+                            if (formKey.currentState!.validate()) {
+                              final String userId = (context.read<AuthBloc>().state as AuthSuccess).id;
+                              if (isPersonal) {
+                                context.read<HomeBloc>().add(
+                                      AddPersonalProfile(
+                                        PersonalProfile(
+                                          userId: userId,
+                                          name: profileNameController.text,
+                                          pan: panNumberController.text,
+                                        ),
+                                      ),
+                                    );
+                              } else {
+                                context.read<HomeBloc>().add(
+                                      AddBusinessProfile(
+                                        BusinessProfile(
+                                          userId: userId,
+                                          name: profileNameController.text,
+                                          pan: panNumberController.text,
+                                        ),
+                                      ),
+                                    );
+                              }
+                            }
+                          },
+                          child: Text(
+                            'Add Profile',
+                            style: GoogleFonts.poppins(fontSize: 16),
+                          ),
                         ),
-                      ),
-                    ],
-                  ),
-                ],
+                      ],
+                    ),
+                  ],
+                ),
               ),
             ),
           ),
