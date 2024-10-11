@@ -1,5 +1,6 @@
 import 'package:aarthik_setu/pages/breakpoints/sign_in.dart';
 import 'package:aarthik_setu/pages/desktop/forms/business_loans/gst_form.dart';
+import 'package:aarthik_setu/pages/desktop/forms/submitted_form.dart';
 import 'package:aarthik_setu/pages/desktop/forms/template/loan_form_journey_template.dart';
 import 'package:aarthik_setu/pages/desktop/forms/personal_loans/bank_details.dart';
 import 'package:aarthik_setu/pages/desktop/forms/personal_loans/basic_details.dart';
@@ -14,7 +15,7 @@ import '../pages/desktop/forms/business_loans/itr_form.dart';
 import '../pages/desktop/forms/business_loans/loan_form.dart';
 import '../pages/desktop/forms/business_loans/review_form.dart';
 import '../pages/desktop/forms/business_loans/stakeholders.dart';
-import '../pages/desktop/forms/display_lenders.dart';
+import '../pages/desktop/forms/select_lenders.dart';
 import '../pages/desktop/forms/personal_loans/contact_details.dart';
 import '../pages/desktop/forms/personal_loans/employment_details.dart';
 import '../pages/desktop/forms/personal_loans/review_form.dart';
@@ -111,20 +112,26 @@ final GoRouter router = GoRouter(
           path: 'loan-form',
           pageBuilder: (context, state) => const MaterialPage(child: LoanFormBusiness()),
         ),
-        GoRoute(path: 'review-form', pageBuilder: (context, state) {
-          return const MaterialPage(child: ReviewFormBusiness());
-        }),
+        GoRoute(
+            path: 'review-form',
+            pageBuilder: (context, state) {
+              return const MaterialPage(child: ReviewFormBusiness());
+            }),
       ],
     ),
     GoRoute(
       path: '/display-lenders/:loanType',
       pageBuilder: (context, state) {
-        // Fetch the loanType parameter from the path
-        final loanType = state.pathParameters['loanType'] ?? 'personal'; // Default to 'personal' if null
+        final loanType = state.pathParameters['loanType'] ?? 'personal';
         return MaterialPage(
-          child: DisplayLenders(loanType: loanType),
+          child: SelectLenders(loanType: loanType),
         );
       },
+
+    ),
+    GoRoute(
+      path: '/submitted-form',
+      pageBuilder: (context, state) => const MaterialPage(child: SubmittedFormPage()),
     ),
   ],
 );
