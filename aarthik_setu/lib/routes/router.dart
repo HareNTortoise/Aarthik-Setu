@@ -1,3 +1,4 @@
+import 'package:aarthik_setu/pages/breakpoints/screen_builder.dart';
 import 'package:aarthik_setu/pages/breakpoints/sign_in.dart';
 import 'package:aarthik_setu/pages/desktop/forms/business_loans/gst_form.dart';
 import 'package:aarthik_setu/pages/desktop/forms/submitted_form.dart';
@@ -20,8 +21,10 @@ import '../pages/desktop/forms/personal_loans/contact_details.dart';
 import '../pages/desktop/forms/personal_loans/employment_details.dart';
 import '../pages/desktop/forms/personal_loans/review_form.dart';
 import '../pages/desktop/loading.dart';
+import '../pages/mobile/home/dashboard.dart';
 
 final GoRouter router = GoRouter(
+  initialLocation: '/dashboard',
   routes: [
     GoRoute(path: '/', pageBuilder: (context, state) => const MaterialPage(child: LoadingPage())),
     GoRoute(
@@ -30,7 +33,7 @@ final GoRouter router = GoRouter(
     ),
     GoRoute(
       path: '/dashboard',
-      pageBuilder: (context, state) => const MaterialPage(child: DashboardDesktop()),
+      pageBuilder: (context, state) => const MaterialPage(child: ScreenBuilder(mobile: DashboardMobile(), desktop: DashboardDesktop())),
     ),
     GoRoute(
       path: '/personal-loan-journey/:loanType',
