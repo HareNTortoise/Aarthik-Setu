@@ -1,6 +1,7 @@
 import 'package:aarthik_setu/constants/app_constants.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:flutter_markdown/flutter_markdown.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:responsive_framework/responsive_framework.dart';
 import '../bloc/chatbot/chatbot_bloc.dart';
@@ -84,9 +85,11 @@ class CommonChatbot extends StatelessWidget {
                     color: Colors.grey[100],
                   ),
                   child: ListTile(
-                    title: Text(
-                      state.messages[index],
-                      style: TextStyle(fontSize: isLengthGreaterThanWidth ? 16 : 20),
+                    title: MarkdownBody(
+                      data: state.messages[index],
+                      styleSheet: MarkdownStyleSheet(
+                        p: TextStyle(fontSize: isLengthGreaterThanWidth ? 16 : 20),
+                      ),
                     ),
                   ),
                 );

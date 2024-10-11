@@ -2,6 +2,7 @@ import 'package:aarthik_setu/constants/colors.dart';
 import 'package:aarthik_setu/pages/desktop/home/components/scheme_info_popup.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:flutter_markdown/flutter_markdown.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:infinite_scroll_pagination/infinite_scroll_pagination.dart';
@@ -156,33 +157,36 @@ class _GovernmentSchemesFinderState extends State<GovernmentSchemesFinder> {
                                           });
                                           if (context.mounted) {
                                             showDialog(
-                                                context: context,
-                                                builder: (context) {
-                                                  return Dialog(
-                                                    shape:
-                                                        RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
-                                                    child: Container(
-                                                      width: 800,
-                                                      padding: const EdgeInsets.all(20),
-                                                      child: SingleChildScrollView(
-                                                        child: Column(
-                                                          mainAxisSize: MainAxisSize.min,
-                                                          children: [
-                                                            Text(
-                                                              'AI Response',
-                                                              style: GoogleFonts.poppins(fontSize: 24),
+                                              context: context,
+                                              builder: (context) {
+                                                return Dialog(
+                                                  shape:
+                                                      RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
+                                                  child: Container(
+                                                    width: 800,
+                                                    padding: const EdgeInsets.all(20),
+                                                    child: SingleChildScrollView(
+                                                      child: Column(
+                                                        mainAxisSize: MainAxisSize.min,
+                                                        children: [
+                                                          Text(
+                                                            'AI Response',
+                                                            style: GoogleFonts.poppins(fontSize: 28),
+                                                          ),
+                                                          const SizedBox(height: 20),
+                                                          MarkdownBody(
+                                                            data: response,
+                                                            styleSheet: MarkdownStyleSheet(
+                                                              p: GoogleFonts.poppins(fontSize: 20),
                                                             ),
-                                                            const SizedBox(height: 20),
-                                                            Text(
-                                                              response,
-                                                              style: GoogleFonts.poppins(fontSize: 20),
-                                                            ),
-                                                          ],
-                                                        ),
+                                                          ),
+                                                        ],
                                                       ),
                                                     ),
-                                                  );
-                                                });
+                                                  ),
+                                                );
+                                              },
+                                            );
                                           }
                                         },
                                         style: ButtonStyle(
