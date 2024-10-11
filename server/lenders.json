@@ -53,7 +53,7 @@
     "loan_description": "Term loan for businesses to purchase equipment, expand operations, or invest in new projects.",
     "application_status": "Open",
     "applicant_count": 95,
-    "image_url": "https://github.com/HareNTortoise/Aarthik-Setu/blob/main/assets/lenders/HDFC.jpg?raw=true"
+    "image_url": "https://raw.githubusercontent.com/HareNTortoise/Aarthik-Setu/refs/heads/main/assets/lenders/HDFC.jpg"
   },
   {
     "lender_name": "ICICI Bank",
@@ -81,7 +81,7 @@
     "loan_description": "Loan to finance the purchase of machinery and equipment for businesses.",
     "application_status": "Open",
     "applicant_count": 110,
-    "image_url": "https://github.com/HareNTortoise/Aarthik-Setu/blob/main/assets/lenders/icici.png?raw=true"
+    "image_url": "https://raw.githubusercontent.com/HareNTortoise/Aarthik-Setu/refs/heads/main/assets/lenders/icici.png"
   },
   {
     "lender_name": "Axis Bank",
@@ -109,7 +109,7 @@
     "loan_description": "General-purpose loan for businesses to fund various needs, such as expansion, working capital, or debt consolidation.",
     "application_status": "Open",
     "applicant_count": 85,
-    "image_url": "https://github.com/HareNTortoise/Aarthik-Setu/blob/main/assets/lenders/Axis_Bank-Logo.png?raw=true"
+    "image_url": "https://raw.githubusercontent.com/HareNTortoise/Aarthik-Setu/refs/heads/main/assets/lenders/Axis_Bank-Logo.png"
   },
   {
     "lender_name": "Kotak Mahindra Bank",
@@ -137,7 +137,7 @@
     "loan_description": "Loan secured against a property for businesses requiring substantial funding.",
     "application_status": "Open",
     "applicant_count": 105,
-    "image_url": "https://github.com/HareNTortoise/Aarthik-Setu/blob/main/assets/lenders/kotak.png?raw=true"
+    "image_url": "https://raw.githubusercontent.com/HareNTortoise/Aarthik-Setu/refs/heads/main/assets/lenders/kotak.png"
   },
   {
     "lender_name": "IndusInd Bank",
@@ -165,7 +165,7 @@
     "loan_description": "Loan specifically designed for small and medium enterprises.",
     "application_status": "Open",
     "applicant_count": 90,
-    "image_url": "https://github.com/HareNTortoise/Aarthik-Setu/blob/main/assets/lenders/INDUSLAND.png?raw=true"
+    "image_url": "https://raw.githubusercontent.com/HareNTortoise/Aarthik-Setu/refs/heads/main/assets/lenders/INDUSLAND.png"
   },
   {
     "lender_name": "Bank of Baroda",
@@ -193,7 +193,7 @@
     "loan_description": "Working capital loan for businesses to manage day-to-day operations.",
     "application_status": "Open",
     "applicant_count": 115,
-    "image_url": "https://github.com/HareNTortoise/Aarthik-Setu/blob/main/assets/lenders/Bob.png?raw=true"
+    "image_url": "https://raw.githubusercontent.com/HareNTortoise/Aarthik-Setu/refs/heads/main/assets/lenders/Bob.png"
   },
   {
     "lender_name": "Canara Bank",
@@ -221,7 +221,7 @@
     "loan_description": "Term loan for businesses to invest in growth opportunities, purchase assets, or expand operations.",
     "application_status": "Open",
     "applicant_count": 80,
-    "image_url": "https://github.com/HareNTortoise/Aarthik-Setu/blob/main/assets/lenders/canara.png?raw=true"
+    "image_url": "https://raw.githubusercontent.com/HareNTortoise/Aarthik-Setu/refs/heads/main/assets/lenders/canara.png"
   },
   {
     "lender_name": "Punjab National Bank",
@@ -249,7 +249,7 @@
     "loan_description": "Loan to finance the purchase of machinery and equipment for businesses.",
     "application_status": "Open",
     "applicant_count": 100,
-    "image_url": "https://github.com/HareNTortoise/Aarthik-Setu/blob/main/assets/lenders/pnb.png?raw=true"
+    "image_url": "https://raw.githubusercontent.com/HareNTortoise/Aarthik-Setu/refs/heads/main/assets/lenders/pnb.png"
   },
   {
     "lender_name": "Bank of India",
@@ -277,7 +277,7 @@
     "loan_description": "General-purpose loan for businesses to fund various needs, such as working capital, expansion, or debt consolidation.",
     "application_status": "Open",
     "applicant_count": 75,
-    "image_url": "https://github.com/HareNTortoise/Aarthik-Setu/blob/main/assets/lenders/BOI.png?raw=true"
+    "image_url": "https://raw.githubusercontent.com/HareNTortoise/Aarthik-Setu/refs/heads/main/assets/lenders/BOI.png"
   },
   {
     "lender_name": "Union Bank of India",
@@ -305,7 +305,7 @@
     "loan_description": "Loan secured against a property for businesses requiring substantial funding.",
     "application_status": "Open",
     "applicant_count": 95,
-    "image_url": "https://github.com/HareNTortoise/Aarthik-Setu/blob/main/assets/lenders/UNI.png?raw=true"
+    "image_url": "https://raw.githubusercontent.com/HareNTortoise/Aarthik-Setu/refs/heads/main/assets/lenders/UNI.png"
   },
   {
     "lender_name": "IDBI Bank",
@@ -333,7 +333,7 @@
     "loan_description": "Loan specifically designed for small and medium enterprises.",
     "application_status": "Open",
     "applicant_count": 85,
-    "image_url": "https://github.com/HareNTortoise/Aarthik-Setu/blob/main/assets/lenders/IDBI_Logo.jpg?raw=true"
+    "image_url": "https://raw.githubusercontent.com/HareNTortoise/Aarthik-Setu/refs/heads/main/assets/lenders/IDBI_Logo.jpg"
   },
   {
     "lender_name": "Corporation Bank",
@@ -361,7 +361,7 @@
     "loan_description": "Working capital loan for businesses to manage day-to-day operations.",
     "application_status": "Open",
     "applicant_count": 110,
-    "image_url": "https://github.com/HareNTortoise/Aarthik-Setu/blob/main/assets/lenders/corporationBank.png?raw=true"
+    "image_url": "https://raw.githubusercontent.com/HareNTortoise/Aarthik-Setu/refs/heads/main/assets/lenders/corporationBank.png"
   },
   {
     "lender_name": "Central Bank of India",
@@ -389,7 +389,7 @@
     "loan_description": "Term loan for businesses to invest in growth opportunities, purchase assets, or expand operations.",
     "application_status": "Open",
     "applicant_count": 80,
-    "image_url": "https://github.com/HareNTortoise/Aarthik-Setu/blob/main/assets/lenders/cbi-logo.jpg?raw=true"
+    "image_url": "https://raw.githubusercontent.com/HareNTortoise/Aarthik-Setu/refs/heads/main/assets/lenders/cbi-logo.jpg"
   },
   {
     "lender_name": "Indian Overseas Bank",
@@ -417,7 +417,7 @@
     "loan_description": "Loan to finance the purchase of machinery and equipment for businesses.",
     "application_status": "Open",
     "applicant_count": 95,
-    "image_url": "https://github.com/HareNTortoise/Aarthik-Setu/blob/main/assets/lenders/IOB.png?raw=true"
+    "image_url": "https://raw.githubusercontent.com/HareNTortoise/Aarthik-Setu/refs/heads/main/assets/lenders/IOB.png"
   },
   {
     "lender_name": "Oriental Bank of Commerce",
@@ -445,7 +445,7 @@
     "loan_description": "General-purpose loan for businesses to fund various needs, such as working capital, expansion, or debt consolidation.",
     "application_status": "Open",
     "applicant_count": 70,
-    "image_url": "https://github.com/HareNTortoise/Aarthik-Setu/blob/main/assets/lenders/obc.avif?raw=true"
+    "image_url": "https://raw.githubusercontent.com/HareNTortoise/Aarthik-Setu/refs/heads/main/assets/lenders/obc.avif"
   },
   {
     "lender_name": "Bank of Maharashtra",
@@ -473,7 +473,7 @@
     "loan_description": "Loan secured against a property for businesses requiring substantial funding.",
     "application_status": "Open",
     "applicant_count": 90,
-    "image_url": "https://github.com/HareNTortoise/Aarthik-Setu/blob/main/assets/lenders/BOM.png?raw=true"
+    "image_url": "https://raw.githubusercontent.com/HareNTortoise/Aarthik-Setu/refs/heads/main/assets/lenders/BOM.png"
   },
   {
     "lender_name": "UCO Bank",
@@ -501,7 +501,7 @@
     "loan_description": "Loan specifically designed for small and medium enterprises.",
     "application_status": "Open",
     "applicant_count": 80,
-    "image_url": "https://github.com/HareNTortoise/Aarthik-Setu/blob/main/assets/lenders/UCO.webp?raw=true"
+    "image_url": "https://raw.githubusercontent.com/HareNTortoise/Aarthik-Setu/refs/heads/main/assets/lenders/UCO.webp"
   },
   {
     "lender_name": "Syndicate Bank",
@@ -529,7 +529,7 @@
     "loan_description": "Working capital loan for businesses to manage day-to-day operations.",
     "application_status": "Open",
     "applicant_count": 105,
-    "image_url": "https://github.com/HareNTortoise/Aarthik-Setu/blob/main/assets/lenders/Syndicate.png?raw=true"
+    "image_url": "https://raw.githubusercontent.com/HareNTortoise/Aarthik-Setu/refs/heads/main/assets/lenders/Syndicate.png"
   },
   {
     "lender_name": "Dena Bank",
@@ -557,7 +557,7 @@
     "loan_description": "Term loan for businesses to invest in growth opportunities, purchase assets, or expand operations.",
     "application_status": "Open",
     "applicant_count": 75,
-    "image_url": "https://github.com/HareNTortoise/Aarthik-Setu/blob/main/assets/lenders/DenaBank.png?raw=true"
+    "image_url": "https://raw.githubusercontent.com/HareNTortoise/Aarthik-Setu/refs/heads/main/assets/lenders/DenaBank.png"
   },
   {
     "lender_name": "Allahabad Bank",
@@ -585,7 +585,7 @@
     "loan_description": "Loan to finance the purchase of machinery and equipment for businesses.",
     "application_status": "Open",
     "applicant_count": 90,
-    "image_url": "https://github.com/HareNTortoise/Aarthik-Setu/blob/main/assets/lenders/Allahabad.png?raw=true"
+    "image_url": "https://raw.githubusercontent.com/HareNTortoise/Aarthik-Setu/refs/heads/main/assets/lenders/Allahabad.png"
   },
   {
     "lender_name": "Indian Bank",
@@ -613,6 +613,6 @@
     "loan_description": "General-purpose loan for businesses to fund various needs, such as working capital, expansion, or debt consolidation.",
     "application_status": "Open",
     "applicant_count": 65,
-    "image_url": "https://github.com/HareNTortoise/Aarthik-Setu/blob/main/assets/lenders/IndianBank.png?raw=true"
+    "image_url": "https://raw.githubusercontent.com/HareNTortoise/Aarthik-Setu/refs/heads/main/assets/lenders/IndianBank.png"
   }
 ]
