@@ -25,7 +25,7 @@
     "loan_description": "Working capital loan for businesses to meet day-to-day operational expenses.",
     "application_status": "Open",
     "applicant_count": 120,
-    "image_url": "https://github.com/HareNTortoise/Aarthik-Setu/blob/main/assets/lenders/sbi.png?raw=true"
+    "image_url": "https://raw.githubusercontent.com/HareNTortoise/Aarthik-Setu/refs/heads/main/assets/lenders/sbi.png"
   },
   {
     "lender_name": "HDFC Bank",
