@@ -22,23 +22,25 @@ class LoanScheme {
   });
 }
 
-class Lender {
+class DummyLender {
   final String id; // Unique ID for the lender
   final String name;
   final String type; // e.g., 'Bank', 'Individual'
   final List<LoanScheme> loanSchemes;
 
-  Lender({
+  DummyLender({
     required this.id,
     required this.name,
     required this.type,
     required this.loanSchemes,
   });
+
+
 }
 
 class DummyDataLenders {
-  final List<Lender> personalLenders = [
-    Lender(
+  final List<DummyLender> personalLenders = [
+    DummyLender(
       id: 'lender_001',
       name: 'Bank A',
       type: 'Bank',
@@ -67,7 +69,7 @@ class DummyDataLenders {
         ),
       ],
     ),
-    Lender(
+    DummyLender(
       id: 'lender_002',
       name: 'John Doe',
       type: 'Individual',
@@ -85,7 +87,7 @@ class DummyDataLenders {
         ),
       ],
     ),
-    Lender(
+    DummyLender(
       id: 'lender_003',
       name: 'Union Bank',
       type: 'Bank',
@@ -103,7 +105,7 @@ class DummyDataLenders {
         ),
       ],
     ),
-    Lender(
+    DummyLender(
       id: 'lender_004',
       name: 'Fast Cash Lending',
       type: 'Company',
@@ -123,8 +125,8 @@ class DummyDataLenders {
     ),
   ];
 
-  final List<Lender> businessLenders = [
-    Lender(
+  final List<DummyLender> businessLenders = [
+    DummyLender(
       id: 'lender_005',
       name: 'Bank B',
       type: 'Bank',
@@ -142,7 +144,7 @@ class DummyDataLenders {
         ),
       ],
     ),
-    Lender(
+    DummyLender(
       id: 'lender_006',
       name: 'Capital Finance',
       type: 'Company',
@@ -160,7 +162,7 @@ class DummyDataLenders {
         ),
       ],
     ),
-    Lender(
+    DummyLender(
       id: 'lender_007',
       name: 'Green Finance Bank',
       type: 'Bank',
@@ -178,7 +180,7 @@ class DummyDataLenders {
         ),
       ],
     ),
-    Lender(
+    DummyLender(
       id: 'lender_008',
       name: 'Micro Lender Co.',
       type: 'Individual',

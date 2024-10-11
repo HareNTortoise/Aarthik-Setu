@@ -11,7 +11,6 @@ import 'package:go_router/go_router.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:responsive_framework/responsive_framework.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
-
 import '../../../bloc/auth/auth_bloc.dart';
 
 class SignInDesktop extends StatelessWidget {
