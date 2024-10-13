@@ -1,0 +1,13 @@
+# Ignore dart_tool and build directories
+.dart_tool/
+build/
+
+# Ignore Android and iOS directories
+android/
+ios/
+
+# Ignore any other unnecessary directories or files
+.idea/
+macos/
+test/
+web/icons/

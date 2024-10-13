@@ -1,0 +1,32 @@
+# Use a newer Flutter image that supports Dart SDK 3.5.1
+FROM ghcr.io/cirruslabs/flutter:3.24.1 as build
+
+# Set the working directory
+WORKDIR /app
+
+# Copy the pubspec files
+COPY pubspec.* ./
+
+# Allow running Flutter commands as root inside the container
+ENV PUB_ALLOW_ROOT=1
+
+# Fetch Flutter and Dart dependencies
+RUN flutter pub get
+
+# Copy the rest of the application code
+COPY . .
+
+# Build the Flutter web app in release mode
+RUN flutter build web --release
+
+# Use Nginx to serve the app
+FROM nginx:alpine AS production
+
+# Copy the built web app to the Nginx html directory
+COPY --from=build /app/build/web /usr/share/nginx/html
+
+# Expose port 80
+EXPOSE 80
+
+# Start Nginx server
+CMD ["nginx", "-g", "daemon off;"]
