@@ -32,4 +32,4 @@ COPY --from=builder /app/.env .
 CMD ["./main"]
 
 # Expose the port if necessary (change 8080 to your application's port)
-EXPOSE 8080
+EXPOSE 3000
