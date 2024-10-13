@@ -1,0 +1,15 @@
+services:
+  frontend:
+    build:
+      context: ./aarthik_setu
+      dockerfile: Dockerfile
+    ports:
+      - "3000:3000"  # Expose port 3000 for the frontend (mapped to 80 inside the container)
+
+  backend:
+    build:
+      context: ./server
+      dockerfile: Dockerfile
+    env_file: server/.env  # Ensure this line is properly aligned
+    ports:
+      - "8080:8080"  # Expose port 8080 for the backend
