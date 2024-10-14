@@ -33,6 +33,8 @@ COPY .env ./
 
 COPY schemes.json ./
 
+COPY lenders.json ./
+
 # Command to run the executable
 CMD ["./main"]
 
