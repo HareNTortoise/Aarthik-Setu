@@ -4,12 +4,29 @@ services:
       context: ./aarthik_setu
       dockerfile: Dockerfile
     ports:
-      - "80:80"  # Expose port 3000 for the frontend (mapped to 80 inside the container)
+      - "8080:80"  # Expose port 80 for the frontend
+    networks:
+      - app-network
+    restart: always
+    environment:
+      - FLUTTER_ENV=production  # Set environment variables for production
 
   backend:
     build:
       context: ./server
       dockerfile: Dockerfile
-    env_file: server/.env  # Ensure this line is properly aligned
+    env_file: server/.env  # Load environment variables from .env file
     ports:
-      - "3000:3000"  # Expose port 8080 for the backend
+      - "3000:3000"  # Expose port 3000 for the backend
+    networks:
+      - app-network
+    restart: always
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:3000/health"]  # Adjust health check endpoint as needed
+      interval: 30s
+      timeout: 10s
+      retries: 3
+
+networks:
+  app-network:
+    driver: bridge

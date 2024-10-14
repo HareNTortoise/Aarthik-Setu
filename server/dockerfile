@@ -4,7 +4,7 @@ FROM golang:1.22-alpine AS builder
 # Set the working directory inside the container
 WORKDIR /app
 
-# Copy the go.mod and go.sum files first for dependency caching
+# Copy go.mod and go.sum files first for dependency caching
 COPY go.mod go.sum ./
 
 # Download and cache Go module dependencies
@@ -25,10 +25,16 @@ WORKDIR /root/
 # Copy the built binary from the builder stage
 COPY --from=builder /app/main .
 
-COPY .env .
+# Set the environment variable (this can also be overridden by the runtime)
+ENV PORT=3000
+
+# Optionally copy .env file (if needed by your application)
+COPY .env ./
+
+COPY schemes.json ./
 
 # Command to run the executable
 CMD ["./main"]
 
-# Expose the port if necessary (change 8080 to your application's port)
-EXPOSE 4000
+# Expose the port used by the application
+EXPOSE 3000
