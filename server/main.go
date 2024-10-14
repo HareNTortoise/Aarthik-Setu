@@ -51,7 +51,6 @@ func main() {
 	startServer(router)
 }
 
-// Apply middlewares to the router
 func applyMiddlewares(router *gin.Engine) {
 	// Apply CORS middleware with origins from environment variable
 	corsOrigins := os.Getenv("CORS_ORIGINS")
@@ -65,6 +64,11 @@ func applyMiddlewares(router *gin.Engine) {
 		AllowCredentials: true,
 	}))
 
+	// Add middleware to set Cross-Origin-Opener-Policy header
+	router.Use(func(c *gin.Context) {
+		c.Writer.Header().Set("Cross-Origin-Opener-Policy", "same-origin")
+		c.Next()
+	})
 }
 
 // Register all routes to the router
@@ -148,9 +152,9 @@ func registerlendersRoutes(router *gin.Engine) {
 // Start the HTTP server with graceful shutdown
 func startServer(router *gin.Engine) {
 	port := os.Getenv("PORT")
-	if port == "" {
-		port = "8080" // Default to 8080 if not specified
-	}
+	// if port == "" {
+	// 	port = "8080" // Default to 8080 if not specified
+	// }
 
 	server := &http.Server{
 		Addr:    ":" + port,

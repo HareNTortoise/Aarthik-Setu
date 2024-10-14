@@ -276,7 +276,7 @@ func GetGovtSchemes(c *gin.Context) {
 	}
 	log.Printf("Current working directory: %s", cwd)
 
-	filePath := filepath.Join(cwd, "schemes.json") // Adjust the path as needed
+	filePath := filepath.Join(cwd, "schemes.json")
 	log.Printf("Path to JSON file: %s", filePath)
 
 	if _, err := os.Stat(filePath); os.IsNotExist(err) {
