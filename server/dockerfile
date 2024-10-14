@@ -31,4 +31,4 @@ COPY --from=builder /app/main .
 CMD ["./main"]
 
 # Expose the port if necessary (change 8080 to your application's port)
-EXPOSE 3000
+EXPOSE 4000
