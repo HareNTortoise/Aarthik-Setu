@@ -2,6 +2,7 @@ package prompts
 
 import (
 	"fmt"
+	model "server/models/forms/personal_forms"
 )
 
 func GenerateChatbotPrompt() string {
@@ -205,3 +206,40 @@ ITR Information:
 
 Please provide recommendations on how to improve the credit score based on the user's financial data.`, creditScore, bankDetails, itrInfo)
 }
+
+func GenerateSuggestSchemesPrompt(loanApplication model.LoanApplication) string {
+	return fmt.Sprintf(`Using the following information from the loan application, suggest five schemes that are most suitable for the user. Provide very descriptive details for each scheme in the following JSON format:
+{
+  "relatedScheme": "<Name of the related scheme>",
+  "description": "<Short description of the scheme>",
+  "natureOfAssistance": "<Nature of assistance provided by the scheme>",
+  "whoCanApply": "<Who is eligible to apply for the scheme>",
+  "howToApply": "<Process for how to apply for the scheme>"
+}
+Don't expect any more information from the user. The information from the loan application is:
+- Profile ID: %s
+- Application ID: %s
+- Loan Purpose: %s
+- Loan Amount Required: %s
+- Tenure: %s months
+- Retirement Age: %s
+- EMI by Salary Account: %t
+- Pay Outstanding by Terminal Payments: %t
+- Pay Salary in Salary Account: %t
+- Issue Letter to Employer to Pay Outstanding Loan: %t
+- Issue Letter to Employer to Not Change Salary Account: %t
+- Repayment Method: %s
+`, loanApplication.ProfileId,
+		loanApplication.ApplicationId,
+		loanApplication.LoanPurpose,
+		loanApplication.LoanAmountRequired,
+		loanApplication.Tenure,
+		loanApplication.RetirementAge,
+		loanApplication.EmiBySalaryAccount,
+		loanApplication.PayOutstandingByTerminalPayments,
+		loanApplication.PaySalaryInSalaryAccount,
+		loanApplication.IssueLetterToYourEmployerToPayOutstandingLoan,
+		loanApplication.IssueLetterToYourEmployerToNotChangeSalaryAccount,
+		loanApplication.RepaymentMethod)
+}
+
