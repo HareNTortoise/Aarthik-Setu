@@ -16,17 +16,17 @@ RUN flutter pub get
 # Copy the rest of the application code
 COPY . .
 
-# Build the Flutter web app in release mode
-RUN flutter build web --release
+# Build the Flutter web app (this will be in release mode by default)
+RUN flutter build web
 
-# Use Nginx to serve the app
+# Use Nginx to serve the Flutter app
 FROM nginx:alpine AS production
 
 # Copy the built web app to the Nginx html directory
 COPY --from=build /app/build/web /usr/share/nginx/html
 
-# Expose port 80
+# Expose port 8080 for serving the app
 EXPOSE 8080
 
-# Start Nginx server
+# Start the Nginx server
 CMD ["nginx", "-g", "daemon off;"]
