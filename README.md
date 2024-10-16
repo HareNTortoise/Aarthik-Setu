@@ -55,7 +55,9 @@ Our platform combines financial literacy, AI chatbots, and real-time data proces
 - [Watch Here](#) (Add link to video)
 
 ### Project Development Roadmap
-- [Roadmap Document](#) (Add link to document)
+<p align="center">
+  <img src="https://github.com/HareNTortoise/Aarthik-Setu/blob/IBM/assets/Aarthik_setu_Roadmap.jpg" alt="Roadmap" width="70%" height="70%">
+</p>
 
 ## 🛠️ Additional Details
 
