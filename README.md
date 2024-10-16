@@ -140,6 +140,20 @@ This project is licensed under the **Apache License 2.0**. See the [LICENSE](htt
 
 For any questions, please reach out to **support@aarthiksetu.com** or visit our [website](https://aarthik-setu.web.app).
 
----
+## About this template
+
+### Contributing
+
+Please read [CONTRIBUTING.md](CONTRIBUTING.md) for details on our code of conduct, and the process for submitting pull requests to us.
+
+### Versioning
+
+We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags).
+
+### Authors
+
+<a href="https://github.com/HareNTortoise/Aarthik-Setu/graphs/contributors">
+  <img src="https://contributors-img.web.app/image?repo=HareNTortoise/Aarthik-Setu" />
+</a>
 
 Made with ❤️ for MSMEs | [AarthikSetu](https://aarthik-setu.web.app) © 2024
