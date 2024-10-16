@@ -14,110 +14,52 @@
 ![Docker](https://img.shields.io/badge/Docker-2496ED?logo=docker&logoColor=white&style=flat-square)
 ![Kubernetes](https://img.shields.io/badge/Kubernetes-326CE5?logo=kubernetes&logoColor=white&style=flat-square)
 
-
 ![Aarthik Setu Banner](https://github.com/HareNTortoise/Aarthik-Setu/blob/main/assets/web%20banner.png)
 
 </div>
 
-## 🏆 Project Overview
+## 🏆 Project Summary
 
 **Aarthik Setu** is an AI-powered, cross-platform solution revolutionizing credit access for Micro, Small, and Medium Enterprises (MSMEs). Leveraging cutting-edge technology like **AI**, **IBM Watsonx**, and the **Open Credit Enablement Network (OCEN)**, Aarthik Setu simplifies financial management and credit accessibility for underserved markets.
 
-### Key Features:
-- 🤖 AI-powered Financial Data Processing
-- 🌐 Multilingual Support
-- 💬 AI Chatbot for Financial Guidance
-- 📊 Real-time Business Performance Analysis
-- 🎓 Financial Literacy Tools
+### The Issue We Are Hoping to Solve
+Many MSMEs struggle with accessing credit due to traditional banking challenges, leading to a significant credit gap in the market.
 
-## 📑 Table of Contents
+### How Our Technology Solution Can Help
+Aarthik Setu utilizes AI-driven analytics to streamline credit assessments, making it easier for MSMEs to access loans tailored to their needs.
 
-- [Technicality](#-technicality)
-- [Originality](#-originality)
-- [Practicality](#-practicality)
-- [Aesthetics](#-aesthetics)
-- [Wow Factor](#-wow-factor)
-- [Try It Out](#-try-it-out)
-- [Setup & Installation](#️-setup--installation)
-- [License](#-license)
-- [Contact Us](#-contact-us)
+### Our Idea
+Our platform combines financial literacy, AI chatbots, and real-time data processing to empower MSMEs, enabling them to make informed financial decisions.
 
-## 💻 Technicality
+## 💻 Technology Implementation
 
-### Tech Stack:
+### IBM Watsonx Product(s) Used
+- **IBM Watsonx.ai**: For smarter document handling and natural language understanding.
+- **IBM Watsonx Assistant**: A 24/7 chatbot for loan guidance.
+- **IBM Watsonx.governance**: Ensuring data security and compliance.
 
-- **Frontend:**
-  - Framework: Flutter (Supports Web, Android, iOS)
-  - Authentication: IBM Cloud IAM
+### Other IBM Technology Used
+- **IBM Cloud IAM**: For secure authentication.
+- **IBM Cloud Object Storage**: For storing structured data.
+- **IBM API Connect**: For secure and scalable API management.
+- **IBM Kubernetes Service**: For scalable and resilient deployments.
 
-- **Backend:**
-  - Language: Golang (using Gin Framework for building REST APIs)
-  - Database: IBM Cloud Object Storage (for storing structured data)
-  - Caching: Redis (In-memory caching for faster data retrieval)
-
-- **AI & IBM Watsonx:**
-  - AI Model: IBM Watsonx.ai for smarter document handling and natural language understanding
-  - Virtual Assistant: IBM Watsonx Assistant (24/7 chatbot for loan guidance)
-  - API Management: IBM API Connect (for secure and scalable API management)
-  - Governance: IBM Watsonx.governance (ensuring data security and compliance)
-  - Cloud Service: IBM Kubernetes Service (for scalable and resilient deployments)
-
-
-### Architecture Diagram:
-
+### Solution Architecture
 <p align="center">
   <img src="https://github.com/HareNTortoise/Aarthik-Setu/blob/main/assets/AarthikSetu_Architecture_Diagram.png" alt="Architecture Diagram" width="70%" height="70%">
 </p>
 
-## 💡 Originality
+## 📑 Presentation Materials
 
-What sets Aarthik Setu apart:
-- AI-Powered Loan Agent with dynamic credit scoring
-- IBM Watsonx AI for smarter financial data processing and personalized loan guidance
-- Governance and security with IBM Watsonx.governance for regulatory compliance
+### Solution Demo Video
+- [Watch Here](#) (Add link to video)
 
-## 🔨 Practicality
+### Project Development Roadmap
+- [Roadmap Document](#) (Add link to document)
 
-### Real-World Applications:
-- Manufacturing
-- Agriculture
-- Retail & Services
-- Textiles & Handicrafts
+## 🛠️ Additional Details
 
-### Scalability:
-Built on IBM Cloud and Kubernetes, capable of handling millions of MSMEs across regions.
-
-## 🎨 Aesthetics
-
-### User Interface Design:
-- Responsive UI across devices
-- User-Friendly Dashboard
-- Modern Design Language
-
-
-### UI Preview:
-<p align="center" style="border: 2px solid red;">
-  <kbd><img src="https://github.com/HareNTortoise/Aarthik-Setu/blob/main/assets/setu_preview.gif" alt="User Interface Preview" width="70%" height="70%"/></kbd>
-</p>
-
-## 🤯 Wow Factor
-
-- AI-Powered Financial Education & Loan Agent using IBM Watsonx
-- Secure Financial Inclusion with IBM Cloud Object Storage and Watsonx Governance
-- Immediate Impact Potential on trillion-dollar credit gap
-
-## 📱 Try It Out
-
-Explore the **Aarthik Setu** live demo: [Click here](https://aarthik-setu.web.app/)
-
-Or scan the QR code for the mobile version:
-
-<p align="center">
-  <img src="https://github.com/shubhusion/Aarthik-Setu/blob/main/assets/AarthikSetu.png" alt="QR Code" width="200" height="200">
-</p>
-
-## 🛠️ Setup & Installation
-
+### How to Run the Project
 ```bash
 # Clone the Repository
 git clone https://github.com/username/aarthik-setu.git
@@ -132,24 +74,26 @@ flutter run      # For Flutter (frontend)
 go run main.go   # For Golang (backend)
 ```
 
-## 📝 License
+### Live Demo
+Explore the **Aarthik Setu** live demo: [Click here](https://aarthik-setu.web.app/)
 
-This project is licensed under the **Apache License 2.0**. See the [LICENSE](https://github.com/HareNTortoise/Aarthik-Setu/blob/main/LICENSE) file for details.
+Or scan the QR code for the mobile version:
+<p align="center">
+  <img src="https://github.com/shubhusion/Aarthik-Setu/blob/main/assets/AarthikSetu.png" alt="QR Code" width="200" height="200">
+</p>
 
-## 💬 Contact Us
-
-For any questions, please reach out to **support@aarthiksetu.com** or visit our [website](https://aarthik-setu.web.app).
-
-## About this template
+## About This Template
 
 ### Contributing
+Please read [CONTRIBUTING.md](CONTRIBUTING.md) for details on our code of conduct and the process for submitting pull requests.
 
-Please read [CONTRIBUTING.md](CONTRIBUTING.md) for details on our code of conduct, and the process for submitting pull requests to us.
+### Versioning
+- Current version: **1.0.0**
 
 ### Authors
-
 <a href="https://github.com/HareNTortoise/Aarthik-Setu/graphs/contributors">
   <img src="https://contributors-img.web.app/image?repo=HareNTortoise/Aarthik-Setu" />
 </a>
 
+--- 
 Made with ❤️ for MSMEs | [AarthikSetu](https://aarthik-setu.web.app) © 2024
