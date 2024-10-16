@@ -31,6 +31,13 @@ Aarthik Setu utilizes AI-driven analytics to streamline credit assessments, maki
 ### 🚀 Our Idea
 Our platform combines financial literacy, AI chatbots, and real-time data processing to empower MSMEs, enabling them to make informed financial decisions.
 
+### 🎯 Key Features
+- 🤖 AI-powered Financial Data Processing
+- 🌐 Multilingual Support
+- 💬 AI Chatbot for Financial Guidance
+- 📊 Real-time Business Performance Analysis
+- 🎓 Financial Literacy Tools
+
 ## 💻 Technology Implementation
 
 ### IBM Watsonx Product(s) Used
