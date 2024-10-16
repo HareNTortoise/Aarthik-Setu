@@ -46,7 +46,7 @@ Our platform combines financial literacy, AI chatbots, and real-time data proces
 
 ### Solution Architecture
 <p align="center">
-  <img src="https://github.com/HareNTortoise/Aarthik-Setu/blob/main/assets/AarthikSetu_Architecture_Diagram.png" alt="Architecture Diagram" width="70%" height="70%">
+  <img src="https://github.com/HareNTortoise/Aarthik-Setu/blob/IBM/assets/Aarthik_setu%20Architecture.png" alt="Architecture Diagram" width="70%" height="70%">
 </p>
 
 ## 📑 Presentation Materials
