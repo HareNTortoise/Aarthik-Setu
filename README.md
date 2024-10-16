@@ -22,13 +22,13 @@
 
 **Aarthik Setu** is an AI-powered, cross-platform solution revolutionizing credit access for Micro, Small, and Medium Enterprises (MSMEs). Leveraging cutting-edge technology like **AI**, **IBM Watsonx**, and the **Open Credit Enablement Network (OCEN)**, Aarthik Setu simplifies financial management and credit accessibility for underserved markets.
 
-### The Issue We Are Hoping to Solve
+### 🌟 The Issue We Are Hoping to Solve
 Many MSMEs struggle with accessing credit due to traditional banking challenges, leading to a significant credit gap in the market.
 
-### How Our Technology Solution Can Help
+### 💡 How Our Technology Solution Can Help
 Aarthik Setu utilizes AI-driven analytics to streamline credit assessments, making it easier for MSMEs to access loans tailored to their needs.
 
-### Our Idea
+### 🚀 Our Idea
 Our platform combines financial literacy, AI chatbots, and real-time data processing to empower MSMEs, enabling them to make informed financial decisions.
 
 ## 💻 Technology Implementation
