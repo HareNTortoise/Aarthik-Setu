@@ -9,6 +9,6 @@ import (
 func GenAIFormRoutes(router *gin.Engine) {
 	personalForms := router.Group("/gen_ai")
 	{
-		personalForms.POST("/audio-fill", form_fill.AudioFormFiller)
+		personalForms.POST("/audio-fill", form_fill.HandleAudioFormFilling)
 	}
 }

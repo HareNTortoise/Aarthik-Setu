@@ -4,110 +4,196 @@ import (
 	"context"
 	"encoding/json"
 	"fmt"
+	"log"
 	"net/http"
 	"os"
+	"path/filepath"
 	"regexp"
 	"strings"
+	"time"
+
+	prompts "server/prompts"
+
 	"github.com/gin-gonic/gin"
 	"github.com/google/generative-ai-go/genai"
 	"google.golang.org/api/option"
-	prompts "server/prompts"
 )
 
-func getMimeType(fileName string) string {
-	re := regexp.MustCompile(`\.(wav|mp3|aiff|aac|ogg|flac)$`)
-	match := re.FindStringSubmatch(fileName)
-	if len(match) == 0 {
-		return "" // Return empty if no match found
-	}
-
-	switch strings.ToLower(match[1]) {
-	case "wav":
-		return "audio/wav"
-	case "mp3":
-		return "audio/mp3"
-	case "aiff":
-		return "audio/aiff"
-	case "aac":
-		return "audio/aac"
-	case "ogg":
-		return "audio/ogg"
-	case "flac":
-		return "audio/flac"
-	default:
-		return "" // Fallback
-	}
+// AudioProcessor handles all audio processing related operations
+type AudioProcessor struct {
+	supportedFormats map[string]string
+	uploadDir        string
+	aiClient         *genai.Client
 }
-func AudioFormFiller(c *gin.Context) {
-	audioFile, err := c.FormFile("audioFile")
 
-	if err != nil {
-		// Handle error if the file is not found or there's an issue
-		c.JSON(http.StatusBadRequest, gin.H{"error": "Could not retrieve audio file"})
-		return
-	}
-
-	// Save the uploaded file temporarily
-	tempFilePath := "uploads/" + audioFile.Filename
-	if err := c.SaveUploadedFile(audioFile, tempFilePath); err != nil {
-		c.JSON(http.StatusInternalServerError, gin.H{"error": "Could not save audio file"})
-		return
-	}
-	defer os.Remove(tempFilePath) // Clean up the temporary file after processing
-
-	// Read the saved audio file into memory
-	bytes, err := os.ReadFile(tempFilePath)
-	if err != nil {
-		c.JSON(http.StatusInternalServerError, gin.H{"error": "Could not read audio file"})
-		return
-	}
-
-	ctx := context.Background()
+// NewAudioProcessor creates a new instance of AudioProcessor
+func NewAudioProcessor(ctx context.Context, uploadDir string) (*AudioProcessor, error) {
 	client, err := genai.NewClient(ctx, option.WithAPIKey(os.Getenv("GEMINI_API_KEY")))
 	if err != nil {
-		c.JSON(http.StatusInternalServerError, gin.H{"error": "Could not create API client"})
-		return
+		return nil, fmt.Errorf("failed to initialize AI client: %w", err)
 	}
 
-	model := client.GenerativeModel("gemini-1.5-flash")
+	return &AudioProcessor{
+		supportedFormats: map[string]string{
+			".wav":  "audio/wav",
+			".mp3":  "audio/mp3",
+			".aiff": "audio/aiff",
+			".aac":  "audio/aac",
+			".ogg":  "audio/ogg",
+			".flac": "audio/flac",
+		},
+		uploadDir: uploadDir,
+		aiClient:  client,
+	}, nil
+}
 
-	fields := c.PostForm("formFields")
+// validateAudioFile checks if the file format is supported
+func (ap *AudioProcessor) validateAudioFile(filename string) (string, error) {
+	ext := strings.ToLower(filepath.Ext(filename))
+	mimeType, ok := ap.supportedFormats[ext]
+	if !ok {
+		return "", fmt.Errorf("unsupported file format: %s", ext)
+	}
+	return mimeType, nil
+}
 
-	promptTemplate := prompts.GenerateAudioPrompt(fields)
+// processAudioFile handles the audio file saving and reading
+func (ap *AudioProcessor) processAudioFile(file *gin.Context) (*AudioFile, error) {
+	uploadedFile, err := file.FormFile("audioFile")
+	if err != nil {
+		return nil, fmt.Errorf("failed to get audio file: %w", err)
+	}
 
-	mimeType := getMimeType(audioFile.Filename)
+	mimeType, err := ap.validateAudioFile(uploadedFile.Filename)
+	if err != nil {
+		return nil, err
+	}
+
+	// Create unique filename
+	timestamp := time.Now().UnixNano()
+	filename := fmt.Sprintf("%d_%s", timestamp, uploadedFile.Filename)
+	filepath := fmt.Sprintf("%s/%s", ap.uploadDir, filename)
+
+	if err := file.SaveUploadedFile(uploadedFile, filepath); err != nil {
+		return nil, fmt.Errorf("failed to save file: %w", err)
+	}
+
+	fileBytes, err := os.ReadFile(filepath)
+	if err != nil {
+		os.Remove(filepath) // Clean up the file
+		return nil, fmt.Errorf("failed to read file: %w", err)
+	}
+
+	return &AudioFile{
+		Path:     filepath,
+		MimeType: mimeType,
+		Data:     fileBytes,
+	}, nil
+}
+
+// extractFormData processes the audio file through the AI model
+func (ap *AudioProcessor) extractFormData(ctx context.Context, audioFile *AudioFile, promptTemplate string) (map[string]interface{}, error) {
+	model := ap.aiClient.GenerativeModel("gemini-1.5-flash")
+
 	extractionPrompt := []genai.Part{
-		genai.Blob{MIMEType: mimeType, Data: bytes},
+		genai.Blob{MIMEType: audioFile.MimeType, Data: audioFile.Data},
 		genai.Text(promptTemplate),
 	}
 
-	// Call the model with the audio data and extraction prompt
-	extractionResp, err := model.GenerateContent(ctx, extractionPrompt...)
+	resp, err := model.GenerateContent(ctx, extractionPrompt...)
 	if err != nil {
-		c.JSON(http.StatusInternalServerError, gin.H{"error": "Error extracting data"})
+		return nil, fmt.Errorf("AI model error: %w", err)
+	}
+
+	if len(resp.Candidates) == 0 || resp.Candidates[0].Content == nil {
+		return nil, fmt.Errorf("no content generated by AI model")
+	}
+
+	return ap.parseAIResponse(resp.Candidates[0].Content)
+}
+
+// parseAIResponse processes the AI model's response
+func (ap *AudioProcessor) parseAIResponse(content *genai.Content) (map[string]interface{}, error) {
+	var outputBuilder strings.Builder
+	for _, part := range content.Parts {
+		if text, ok := part.(genai.Text); ok {
+			outputBuilder.WriteString(string(text))
+		}
+	}
+
+	jsonStr := ap.cleanJSONString(outputBuilder.String())
+
+	var extractedData map[string]interface{}
+	if err := json.Unmarshal([]byte(jsonStr), &extractedData); err != nil {
+		return nil, fmt.Errorf("failed to parse JSON: %w", err)
+	}
+
+	return extractedData, nil
+}
+
+// cleanJSONString removes markdown formatting and cleans the JSON string
+func (ap *AudioProcessor) cleanJSONString(input string) string {
+	// Remove markdown code block syntax
+	re := regexp.MustCompile("```(?:json)?\\s*")
+	input = re.ReplaceAllString(input, "")
+	input = strings.TrimSpace(input)
+
+	return input
+}
+
+// AudioFile represents a processed audio file
+type AudioFile struct {
+	Path     string
+	MimeType string
+	Data     []byte
+}
+
+// HandleAudioFormFilling is the main handler for the audio form filling endpoint
+func HandleAudioFormFilling(c *gin.Context) {
+	ctx := context.Background()
+
+	// Initialize audio processor
+	processor, err := NewAudioProcessor(ctx, "uploads")
+	if err != nil {
+		log.Printf("Failed to initialize audio processor: %v", err)
+		c.JSON(http.StatusInternalServerError, gin.H{"error": "Internal server error"})
+		return
+	}
+	defer processor.aiClient.Close()
+
+	// Process audio file
+	audioFile, err := processor.processAudioFile(c)
+	if err != nil {
+		log.Printf("Failed to process audio file: %v", err)
+		c.JSON(http.StatusBadRequest, gin.H{"error": err.Error()})
+		return
+	}
+	defer os.Remove(audioFile.Path) // Clean up the file after processing
+
+	// Generate prompt template
+	formFields := c.PostForm("formFields")
+	promptTemplate := prompts.GenerateAudioPrompt(formFields)
+
+	// Extract form data
+	extractedData, err := processor.extractFormData(ctx, audioFile, promptTemplate)
+	if err != nil {
+		log.Printf("Failed to extract form data: %v", err)
+		c.JSON(http.StatusInternalServerError, gin.H{"error": "Failed to extract data from audio"})
 		return
 	}
 
-	for _, ct := range extractionResp.Candidates {
-		if ct.Content != nil {
-			// Concatenate all parts into a single string
-			var output genai.Text
-			for _, part := range ct.Content.Parts {
-				output += part.(genai.Text)
-			}
-			outputString := fmt.Sprintf("%v", output)
-			outputString = strings.TrimPrefix(outputString, "```json\n")
-			outputString = strings.TrimSuffix(outputString, "\n```")
+	c.JSON(http.StatusOK, extractedData)
+}
 
-			var extractedData map[string]interface{}
-			if err := json.Unmarshal([]byte(outputString), &extractedData); err != nil {
-				c.JSON(http.StatusInternalServerError, gin.H{"error": "Error parsing extracted JSON"})
-				return
-			}
-
-			c.JSON(http.StatusOK, extractedData)
-			return
-		}
+// ValidateUploadsDir ensures the uploads directory exists
+func ValidateUploadsDir(uploadDir string) error {
+	if _, err := os.Stat(uploadDir); os.IsNotExist(err) {
+		return os.MkdirAll(uploadDir, 0755)
 	}
-	c.JSON(http.StatusOK, gin.H{"extractedData": "Done"})
+	return nil
+}
+
+// Init initializes the necessary components for the audio processing
+func Init() error {
+	return ValidateUploadsDir("uploads")
 }
